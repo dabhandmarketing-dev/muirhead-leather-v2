@@ -26,9 +26,9 @@
         "search_suggestion_WNjErW"
       ],
       "settings": {
-        "image_logo_dark": "shopify://shop_images/logo--dark.svg",
-        "image_logo_white": "shopify://shop_images/logo--white.svg",
-        "text_search": "Search",
+        "url_link": "",
+        "text_title": "Stock",
+        "text_paragraph": "Buy a range of one-off hide",
         "collection_search_bestseller": "",
         "collection_search_bestseller_limit": 6,
         "text_success_headline": "Congratulations 🎉",
