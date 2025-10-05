@@ -1,0 +1,22 @@
+<div class="home-banner_bkg"><img li-object:src="collection.featured_image | image_url: width: 1000" li-object:alt="collection.featured_image.alt" alt="{{ collection.featured_image.alt }}" loading="lazy" src="{{ collection.featured_image | image_url: width: 1000 }}" class="image-fill small-4">
+          <div class="div-block-515">
+            <p li-object="collection.title" class="page-head">{{ collection.title }}</p>
+          </div>
+          <div class="image-overlay small-5"></div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Page Heading",
+    "class": "pageheading",
+    "presets": [
+        {
+            "name": "Page Heading",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ],
+    "enabled_on": {
+        "templates": [
+            "*"
+        ]
+    }
+} {% endschema %}

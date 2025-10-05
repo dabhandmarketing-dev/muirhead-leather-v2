@@ -1146,7 +1146,26 @@
                                   </a>
                                 </div>
                               </div>
-                              <div class="mini-cart_header"></div>
+                              <div class="li-component_wrapper">
+                                <div x-data="{ freeShipping: {{ section.settings.free_shipping }} }" class="mini-cart_footer-2">
+                                  <div x-bind:style="'display: ' + (((freeShipping - total.price) / 100) < 0 ? 'none' : 'block')" class="mini-cart_footer_progress-component">
+                                    <div class="mini-cart_footer_progress-bar">
+                                      <div x-bind:style="'width: ' + (total_price/freeShipping) *100 + '%'" class="mini-cart_footer_progress-bar-innner"></div>
+                                    </div>
+                                    <div class="text-size-small-13">Only <span li-js-price="freeShipping - total_price" x-text="LiquifyHelper.moneyFormat(freeShipping - total_price, true, '{{ shop.money_with_currency_format }}')">$52.75</span> more and then your shipping is free!</div>
+                                  </div>
+                                  <div x-bind:style="'display: ' + (((freeShipping - total_price) / 100) < 0 ? 'block' : 'none')" class="mini-cart_footer_progress-component">
+                                    <div class="heading-style-h4-4">
+{{ section.settings.text_success_headline }}
+</div>
+                                    <div class="spacer-tiny-2"></div>
+                                    <div class="text-size-small-13">
+{{ section.settings.text_success_text }}
+</div>
+                                  </div>
+                                  
+                                </div>
+                              </div>
                               <div class="div-block-756">
                                 <div class="mini-cart_line-item">
                                   <ul role="list" class="mini-cart_line-item_list w-list-unstyled">
@@ -1867,6 +1886,28 @@
             "step": 1,
             "label": "Limit: Search - Bestseller",
             "default": 6
+        },
+        {
+            "id": "text_success_headline",
+            "type": "text",
+            "label": "Success - Headline",
+            "default": "Congratulations \ud83c\udf89"
+        },
+        {
+            "id": "text_success_text",
+            "type": "text",
+            "label": "Success - Text",
+            "default": "Nice one! You\u2019ve unlocked free shipping!"
+        },
+        {
+            "type": "header",
+            "content": "free_shipping"
+        },
+        {
+            "type": "text",
+            "id": "free_shipping",
+            "label": "Free Shipping",
+            "default": "100"
         }
     ],
     "presets": [
