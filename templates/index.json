@@ -29,54 +29,11 @@
       "name": "Slideshow",
       "settings": {}
     },
-    "image_with_text": {
-      "type": "image_with_text",
+    "text_stitching_secti_FQw7t6": {
+      "type": "text_stitching_secti",
+      "name": "Text Stitching Secti",
       "settings": {
-        "text_heading": "Short heading here",
-        "richtext_paragraph": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>",
-        "url_button_link": "",
-        "text_button_text": "More Information"
-      }
-    },
-    "featured_products": {
-      "type": "featured_products",
-      "settings": {
-        "text_heading": "Short heading here",
-        "url_button_link": "",
-        "text_button_text": "All products",
-        "collection_collection": "",
-        "collection_collection_limit": 6
-      }
-    },
-    "featured_collections": {
-      "type": "featured_collections",
-      "blocks": {
-        "block": {
-          "type": "block",
-          "name": "Block",
-          "settings": {
-            "url_link": "",
-            "text_heading": "Bestselling"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "block"
-      ],
-      "settings": {
-        "text_heading": "Short heading here"
-      }
-    },
-    "blog_posts": {
-      "type": "blog_posts",
-      "settings": {
-        "text_heading": "Short heading here",
-        "text_button_text": "All Articles",
-        "url_button_link": "",
-        "article_article": "",
-        "blog_blog": "",
-        "post_limit_blog": 3
+        "text_text": "The lowest carbon, high performance natural leather for the toughest passenger environments and the most discerning luxury designers."
       }
     },
     "custom_liquid": {
@@ -95,10 +52,7 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "slideshow_8m7Dab",
-    "image_with_text",
-    "featured_products",
-    "featured_collections",
-    "blog_posts",
+    "text_stitching_secti_FQw7t6",
     "custom_liquid",
     "video_hero_WrMVQn"
   ]
