@@ -14,19 +14,16 @@
       "name": "Page Heading",
       "settings": {}
     },
-    "collection_products": {
-      "type": "collection_products",
-      "settings": {
-        "text_filter": "Filters",
-        "text_clear_all": "Clear all",
-        "text_products_shown": "Products shown"
-      }
+    "collection_filters_RbQANq": {
+      "type": "collection_filters",
+      "name": "Collection (Filters)",
+      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "page_heading_w4V3gw",
-    "collection_products"
+    "collection_filters_RbQANq"
   ]
 }
