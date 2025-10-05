@@ -18,6 +18,24 @@
         "text_button_text": "More Information"
       }
     },
+    "slideshow_8m7Dab": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_aHXehg": {
+          "type": "slide",
+          "settings": {
+            "text_pre_heading": "More than",
+            "url_button_link": "",
+            "text_button_text": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "slide_aHXehg"
+      ],
+      "name": "Slideshow",
+      "settings": {}
+    },
     "featured_products": {
       "type": "featured_products",
       "settings": {
@@ -74,6 +92,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
+    "slideshow_8m7Dab",
     "image_with_text",
     "featured_products",
     "featured_collections",
