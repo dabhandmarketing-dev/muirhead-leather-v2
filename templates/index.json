@@ -12,30 +12,30 @@
     "slideshow_8m7Dab": {
       "type": "slideshow",
       "blocks": {
-        "slide_aHXehg": {
-          "type": "slide",
+        "slider_xKH3P4": {
+          "type": "slider",
           "settings": {
             "image_image": "shopify://shop_images/Muirhead_Hero_BG.jpg",
             "text_pre_heading": "More than",
             "text_heading": "Leather",
-            "url_button_link": "shopify://collections/all",
-            "text_button_text": "Buy Leather"
+            "url_button_link": "",
+            "text_button_text": "Learn More"
           }
         },
-        "slide_eBREUK": {
-          "type": "slide",
+        "slider_YyBQcc": {
+          "type": "slider",
           "settings": {
             "image_image": "shopify://shop_images/Muirhead_Hero_BG.jpg",
             "text_pre_heading": "More than",
             "text_heading": "Leather",
-            "url_button_link": "shopify://collections/all",
-            "text_button_text": "Buy Leather"
+            "url_button_link": "",
+            "text_button_text": "Learn More"
           }
         }
       },
       "block_order": [
-        "slide_aHXehg",
-        "slide_eBREUK"
+        "slider_xKH3P4",
+        "slider_YyBQcc"
       ],
       "name": "Slideshow",
       "settings": {}
