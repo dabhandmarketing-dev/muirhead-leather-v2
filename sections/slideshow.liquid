@@ -7,10 +7,10 @@
                                     
                 
                                     <div class="hero-slide-content_layout is-centered">
-                  <div class="slider-background_wrap">{% if block.settings.image_background_image %}
-{{ block.settings.image_background_image | image_url: width: 1000 | image_tag: class: 'slider-background-image', sizes: '(max-width: 1919px) 100vw, 1800.0001220703125px', loading: 'lazy' }}
+                  <div class="slider-background_wrap">{% if block.settings.image_image %}
+{{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'slider-background-image', sizes: '(max-width: 1919px) 100vw, 1800.0001220703125px', loading: 'lazy' }}
 {% else %}
-<img class="slider-background-image" src="{{ 'Muirhead-Hero-BG.jpg' | asset_url }}" alt="" sizes="(max-width: 1919px) 100vw, 1800.0001220703125px" loading="lazy" srcset="{{ 'Muirhead-Hero-BG-p-500.jpg' | asset_url }} 500w, {{ 'Muirhead-Hero-BG-p-800.jpg' | asset_url }} 800w, {{ 'Muirhead-Hero-BG-p-1080.jpg' | asset_url }} 1080w, {{ 'Muirhead-Hero-BG-p-1600.jpg' | asset_url }} 1600w, {{ 'Muirhead-Hero-BG.jpg' | asset_url }} 1800w">
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'slider-background-image' }} 
 {% endif %}</div>
                   <div class="slider-background-image-overlay"></div>
                   <div class="typo-zoom-text-wrapper">
@@ -19,7 +19,7 @@
 {{ block.settings.text_pre_heading }}
 </p>
                     <p class="hero-heading">
-{{ block.settings.text_pre_heading }}
+{{ block.settings.text_heading }}
 </p>
                     <div class="_2rem-spacer"></div>
                     <div class="div-block-516">
@@ -49,15 +49,21 @@
             "type": "slide",
             "settings": [
                 {
-                    "id": "image_background_image",
+                    "id": "image_image",
                     "type": "image_picker",
-                    "label": "Background Image"
+                    "label": "Image"
                 },
                 {
                     "id": "text_pre_heading",
                     "type": "text",
                     "label": "Pre-Heading",
                     "default": "More than"
+                },
+                {
+                    "id": "text_heading",
+                    "type": "text",
+                    "label": "Heading",
+                    "default": "Leather"
                 },
                 {
                     "id": "url_button_link",

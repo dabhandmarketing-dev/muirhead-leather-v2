@@ -538,16 +538,9 @@
 {% endif %}
                     <div class="nav_search">
                       <div data-hover="false" data-delay="0" class="nav_dropdown w-dropdown">
-                        <div class="nav_shop-icon w-dropdown-toggle">
-                          <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 25 25" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
-                              <mask id="mask0_2941_121300" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="25" height="25">
-                                <rect x="0.123535" y="0.987549" width="24" height="24" fill="#D9D9D9"></rect>
-                              </mask>
-                              <g mask="url(#mask0_2941_121300)">
-                                <path d="M19.7235 21.9875L13.4235 15.6875C12.9235 16.0875 12.3485 16.4042 11.6985 16.6375C11.0485 16.8709 10.3569 16.9875 9.62354 16.9875C7.80687 16.9875 6.26937 16.3584 5.01104 15.1C3.7527 13.8417 3.12354 12.3042 3.12354 10.4875C3.12354 8.67088 3.7527 7.13338 5.01104 5.87505C6.26937 4.61672 7.80687 3.98755 9.62354 3.98755C11.4402 3.98755 12.9777 4.61672 14.236 5.87505C15.4944 7.13338 16.1235 8.67088 16.1235 10.4875C16.1235 11.2209 16.0069 11.9125 15.7735 12.5625C15.5402 13.2125 15.2235 13.7875 14.8235 14.2875L21.1235 20.5875L19.7235 21.9875ZM9.62354 14.9875C10.8735 14.9875 11.936 14.55 12.811 13.675C13.686 12.8 14.1235 11.7375 14.1235 10.4875C14.1235 9.23755 13.686 8.17505 12.811 7.30005C11.936 6.42505 10.8735 5.98755 9.62354 5.98755C8.37354 5.98755 7.31104 6.42505 6.43604 7.30005C5.56104 8.17505 5.12354 9.23755 5.12354 10.4875C5.12354 11.7375 5.56104 12.8 6.43604 13.675C7.31104 14.55 8.37354 14.9875 9.62354 14.9875Z" fill="currentColor"></path>
-                              </g>
-                            </svg></div>
-                        </div>
+                        <div class="nav_shop-icon w-dropdown-toggle"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewbox="0 0 512 512" width="100%" fill="none" class="icon-embed-xsmall-5">
+                            <path d="M474.9,450.27l-109.33-109.33c27.18-32.68,43.55-74.65,43.55-120.37,0-103.97-84.59-188.56-188.56-188.56S32,116.59,32,220.56s84.59,188.55,188.56,188.55c45.72,0,87.69-16.37,120.37-43.55l109.34,109.33c3.4,3.4,7.86,5.1,12.32,5.1s8.92-1.7,12.32-5.1c6.8-6.8,6.8-17.83,0-24.63ZM66.84,220.56c0-84.77,68.96-153.73,153.72-153.73s153.72,68.96,153.72,153.73-68.96,153.71-153.72,153.71-153.72-68.95-153.72-153.71Z" fill="currentColor"></path>
+                          </svg></div>
                         <nav class="nav_predictive-search-holder w-dropdown-list">
                           <div li-element="dropdown-toggle" class="nav_predictive-search-close" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))"></div>
                           <div class="predictive-search_component">
@@ -1152,56 +1145,56 @@
                                 </div>
                               </div>
                               <div class="mini-cart_header"></div>
-                              <div class="mini-cart_line-item no-scrollbar">
-                                <ul role="list" class="mini-cart_line-item_list w-list-unstyled">
-                                  <template x-for="product in products" :key="product.key">
+                              <div class="div-block-756">
+                                <div class="mini-cart_line-item">
+                                  <ul role="list" class="mini-cart_line-item_list w-list-unstyled">
+                                    <template x-for="product in products" :key="product.key">
     <li li-element="mini-cart-item" class="mini-cart_line-item_item"><img src="../images/product-apparel-2.svg" loading="lazy" alt="" class="mini-cart_line-item_img" x-bind:src="product.image">
-                                    <div class="mini-cart_line-item_product-info">
-                                      <div li-js-object="product.title" class="text-size-regular text-weight-bold" x-text="product.title">Product Title</div>
-                                      <div class="mini-cart_line-item_price">
-                                        <div li-js-price="product.price" class="text-size-small" x-text="LiquifyHelper.moneyFormat(product.price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
-                                        <template x-if="product.price < product.original_price">
+                                      <div class="mini-cart_line-item_product-info">
+                                        <div li-js-object="product.title" class="text-size-regular text-weight-bold" x-text="product.title">Product Title</div>
+                                        <div class="mini-cart_line-item_price">
+                                          <div li-js-price="product.price" class="text-size-small" x-text="LiquifyHelper.moneyFormat(product.price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
+                                          <template x-if="product.price < product.original_price">
             <div li-js-if="product.price < product.original_price">
         
-                                          <div li-js-price="product.original_price" class="text-size-small text-style-strikethrough text-style-muted" x-text="LiquifyHelper.moneyFormat(product.original_price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
-                                                </div>
+                                            <div li-js-price="product.original_price" class="text-size-small text-style-strikethrough text-style-muted" x-text="LiquifyHelper.moneyFormat(product.original_price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
+                                                  </div>
     </template>
+                                        </div>
+                                        <div class="product-container_quantity-changers-2">
+                                          <a li-element="mini-cart-item-decrease" href="#" class="quantity-decreaser-4" :productprop="product" @click="$dispatch('decreasecartitem', { product: product.key, quantity: product.quantity, action: 'decrease' })">-</a><input li-element="mini-cart-item-quantity" class="quantity-changer-3 is-hidden-arrows" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
+                                          <a li-element="mini-cart-item-increase" href="#" class="quantity-increaser-4" :productprop="product" @click="$dispatch('increasecartitem', { product: product.key, quantity: product.quantity, action: 'increase' })">+</a>
+                                        </div>
+                                        <div li-element="mini-cart-item-remove" class="div-block-755" :productprop="product" @click="$dispatch('setcartitem', { product: product.key, quantity: 0 })"><svg viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" sf-cart-item-remove="1" class="cart-item-remover">
+                                            <path d="M14.7404 9L14.3942 18M9.60577 18L9.25962 9M19.2276 5.79057C19.5696 5.84221 19.9104 5.89747 20.25 5.95629M19.2276 5.79057L18.1598 19.6726C18.0696 20.8448 17.0921 21.75 15.9164 21.75H8.08357C6.90786 21.75 5.93037 20.8448 5.8402 19.6726L4.77235 5.79057M19.2276 5.79057C18.0812 5.61744 16.9215 5.48485 15.75 5.39432M3.75 5.95629C4.08957 5.89747 4.43037 5.84221 4.77235 5.79057M4.77235 5.79057C5.91878 5.61744 7.07849 5.48485 8.25 5.39432M15.75 5.39432V4.47819C15.75 3.29882 14.8393 2.31423 13.6606 2.27652C13.1092 2.25889 12.5556 2.25 12 2.25C11.4444 2.25 10.8908 2.25889 10.3394 2.27652C9.16065 2.31423 8.25 3.29882 8.25 4.47819V5.39432M15.75 5.39432C14.5126 5.2987 13.262 5.25 12 5.25C10.738 5.25 9.48744 5.2987 8.25 5.39432" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          </svg>
+                                          <div class="text-size-tiny text-color-grey text-style-link">Remove</div>
+                                        </div>
                                       </div>
-                                      <div class="product-container_quantity-changers-2">
-                                        <a li-element="mini-cart-item-decrease" href="#" class="quantity-decreaser-4" :productprop="product" @click="$dispatch('decreasecartitem', { product: product.key, quantity: product.quantity, action: 'decrease' })">-</a><input li-element="mini-cart-item-quantity" class="quantity-changer-3 is-hidden-arrows" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
-                                        <a li-element="mini-cart-item-increase" href="#" class="quantity-increaser-4" :productprop="product" @click="$dispatch('increasecartitem', { product: product.key, quantity: product.quantity, action: 'increase' })">+</a>
-                                      </div>
-                                      <div li-element="mini-cart-item-remove" class="div-block-755" :productprop="product" @click="$dispatch('setcartitem', { product: product.key, quantity: 0 })"><svg viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" sf-cart-item-remove="1" class="cart-item-remover">
-                                          <path d="M14.7404 9L14.3942 18M9.60577 18L9.25962 9M19.2276 5.79057C19.5696 5.84221 19.9104 5.89747 20.25 5.95629M19.2276 5.79057L18.1598 19.6726C18.0696 20.8448 17.0921 21.75 15.9164 21.75H8.08357C6.90786 21.75 5.93037 20.8448 5.8402 19.6726L4.77235 5.79057M19.2276 5.79057C18.0812 5.61744 16.9215 5.48485 15.75 5.39432M3.75 5.95629C4.08957 5.89747 4.43037 5.84221 4.77235 5.79057M4.77235 5.79057C5.91878 5.61744 7.07849 5.48485 8.25 5.39432M15.75 5.39432V4.47819C15.75 3.29882 14.8393 2.31423 13.6606 2.27652C13.1092 2.25889 12.5556 2.25 12 2.25C11.4444 2.25 10.8908 2.25889 10.3394 2.27652C9.16065 2.31423 8.25 3.29882 8.25 4.47819V5.39432M15.75 5.39432C14.5126 5.2987 13.262 5.25 12 5.25C10.738 5.25 9.48744 5.2987 8.25 5.39432" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                        <div class="text-size-tiny text-color-grey text-style-link">Remove</div>
-                                      </div>
-                                    </div>
-                                  </li></template>
-                                </ul>
-                              </div>
-                              <div id="subscription_benefits" class="div-block-753 is-active">
-                                <div id="current_sub" class="message-toggler is-active">
-                                  <ul role="list" class="list3_components w-list-unstyled">
-                                    <li class="list2_item">
-                                      <div class="list3_item-wrapper"><img loading="lazy" src="{{ 'checkmark.svg' | asset_url }}" alt="" class="list2_checkmark">
-                                        <div class="text-size-xtiny">Fast, insured courier</div>
-                                      </div>
-                                    </li>
-                                    <li class="list2_item">
-                                      <div class="list3_item-wrapper"><img loading="lazy" src="{{ 'leaf-outlined-natural-shape.svg' | asset_url }}" alt="" class="list2_checkmark">
-                                        <div class="text-size-xtiny">The Worlds Lowest Carbon Leather</div>
-                                      </div>
-                                    </li>
-                                    <li class="list2_item">
-                                      <div class="list3_item-wrapper"><img loading="lazy" src="{{ 'padlock.svg' | asset_url }}" alt="" class="list2_checkmark">
-                                        <div class="text-size-xtiny">Secure Payment With Shopify</div>
-                                      </div>
-                                    </li>
+                                    </li></template>
                                   </ul>
                                 </div>
-                              </div>
-                              <div class="mini-cart_footer">
+                                <div id="subscription_benefits" class="div-block-753 is-active">
+                                  <div id="current_sub" class="message-toggler is-active">
+                                    <ul role="list" class="list3_components w-list-unstyled">
+                                      <li class="list2_item">
+                                        <div class="list3_item-wrapper"><img loading="lazy" src="{{ 'checkmark.svg' | asset_url }}" alt="" class="list2_checkmark">
+                                          <div class="text-size-xtiny">Fast, insured courier</div>
+                                        </div>
+                                      </li>
+                                      <li class="list2_item">
+                                        <div class="list3_item-wrapper"><img loading="lazy" src="{{ 'leaf-outlined-natural-shape.svg' | asset_url }}" alt="" class="list2_checkmark">
+                                          <div class="text-size-xtiny">The Worlds Lowest Carbon Leather</div>
+                                        </div>
+                                      </li>
+                                      <li class="list2_item">
+                                        <div class="list3_item-wrapper"><img loading="lazy" src="{{ 'padlock.svg' | asset_url }}" alt="" class="list2_checkmark">
+                                          <div class="text-size-xtiny">Secure Payment With Shopify</div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
                                 <div class="mini-cart_footer-total">
                                   <div class="text-size-regular text-weight-bold">Subtotal</div>
                                   <div class="mini-cart_footer-price">
@@ -1220,6 +1213,24 @@
                                     <div li-js-object="cartApiResponse?.result?.message" class="text-size-regular text-weight-bold" x-text="cartApiResponse?.result?.message">14,99 $</div>
                                   </div>
                                 </div>
+                                <div class="cart-summary">
+                                  <div sf-cart-subtotal-wrapper="1" class="cart_subtotal-row">
+                                    <div class="label">Subtotal</div>
+                                    <div sf-cart-subtotal="1" class="cart-subtotal">$0</div>
+                                  </div>
+                                  <div class="cart-summary-line thinner hide">
+                                    <div>Shipping</div>
+                                    <div id="shipping_text">Calculated at checkout</div>
+                                  </div>
+                                  <div class="cart-summary-line total">
+                                    <div>Total</div>
+                                    <div class="cart-price-summary">
+                                      <div sf-cart-total="1" class="cart-total text-weight-bold">$0</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mini-cart_footer">
                                 <div class="cta1_wrapper">
                                   <div id="button_holder" class="cta1_inner">
                                     <a id="proceed_checkout" href="#" sf-checkout="1" class="button-22 is-full w-inline-block">
@@ -1290,27 +1301,6 @@
                                   </div>
                                 </div>
                               </div>
-                              <div id="cart-footer" class="jv_cart-footer">
-                                <div>
-                                  <div class="cart-summary">
-                                    <div sf-cart-subtotal-wrapper="1" class="cart_subtotal-row">
-                                      <div class="label">Subtotal</div>
-                                      <div sf-cart-subtotal="1" class="cart-subtotal">$0</div>
-                                    </div>
-                                    <div class="cart-summary-line thinner hide">
-                                      <div>Shipping</div>
-                                      <div id="shipping_text">Calculated at checkout</div>
-                                    </div>
-                                    <div class="cart-summary-line total">
-                                      <div>Total</div>
-                                      <div class="cart-price-summary">
-                                        <div sf-cart-total="1" class="cart-total text-weight-bold">$0</div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="padding-bottom padding-xsmall"></div>
-                                </div>
-                              </div>
                               <div class="_4rem-spacer"></div>
                               <div class="_4rem-spacer"></div>
                             </div>
@@ -1374,19 +1364,20 @@
                       </div>
                     </div>
                   </div>
-                  <div class="hide-tablet"></div>
-                  <a href="#" bind="14f24e57-65b0-d756-3869-f8d259cb601e" sym-bind="{"link":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"abd48bfb-d708-6bdf-d8a5-842d29e77fd1"}}}" class="button-4 white-28 no-arrow w-inline-block">
-                    <div class="icon-link-3">
-                      <div class="clip-2 white-10">
-                        <div class="hover-text white-31">
-                          <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34">Contact</div>
-                        </div>
-                        <div class="hover-text white-31 bottom white-20">
-                          <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34">Contact</div>
+                  <div class="hide-tablet">
+                    <a href="#" bind="14f24e57-65b0-d756-3869-f8d259cb601e" sym-bind="{"link":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"abd48bfb-d708-6bdf-d8a5-842d29e77fd1"}}}" class="button-4 white-28 no-arrow w-inline-block">
+                      <div class="icon-link-3">
+                        <div class="clip-2 white-10">
+                          <div class="hover-text white-31">
+                            <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34">Contact</div>
+                          </div>
+                          <div class="hover-text white-31 bottom white-20">
+                            <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34">Contact</div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                   <div id="menu-trigger" class="menu-trigger">
                     <div class="m-navigation-button-wrapper">
                       <div data-w-id="1171fcbf-5149-a415-23f1-5c51ac060613" class="hamburger_2_wrap">
