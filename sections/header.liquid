@@ -1,272 +1,733 @@
-<div data-animation="default" class="nav_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="9132635a-7891-b0d1-9b20-ecb0d5a86df9" role="banner" data-duration="400" x-data="">
-          <div class="nav_container">
-            <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="nav_logo-link w-nav-brand">{% if section.settings.image_logo %}
-{{ section.settings.image_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'nav_logo' }}
-{% else %}
-<img src="{{ 'liquify-logo.svg' | asset_url }}" loading="lazy" alt="" class="nav_logo">
-{% endif %}</a>
-            <nav role="navigation" id="w-node-_9132635a-7891-b0d1-9b20-ecb0d5a86dfd-d5a86df8" class="nav_menu is-page-height-tablet w-nav-menu">
-              {% for link in linklists[section.settings.menu].links %}    <div data-hover="true" data-delay="200" li-for="link in linklists[section.settings.menu].links" class="nav_menu-dropdown w-dropdown">
-                                    
-                
-                            <div class="nav_dropdown-toggle w-dropdown-toggle">
-                  {% if link.links.size > 0 %}    <div li-if="link.links.size > 0" class="dropdown-icon w-embed">
-    <svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
-                    </svg>    </div>
-{% endif %}
-                  <a li-object:href="link.url" href="{{ link.url }}" class="w-inline-block">
-                    <div>
-                      <div li-object="link.title">{{ link.title }}</div>
+<div data-collapse="medium" data-animation="over-right" data-duration="400" data-easing="ease" data-easing2="ease" data-no-scroll="1" role="banner" class="navbar w-nav">
+          <div class="search-nav-container-2">
+            <div class="div-block-180">
+              <div sf-product-search="1" class="search-box-2">
+                <div class="search-form-group-2">
+                  <div class="search-form-2 w-form"><img width="30" loading="lazy" alt="" src="https://uploads-ssl.webflow.com/60f3ae621a52266311cef9f6/616ea633e0ff368638cf149a_search-fat%201.svg" class="search-icon-2">
+                    <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-3" data-wf-page-id="68e22fae932bc475029cc993" data-wf-element-id="1171fcbf-5149-a415-23f1-5c51ac0603fb"><input class="search-2 w-input" maxlength="256" name="search-2" data-name="Search 2" placeholder="Search" type="text" id="search-2" sf-search-input="1"><input type="submit" data-wait="Please wait..." class="submit-button-2 w-button" value="Submit"></form>
+                    <div class="w-form-done">
+                      <div>Thank you! Your submission has been received!</div>
                     </div>
-                  </a>
+                    <div class="w-form-fail">
+                      <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                  </div>
+                  <a data-w-id="1171fcbf-5149-a415-23f1-5c51ac060404" href="#" class="searchclose w-inline-block"><img loading="lazy" src="https://uploads-ssl.webflow.com/60f3ae621a52266311cef9f6/616ea633e0ff3605f9cf1498_Group%20423.svg" alt="" class="image-8"></a>
                 </div>
-                            
-                
-                            {% if link.links.size > 0  %}    <nav li-if="link.links.size > 0 " class="nav_dropdown-list no-scrollbar w-dropdown-list">
-    
-                  <div class="padding-global max-width-full">
-                    <div class="container-large">
-                      <div class="nav_dropdown-grid">
-                        {% for child_link in link.links %}    <div li-for="child_link in link.links" id="w-node-_9132635a-7891-b0d1-9b20-ecb0d5a86e09-d5a86df8">
-                                    
-                          
-                            <a href="{{ child_link.url }}" li-object="child_link.title" li-object:href="child_link.url" class="nav_dropdown-link w-dropdown-link">{{ child_link.title }}</a>
-                            
-                          
-                            {% if child_link.links.size > 0 %}    <div li-if="child_link.links.size > 0">
-    
-                            {% for grandchild_link in child_link.links %}    <div li-for="grandchild_link in child_link.links">
-                                    
-                              
-                            <a href="{{ grandchild_link.url }}" li-object="grandchild_link.title" li-object:href="grandchild_link.url" class="nav_dropdown-link_child w-dropdown-link">{{ grandchild_link.title }}</a>
-                            
-                            
+                <div sf-product-search="1" class="searchdropdown">
+                  <div sf-limit="6" sf-search-result-list="1" class="search-results">
+                    <div sf-product-link="1" sf-search-result-item="1" class="search-result-item-2">
+                      <div sf-show-image="1" class="search-result-image"></div>
+                      <div class="flex-column">
+                        <div class="product-info-cart">
+                          <div sf-show-title="1" class="search-result-title body-large">Minimalist Sneakers</div>
                         </div>
-{% endfor %}
-                              </div>
-{% endif %}
-                            
-                        
+                        <div class="search-result-price">
+                          <div sf-show-price="1" class="cart-item-total-2">$0</div>
+                          <div sf-show-compare-price="1" class="cart-item-prediscount-price-2">$0</div>
                         </div>
-{% endfor %}
                       </div>
                     </div>
                   </div>
-                    </nav>
-{% endif %}
-                            
-              
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menugrid">
+            <div id="w-node-_1171fcbf-5149-a415-23f1-5c51ac060414-d5a86df8" class="navigation-bar">
+              <div class="navigation-split">
+                <div class="navigation-side align-left">
+                  <nav role="navigation" class="nav-menu-beyond w-nav-menu">
+                    <div data-delay="0" data-hover="false" bind="e9b2fdd6-cf18-4a0d-7901-56eee20a5151" data-w-id="1171fcbf-5149-a415-23f1-5c51ac060418" class="navigation-dropdown-2 is-static w-dropdown">
+                      <div class="navigation-toggle-4 w-dropdown-toggle">
+                        <div href="#" class="nav-link-4">
+                          <div class="nav-text-wrap-2">
+                            <div class="link-text-2">Sectors<br></div>
+                            <div class="link-text-hov-2">Sectors</div>
+                          </div>
                         </div>
-{% endfor %}
-            </nav>
-            <div class="nav_shop-icons">
-              <div class="nav_search">
-                <div data-hover="false" data-delay="0" class="nav_dropdown w-dropdown">
-                  <div class="nav_shop-icon w-dropdown-toggle">
-                    <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 25 25" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
-                        <mask id="mask0_2941_121300" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="25" height="25">
-                          <rect x="0.123535" y="0.987549" width="24" height="24" fill="#D9D9D9"></rect>
-                        </mask>
-                        <g mask="url(#mask0_2941_121300)">
-                          <path d="M19.7235 21.9875L13.4235 15.6875C12.9235 16.0875 12.3485 16.4042 11.6985 16.6375C11.0485 16.8709 10.3569 16.9875 9.62354 16.9875C7.80687 16.9875 6.26937 16.3584 5.01104 15.1C3.7527 13.8417 3.12354 12.3042 3.12354 10.4875C3.12354 8.67088 3.7527 7.13338 5.01104 5.87505C6.26937 4.61672 7.80687 3.98755 9.62354 3.98755C11.4402 3.98755 12.9777 4.61672 14.236 5.87505C15.4944 7.13338 16.1235 8.67088 16.1235 10.4875C16.1235 11.2209 16.0069 11.9125 15.7735 12.5625C15.5402 13.2125 15.2235 13.7875 14.8235 14.2875L21.1235 20.5875L19.7235 21.9875ZM9.62354 14.9875C10.8735 14.9875 11.936 14.55 12.811 13.675C13.686 12.8 14.1235 11.7375 14.1235 10.4875C14.1235 9.23755 13.686 8.17505 12.811 7.30005C11.936 6.42505 10.8735 5.98755 9.62354 5.98755C8.37354 5.98755 7.31104 6.42505 6.43604 7.30005C5.56104 8.17505 5.12354 9.23755 5.12354 10.4875C5.12354 11.7375 5.56104 12.8 6.43604 13.675C7.31104 14.55 8.37354 14.9875 9.62354 14.9875Z" fill="currentColor"></path>
-                        </g>
-                      </svg></div>
-                  </div>
-                  <nav class="nav_predictive-search-holder w-dropdown-list">
-                    <div li-element="dropdown-toggle" class="nav_predictive-search-close" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))"></div>
-                    <div class="predictive-search_component">
-                      <div class="predictive-search_header">
-                        <div class="heading-style-h3">
-{{ section.settings.text_search }}
-</div><button li-element="dropdown-toggle" aria-label="Close Search" class="nav_dropdown-close-button" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
-                          <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M1.84775 14.178L0.447754 12.778L6.04775 7.17798L0.447754 1.57798L1.84775 0.177979L7.44775 5.77798L13.0478 0.177979L14.4478 1.57798L8.84775 7.17798L14.4478 12.778L13.0478 14.178L7.44775 8.57798L1.84775 14.178Z" fill="currentColor"></path>
-                            </svg></div>
-                        </button>
-                      </div><predictive-search>
-                        <div class="predictive-search_holder">
-                          <div class="predictive-search_form w-form">
-                            <form id="wf-form-produkt-suche" name="wf-form-produkt-suche" data-name="produkt-suche" action="/search" method="get" class="predictive-search_form-component" data-wf-page-id="68e22fae932bc475029cc993" data-wf-element-id="ace72904-ccb0-6b8e-3d5e-d5f5ca33919d">
-                              <div class="predictive-search_input-holder"><label for="search-input" class="form_hidden-label">Search</label><input type="search" id="search-input" placeholder="Search now" name="q" class="predictive-search_input">
-                                <a href="#" class="predictive-search_search-button w-inline-block">
-                                  <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 25 25" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
-                                      <mask id="mask0_2941_121300" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="25" height="25">
-                                        <rect x="0.123535" y="0.987549" width="24" height="24" fill="#D9D9D9"></rect>
-                                      </mask>
-                                      <g mask="url(#mask0_2941_121300)">
-                                        <path d="M19.7235 21.9875L13.4235 15.6875C12.9235 16.0875 12.3485 16.4042 11.6985 16.6375C11.0485 16.8709 10.3569 16.9875 9.62354 16.9875C7.80687 16.9875 6.26937 16.3584 5.01104 15.1C3.7527 13.8417 3.12354 12.3042 3.12354 10.4875C3.12354 8.67088 3.7527 7.13338 5.01104 5.87505C6.26937 4.61672 7.80687 3.98755 9.62354 3.98755C11.4402 3.98755 12.9777 4.61672 14.236 5.87505C15.4944 7.13338 16.1235 8.67088 16.1235 10.4875C16.1235 11.2209 16.0069 11.9125 15.7735 12.5625C15.5402 13.2125 15.2235 13.7875 14.8235 14.2875L21.1235 20.5875L19.7235 21.9875ZM9.62354 14.9875C10.8735 14.9875 11.936 14.55 12.811 13.675C13.686 12.8 14.1235 11.7375 14.1235 10.4875C14.1235 9.23755 13.686 8.17505 12.811 7.30005C11.936 6.42505 10.8735 5.98755 9.62354 5.98755C8.37354 5.98755 7.31104 6.42505 6.43604 7.30005C5.56104 8.17505 5.12354 9.23755 5.12354 10.4875C5.12354 11.7375 5.56104 12.8 6.43604 13.675C7.31104 14.55 8.37354 14.9875 9.62354 14.9875Z" fill="currentColor"></path>
-                                      </g>
-                                    </svg></div>
-                                </a><input type="submit" data-wait="Please wait..." id="submit-search" class="hide w-button" value="Submit">
-                              </div>
-                              <div id="predictive-search" class="predictive-search_overflow no-scrollbar">
-                                <div li-section="predictive_search" class="predictive-search_section">
-                                  {% if predictive_search.performed %}    <div li-if="predictive_search.performed" class="predictive-search_conditional">
-    
-                                    {% assign first_column_results_size = predictive_search.resources.queries.size | plus: predictive_search.resources.collections.size | plus: predictive_search.resources.pages.size | plus: predictive_search.resources.articles.size | plus: predictive_search.resources.products.size %}
-                                    {% if first_column_results_size > 0 %}    <div li-if="first_column_results_size > 0" class="predictive-search_conditional">
-    
-                                      {% if predictive_search.resources.queries.size > 0 or predictive_search.resources.collections.size > 0 %}    <div li-if="predictive_search.resources.queries.size > 0 or predictive_search.resources.collections.size > 0" class="predictive-search_topic">
-    
-                                        <div class="predictive-search_headline">
-                                          <div class="text-style-muted">Suggestions</div>
-                                        </div>
-                                        <ul role="list" class="predictive-search_list w-list-unstyled">
-                                          {% for query in predictive_search.resources.queries %}    <li li-for="query in predictive_search.resources.queries" class="predictive-search_item">
-                                    
-                                            
-                            <a li-object:href="query.url" href="{{ query.url }}" class="predictive-search_link w-inline-block">
-                                              <div li-object="query.styled_text">{{ query.styled_text }}</div>
-                                            </a>
-                            
-                                          
-                        </li>
-{% endfor %}
-                                          {% for collection in predictive_search.resources.collections %}    <li li-for="collection in predictive_search.resources.collections" class="predictive-search_item">
-                                    
-                                            
-                            <a li-object:href="collection.url" href="{{ collection.url }}" class="predictive-search_link w-inline-block">
-                                              <div li-object="collection.title">{{ collection.title }}</div>
-                                            </a>
-                            
-                                          
-                        </li>
-{% endfor %}
-                                        </ul>
-                                          </div>
-{% endif %}
-                                      {% if predictive_search.resources.products.size > 0 or predictive_search.resources.articles.size > 0 or predictive_search.resources.pages.size > 0 %}    <div li-if="predictive_search.resources.products.size > 0 or predictive_search.resources.articles.size > 0 or predictive_search.resources.pages.size > 0" class="predictive-search_topic">
-    
-                                        <div class="predictive-search_headline">
-                                          <div class="text-style-muted">Products</div>
-                                        </div>
-                                        <ul role="list" class="predictive-search_product-list w-list-unstyled">
-                                          {% for product in predictive_search.resources.products %}    <li li-for="product in predictive_search.resources.products" class="predictive-search_produt-item">
-                                    
-                                            
-                            <a li-object:href="product.url" href="{{ product.url }}" class="predictive-search_line-item w-inline-block">
-                                              <div class="predictive-search_image-wrapper"><img li-object:src="product.featured_media | image_url: width: 150" li-object:alt="product.featured_image.alt" alt="{{ product.featured_image.alt }}" src="{{ product.featured_media | image_url: width: 150 }}" loading="lazy" class="predictive-search_image"></div>
-                                              <div class="predictive-search_product-info">
-                                                <div class="text-size-regular text-weight-bold"><span li-object="product.title">{{ product.title }}</span></div>
-                                                <div class="text-size-small"><span li-object="product.price | money">{{ product.price | money }}</span></div>
-                                              </div>
-                                            </a>
-                            
-                                          
-                        </li>
-{% endfor %}
-                                        </ul>
-                                          </div>
-{% endif %}
-                                      {% if predictive_search.resources.articles.size > 0 or predictive_search.resources.pages.size > 0 %}    <div li-if="predictive_search.resources.articles.size > 0 or predictive_search.resources.pages.size > 0" class="predictive-search_topic">
-    
-                                        <div class="predictive-search_headline">
-                                          <div class="text-style-muted">Pages</div>
-                                        </div>
-                                        <ul role="list" class="predictive-search_list w-list-unstyled">
-                                          {% for page in predictive_search.resources.pages %}    <li li-for="page in predictive_search.resources.pages" class="predictive-search_item">
-                                    
-                                            
-                            <a li-object:href="page.url" href="{{ page.url }}" class="predictive-search_link w-inline-block">
-                                              <div li-object="page.title">{{ page.title }}</div>
-                                            </a>
-                            
-                                          
-                        </li>
-{% endfor %}
-                                        </ul>
-                                          </div>
-{% endif %}
-                                        </div>
-{% endif %}
-                                    {% if first_column_results_size == 0 %}    <div li-if="first_column_results_size == 0" class="predictive-search_conditional">
-    
-                                      <div class="predictive-search_topic">
-                                        <div class="text-style-muted">Nothing found in "<span li-object="predictive_search.terms">{{ predictive_search.terms }}</span>"</div>
-                                      </div>
-                                        </div>
-{% endif %}
-                                      </div>
-{% endif %}
-                                  {% unless predictive_search.performed %}    <div li-unless="predictive_search.performed" class="predictive-search_conditional">
-    
-                                    <div class="predictive-search_overflow">
-                                      <div class="predictive-search_topic">
-                                        <div class="predictive-search_headline">
-                                          <div class="text-style-muted">Suggestions</div>
-                                        </div>
-                                        <ul role="list" class="predictive-search_list w-list-unstyled">
-                                          {% for block in section.blocks %}
-    {% if block.type == "search-suggestion" %}
-                    <li li-block="Search - Suggestion" class="predictive-search_item">
-                                    
-                                            
-                                    <a href="{{ block.settings.url_link }}" class="predictive-search_link w-inline-block"> <div>{{ block.settings.text_text }}</div> </a>
-                                    
-                                          
-                            </li>
-            {% endif %}
-{% endfor %}
-                                        </ul>
-                                      </div>
-                                      <div class="predictive-search_topic">
-                                        <div class="predictive-search_headline">
-                                          <div class="text-style-muted">Bestseller</div>
-                                        </div>
-                                        <ul role="list" class="predictive-search_product-list w-list-unstyled">
-                                          {% for product in section.settings.collection_search_bestseller.products limit: section.settings.collection_search_bestseller_limit %}
-<li class="predictive-search_produt-item">
-    
-                                            
-    <a li-object:href="product.url" href="{{ product.url }}" class="predictive-search_line-item w-inline-block">
-                                              <div class="predictive-search_image-wrapper"><img li-object:src="product.featured_image | img_url: 'master'" li-object:alt="product.featured_image.alt" alt="{{ product.featured_image.alt }}" src="{{ product.featured_image | img_url: 'master' }}" loading="lazy" class="predictive-search_image"></div>
-                                              <div class="predictive-search_product-info">
-                                                <div class="text-size-regular text-weight-bold"><span li-object="product.title">{{ product.title }}</span></div>
-                                                <div class="text-size-small"><span li-object="product.price | money">{{ product.price | money }}</span></div>
-                                              </div>
-                                            </a>
-    
-                                          
-</li>
-{% endfor %}
-                                        </ul>
+                        <div bind="e9b2fdd6-cf18-4a0d-7901-56eee20a515a" class="dropdown-icon-2 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 10.5L12 15L16.5 10.5" stroke="currentColor" stroke-width="1.5"></path>
+                          </svg></div>
+                      </div>
+                      <nav class="dropdown-list-wide-2 w-dropdown-list">
+                        <div class="dropdowncard">
+                          <section class="promo-section">
+                            <div class="promo-container">
+                              <a href="#" class="promo-wrapper w-inline-block">
+                                <h3 class="text-color-white-2 text-align-center z-index-2">Aviation</h3>
+                                <div class="promo-overlay z-index-1"></div>
+                                <div class="promo-image-wrapper"></div>
+                              </a>
+                              <a href="#" class="promo-wrapper w-inline-block">
+                                <h3 class="text-color-white-2 text-align-center z-index-2">Passenger Transport</h3>
+                                <div class="promo-overlay z-index-1"></div>
+                                <div class="promo-image-wrapper two"></div>
+                              </a>
+                              <a href="#" class="promo-wrapper w-inline-block">
+                                <h3 class="text-color-white-2 text-align-center z-index-2">Interiors & Luxury</h3>
+                                <div class="promo-overlay z-index-1"></div>
+                                <div class="promo-image-wrapper three"></div>
+                              </a>
+                            </div>
+                          </section>
+                        </div>
+                      </nav>
+                    </div>
+                    <div data-delay="0" data-hover="false" bind="c06ae72a-7862-cb4d-7791-0e83716c2bee" data-w-id="1171fcbf-5149-a415-23f1-5c51ac060435" class="navigation-dropdown-2 is-static w-dropdown">
+                      <div class="navigation-toggle-4 w-dropdown-toggle">
+                        <div href="#" class="nav-link-4">
+                          <div class="nav-text-wrap-2">
+                            <div class="link-text-2">About</div>
+                            <div class="link-text-hov-2">About</div>
+                          </div>
+                        </div>
+                        <div bind="c06ae72a-7862-cb4d-7791-0e83716c2bf8" class="dropdown-icon-2 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 10.5L12 15L16.5 10.5" stroke="currentColor" stroke-width="1.5"></path>
+                          </svg></div>
+                      </div>
+                      <nav class="dropdown-list-wide-2 w-dropdown-list">
+                        <div class="dropdowncard">
+                          <div class="w-layout-grid nav-menu-card">
+                            <div id="w-node-_1171fcbf-5149-a415-23f1-5c51ac060441-d5a86df8" class="nav-menu-image">
+                              <a href="#" class="places-card w-inline-block">
+                                <div class="places-card_image-wrap"><img sizes="100vw" srcset="{{ 'muirhead_our_story_low_carbon_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_our_story_low_carbon_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_our_story_low_carbon_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }}" class="image-56"></div>
+                                <div class="places-card_image-overlay"></div>
+                                <div class="places-card_content">
+                                  <h3 class="places-card_heading-text">Low Carbon Leather</h3>
+                                  <div class="places-card_desc-wrap">
+                                    <p class="places-card_desc-text">We make the lowest carbon<br>leather in the world.</p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="div-block-517">
+                              <div class="nav-links-featured">
+                                <a href="#" class="nav-link-featured w-inline-block">
+                                  <div data-delay="0" data-hover="true" class="nav-dropdown-link w-dropdown">
+                                    <div class="nav-dropdown-trigger w-dropdown-toggle">
+                                      <div class="h6-heading text-weight-medium">Our Heritage</div>
+                                      <div class="nav-dropdown-icon">
+                                        <div class="icon-small-4 w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#48816B"></path>
+                                          </svg></div>
                                       </div>
                                     </div>
+                                    <nav class="nav-dropdown-list w-dropdown-list">
+                                      <div class="nav-dropdown-content">
+                                        <div class="paragraph-small-5 text-color-tertiary">Fine Scottish Leather since 1840</div>
                                       </div>
-{% endunless %}
+                                    </nav>
+                                  </div>
+                                </a>
+                                <a href="#" class="nav-link-featured w-inline-block">
+                                  <div data-delay="0" data-hover="true" class="nav-dropdown-link w-dropdown">
+                                    <div class="nav-dropdown-trigger w-dropdown-toggle">
+                                      <div class="h6-heading text-weight-medium">Our Future</div>
+                                      <div class="nav-dropdown-icon">
+                                        <div class="icon-small-4 w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#48816B"></path>
+                                          </svg></div>
+                                      </div>
+                                    </div>
+                                    <nav class="nav-dropdown-list w-dropdown-list">
+                                      <div class="nav-dropdown-content">
+                                        <div class="paragraph-small-5 text-color-tertiary">Driving cutting-edge solutions</div>
+                                      </div>
+                                    </nav>
+                                  </div>
+                                </a>
+                                <a href="#" class="nav-link-featured w-inline-block">
+                                  <div data-delay="0" data-hover="true" class="nav-dropdown-link w-dropdown">
+                                    <div class="nav-dropdown-trigger w-dropdown-toggle">
+                                      <div class="h6-heading text-weight-medium">Journal</div>
+                                      <div class="nav-dropdown-icon">
+                                        <div class="icon-small-4 w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#48816B"></path>
+                                          </svg></div>
+                                      </div>
+                                    </div>
+                                    <nav class="nav-dropdown-list w-dropdown-list">
+                                      <div class="nav-dropdown-content">
+                                        <div class="paragraph-small-5 text-color-tertiary">Exciting news from the leather industry</div>
+                                      </div>
+                                    </nav>
+                                  </div>
+                                </a>
+                              </div>
+                              <a href="#" class="slg-logo-menu w-inline-block"><img loading="lazy" src="{{ 'slg-logo.svg' | asset_url }}" alt=""></a>
+                            </div>
+                            <div id="w-node-_1171fcbf-5149-a415-23f1-5c51ac060473-d5a86df8" class="nav-menu-block">
+                              <div class="w-layout-grid nav-menu-links">
+                                <div class="column-x-small-2">
+                                  <div class="subheading-large dark">Our Expertise</div>
+                                  <a href="#" class="nav-text-link">Complete Control</a>
+                                  <a href="#" class="nav-text-link">Local Sourcing</a>
+                                  <a href="#" class="nav-text-link">Modern Tanning</a>
+                                  <a href="#" class="nav-text-link">Seat Cover Service</a>
+                                  <a href="#" class="nav-text-link">Product Design</a>
+                                  <a href="#" class="nav-text-link">Performance Testing</a>
                                 </div>
                               </div>
-                            </form>
-                            <div class="hide w-form-done">
-                              <div>Thank you! Your submission has been received!</div>
-                            </div>
-                            <div class="hide w-form-fail">
-                              <div>Oops! Something went wrong while submitting the form.</div>
+                              <div class="column-2x-small column-left">
+                                <a href="#" bind="14f24e57-65b0-d756-3869-f8d259cb601e" sym-bind="{"link":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"abd48bfb-d708-6bdf-d8a5-842d29e77fd1"}}}" class="button-4 white-28 link-dark-60 w-inline-block">
+                                  <div class="icon-link-3 link-dark-61">
+                                    <div class="clip-2 white-10 link-dark-83">
+                                      <div class="hover-text white-31 link-dark-48">
+                                        <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34 link-dark-66">Order Samples</div>
+                                      </div>
+                                      <div class="hover-text white-31 link-dark-48 bottom white-20 link-dark-65">
+                                        <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34 link-dark-66">Order Samples</div>
+                                      </div>
+                                    </div>
+                                    <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22 link-dark-52">
+                                      <div class="clip-2 white-10 link-dark-83">
+                                        <div class="hover-arrow-3 link-dark-39"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="" alt="" loading="lazy" class="icon-1x1-small-7 white-12 link-dark-44"></div>
+                                        <div class="hover-arrow-3 link-dark-39 left-arrow link-dark-42"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68e2301d72211f0b080d09d7/68e2301d72211f0b080d0b80_arrow-right-long-line.svg" class="icon-1x1-small-7 white-12 link-dark-44"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="_0-5rem-spacer"></div>
+                                <a href="#" class="nav-text-link-small">sales@muirhead.co.uk</a>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </predictive-search>
+                      </nav>
+                    </div>
+                    <div class="div-block-503">
+                      <div data-delay="0" data-hover="false" bind="e9b2fdd6-cf18-4a0d-7901-56eee20a51ec" data-w-id="1171fcbf-5149-a415-23f1-5c51ac06049a" class="navigation-dropdown-2 centre w-dropdown">
+                        <div class="navigation-toggle-4 w-dropdown-toggle">
+                          <div href="#" class="nav-link-4">
+                            <div class="nav-text-wrap-2">
+                              <div class="link-text-2">Products<br></div>
+                              <div class="link-text-hov-2">Products</div>
+                            </div>
+                          </div>
+                          <div bind="e9b2fdd6-cf18-4a0d-7901-56eee20a51f5" class="dropdown-icon-2 w-embed"><svg viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.5 10.5L12 15L16.5 10.5" stroke="currentColor" stroke-width="1.5"></path>
+                            </svg></div>
+                        </div>
+                        <nav class="list-grove w-dropdown-list">
+                          <div class="div-block-502">
+                            <div class="w-layout-grid nav-2-menu-card">
+                              <div class="nav-2-menu-links">
+                                <div class="column-x-small-2">
+                                  <a href="#" class="footer-link-2 dark-138 w-inline-block">
+                                    <div>Our Innovations</div>
+                                    <div class="icon-small-3 dark-151 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                                        <path d="M10.9761 10.0006L6.85132 5.87577L8.02983 4.69727L13.3332 10.0006L8.02983 15.3038L6.85132 14.1253L10.9761 10.0006Z" fill="currentColor"></path>
+                                      </svg></div>
+                                  </a>
+                                  <a href="#" class="footer-link-2 dark-138 w-inline-block">
+                                    <div>BioPro® Foam</div>
+                                    <div class="icon-small-3 dark-151 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                                        <path d="M10.9761 10.0006L6.85132 5.87577L8.02983 4.69727L13.3332 10.0006L8.02983 15.3038L6.85132 14.1253L10.9761 10.0006Z" fill="currentColor"></path>
+                                      </svg></div>
+                                  </a>
+                                  <a href="#" class="footer-link-2 dark-138 w-inline-block">
+                                    <div>Custom Products</div>
+                                    <div class="icon-small-3 dark-151 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                                        <path d="M10.9761 10.0006L6.85132 5.87577L8.02983 4.69727L13.3332 10.0006L8.02983 15.3038L6.85132 14.1253L10.9761 10.0006Z" fill="currentColor"></path>
+                                      </svg></div>
+                                  </a>
+                                  <a href="#" class="footer-link-2 dark-138 w-inline-block">
+                                    <div>Leather Care</div>
+                                    <div class="icon-small-3 dark-151 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                                        <path d="M10.9761 10.0006L6.85132 5.87577L8.02983 4.69727L13.3332 10.0006L8.02983 15.3038L6.85132 14.1253L10.9761 10.0006Z" fill="currentColor"></path>
+                                      </svg></div>
+                                  </a>
+                                </div>
+                                <a href="#" bind="14f24e57-65b0-d756-3869-f8d259cb601e" sym-bind="{"link":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"abd48bfb-d708-6bdf-d8a5-842d29e77fd1"}}}" class="button-4 white-28 link-dark-60 w-inline-block">
+                                  <div class="icon-link-3 link-dark-61">
+                                    <div class="clip-2 white-10 link-dark-83">
+                                      <div class="hover-text white-31 link-dark-48">
+                                        <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34 link-dark-66">Order Samples</div>
+                                      </div>
+                                      <div class="hover-text white-31 link-dark-48 bottom white-20 link-dark-65">
+                                        <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34 link-dark-66">Order Samples</div>
+                                      </div>
+                                    </div>
+                                    <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22 link-dark-52">
+                                      <div class="clip-2 white-10 link-dark-83">
+                                        <div class="hover-arrow-3 link-dark-39"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="" alt="" loading="lazy" class="icon-1x1-small-7 white-12 link-dark-44"></div>
+                                        <div class="hover-arrow-3 link-dark-39 left-arrow link-dark-42"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68e2301d72211f0b080d09d7/68e2301d72211f0b080d0b80_arrow-right-long-line.svg" class="icon-1x1-small-7 white-12 link-dark-44"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <a href="#" class="places-card xs-9 w-inline-block">
+                                <div class="places-card_image-wrap xs-10"><img sizes="100vw" srcset="{{ 'interiors-and-luxury-p-500.webp' | asset_url }} 500w, {{ 'interiors-and-luxury-p-800.webp' | asset_url }} 800w, {{ 'interiors-and-luxury-p-1080.webp' | asset_url }} 1080w, {{ 'interiors-and-luxury.webp' | asset_url }} 1520w" alt="" loading="lazy" src="{{ 'interiors-and-luxury.webp' | asset_url }}" class="image-56 xs-11"></div>
+                                <div class="places-card_image-overlay xs-4"></div>
+                                <div class="places-card_content xs-13">
+                                  <h3 class="places-card_heading-text xs-14">Why Leather?</h3>
+                                  <div class="places-card_desc-wrap xs-7">
+                                    <p class="places-card_desc-text xs-8">Leather means luxury</p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="div-block-503">
+                      <div data-delay="0" data-hover="false" bind="e9b2fdd6-cf18-4a0d-7901-56eee20a51ec" data-w-id="1171fcbf-5149-a415-23f1-5c51ac0604d5" class="navigation-dropdown-2 centre w-dropdown">
+                        <div class="navigation-toggle-4 w-dropdown-toggle">
+                          <div href="#" class="nav-link-4">
+                            <div class="nav-text-wrap-2">
+                              <div class="link-text-2">Sustainability<br></div>
+                              <div class="link-text-hov-2">Sustainability</div>
+                            </div>
+                          </div>
+                          <div bind="e9b2fdd6-cf18-4a0d-7901-56eee20a51f5" class="dropdown-icon-2 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.5 10.5L12 15L16.5 10.5" stroke="currentColor" stroke-width="1.5"></path>
+                            </svg></div>
+                        </div>
+                        <nav class="list-grove w-dropdown-list">
+                          <div class="div-block-502">
+                            <div class="list-wrap-grove">
+                              <div class="content-grove">
+                                <div class="div-block-508">
+                                  <a href="#" class="navigation-feature-link w-inline-block">
+                                    <div class="column">
+                                      <div class="subheading-small-2">Our Commitment</div>
+                                    </div>
+                                  </a>
+                                  <a href="#" class="navigation-feature-link w-inline-block">
+                                    <div class="column">
+                                      <div class="subheading-small-2">Lowering Carbon</div>
+                                    </div>
+                                  </a>
+                                  <a href="#" class="navigation-feature-link w-inline-block">
+                                    <div class="column">
+                                      <div class="subheading-small-2">Sustainable Sourcing</div>
+                                    </div>
+                                  </a>
+                                  <a href="#" class="navigation-feature-link w-inline-block">
+                                    <div class="column">
+                                      <div class="subheading-small-2">Zero Waste</div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
                     </div>
                   </nav>
                 </div>
-              </div>
-              {% if shop.customer_accounts_optional %}    <div li-if="shop.customer_accounts_optional" class="nav_account">
-    
-                <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="nav_shop-icon w-inline-block">
-                  <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
-                      <mask id="mask0_2941_121306" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="#D9D9D9"></rect>
-                      </mask>
-                      <g mask="url(#mask0_2941_121306)">
-                        <path d="M12 12C10.9 12 9.95833 11.6083 9.175 10.825C8.39167 10.0417 8 9.1 8 8C8 6.9 8.39167 5.95833 9.175 5.175C9.95833 4.39167 10.9 4 12 4C13.1 4 14.0417 4.39167 14.825 5.175C15.6083 5.95833 16 6.9 16 8C16 9.1 15.6083 10.0417 14.825 10.825C14.0417 11.6083 13.1 12 12 12ZM4 20V17.2C4 16.6333 4.14583 16.1125 4.4375 15.6375C4.72917 15.1625 5.11667 14.8 5.6 14.55C6.63333 14.0333 7.68333 13.6458 8.75 13.3875C9.81667 13.1292 10.9 13 12 13C13.1 13 14.1833 13.1292 15.25 13.3875C16.3167 13.6458 17.3667 14.0333 18.4 14.55C18.8833 14.8 19.2708 15.1625 19.5625 15.6375C19.8542 16.1125 20 16.6333 20 17.2V20H4ZM6 18H18V17.2C18 17.0167 17.9542 16.85 17.8625 16.7C17.7708 16.55 17.65 16.4333 17.5 16.35C16.6 15.9 15.6917 15.5625 14.775 15.3375C13.8583 15.1125 12.9333 15 12 15C11.0667 15 10.1417 15.1125 9.225 15.3375C8.30833 15.5625 7.4 15.9 6.5 16.35C6.35 16.4333 6.22917 16.55 6.1375 16.7C6.04583 16.85 6 17.0167 6 17.2V18ZM12 10C12.55 10 13.0208 9.80417 13.4125 9.4125C13.8042 9.02083 14 8.55 14 8C14 7.45 13.8042 6.97917 13.4125 6.5875C13.0208 6.19583 12.55 6 12 6C11.45 6 10.9792 6.19583 10.5875 6.5875C10.1958 6.97917 10 7.45 10 8C10 8.55 10.1958 9.02083 10.5875 9.4125C10.9792 9.80417 11.45 10 12 10Z" fill="currentColor"></path>
-                      </g>
-                    </svg></div>
-                </a>
+                <div class="navigation-side left show-tablet">
+                  <a href="tel:1300599402" class="m-navigation-button-wrapper red is-phone w-inline-block">
+                    <div bind="e9b2fdd6-cf18-4a0d-7901-56eee20a5224" class="icon-1x1-medium-2 w-embed"><svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="mage:phone">
+                          <path id="Vector" d="M13.235 20.5051C12.9233 20.3666 12.6165 20.2175 12.315 20.0581C10.813 19.2091 9.43366 18.1595 8.215 16.9381C6.6331 15.4491 5.33381 13.686 4.38 11.7341C3.86976 10.6852 3.52501 9.56357 3.358 8.40913C3.13153 7.24314 3.26043 6.03601 3.728 4.94413C4.017 4.47413 4.365 4.04413 4.763 3.66513C4.9245 3.48397 5.12097 3.33734 5.34059 3.23406C5.56022 3.13078 5.79846 3.07298 6.041 3.06413C6.546 3.14013 7.003 3.40413 7.319 3.80613C8.009 4.57313 8.749 5.26313 9.478 5.99213C9.765 6.23813 9.944 6.58713 9.976 6.96413C9.964 7.28113 9.842 7.58413 9.631 7.82113C9.389 8.12813 9.095 8.40913 8.814 8.70313C8.64458 8.86692 8.51501 9.0674 8.43526 9.28914C8.35551 9.51088 8.32771 9.74796 8.354 9.98213C8.5304 10.5297 8.83206 11.0286 9.235 11.4391C9.721 12.1041 10.206 12.7191 10.755 13.3701C11.7424 14.5106 12.9128 15.4788 14.218 16.2351C14.3985 16.3712 14.6119 16.4571 14.8364 16.484C15.0608 16.5108 15.2884 16.4778 15.496 16.3881C15.9305 16.1462 16.3161 15.8254 16.633 15.4421C16.908 15.1071 17.302 14.8921 17.732 14.8411C18.115 14.8611 18.476 15.0251 18.742 15.3011C19.086 15.5951 19.38 15.9411 19.7 16.2601C20.019 16.5801 20.275 16.8101 20.543 17.1041C20.8643 17.3875 21.1667 17.6901 21.45 18.0121C21.67 18.2961 21.774 18.6521 21.744 19.0091C21.63 19.4365 21.3839 19.8169 21.041 20.0961C20.5588 20.5979 19.9729 20.9884 19.3241 21.2402C18.6754 21.492 17.9795 21.5992 17.285 21.5541C15.8791 21.4744 14.5028 21.1179 13.235 20.5051Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"></path>
+                        </g>
+                      </svg></div>
+                  </a>
+                </div>
+                <div class="navigation-side mobileonly">
+                  <div class="div-block-503">
+                    <div data-delay="0" data-hover="true" bind="54a89536-2300-7d67-b7a9-0f179a69d49e" data-w-id="1171fcbf-5149-a415-23f1-5c51ac060525" class="navigation-dropdown-2 centre w-dropdown">
+                      <div class="navigation-toggle-4 w-dropdown-toggle">
+                        <div href="#" class="nav-link-4">
+                          <div class="nav-text-wrap-2">
+                            <div class="link-text-2">Maintenance<br></div>
+                            <div class="link-text-hov-2">Maintenance</div>
+                          </div>
+                        </div>
+                        <div bind="54a89536-2300-7d67-b7a9-0f179a69d4a7" class="dropdown-icon-2 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 10.5L12 15L16.5 10.5" stroke="currentColor" stroke-width="1.5"></path>
+                          </svg></div>
+                      </div>
+                      <nav class="list-grove w-dropdown-list">
+                        <div class="div-block-502">
+                          <div class="list-wrap-grove maintenance">
+                            <div class="content-grove">
+                              <a href="#" class="link-3-grove w-inline-block"><img loading="lazy" src="{{ 'tools-fill.svg' | asset_url }}" alt="" class="icon-1x1-medium-2">
+                                <div class="menu-link-2">Maintenance Services</div>
+                              </a>
+                              <a href="#" class="link-3-grove w-inline-block"><img loading="lazy" src="{{ 'settings-5-line.svg' | asset_url }}" alt="" class="icon-1x1-medium-2">
+                                <div class="menu-link-2">Third Party Maintenance</div>
+                              </a>
+                              <a href="#" class="link-3-grove w-inline-block"><img loading="lazy" src="{{ 'map-pin-2-line-1.svg' | asset_url }}" alt="" class="icon-1x1-medium-2">
+                                <div class="menu-link-2">Location Details</div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
                   </div>
+                  <div class="div-block-503">
+                    <div data-delay="0" data-hover="true" bind="3bbbf4b9-81ad-7622-d517-4c396ab65f24" data-w-id="1171fcbf-5149-a415-23f1-5c51ac060540" class="navigation-dropdown-2 centre w-dropdown">
+                      <div class="navigation-toggle-4 w-dropdown-toggle">
+                        <div href="#" class="nav-link-4">
+                          <div class="nav-text-wrap-2">
+                            <div class="link-text-2">Surfaces<br></div>
+                            <div class="link-text-hov-2">Surfaces</div>
+                          </div>
+                        </div>
+                        <div bind="3bbbf4b9-81ad-7622-d517-4c396ab65f2d" class="dropdown-icon-2 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 10.5L12 15L16.5 10.5" stroke="currentColor" stroke-width="1.5"></path>
+                          </svg></div>
+                      </div>
+                      <nav class="list-grove w-dropdown-list">
+                        <div class="div-block-502">
+                          <div class="list-wrap-grove surfaces">
+                            <div class="content-grove">
+                              <a href="#" class="link-3-grove w-inline-block"><img loading="lazy" src="{{ 'football.svg' | asset_url }}" alt="" class="icon-1x1-medium-2">
+                                <div class="menu-link-2">Sports Surfaces</div>
+                              </a>
+                              <a href="#" class="link-3-grove w-inline-block"><img loading="lazy" src="{{ 'hammer-line.svg' | asset_url }}" alt="" class="icon-1x1-medium-2">
+                                <div class="menu-link-2">Woodholme Construction</div>
+                              </a>
+                              <a href="#" class="link-3-grove w-inline-block"><img loading="lazy" src="{{ 'map-pin-2-line-1.svg' | asset_url }}" alt="" class="icon-1x1-medium-2">
+                                <div class="menu-link-2">Location Details</div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                  <div class="hide-tablet">
+                    <a href="#" bind="14f24e57-65b0-d756-3869-f8d259cb601e" sym-bind="{"link":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"abd48bfb-d708-6bdf-d8a5-842d29e77fd1"}}}" class="button-4 white-28 w-inline-block">
+                      <div class="icon-link-3 white-3">
+                        <div class="clip-2 white-10">
+                          <div class="hover-text white-31">
+                            <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34">Contact</div>
+                          </div>
+                          <div class="hover-text white-31 bottom white-20">
+                            <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34">Contact</div>
+                          </div>
+                        </div>
+                        <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22">
+                          <div class="clip-2 white-10">
+                            <div class="hover-arrow-3 white-37"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-s-line.svg' | asset_url }}" class="icon-1x1-small-7 white-12"></div>
+                            <div class="hover-arrow-3 white-37 left-arrow white-13"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-s-line.svg' | asset_url }}" class="icon-1x1-small-7 white-12"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <a href="../index.html" class="brand w-nav-brand">{% if section.settings.image_logo_dark %}
+{{ section.settings.image_logo_dark | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'nav_logo dark' }}
+{% else %}
+<img src="{{ 'liquify-logo.svg' | asset_url }}" loading="lazy" alt="" class="nav_logo dark">
+{% endif %}{% if section.settings.image_logo_white %}
+{{ section.settings.image_logo_white | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'nav_logo' }}
+{% else %}
+<img src="{{ 'liquify-logo.svg' | asset_url }}" loading="lazy" alt="" class="nav_logo">
+{% endif %}</a>
+                <div class="navigation-side right">
+                  <div data-delay="0" data-hover="false" bind="3bdadafd-4b7a-0674-9271-a489ec9ec398" data-w-id="1171fcbf-5149-a415-23f1-5c51ac06058c" class="navigation-dropdown-2 is-static w-dropdown">
+                    <div class="navigation-toggle-4 w-dropdown-toggle">
+                      <div href="#" class="nav-link-4">
+                        <div class="nav-text-wrap-2">
+                          <div class="link-text-2">Shop</div>
+                          <div class="link-text-hov-2">Shop</div>
+                        </div>
+                      </div>
+                      <div bind="3bdadafd-4b7a-0674-9271-a489ec9ec3a0" class="dropdown-icon-2 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.5 10.5L12 15L16.5 10.5" stroke="currentColor" stroke-width="1.5"></path>
+                        </svg></div>
+                    </div>
+                    <nav class="dropdown-list-wide-2 w-dropdown-list">
+                      <div class="dropdowncard">
+                        <div class="navigation-dropdown-card">
+                          <div class="w-layout-grid navigation-grid-large">
+                            <a href="#" class="navigation-card w-inline-block">
+                              <div class="navigation-image-small"><img sizes="100vw" srcset="{{ 'muirhead_home_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_home_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_home_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_home_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_home_04.webp' | asset_url }}" class="image-cover-3"></div>
+                              <div class="column">
+                                <div class="subheading-small-2">Stock</div>
+                                <p class="paragraph-small-6 text-color-tertiary">Buy a range of one-off hide</p>
+                              </div>
+                            </a>
+                            <a href="#" class="navigation-card w-inline-block">
+                              <div class="navigation-image-small"><img sizes="100vw" srcset="{{ 'sustainability-p-500.webp' | asset_url }} 500w, {{ 'sustainability.webp' | asset_url }} 800w" alt="" loading="lazy" src="{{ 'sustainability.webp' | asset_url }}" class="image-cover-3"></div>
+                              <div class="column">
+                                <div class="subheading-small-2">Order Samples</div>
+                                <p class="paragraph-small-6 text-color-tertiary">Find the perfect leather today</p>
+                              </div>
+                            </a>
+                            <a href="#" class="navigation-card w-inline-block">
+                              <div class="navigation-image-small"><img sizes="100vw" srcset="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 500w, {{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 1104w" alt="" loading="lazy" src="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }}" class="image-cover-3"></div>
+                              <div class="column">
+                                <div class="subheading-small-2">Leather Care</div>
+                                <p class="paragraph-small-6 text-color-tertiary">Care for premium leather</p>
+                              </div>
+                            </a>
+                            <a href="#" class="navigation-card w-inline-block">
+                              <div class="navigation-image-small"><img sizes="100vw" srcset="{{ 'Muirhead-Square-p-500.jpg' | asset_url }} 500w, {{ 'Muirhead-Square-p-800.jpg' | asset_url }} 800w, {{ 'Muirhead-Square.jpg' | asset_url }} 1000w" alt="" loading="lazy" src="{{ 'Muirhead-Square.jpg' | asset_url }}" class="image-cover-3"></div>
+                              <div class="column">
+                                <div class="subheading-small-2">Muirhead Gifts</div>
+                                <p class="paragraph-small-6 text-color-tertiary">Bespoke Leather Gifts</p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="_0-5rem-spacer">
+                            <div class="navigation-line"></div>
+                          </div>
+                          <a href="#" class="banner black w-inline-block">
+                            <div class="banner-wrap">
+                              <div>Build Your Own Leather</div>
+                              <div class="badge-banner brown">
+                                <div>Create Now</div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                  <div data-delay="0" data-hover="false" data-w-id="1171fcbf-5149-a415-23f1-5c51ac0605c2" class="country-dropdown hide-mobile-landscape w-dropdown">
+                    <div class="dropdown-toggle w-dropdown-toggle">
+                      <div class="icon-6 w-icon-dropdown-toggle"></div>
+                      <div sf-show-currency-selection="1" class="country-row-selection">
+                        <div class="country-flag uk"></div>
+                        <div href="#" class="nav-link-4">
+                          <div class="nav-text-wrap-2">
+                            <div class="link-text-2">GBP</div>
+                            <div class="link-text-hov-2">GBP</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <nav sf-change-currency="1" class="country-list-2 w-dropdown-list">
+                      <div sf-currency-value="GB" class="country-row">
+                        <div class="country-flag uk"></div>
+                        <div>GBP</div>
+                      </div>
+                      <div sf-currency-value="US" class="country-row">
+                        <div class="country-flag usa"></div>
+                        <div>USD</div>
+                      </div>
+                      <div sf-currency-value="CA" class="country-row">
+                        <div class="country-flag ca"></div>
+                        <div>CAD</div>
+                      </div>
+                      <div sf-currency-value="AU" class="country-row">
+                        <div class="country-flag au"></div>
+                        <div>AUD</div>
+                      </div>
+                      <div sf-currency-value="DE" class="country-row">
+                        <div class="country-flag eur"></div>
+                        <div>EUR</div>
+                      </div>
+                    </nav>
+                  </div>
+                  <div class="div-block-503">
+                    {% if shop.customer_accounts_optional %}    <div li-if="shop.customer_accounts_optional" class="nav_account">
+    
+                      <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="nav_shop-icon w-inline-block">
+                        <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                            <mask id="mask0_2941_121306" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"></rect>
+                            </mask>
+                            <g mask="url(#mask0_2941_121306)">
+                              <path d="M12 12C10.9 12 9.95833 11.6083 9.175 10.825C8.39167 10.0417 8 9.1 8 8C8 6.9 8.39167 5.95833 9.175 5.175C9.95833 4.39167 10.9 4 12 4C13.1 4 14.0417 4.39167 14.825 5.175C15.6083 5.95833 16 6.9 16 8C16 9.1 15.6083 10.0417 14.825 10.825C14.0417 11.6083 13.1 12 12 12ZM4 20V17.2C4 16.6333 4.14583 16.1125 4.4375 15.6375C4.72917 15.1625 5.11667 14.8 5.6 14.55C6.63333 14.0333 7.68333 13.6458 8.75 13.3875C9.81667 13.1292 10.9 13 12 13C13.1 13 14.1833 13.1292 15.25 13.3875C16.3167 13.6458 17.3667 14.0333 18.4 14.55C18.8833 14.8 19.2708 15.1625 19.5625 15.6375C19.8542 16.1125 20 16.6333 20 17.2V20H4ZM6 18H18V17.2C18 17.0167 17.9542 16.85 17.8625 16.7C17.7708 16.55 17.65 16.4333 17.5 16.35C16.6 15.9 15.6917 15.5625 14.775 15.3375C13.8583 15.1125 12.9333 15 12 15C11.0667 15 10.1417 15.1125 9.225 15.3375C8.30833 15.5625 7.4 15.9 6.5 16.35C6.35 16.4333 6.22917 16.55 6.1375 16.7C6.04583 16.85 6 17.0167 6 17.2V18ZM12 10C12.55 10 13.0208 9.80417 13.4125 9.4125C13.8042 9.02083 14 8.55 14 8C14 7.45 13.8042 6.97917 13.4125 6.5875C13.0208 6.19583 12.55 6 12 6C11.45 6 10.9792 6.19583 10.5875 6.5875C10.1958 6.97917 10 7.45 10 8C10 8.55 10.1958 9.02083 10.5875 9.4125C10.9792 9.80417 11.45 10 12 10Z" fill="currentColor"></path>
+                            </g>
+                          </svg></div>
+                      </a>
+                        </div>
 {% endif %}
-              <div class="nav_mini-cart">
-                <script>
+                    <div class="nav_search">
+                      <div data-hover="false" data-delay="0" class="nav_dropdown w-dropdown">
+                        <div class="nav_shop-icon w-dropdown-toggle">
+                          <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 25 25" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                              <mask id="mask0_2941_121300" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="25" height="25">
+                                <rect x="0.123535" y="0.987549" width="24" height="24" fill="#D9D9D9"></rect>
+                              </mask>
+                              <g mask="url(#mask0_2941_121300)">
+                                <path d="M19.7235 21.9875L13.4235 15.6875C12.9235 16.0875 12.3485 16.4042 11.6985 16.6375C11.0485 16.8709 10.3569 16.9875 9.62354 16.9875C7.80687 16.9875 6.26937 16.3584 5.01104 15.1C3.7527 13.8417 3.12354 12.3042 3.12354 10.4875C3.12354 8.67088 3.7527 7.13338 5.01104 5.87505C6.26937 4.61672 7.80687 3.98755 9.62354 3.98755C11.4402 3.98755 12.9777 4.61672 14.236 5.87505C15.4944 7.13338 16.1235 8.67088 16.1235 10.4875C16.1235 11.2209 16.0069 11.9125 15.7735 12.5625C15.5402 13.2125 15.2235 13.7875 14.8235 14.2875L21.1235 20.5875L19.7235 21.9875ZM9.62354 14.9875C10.8735 14.9875 11.936 14.55 12.811 13.675C13.686 12.8 14.1235 11.7375 14.1235 10.4875C14.1235 9.23755 13.686 8.17505 12.811 7.30005C11.936 6.42505 10.8735 5.98755 9.62354 5.98755C8.37354 5.98755 7.31104 6.42505 6.43604 7.30005C5.56104 8.17505 5.12354 9.23755 5.12354 10.4875C5.12354 11.7375 5.56104 12.8 6.43604 13.675C7.31104 14.55 8.37354 14.9875 9.62354 14.9875Z" fill="currentColor"></path>
+                              </g>
+                            </svg></div>
+                        </div>
+                        <nav class="nav_predictive-search-holder w-dropdown-list">
+                          <div li-element="dropdown-toggle" class="nav_predictive-search-close" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))"></div>
+                          <div class="predictive-search_component">
+                            <div class="predictive-search_header">
+                              <div class="heading-style-h3">
+{{ section.settings.text_search }}
+</div><button li-element="dropdown-toggle" aria-label="Close Search" class="nav_dropdown-close-button" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
+                                <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.84775 14.178L0.447754 12.778L6.04775 7.17798L0.447754 1.57798L1.84775 0.177979L7.44775 5.77798L13.0478 0.177979L14.4478 1.57798L8.84775 7.17798L14.4478 12.778L13.0478 14.178L7.44775 8.57798L1.84775 14.178Z" fill="currentColor"></path>
+                                  </svg></div>
+                              </button>
+                            </div><predictive-search>
+                              <div class="predictive-search_holder">
+                                <div class="predictive-search_form w-form">
+                                  <form id="wf-form-produkt-suche" name="wf-form-produkt-suche" data-name="produkt-suche" action="/search" method="get" class="predictive-search_form-component" data-wf-page-id="68e22fae932bc475029cc993" data-wf-element-id="ace72904-ccb0-6b8e-3d5e-d5f5ca33919d">
+                                    <div class="predictive-search_input-holder"><label for="search-input" class="form_hidden-label">Search</label><input type="search" id="search-input" placeholder="Search now" name="q" class="predictive-search_input">
+                                      <a href="#" class="predictive-search_search-button w-inline-block">
+                                        <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 25 25" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                                            <mask id="mask0_2941_121300" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="25" height="25">
+                                              <rect x="0.123535" y="0.987549" width="24" height="24" fill="#D9D9D9"></rect>
+                                            </mask>
+                                            <g mask="url(#mask0_2941_121300)">
+                                              <path d="M19.7235 21.9875L13.4235 15.6875C12.9235 16.0875 12.3485 16.4042 11.6985 16.6375C11.0485 16.8709 10.3569 16.9875 9.62354 16.9875C7.80687 16.9875 6.26937 16.3584 5.01104 15.1C3.7527 13.8417 3.12354 12.3042 3.12354 10.4875C3.12354 8.67088 3.7527 7.13338 5.01104 5.87505C6.26937 4.61672 7.80687 3.98755 9.62354 3.98755C11.4402 3.98755 12.9777 4.61672 14.236 5.87505C15.4944 7.13338 16.1235 8.67088 16.1235 10.4875C16.1235 11.2209 16.0069 11.9125 15.7735 12.5625C15.5402 13.2125 15.2235 13.7875 14.8235 14.2875L21.1235 20.5875L19.7235 21.9875ZM9.62354 14.9875C10.8735 14.9875 11.936 14.55 12.811 13.675C13.686 12.8 14.1235 11.7375 14.1235 10.4875C14.1235 9.23755 13.686 8.17505 12.811 7.30005C11.936 6.42505 10.8735 5.98755 9.62354 5.98755C8.37354 5.98755 7.31104 6.42505 6.43604 7.30005C5.56104 8.17505 5.12354 9.23755 5.12354 10.4875C5.12354 11.7375 5.56104 12.8 6.43604 13.675C7.31104 14.55 8.37354 14.9875 9.62354 14.9875Z" fill="currentColor"></path>
+                                            </g>
+                                          </svg></div>
+                                      </a><input type="submit" data-wait="Please wait..." id="submit-search" class="hide w-button" value="Submit">
+                                    </div>
+                                    <div id="predictive-search" class="predictive-search_overflow no-scrollbar">
+                                      <div li-section="predictive_search" class="predictive-search_section">
+                                        {% if predictive_search.performed %}    <div li-if="predictive_search.performed" class="predictive-search_conditional">
+    
+                                          {% assign first_column_results_size = predictive_search.resources.queries.size | plus: predictive_search.resources.collections.size | plus: predictive_search.resources.pages.size | plus: predictive_search.resources.articles.size | plus: predictive_search.resources.products.size %}
+                                          {% if first_column_results_size > 0 %}    <div li-if="first_column_results_size > 0" class="predictive-search_conditional">
+    
+                                            {% if predictive_search.resources.queries.size > 0 or predictive_search.resources.collections.size > 0 %}    <div li-if="predictive_search.resources.queries.size > 0 or predictive_search.resources.collections.size > 0" class="predictive-search_topic">
+    
+                                              <div class="predictive-search_headline">
+                                                <div class="text-style-muted">Suggestions</div>
+                                              </div>
+                                              <ul role="list" class="predictive-search_list w-list-unstyled">
+                                                {% for query in predictive_search.resources.queries %}    <li li-for="query in predictive_search.resources.queries" class="predictive-search_item">
+                                    
+                                                  
+                            <a li-object:href="query.url" href="{{ query.url }}" class="predictive-search_link w-inline-block">
+                                                    <div li-object="query.styled_text">{{ query.styled_text }}</div>
+                                                  </a>
+                            
+                                                
+                        </li>
+{% endfor %}
+                                                {% for collection in predictive_search.resources.collections %}    <li li-for="collection in predictive_search.resources.collections" class="predictive-search_item">
+                                    
+                                                  
+                            <a li-object:href="collection.url" href="{{ collection.url }}" class="predictive-search_link w-inline-block">
+                                                    <div li-object="collection.title">{{ collection.title }}</div>
+                                                  </a>
+                            
+                                                
+                        </li>
+{% endfor %}
+                                              </ul>
+                                                </div>
+{% endif %}
+                                            {% if predictive_search.resources.products.size > 0 or predictive_search.resources.articles.size > 0 or predictive_search.resources.pages.size > 0 %}    <div li-if="predictive_search.resources.products.size > 0 or predictive_search.resources.articles.size > 0 or predictive_search.resources.pages.size > 0" class="predictive-search_topic">
+    
+                                              <div class="predictive-search_headline">
+                                                <div class="text-style-muted">Products</div>
+                                              </div>
+                                              <ul role="list" class="predictive-search_product-list w-list-unstyled">
+                                                {% for product in predictive_search.resources.products %}    <li li-for="product in predictive_search.resources.products" class="predictive-search_produt-item">
+                                    
+                                                  
+                            <a li-object:href="product.url" href="{{ product.url }}" class="predictive-search_line-item w-inline-block">
+                                                    <div class="predictive-search_image-wrapper"><img li-object:src="product.featured_media | image_url: width: 150" li-object:alt="product.featured_image.alt" alt="{{ product.featured_image.alt }}" src="{{ product.featured_media | image_url: width: 150 }}" loading="lazy" class="predictive-search_image"></div>
+                                                    <div class="predictive-search_product-info">
+                                                      <div class="text-size-regular text-weight-bold"><span li-object="product.title">{{ product.title }}</span></div>
+                                                      <div class="text-size-small"><span li-object="product.price | money">{{ product.price | money }}</span></div>
+                                                    </div>
+                                                  </a>
+                            
+                                                
+                        </li>
+{% endfor %}
+                                              </ul>
+                                                </div>
+{% endif %}
+                                            {% if predictive_search.resources.articles.size > 0 or predictive_search.resources.pages.size > 0 %}    <div li-if="predictive_search.resources.articles.size > 0 or predictive_search.resources.pages.size > 0" class="predictive-search_topic">
+    
+                                              <div class="predictive-search_headline">
+                                                <div class="text-style-muted">Pages</div>
+                                              </div>
+                                              <ul role="list" class="predictive-search_list w-list-unstyled">
+                                                {% for page in predictive_search.resources.pages %}    <li li-for="page in predictive_search.resources.pages" class="predictive-search_item">
+                                    
+                                                  
+                            <a li-object:href="page.url" href="{{ page.url }}" class="predictive-search_link w-inline-block">
+                                                    <div li-object="page.title">{{ page.title }}</div>
+                                                  </a>
+                            
+                                                
+                        </li>
+{% endfor %}
+                                              </ul>
+                                                </div>
+{% endif %}
+                                              </div>
+{% endif %}
+                                          {% if first_column_results_size == 0 %}    <div li-if="first_column_results_size == 0" class="predictive-search_conditional">
+    
+                                            <div class="predictive-search_topic">
+                                              <div class="text-style-muted">Nothing found in "<span li-object="predictive_search.terms">{{ predictive_search.terms }}</span>"</div>
+                                            </div>
+                                              </div>
+{% endif %}
+                                            </div>
+{% endif %}
+                                        {% unless predictive_search.performed %}    <div li-unless="predictive_search.performed" class="predictive-search_conditional">
+    
+                                          <div class="predictive-search_overflow">
+                                            <div class="predictive-search_topic">
+                                              <div class="predictive-search_headline">
+                                                <div class="text-style-muted">Suggestions</div>
+                                              </div>
+                                              <ul role="list" class="predictive-search_list w-list-unstyled">
+                                                {% for block in section.blocks %}
+    {% if block.type == "search-suggestion" %}
+                    <li li-block="Search - Suggestion" class="predictive-search_item">
+                                    
+                                                  
+                                    <a href="{{ block.settings.url_link }}" class="predictive-search_link w-inline-block"> <div>{{ block.settings.text_text }}</div> </a>
+                                    
+                                                
+                            </li>
+            {% endif %}
+{% endfor %}
+                                              </ul>
+                                            </div>
+                                            <div class="predictive-search_topic">
+                                              <div class="predictive-search_headline">
+                                                <div class="text-style-muted">Bestseller</div>
+                                              </div>
+                                              <ul role="list" class="predictive-search_product-list w-list-unstyled">
+                                                {% for product in section.settings.collection_search_bestseller.products limit: section.settings.collection_search_bestseller_limit %}
+<li class="predictive-search_produt-item">
+    
+                                                  
+    <a li-object:href="product.url" href="{{ product.url }}" class="predictive-search_line-item w-inline-block">
+                                                    <div class="predictive-search_image-wrapper"><img li-object:src="product.featured_image | img_url: 'master'" li-object:alt="product.featured_image.alt" alt="{{ product.featured_image.alt }}" src="{{ product.featured_image | img_url: 'master' }}" loading="lazy" class="predictive-search_image"></div>
+                                                    <div class="predictive-search_product-info">
+                                                      <div class="text-size-regular text-weight-bold"><span li-object="product.title">{{ product.title }}</span></div>
+                                                      <div class="text-size-small"><span li-object="product.price | money">{{ product.price | money }}</span></div>
+                                                    </div>
+                                                  </a>
+    
+                                                
+</li>
+{% endfor %}
+                                              </ul>
+                                            </div>
+                                          </div>
+                                            </div>
+{% endunless %}
+                                      </div>
+                                    </div>
+                                  </form>
+                                  <div class="hide w-form-done">
+                                    <div>Thank you! Your submission has been received!</div>
+                                  </div>
+                                  <div class="hide w-form-fail">
+                                    <div>Oops! Something went wrong while submitting the form.</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </predictive-search>
+                          </div>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="nav_mini-cart">
+                      <script>
     document.addEventListener('alpine:init', () => {
 
     Alpine.data('handleMinicart', () => ({
@@ -653,99 +1114,543 @@
 
 </script>
 <div data-hover="false" data-delay="0" li-element="mini-cart" class="nav_dropdown w-dropdown" x-data="handleMinicart()" x-init="getCart()" @cartupdated.window="getCart()" @setcartitem.window="updateCartItemQuantity($event.detail.product, $event.detail.quantity)" @increasecartitem.window="increaseCartItemQuantity($event.detail.product, $event.detail.quantity)" @decreasecartitem.window="decreaseCartItemQuantity($event.detail.product, $event.detail.quantity)" @toggleminicart.window="toggleMiniCart()" @showcartmessage.window="showCartMessage" @getcartitems.window="returnCartItems">
-                  <div li-element="mini-cart-toggle" class="nav_shop-icon w-dropdown-toggle" @click="$dispatch('cartupdated.window')">
-                    <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
-                        <mask id="mask0_2941_121294" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"></rect>
-                        </mask>
-                        <g mask="url(#mask0_2941_121294)">
-                          <path d="M6 22C5.45 22 4.97917 21.8042 4.5875 21.4125C4.19583 21.0208 4 20.55 4 20V8C4 7.45 4.19583 6.97917 4.5875 6.5875C4.97917 6.19583 5.45 6 6 6H8C8 4.9 8.39167 3.95833 9.175 3.175C9.95833 2.39167 10.9 2 12 2C13.1 2 14.0417 2.39167 14.825 3.175C15.6083 3.95833 16 4.9 16 6H18C18.55 6 19.0208 6.19583 19.4125 6.5875C19.8042 6.97917 20 7.45 20 8V20C20 20.55 19.8042 21.0208 19.4125 21.4125C19.0208 21.8042 18.55 22 18 22H6ZM6 20H18V8H16V10C16 10.2833 15.9042 10.5208 15.7125 10.7125C15.5208 10.9042 15.2833 11 15 11C14.7167 11 14.4792 10.9042 14.2875 10.7125C14.0958 10.5208 14 10.2833 14 10V8H10V10C10 10.2833 9.90417 10.5208 9.7125 10.7125C9.52083 10.9042 9.28333 11 9 11C8.71667 11 8.47917 10.9042 8.2875 10.7125C8.09583 10.5208 8 10.2833 8 10V8H6V20ZM10 6H14C14 5.45 13.8042 4.97917 13.4125 4.5875C13.0208 4.19583 12.55 4 12 4C11.45 4 10.9792 4.19583 10.5875 4.5875C10.1958 4.97917 10 5.45 10 6Z" fill="currentColor"></path>
-                        </g>
-                      </svg></div>
-                    <div li-element="mini-cart-item-count" class="nav_shop-quantity" x-data="{ items: 0 }" x-text="items" @carttotalitems.window="items = event.detail">1</div>
-                  </div>
-                  <nav li-element="mini-cart-container" class="nav_mini-cart-holder w-dropdown-list" :class="open || 'mini-cart-closed'">
-                    <div li-element="dropdown-toggle" class="nav_mini-cart-close" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))"></div>
-                    <div class="mini-cart_component">
-                      <div li-element="mini-cart-full" class="mini-cart_full" :style="total.items < 1 && { display: 'none' }">
-                        <div class="mini-cart_header">
-                          <div class="heading-style-h3">Cart</div><button li-element="dropdown-toggle" aria-label="Close Cart" class="nav_dropdown-close-button" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
-                            <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.84775 14.178L0.447754 12.778L6.04775 7.17798L0.447754 1.57798L1.84775 0.177979L7.44775 5.77798L13.0478 0.177979L14.4478 1.57798L8.84775 7.17798L14.4478 12.778L13.0478 14.178L7.44775 8.57798L1.84775 14.178Z" fill="currentColor"></path>
-                              </svg></div>
-                          </button>
+                        <div li-element="mini-cart-toggle" class="nav_shop-icon w-dropdown-toggle" @click="$dispatch('cartupdated.window')">
+                          <div><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" width="100%" class="icon-embed-xsmall-3">
+                              <g id="_01">
+                                <path class="head-icon st0" d="M380.8,480h-249.6c-52.8,0-96-43.2-96-96v-3.2l9.6-256c1.6-52.8,44.8-92.8,96-92.8h230.4c51.2,0,94.4,40,96,92.8l9.6,256c1.6,25.6-8,49.6-25.6,68.8s-41.6,30.4-67.2,30.4h-3.2ZM140.8,64c-35.2,0-62.4,27.2-64,60.8l-9.6,259.2c0,35.2,28.8,64,64,64h252.8c17.6,0,33.6-8,44.8-20.8s17.6-28.8,17.6-46.4l-9.6-256c-1.6-35.2-28.8-60.8-64-60.8h-232Z"></path>
+                                <path class="head-icon st0" d="M256,224c-62.4,0-112-49.6-112-112s6.4-16,16-16,16,6.4,16,16c0,44.8,35.2,80,80,80s80-35.2,80-80,6.4-16,16-16,16,6.4,16,16c0,62.4-49.6,112-112,112Z"></path>
+                              </g>
+                            </svg></div>
+                          <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                              <mask id="mask0_2941_121294" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                <rect width="24" height="24" fill="#D9D9D9"></rect>
+                              </mask>
+                              <g mask="url(#mask0_2941_121294)">
+                                <path d="M6 22C5.45 22 4.97917 21.8042 4.5875 21.4125C4.19583 21.0208 4 20.55 4 20V8C4 7.45 4.19583 6.97917 4.5875 6.5875C4.97917 6.19583 5.45 6 6 6H8C8 4.9 8.39167 3.95833 9.175 3.175C9.95833 2.39167 10.9 2 12 2C13.1 2 14.0417 2.39167 14.825 3.175C15.6083 3.95833 16 4.9 16 6H18C18.55 6 19.0208 6.19583 19.4125 6.5875C19.8042 6.97917 20 7.45 20 8V20C20 20.55 19.8042 21.0208 19.4125 21.4125C19.0208 21.8042 18.55 22 18 22H6ZM6 20H18V8H16V10C16 10.2833 15.9042 10.5208 15.7125 10.7125C15.5208 10.9042 15.2833 11 15 11C14.7167 11 14.4792 10.9042 14.2875 10.7125C14.0958 10.5208 14 10.2833 14 10V8H10V10C10 10.2833 9.90417 10.5208 9.7125 10.7125C9.52083 10.9042 9.28333 11 9 11C8.71667 11 8.47917 10.9042 8.2875 10.7125C8.09583 10.5208 8 10.2833 8 10V8H6V20ZM10 6H14C14 5.45 13.8042 4.97917 13.4125 4.5875C13.0208 4.19583 12.55 4 12 4C11.45 4 10.9792 4.19583 10.5875 4.5875C10.1958 4.97917 10 5.45 10 6Z" fill="currentColor"></path>
+                              </g>
+                            </svg></div>
+                          <div li-element="mini-cart-item-count" class="nav_shop-quantity" x-data="{ items: 0 }" x-text="items" @carttotalitems.window="items = event.detail">1</div>
                         </div>
-                        <div class="mini-cart_line-item no-scrollbar">
-                          <ul role="list" class="mini-cart_line-item_list w-list-unstyled">
-                            <template x-for="product in products" :key="product.key">
+                        <nav li-element="mini-cart-container" class="nav_mini-cart-holder w-dropdown-list" :class="open || 'mini-cart-closed'">
+                          <div li-element="dropdown-toggle" class="nav_mini-cart-close" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))"></div>
+                          <div class="mini-cart_component">
+                            <div li-element="mini-cart-full" class="mini-cart_full" :style="total.items < 1 && { display: 'none' }">
+                              <div class="mini-cart_header">
+                                <div class="heading-style-h3">Cart</div><button li-element="dropdown-toggle" aria-label="Close Cart" class="nav_dropdown-close-button" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
+                                  <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M1.84775 14.178L0.447754 12.778L6.04775 7.17798L0.447754 1.57798L1.84775 0.177979L7.44775 5.77798L13.0478 0.177979L14.4478 1.57798L8.84775 7.17798L14.4478 12.778L13.0478 14.178L7.44775 8.57798L1.84775 14.178Z" fill="currentColor"></path>
+                                    </svg></div>
+                                </button>
+                              </div>
+                              <div class="mini-cart_line-item no-scrollbar">
+                                <ul role="list" class="mini-cart_line-item_list w-list-unstyled">
+                                  <template x-for="product in products" :key="product.key">
     <li li-element="mini-cart-item" class="mini-cart_line-item_item"><img src="../images/product-apparel-2.svg" loading="lazy" alt="" class="mini-cart_line-item_img" x-bind:src="product.image">
-                              <div class="mini-cart_line-item_product-info">
-                                <div li-js-object="product.title" class="text-size-regular text-weight-bold" x-text="product.title">Product Title</div>
-                                <div class="mini-cart_line-item_price">
-                                  <div li-js-price="product.price" class="text-size-small" x-text="LiquifyHelper.moneyFormat(product.price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
-                                  <template x-if="product.price < product.original_price">
+                                    <div class="mini-cart_line-item_product-info">
+                                      <div li-js-object="product.title" class="text-size-regular text-weight-bold" x-text="product.title">Product Title</div>
+                                      <div class="mini-cart_line-item_price">
+                                        <div li-js-price="product.price" class="text-size-small" x-text="LiquifyHelper.moneyFormat(product.price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
+                                        <template x-if="product.price < product.original_price">
             <div li-js-if="product.price < product.original_price">
         
-                                    <div li-js-price="product.original_price" class="text-size-small text-style-strikethrough text-style-muted" x-text="LiquifyHelper.moneyFormat(product.original_price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
-                                          </div>
+                                          <div li-js-price="product.original_price" class="text-size-small text-style-strikethrough text-style-muted" x-text="LiquifyHelper.moneyFormat(product.original_price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
+                                                </div>
     </template>
-                                </div>
-                                <div class="mini-cart_line-item_quantity">
-                                  <a li-element="mini-cart-item-decrease" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('decreasecartitem', { product: product.key, quantity: product.quantity, action: 'decrease' })">-</a><input li-element="mini-cart-item-quantity" class="mini-cart_line-item_quantity-adjust" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
-                                  <a li-element="mini-cart-item-increase" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('increasecartitem', { product: product.key, quantity: product.quantity, action: 'increase' })">+</a>
-                                </div>
-                                <div li-element="mini-cart-item-remove" class="text-size-tiny text-color-grey text-style-link" :productprop="product" @click="$dispatch('setcartitem', { product: product.key, quantity: 0 })">Remove</div>
+                                      </div>
+                                      <div class="mini-cart_line-item_quantity">
+                                        <a li-element="mini-cart-item-decrease" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('decreasecartitem', { product: product.key, quantity: product.quantity, action: 'decrease' })">-</a><input li-element="mini-cart-item-quantity" class="mini-cart_line-item_quantity-adjust" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
+                                        <a li-element="mini-cart-item-increase" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('increasecartitem', { product: product.key, quantity: product.quantity, action: 'increase' })">+</a>
+                                      </div>
+                                      <div li-element="mini-cart-item-remove" class="text-size-tiny text-color-grey text-style-link" :productprop="product" @click="$dispatch('setcartitem', { product: product.key, quantity: 0 })">Remove</div>
+                                    </div>
+                                  </li></template>
+                                </ul>
                               </div>
-                            </li></template>
-                          </ul>
-                        </div>
-                        <div class="mini-cart_footer">
-                          <div class="mini-cart_footer-total">
-                            <div class="text-size-regular text-weight-bold">Subtotal</div>
-                            <div class="mini-cart_footer-price">
-                              <div li-js-price="total.price" class="text-size-regular text-weight-bold" x-text="LiquifyHelper.moneyFormat(total.price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
-                              <template x-if="total.price < original_total_price">
+                              <div class="mini-cart_footer">
+                                <div class="mini-cart_footer-total">
+                                  <div class="text-size-regular text-weight-bold">Subtotal</div>
+                                  <div class="mini-cart_footer-price">
+                                    <div li-js-price="total.price" class="text-size-regular text-weight-bold" x-text="LiquifyHelper.moneyFormat(total.price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
+                                    <template x-if="total.price < original_total_price">
             <div li-js-if="total.price < original_total_price" class="mini-cart_conditional">
         
-                                <div li-js-price="original_total_price" class="text-size-regular text-weight-bold text-style-strikethrough text-style-muted" x-text="LiquifyHelper.moneyFormat(original_total_price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
-                                      </div>
+                                      <div li-js-price="original_total_price" class="text-size-regular text-weight-bold text-style-strikethrough text-style-muted" x-text="LiquifyHelper.moneyFormat(original_total_price, true, '{{ shop.money_with_currency_format }}')">14,99 $</div>
+                                            </div>
     </template>
+                                  </div>
+                                </div>
+                                <div li-element="mini-cart-api-response" class="mini-cart_footer-message hide">
+                                  <div class="mini-cart_footer-message-item">
+                                    <div class="text-size-regular text-weight-bold">Message</div>
+                                    <div li-js-object="cartApiResponse?.result?.message" class="text-size-regular text-weight-bold" x-text="cartApiResponse?.result?.message">14,99 $</div>
+                                  </div>
+                                </div>
+                                <a x-bind:href="'/checkout'" href="#" class="button w-button">Checkout</a>
+                                <a li-object:href="routes.cart_url" href="{{ routes.cart_url }}" class="button is-secondary w-button">Cart</a>
+                              </div>
+                            </div>
+                            <div li-cloak="hide" li-element="mini-cart-empty" class="mini-cart_empty" :style="total.items && { display: 'none' }">
+                              <div class="mini-cart_header">
+                                <div class="heading-style-h3">Cart</div><button li-element="dropdown-toggle" aria-label="Close Cart" class="nav_dropdown-close-button" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
+                                  <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M1.84775 14.178L0.447754 12.778L6.04775 7.17798L0.447754 1.57798L1.84775 0.177979L7.44775 5.77798L13.0478 0.177979L14.4478 1.57798L8.84775 7.17798L14.4478 12.778L13.0478 14.178L7.44775 8.57798L1.84775 14.178Z" fill="currentColor"></path>
+                                    </svg></div>
+                                </button>
+                              </div>
+                              <div class="mini-cart_empty-content">
+                                <div class="text-size-regular">No Products selected</div>
+                              </div>
                             </div>
                           </div>
-                          <div li-element="mini-cart-api-response" class="mini-cart_footer-message hide">
-                            <div class="mini-cart_footer-message-item">
-                              <div class="text-size-regular text-weight-bold">Message</div>
-                              <div li-js-object="cartApiResponse?.result?.message" class="text-size-regular text-weight-bold" x-text="cartApiResponse?.result?.message">14,99 $</div>
-                            </div>
-                          </div>
-                          <a x-bind:href="'/checkout'" href="#" class="button w-button">Checkout</a>
-                          <a li-object:href="routes.cart_url" href="{{ routes.cart_url }}" class="button is-secondary w-button">Cart</a>
-                        </div>
-                      </div>
-                      <div li-cloak="hide" li-element="mini-cart-empty" class="mini-cart_empty" :style="total.items && { display: 'none' }">
-                        <div class="mini-cart_header">
-                          <div class="heading-style-h3">Cart</div><button li-element="dropdown-toggle" aria-label="Close Cart" class="nav_dropdown-close-button" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
-                            <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.84775 14.178L0.447754 12.778L6.04775 7.17798L0.447754 1.57798L1.84775 0.177979L7.44775 5.77798L13.0478 0.177979L14.4478 1.57798L8.84775 7.17798L14.4478 12.778L13.0478 14.178L7.44775 8.57798L1.84775 14.178Z" fill="currentColor"></path>
-                              </svg></div>
-                          </button>
-                        </div>
-                        <div class="mini-cart_empty-content">
-                          <div class="text-size-regular">No Products selected</div>
-                        </div>
+                        </nav>
                       </div>
                     </div>
-                  </nav>
+                  </div>
+                  <div class="hide-tablet">
+                    <a href="#" bind="14f24e57-65b0-d756-3869-f8d259cb601e" sym-bind="{"link":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"abd48bfb-d708-6bdf-d8a5-842d29e77fd1"}}}" class="button-4 white-28 no-arrow w-inline-block">
+                      <div class="icon-link-3">
+                        <div class="clip-2 white-10">
+                          <div class="hover-text white-31">
+                            <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34">Contact</div>
+                          </div>
+                          <div class="hover-text white-31 bottom white-20">
+                            <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34">Contact</div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div id="menu-trigger" class="menu-trigger">
+                    <div class="m-navigation-button-wrapper">
+                      <div data-w-id="1171fcbf-5149-a415-23f1-5c51ac060613" class="hamburger_2_wrap">
+                        <div data-w-id="1171fcbf-5149-a415-23f1-5c51ac060614" data-is-ix2-target="1" class="menu-icon-3" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/678504de3123b3f794cf05f1/678504de3123b3f794cf06cc_Animation%20-%201736454996245.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="1.5015014403440954"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="nav_menu-button w-nav-button">
-              <div class="menu-icon">
-                <div class="menu-icon_line-top"></div>
-                <div class="menu-icon_line-middle">
-                  <div class="menu-icon_line-middle-inner"></div>
+            <div id="w-node-_1171fcbf-5149-a415-23f1-5c51ac060615-d5a86df8" class="nav-cover"></div>
+            <div id="mobile-menu" class="menu-mob-container">
+              <div bind="9e9206c3-e206-98f8-7315-36b7f24316b1" class="div-block-173">
+                <div class="_8rem-spacer"></div>
+                <div data-delay="0" data-hover="true" class="countrydropdownmobile w-dropdown">
+                  <div class="mobiledropdowncountry w-dropdown-toggle">
+                    <div class="dropdown w-icon-dropdown-toggle"></div>
+                    <div sf-show-currency-selection="1" class="countryro">
+                      <div class="country-flag uk"></div>
+                      <div href="#" class="nav-link-4">
+                        <div class="nav-text-wrap-2">
+                          <div class="link-text-2">GBP</div>
+                          <div class="link-text-hov-2">UK</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <nav sf-change-currency="1" class="country-list-2 w-dropdown-list">
+                    <div sf-currency-value="GB" class="country-row">
+                      <div class="country-flag uk"></div>
+                      <div>GBP</div>
+                    </div>
+                    <div sf-currency-value="US" class="country-row">
+                      <div class="country-flag usa"></div>
+                      <div>USD</div>
+                    </div>
+                    <div sf-currency-value="CA" class="country-row">
+                      <div class="country-flag ca"></div>
+                      <div>CAD</div>
+                    </div>
+                    <div sf-currency-value="AU" class="country-row">
+                      <div class="country-flag au"></div>
+                      <div>AUD</div>
+                    </div>
+                    <div sf-currency-value="DE" class="country-row">
+                      <div class="country-flag eur"></div>
+                      <div>EUR</div>
+                    </div>
+                  </nav>
                 </div>
-                <div class="menu-icon_line-bottom"></div>
+                <div class="_2rem-spacer"></div>
+                <div bind="deb1dfed-a6e9-c3ec-e777-5f3ffe8536b0" class="div-block-533">
+                  <a href="#" aria-expanded="false" role="button" class="accordion_title-wrapper w-inline-block">
+                    <div class="accordion_title">Home</div><img loading="lazy" src="{{ 'arrow-right-s-line_1.svg' | asset_url }}" alt="" class="accordion_arrow">
+                  </a>
+                  <div class="navigation-divider">
+                    <div class="navigation-line dark-120"></div>
+                  </div>
+                  <ul role="list" class="accordion_list-wrapper w-list-unstyled">
+                    <li class="accordion_item-wrapper">
+                      <div data-click="accordion" role="region" data-w-id="1171fcbf-5149-a415-23f1-5c51ac060643" class="accordion_item-2">
+                        <a aria-expanded="false" role="button" href="#" class="accordion_title-wrapper-2 w-inline-block">
+                          <div class="accordion_title">Sectors</div><img loading="lazy" src="{{ 'arrow-down-s-line.svg' | asset_url }}" alt="" class="accordion_arrow">
+                        </a>
+                        <div aria-hidden="true" class="accordion_description-wrapper-2">
+                          <div class="_1rem-spacer"></div>
+                          <div class="promo-container">
+                            <a href="#" class="promo-wrapper w-inline-block">
+                              <h3 class="text-color-white-2 text-align-center z-index-2">Aviation</h3>
+                              <div class="promo-overlay z-index-1"></div>
+                              <div class="promo-image-wrapper"></div>
+                            </a>
+                            <a href="#" class="promo-wrapper w-inline-block">
+                              <h3 class="text-color-white-2 text-align-center z-index-2">Passenger Transport</h3>
+                              <div class="promo-overlay z-index-1"></div>
+                              <div class="promo-image-wrapper two"></div>
+                            </a>
+                            <a href="#" class="promo-wrapper w-inline-block">
+                              <h3 class="text-color-white-2 text-align-center z-index-2">Interiors & Luxury</h3>
+                              <div class="promo-overlay z-index-1"></div>
+                              <div class="promo-image-wrapper three"></div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="navigation-divider dark-119">
+                    <div class="navigation-line dark-120"></div>
+                  </div>
+                  <ul role="list" class="accordion_list-wrapper w-list-unstyled">
+                    <li class="accordion_item-wrapper">
+                      <div data-click="accordion" role="region" data-w-id="1171fcbf-5149-a415-23f1-5c51ac06065e" class="accordion_item-2">
+                        <a aria-expanded="false" role="button" href="#" class="accordion_title-wrapper-2 w-inline-block">
+                          <div class="accordion_title">About</div><img loading="lazy" src="{{ 'arrow-down-s-line.svg' | asset_url }}" alt="" class="accordion_arrow">
+                        </a>
+                        <div aria-hidden="true" class="accordion_description-wrapper-2">
+                          <div class="_1rem-spacer"></div>
+                          <div class="w-layout-grid nav-menu-card">
+                            <div id="w-node-_1171fcbf-5149-a415-23f1-5c51ac060666-d5a86df8" class="nav-menu-image">
+                              <a href="#" class="places-card w-inline-block">
+                                <div class="places-card_image-wrap"><img sizes="(max-width: 1084px) 100vw, 1084px" srcset="{{ 'muirhead_our_story_low_carbon_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_our_story_low_carbon_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_our_story_low_carbon_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }}" class="image-56"></div>
+                                <div class="places-card_image-overlay"></div>
+                                <div class="places-card_content">
+                                  <h3 class="places-card_heading-text">Low Carbon Leather</h3>
+                                  <div class="places-card_desc-wrap">
+                                    <p class="places-card_desc-text">We make the lowest carbon<br>leather in the world.</p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="div-block-517">
+                              <div class="nav-links-featured">
+                                <a href="#" class="nav-link-featured w-inline-block">
+                                  <div data-delay="0" data-hover="true" class="nav-dropdown-link w-dropdown">
+                                    <div class="nav-dropdown-trigger w-dropdown-toggle">
+                                      <div class="h6-heading text-weight-medium">Our Heritage</div>
+                                      <div class="nav-dropdown-icon">
+                                        <div class="icon-small-4 w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#48816B"></path>
+                                          </svg></div>
+                                      </div>
+                                    </div>
+                                    <nav class="nav-dropdown-list w-dropdown-list">
+                                      <div class="nav-dropdown-content">
+                                        <div class="paragraph-small-5 text-color-tertiary">Fine Scottish Leather since 1840</div>
+                                      </div>
+                                    </nav>
+                                  </div>
+                                </a>
+                                <a href="#" class="nav-link-featured w-inline-block">
+                                  <div data-delay="0" data-hover="true" class="nav-dropdown-link w-dropdown">
+                                    <div class="nav-dropdown-trigger w-dropdown-toggle">
+                                      <div class="h6-heading text-weight-medium">Our Future</div>
+                                      <div class="nav-dropdown-icon">
+                                        <div class="icon-small-4 w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#48816B"></path>
+                                          </svg></div>
+                                      </div>
+                                    </div>
+                                    <nav class="nav-dropdown-list w-dropdown-list">
+                                      <div class="nav-dropdown-content">
+                                        <div class="paragraph-small-5 text-color-tertiary">Driving cutting-edge solutions</div>
+                                      </div>
+                                    </nav>
+                                  </div>
+                                </a>
+                                <a href="#" class="nav-link-featured w-inline-block">
+                                  <div data-delay="0" data-hover="true" class="nav-dropdown-link w-dropdown">
+                                    <div class="nav-dropdown-trigger w-dropdown-toggle">
+                                      <div class="h6-heading text-weight-medium">Journal</div>
+                                      <div class="nav-dropdown-icon">
+                                        <div class="icon-small-4 w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#48816B"></path>
+                                          </svg></div>
+                                      </div>
+                                    </div>
+                                    <nav class="nav-dropdown-list w-dropdown-list">
+                                      <div class="nav-dropdown-content">
+                                        <div class="paragraph-small-5 text-color-tertiary">Exciting news from the leather industry</div>
+                                      </div>
+                                    </nav>
+                                  </div>
+                                </a>
+                              </div>
+                              <a href="#" class="slg-logo-menu w-inline-block"><img loading="lazy" src="{{ 'slg-logo.svg' | asset_url }}" alt=""></a>
+                            </div>
+                            <div id="w-node-_1171fcbf-5149-a415-23f1-5c51ac060698-d5a86df8" class="nav-menu-block">
+                              <div class="w-layout-grid nav-menu-links">
+                                <div class="column-x-small-2">
+                                  <div class="subheading-large dark">Our Expertise</div>
+                                  <a href="#" class="nav-text-link">Complete Control</a>
+                                  <a href="#" class="nav-text-link">Local Sourcing</a>
+                                  <a href="#" class="nav-text-link">Modern Tanning</a>
+                                  <a href="#" class="nav-text-link">Seat Cover Service</a>
+                                  <a href="#" class="nav-text-link">Product Design</a>
+                                  <a href="#" class="nav-text-link">Performance Testing</a>
+                                </div>
+                              </div>
+                              <div class="column-2x-small column-left">
+                                <a href="#" bind="14f24e57-65b0-d756-3869-f8d259cb601e" sym-bind="{"link":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"abd48bfb-d708-6bdf-d8a5-842d29e77fd1"}}}" class="button-4 white-28 link-dark-60 w-inline-block">
+                                  <div class="icon-link-3 link-dark-61">
+                                    <div class="clip-2 white-10 link-dark-83">
+                                      <div class="hover-text white-31 link-dark-48">
+                                        <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34 link-dark-66">Order Samples</div>
+                                      </div>
+                                      <div class="hover-text white-31 link-dark-48 bottom white-20 link-dark-65">
+                                        <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34 link-dark-66">Order Samples</div>
+                                      </div>
+                                    </div>
+                                    <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22 link-dark-52">
+                                      <div class="clip-2 white-10 link-dark-83">
+                                        <div class="hover-arrow-3 link-dark-39"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="" alt="" loading="lazy" class="icon-1x1-small-7 white-12 link-dark-44"></div>
+                                        <div class="hover-arrow-3 link-dark-39 left-arrow link-dark-42"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68e2301d72211f0b080d09d7/68e2301d72211f0b080d0b80_arrow-right-long-line.svg" class="icon-1x1-small-7 white-12 link-dark-44"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="_0-5rem-spacer"></div>
+                                <a href="#" class="nav-text-link-small">sales@muirhead.co.uk</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="navigation-divider dark-119">
+                    <div class="navigation-line dark-120"></div>
+                  </div>
+                  <ul role="list" class="accordion_list-wrapper w-list-unstyled">
+                    <li class="accordion_item-wrapper">
+                      <div data-click="accordion" role="region" data-w-id="1171fcbf-5149-a415-23f1-5c51ac0606c2" class="accordion_item-2">
+                        <a aria-expanded="false" role="button" href="#" class="accordion_title-wrapper-2 w-inline-block">
+                          <div class="accordion_title">Products</div><img loading="lazy" src="{{ 'arrow-down-s-line.svg' | asset_url }}" alt="" class="accordion_arrow">
+                        </a>
+                        <div aria-hidden="true" class="accordion_description-wrapper-2">
+                          <div class="_1rem-spacer"></div>
+                          <div class="w-layout-grid nav-2-menu-card">
+                            <div class="nav-2-menu-links">
+                              <div class="column-x-small-2">
+                                <a href="#" class="footer-link-2 dark-138 w-inline-block">
+                                  <div>Our Innovations</div>
+                                  <div class="icon-small-3 dark-151 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                                      <path d="M10.9761 10.0006L6.85132 5.87577L8.02983 4.69727L13.3332 10.0006L8.02983 15.3038L6.85132 14.1253L10.9761 10.0006Z" fill="currentColor"></path>
+                                    </svg></div>
+                                </a>
+                                <a href="#" class="footer-link-2 dark-138 w-inline-block">
+                                  <div>BioPro® Foam</div>
+                                  <div class="icon-small-3 dark-151 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                                      <path d="M10.9761 10.0006L6.85132 5.87577L8.02983 4.69727L13.3332 10.0006L8.02983 15.3038L6.85132 14.1253L10.9761 10.0006Z" fill="currentColor"></path>
+                                    </svg></div>
+                                </a>
+                                <a href="#" class="footer-link-2 dark-138 w-inline-block">
+                                  <div>Custom Products</div>
+                                  <div class="icon-small-3 dark-151 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                                      <path d="M10.9761 10.0006L6.85132 5.87577L8.02983 4.69727L13.3332 10.0006L8.02983 15.3038L6.85132 14.1253L10.9761 10.0006Z" fill="currentColor"></path>
+                                    </svg></div>
+                                </a>
+                                <a href="#" class="footer-link-2 dark-138 w-inline-block">
+                                  <div>Leather Care</div>
+                                  <div class="icon-small-3 dark-151 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                                      <path d="M10.9761 10.0006L6.85132 5.87577L8.02983 4.69727L13.3332 10.0006L8.02983 15.3038L6.85132 14.1253L10.9761 10.0006Z" fill="currentColor"></path>
+                                    </svg></div>
+                                </a>
+                              </div>
+                              <a href="#" bind="14f24e57-65b0-d756-3869-f8d259cb601e" sym-bind="{"link":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"abd48bfb-d708-6bdf-d8a5-842d29e77fd1"}}}" class="button-4 white-28 link-dark-60 w-inline-block">
+                                <div class="icon-link-3 link-dark-61">
+                                  <div class="clip-2 white-10 link-dark-83">
+                                    <div class="hover-text white-31 link-dark-48">
+                                      <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34 link-dark-66">Order Samples</div>
+                                    </div>
+                                    <div class="hover-text white-31 link-dark-48 bottom white-20 link-dark-65">
+                                      <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34 link-dark-66">Order Samples</div>
+                                    </div>
+                                  </div>
+                                  <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22 link-dark-52">
+                                    <div class="clip-2 white-10 link-dark-83">
+                                      <div class="hover-arrow-3 link-dark-39"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="" alt="" loading="lazy" class="icon-1x1-small-7 white-12 link-dark-44"></div>
+                                      <div class="hover-arrow-3 link-dark-39 left-arrow link-dark-42"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68e2301d72211f0b080d09d7/68e2301d72211f0b080d0b80_arrow-right-long-line.svg" class="icon-1x1-small-7 white-12 link-dark-44"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <a href="#" class="places-card xs-9 w-inline-block">
+                              <div class="places-card_image-wrap xs-10"><img sizes="(max-width: 1520px) 100vw, 1520px" srcset="{{ 'interiors-and-luxury-p-500.webp' | asset_url }} 500w, {{ 'interiors-and-luxury-p-800.webp' | asset_url }} 800w, {{ 'interiors-and-luxury-p-1080.webp' | asset_url }} 1080w, {{ 'interiors-and-luxury.webp' | asset_url }} 1520w" alt="" loading="lazy" src="{{ 'interiors-and-luxury.webp' | asset_url }}" class="image-56 xs-11"></div>
+                              <div class="places-card_image-overlay xs-4"></div>
+                              <div class="places-card_content xs-13">
+                                <h3 class="places-card_heading-text xs-14">Why Leather?</h3>
+                                <div class="places-card_desc-wrap xs-7">
+                                  <p class="places-card_desc-text xs-8">Leather means luxury</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="navigation-divider dark-119">
+                    <div class="navigation-line dark-120"></div>
+                  </div>
+                  <ul role="list" class="accordion_list-wrapper w-list-unstyled">
+                    <li class="accordion_item-wrapper">
+                      <div data-click="accordion" role="region" data-w-id="1171fcbf-5149-a415-23f1-5c51ac0606fb" class="accordion_item-2">
+                        <a aria-expanded="false" role="button" href="#" class="accordion_title-wrapper-2 w-inline-block">
+                          <div class="accordion_title">Sustainability</div><img loading="lazy" src="{{ 'arrow-down-s-line.svg' | asset_url }}" alt="" class="accordion_arrow">
+                        </a>
+                        <div aria-hidden="true" class="accordion_description-wrapper-2">
+                          <div class="_1rem-spacer"></div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="navigation-divider dark-119">
+                    <div class="navigation-line dark-120"></div>
+                  </div>
+                  <ul role="list" class="accordion_list-wrapper w-list-unstyled">
+                    <li class="accordion_item-wrapper">
+                      <div data-click="accordion" role="region" data-w-id="1171fcbf-5149-a415-23f1-5c51ac060706" class="accordion_item-2">
+                        <a aria-expanded="false" role="button" href="#" class="accordion_title-wrapper-2 w-inline-block">
+                          <div class="accordion_title">Shop</div><img loading="lazy" src="{{ 'arrow-down-s-line.svg' | asset_url }}" alt="" class="accordion_arrow">
+                        </a>
+                        <div aria-hidden="true" class="accordion_description-wrapper-2">
+                          <div class="_1rem-spacer"></div>
+                          <div class="navigation-dropdown-card">
+                            <div class="w-layout-grid navigation-grid-large">
+                              <a href="#" class="navigation-card w-inline-block">
+                                <div class="navigation-image-small"><img sizes="(max-width: 1084px) 100vw, 1084px" srcset="{{ 'muirhead_home_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_home_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_home_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_home_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_home_04.webp' | asset_url }}" class="image-cover-3"></div>
+                                <div class="column">
+                                  <div class="subheading-small-2">Stock</div>
+                                  <p class="paragraph-small-6 text-color-tertiary">Buy a range of one-off hide</p>
+                                </div>
+                              </a>
+                              <a href="#" class="navigation-card w-inline-block">
+                                <div class="navigation-image-small"><img sizes="(max-width: 800px) 100vw, 800px" srcset="{{ 'sustainability-p-500.webp' | asset_url }} 500w, {{ 'sustainability.webp' | asset_url }} 800w" alt="" loading="lazy" src="{{ 'sustainability.webp' | asset_url }}" class="image-cover-3"></div>
+                                <div class="column">
+                                  <div class="subheading-small-2">Order Samples</div>
+                                  <p class="paragraph-small-6 text-color-tertiary">Find the perfect leather today</p>
+                                </div>
+                              </a>
+                              <a href="#" class="navigation-card w-inline-block">
+                                <div class="navigation-image-small"><img sizes="(max-width: 1104px) 100vw, 1104px" srcset="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 500w, {{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 1104w" alt="" loading="lazy" src="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }}" class="image-cover-3"></div>
+                                <div class="column">
+                                  <div class="subheading-small-2">Leather Care</div>
+                                  <p class="paragraph-small-6 text-color-tertiary">Care for premium leather</p>
+                                </div>
+                              </a>
+                              <a href="#" class="navigation-card w-inline-block">
+                                <div class="navigation-image-small"><img sizes="(max-width: 1000px) 100vw, 1000px" srcset="{{ 'Muirhead-Square-p-500.jpg' | asset_url }} 500w, {{ 'Muirhead-Square-p-800.jpg' | asset_url }} 800w, {{ 'Muirhead-Square.jpg' | asset_url }} 1000w" alt="" loading="lazy" src="{{ 'Muirhead-Square.jpg' | asset_url }}" class="image-cover-3"></div>
+                                <div class="column">
+                                  <div class="subheading-small-2">Muirhead Gifts</div>
+                                  <p class="paragraph-small-6 text-color-tertiary">Bespoke Leather Gifts</p>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="_0-5rem-spacer">
+                              <div class="navigation-line"></div>
+                            </div>
+                            <a href="#" class="banner black w-inline-block">
+                              <div class="banner-wrap">
+                                <div>Build Your Own Leather</div>
+                                <div class="badge-banner brown">
+                                  <div>Create Now</div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="_1rem-spacer"></div>
+                  <a href="#" bind="14f24e57-65b0-d756-3869-f8d259cb601e" sym-bind="{"link":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"abd48bfb-d708-6bdf-d8a5-842d29e77fd1"}}}" class="button-13 w-inline-block">
+                    <div class="icon-link">
+                      <div class="clip-2">
+                        <div class="hover-text">
+                          <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9">Contact</div>
+                        </div>
+                        <div class="hover-text bottom">
+                          <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9">Contact</div>
+                        </div>
+                      </div>
+                      <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2">
+                        <div class="clip-2">
+                          <div class="hover-arrow-3"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68323bc95b8a3c54fe42da38/6845f15c153a9f3137a2424a_arrow-right-s-line.svg" class="icon-1x1-small-7"></div>
+                          <div class="hover-arrow-3 left-arrow"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68323bc95b8a3c54fe42da38/6845f15c153a9f3137a2424a_arrow-right-s-line.svg" class="icon-1x1-small-7"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="_1rem-spacer"></div>
+                  <div bind="57d39715-0bd5-69ba-83c7-0f9d7b7fcf1e" class="scoial-wrapper">
+                    <a href="https://www.facebook.com/WHMalcolm" target="_blank" class="sociallink w-inline-block">
+                      <div bind="57d39715-0bd5-69ba-83c7-0f9d7b7fcf20" class="social-link w-embed"><svg width="18" height="18" viewbox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.23781 22.224V12.0866H0.677734V8.13584H4.23781V5.22228C4.23781 1.84111 6.39289 0 9.54053 0C11.0483 0 12.3441 0.107569 12.7218 0.155649V3.68917L10.5387 3.69012C8.82684 3.69012 8.49538 4.46961 8.49538 5.61346V8.13584H12.578L12.0464 12.0866H8.49537V22.224H4.23781Z" fill="CurrentColor"></path>
+                        </svg></div>
+                    </a>
+                    <a href="https://www.twitter.com/MalcolmGroup" target="_blank" class="sociallink w-inline-block">
+                      <div bind="57d39715-0bd5-69ba-83c7-0f9d7b7fcf22" class="social-link w-embed"><svg width="18" height="18" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13.1776 9.50438L20.9966 0.611328H19.1444L12.3523 8.33146L6.93153 0.611328H0.677734L8.87683 12.2866L0.677734 21.6112H2.52993L9.69793 13.4568L15.4239 21.6112H21.6777M3.19843 1.97798H6.04393L19.143 20.3117H16.2968" fill="CurrentColor"></path>
+                        </svg></div>
+                    </a>
+                    <a href="https://www.instagram.com/themalcolmgroup" target="_blank" class="sociallink w-inline-block">
+                      <div bind="57d39715-0bd5-69ba-83c7-0f9d7b7fcf24" class="social-link w-embed"><svg width="18" height="18" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.8387 2.59611C13.7326 2.59611 14.0754 2.60649 15.2186 2.65645C15.9059 2.66451 16.5868 2.78545 17.2315 3.01403C17.699 3.18681 18.1236 3.45148 18.4779 3.79102C18.8323 4.13055 19.1085 4.53742 19.2888 4.98543C19.5273 5.60322 19.6535 6.25563 19.6619 6.9143C19.7135 8.0098 19.7249 8.3382 19.7249 11.1113C19.7249 13.8844 19.7141 14.2128 19.6619 15.3083C19.6535 15.967 19.5273 16.6194 19.2888 17.2372C19.1085 17.6852 18.8323 18.0921 18.4779 18.4316C18.1236 18.7712 17.699 19.0358 17.2315 19.2086C16.5868 19.4372 15.9059 19.5581 15.2186 19.5662C14.0759 19.6156 13.7332 19.6265 10.8387 19.6265C7.94426 19.6265 7.60155 19.6161 6.45884 19.5662C5.77147 19.5581 5.09064 19.4372 4.44594 19.2086C3.97841 19.0358 3.55381 18.7712 3.19948 18.4316C2.84516 18.0921 2.56895 17.6852 2.38864 17.2372C2.15011 16.6194 2.0239 15.967 2.01548 15.3083C1.96387 14.2128 1.95252 13.8844 1.95252 11.1113C1.95252 8.3382 1.96335 8.0098 2.01548 6.9143C2.0239 6.25563 2.15011 5.60322 2.38864 4.98543C2.56895 4.53742 2.84516 4.13055 3.19948 3.79102C3.55381 3.45148 3.97841 3.18681 4.44594 3.01403C5.09064 2.78545 5.77147 2.66451 6.45884 2.65645C7.60206 2.60699 7.94477 2.59611 10.8387 2.59611V2.59611ZM10.8387 0.724609C7.89677 0.724609 7.52619 0.736479 6.37006 0.786927C5.47048 0.804073 4.58044 0.967291 3.73781 1.26964C3.01497 1.53061 2.36025 1.93958 1.81935 2.46801C1.26741 2.98652 0.840255 3.61425 0.567742 4.30736C0.252222 5.11481 0.0818932 5.96769 0.064 6.82972C0.0123871 7.9366 0 8.29171 0 11.1108C0 13.9299 0.0123871 14.285 0.0650322 15.3929C0.0829253 16.2549 0.253255 17.1078 0.568774 17.9153C0.840985 18.6083 1.26778 19.236 1.81935 19.7546C2.36055 20.2832 3.01563 20.6922 3.73884 20.953C4.58147 21.2553 5.47151 21.4186 6.3711 21.4357C7.52723 21.4852 7.89626 21.498 10.8397 21.498C13.7832 21.498 14.1523 21.4862 15.3084 21.4357C16.208 21.4186 17.098 21.2553 17.9406 20.953C18.6604 20.6856 19.3141 20.2773 19.8597 19.754C20.4054 19.2308 20.8311 18.6042 21.1097 17.9143C21.4252 17.1068 21.5955 16.254 21.6134 15.3919C21.665 14.285 21.6774 13.9299 21.6774 11.1108C21.6774 8.29171 21.665 7.9366 21.6124 6.82874C21.5945 5.9667 21.4242 5.11382 21.1086 4.30637C20.8364 3.61335 20.4096 2.98562 19.8581 2.46702C19.3169 1.93847 18.6618 1.5295 17.9386 1.26865C17.0959 0.966302 16.2059 0.803084 15.3063 0.785938C14.1512 0.736479 13.7806 0.724609 10.8387 0.724609Z" fill="CurrentColor"></path>
+                          <path d="M10.8413 5.7793C9.74049 5.7793 8.66437 6.09211 7.74906 6.67817C6.83375 7.26423 6.12035 8.09721 5.69907 9.0718C5.2778 10.0464 5.16758 11.1188 5.38234 12.1534C5.5971 13.188 6.12721 14.1384 6.90562 14.8843C7.68403 15.6302 8.67578 16.1382 9.75547 16.344C10.8352 16.5497 11.9543 16.4441 12.9713 16.0404C13.9884 15.6368 14.8576 14.9531 15.4692 14.076C16.0808 13.1989 16.4073 12.1677 16.4073 11.1129C16.4073 9.69831 15.8209 8.3417 14.777 7.34146C13.7332 6.34123 12.3175 5.7793 10.8413 5.7793ZM10.8413 14.5749C10.1268 14.5749 9.42825 14.3719 8.83411 13.9915C8.23997 13.6111 7.77689 13.0704 7.50344 12.4377C7.22999 11.8051 7.15844 11.109 7.29785 10.4374C7.43725 9.76587 7.78135 9.14899 8.28662 8.66481C8.79189 8.18063 9.43565 7.8509 10.1365 7.71732C10.8373 7.58373 11.5638 7.65229 12.2239 7.91433C12.8841 8.17636 13.4484 8.62011 13.8453 9.18944C14.2423 9.75878 14.4542 10.4281 14.4542 11.1129C14.4542 12.0311 14.0736 12.9117 13.396 13.5609C12.7185 14.2102 11.7995 14.5749 10.8413 14.5749V14.5749Z" fill="CurrentColor"></path>
+                          <path d="M16.6249 6.813C17.3432 6.813 17.9255 6.255 17.9255 5.56666C17.9255 4.87832 17.3432 4.32031 16.6249 4.32031C15.9065 4.32031 15.3242 4.87832 15.3242 5.56666C15.3242 6.255 15.9065 6.813 16.6249 6.813Z" fill="CurrentColor"></path>
+                        </svg></div>
+                    </a>
+                    <a href="https://www.linkedin.com/company/the-malcolm-group" target="_blank" class="sociallink w-inline-block">
+                      <div bind="57d39715-0bd5-69ba-83c7-0f9d7b7fcf26" class="social-link w-embed"><svg width="18" height="18" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_348_181)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.8223 19.6621H16.002V12.9775C16.002 11.1437 15.193 10.1207 13.7422 10.1207C12.1635 10.1207 11.2266 11.1867 11.2266 12.9775V19.6621H7.40625V7.24609H11.2266V8.64234C11.2266 8.64234 12.4252 6.53911 15.1261 6.53911C17.8281 6.53911 19.8223 8.1879 19.8223 11.5994V19.6621ZM3.05301 5.26039C1.7646 5.26039 0.720703 4.20795 0.720703 2.91C0.720703 1.61301 1.7646 0.560547 3.05301 0.560547C4.34045 0.560547 5.38435 1.61301 5.38435 2.91C5.3853 4.20795 4.34045 5.26039 3.05301 5.26039ZM0.720703 19.6621H5.49609V7.24609H0.720703V19.6621Z" fill="CurrentColor"></path>
+                          </g>
+                          <defs>
+                            <clippath id="clip0_348_181">
+                              <rect width="19.1016" height="19.1016" fill="white" transform="translate(0.720703 0.560547)"></rect>
+                            </clippath>
+                          </defs>
+                        </svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/@TheMalcolmGroup" target="_blank" class="sociallink w-inline-block">
+                      <div bind="57d39715-0bd5-69ba-83c7-0f9d7b7fcf28" class="social-link w-embed"><svg width="18" height="18" viewbox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_348_177)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.73506 14.1675C8.47715 14.3149 8.16027 14.3139 7.90334 14.1648C7.64641 14.0157 7.48828 13.7411 7.48828 13.444V6.77735C7.48828 6.48026 7.64641 6.20568 7.90334 6.0566C8.16027 5.90751 8.47715 5.90643 8.73506 6.05385L14.5684 9.38718C14.828 9.53551 14.9883 9.8116 14.9883 10.1107C14.9883 10.4098 14.828 10.6858 14.5684 10.8342L8.73506 14.1675ZM12.4753 10.1107L9.15495 8.21335V12.008L12.4753 10.1107Z" fill="CurrentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.822266 10.1113C0.822266 13.2361 0.822266 14.7985 1.61803 15.8938C1.87502 16.2475 2.1861 16.5586 2.53982 16.8156C3.6351 17.6113 5.19749 17.6113 8.32227 17.6113H13.3223C16.447 17.6113 18.0094 17.6113 19.1047 16.8156C19.4584 16.5586 19.7695 16.2475 20.0265 15.8938C20.8223 14.7985 20.8223 13.2361 20.8223 10.1113C20.8223 6.98658 20.8223 5.42416 20.0265 4.32891C19.7695 3.97516 19.4584 3.66408 19.1047 3.40708C18.0094 2.61133 16.447 2.61133 13.3223 2.61133H8.32227C5.19749 2.61133 3.6351 2.61133 2.53982 3.40708C2.1861 3.66408 1.87502 3.97516 1.61803 4.32891C0.822266 5.42416 0.822266 6.98658 0.822266 10.1113ZM8.32227 15.9447H13.3223C14.9218 15.9447 15.9875 15.9424 16.795 15.8549C17.5713 15.7708 17.9089 15.6243 18.1251 15.4672C18.3373 15.313 18.5239 15.1264 18.6782 14.9141C18.8352 14.698 18.9817 14.3604 19.0658 13.5841C19.1533 12.7766 19.1556 11.7108 19.1556 10.1113C19.1556 8.51183 19.1533 7.44608 19.0658 6.63858C18.9817 5.86225 18.8352 5.52466 18.6782 5.3085C18.5239 5.09633 18.3373 4.90966 18.1251 4.75541C17.9089 4.59841 17.5713 4.45191 16.795 4.36775C15.9875 4.28025 14.9218 4.278 13.3223 4.278H8.32227C6.72275 4.278 5.65699 4.28025 4.84951 4.36775C4.07321 4.45191 3.73564 4.59841 3.51947 4.75541C3.30723 4.90966 3.12059 5.09633 2.96639 5.3085C2.80933 5.52466 2.66282 5.86225 2.57871 6.63858C2.49122 7.44608 2.48893 8.51183 2.48893 10.1113C2.48893 11.7108 2.49122 12.7766 2.57871 13.5841C2.66282 14.3604 2.80933 14.698 2.96639 14.9141C3.12059 15.1264 3.30723 15.313 3.51947 15.4672C3.73564 15.6243 4.07321 15.7708 4.84951 15.8549C5.65699 15.9424 6.72275 15.9447 8.32227 15.9447Z" fill="CurrentColor"></path>
+                          </g>
+                          <defs>
+                            <clippath id="clip0_348_177">
+                              <rect width="20" height="20" fill="white" transform="matrix(1 0 0 -1 0.822266 20.1113)"></rect>
+                            </clippath>
+                          </defs>
+                        </svg></div>
+                    </a>
+                    <a href="https://www.tiktok.com/@themalcolmgroup" target="_blank" class="w-inline-block">
+                      <div bind="57d39715-0bd5-69ba-83c7-0f9d7b7fcf2a" class="social-link w-embed"><svg width="18" height="18" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_348_186)">
+                            <path d="M12.2742 0.817969C13.3997 0.800781 14.5168 0.809719 15.6333 0.800781C15.6705 2.19709 16.237 3.45384 17.1383 4.38472L17.1369 4.38334C18.107 5.25716 19.3692 5.82366 20.7607 5.91991L20.78 5.92128V9.38353C19.4655 9.35053 18.2293 9.04734 17.1149 8.52622L17.1713 8.54959C16.6323 8.29041 16.1765 8.02434 15.7433 7.72734L15.7791 7.75072C15.7708 10.2594 15.7873 12.7681 15.7619 15.2678C15.6911 16.5418 15.2676 17.7037 14.5883 18.6737L14.6021 18.6524C13.4663 20.279 11.6266 21.3467 9.53453 21.41H9.5249C9.44034 21.4141 9.34065 21.4162 9.24028 21.4162C8.0509 21.4162 6.93922 21.0848 5.99184 20.5093L6.01934 20.5252C4.29509 19.4877 3.10572 17.7126 2.88572 15.648L2.88297 15.6198C2.86578 15.1902 2.85753 14.7605 2.87472 14.3397C3.21159 11.0542 5.96434 8.51247 9.3104 8.51247C9.68647 8.51247 10.055 8.54478 10.4132 8.60597L10.3747 8.60047C10.3918 9.87166 10.3403 11.1435 10.3403 12.4147C10.0495 12.3095 9.71397 12.2483 9.36403 12.2483C8.07978 12.2483 6.98734 13.0692 6.58309 14.2153L6.5769 14.2359C6.48547 14.5295 6.43253 14.867 6.43253 15.2163C6.43253 15.3579 6.44147 15.4982 6.45797 15.6357L6.45659 15.6192C6.68484 17.0258 7.89072 18.0873 9.34478 18.0873C9.38672 18.0873 9.42797 18.0866 9.46922 18.0845H9.46303C10.4688 18.0543 11.342 17.5132 11.8356 16.7137L11.8425 16.7013C12.026 16.4455 12.1518 16.1362 12.1938 15.8L12.1945 15.7903C12.2804 14.2524 12.246 12.7234 12.2543 11.1855C12.2625 7.72322 12.246 4.26922 12.2715 0.815906L12.2742 0.817969Z" fill="CurrentColor"></path>
+                          </g>
+                          <defs>
+                            <clippath id="clip0_348_186">
+                              <rect width="22" height="22" fill="white" transform="translate(0.822266 0.111328)"></rect>
+                            </clippath>
+                          </defs>
+                        </svg></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="_8rem-spacer"></div>
               </div>
             </div>
           </div>
@@ -774,9 +1679,14 @@
     ],
     "settings": [
         {
-            "id": "image_logo",
+            "id": "image_logo_dark",
             "type": "image_picker",
-            "label": "Logo"
+            "label": "Logo (Dark)"
+        },
+        {
+            "id": "image_logo_white",
+            "type": "image_picker",
+            "label": "Logo (White)"
         },
         {
             "id": "text_search",
