@@ -1,12 +1,12 @@
 <div class="header-slide_wrap">
           <div class="header-slider swiper">
-            <div class="header-slider-list swiper-wrapper">
-              {% for block in section.blocks %}
-    {% if block.type == "slide" %}
-                    <div li-block="Slide" class="header-slide swiper-slide">
+            {% for block in section.blocks %}
+    {% if block.type == "slider" %}
+                    <div li-block="Slider" class="header-slider-list swiper-wrapper">
                                     
-                
-                                    <div class="hero-slide-content_layout is-centered">
+              
+                                    <div class="header-slide swiper-slide">
+                <div class="hero-slide-content_layout is-centered">
                   <div class="slider-background_wrap">{% if block.settings.image_image %}
 {{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'slider-background-image', sizes: '(max-width: 1800px) 100vw, 1800px', loading: 'lazy' }}
 {% else %}
@@ -27,12 +27,12 @@
                     </div>
                   </div>
                 </div>
+              </div>
                                     
-              
+            
                             </div>
             {% endif %}
 {% endfor %}
-            </div>
           </div>
         </div>
         <div class="hero-slider-pagination_wrap">
@@ -45,8 +45,8 @@
     "class": "header-slider-section",
     "blocks": [
         {
-            "name": "Slide",
-            "type": "slide",
+            "name": "Slider",
+            "type": "slider",
             "settings": [
                 {
                     "id": "image_image",
@@ -85,7 +85,7 @@
             "category": "Liquify",
             "blocks": [
                 {
-                    "type": "slide"
+                    "type": "slider"
                 }
             ]
         }

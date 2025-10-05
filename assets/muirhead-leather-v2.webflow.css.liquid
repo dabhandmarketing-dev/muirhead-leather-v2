@@ -776,7 +776,7 @@ figcaption {
   z-index: 99;
   width: 100%;
   position: fixed;
-  top: 0;
+  inset: 0% 0% auto;
 }
 
 .section_footer {
@@ -5339,7 +5339,6 @@ figcaption {
 }
 
 .layout414_image-wrapper {
-  border-radius: ;
   width: 30vw;
   overflow: hidden;
 }
@@ -5362,7 +5361,6 @@ figcaption {
 
 .header77_content-right {
   grid-column-gap: 1rem;
-  background-color: ;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
@@ -7179,6 +7177,18 @@ figcaption {
 .product-item_tag-3.is-red {
   color: #9b1313;
   background-color: #f8e4e4;
+}
+
+.darklogo {
+  opacity: 0;
+  color: var(--base-color-neutral--white);
+  width: 10rem;
+  position: absolute;
+}
+
+.whitelogo {
+  color: var(--base-color-neutral--white);
+  width: 10rem;
 }
 
 @media screen and (min-width: 1280px) {
