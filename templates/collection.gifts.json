@@ -13,11 +13,17 @@
       "type": "page_heading",
       "name": "Page Heading",
       "settings": {}
+    },
+    "r_collection_product_idjhFj": {
+      "type": "r_collection_product",
+      "name": "R-collection_product",
+      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "page_heading_w4V3gw"
+    "page_heading_w4V3gw",
+    "r_collection_product_idjhFj"
   ]
 }
