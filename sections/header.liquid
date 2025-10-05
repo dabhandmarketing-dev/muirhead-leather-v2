@@ -419,46 +419,19 @@
                       <div class="dropdowncard">
                         <div class="navigation-dropdown-card">
                           <div class="w-layout-grid navigation-grid-large">
-                            <a href="#" class="navigation-card w-inline-block">
-                              <div class="navigation-image-small"><img sizes="100vw" srcset="{{ 'muirhead_home_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_home_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_home_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_home_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_home_04.webp' | asset_url }}" class="image-cover-3"></div>
-                              <div class="column">
-                                <div class="subheading-small-2">Stock</div>
-                                <p class="paragraph-small-6 text-color-tertiary">Buy a range of one-off hide</p>
-                              </div>
-                            </a>
-                            <a href="#" class="navigation-card w-inline-block">
-                              <div class="navigation-image-small"><img sizes="100vw" srcset="{{ 'sustainability-p-500.webp' | asset_url }} 500w, {{ 'sustainability.webp' | asset_url }} 800w" alt="" loading="lazy" src="{{ 'sustainability.webp' | asset_url }}" class="image-cover-3"></div>
-                              <div class="column">
-                                <div class="subheading-small-2">Order Samples</div>
-                                <p class="paragraph-small-6 text-color-tertiary">Find the perfect leather today</p>
-                              </div>
-                            </a>
-                            <a href="#" class="navigation-card w-inline-block">
-                              <div class="navigation-image-small"><img sizes="100vw" srcset="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 500w, {{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 1104w" alt="" loading="lazy" src="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }}" class="image-cover-3"></div>
-                              <div class="column">
-                                <div class="subheading-small-2">Leather Care</div>
-                                <p class="paragraph-small-6 text-color-tertiary">Care for premium leather</p>
-                              </div>
-                            </a>
-                            <a href="#" class="navigation-card w-inline-block">
-                              <div class="navigation-image-small"><img sizes="100vw" srcset="{{ 'Muirhead-Square-p-500.jpg' | asset_url }} 500w, {{ 'Muirhead-Square-p-800.jpg' | asset_url }} 800w, {{ 'Muirhead-Square.jpg' | asset_url }} 1000w" alt="" loading="lazy" src="{{ 'Muirhead-Square.jpg' | asset_url }}" class="image-cover-3"></div>
-                              <div class="column">
-                                <div class="subheading-small-2">Muirhead Gifts</div>
-                                <p class="paragraph-small-6 text-color-tertiary">Bespoke Leather Gifts</p>
-                              </div>
-                            </a>
+                            <a href="{{ section.settings.url_link }}" li-snippet="menu-item" class="navigation-card w-inline-block"> <div class="navigation-image-small">{% if section.settings.image_image %} {{ section.settings.image_image | image_url: width: 1000 | image_tag: class: 'image-cover-3', sizes: '100vw', loading: 'lazy' }} {% else %} <img class="image-cover-3" src="{{ 'muirhead_home_04.webp' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'muirhead_home_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_home_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_home_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_home_04.webp' | asset_url }} 1084w"> {% endif %}</div> <div class="column"> <div class="subheading-small-2">{{ section.settings.text_title }}</div> <p class="paragraph-small-6 text-color-tertiary">{{ section.settings.text_paragraph }}</p> </div> </a>
                           </div>
                           <div class="_0-5rem-spacer">
                             <div class="navigation-line"></div>
                           </div>
-                          <a href="#" class="banner black w-inline-block">
+                          <div href="#" class="banner black">
                             <div class="banner-wrap">
                               <div>Build Your Own Leather</div>
                               <div class="badge-banner brown">
                                 <div>Create Now</div>
                               </div>
                             </div>
-                          </a>
+                          </div>
                         </div>
                       </div>
                     </nav>
@@ -522,18 +495,25 @@
                         <nav class="nav_predictive-search-holder w-dropdown-list">
                           <div li-element="dropdown-toggle" class="nav_predictive-search-close" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))"></div>
                           <div class="predictive-search_component">
-                            <div class="predictive-search_header">
-                              <div class="heading-style-h3">
-{{ section.settings.text_search }}
-</div><button li-element="dropdown-toggle" aria-label="Close Search" class="nav_dropdown-close-button" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
-                                <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.84775 14.178L0.447754 12.778L6.04775 7.17798L0.447754 1.57798L1.84775 0.177979L7.44775 5.77798L13.0478 0.177979L14.4478 1.57798L8.84775 7.17798L14.4478 12.778L13.0478 14.178L7.44775 8.57798L1.84775 14.178Z" fill="currentColor"></path>
-                                  </svg></div>
-                              </button>
+                            <div data-cart-bg="1" class="cart_heading">
+                              <div class="div-block-752">
+                                <a href="#" aria-label="Close Search" li-element="dropdown-toggle" id="w-node-afeebc59-c1f2-fda2-8a04-05031d13d4b6-ca33918e" class="cart_down-button w-inline-block" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
+                                  <div class="cart2_back-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 m-4" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                    </svg></div>
+                                  <div>Back</div>
+                                </a>
+                                <div class="cart_title-text">Search</div>
+                                <a aria-label="Close Search" li-element="dropdown-toggle" id="w-node-afeebc59-c1f2-fda2-8a04-05031d13d4bc-ca33918e" href="#" class="banner-close-button cart w-inline-block" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
+                                  <div class="banner_icon large w-embed"><svg width="100%" height="100%" viewbox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M22.8354 22.864L22.3639 23.3354C22.1036 23.5957 21.6815 23.5957 21.4211 23.3354L16 17.9142L10.5788 23.3353C10.3185 23.5957 9.89638 23.5957 9.63603 23.3353L9.16462 22.8639C8.90427 22.6036 8.90427 22.1815 9.16462 21.9211L14.5858 16.5L9.16462 11.0788C8.90427 10.8185 8.90427 10.3964 9.16462 10.136L9.63602 9.66463C9.89637 9.40428 10.3185 9.40428 10.5788 9.66463L16 15.0858L21.4211 9.66462C21.6815 9.40427 22.1036 9.40427 22.3639 9.66462L22.8354 10.136C23.0957 10.3964 23.0957 10.8185 22.8354 11.0788L17.4142 16.5L22.8354 21.9211C23.0957 22.1815 23.0957 22.6036 22.8354 22.864Z" fill="currentColor"></path>
+                                    </svg></div>
+                                </a>
+                              </div>
                             </div><predictive-search class="predictive-search">
                               <div class="predictive-search_holder">
                                 <div class="predictive-search_form w-form">
-                                  <form id="wf-form-produkt-suche" name="wf-form-produkt-suche" data-name="produkt-suche" action="/search" method="get" class="predictive-search_form-component" data-wf-page-id="68e22fae932bc475029cc993" data-wf-element-id="ace72904-ccb0-6b8e-3d5e-d5f5ca33919d">
+                                  <form id="wf-form-produkt-suche" name="wf-form-produkt-suche" data-name="produkt-suche" action="/search" method="get" class="predictive-search_form-component" data-wf-page-id="68e29f09a8f710b7f0c0d13d" data-wf-element-id="ace72904-ccb0-6b8e-3d5e-d5f5ca33919d">
                                     <div class="predictive-search_input-holder"><label for="search-input" class="form_hidden-label">Search</label><input type="search" id="search-input" placeholder="Search now" name="q" class="predictive-search_input">
                                       <a href="#" class="predictive-search_search-button w-inline-block">
                                         <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 25 25" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
@@ -1108,7 +1088,7 @@
                             <div li-element="mini-cart-full" class="mini-cart_full" :style="total.items < 1 && { display: 'none' }">
                               <div data-cart-bg="1" class="cart_heading">
                                 <div class="div-block-752">
-                                  <a href="#" sf-cart-close="1" id="w-node-_0f8904c0-bdf6-0fb7-7092-3275e27ec336-3a85362c" class="cart_down-button w-inline-block">
+                                  <a href="#" aria-label="Close Cart" li-element="dropdown-toggle" id="w-node-_0f8904c0-bdf6-0fb7-7092-3275e27ec336-3a85362c" class="cart_down-button w-inline-block" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
                                     <div class="cart2_back-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 m-4" fill="none" viewbox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                                       </svg></div>
@@ -1195,7 +1175,7 @@
                                       </li>
                                     </ul>
                                   </div>
-                                </div><img loading="lazy" src="{{ 'credit-card-icons.svg' | asset_url }}" alt="" class="cc-icons">
+                                </div>
                               </div>
                               <div class="mini-cart_footer">
                                 <div class="cta1_wrapper">
@@ -1266,6 +1246,16 @@
                                         <div id="cta_text" li-js-price="total.price" class="button-text" x-text="LiquifyHelper.moneyFormat(total.price, true, '{{ shop.money_with_currency_format }}')">{Price}</div>
                                       </div>
                                     </a>
+                                    <ul role="list" class="footer_payment-list centre w-list-unstyled">
+                                      {% for type in shop.enabled_payment_types %}    <li li-for="type in shop.enabled_payment_types" class="footer_payment-item">
+                                    
+                                        
+                            <div li-object="type | payment_type_svg_tag: class: 'footer_payment-img icon--full-color'" class="footer_payment-svg">{{ type | payment_type_svg_tag: class: 'footer_payment-img icon--full-color' }}</div>
+                            
+                                      
+                        </li>
+{% endfor %}
+                                    </ul>
                                   </div>
                                 </div>
                               </div>
@@ -1805,10 +1795,26 @@
     ],
     "settings": [
         {
-            "id": "text_search",
+            "id": "url_link",
+            "type": "url",
+            "label": "Link"
+        },
+        {
+            "id": "image_image",
+            "type": "image_picker",
+            "label": "Image"
+        },
+        {
+            "id": "text_title",
             "type": "text",
-            "label": "Search",
-            "default": "Search"
+            "label": "Title",
+            "default": "Stock"
+        },
+        {
+            "id": "text_paragraph",
+            "type": "text",
+            "label": "Paragraph",
+            "default": "Buy a range of one-off hide"
         },
         {
             "id": "collection_search_bestseller",
