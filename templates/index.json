@@ -22,10 +22,10 @@
             "text_button_text": "Buy Leather"
           }
         },
-        "slide_bhz9hy": {
+        "slide_eBREUK": {
           "type": "slide",
           "settings": {
-            "image_image": "shopify://shop_images/Gifts.webp",
+            "image_image": "shopify://shop_images/Muirhead_Hero_BG.jpg",
             "text_pre_heading": "More than",
             "text_heading": "Leather",
             "url_button_link": "shopify://collections/all",
@@ -35,7 +35,7 @@
       },
       "block_order": [
         "slide_aHXehg",
-        "slide_bhz9hy"
+        "slide_eBREUK"
       ],
       "name": "Slideshow",
       "settings": {}
