@@ -36,10 +36,14 @@
         "text_text": "The lowest carbon, high performance natural leather for the toughest passenger environments and the most discerning luxury designers."
       }
     },
-    "custom_liquid": {
-      "type": "custom_liquid",
+    "image_scroller_RtHWEd": {
+      "type": "image_scroller",
+      "name": "Image Scroller",
       "settings": {
-        "custom_liquid": ""
+        "text_heading": "Rethink comfort. Redefine sustainability.",
+        "richtext_body_text": "<p>Muirhead BioPRO® Foam is a game-changer for aviation seating – setting a new standard in sustainability, performance, and customisation. <br/><br/>With a <strong>protein content of 20%</strong>, this innovative foam for aviation seat cushions is naturally fire-resistant, highly durable, and lightweight. It is free from harmful substances such as melamine, bromine, and PFAS, and can be fully tailored to meet your specific requirements.Explore how this revol</p>",
+        "url_button_link": "",
+        "text_button_text": "Learn More"
       }
     },
     "video_hero_WrMVQn": {
@@ -53,7 +57,7 @@
   "order": [
     "slideshow_8m7Dab",
     "text_stitching_secti_FQw7t6",
-    "custom_liquid",
+    "image_scroller_RtHWEd",
     "video_hero_WrMVQn"
   ]
 }
