@@ -102,7 +102,7 @@
                             </div>
 {% endif %}
                       </div>
-                      <div class="cart_action"><input type="submit" data-wait="Please wait..." class="button w-button" value="Checkout" name="checkout"><input type="submit" data-wait="Please wait..." class="button is-outline w-button" value="Update cart"></div>
+                      <div class="cart_action"><input type="submit" data-wait="Please wait..." class="cart w-button" value="Checkout" name="checkout"><input type="submit" data-wait="Please wait..." class="cart is-outline w-button" value="Update cart"></div>
                     </div>
                   </div>
                   <div class="cart_table outline-solid-1">
@@ -132,7 +132,7 @@
               <div>
 {{ section.settings.text_cart_empty }}
 </div>
-              <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="button w-button">Shop Now</a>
+              <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="cart w-button">Shop Now</a>
                 </div>
 {% endif %}
           </div>
