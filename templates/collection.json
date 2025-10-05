@@ -14,9 +14,9 @@
       "name": "Page Heading",
       "settings": {}
     },
-    "collection_filters_RbQANq": {
-      "type": "collection_filters",
-      "name": "Collection (Filters)",
+    "r_collection_product_3fpxTn": {
+      "type": "r_collection_product",
+      "name": "R-collection_product",
       "settings": {}
     }
   },
@@ -24,6 +24,6 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "page_heading_w4V3gw",
-    "collection_filters_RbQANq"
+    "r_collection_product_3fpxTn"
   ]
 }
