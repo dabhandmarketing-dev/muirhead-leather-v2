@@ -19,7 +19,9 @@
         "text_search": "Search",
         "collection_search_bestseller": "",
         "collection_search_bestseller_limit": 6,
-        "menu": "main-menu"
+        "text_success_headline": "Congratulations 🎉",
+        "text_success_text": "Nice one! You’ve unlocked free shipping!",
+        "free_shipping": "10000"
       }
     }
   },
