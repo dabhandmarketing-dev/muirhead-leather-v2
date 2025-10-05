@@ -1,4 +1,4 @@
-<div data-collapse="medium" data-animation="over-right" data-duration="400" data-easing="ease" data-easing2="ease" data-no-scroll="1" role="banner" class="navbar w-nav">
+<div data-animation="over-right" class="navbar w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" role="banner" data-no-scroll="1" data-duration="400">
           <div class="search-nav-container-2">
             <div class="div-block-180">
               <div sf-product-search="1" class="search-box-2">
@@ -415,7 +415,7 @@
                     </a>
                   </div>
                 </div>
-                <a href="../index.html" class="brand w-nav-brand">{% if section.settings.image_logo_dark %}
+                <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="brand w-nav-brand">{% if section.settings.image_logo_dark %}
 {{ section.settings.image_logo_dark | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'nav_logo dark' }}
 {% else %}
 <img src="{{ 'liquify-logo.svg' | asset_url }}" loading="lazy" alt="" class="nav_logo dark">
@@ -1206,20 +1206,19 @@
                       </div>
                     </div>
                   </div>
-                  <div class="hide-tablet">
-                    <a href="#" bind="14f24e57-65b0-d756-3869-f8d259cb601e" sym-bind="{"link":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"abd48bfb-d708-6bdf-d8a5-842d29e77fd1"}}}" class="button-4 white-28 no-arrow w-inline-block">
-                      <div class="icon-link-3">
-                        <div class="clip-2 white-10">
-                          <div class="hover-text white-31">
-                            <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34">Contact</div>
-                          </div>
-                          <div class="hover-text white-31 bottom white-20">
-                            <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34">Contact</div>
-                          </div>
+                  <div class="hide-tablet"></div>
+                  <a href="#" bind="14f24e57-65b0-d756-3869-f8d259cb601e" sym-bind="{"link":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"abd48bfb-d708-6bdf-d8a5-842d29e77fd1"}}}" class="button-4 white-28 no-arrow w-inline-block">
+                    <div class="icon-link-3">
+                      <div class="clip-2 white-10">
+                        <div class="hover-text white-31">
+                          <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34">Contact</div>
+                        </div>
+                        <div class="hover-text white-31 bottom white-20">
+                          <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34">Contact</div>
                         </div>
                       </div>
-                    </a>
-                  </div>
+                    </div>
+                  </a>
                   <div id="menu-trigger" class="menu-trigger">
                     <div class="m-navigation-button-wrapper">
                       <div data-w-id="1171fcbf-5149-a415-23f1-5c51ac060613" class="hamburger_2_wrap">
