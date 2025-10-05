@@ -415,7 +415,8 @@
                     </a>
                   </div>
                 </div>
-                <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="brand w-nav-brand">{% if section.settings.image_logo_dark %}
+                <div class="div-block-757">
+                  <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="brand w-nav-brand">{% if section.settings.image_logo_dark %}
 {{ section.settings.image_logo_dark | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'nav_logo dark' }}
 {% else %}
 <img src="{{ 'liquify-logo.svg' | asset_url }}" loading="lazy" alt="" class="nav_logo dark">
@@ -424,6 +425,7 @@
 {% else %}
 <img src="{{ 'liquify-logo.svg' | asset_url }}" loading="lazy" alt="" class="nav_logo">
 {% endif %}</a>
+                </div>
                 <div class="navigation-side right">
                   <div data-delay="0" data-hover="false" bind="3bdadafd-4b7a-0674-9271-a489ec9ec398" data-w-id="1171fcbf-5149-a415-23f1-5c51ac06058c" class="navigation-dropdown-2 is-static w-dropdown">
                     <div class="navigation-toggle-4 w-dropdown-toggle">
