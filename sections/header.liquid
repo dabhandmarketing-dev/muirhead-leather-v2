@@ -1135,13 +1135,23 @@
                           <div li-element="dropdown-toggle" class="nav_mini-cart-close" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))"></div>
                           <div class="mini-cart_component">
                             <div li-element="mini-cart-full" class="mini-cart_full" :style="total.items < 1 && { display: 'none' }">
-                              <div class="mini-cart_header">
-                                <div class="heading-style-h3">Cart</div><button li-element="dropdown-toggle" aria-label="Close Cart" class="nav_dropdown-close-button" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
-                                  <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M1.84775 14.178L0.447754 12.778L6.04775 7.17798L0.447754 1.57798L1.84775 0.177979L7.44775 5.77798L13.0478 0.177979L14.4478 1.57798L8.84775 7.17798L14.4478 12.778L13.0478 14.178L7.44775 8.57798L1.84775 14.178Z" fill="currentColor"></path>
-                                    </svg></div>
-                                </button>
+                              <div data-cart-bg="1" class="cart_heading">
+                                <div class="div-block-752">
+                                  <a href="#" sf-cart-close="1" id="w-node-_0f8904c0-bdf6-0fb7-7092-3275e27ec336-3a85362c" class="cart_down-button w-inline-block">
+                                    <div class="cart2_back-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 m-4" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                      </svg></div>
+                                    <div>Back</div>
+                                  </a>
+                                  <div class="cart_title-text">Your Cart</div>
+                                  <a aria-label="Close Cart" li-element="dropdown-toggle" id="w-node-_0f8904c0-bdf6-0fb7-7092-3275e27ec33c-3a85362c" href="#" class="banner-close-button cart w-inline-block" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
+                                    <div class="banner_icon large w-embed"><svg width="100%" height="100%" viewbox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.8354 22.864L22.3639 23.3354C22.1036 23.5957 21.6815 23.5957 21.4211 23.3354L16 17.9142L10.5788 23.3353C10.3185 23.5957 9.89638 23.5957 9.63603 23.3353L9.16462 22.8639C8.90427 22.6036 8.90427 22.1815 9.16462 21.9211L14.5858 16.5L9.16462 11.0788C8.90427 10.8185 8.90427 10.3964 9.16462 10.136L9.63602 9.66463C9.89637 9.40428 10.3185 9.40428 10.5788 9.66463L16 15.0858L21.4211 9.66462C21.6815 9.40427 22.1036 9.40427 22.3639 9.66462L22.8354 10.136C23.0957 10.3964 23.0957 10.8185 22.8354 11.0788L17.4142 16.5L22.8354 21.9211C23.0957 22.1815 23.0957 22.6036 22.8354 22.864Z" fill="currentColor"></path>
+                                      </svg></div>
+                                  </a>
+                                </div>
                               </div>
+                              <div class="mini-cart_header"></div>
                               <div class="mini-cart_line-item no-scrollbar">
                                 <ul role="list" class="mini-cart_line-item_list w-list-unstyled">
                                   <template x-for="product in products" :key="product.key">
@@ -1157,14 +1167,39 @@
                                                 </div>
     </template>
                                       </div>
-                                      <div class="mini-cart_line-item_quantity">
-                                        <a li-element="mini-cart-item-decrease" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('decreasecartitem', { product: product.key, quantity: product.quantity, action: 'decrease' })">-</a><input li-element="mini-cart-item-quantity" class="mini-cart_line-item_quantity-adjust" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
-                                        <a li-element="mini-cart-item-increase" href="#" class="mini-cart_line-item_quantity-adjust" :productprop="product" @click="$dispatch('increasecartitem', { product: product.key, quantity: product.quantity, action: 'increase' })">+</a>
+                                      <div class="product-container_quantity-changers-2">
+                                        <a li-element="mini-cart-item-decrease" href="#" class="quantity-decreaser-4" :productprop="product" @click="$dispatch('decreasecartitem', { product: product.key, quantity: product.quantity, action: 'decrease' })">-</a><input li-element="mini-cart-item-quantity" class="quantity-changer-3 is-hidden-arrows" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
+                                        <a li-element="mini-cart-item-increase" href="#" class="quantity-increaser-4" :productprop="product" @click="$dispatch('increasecartitem', { product: product.key, quantity: product.quantity, action: 'increase' })">+</a>
                                       </div>
-                                      <div li-element="mini-cart-item-remove" class="text-size-tiny text-color-grey text-style-link" :productprop="product" @click="$dispatch('setcartitem', { product: product.key, quantity: 0 })">Remove</div>
+                                      <div li-element="mini-cart-item-remove" class="div-block-755" :productprop="product" @click="$dispatch('setcartitem', { product: product.key, quantity: 0 })"><svg viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" sf-cart-item-remove="1" class="cart-item-remover">
+                                          <path d="M14.7404 9L14.3942 18M9.60577 18L9.25962 9M19.2276 5.79057C19.5696 5.84221 19.9104 5.89747 20.25 5.95629M19.2276 5.79057L18.1598 19.6726C18.0696 20.8448 17.0921 21.75 15.9164 21.75H8.08357C6.90786 21.75 5.93037 20.8448 5.8402 19.6726L4.77235 5.79057M19.2276 5.79057C18.0812 5.61744 16.9215 5.48485 15.75 5.39432M3.75 5.95629C4.08957 5.89747 4.43037 5.84221 4.77235 5.79057M4.77235 5.79057C5.91878 5.61744 7.07849 5.48485 8.25 5.39432M15.75 5.39432V4.47819C15.75 3.29882 14.8393 2.31423 13.6606 2.27652C13.1092 2.25889 12.5556 2.25 12 2.25C11.4444 2.25 10.8908 2.25889 10.3394 2.27652C9.16065 2.31423 8.25 3.29882 8.25 4.47819V5.39432M15.75 5.39432C14.5126 5.2987 13.262 5.25 12 5.25C10.738 5.25 9.48744 5.2987 8.25 5.39432" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <div class="text-size-tiny text-color-grey text-style-link">Remove</div>
+                                      </div>
                                     </div>
                                   </li></template>
                                 </ul>
+                              </div>
+                              <div id="subscription_benefits" class="div-block-753 is-active">
+                                <div id="current_sub" class="message-toggler is-active">
+                                  <ul role="list" class="list3_components w-list-unstyled">
+                                    <li class="list2_item">
+                                      <div class="list3_item-wrapper"><img loading="lazy" src="{{ 'checkmark.svg' | asset_url }}" alt="" class="list2_checkmark">
+                                        <div class="text-size-xtiny">Fast, insured courier</div>
+                                      </div>
+                                    </li>
+                                    <li class="list2_item">
+                                      <div class="list3_item-wrapper"><img loading="lazy" src="{{ 'leaf-outlined-natural-shape.svg' | asset_url }}" alt="" class="list2_checkmark">
+                                        <div class="text-size-xtiny">The Worlds Lowest Carbon Leather</div>
+                                      </div>
+                                    </li>
+                                    <li class="list2_item">
+                                      <div class="list3_item-wrapper"><img loading="lazy" src="{{ 'padlock.svg' | asset_url }}" alt="" class="list2_checkmark">
+                                        <div class="text-size-xtiny">Secure Payment With Shopify</div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
                               </div>
                               <div class="mini-cart_footer">
                                 <div class="mini-cart_footer-total">
@@ -1185,11 +1220,144 @@
                                     <div li-js-object="cartApiResponse?.result?.message" class="text-size-regular text-weight-bold" x-text="cartApiResponse?.result?.message">14,99 $</div>
                                   </div>
                                 </div>
-                                <a x-bind:href="'/checkout'" href="#" class="button w-button">Checkout</a>
-                                <a li-object:href="routes.cart_url" href="{{ routes.cart_url }}" class="button is-secondary w-button">Cart</a>
+                                <div class="cta1_wrapper">
+                                  <div id="button_holder" class="cta1_inner">
+                                    <a id="proceed_checkout" href="#" sf-checkout="1" class="button-22 is-full w-inline-block">
+                                      <div class="loading-spinner w-embed"><svg viewbox="0 0 50 50" class="spinner">
+                                          <circle class="ring" cx="25" cy="25" r="22.5"></circle>
+                                          <circle class="line" cx="25" cy="25" r="22.5"></circle>
+                                        </svg>
+                                        <style>
+.spinner {
+  --spinner-size: 2;
+  --line-color: #ffffff;
+  --line-alpha: 1;
+  --ring-color: #ffffff;
+  --ring-alpha: 0.05;
+  --ring-size: 6;
+  font-size: calc(var(--spinner-size) * 1em);
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+.spinner .line {
+  fill: none;
+  stroke: var(--line-color);
+  stroke-width: var(--ring-size);
+  opacity: var(--line-alpha);
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate3d(0, 0, 1, 0deg);
+  animation: 
+    2156ms spinner-arc ease-in-out infinite,
+    1829ms spinner-rotate linear infinite;
+}
+.spinner .ring {
+  fill: none;
+  stroke: var(--ring-color);
+  stroke-width: var(--ring-size);
+  opacity: var(--ring-alpha);
+}
+@keyframes spinner-rotate {
+  to { transform: rotate3d(0, 0, 1, 360deg); }
+}
+@keyframes spinner-arc {
+  from { stroke-dasharray: 0 150; stroke-dashoffset: 0; }
+  to { stroke-dasharray: 100 150; stroke-dashoffset: -140; }
+}
+--spinner-size: 2em
+--ring-size: 6
+--line-color: #ffffff
+--line-alpha: 1
+--ring-color: #ffffff
+--ring-alpha: 0.05
+</style>
+                                      </div>
+                                      <div id="cta_text" class="checkout-btns">
+                                        <div class="html-embed-10 w-embed"><svg width="100%" height="100%" viewbox="0 0 47 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                              <g id="Ecommerce-Icons" transform="translate(-68.000000, -2394.000000)" fill="#fff">
+                                                <g id="Primary-Lock-Black-Copy" transform="translate(68.000000, 2394.000000)">
+                                                  <path d="M2.894495,44.10574 L44.10574,44.10574 L44.10574,19.434265 L2.894495,19.434265 L2.894495,44.10574 Z M13.920695,12.473565 C13.920695,7.191705 18.217905,2.89426 23.5,2.89426 C28.782095,2.89426 33.079305,7.191705 33.079305,12.473565 L33.079305,16.539535 L13.920695,16.539535 L13.920695,12.473565 Z M45.55287,16.539535 L35.973565,16.539535 L35.973565,12.473565 C35.973565,5.595585 30.378215,0 23.5,0 C16.621785,0 11.026435,5.595585 11.026435,12.473565 L11.026435,16.539535 L1.44713,16.539535 C0.647895,16.539535 0,17.187665 0,17.9869 L0,45.55287 C0,46.352105 0.647895,47 1.44713,47 L45.55287,47 C46.352105,47 47,46.352105 47,45.55287 L47,17.9869 C47,17.187665 46.352105,16.539535 45.55287,16.539535 L45.55287,16.539535 Z" id="Fill-1"></path>
+                                                  <path d="M26.911401,28.2895115 C26.911401,26.3864815 25.368626,24.8439415 23.465596,24.8439415 C21.562331,24.8439415 20.019791,26.3864815 20.019791,28.2895115 C20.019791,29.4074065 20.554416,30.3979315 21.379266,31.0274965 L21.374331,31.0274965 L20.019791,38.6266915 L26.911401,38.6266915 L25.556861,31.0274965 L25.551691,31.0274965 C26.376776,30.3979315 26.911401,29.4074065 26.911401,28.2895115" id="Fill-3"></path>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </svg></div>
+                                        <div id="cta_text" class="button-text">Checkout</div>
+                                      </div>
+                                    </a><img loading="lazy" src="{{ 'credit-card-icons.svg' | asset_url }}" alt="" class="cc-icons hide">
+                                  </div>
+                                </div>
                               </div>
+                              <div id="cart-footer" class="jv_cart-footer">
+                                <div>
+                                  <div class="cart-summary">
+                                    <div sf-cart-subtotal-wrapper="1" class="cart_subtotal-row">
+                                      <div class="label">Subtotal</div>
+                                      <div sf-cart-subtotal="1" class="cart-subtotal">$0</div>
+                                    </div>
+                                    <div class="cart-summary-line thinner hide">
+                                      <div>Shipping</div>
+                                      <div id="shipping_text">Calculated at checkout</div>
+                                    </div>
+                                    <div class="cart-summary-line total">
+                                      <div>Total</div>
+                                      <div class="cart-price-summary">
+                                        <div sf-cart-total="1" class="cart-total text-weight-bold">$0</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="padding-bottom padding-xsmall"></div>
+                                </div>
+                              </div>
+                              <div class="_4rem-spacer"></div>
+                              <div class="_4rem-spacer"></div>
                             </div>
                             <div li-cloak="hide" li-element="mini-cart-empty" class="mini-cart_empty" :style="total.items && { display: 'none' }">
+                              <div sf-cart-empty="1" class="cart-empty-message is-popup">
+                                <div class="cart_title-text">Your cart is empty</div>
+                                <div>Here's some inspiration</div>
+                                <div class="_1rem-spacer"></div>
+                                <div class="jetboost-list-wrapper-3mq4 jetboost-list-wrapper-4nr6 w-dyn-list">
+                                  <div role="list" class="cartmenugrid w-dyn-items">
+                                    <div role="listitem" class="w-dyn-item"></div>
+                                  </div>
+                                  <div class="w-dyn-empty">
+                                    <div>No items found.</div>
+                                  </div>
+                                </div>
+                                <div class="div-block-754">
+                                  <a href="#" class="navigation-card w-inline-block">
+                                    <div class="navigation-image-small"><img sizes="100vw" srcset="{{ 'mask-group-6-2x-p-500.webp' | asset_url }} 500w, {{ 'mask-group-6-2x-p-800.webp' | asset_url }} 800w, {{ 'mask-group-6-2x-p-1080.webp' | asset_url }} 1080w, {{ 'mask-group-6-2x.webp' | asset_url }} 1520w" alt="" loading="lazy" src="{{ 'mask-group-6-2x.webp' | asset_url }}" class="image-cover-3"></div>
+                                    <div class="column">
+                                      <div class="subheading-small-2">Stock</div>
+                                      <p class="paragraph-small-8 text-color-tertiary">Buy a range of one-off hide</p>
+                                    </div>
+                                  </a>
+                                  <a href="#" class="navigation-card w-inline-block">
+                                    <div class="navigation-image-small"><img sizes="100vw" srcset="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 500w, {{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 1104w" alt="" loading="lazy" src="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }}" class="image-cover-3"></div>
+                                    <div class="column">
+                                      <div class="subheading-small-2">Leather Care</div>
+                                      <p class="paragraph-small-8 text-color-tertiary">Care for premium leather</p>
+                                    </div>
+                                  </a>
+                                  <a href="#" class="navigation-card w-inline-block">
+                                    <div class="navigation-image-small"><img sizes="100vw" srcset="{{ 'seat_cover_leather_expertise-p-500.webp' | asset_url }} 500w, {{ 'seat_cover_leather_expertise-p-800.webp' | asset_url }} 800w, {{ 'seat_cover_leather_expertise.webp' | asset_url }} 1005w" alt="" loading="lazy" src="{{ 'seat_cover_leather_expertise.webp' | asset_url }}" class="image-cover-3"></div>
+                                    <div class="column">
+                                      <div class="subheading-small-2">Seat Cover Service</div>
+                                      <p class="paragraph-small-8 text-color-tertiary">Exceptional seat cover service</p>
+                                    </div>
+                                  </a>
+                                  <a href="#" class="navigation-card w-inline-block">
+                                    <div class="navigation-image-small"><img sizes="100vw" srcset="{{ 'Muirhead-Square-p-500.jpg' | asset_url }} 500w, {{ 'Muirhead-Square-p-800.jpg' | asset_url }} 800w, {{ 'Muirhead-Square.jpg' | asset_url }} 1000w" alt="" loading="lazy" src="{{ 'Muirhead-Square.jpg' | asset_url }}" class="image-cover-3"></div>
+                                    <div class="column">
+                                      <div class="subheading-small-2">Muirhead Gifts</div>
+                                      <p class="paragraph-small-8 text-color-tertiary">Bespoke Leather Gifts</p>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
                               <div class="mini-cart_header">
                                 <div class="heading-style-h3">Cart</div><button li-element="dropdown-toggle" aria-label="Close Cart" class="nav_dropdown-close-button" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))">
                                   <div class="nav_dropdown-close-icon w-embed"><svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1320,7 +1488,7 @@
                           <div class="w-layout-grid nav-menu-card">
                             <div id="w-node-_1171fcbf-5149-a415-23f1-5c51ac060666-d5a86df8" class="nav-menu-image">
                               <a href="#" class="places-card w-inline-block">
-                                <div class="places-card_image-wrap"><img sizes="(max-width: 1084px) 100vw, 1084px" srcset="{{ 'muirhead_our_story_low_carbon_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_our_story_low_carbon_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_our_story_low_carbon_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }}" class="image-56"></div>
+                                <div class="places-card_image-wrap"><img sizes="(max-width: 1279px) 100vw, 1083.9757080078125px" srcset="{{ 'muirhead_our_story_low_carbon_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_our_story_low_carbon_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_our_story_low_carbon_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }}" class="image-56"></div>
                                 <div class="places-card_image-overlay"></div>
                                 <div class="places-card_content">
                                   <h3 class="places-card_heading-text">Low Carbon Leather</h3>
@@ -1485,7 +1653,7 @@
                               </a>
                             </div>
                             <a href="#" class="places-card xs-9 w-inline-block">
-                              <div class="places-card_image-wrap xs-10"><img sizes="(max-width: 1520px) 100vw, 1520px" srcset="{{ 'interiors-and-luxury-p-500.webp' | asset_url }} 500w, {{ 'interiors-and-luxury-p-800.webp' | asset_url }} 800w, {{ 'interiors-and-luxury-p-1080.webp' | asset_url }} 1080w, {{ 'interiors-and-luxury.webp' | asset_url }} 1520w" alt="" loading="lazy" src="{{ 'interiors-and-luxury.webp' | asset_url }}" class="image-56 xs-11"></div>
+                              <div class="places-card_image-wrap xs-10"><img sizes="(max-width: 1919px) 100vw, 1519.96533203125px" srcset="{{ 'interiors-and-luxury-p-500.webp' | asset_url }} 500w, {{ 'interiors-and-luxury-p-800.webp' | asset_url }} 800w, {{ 'interiors-and-luxury-p-1080.webp' | asset_url }} 1080w, {{ 'interiors-and-luxury.webp' | asset_url }} 1520w" alt="" loading="lazy" src="{{ 'interiors-and-luxury.webp' | asset_url }}" class="image-56 xs-11"></div>
                               <div class="places-card_image-overlay xs-4"></div>
                               <div class="places-card_content xs-13">
                                 <h3 class="places-card_heading-text xs-14">Why Leather?</h3>
@@ -1528,28 +1696,28 @@
                           <div class="navigation-dropdown-card">
                             <div class="w-layout-grid navigation-grid-large">
                               <a href="#" class="navigation-card w-inline-block">
-                                <div class="navigation-image-small"><img sizes="(max-width: 1084px) 100vw, 1084px" srcset="{{ 'muirhead_home_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_home_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_home_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_home_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_home_04.webp' | asset_url }}" class="image-cover-3"></div>
+                                <div class="navigation-image-small"><img sizes="(max-width: 1279px) 100vw, 1083.9757080078125px" srcset="{{ 'muirhead_home_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_home_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_home_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_home_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_home_04.webp' | asset_url }}" class="image-cover-3"></div>
                                 <div class="column">
                                   <div class="subheading-small-2">Stock</div>
                                   <p class="paragraph-small-6 text-color-tertiary">Buy a range of one-off hide</p>
                                 </div>
                               </a>
                               <a href="#" class="navigation-card w-inline-block">
-                                <div class="navigation-image-small"><img sizes="(max-width: 800px) 100vw, 800px" srcset="{{ 'sustainability-p-500.webp' | asset_url }} 500w, {{ 'sustainability.webp' | asset_url }} 800w" alt="" loading="lazy" src="{{ 'sustainability.webp' | asset_url }}" class="image-cover-3"></div>
+                                <div class="navigation-image-small"><img sizes="(max-width: 991px) 100vw, 799.9739990234375px" srcset="{{ 'sustainability-p-500.webp' | asset_url }} 500w, {{ 'sustainability.webp' | asset_url }} 800w" alt="" loading="lazy" src="{{ 'sustainability.webp' | asset_url }}" class="image-cover-3"></div>
                                 <div class="column">
                                   <div class="subheading-small-2">Order Samples</div>
                                   <p class="paragraph-small-6 text-color-tertiary">Find the perfect leather today</p>
                                 </div>
                               </a>
                               <a href="#" class="navigation-card w-inline-block">
-                                <div class="navigation-image-small"><img sizes="(max-width: 1104px) 100vw, 1104px" srcset="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 500w, {{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 1104w" alt="" loading="lazy" src="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }}" class="image-cover-3"></div>
+                                <div class="navigation-image-small"><img sizes="(max-width: 1279px) 100vw, 1103.984375px" srcset="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 500w, {{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 1104w" alt="" loading="lazy" src="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }}" class="image-cover-3"></div>
                                 <div class="column">
                                   <div class="subheading-small-2">Leather Care</div>
                                   <p class="paragraph-small-6 text-color-tertiary">Care for premium leather</p>
                                 </div>
                               </a>
                               <a href="#" class="navigation-card w-inline-block">
-                                <div class="navigation-image-small"><img sizes="(max-width: 1000px) 100vw, 1000px" srcset="{{ 'Muirhead-Square-p-500.jpg' | asset_url }} 500w, {{ 'Muirhead-Square-p-800.jpg' | asset_url }} 800w, {{ 'Muirhead-Square.jpg' | asset_url }} 1000w" alt="" loading="lazy" src="{{ 'Muirhead-Square.jpg' | asset_url }}" class="image-cover-3"></div>
+                                <div class="navigation-image-small"><img sizes="(max-width: 1279px) 100vw, 1000.0000610351562px" srcset="{{ 'Muirhead-Square-p-500.jpg' | asset_url }} 500w, {{ 'Muirhead-Square-p-800.jpg' | asset_url }} 800w, {{ 'Muirhead-Square.jpg' | asset_url }} 1000w" alt="" loading="lazy" src="{{ 'Muirhead-Square.jpg' | asset_url }}" class="image-cover-3"></div>
                                 <div class="column">
                                   <div class="subheading-small-2">Muirhead Gifts</div>
                                   <p class="paragraph-small-6 text-color-tertiary">Bespoke Leather Gifts</p>

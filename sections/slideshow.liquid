@@ -1,0 +1,87 @@
+<div class="header-slide_wrap">
+          <div class="header-slider swiper">
+            <div class="header-slider-list swiper-wrapper">
+              {% for block in section.blocks %}
+    {% if block.type == "slide" %}
+                    <div li-block="Slide" class="header-slide swiper-slide">
+                                    
+                
+                                    <div class="hero-slide-content_layout is-centered">
+                  <div class="slider-background_wrap">{% if block.settings.image_background_image %}
+{{ block.settings.image_background_image | image_url: width: 1000 | image_tag: class: 'slider-background-image', sizes: '(max-width: 1919px) 100vw, 1800.0001220703125px', loading: 'lazy' }}
+{% else %}
+<img class="slider-background-image" src="{{ 'Muirhead-Hero-BG.jpg' | asset_url }}" alt="" sizes="(max-width: 1919px) 100vw, 1800.0001220703125px" loading="lazy" srcset="{{ 'Muirhead-Hero-BG-p-500.jpg' | asset_url }} 500w, {{ 'Muirhead-Hero-BG-p-800.jpg' | asset_url }} 800w, {{ 'Muirhead-Hero-BG-p-1080.jpg' | asset_url }} 1080w, {{ 'Muirhead-Hero-BG-p-1600.jpg' | asset_url }} 1600w, {{ 'Muirhead-Hero-BG.jpg' | asset_url }} 1800w">
+{% endif %}</div>
+                  <div class="slider-background-image-overlay"></div>
+                  <div class="typo-zoom-text-wrapper">
+                    <div class="typo-zoom-text">Leather</div>
+                    <p class="more-than">
+{{ block.settings.text_pre_heading }}
+</p>
+                    <p class="hero-heading">
+{{ block.settings.text_pre_heading }}
+</p>
+                    <div class="_2rem-spacer"></div>
+                    <div class="div-block-516">
+                      <a href="{{ block.settings.url_button_link }}" data-wf--button-main--variant="base" data-w-id="62fe5b66-eb79-581e-644e-970322077823" class="button-4 white-28 w-inline-block"> <div class="icon-link-3"> <div class="clip-2 white-10"> <div class="hover-text white-31"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 bottom white-20"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22"> <div class="clip-2 white-10"> <div class="hover-arrow-3"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="{{ 'arrow-right-long-line.svg' | asset_url }}" alt="" loading="lazy" class="icon-1x1-small-7 white-12"></div> <div class="hover-arrow-3 left-arrow"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-long-line.svg' | asset_url }}" class="icon-1x1-small-7 white-12"></div> </div> </div> </div> </a>
+                    </div>
+                  </div>
+                </div>
+                                    
+              
+                            </div>
+            {% endif %}
+{% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="hero-slider-pagination_wrap">
+          <div>
+            <div class="hero-pagination"></div>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Slideshow",
+    "class": "header-slider-section",
+    "blocks": [
+        {
+            "name": "Slide",
+            "type": "slide",
+            "settings": [
+                {
+                    "id": "image_background_image",
+                    "type": "image_picker",
+                    "label": "Background Image"
+                },
+                {
+                    "id": "text_pre_heading",
+                    "type": "text",
+                    "label": "Pre-Heading",
+                    "default": "More than"
+                },
+                {
+                    "id": "url_button_link",
+                    "type": "url",
+                    "label": "Button Link"
+                },
+                {
+                    "id": "text_button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "default": "Learn More"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Slideshow",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "slide"
+                }
+            ]
+        }
+    ]
+} {% endschema %}

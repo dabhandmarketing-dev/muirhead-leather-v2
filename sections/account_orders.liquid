@@ -27,14 +27,14 @@
                         <div class="text-size-regular">Delivery Status</div>
                         <div li-object="customer.last_order.fulfillment_status_label" class="text-size-regular">{{ customer.last_order.fulfillment_status_label }}</div>
                       </div>
-                      <a href="{{ customer.last_order.customer_url }}" li-object:href="customer.last_order.customer_url" class="button w-button">Details</a>
+                      <a href="{{ customer.last_order.customer_url }}" li-object:href="customer.last_order.customer_url" class="cart w-button">Details</a>
                     </div>
                       </div>
 {% endif %}
                   {% if customer.orders.size == 0 %}    <div li-if="customer.orders.size == 0" class="account_single-cart-wrapper">
     
                     <div>No orders yet.</div>
-                    <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="button w-button">Shop now</a>
+                    <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="cart w-button">Shop now</a>
                       </div>
 {% endif %}
                 </div>
@@ -55,7 +55,7 @@
                   <address class="addresses_wrapper-default">
                     <div li-object="customer.default_address | format_address">{{ customer.default_address | format_address }}</div>
                   </address>
-                  <a href="{{ routes.account_addresses_url }}" li-object:href="routes.account_addresses_url" class="button w-button">Add Address</a>
+                  <a href="{{ routes.account_addresses_url }}" li-object:href="routes.account_addresses_url" class="cart w-button">Add Address</a>
                 </div>
               </div>
             </div>
