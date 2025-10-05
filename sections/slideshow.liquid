@@ -8,7 +8,7 @@
                 
                                     <div class="hero-slide-content_layout is-centered">
                   <div class="slider-background_wrap">{% if block.settings.image_image %}
-{{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'slider-background-image', sizes: '100vw', loading: 'lazy' }}
+{{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'slider-background-image', sizes: '(max-width: 1919px) 100vw, 1800.0001220703125px', loading: 'lazy' }}
 {% else %}
  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'slider-background-image' }} 
 {% endif %}</div>

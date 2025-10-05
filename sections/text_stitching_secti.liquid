@@ -4,9 +4,7 @@
           </div>
         </div>
         <div data-w-id="f34b5394-a8a8-5fcb-04fd-c302ab310834" class="home-action_descript xl-5">
-          <div data-w-id="f34b5394-a8a8-5fcb-04fd-c302ab310835" class="text-h4">
-{{ section.settings.text_text }}
-</div>
+          <div class="text-h4 w-richtext"> {{ section.settings.richtext_content }} </div>
         </div>
         <div class="dotted-float">
           <div class="w-embed">
@@ -18,10 +16,10 @@
     "class": "texthero",
     "settings": [
         {
-            "id": "text_text",
-            "type": "text",
-            "label": "Text",
-            "default": "The lowest carbon, high performance natural leather for the toughest passenger environments and the most discerning luxury designers."
+            "id": "richtext_content",
+            "type": "richtext",
+            "label": "Content",
+            "default": "<p>\n            The lowest carbon, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.\n          <\/p>"
         }
     ],
     "presets": [
