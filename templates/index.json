@@ -21,10 +21,21 @@
             "url_button_link": "shopify://collections/all",
             "text_button_text": "Buy Leather"
           }
+        },
+        "slide_bhz9hy": {
+          "type": "slide",
+          "settings": {
+            "image_image": "shopify://shop_images/Muirhead_Hero_BG.jpg",
+            "text_pre_heading": "More than",
+            "text_heading": "Leather",
+            "url_button_link": "shopify://collections/all",
+            "text_button_text": "Buy Leather"
+          }
         }
       },
       "block_order": [
-        "slide_aHXehg"
+        "slide_aHXehg",
+        "slide_bhz9hy"
       ],
       "name": "Slideshow",
       "settings": {}
@@ -33,7 +44,7 @@
       "type": "text_stitching_secti",
       "name": "Text Stitching Secti",
       "settings": {
-        "text_text": "The lowest carbon, high performance natural leather for the toughest passenger environments and the most discerning luxury designers."
+        "richtext_content": "<p>\n            The lowest carbon, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.\n          </p>"
       }
     },
     "image_scroller_RtHWEd": {
