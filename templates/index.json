@@ -9,24 +9,17 @@
  */
 {
   "sections": {
-    "image_with_text": {
-      "type": "image_with_text",
-      "settings": {
-        "text_heading": "Short heading here",
-        "richtext_paragraph": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>",
-        "url_button_link": "",
-        "text_button_text": "More Information"
-      }
-    },
     "slideshow_8m7Dab": {
       "type": "slideshow",
       "blocks": {
         "slide_aHXehg": {
           "type": "slide",
           "settings": {
+            "image_image": "shopify://shop_images/Muirhead_Hero_BG.jpg",
             "text_pre_heading": "More than",
+            "text_heading": "Leather",
             "url_button_link": "",
-            "text_button_text": "Learn More"
+            "text_button_text": "Buy Leather"
           }
         }
       },
@@ -35,6 +28,15 @@
       ],
       "name": "Slideshow",
       "settings": {}
+    },
+    "image_with_text": {
+      "type": "image_with_text",
+      "settings": {
+        "text_heading": "Short heading here",
+        "richtext_paragraph": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>",
+        "url_button_link": "",
+        "text_button_text": "More Information"
+      }
     },
     "featured_products": {
       "type": "featured_products",
