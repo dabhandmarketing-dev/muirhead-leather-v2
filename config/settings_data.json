@@ -1,0 +1,16 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "favicon": "shopify://shop_images/favicon-256.png",
+    "apple_touch_icon": "shopify://shop_images/favicon-256_ff688313-8a29-4add-83a4-783d5c71e8c7.png",
+    "content_for_index": []
+  }
+}
