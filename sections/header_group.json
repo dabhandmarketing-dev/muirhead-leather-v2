@@ -13,6 +13,18 @@
   "sections": {
     "header": {
       "type": "header",
+      "blocks": {
+        "search_suggestion_WNjErW": {
+          "type": "search-suggestion",
+          "settings": {
+            "url_link": "shopify://products/black-leather-bag",
+            "text_text": "Tag"
+          }
+        }
+      },
+      "block_order": [
+        "search_suggestion_WNjErW"
+      ],
       "settings": {
         "image_logo_dark": "shopify://shop_images/logo--dark.svg",
         "image_logo_white": "shopify://shop_images/logo--white.svg",
