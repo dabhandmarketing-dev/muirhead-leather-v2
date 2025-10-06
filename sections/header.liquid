@@ -366,11 +366,11 @@
                 </div>
                 <div class="centre-logo">
                   <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="brand w-nav-brand">{% if section.settings.image_white_logo %}
-{{ section.settings.image_white_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'whitelogo' }}
+{{ section.settings.image_white_logo | image_url: width: 160 | image_tag: loading: 'lazy', class: 'whitelogo' }}
 {% else %}
 <img src="{{ 'logo--white.svg' | asset_url }}" loading="lazy" alt="" class="whitelogo">
 {% endif %}{% if section.settings.image_dark_logo %}
-{{ section.settings.image_dark_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'darklogo' }}
+{{ section.settings.image_dark_logo | image_url: width: 160 | image_tag: loading: 'lazy', class: 'darklogo' }}
 {% else %}
 <img src="{{ 'logo--dark.svg' | asset_url }}" loading="lazy" alt="" class="darklogo">
 {% endif %}</a>
