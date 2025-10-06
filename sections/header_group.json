@@ -17,8 +17,8 @@
         "search_suggestion_WNjErW": {
           "type": "search-suggestion",
           "settings": {
-            "url_link": "shopify://products/black-leather-bag",
-            "text_text": "Tag"
+            "url_link": "shopify://collections/stock",
+            "text_text": "Order Leather Stock"
           }
         }
       },
