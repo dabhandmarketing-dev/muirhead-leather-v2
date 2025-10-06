@@ -26,6 +26,9 @@
         "search_suggestion_WNjErW"
       ],
       "settings": {
+        "url_button_link": "",
+        "text_button_text": "Learn More",
+        "image_white_logo": "shopify://shop_images/logo--white.svg",
         "url_link": "",
         "text_title": "Stock",
         "text_paragraph": "Buy a range of one-off hide",
