@@ -3968,7 +3968,7 @@ figcaption {
   align-items: flex-start;
 }
 
-.navigation-toggle-4 {
+.navigation-toggle {
   z-index: 0;
   color: var(--base-color-neutral--white);
   letter-spacing: -.25px;
@@ -3983,11 +3983,11 @@ figcaption {
   display: flex;
 }
 
-.navigation-toggle-4:hover {
+.navigation-toggle:hover {
   background-color: #ffffff0d;
 }
 
-.navigation-toggle-4.w--current {
+.navigation-toggle.w--current {
   color: #642eff;
 }
 
@@ -4617,14 +4617,15 @@ figcaption {
   overflow: hidden;
 }
 
-.navcover {
+.nav-cover {
   z-index: 1;
   background-color: #fff;
   border-bottom: 1px solid #fff;
   height: 100%;
   display: flex;
   position: absolute;
-  inset: -100% 0% auto;
+  inset: 0%;
+  transform: translate(0, -100%);
 }
 
 .text-color-white-2 {
@@ -7176,14 +7177,14 @@ figcaption {
   background-color: #f8e4e4;
 }
 
-.darklogo {
+.dark-logo {
   opacity: 0;
   color: var(--base-color-neutral--white);
   width: 10rem;
   position: absolute;
 }
 
-.whitelogo {
+.white-logo {
   color: var(--base-color-neutral--white);
   width: 10rem;
 }
@@ -8004,7 +8005,7 @@ figcaption {
     overflow: scroll;
   }
 
-  .navigation-toggle-4 {
+  .navigation-toggle {
     justify-content: space-between;
   }
 
