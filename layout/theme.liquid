@@ -33,7 +33,94 @@
             {% else %}
               <link rel="apple-touch-icon" type="image/png" href="{{ settings.apple_touch_icon | img_url: '32x32' }}">
             {% endif %}
-        <!--  
+        <!--  Alpine Focus Plugin  -->
+  <script defer="" src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+  <!--  Alpine JS  -->
+  <script defer="" src="{{ 'alpinejs3.js' | asset_url }}"></script>
+  <!--  Liquify Pro Debugger  -->
+  <script defer="" auto="" min="" src="https://cdn.jsdelivr.net/gh/liquify-pro/core@latest/script.js"></script>
+  <link href="{{ canonical_url }}" rel="canonical">
+  {% if page_image %}
+  <meta property="og:image" content="http:{{ page_image | image_url }}">
+  <meta property="og:image:secure_url" content="https:{{ page_image | image_url }}">
+  <meta property="og:image:width" content="{{ page_image.width }}">
+  <meta property="og:image:height" content="{{ page_image.height }}">
+{% endif %}
+  {% case template.name %}
+  {% when 'product' %}
+<script type="application/ld+json">
+  {{ product | structured_data }}
+</script>
+{% when 'article' %}
+<script type="application/ld+json">
+  {{ article | structured_data }}
+</script>
+{% when 'collection' %}
+<script type="application/ld+json">
+                  {
+                     "@context":"http:\/\/schema.org",
+                     "@type":"WebPage",
+                     "url":"{{ shop.url }}",
+                     "mainEntity":{"@type":"offerCatalog",
+                     "name": "{{ collection.title }}",
+                     "url": "{{ collection.url }}",
+                     "numberOfItems":{{ collection.products.size }}}
+              }
+</script>
+{% endcase %}
+{% assign min_price = null %}
+{% assign max_price = 0 %}
+{% for product in collections.all-products.products %}
+  {% for variant in product.variants %}
+    {% assign price = variant.price | money_without_currency | replace: ',', '.' | plus: 0 %}
+    {% if min_price == null or price < min_price %}
+      {% assign min_price = price %}
+    {% endif %}
+    {% if price > max_price %}
+      {% assign max_price = price %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+    <script type="application/ld+json">
+      {
+        "@context" : "https://schema.org",
+        "@type" : "LocalBusiness",
+        "mainEntityOfPage" : {
+          "@type" : "WebPage",
+          "@id" : "{{ shop.url }}"
+        },
+        "name" : "{{ shop.name }}",
+        "telephone" : "{{ shop.phone }}",
+        "email" : "{{ shop.email }}",
+        "priceRange" : "{{ min_price | money }} - {{ max_price | money }}",
+        "address" : {
+          "@type" : "PostalAddress",
+          "streetAddress" : "{{ shop.address.address1 }}",
+          "addressLocality" : "{{ shop.address.city }}",
+          "addressRegion" : "{{ shop.address.province }}",
+          "addressCountry" : "{{ shop.address.country_code }}",
+          "postalCode" : "{{ shop.address.zip }}"
+        },
+        "url" : "{{ shop.url }}"
+      }
+    </script>
+  <style>
+  /* AlpineJS can cause a brief &ldquo;blip&rdquo; where uninitialized templates flash before it loads. x-cloak prevents this by hiding elements until Alpine is ready. Learn more: https://alpinejs.dev/directives/cloak */
+  [x-cloak] { display: none !important; }
+  /* The li-cloak tag is removed during conversion. It&rsquo;s useful for hiding elements in the Webflow Designer to make editing easier. Learn more: https://www.liquify.pro/docu/getting-started#li-cloak */  
+  [li-cloak_disabled] { display: none !important; }
+  /* Setup Font and Background Color if Text is selected */
+  ::selection {
+    color: #FFFFFF;
+    background: #000000;
+  }
+  ::-moz-selection {
+    color: #FFFFFF;
+    background: #000000;
+  }
+</style>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><!--  
 IMPORTANT: If you want to make changes to the head or body code on this page, 
 please remove the `li-layout` tag from the body element. 
 This will create a separate layout file for this page, allowing you to apply custom modifications.

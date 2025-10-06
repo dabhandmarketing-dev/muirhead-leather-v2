@@ -11,6 +11,7 @@
   --base-color-neutral--neutral-darkest: #111;
   --base-color-neutral--neutral-lightest: #eee;
   --base-color-neutral--neutral-darker: #222;
+  --base-color-brand--brown: #d57b31;
   --accessible-components-dark-grey\<deleted\|variable-c4d8099c\>: #9b9b9b;
   --text-color--text-error: var(--base-color-system--error-red-dark);
   --base-color-system--success-green-dark: #17660f;
@@ -27,7 +28,6 @@
   --background-color--background-alternate: var(--base-color-neutral--white);
   --background-color--background-success: var(--base-color-system--success-green);
   --text-color--text-success: var(--base-color-system--success-green-dark);
-  --base-color-brand--brown: #d57b31;
   --base-color-brand--green: #11763d;
   --base-color-brand--darker-charcoal: #eee;
   --base-color-brand--charcoal: #53565a;
@@ -1703,7 +1703,7 @@ figcaption {
 }
 
 .nav_shop-quantity {
-  background-color: var(--base-color-neutral--black);
+  background-color: var(--base-color-brand--brown);
   color: var(--base-color-neutral--white);
   border-radius: 100%;
   justify-content: center;
@@ -1713,7 +1713,7 @@ figcaption {
   font-size: .7rem;
   display: flex;
   position: absolute;
-  inset: auto 0% 0% auto;
+  inset: -5px 0% 0% 20px;
 }
 
 .nav_mini-cart-holder {
@@ -7210,6 +7210,7 @@ figcaption {
 .lottie-load {
   width: 1.5rem;
   height: 1.5rem;
+  display: none;
 }
 
 .scroll-animation {
