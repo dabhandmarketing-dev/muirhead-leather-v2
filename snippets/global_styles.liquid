@@ -185,27 +185,3 @@
     padding: unset;
   }
 </style>
-      <style>
-@keyframes fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-.WhiteLogo, .DarkLogo {
-  position: absolute; /* Adjust as needed */
-  animation-timing-function: linear;
-  animation-timeline: scroll(root);
-  animation-range: 0 1vh;
-}
-.WhiteLogo {
-  animation-name: fade-out;
-  opacity: 1;
-}
-.DarkLogo {
-  animation-name: fade-in;
-  opacity: 0;
-}
-</style>

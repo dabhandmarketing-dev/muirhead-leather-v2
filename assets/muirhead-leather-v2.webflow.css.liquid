@@ -16,6 +16,7 @@
   --base-color-system--success-green-dark: #17660f;
   --base-color-system--error-red: #f8e4e4;
   --base-color-system--error-red-dark: #9b1313;
+  --base-color-brand--light-charcoal: #f9f9f9;
   --border-radius--medium: .5rem;
   --background-color--background-error: var(--base-color-system--error-red);
   --text-color--text-primary: var(--base-color-neutral--black);
@@ -26,7 +27,6 @@
   --background-color--background-alternate: var(--base-color-neutral--white);
   --background-color--background-success: var(--base-color-system--success-green);
   --text-color--text-success: var(--base-color-system--success-green-dark);
-  --base-color-brand--light-charcoal: #f9f9f9;
   --base-color-brand--brown: #d57b31;
   --base-color-brand--green: #11763d;
   --base-color-brand--darker-charcoal: #eee;
@@ -1814,7 +1814,7 @@ figcaption {
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
   grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
 }
@@ -2516,6 +2516,10 @@ figcaption {
 
 .error-text {
   color: #e23939;
+}
+
+.section_filter {
+  background-color: var(--base-color-brand--light-charcoal);
 }
 
 .filter_layout {
@@ -7182,12 +7186,14 @@ figcaption {
   opacity: 0;
   color: var(--base-color-neutral--white);
   width: 10rem;
+  max-width: 10rem;
   position: absolute;
 }
 
 .whitelogo {
   color: var(--base-color-neutral--white);
   width: 10rem;
+  max-width: 10rem;
 }
 
 .menuiconwhite {
@@ -7205,6 +7211,11 @@ figcaption {
 ._0-25rem-spacer {
   width: .25rem;
   height: .25rem;
+}
+
+.lottie-load {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @media screen and (min-width: 1280px) {
@@ -9923,10 +9934,6 @@ figcaption {
 
 #w-node-b90266f4-7b7e-d3a3-be54-12662ea896eb-029cc998 {
   justify-self: start;
-}
-
-#w-node-b68c2f23-3716-d0eb-c660-386dd5fecc13-f0c0d13d, #w-node-b68c2f23-3716-d0eb-c660-386dd5fecc15-f0c0d13d, #w-node-b68c2f23-3716-d0eb-c660-386dd5fecc51-f0c0d13d {
-  grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
 @media screen and (max-width: 991px) {
