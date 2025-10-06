@@ -1696,6 +1696,7 @@ figcaption {
   height: 2rem;
   padding: 0;
   display: flex;
+  position: relative;
 }
 
 .icon-embed-xsmall {
@@ -3971,7 +3972,7 @@ figcaption {
 
 .navigation-toggle-4 {
   z-index: 0;
-  color: #fff;
+  color: var(--base-color-neutral--white);
   letter-spacing: -.25px;
   border-radius: 8px;
   justify-content: center;
@@ -4080,8 +4081,6 @@ figcaption {
 
 .div-block-503 {
   z-index: 2;
-  grid-column-gap: .5rem;
-  grid-row-gap: .5rem;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -7189,6 +7188,23 @@ figcaption {
 .whitelogo {
   color: var(--base-color-neutral--white);
   width: 10rem;
+}
+
+.menuiconwhite {
+  width: 2rem;
+  position: absolute;
+  inset: 0%;
+}
+
+.menuicondark {
+  opacity: 0;
+  position: absolute;
+  inset: 0%;
+}
+
+._0-25rem-spacer {
+  width: .25rem;
+  height: .25rem;
 }
 
 @media screen and (min-width: 1280px) {
