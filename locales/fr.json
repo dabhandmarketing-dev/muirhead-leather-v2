@@ -1,0 +1,27 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "shopify": {
+    "checkout": {
+      "thank_you": {
+        "thank_you_from_other_store": "D'un autre magasin",
+        "checkout_on_another_store": "Commander dans un autre magasin"
+      },
+      "remote_policies": {
+        "unavailable_policy": "Aucune politique de confidentialité n'a été fournie pour cette boutique. Pour plus d'informations, veuillez contacter directement %{shop_name}."
+      },
+      "remote": {
+        "errors": {
+          "max_remote_shops_exceeded": "Ce produit ne peut pas être ajouté car votre panier contient déjà le maximum des autres magasins."
+        }
+      }
+    }
+  }
+}
