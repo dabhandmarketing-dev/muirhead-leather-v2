@@ -15,9 +15,7 @@
                         <div class="button-wrapper absolute">
                           {% if product.available == true %}    <div li-if="product.available == true">
     
-                            <a li-element="add-to-cart" data-w-id="835de9a8-25fe-55c1-5ab0-cc621d88ed9d" href="#" class="c-color_copy w-inline-block" @click="addToCart($event, true)" :disabled="!addToCartButton"><img loading="lazy" src="{{ 'plus_1.svg' | asset_url }}" alt="" class="c-copy">
-                              <div data-is-ix2-target="1" class="lottie-load" data-w-id="835de9a8-25fe-55c1-5ab0-cc621d88ed9f" data-animation-type="lottie" data-src="{{ 'lottieflow-loading-08-ffffff-easey.json' | asset_url }}" data-loop="1" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="2.125" data-ix2-initial-state="0"></div>
-                            </a>
+                            <a li-element="add-to-cart" href="#" class="c-color_copy w-inline-block" @click="addToCart($event, true)" :disabled="!addToCartButton"><img loading="lazy" src="{{ 'plus_1.svg' | asset_url }}" alt="" class="c-copy"></a>
                               </div>
 {% endif %}
                         </div>
