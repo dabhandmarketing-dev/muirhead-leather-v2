@@ -392,7 +392,19 @@
                       <div class="dropdowncard">
                         <div class="navigation-dropdown-card">
                           <div class="w-layout-grid navigation-grid-large">
-                            {% render 'menu_item' %}
+                            <div li-content-for-blocks="">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+                              <div>
+                                {% render 'menu_item' %}
+                              </div>
+                            {% endcase %}
+{% endfor %}
+
+    </div>
                           </div>
                           <div class="_0-5rem-spacer">
                             <div class="navigation-line"></div>
@@ -407,6 +419,7 @@
                           </div>
                         </div>
                       </div>
+                      <a href="#" class="w-dropdown-link">Link</a>
                     </nav>
                   </div>
                   <div data-delay="0" data-hover="false" data-w-id="1171fcbf-5149-a415-23f1-5c51ac0605c2" class="country-dropdown hide-mobile-landscape w-dropdown">
@@ -1746,6 +1759,9 @@
                     "default": "Tag"
                 }
             ]
+        },
+        {
+            "type": "@app"
         }
     ],
     "settings": [
