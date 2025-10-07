@@ -1,1 +1,32 @@
-{"type":"footer","name":"Footer Group","sections":{"footer":{"type":"footer","settings":{}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "text_sectors_title": "Sectors",
+        "text_about_title": "Sectors",
+        "text_our_expertise_text": "Our Expertise",
+        "text_products_title": "Products",
+        "text_sustainability_title": "Sustainability",
+        "text_shop_title": "Shop",
+        "image_logo": "shopify://shop_images/logo--white.svg",
+        "placeholder_text": "Email address",
+        "footer_menu": "footer"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
