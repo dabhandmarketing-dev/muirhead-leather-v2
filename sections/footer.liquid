@@ -182,13 +182,26 @@
               <div class="text-color-gray-600 w-embed w-script">Copyright © 
                 <script>document.write(new Date().getFullYear());</script> Muirhead
               </div>
-              <div class="footer-legal-links">
-                <a href="#" class="footer-legal-link">Contact</a>
-                <a href="#" class="footer-legal-link">Careers</a>
-                <a href="#" class="footer-legal-link">Privacy Policy</a>
-                <a href="#" class="footer-legal-link">Governance</a>
-                <a href="#" class="footer-legal-link">T&Cs</a>
-              </div>
+              {% for link in linklists['small-footer-links'].links %}    <div li-for="link in linklists['small-footer-links'].links" class="footer-legal-links">
+                                    
+                
+                            <a href="#" class="footer-legal-link">Contact</a>
+                            
+                
+                            <a href="#" class="footer-legal-link">Careers</a>
+                            
+                
+                            <a href="#" class="footer-legal-link">Privacy Policy</a>
+                            
+                
+                            <a href="#" class="footer-legal-link">Governance</a>
+                            
+                
+                            <a href="#" class="footer-legal-link">T&Cs</a>
+                            
+              
+                        </div>
+{% endfor %}
             </div>
           </div>
         </div> {% schema %} {
