@@ -96,6 +96,7 @@
         "url_button_link": "shopify://pages/contact",
         "text_button_text": "Contact",
         "image_white_logo": "shopify://shop_images/logo--white.svg",
+        "image_dark_logo": "shopify://shop_images/logo--dark.svg",
         "collection_search_bestseller": "stock",
         "collection_search_bestseller_limit": 6,
         "text_success_text": "Nice one! You’ve unlocked free shipping!",
