@@ -1,8 +1,85 @@
-<div class="header-slide_wrap">
+<div class="w-embed">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+          <style>
+  .w-webflow-badge{
+   display: None !important;
+   visibility: hidden !important;
+}
+</style>
+          <style>
+/* Style for all pagination bullets */
+.swiper-pagination-bullet {
+  border-radius: 100px !important;
+  min-width: 60px !important;
+  overflow: hidden;
+  position: relative; /* Make sure the child div is positioned relative to the parent */
+}
+/* Wrapper for each bullet */
+.hero-pagination .bullet-wrapper {
+  min-width: 60px !important;
+  height: 8px !important;
+  background-color: #ccc; /* Light gray background for parent */
+  overflow: hidden;
+  position: relative; /* Ensure the child .bullet-progress can fit inside */
+}
+/* The child div that will animate (progress bar) */
+.hero-pagination .bullet-progress {
+  width: 0%; /* Start with no progress (width 0) */
+  height: 100%;
+  background-color: #fff; /* White color for progress */
+  transition: width 5s ease; /* Smooth transition over 5 seconds */
+  position: absolute; /* Position inside the parent wrapper */
+  top: 0;
+  left: 0;
+}
+/* The active bullet (this will have the progress bar animation) */
+.hero-pagination .swiper-pagination-bullet-active .bullet-progress {
+  width: 100%; /* Expand to 100% width when active */
+}
+/* Reset progress width for non-active bullets */
+.hero-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) .bullet-progress {
+  width: 0%; /* Reset progress bar width to 0 for non-active bullets */
+}
+/* To ensure non-active bullets immediately reset their progress */
+.hero-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) .bullet-progress {
+  transition: width 0s ease; /* Disable transition when bullet is not active */
+}
+/* When a bullet is active again, apply the transition smoothly */
+.hero-pagination .swiper-pagination-bullet-active .bullet-progress {
+  transition: width 5s ease; /* Re-enable transition for the active bullet */
+}
+</style>
+        </div>
+        <div class="header-slide_wrap">
           <div class="header-slider swiper">
             {% for block in section.blocks %}
     {% if block.type == "slider" %}
                     <div li-block="Slider" class="header-slider-list swiper-wrapper">
+                                    
+              
+                                    <div class="header-slide swiper-slide">
+                <div class="hero-slide-content_layout is-centered">
+                  <div class="slider-background_wrap">{% if block.settings.image_image %}
+{{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'slider-background-image', sizes: '(max-width: 1800px) 100vw, 1800px', loading: 'lazy' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'slider-background-image' }} 
+{% endif %}</div>
+                  <div class="slider-background-image-overlay"></div>
+                  <div class="typo-zoom-text-wrapper">
+                    <div class="typo-zoom-text">Leather</div>
+                    <p class="more-than">
+{{ block.settings.text_pre_heading }}
+</p>
+                    <p class="hero-heading">
+{{ block.settings.text_heading }}
+</p>
+                    <div class="_2rem-spacer"></div>
+                    <div class="div-block-516">
+                      <a href="{{ block.settings.url_button_link }}" data-wf--button-main--variant="base" data-w-id="62fe5b66-eb79-581e-644e-970322077823" class="button-main w-inline-block"> <div class="icon-link-3"> <div class="clip-2 white-10"> <div class="hover-text white-31"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 bottom white-20"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22"> <div class="clip-2 white-10"> <div class="hover-arrow-3"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="{{ 'arrow-right-long-line.svg' | asset_url }}" alt="" loading="lazy" class="icon-1x1-small-7 white-12"></div> <div class="hover-arrow-3 left-arrow"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-long-line.svg' | asset_url }}" class="icon-1x1-small-7 white-12"></div> </div> </div> </div> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
                                     
               
                                     <div class="header-slide swiper-slide">
@@ -39,7 +116,54 @@
           <div>
             <div class="hero-pagination"></div>
           </div>
-        </div> {% schema %} {
+        </div>
+        <div class="w-embed w-script">
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const offset =  8 * 16; // Convert 8rem to pixels (1rem = 16px by default in most browsers)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - offset,
+            behavior: "smooth"
+          });
+        }
+      });
+    });
+  });
+</script>
+          <script>
+const heroslider = new Swiper('.header-slider', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 1,
+	grabCursor:false,
+	freeMode:false,
+  spaceBetween: 0,
+  speed: 500, // Transition speed
+	//centeredSlides: true, // Center the active slide
+	//loopedSlides: 4,
+  autoplay: {
+    delay: 6000, // Autoplay delay (5 seconds)
+    disableOnInteraction: false, // Continue autoplay even after interaction
+  },
+  // Disable user interaction on slides
+  allowTouchMove: true,
+  simulateTouch: true,
+  // Pagination
+  pagination: {
+    el: '.hero-pagination',
+    clickable: true, // Allow pagination bullets to be clickable
+		renderBullet: function (index, className) {
+      return '<span class="' + className + '">' +
+        '<div class="bullet-wrapper">' +
+          '<div class="bullet-progress"></script></div>' +
+        ' {% schema %} {
     "tag": "section",
     "name": "Slideshow",
     "class": "header-slider-section",
