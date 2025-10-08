@@ -66,7 +66,7 @@
         "shop_menu_card_yPh7ji"
       ],
       "settings": {
-        "url_button_link": "",
+        "url_button_link": "shopify://pages/contact",
         "text_button_text": "Learn More",
         "image_white_logo": "shopify://shop_images/logo--white.svg",
         "collection_search_bestseller": "stock",
