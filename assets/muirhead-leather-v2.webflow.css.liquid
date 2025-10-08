@@ -4185,6 +4185,7 @@ figcaption {
   flex: 1 1 0;
   justify-content: center;
   align-items: center;
+  width: 100%;
   min-height: 55vh;
   text-decoration: none;
   transition: all .35s;
@@ -4283,13 +4284,14 @@ figcaption {
 }
 
 .promo-image-wrapper {
-  object-fit: fill;
+  object-fit: cover;
   background-image: url({{ 'aviation.webp' | asset_url }});
   background-position: 50%;
   background-size: cover;
   justify-content: center;
   align-items: center;
-  min-width: 33.33%;
+  width: 100%;
+  height: 100%;
   font-weight: 400;
   display: flex;
   position: absolute;
@@ -4541,6 +4543,7 @@ figcaption {
 
 .text-color-white-2.text-align-center.z-index-2 {
   z-index: 2;
+  font-size: 2rem;
   position: relative;
 }
 
@@ -5056,6 +5059,7 @@ figcaption {
   grid-row-gap: .5rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
 }
 
 .icon-link {
@@ -5230,6 +5234,7 @@ figcaption {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   width: 30vw;
+  height: 35vh;
 }
 
 .header77_image {
@@ -6282,8 +6287,6 @@ figcaption {
 }
 
 .column-x-large {
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
   flex-direction: column;
   display: flex;
 }
@@ -6581,6 +6584,10 @@ figcaption {
   padding-right: 2.5rem;
 }
 
+.menu-card {
+  width: 100%;
+}
+
 @media screen and (min-width: 1280px) {
   .header-slide.swiper-slide {
     height: 84svh;
@@ -6589,9 +6596,17 @@ figcaption {
   .menu-mob-container {
     display: none;
   }
+
+  .layout414_image {
+    height: 30vh;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .layout414_image {
+    height: 25vh;
+  }
+
   .sustainable-section, .section {
     display: flex;
   }
@@ -8060,6 +8075,7 @@ figcaption {
   }
 
   .navigation-grid-large {
+    flex-flow: column;
     grid-template-columns: 1fr;
   }
 

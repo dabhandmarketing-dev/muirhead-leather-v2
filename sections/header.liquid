@@ -19,23 +19,24 @@
                       <nav class="dropdown-list-wide-2 w-dropdown-list">
                         <div class="dropdowncard">
                           <section class="promo-section">
-                            <div class="promo-container">
-                              <a href="#" class="promo-wrapper w-inline-block">
-                                <h3 class="text-color-white-2 text-align-center z-index-2">Aviation</h3>
-                                <div class="promo-overlay z-index-1"></div>
-                                <div class="promo-image-wrapper"></div>
-                              </a>
-                              <a href="#" class="promo-wrapper w-inline-block">
-                                <h3 class="text-color-white-2 text-align-center z-index-2">Passenger Transport</h3>
-                                <div class="promo-overlay z-index-1"></div>
-                                <div class="promo-image-wrapper two"></div>
-                              </a>
-                              <a href="#" class="promo-wrapper w-inline-block">
-                                <h3 class="text-color-white-2 text-align-center z-index-2">Interiors & Luxury</h3>
-                                <div class="promo-overlay z-index-1"></div>
-                                <div class="promo-image-wrapper three"></div>
-                              </a>
-                            </div>
+                            <div li-content-for-blocks="" class="promo-container">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+                              {% when 'sector-menu-card' %}
+            <div li-block="Sector - Menu Card" class="promo-wrapper">
+                    
+                                
+                    <div class="promo-wrapper" href="{{ block.settings.url_link }}"> <div class="promo-wrapper" href="{{ block.settings.url_link }}"> <a href="#" class="link-block w-inline-block"> <div class="text-color-white-2 text-align-center z-index-2">{{ block.settings.text_text }}</div> <div class="promo-overlay z-index-1"></div>{% if block.settings.image_image %} {{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'promo-image-wrapper', sizes: '(max-width: 991px) 100vw, 107.4609375px', loading: 'lazy' }} {% else %} <img class="promo-image-wrapper" src="{{ 'aviation.webp' | asset_url }}" alt="" sizes="(max-width: 991px) 100vw, 107.4609375px" loading="lazy" srcset="{{ 'aviation-p-500.webp' | asset_url }} 500w, {{ 'aviation-p-800.webp' | asset_url }} 800w, {{ 'aviation-p-1080.webp' | asset_url }} 1080w, {{ 'aviation.webp' | asset_url }} 1520w"> {% endif %} </a> </div> </div>
+                    
+                              
+                </div>
+                            {% endcase %}
+{% endfor %}
+
+    </div>
                           </section>
                         </div>
                       </nav>
@@ -391,17 +392,25 @@
                     <nav class="dropdown-list-wide-2 w-dropdown-list">
                       <div class="dropdowncard">
                         <div class="navigation-dropdown-card">
-                          <div li-content-for-blocks="" class="w-layout-grid navigation-grid-large">
+                          <div li-content-for-blocks="" class="navigation-grid-large">
 {% for block in section.blocks %}
 {% case block.type %}
 {% when '@app' %}
 {% render block %}
 
                             {% when 'shop-menu-card' %}
-            <div li-block="Shop - Menu Card">
+            <div li-block="Shop - Menu Card" class="menu-card">
                     
                               
-                    <a href="{{ block.settings.url_link }}" class="navigation-card w-inline-block"> <div class="navigation-image-small">{% if block.settings.image_image %} {{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'image-cover-3', sizes: '100vw', loading: 'lazy' }} {% else %} <img class="image-cover-3" src="{{ 'muirhead_home_04.webp' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'muirhead_home_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_home_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_home_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_home_04.webp' | asset_url }} 1084w"> {% endif %}</div> <div class="column"> <div class="subheading-small-2">{{ block.settings.text_title }}</div> <p class="paragraph-small-6 text-color-tertiary">{{ block.settings.text_paragraph }}</p> </div> </a>
+                    <a href="{{ block.settings.url_link }}" data-w-id="1171fcbf-5149-a415-23f1-5c51ac060599" class="navigation-card w-inline-block"> <div class="navigation-image-small">{% if block.settings.image_image %} {{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'image-cover-3', sizes: '100vw', loading: 'lazy' }} {% else %} <img class="image-cover-3" src="{{ 'muirhead_home_04.webp' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'muirhead_home_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_home_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_home_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_home_04.webp' | asset_url }} 1084w"> {% endif %}</div> <div class="column"> <div class="subheading-small-2">{{ block.settings.text_title }}</div> <p class="paragraph-small-6 text-color-tertiary">{{ block.settings.text_paragraph }}</p> </div> </a>
+                    
+                            
+                </div>
+                            {% when 'shop-menu-card' %}
+            <div li-block="Shop - Menu Card" class="menu-card">
+                    
+                              
+                    <a href="{{ block.settings.url_link }}" data-w-id="90989673-885f-ba7d-d7d3-464a47a7b4df" class="navigation-card w-inline-block"> <div class="navigation-image-small">{% if block.settings.image_image %} {{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'image-cover-3', sizes: '100vw', loading: 'lazy' }} {% else %} <img class="image-cover-3" src="{{ 'muirhead_home_04.webp' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'muirhead_home_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_home_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_home_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_home_04.webp' | asset_url }} 1084w"> {% endif %}</div> <div class="column"> <div class="subheading-small-2">{{ block.settings.text_title }}</div> <p class="paragraph-small-6 text-color-tertiary">{{ block.settings.text_paragraph }}</p> </div> </a>
                     
                             
                 </div>
@@ -1746,6 +1755,28 @@
     "class": "section_navbar",
     "blocks": [
         {
+            "name": "Sector - Menu Card",
+            "type": "sector-menu-card",
+            "settings": [
+                {
+                    "id": "url_link",
+                    "type": "url",
+                    "label": "Link"
+                },
+                {
+                    "id": "text_text",
+                    "type": "text",
+                    "label": "Text",
+                    "default": "Aviation"
+                },
+                {
+                    "id": "image_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                }
+            ]
+        },
+        {
             "name": "Shop - Menu Card",
             "type": "shop-menu-card",
             "settings": [
@@ -1857,14 +1888,17 @@
         {
             "name": "Header",
             "category": "Liquify",
-            "blocks": [
-                {
+            "blocks": {
+                "0": {
+                    "type": "sector-menu-card"
+                },
+                "1": {
                     "type": "shop-menu-card"
                 },
-                {
+                "3": {
                     "type": "search-suggestion"
                 }
-            ]
+            }
         }
     ],
     "enabled_on": {
