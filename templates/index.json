@@ -58,6 +58,17 @@
         "text_button_text": "Learn More"
       }
     },
+    "image_scroller_VAGbky": {
+      "type": "image_scroller",
+      "name": "Image Scroller",
+      "settings": {
+        "text_pre_heading": "Muirhead Seat Cover Service:",
+        "text_heading": "Rethink comfort. Redefine sustainability.",
+        "richtext_content": "<p><br/>                  As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. <br/>                  Most manufacturers today are optimised for fabric and synthetic materials. <br/>                  ‍<br/>                  However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency. <br/>                  ‍<br/>     </p>",
+        "url_button_link": "",
+        "text_button_text": "Learn More"
+      }
+    },
     "video_hero_WrMVQn": {
       "type": "video_hero",
       "name": "Video Hero",
@@ -70,6 +81,7 @@
     "slideshow_8m7Dab",
     "text_stitching_secti_FQw7t6",
     "image_scroller_RtHWEd",
+    "image_scroller_VAGbky",
     "video_hero_WrMVQn"
   ]
 }
