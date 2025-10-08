@@ -21,6 +21,20 @@
             "text_text": "Order Leather Stock"
           }
         },
+        "sector_menu_card_7kitx4": {
+          "type": "sector-menu-card",
+          "settings": {
+            "url_link": "shopify://pages/aviation",
+            "text_text": "Aviation"
+          }
+        },
+        "sector_menu_card_xNG47F": {
+          "type": "sector-menu-card",
+          "settings": {
+            "url_link": "shopify://pages/passenger-transport",
+            "text_text": "Passenger Transport"
+          }
+        },
         "shop_menu_card_XMAJ8P": {
           "type": "shop-menu-card",
           "settings": {
@@ -60,6 +74,8 @@
       },
       "block_order": [
         "search_suggestion_WNjErW",
+        "sector_menu_card_7kitx4",
+        "sector_menu_card_xNG47F",
         "shop_menu_card_XMAJ8P",
         "shop_menu_card_TFRQaX",
         "shop_menu_card_JT3YXC",
