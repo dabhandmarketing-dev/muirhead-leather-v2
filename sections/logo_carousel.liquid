@@ -1,5 +1,21 @@
-<div class="container cc-full">
-              <div li-section="Slideshow" class="seenon2__wrapper">
+<div>
+          <div class="padding-global-3">
+            <div class="container-large-2">
+              <div class="text-align-center">
+                <div class="max-width-large align-center">
+                  <div class="text-size-small-16">
+{{ section.settings.text_title }}
+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="_0-5rem-spacer"></div>
+          <div class="divider-vertical"></div>
+          <div class="_1rem-spacer"></div>
+          <div class="section-2 cc-0">
+            <div class="container cc-full">
+              <div class="seenon2__wrapper">
                 <div pb-section="seenon2" class="seenon2__track">
                   {% for block in section.blocks %}
     {% if block.type == "logo" %}
@@ -41,15 +57,25 @@
 </style>
                 </div>
               </div>
-            </div> {% schema %} {
+            </div>
+          </div>
+        </div> {% schema %} {
     "tag": "section",
     "name": "Logo Carousel",
-    "class": "section-2 cc-0",
+    "class": "section_logo3",
     "blocks": [
         {
             "name": "Logo",
             "type": "logo",
             "settings": null
+        }
+    ],
+    "settings": [
+        {
+            "id": "text_title",
+            "type": "text",
+            "label": "Title",
+            "default": "We Supply Exceptional Leather To"
         }
     ],
     "presets": [
