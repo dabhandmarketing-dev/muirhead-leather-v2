@@ -25,14 +25,24 @@
           "type": "sector-menu-card",
           "settings": {
             "url_link": "shopify://pages/aviation",
-            "text_text": "Aviation"
+            "text_text": "Aviation",
+            "image_image": "shopify://shop_images/Aviation.jpg"
           }
         },
         "sector_menu_card_xNG47F": {
           "type": "sector-menu-card",
           "settings": {
             "url_link": "shopify://pages/passenger-transport",
-            "text_text": "Passenger Transport"
+            "text_text": "Passenger Transport",
+            "image_image": "shopify://shop_images/Passenger_Transport.webp"
+          }
+        },
+        "sector_menu_card_tMm3TL": {
+          "type": "sector-menu-card",
+          "settings": {
+            "url_link": "shopify://pages/interiors-luxury",
+            "text_text": "Interiors & Luxury",
+            "image_image": "shopify://shop_images/Interiors_Luxury.webp"
           }
         },
         "shop_menu_card_XMAJ8P": {
@@ -76,6 +86,7 @@
         "search_suggestion_WNjErW",
         "sector_menu_card_7kitx4",
         "sector_menu_card_xNG47F",
+        "sector_menu_card_tMm3TL",
         "shop_menu_card_XMAJ8P",
         "shop_menu_card_TFRQaX",
         "shop_menu_card_JT3YXC",
