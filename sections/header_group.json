@@ -94,11 +94,10 @@
       ],
       "settings": {
         "url_button_link": "shopify://pages/contact",
-        "text_button_text": "Learn More",
+        "text_button_text": "Contact",
         "image_white_logo": "shopify://shop_images/logo--white.svg",
         "collection_search_bestseller": "stock",
         "collection_search_bestseller_limit": 6,
-        "text_success_headline": "Congratulations 🎉",
         "text_success_text": "Nice one! You’ve unlocked free shipping!",
         "free_shipping": "10000"
       }
