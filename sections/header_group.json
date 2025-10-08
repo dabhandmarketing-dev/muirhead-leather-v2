@@ -20,18 +20,24 @@
             "url_link": "shopify://collections/stock",
             "text_text": "Order Leather Stock"
           }
+        },
+        "menu_card_gAQnba": {
+          "type": "menu-card",
+          "settings": {
+            "url_link": "",
+            "text_title": "Stock",
+            "text_paragraph": "Buy a range of one-off hide"
+          }
         }
       },
       "block_order": [
-        "search_suggestion_WNjErW"
+        "search_suggestion_WNjErW",
+        "menu_card_gAQnba"
       ],
       "settings": {
         "url_button_link": "",
         "text_button_text": "Learn More",
         "image_white_logo": "shopify://shop_images/logo--white.svg",
-        "url_link": "",
-        "text_title": "Stock",
-        "text_paragraph": "Buy a range of one-off hide",
         "collection_search_bestseller": "stock",
         "collection_search_bestseller_limit": 6,
         "text_success_headline": "Congratulations 🎉",
