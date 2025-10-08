@@ -398,9 +398,14 @@
 {% when '@app' %}
 {% render block %}
 
-                              <div>
-                                {% render 'menu_item' %}
-                              </div>
+                              {% when 'menu-card' %}
+            <div li-block="Menu Card">
+                    
+                                
+                    <a href="{{ block.settings.url_link }}" class="navigation-card w-inline-block"> <div class="navigation-image-small">{% if block.settings.image_image %} {{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'image-cover-3', sizes: '100vw', loading: 'lazy' }} {% else %} <img class="image-cover-3" src="{{ 'muirhead_home_04.webp' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'muirhead_home_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_home_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_home_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_home_04.webp' | asset_url }} 1084w"> {% endif %}</div> <div class="column"> <div class="subheading-small-2">{{ block.settings.text_title }}</div> <p class="paragraph-small-6 text-color-tertiary">{{ block.settings.text_paragraph }}</p> </div> </a>
+                    
+                              
+                </div>
                             {% endcase %}
 {% endfor %}
 
@@ -1744,6 +1749,34 @@
     "class": "section_navbar",
     "blocks": [
         {
+            "name": "Menu Card",
+            "type": "menu-card",
+            "settings": [
+                {
+                    "id": "url_link",
+                    "type": "url",
+                    "label": "Link"
+                },
+                {
+                    "id": "image_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                },
+                {
+                    "id": "text_title",
+                    "type": "text",
+                    "label": "Title",
+                    "default": "Stock"
+                },
+                {
+                    "id": "text_paragraph",
+                    "type": "text",
+                    "label": "Paragraph",
+                    "default": "Buy a range of one-off hide"
+                }
+            ]
+        },
+        {
             "name": "Search - Suggestion",
             "type": "search-suggestion",
             "settings": [
@@ -1787,28 +1820,6 @@
             "label": "Dark Logo"
         },
         {
-            "id": "url_link",
-            "type": "url",
-            "label": "Link"
-        },
-        {
-            "id": "image_image",
-            "type": "image_picker",
-            "label": "Image"
-        },
-        {
-            "id": "text_title",
-            "type": "text",
-            "label": "Title",
-            "default": "Stock"
-        },
-        {
-            "id": "text_paragraph",
-            "type": "text",
-            "label": "Paragraph",
-            "default": "Buy a range of one-off hide"
-        },
-        {
             "id": "collection_search_bestseller",
             "type": "collection",
             "label": "Search - Bestseller"
@@ -1850,6 +1861,9 @@
             "name": "Header",
             "category": "Liquify",
             "blocks": [
+                {
+                    "type": "menu-card"
+                },
                 {
                     "type": "search-suggestion"
                 }
