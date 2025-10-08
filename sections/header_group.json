@@ -25,6 +25,7 @@
           "type": "shop-menu-card",
           "settings": {
             "url_link": "",
+            "image_image": "shopify://shop_images/Stock_Image.webp",
             "text_title": "Stock",
             "text_paragraph": "Buy a range of one-off hide"
           }
