@@ -88,26 +88,14 @@
                     </div>
                     <div class="product-details">
                       <div class="margin-bottom">
-                        {% for block in section.blocks %}
-    {% if block.type == "product-name" %}
-                    <div li-block="Product Name">
-                                    
-                          
-                                    <h1 li-object:text="product.title" class="heading-style-h2-3">
+                        <div>
+                          <h1 li-object:text="product.title" class="heading-style-h2-3">
 {{ product.title }}
 </h1>
-                                    
-                        
-                            </div>
-            {% endif %}
-{% endfor %}
+                        </div>
                       </div>
-                      {% for block in section.blocks %}
-    {% if block.type == "product-price" %}
-                    <div li-block="Product Price">
-                                    
-                        
-                                    <div class="product-header_price-wrapper">
+                      <div>
+                        <div class="product-header_price-wrapper">
                           <div li-js-price="product.selected_or_first_available_variant.price" class="text-size-large text-weight-bold" x-text="LiquifyHelper.moneyFormat(product.selected_or_first_available_variant.price, true, '{{ shop.money_with_currency_format }}')">$55</div>
                           <template x-if="product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price">
             <div li-js-if="product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price">
@@ -126,11 +114,7 @@
     </template>
                           </div>
                         </div>
-                                    
-                      
-                            </div>
-            {% endif %}
-{% endfor %}
+                      </div>
                       <div pb-component="ba31" class="pb-booster cc-blank">
                         <div class="booster__wrapper cc-0">
                           <div class="booster__content cc-center">
@@ -324,16 +308,6 @@ document.addEventListener("DOMContentLoaded", () => {
     "class": "section",
     "blocks": [
         {
-            "name": "Product Name",
-            "type": "product-name",
-            "settings": null
-        },
-        {
-            "name": "Product Price",
-            "type": "product-price",
-            "settings": null
-        },
-        {
             "name": "Add to Cart",
             "type": "add-to-cart",
             "settings": null
@@ -344,12 +318,6 @@ document.addEventListener("DOMContentLoaded", () => {
             "name": "Product Page",
             "category": "Liquify",
             "blocks": [
-                {
-                    "type": "product-name"
-                },
-                {
-                    "type": "product-price"
-                },
                 {
                     "type": "add-to-cart"
                 }
