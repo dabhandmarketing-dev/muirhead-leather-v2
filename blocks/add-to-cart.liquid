@@ -10,7 +10,7 @@
                             <div li-element="product-options-name" x-text="option">Variant</div>
                             <div class="product-header_radio-list"><template x-for="(variantName, variantKey) in options_by_name[option].option.values" :key="variantName">
     <label li-element="product-option-loop" class="product-header_radio w-radio">
-                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button w-radio-input"></div><input type="radio" li-element="product-option-input" style="opacity:0;position:absolute;z-index:-1" x-on:click="setVariant" :name="option" :data-name="option" :value="variantName" :id="variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')" :checked="selected_or_first_available_variant?.options.includes(variantName)" data-selectorType="radio" :class="firstOptionHasAvailableChildren[variantName] ? '' : 'data-disabled'"><span li-element="product-option-name" class="text-size-regular text-weight-semibold w-form-label" for="radio-6" x-text="variantName" :for="variantName">XS</span>
+                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button-2 w-radio-input"></div><input type="radio" li-element="product-option-input" style="opacity:0;position:absolute;z-index:-1" x-on:click="setVariant" :name="option" :data-name="option" :value="variantName" :id="variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')" :checked="selected_or_first_available_variant?.options.includes(variantName)" data-selectorType="radio" :class="firstOptionHasAvailableChildren[variantName] ? '' : 'data-disabled'"><span li-element="product-option-name" class="text-size-regular text-weight-semibold w-form-label" for="radio-6" x-text="variantName" :for="variantName">XS</span>
                               </label></template></div>
                           </div></template>
                             </div>
@@ -58,6 +58,13 @@
                       </div>
                       <div class="hide w-form-fail">
                         <div>Oops! Something went wrong while submitting the form.</div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="pb-booster cc-blank">
+                      <div class="booster__wrapper cc-0">
+                        <div class="booster__content cc-center gap-xs"><img loading="lazy" src="https://cdn.prod.website-files.com/65cbdeecb4cbc13e1c6b42ad/66f5c7386b7a95c9ed85de8d_visa.8d7f514b.svg" alt="" class="pb-component__icon _w-8"><img loading="lazy" src="https://cdn.prod.website-files.com/65cbdeecb4cbc13e1c6b42ad/66f5c7396b7a95c9ed85df08_mastercard.3afe1dc7.svg" alt="" class="pb-component__icon _w-8"><img loading="lazy" src="https://cdn.prod.website-files.com/65cbdeecb4cbc13e1c6b42ad/66f5c7396b7a95c9ed85df1d_amex.96fe8a50.svg" alt="" class="pb-component__icon _w-8"><img loading="lazy" src="https://cdn.prod.website-files.com/65cbdeecb4cbc13e1c6b42ad/66f5c7386b7a95c9ed85decf_paypal.9f345195.svg" alt="" class="pb-component__icon _w-8"><img loading="lazy" src="https://cdn.prod.website-files.com/65cbdeecb4cbc13e1c6b42ad/66f5c7396b7a95c9ed85df3d_discover.f0950dd5.svg" alt="" class="pb-component__icon _w-8"><img loading="lazy" src="https://cdn.prod.website-files.com/65cbdeecb4cbc13e1c6b42ad/66f5c7396b7a95c9ed85df39_google-pay.7028b8c9.svg" alt="" class="pb-component__icon _w-8"><img loading="lazy" src="https://cdn.prod.website-files.com/65cbdeecb4cbc13e1c6b42ad/66f5c7396b7a95c9ed85df28_apple-pay.730a4379.svg" alt="" class="pb-component__icon _w-8"></div>
                       </div>
                     </div>
                     
