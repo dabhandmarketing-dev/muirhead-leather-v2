@@ -9,13 +9,6 @@
  */
 {
   "sections": {
-    "custom_liquid_KqAGtD": {
-      "type": "custom_liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "custom_liquid": "<link\n  rel=\"stylesheet\"\n  href=\"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css\"\n/>\n\n\n\n<style>\n  .w-webflow-badge{\n   display: None !important;\n   visibility: hidden !important;\n}\n</style>\n\n\n<style>\n\n/* Style for all pagination bullets */\n.swiper-pagination-bullet {\n  border-radius: 100px !important;\n  min-width: 60px !important;\n  overflow: hidden;\n  position: relative; /* Make sure the child div is positioned relative to the parent */\n}\n\n/* Wrapper for each bullet */\n.hero-pagination .bullet-wrapper {\n  min-width: 60px !important;\n  height: 8px !important;\n  background-color: #ccc; /* Light gray background for parent */\n  overflow: hidden;\n  position: relative; /* Ensure the child .bullet-progress can fit inside */\n}\n\n/* The child div that will animate (progress bar) */\n.hero-pagination .bullet-progress {\n  width: 0%; /* Start with no progress (width 0) */\n  height: 100%;\n  background-color: #fff; /* White color for progress */\n  transition: width 5s ease; /* Smooth transition over 5 seconds */\n  position: absolute; /* Position inside the parent wrapper */\n  top: 0;\n  left: 0;\n}\n\n/* The active bullet (this will have the progress bar animation) */\n.hero-pagination .swiper-pagination-bullet-active .bullet-progress {\n  width: 100%; /* Expand to 100% width when active */\n}\n\n/* Reset progress width for non-active bullets */\n.hero-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) .bullet-progress {\n  width: 0%; /* Reset progress bar width to 0 for non-active bullets */\n}\n\n/* To ensure non-active bullets immediately reset their progress */\n.hero-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) .bullet-progress {\n  transition: width 0s ease; /* Disable transition when bullet is not active */\n}\n\n/* When a bullet is active again, apply the transition smoothly */\n.hero-pagination .swiper-pagination-bullet-active .bullet-progress {\n  transition: width 5s ease; /* Re-enable transition for the active bullet */\n}\n</style>\n\n<script src=\"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js\"></script>\n<script>\n\n  document.addEventListener(\"DOMContentLoaded\", function() {\n    const offset =  8 * 16; // Convert 8rem to pixels (1rem = 16px by default in most browsers)\n    document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {\n      anchor.addEventListener('click', function(e) {\n        e.preventDefault();\n        const targetId = this.getAttribute('href').substring(1);\n        const targetElement = document.getElementById(targetId);\n        if (targetElement) {\n          window.scrollTo({\n            top: targetElement.offsetTop - offset,\n            behavior: \"smooth\"\n          });\n        }\n      });\n    });\n  });\n\n</script>\n\n<script>\nconst heroslider = new Swiper('.header-slider', {\n  // Optional parameters\n  loop: true,\n  slidesPerView: 1,\n\tgrabCursor:false,\n\tfreeMode:false,\n  spaceBetween: 0,\n  speed: 500, // Transition speed\n\t//centeredSlides: true, // Center the active slide\n\t//loopedSlides: 4,\n  autoplay: {\n    delay: 6000, // Autoplay delay (5 seconds)\n    disableOnInteraction: false, // Continue autoplay even after interaction\n  },\n\t\n  \n  // Disable user interaction on slides\n  allowTouchMove: true,\n  simulateTouch: true,\n\n  // Pagination\n  pagination: {\n    el: '.hero-pagination',\n    clickable: true, // Allow pagination bullets to be clickable\n\t\trenderBullet: function (index, className) {\n      return '<span class=\"' + className + '\">' +\n        '<div class=\"bullet-wrapper\">' +\n          '<div class=\"bullet-progress\"></div>' +\n        '</div>' +\n      '</span>';\n    }\n  },\n});\n</script>"
-      }
-    },
     "slideshow_8m7Dab": {
       "type": "slideshow",
       "blocks": {
@@ -74,7 +67,6 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "custom_liquid_KqAGtD",
     "slideshow_8m7Dab",
     "text_stitching_secti_FQw7t6",
     "image_scroller_RtHWEd",
