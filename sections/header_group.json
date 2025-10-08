@@ -39,15 +39,6 @@
             "text_paragraph": "Buy a range of one-off hide"
           }
         },
-        "shop_menu_card_yPh7ji": {
-          "type": "shop-menu-card",
-          "settings": {
-            "url_link": "shopify://collections/samples",
-            "image_image": "shopify://shop_images/Samples.webp",
-            "text_title": "Samples",
-            "text_paragraph": "Find the perfect leather today"
-          }
-        },
         "shop_menu_card_JT3YXC": {
           "type": "shop-menu-card",
           "settings": {
@@ -56,14 +47,23 @@
             "text_title": "Leather Care",
             "text_paragraph": "Care for premium leather"
           }
+        },
+        "shop_menu_card_yPh7ji": {
+          "type": "shop-menu-card",
+          "settings": {
+            "url_link": "shopify://collections/gifts",
+            "image_image": "shopify://shop_images/Muirhead_Gifts.jpg",
+            "text_title": "Muirhead Gifts",
+            "text_paragraph": "Bespoke leather gifts"
+          }
         }
       },
       "block_order": [
         "search_suggestion_WNjErW",
         "shop_menu_card_XMAJ8P",
         "shop_menu_card_TFRQaX",
-        "shop_menu_card_yPh7ji",
-        "shop_menu_card_JT3YXC"
+        "shop_menu_card_JT3YXC",
+        "shop_menu_card_yPh7ji"
       ],
       "settings": {
         "url_button_link": "",
