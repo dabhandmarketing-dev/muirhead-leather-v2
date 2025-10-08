@@ -1,4 +1,6 @@
-<div pb-section="seenon2" class="seenon2__track">
+<div class="container cc-full">
+              <div li-section="Slideshow" class="seenon2__wrapper">
+                <div pb-section="seenon2" class="seenon2__track">
                   {% for block in section.blocks %}
     {% if block.type == "logo" %}
                     <div li-block="Logo" class="seenon2__logo">
@@ -37,10 +39,12 @@
 }
 }
 </style>
-                </div> {% schema %} {
-    "tag": "div",
-    "name": "Slideshow",
-    "class": "seenon2__wrapper",
+                </div>
+              </div>
+            </div> {% schema %} {
+    "tag": "section",
+    "name": "Logo Carousel",
+    "class": "section-2 cc-0",
     "blocks": [
         {
             "name": "Logo",
@@ -50,7 +54,7 @@
     ],
     "presets": [
         {
-            "name": "Slideshow",
+            "name": "Logo Carousel",
             "category": "Liquify",
             "blocks": [
                 {
