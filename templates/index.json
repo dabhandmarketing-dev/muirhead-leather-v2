@@ -9,10 +9,10 @@
  */
 {
   "sections": {
-    "slideshow_8m7Dab": {
-      "type": "slideshow",
+    "slideshow_v2_9h9FPG": {
+      "type": "slideshow_v2",
       "blocks": {
-        "slide_mGUpdF": {
+        "slide_TcKxQW": {
           "type": "slide",
           "settings": {
             "text_pre_heading": "More than",
@@ -21,7 +21,7 @@
             "text_button_text": "Learn More"
           }
         },
-        "slide_JzjLdk": {
+        "slide_he4qyd": {
           "type": "slide",
           "settings": {
             "text_pre_heading": "More than",
@@ -32,11 +32,16 @@
         }
       },
       "block_order": [
-        "slide_mGUpdF",
-        "slide_JzjLdk"
+        "slide_TcKxQW",
+        "slide_he4qyd"
       ],
-      "name": "Slideshow",
-      "settings": {}
+      "name": "Slideshow V2",
+      "settings": {
+        "text_pre_heading": "More than",
+        "text_heading": "Leather",
+        "url_button_link": "",
+        "text_button_text": "Learn More"
+      }
     },
     "text_stitching_secti_FQw7t6": {
       "type": "text_stitching_secti",
@@ -106,7 +111,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "slideshow_8m7Dab",
+    "slideshow_v2_9h9FPG",
     "text_stitching_secti_FQw7t6",
     "video_hero_WrMVQn",
     "scroller_v2_gLVjaG"
