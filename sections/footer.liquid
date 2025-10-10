@@ -83,24 +83,6 @@
               </div>
               <div class="column-x-large">
                 <div class="subheading-large">
-{{ section.settings.text_products_title }}
-</div>
-                {% for link in linklists['products'].links %}    <div li-for="link in linklists['products'].links" class="column-regular">
-                                    
-                  
-                            <a href="{{ link.url }}" li-object:href="link.url" class="footer-link-2 w-inline-block">
-                    <div li-object="link.title">{{ link.title }}</div>
-                    <div class="icon-small-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
-                        <path d="M10.9761 10.0006L6.85132 5.87577L8.02983 4.69727L13.3332 10.0006L8.02983 15.3038L6.85132 14.1253L10.9761 10.0006Z" fill="currentColor"></path>
-                      </svg></div>
-                  </a>
-                            
-                
-                        </div>
-{% endfor %}
-              </div>
-              <div class="column-x-large">
-                <div class="subheading-large">
 {{ section.settings.text_sustainability_title }}
 </div>
                 {% for link in linklists['sustainability'].links %}    <div li-for="link in linklists['sustainability'].links" class="column-regular">
@@ -185,19 +167,7 @@
               {% for link in linklists['small-footer-links'].links %}    <div li-for="link in linklists['small-footer-links'].links" class="footer-legal-links">
                                     
                 
-                            <a href="#" class="footer-legal-link">Contact</a>
-                            
-                
-                            <a href="#" class="footer-legal-link">Careers</a>
-                            
-                
-                            <a href="#" class="footer-legal-link">Privacy Policy</a>
-                            
-                
-                            <a href="#" class="footer-legal-link">Governance</a>
-                            
-                
-                            <a href="#" class="footer-legal-link">T&Cs</a>
+                            <div li-object="link.title" class="footer-legal-link">{{ link.title }}</div>
                             
               
                         </div>
@@ -226,12 +196,6 @@
             "type": "text",
             "label": "Our Expertise Text",
             "default": "Our Expertise"
-        },
-        {
-            "id": "text_products_title",
-            "type": "text",
-            "label": "Products Title",
-            "default": "Products"
         },
         {
             "id": "text_sustainability_title",
