@@ -1,0 +1,27 @@
+<div li-block="Buttons" class="margin-top margin-medium">
+                    
+                  
+                    <a href="{{ block.settings.url_button_link }}" class="button-main dark-152 w-inline-block"> <div class="icon-link-3 dark-153"> <div class="clip-2 white-10 dark-160"> <div class="hover-text white-31 dark-155"> <div class="text-size-small-11 white-34 dark-158">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 dark-155 bottom white-20 dark-157"> <div class="text-size-small-11 white-34 dark-158">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22 dark-159"> <div class="clip-2 white-10 dark-160"> <div class="hover-arrow-3 dark-161"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-long-line_1.svg' | asset_url }}" class="icon-1x1-small-7 white-12 dark-166"></div> <div class="hover-arrow-3 dark-161 left-arrow dark-164"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-long-line_1.svg' | asset_url }}" class="icon-1x1-small-7 white-12 dark-166"></div> </div> </div> </div> </a>
+                    
+                
+                </div> {% schema %} {
+    "name": "Buttons",
+    "settings": [
+        {
+            "id": "url_button_link",
+            "type": "url",
+            "label": "Button Link"
+        },
+        {
+            "id": "text_button_text",
+            "type": "text",
+            "label": "Button Text",
+            "default": "Learn More"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Buttons"
+        }
+    ]
+} {% endschema %}
