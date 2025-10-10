@@ -240,28 +240,18 @@
                           <div class="div-block-502">
                             <div class="list-wrap-grove">
                               <div class="content-grove">
-                                <div class="div-block-508">
-                                  <a href="#" class="navigation-feature-link w-inline-block">
+                                {% for link in linklists['sustainability'].links %}    <div li-for="link in linklists['sustainability'].links" class="div-block-508">
+                                    
+                                  
+                            <a li-object:href="link.url" href="{{ link.url }}" class="navigation-feature-link w-inline-block">
                                     <div class="column">
-                                      <div class="subheading-small-2">Our Commitment</div>
+                                      <div li-object="link.title" class="subheading-small-2">{{ link.title }}</div>
                                     </div>
                                   </a>
-                                  <a href="#" class="navigation-feature-link w-inline-block">
-                                    <div class="column">
-                                      <div class="subheading-small-2">Lowering Carbon</div>
-                                    </div>
-                                  </a>
-                                  <a href="#" class="navigation-feature-link w-inline-block">
-                                    <div class="column">
-                                      <div class="subheading-small-2">Sustainable Sourcing</div>
-                                    </div>
-                                  </a>
-                                  <a href="#" class="navigation-feature-link w-inline-block">
-                                    <div class="column">
-                                      <div class="subheading-small-2">Zero Waste</div>
-                                    </div>
-                                  </a>
-                                </div>
+                            
+                                
+                        </div>
+{% endfor %}
                               </div>
                             </div>
                           </div>
