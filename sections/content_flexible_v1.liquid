@@ -1,14 +1,14 @@
 <div class="padding-global-2 padding-section-small">
           <div>
             <div class="card_component">
-              <div id="w-node-e03ea875-f0eb-94c8-60aa-51f1abaffa22-029cc97b" class="card_img-wrapper" style="{% if section.settings.left_right == 'right'%}order: 9999;{% endif %}">{% if section.settings.image_image %}
+              <div li-content-for-theme-blocks="" id="w-node-_2514fd8d-59d9-6705-04bd-32f72d633fe2-029cc97b" class="content_wrapper">
+{% content_for 'blocks' %}
+</div>
+              <div id="w-node-e03ea875-f0eb-94c8-60aa-51f1abaffa22-029cc97b" class="card_img-wrapper" style="{% if section.settings.left_right == 'left'%}order: 9999;{% endif %}">{% if section.settings.image_image %}
 {{ section.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'card_img' }}
 {% else %}
 <img alt="" src="{{ 'image.svg' | asset_url }}" loading="lazy" class="card_img">
 {% endif %}</div>
-              <div li-content-for-theme-blocks="" id="w-node-_2514fd8d-59d9-6705-04bd-32f72d633fe2-029cc97b" class="content_wrapper">
-{% content_for 'blocks' %}
-</div>
             </div>
           </div>
         </div> {% schema %} {
