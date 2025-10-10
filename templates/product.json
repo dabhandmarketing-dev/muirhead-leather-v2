@@ -9,6 +9,11 @@
  */
 {
   "sections": {
+    "navigation_spacer_jkCrFR": {
+      "type": "navigation_spacer",
+      "name": "Navigation Spacer",
+      "settings": {}
+    },
     "product_hero": {
       "type": "product_hero",
       "blocks": {
@@ -64,6 +69,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
+    "navigation_spacer_jkCrFR",
     "product_hero",
     "recommended_products"
   ]
