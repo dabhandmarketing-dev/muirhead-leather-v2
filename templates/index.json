@@ -47,32 +47,62 @@
         "richtext_content": "<p>\n            The lowest carbon, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.\n          </p>"
       }
     },
-    "image_scroller_RtHWEd": {
-      "type": "image_scroller",
-      "name": "Image Scroller",
-      "settings": {
-        "text_pre_heading": "Muirhead Seat Cover Service:",
-        "text_heading": "Rethink comfort. Redefine sustainability.",
-        "richtext_content": "<p><br/>                  As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. <br/>                  Most manufacturers today are optimised for fabric and synthetic materials. <br/>                  ‍<br/>                  However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency. <br/>                  ‍<br/>     </p>",
-        "url_button_link": "",
-        "text_button_text": "Learn More"
-      }
-    },
-    "image_scroller_VAGbky": {
-      "type": "image_scroller",
-      "name": "Image Scroller",
-      "settings": {
-        "text_pre_heading": "Muirhead Seat Cover Service:",
-        "text_heading": "Rethink comfort. Redefine sustainability.",
-        "richtext_content": "<p><br/>                  As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. <br/>                  Most manufacturers today are optimised for fabric and synthetic materials. <br/>                  ‍<br/>                  However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency. <br/>                  ‍<br/>     </p>",
-        "url_button_link": "",
-        "text_button_text": "Learn More"
-      }
-    },
     "video_hero_WrMVQn": {
       "type": "video_hero",
       "name": "Video Hero",
       "settings": {}
+    },
+    "scroller_v2_gLVjaG": {
+      "type": "scroller_v2",
+      "blocks": {
+        "pre_heading_kfJLP4": {
+          "type": "pre-heading",
+          "settings": {
+            "text_pre_heading": "Muirhead Seat Cover Service:"
+          },
+          "blocks": {}
+        },
+        "heading_CL68Gw": {
+          "type": "heading",
+          "settings": {
+            "text_heading": "Muirhead Seat Cover Service"
+          },
+          "blocks": {}
+        },
+        "content_6piQJF": {
+          "type": "content",
+          "settings": {
+            "richtext_content_text": "<p>\n                    As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. \n                    Most manufacturers today are optimised for fabric and synthetic materials. \n                    ‍\n                    However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency. \n                   </p>"
+          },
+          "blocks": {}
+        },
+        "buttons_tpabGP": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Learn More"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "pre_heading_kfJLP4",
+        "heading_CL68Gw",
+        "content_6piQJF",
+        "buttons_tpabGP"
+      ],
+      "name": "Scroller V2",
+      "settings": {
+        "url_button_link": "",
+        "image_top_1": "shopify://shop_images/Stock_Image_8c85257b-cf36-4d4d-94ab-665565267b36.webp",
+        "image_top_2": "shopify://shop_images/Aviation.jpg",
+        "image_top_3": "shopify://shop_images/Interiors_Luxury.webp",
+        "image_top_4": "shopify://shop_images/Passenger_Transport.webp",
+        "image_bottom_1": "shopify://shop_images/Stock_Image.webp",
+        "image_bottom_2": "shopify://shop_images/6890f0472bf9b58b18cc0576_6890db4bdff1d4d8973da594_6886834d94a1ec8ca5232912_Amazon.jpg",
+        "image_bottom_3": "shopify://shop_images/6890f0477474b4de43f516c6_6890db48bd94f2fc7f76fff3_688681815578009ffc052e1c_Biscuit.jpg",
+        "image_bottom_4": "shopify://shop_images/6890f04853f98c63533321bd_6890db4668eaf301fbe1724b_6886853b04fb8f9bd72bd92b_Cornflower.jpg"
+      }
     }
   },
   "layout": "theme",
@@ -80,8 +110,7 @@
   "order": [
     "slideshow_8m7Dab",
     "text_stitching_secti_FQw7t6",
-    "image_scroller_RtHWEd",
-    "image_scroller_VAGbky",
-    "video_hero_WrMVQn"
+    "video_hero_WrMVQn",
+    "scroller_v2_gLVjaG"
   ]
 }
