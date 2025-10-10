@@ -36,12 +36,7 @@
         "slide_he4qyd"
       ],
       "name": "Slideshow V2",
-      "settings": {
-        "text_pre_heading": "More than",
-        "text_heading": "Leather",
-        "url_button_link": "",
-        "text_button_text": "Learn More"
-      }
+      "settings": {}
     },
     "text_stitching_secti_FQw7t6": {
       "type": "text_stitching_secti",
@@ -106,6 +101,51 @@
         "image_bottom_3": "shopify://shop_images/6890f0477474b4de43f516c6_6890db48bd94f2fc7f76fff3_688681815578009ffc052e1c_Biscuit.jpg",
         "image_bottom_4": "shopify://shop_images/6890f04853f98c63533321bd_6890db4668eaf301fbe1724b_6886853b04fb8f9bd72bd92b_Cornflower.jpg"
       }
+    },
+    "content_flexible_v1_4xGkPG": {
+      "type": "content_flexible_v1",
+      "blocks": {
+        "pre_heading_nUqRtr": {
+          "type": "pre-heading",
+          "disabled": true,
+          "settings": {
+            "text_pre_heading": "Muirhead Seat Cover Service:"
+          },
+          "blocks": {}
+        },
+        "heading_NPiPVm": {
+          "type": "heading",
+          "settings": {
+            "text_heading": "Muirhead Seat Cover Service"
+          },
+          "blocks": {}
+        },
+        "content_cKjK7c": {
+          "type": "content",
+          "settings": {
+            "richtext_content_text": "<p>\n                    As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. Most manufacturers today are optimised for fabric and synthetic materials. \n                    ‍\n                    However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency. \n                    ‍\n                </p>"
+          },
+          "blocks": {}
+        },
+        "buttons_tPyzDc": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Learn More"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "pre_heading_nUqRtr",
+        "heading_NPiPVm",
+        "content_cKjK7c",
+        "buttons_tPyzDc"
+      ],
+      "name": "Content Flexible V1",
+      "settings": {
+        "image_position": "right"
+      }
     }
   },
   "layout": "theme",
@@ -114,6 +154,7 @@
     "slideshow_v2_9h9FPG",
     "text_stitching_secti_FQw7t6",
     "video_hero_WrMVQn",
-    "scroller_v2_gLVjaG"
+    "scroller_v2_gLVjaG",
+    "content_flexible_v1_4xGkPG"
   ]
 }
