@@ -1,12 +1,6 @@
 <div class="w-embed">
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
           <style>
-  .w-webflow-badge{
-   display: None !important;
-   visibility: hidden !important;
-}
-</style>
-          <style>
 /* Style for all pagination bullets */
 .swiper-pagination-bullet {
   border-radius: 100px !important;
@@ -86,29 +80,6 @@
                     
               
                 </div>
-              <div class="header-slide swiper-slide">
-                <div class="hero-slide-content_layout is-centered">
-                  <div class="slider-background_wrap">{% if section.settings.image_image %}
-{{ section.settings.image_image | image_url: width: 1000 | image_tag: class: 'slider-background-image', sizes: '(max-width: 1800px) 100vw, 1800px', loading: 'lazy' }}
-{% else %}
- {{ 'detailed-apparel-1' | placeholder_svg_tag: 'slider-background-image' }} 
-{% endif %}</div>
-                  <div class="slider-background-image-overlay"></div>
-                  <div class="typo-zoom-text-wrapper">
-                    <div class="typo-zoom-text">Leather</div>
-                    <p class="more-than">
-{{ section.settings.text_pre_heading }}
-</p>
-                    <p class="hero-heading">
-{{ section.settings.text_heading }}
-</p>
-                    <div class="_2rem-spacer"></div>
-                    <div class="div-block-516">
-                      <a href="{{ section.settings.url_button_link }}" data-wf--button-main--variant="base" data-w-id="62fe5b66-eb79-581e-644e-970322077823" class="button-main w-inline-block"> <div class="icon-link-3"> <div class="clip-2 white-10"> <div class="hover-text white-31"> <div class="text-size-small-11 white-34">{{ section.settings.text_button_text }}</div> </div> <div class="hover-text white-31 bottom white-20"> <div class="text-size-small-11 white-34">{{ section.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22"> <div class="clip-2 white-10"> <div class="hover-arrow-3"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="{{ 'arrow-right-long-line.svg' | asset_url }}" alt="" loading="lazy" class="icon-1x1-small-7 white-12"></div> <div class="hover-arrow-3 left-arrow"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-long-line.svg' | asset_url }}" class="icon-1x1-small-7 white-12"></div> </div> </div> </div> </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           {% endcase %}
 {% endfor %}
@@ -207,36 +178,6 @@ const heroslider = new Swiper('.header-slider', {
         },
         {
             "type": "@app"
-        }
-    ],
-    "settings": [
-        {
-            "id": "image_image",
-            "type": "image_picker",
-            "label": "Image"
-        },
-        {
-            "id": "text_pre_heading",
-            "type": "text",
-            "label": "Pre-Heading",
-            "default": "More than"
-        },
-        {
-            "id": "text_heading",
-            "type": "text",
-            "label": "Heading",
-            "default": "Leather"
-        },
-        {
-            "id": "url_button_link",
-            "type": "url",
-            "label": "Button Link"
-        },
-        {
-            "id": "text_button_text",
-            "type": "text",
-            "label": "Button Text",
-            "default": "Learn More"
         }
     ],
     "presets": [
