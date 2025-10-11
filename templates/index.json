@@ -66,13 +66,6 @@
       "type": "video_hero",
       "name": "Video Hero",
       "settings": {}
-    },
-    "test_30_8FqaNr": {
-      "type": "test_30",
-      "name": "Test 3.0",
-      "settings": {
-        "richtext_content": "<p>The lowest carbon, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.<br/>          </p>"
-      }
     }
   },
   "layout": "theme",
@@ -80,7 +73,6 @@
   "order": [
     "slideshow_v2_9h9FPG",
     "text_stitching_secti_FQw7t6",
-    "video_hero_WrMVQn",
-    "test_30_8FqaNr"
+    "video_hero_WrMVQn"
   ]
 }
