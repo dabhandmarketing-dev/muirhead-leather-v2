@@ -1,22 +1,28 @@
 <div li-block="Downloads">
                     
                     
-                    <div class="product-header_description">
-                      <div li-content-for-block="" class="div-block-761">
-                        <div li-block="Specification">
-                    
-                          
-                    <a href="{{ block.settings.url_link }}" target="_blank" class="pdf-button w-inline-block"> <img loading="lazy" src="{{ 'download-2.svg' | asset_url }}" alt="" class="icon-embed-xsmall-5"> <div class="text-features-cta">{{ block.settings.text_text }}</div> </a>
-                    
-                        
-                </div>
-                      </div>
+                    <div class="product-downloads-wrap">
+                      <a href="{{ block.settings.url_link }}" target="_blank" class="pdf-button w-inline-block"> <img loading="lazy" src="{{ 'download-2.svg' | asset_url }}" alt="" class="icon-embed-xsmall-5"> <div class="text-features-cta">{{ block.settings.text_text }}</div> </a>
+                      <a href="{{ block.settings.url_link }}" target="_blank" class="pdf-button w-inline-block"> <img loading="lazy" src="{{ 'download-2.svg' | asset_url }}" alt="" class="icon-embed-xsmall-5"> <div class="text-features-cta">{{ block.settings.text_text }}</div> </a>
+                      <a href="{{ block.settings.url_link }}" target="_blank" class="pdf-button w-inline-block"> <img loading="lazy" src="{{ 'download-2.svg' | asset_url }}" alt="" class="icon-embed-xsmall-5"> <div class="text-features-cta">{{ block.settings.text_text }}</div> </a>
                     </div>
                     
                   
                 </div> {% schema %} {
     "name": "Downloads",
-    "settings": [],
+    "settings": [
+        {
+            "id": "url_link",
+            "type": "url",
+            "label": "Link"
+        },
+        {
+            "id": "text_text",
+            "type": "text",
+            "label": "Text",
+            "default": "Safety Specs"
+        }
+    ],
     "presets": [
         {
             "name": "Downloads"
