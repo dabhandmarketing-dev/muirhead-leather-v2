@@ -103,7 +103,7 @@
         "buttons_HQki7e": {
           "type": "buttons",
           "settings": {
-            "url_button_link": "",
+            "url_button_link": "shopify://collections/all",
             "text_button_text": "Button",
             "url_button_link_2": "",
             "text_button_text_2": "Button 2"
