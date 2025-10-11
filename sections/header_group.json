@@ -74,6 +74,7 @@
         },
         "shop_menu_card_yPh7ji": {
           "type": "shop-menu-card",
+          "disabled": true,
           "settings": {
             "url_link": "shopify://collections/gifts",
             "image_image": "shopify://shop_images/Muirhead_Gifts.jpg",
