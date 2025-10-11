@@ -65,7 +65,7 @@
           "type": "downloads",
           "name": "Downloads",
           "settings": {
-            "url_link": "",
+            "url_link": "{{ closest.product.metafields.custom.safety_specs.value }}",
             "text_text": "Safety Specs"
           },
           "blocks": {}
