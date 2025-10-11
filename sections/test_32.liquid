@@ -1,0 +1,35 @@
+<div class="padding-global">
+          <div class="container-large">
+            <div>
+{{ section.settings.text_text }}
+</div>
+            <h2>
+{{ section.settings.text_heading }}
+</h2>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "Test 3.2",
+    "class": "section _2rem",
+    "settings": [
+        {
+            "id": "text_text",
+            "type": "text",
+            "label": "Text",
+            "default": "This is some text inside of a div block."
+        },
+        {
+            "id": "text_heading",
+            "type": "text",
+            "label": "Heading",
+            "default": "Test Heading"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Test 3.2",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}
