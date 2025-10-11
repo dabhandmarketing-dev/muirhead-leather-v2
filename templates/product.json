@@ -41,12 +41,24 @@
           "settings": {},
           "blocks": {}
         },
+        "payment_icons_Rjaiqh": {
+          "type": "payment-icons",
+          "name": "Payment Icons",
+          "settings": {},
+          "blocks": {}
+        },
         "description": {
           "type": "description",
           "name": "Description",
           "settings": {
             "text_heading": "Description"
           },
+          "blocks": {}
+        },
+        "low_carbon_leather_rjfagd": {
+          "type": "low-carbon-leather",
+          "name": "Low Carbon Leather",
+          "settings": {},
           "blocks": {}
         }
       },
@@ -55,7 +67,9 @@
         "product-price",
         "availability",
         "add-to-cart",
-        "description"
+        "payment_icons_Rjaiqh",
+        "description",
+        "low_carbon_leather_rjfagd"
       ],
       "settings": {}
     },
