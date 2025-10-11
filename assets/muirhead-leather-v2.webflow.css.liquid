@@ -7781,7 +7781,9 @@ figcaption {
   grid-row-gap: .25rem;
   border: 1px solid #d57b31;
   border-radius: 100px;
-  padding: .5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem .75rem;
   display: flex;
 }
 
@@ -7789,6 +7791,14 @@ figcaption {
   grid-column-gap: .5rem;
   grid-row-gap: .5rem;
   flex-flow: wrap;
+  display: flex;
+}
+
+.product-downloads-wrap {
+  grid-column-gap: .25rem;
+  grid-row-gap: .25rem;
+  flex-flow: wrap-reverse;
+  margin-top: .5rem;
   display: flex;
 }
 
@@ -8832,6 +8842,13 @@ figcaption {
 
   .heading-style-h2-7 {
     font-size: 2.75rem;
+  }
+
+  .pdf-button {
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
