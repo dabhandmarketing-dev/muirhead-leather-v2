@@ -1,7 +1,7 @@
 <div class="padding-global">
           <div class="container-large">
             <div class="card-component">
-              <div li-content-for-blocks="" id="w-node-_83904e96-3502-5d7c-da40-03144376723f-4376723b" class="content_wrapper">
+              <div li-content-for-blocks="" id="w-node-_83904e96-3502-5d7c-da40-03144376723f-4376723b" class="content-wrapper">
 {% for block in section.blocks %}
 {% case block.type %}
 {% when '@app' %}
@@ -47,7 +47,54 @@
 {% endfor %}
 
     </div>
-              <div class="header77_content-right-2" href="{{ section.settings.url_button_link }}"> <div class="header77_content-right-2" href="{{ section.settings.url_button_link }}"> <div data-w-id="83904e96-3502-5d7c-da40-031443767256" class="layout414_content-bottom"> <div class="layout414_image-list image-list-top"> <div id="w-node-_83904e96-3502-5d7c-da40-031443767258-4376723b" class="layout414_image-wrapper-2">{% if section.settings.image_top_1 %} {{ section.settings.image_top_1 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1520px) 100vw, 1520px', id: 'w-node-_83904e96-3502-5d7c-da40-031443767259-4376723b', loading: 'lazy' }} {% else %} {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} {% endif %}</div> <div id="w-node-_83904e96-3502-5d7c-da40-03144376725a-4376723b" class="layout414_image-wrapper-2">{% if section.settings.image_top_2 %} {{ section.settings.image_top_2 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1005px) 100vw, 1005px', id: 'w-node-_83904e96-3502-5d7c-da40-03144376725b-4376723b', loading: 'lazy' }} {% else %} {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} {% endif %}</div> <div id="w-node-_83904e96-3502-5d7c-da40-03144376725c-4376723b" class="layout414_image-wrapper-2">{% if section.settings.image_top_3 %} {{ section.settings.image_top_3 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1005px) 100vw, 1005px', id: 'w-node-_83904e96-3502-5d7c-da40-03144376725d-4376723b', loading: 'lazy' }} {% else %} {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} {% endif %}</div> <div id="w-node-_83904e96-3502-5d7c-da40-03144376725e-4376723b" class="layout414_image-wrapper-2">{% if section.settings.image_top_4 %} {{ section.settings.image_top_4 | image_url: width: 1000 | image_tag: id: 'w-node-_83904e96-3502-5d7c-da40-03144376725f-4376723b', loading: 'lazy', class: 'layout414_image' }} {% else %} {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} {% endif %}</div> </div> <div class="layout414_image-list image-list-bottom"> <div id="w-node-_83904e96-3502-5d7c-da40-031443767261-4376723b" class="layout414_image-wrapper-2">{% if section.settings.image_bottom_1 %} {{ section.settings.image_bottom_1 | image_url: width: 1000 | image_tag: id: 'w-node-_83904e96-3502-5d7c-da40-031443767262-4376723b', loading: 'lazy', class: 'layout414_image' }} {% else %} {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} {% endif %}</div> <div id="w-node-_83904e96-3502-5d7c-da40-031443767263-4376723b" class="layout414_image-wrapper-2">{% if section.settings.image_bottom_2 %} {{ section.settings.image_bottom_2 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1005px) 100vw, 1005px', id: 'w-node-_83904e96-3502-5d7c-da40-031443767264-4376723b', loading: 'lazy' }} {% else %} {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} {% endif %}</div> <div id="w-node-_83904e96-3502-5d7c-da40-031443767265-4376723b" class="layout414_image-wrapper-2">{% if section.settings.image_bottom_3 %} {{ section.settings.image_bottom_3 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1005px) 100vw, 1005px', id: 'w-node-_83904e96-3502-5d7c-da40-031443767266-4376723b', loading: 'lazy' }} {% else %} {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} {% endif %}</div> <div id="w-node-_83904e96-3502-5d7c-da40-031443767267-4376723b" class="layout414_image-wrapper-2">{% if section.settings.image_bottom_4 %} {{ section.settings.image_bottom_4 | image_url: width: 1000 | image_tag: id: 'w-node-_83904e96-3502-5d7c-da40-031443767268-4376723b', loading: 'lazy', class: 'layout414_image' }} {% else %} {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} {% endif %}</div> </div> </div> </div> </div>
+              <div class="header77-content-right-2">
+                <div data-w-id="83904e96-3502-5d7c-da40-031443767256" class="grid-scroller">
+                  <div class="layout414-image-list image-list-top">
+                    <div id="w-node-_83904e96-3502-5d7c-da40-031443767258-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_top_1 %}
+{{ section.settings.image_top_1 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1520px) 100vw, 1520px', id: 'w-node-_83904e96-3502-5d7c-da40-031443767259-4376723b', loading: 'lazy' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                    <div id="w-node-_83904e96-3502-5d7c-da40-03144376725a-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_top_2 %}
+{{ section.settings.image_top_2 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1005px) 100vw, 1005px', id: 'w-node-_83904e96-3502-5d7c-da40-03144376725b-4376723b', loading: 'lazy' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                    <div id="w-node-_83904e96-3502-5d7c-da40-03144376725c-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_top_3 %}
+{{ section.settings.image_top_3 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1005px) 100vw, 1005px', id: 'w-node-_83904e96-3502-5d7c-da40-03144376725d-4376723b', loading: 'lazy' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                    <div id="w-node-_83904e96-3502-5d7c-da40-03144376725e-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_top_4 %}
+{{ section.settings.image_top_4 | image_url: width: 1000 | image_tag: id: 'w-node-_83904e96-3502-5d7c-da40-03144376725f-4376723b', loading: 'lazy', class: 'layout414_image' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                  </div>
+                  <div class="layout414-image-list image-list-bottom">
+                    <div id="w-node-_83904e96-3502-5d7c-da40-031443767261-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_bottom_1 %}
+{{ section.settings.image_bottom_1 | image_url: width: 1000 | image_tag: id: 'w-node-_83904e96-3502-5d7c-da40-031443767262-4376723b', loading: 'lazy', class: 'layout414_image' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                    <div id="w-node-_83904e96-3502-5d7c-da40-031443767263-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_bottom_2 %}
+{{ section.settings.image_bottom_2 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1005px) 100vw, 1005px', id: 'w-node-_83904e96-3502-5d7c-da40-031443767264-4376723b', loading: 'lazy' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                    <div id="w-node-_83904e96-3502-5d7c-da40-031443767265-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_bottom_3 %}
+{{ section.settings.image_bottom_3 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1005px) 100vw, 1005px', id: 'w-node-_83904e96-3502-5d7c-da40-031443767266-4376723b', loading: 'lazy' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                    <div id="w-node-_83904e96-3502-5d7c-da40-031443767267-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_bottom_4 %}
+{{ section.settings.image_bottom_4 | image_url: width: 1000 | image_tag: id: 'w-node-_83904e96-3502-5d7c-da40-031443767268-4376723b', loading: 'lazy', class: 'layout414_image' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div> {% schema %} {
@@ -113,11 +160,6 @@
         }
     ],
     "settings": [
-        {
-            "id": "url_button_link",
-            "type": "url",
-            "label": "Button Link"
-        },
         {
             "id": "image_top_1",
             "type": "image_picker",
