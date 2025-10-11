@@ -73,6 +73,16 @@
       ],
       "settings": {}
     },
+    "ribbons_gj8kMw": {
+      "type": "ribbons",
+      "name": "Ribbons",
+      "settings": {}
+    },
+    "product_content_iftBPT": {
+      "type": "product_content",
+      "name": "Product Content",
+      "settings": {}
+    },
     "recommended_products": {
       "type": "recommended_products",
       "settings": {
@@ -85,6 +95,8 @@
   "order": [
     "navigation_spacer_jkCrFR",
     "product_hero",
+    "ribbons_gj8kMw",
+    "product_content_iftBPT",
     "recommended_products"
   ]
 }
