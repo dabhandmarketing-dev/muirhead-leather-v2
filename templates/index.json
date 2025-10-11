@@ -41,23 +41,23 @@
     "text_stitching_secti_FQw7t6": {
       "type": "text_stitching_secti",
       "blocks": {
+        "rich_text_dCnyLM": {
+          "type": "rich-text",
+          "settings": {
+            "richtext_richtext": "<p><br/>              The lowest carbon, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.<br/>            </p>"
+          }
+        },
         "button_CJEeca": {
           "type": "button",
           "settings": {
             "url_button_link": "",
             "text_button_text": "Learn More"
           }
-        },
-        "rich_text_dCnyLM": {
-          "type": "rich-text",
-          "settings": {
-            "richtext_richtext": "<p><br/>              The lowest carbon, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.<br/>            </p>"
-          }
         }
       },
       "block_order": [
-        "button_CJEeca",
-        "rich_text_dCnyLM"
+        "rich_text_dCnyLM",
+        "button_CJEeca"
       ],
       "name": "Text Stitching Secti",
       "settings": {}
