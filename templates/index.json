@@ -66,6 +66,16 @@
       "type": "video_hero",
       "name": "Video Hero",
       "settings": {}
+    },
+    "image_with_text_tiVBcd": {
+      "type": "image_with_text",
+      "name": "Image with Text",
+      "settings": {
+        "text_heading": "Short heading here",
+        "richtext_content": "<p>\n                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n                </p>",
+        "url_button_link": "",
+        "text_button_text": "Learn More"
+      }
     }
   },
   "layout": "theme",
@@ -73,6 +83,7 @@
   "order": [
     "slideshow_v2_9h9FPG",
     "text_stitching_secti_FQw7t6",
-    "video_hero_WrMVQn"
+    "video_hero_WrMVQn",
+    "image_with_text_tiVBcd"
   ]
 }
