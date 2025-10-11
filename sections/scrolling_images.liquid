@@ -1,0 +1,224 @@
+<div class="padding-global">
+          <div class="container-large">
+            <div class="card-component">
+              <div li-content-for-blocks="" id="w-node-_83904e96-3502-5d7c-da40-03144376723f-4376723b" class="content-wrapper">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+                {% when 'pre-heading' %}
+            <div li-block="Pre Heading">
+                    
+                  
+                    <div>
+{{ block.settings.text_text }}
+</div>
+                    
+                
+                </div>
+                {% when 'heading' %}
+            <div li-block="Heading">
+                    
+                  
+                    <h2>
+{{ block.settings.text_heading }}
+</h2>
+                    
+                
+                </div>
+                {% when 'content' %}
+            <div li-block="Content">
+                    
+                  
+                    <div class="rich-text-block w-richtext"> {{ block.settings.richtext_richtext }} </div>
+                    
+                
+                </div>
+                {% when 'buttons' %}
+            <div li-block="Buttons" class="margin-top margin-medium">
+                    
+                  
+                    <a href="{{ block.settings.url_button_link }}" data-wf--button-main--variant="dark" data-w-id="62fe5b66-eb79-581e-644e-970322077823" class="button-main w-variant-40d42f51-beaf-80a4-8697-83623596810b w-inline-block"> <div class="icon-link-3"> <div class="clip-2 white-10"> <div class="hover-text white-31"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 bottom white-20"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22"> <div class="clip-2 white-10"> <div class="hover-arrow-3"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="{{ 'arrow-right-long-line_1.svg' | asset_url }}" alt="" loading="lazy" class="icon-1x1-small-7 white-12"></div> <div class="hover-arrow-3 left-arrow"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-long-line_1.svg' | asset_url }}" class="icon-1x1-small-7 white-12"></div> </div> </div> </div> </a>
+                    
+                
+                </div>
+              {% endcase %}
+{% endfor %}
+
+    </div>
+              <div class="header77-content-right-2">
+                <div data-w-id="83904e96-3502-5d7c-da40-031443767256" class="grid-scroller">
+                  <div class="layout414-image-list image-list-top">
+                    <div id="w-node-_83904e96-3502-5d7c-da40-031443767258-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_top_1 %}
+{{ section.settings.image_top_1 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1520px) 100vw, 1520px', id: 'w-node-_83904e96-3502-5d7c-da40-031443767259-4376723b', loading: 'lazy' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                    <div id="w-node-_83904e96-3502-5d7c-da40-03144376725a-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_top_2 %}
+{{ section.settings.image_top_2 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1005px) 100vw, 1005px', id: 'w-node-_83904e96-3502-5d7c-da40-03144376725b-4376723b', loading: 'lazy' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                    <div id="w-node-_83904e96-3502-5d7c-da40-03144376725c-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_top_3 %}
+{{ section.settings.image_top_3 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1005px) 100vw, 1005px', id: 'w-node-_83904e96-3502-5d7c-da40-03144376725d-4376723b', loading: 'lazy' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                    <div id="w-node-_83904e96-3502-5d7c-da40-03144376725e-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_top_4 %}
+{{ section.settings.image_top_4 | image_url: width: 1000 | image_tag: id: 'w-node-_83904e96-3502-5d7c-da40-03144376725f-4376723b', loading: 'lazy', class: 'layout414_image' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                  </div>
+                  <div class="layout414-image-list image-list-bottom">
+                    <div id="w-node-_83904e96-3502-5d7c-da40-031443767261-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_bottom_1 %}
+{{ section.settings.image_bottom_1 | image_url: width: 1000 | image_tag: id: 'w-node-_83904e96-3502-5d7c-da40-031443767262-4376723b', loading: 'lazy', class: 'layout414_image' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                    <div id="w-node-_83904e96-3502-5d7c-da40-031443767263-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_bottom_2 %}
+{{ section.settings.image_bottom_2 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1005px) 100vw, 1005px', id: 'w-node-_83904e96-3502-5d7c-da40-031443767264-4376723b', loading: 'lazy' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                    <div id="w-node-_83904e96-3502-5d7c-da40-031443767265-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_bottom_3 %}
+{{ section.settings.image_bottom_3 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1005px) 100vw, 1005px', id: 'w-node-_83904e96-3502-5d7c-da40-031443767266-4376723b', loading: 'lazy' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                    <div id="w-node-_83904e96-3502-5d7c-da40-031443767267-4376723b" class="layout414-image-wrapper-2">{% if section.settings.image_bottom_4 %}
+{{ section.settings.image_bottom_4 | image_url: width: 1000 | image_tag: id: 'w-node-_83904e96-3502-5d7c-da40-031443767268-4376723b', loading: 'lazy', class: 'layout414_image' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
+{% endif %}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Scrolling-Images",
+    "class": "section _2rem max-height-100vh",
+    "blocks": [
+        {
+            "name": "Pre Heading",
+            "type": "pre-heading",
+            "settings": [
+                {
+                    "id": "text_text",
+                    "type": "text",
+                    "label": "Text",
+                    "default": "Muirhead Seat Cover Service:"
+                }
+            ]
+        },
+        {
+            "name": "Heading",
+            "type": "heading",
+            "settings": [
+                {
+                    "id": "text_heading",
+                    "type": "text",
+                    "label": "Heading",
+                    "default": "Muirhead Seat Cover Service"
+                }
+            ]
+        },
+        {
+            "name": "Content",
+            "type": "content",
+            "settings": [
+                {
+                    "id": "richtext_richtext",
+                    "type": "richtext",
+                    "label": "Richtext",
+                    "default": "<p>\n                    As the world\u2019s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. Most manufacturers today are optimised for fabric and synthetic materials. \n                    \u200d\n                    However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency. \n                    \u200d\n                <\/p>"
+                }
+            ]
+        },
+        {
+            "name": "Buttons",
+            "type": "buttons",
+            "settings": [
+                {
+                    "id": "url_button_link",
+                    "type": "url",
+                    "label": "Button Link"
+                },
+                {
+                    "id": "text_button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "default": "Learn More"
+                }
+            ]
+        },
+        {
+            "type": "@app"
+        }
+    ],
+    "settings": [
+        {
+            "id": "image_top_1",
+            "type": "image_picker",
+            "label": "Top 1"
+        },
+        {
+            "id": "image_top_2",
+            "type": "image_picker",
+            "label": "Top 2"
+        },
+        {
+            "id": "image_top_3",
+            "type": "image_picker",
+            "label": "Top 3"
+        },
+        {
+            "id": "image_top_4",
+            "type": "image_picker",
+            "label": "Top 4"
+        },
+        {
+            "id": "image_bottom_1",
+            "type": "image_picker",
+            "label": "Bottom 1"
+        },
+        {
+            "id": "image_bottom_2",
+            "type": "image_picker",
+            "label": "Bottom 2"
+        },
+        {
+            "id": "image_bottom_3",
+            "type": "image_picker",
+            "label": "Bottom 3"
+        },
+        {
+            "id": "image_bottom_4",
+            "type": "image_picker",
+            "label": "Bottom 4"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Scrolling-Images",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "pre-heading"
+                },
+                {
+                    "type": "heading"
+                },
+                {
+                    "type": "content"
+                },
+                {
+                    "type": "buttons"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
