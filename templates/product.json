@@ -61,11 +61,11 @@
           "settings": {},
           "blocks": {}
         },
-        "downloads_FxhAXp": {
+        "downloads_e9tptx": {
           "type": "downloads",
           "name": "Downloads",
           "settings": {
-            "url_link": "{{ closest.product.metafields.custom.safety_specs.value }}",
+            "url_link": "",
             "text_text": "Safety Specs"
           },
           "blocks": {}
@@ -79,7 +79,7 @@
         "payment_icons_Rjaiqh",
         "description",
         "low_carbon_leather_rjfagd",
-        "downloads_FxhAXp"
+        "downloads_e9tptx"
       ],
       "settings": {}
     },
