@@ -75,6 +75,31 @@
     },
     "ribbons_gj8kMw": {
       "type": "ribbons",
+      "blocks": {
+        "usp_with_icon_rWmjPa": {
+          "type": "usp-with-icon",
+          "settings": {
+            "text_text": "Fast, insured courier"
+          }
+        },
+        "usp_with_icon_cVTmyD": {
+          "type": "usp-with-icon",
+          "settings": {
+            "text_text": "Fast, insured courier"
+          }
+        },
+        "usp_with_icon_VFajEi": {
+          "type": "usp-with-icon",
+          "settings": {
+            "text_text": "Fast, insured courier"
+          }
+        }
+      },
+      "block_order": [
+        "usp_with_icon_rWmjPa",
+        "usp_with_icon_cVTmyD",
+        "usp_with_icon_VFajEi"
+      ],
       "name": "Ribbons",
       "settings": {}
     },
