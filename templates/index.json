@@ -65,7 +65,9 @@
     "video_hero_WrMVQn": {
       "type": "video_hero",
       "name": "Video Hero",
-      "settings": {}
+      "settings": {
+        "image_thumbnail": "shopify://shop_images/Aviation.jpg"
+      }
     },
     "image_with_text_tiVBcd": {
       "type": "image_with_text",
