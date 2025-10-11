@@ -3,30 +3,32 @@
             <div style="width: 2px; height: 8rem; background: repeating-linear-gradient(to bottom, #808080 0, #808080 6px, transparent 6px, transparent 14px); background-attachment: fixed; background-position: 0 calc(100% - var(--scroll-y, 0px));"></div>
           </div>
         </div>
-        <div data-w-id="f34b5394-a8a8-5fcb-04fd-c302ab310834" class="home-action_descript xl-5">
-          {% for block in section.blocks %}
-    {% if block.type == "rich-text" %}
-                    <div li-block="Rich Text">
-                                    
+        <div li-content-for-blocks="" data-w-id="f34b5394-a8a8-5fcb-04fd-c302ab310834" class="home-action_descript xl-5">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+          {% when 'rich-text' %}
+            <div li-block="Rich Text">
+                    
             
-                                    <div class="text-h4 w-richtext"> {{ block.settings.richtext_richtext }} </div>
-                                    
+                    <div class="text-h4 w-richtext"> {{ block.settings.richtext_richtext }} </div>
+                    
           
-                            </div>
-            {% endif %}
-{% endfor %}
-          {% for block in section.blocks %}
-    {% if block.type == "button" %}
-                    <div li-block="Button">
-                                    
+                </div>
+          {% when 'button' %}
+            <div li-block="Button">
+                    
             
-                                    <a href="{{ block.settings.url_button_link }}" data-wf--button-main--variant="dark" data-w-id="62fe5b66-eb79-581e-644e-970322077823" class="button-main w-variant-40d42f51-beaf-80a4-8697-83623596810b w-inline-block"> <div class="icon-link-3"> <div class="clip-2 white-10"> <div class="hover-text white-31"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 bottom white-20"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22"> <div class="clip-2 white-10"> <div class="hover-arrow-3"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="{{ 'arrow-right-long-line_1.svg' | asset_url }}" alt="" loading="lazy" class="icon-1x1-small-7 white-12"></div> <div class="hover-arrow-3 left-arrow"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-long-line_1.svg' | asset_url }}" class="icon-1x1-small-7 white-12"></div> </div> </div> </div> </a>
-                                    
+                    <a href="{{ block.settings.url_button_link }}" data-wf--button-main--variant="dark" data-w-id="62fe5b66-eb79-581e-644e-970322077823" class="button-main w-variant-40d42f51-beaf-80a4-8697-83623596810b w-inline-block"> <div class="icon-link-3"> <div class="clip-2 white-10"> <div class="hover-text white-31"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 bottom white-20"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22"> <div class="clip-2 white-10"> <div class="hover-arrow-3"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="{{ 'arrow-right-long-line_1.svg' | asset_url }}" alt="" loading="lazy" class="icon-1x1-small-7 white-12"></div> <div class="hover-arrow-3 left-arrow"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-long-line_1.svg' | asset_url }}" class="icon-1x1-small-7 white-12"></div> </div> </div> </div> </a>
+                    
           
-                            </div>
-            {% endif %}
+                </div>
+        {% endcase %}
 {% endfor %}
-        </div>
+
+    </div>
         <div class="dotted-float">
           <div class="w-embed">
             <div style="width: 2px; height: 8rem; background: repeating-linear-gradient(to bottom, #808080 0, #808080 6px, transparent 6px, transparent 14px); background-attachment: fixed; background-position: 0 calc(100% - var(--scroll-y, 0px));"></div>
@@ -64,6 +66,9 @@
                     "default": "Learn More"
                 }
             ]
+        },
+        {
+            "type": "@app"
         }
     ],
     "presets": [
