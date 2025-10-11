@@ -1,30 +1,65 @@
 <div id="current_sub" class="message-toggler is-active">
-          <ul role="list" class="list3_components w-list-unstyled">
-            <li class="list2_item">
-              <div class="list3_item-wrapper"><img loading="lazy" src="{{ 'checkmark.svg' | asset_url }}" alt="" class="list2_checkmark">
-                <div class="text-size-xtiny">Fast, insured courier</div>
+          <ul li-content-for-blocks="" role="list" class="list3_components w-list-unstyled">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+            {% when 'usp-with-icon' %}
+            <li li-block="USP With Icon" class="list2_item">
+                    
+              
+                    <div class="list3_item-wrapper">{% if block.settings.image_icon %}
+{{ block.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'list2_checkmark' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'checkmark.svg' | asset_url }}" class="list2_checkmark">
+{% endif %}
+                <div class="text-size-xtiny">
+{{ block.settings.text_text }}
+</div>
               </div>
-            </li>
-            <li class="list2_item">
-              <div class="list3_item-wrapper"><img loading="lazy" src="{{ 'leaf-outlined-natural-shape.svg' | asset_url }}" alt="" class="list2_checkmark">
-                <div class="text-size-xtiny">The Worlds Lowest Carbon Leather</div>
-              </div>
-            </li>
-            <li class="list2_item">
-              <div class="list3_item-wrapper"><img loading="lazy" src="{{ 'padlock.svg' | asset_url }}" alt="" class="list2_checkmark">
-                <div class="text-size-xtiny">Secure Payment With Shopify</div>
-              </div>
-            </li>
-          </ul>
+                    
+            
+                </li>
+          {% endcase %}
+{% endfor %}
+
+    </ul>
         </div> {% schema %} {
     "tag": "div",
     "name": "Ribbons",
     "class": "div-block-753 is-active",
+    "blocks": [
+        {
+            "name": "USP With Icon",
+            "type": "usp-with-icon",
+            "settings": [
+                {
+                    "id": "image_icon",
+                    "type": "image_picker",
+                    "label": "Icon"
+                },
+                {
+                    "id": "text_text",
+                    "type": "text",
+                    "label": "Text",
+                    "default": "Fast, insured courier"
+                }
+            ]
+        },
+        {
+            "type": "@app"
+        }
+    ],
     "presets": [
         {
             "name": "Ribbons",
             "category": "Liquify",
-            "blocks": []
+            "blocks": [
+                {
+                    "type": "usp-with-icon"
+                }
+            ]
         }
     ],
     "enabled_on": {
