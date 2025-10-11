@@ -40,10 +40,27 @@
     },
     "text_stitching_secti_FQw7t6": {
       "type": "text_stitching_secti",
+      "blocks": {
+        "button_CJEeca": {
+          "type": "button",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Learn More"
+          }
+        },
+        "rich_text_dCnyLM": {
+          "type": "rich-text",
+          "settings": {
+            "richtext_richtext": "<p><br/>              The lowest carbon, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.<br/>            </p>"
+          }
+        }
+      },
+      "block_order": [
+        "button_CJEeca",
+        "rich_text_dCnyLM"
+      ],
       "name": "Text Stitching Secti",
-      "settings": {
-        "richtext_content": "<p>The lowest carbon, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.<br/>          </p>"
-      }
+      "settings": {}
     },
     "video_hero_WrMVQn": {
       "type": "video_hero",
@@ -70,7 +87,7 @@
         "content_6piQJF": {
           "type": "content",
           "settings": {
-            "richtext_content_text": "<p>\n                    As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. \n                    Most manufacturers today are optimised for fabric and synthetic materials. \n                    ‍\n                    However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency. \n                   </p>"
+            "richtext_richtext": "<p>\n                    As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. Most manufacturers today are optimised for fabric and synthetic materials. \n                    ‍\n                    However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency. \n                    ‍\n                </p>"
           },
           "blocks": {}
         },
