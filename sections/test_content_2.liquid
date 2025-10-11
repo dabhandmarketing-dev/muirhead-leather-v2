@@ -1,7 +1,7 @@
 <div class="padding-global">
           <div class="container-large">
             <div class="card-component">
-              <div li-content-for-blocks="" id="w-node-_1e720e56-b391-dcf5-0597-3d7820336194-20336190" class="content_wrapper">
+              <div li-content-for-blocks="" id="w-node-_1e720e56-b391-dcf5-0597-3d7820336194-20336190" class="content-wrapper">
 {% for block in section.blocks %}
 {% case block.type %}
 {% when '@app' %}
@@ -46,12 +46,11 @@
               {% endcase %}
 {% endfor %}
 
-    </div>
-              <div id="w-node-_1e720e56-b391-dcf5-0597-3d78203361aa-20336190" class="card_img-wrapper">{% if section.settings.image_image %}
-{{ section.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'card_img' }}
+    </div>{% if section.settings.image_image %}
+{{ section.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'card-image' }}
 {% else %}
-<img alt="" src="{{ 'image.svg' | asset_url }}" loading="lazy" class="card_img">
-{% endif %}</div>
+<img alt="" src="{{ 'image.svg' | asset_url }}" loading="lazy" class="card-image">
+{% endif %}
             </div>
           </div>
         </div> {% schema %} {
