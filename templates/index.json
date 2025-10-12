@@ -111,7 +111,8 @@
         "image_bottom_2": "shopify://shop_images/BioPro_Guage.webp",
         "image_bottom_3": "shopify://shop_images/Interiors_Luxury.webp",
         "image_bottom_4": "shopify://shop_images/Aviation.jpg",
-        "grid_position": "right"
+        "grid_position": "right",
+        "background_colour": "#f9f9f9"
       }
     },
     "scroll_image_3Y7xEC": {
@@ -161,7 +162,8 @@
         "image_bottom_2": "shopify://shop_images/BioPro_Guage.webp",
         "image_bottom_3": "shopify://shop_images/Interiors_Luxury.webp",
         "image_bottom_4": "shopify://shop_images/Aviation.jpg",
-        "grid_position": "left"
+        "grid_position": "left",
+        "background_colour": "#f9f9f9"
       }
     },
     "video_hero_WrMVQn": {
