@@ -455,7 +455,7 @@
                     {% if shop.customer_accounts_optional %}    <div li-if="shop.customer_accounts_optional" class="nav_account">
     
                       <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="nav_shop-icon w-inline-block">
-                        <div class="naviconwrap"><img src="{{ 'User-White.svg' | asset_url }}" loading="lazy" alt="" class="menu-icon-white"><img src="{{ 'User-Grey.svg' | asset_url }}" loading="lazy" alt="" class="menu-icon-dark"></div>
+                        <div class="naviconwrap"><img src="{{ 'Profile-white.svg' | asset_url }}" loading="lazy" alt="" class="menu-icon-white"><img src="{{ 'Profile.svg' | asset_url }}" loading="lazy" alt="" class="menu-icon-dark"></div>
                       </a>
                         </div>
 {% endif %}
@@ -463,7 +463,7 @@
                     <div class="nav_search">
                       <div data-hover="false" data-delay="0" class="nav_dropdown w-dropdown">
                         <div class="nav_shop-icon w-dropdown-toggle">
-                          <div class="naviconwrap"><img src="{{ 'Search.svg' | asset_url }}" loading="lazy" alt="" class="menu-icon-white"><img src="{{ 'Search-Grey.svg' | asset_url }}" loading="lazy" alt="" class="menu-icon-dark"></div>
+                          <div class="naviconwrap"><img src="{{ 'Search-White.svg' | asset_url }}" loading="lazy" alt="" class="menu-icon-white"><img src="{{ 'Search.svg' | asset_url }}" loading="lazy" alt="" class="menu-icon-dark"></div>
                         </div>
                         <nav class="nav_predictive-search-holder w-dropdown-list">
                           <div li-element="dropdown-toggle" class="nav_predictive-search-close" data-dropdowntoggle="" @click="LiquifyHelper.triggerClick($event.target.closest('.w-dropdown').querySelector('.w-dropdown-toggle.w--open'))"></div>
@@ -1038,7 +1038,7 @@
 </script>
 <div data-hover="false" data-delay="0" li-element="mini-cart" class="nav_dropdown w-dropdown" x-data="handleMinicart()" x-init="getCart()" @cartupdated.window="getCart()" @setcartitem.window="updateCartItemQuantity($event.detail.product, $event.detail.quantity)" @increasecartitem.window="increaseCartItemQuantity($event.detail.product, $event.detail.quantity)" @decreasecartitem.window="decreaseCartItemQuantity($event.detail.product, $event.detail.quantity)" @toggleminicart.window="toggleMiniCart()" @showcartmessage.window="showCartMessage" @getcartitems.window="returnCartItems">
                         <div li-element="mini-cart-toggle" class="nav_shop-icon w-dropdown-toggle" @click="$dispatch('cartupdated.window')">
-                          <div class="naviconwrap"><img src="{{ 'Bag-White.svg' | asset_url }}" loading="lazy" alt="" class="menu-icon-white"><img src="{{ 'Bag-Grey.svg' | asset_url }}" loading="lazy" alt="" class="menu-icon-dark"></div>
+                          <div class="naviconwrap"><img src="{{ 'Cart-White.svg' | asset_url }}" loading="lazy" alt="" class="menu-icon-white"><img src="{{ 'Cart.svg' | asset_url }}" loading="lazy" alt="" class="menu-icon-dark"></div>
                           <div li-element="mini-cart-item-count" class="nav_shop-quantity" x-data="{ items: 0 }" x-text="items" @carttotalitems.window="items = event.detail">1</div>
                         </div>
                         <nav li-element="mini-cart-container" class="nav_mini-cart-holder w-dropdown-list" :class="open || 'mini-cart-closed'">
