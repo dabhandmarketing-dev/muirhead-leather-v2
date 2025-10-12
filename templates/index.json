@@ -133,7 +133,19 @@
         "text_cm3Lef": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. </p><p>Most manufacturers today are optimised for fabric and synthetic materials. However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency. </p><p><strong>And that’s just the beginning.</strong></p>"
+            "richtext_text": "<p>As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. </p>"
+          }
+        },
+        "text_YjbReF": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Most manufacturers today are optimised for fabric and synthetic materials. However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency.</p>"
+          }
+        },
+        "text_txMzjN": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p><strong>And that’s just the beginning.</strong></p>"
           }
         },
         "buttons_KffWtG": {
@@ -150,6 +162,8 @@
         "headline_small_6VGXiN",
         "headline_MV9UjL",
         "text_cm3Lef",
+        "text_YjbReF",
+        "text_txMzjN",
         "buttons_KffWtG"
       ],
       "name": "Scroll Image",
