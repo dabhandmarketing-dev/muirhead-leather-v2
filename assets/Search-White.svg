@@ -4,12 +4,12 @@
   <defs>
     <style>
       .st0 {
-        fill: #53565a;
+        fill: #fff;
       }
 
       .st1 {
         fill: none;
-        stroke: #53565a;
+        stroke: #fff;
         stroke-linecap: round;
         stroke-miterlimit: 10;
         stroke-width: 25.3px;
