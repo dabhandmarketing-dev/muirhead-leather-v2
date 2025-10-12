@@ -62,18 +62,12 @@
       "name": "Text Stitching Secti",
       "settings": {}
     },
-    "video_hero_WrMVQn": {
-      "type": "video_hero",
-      "name": "Video Hero",
-      "settings": {
-        "image_thumbnail": "shopify://shop_images/Aviation.jpg"
-      }
-    },
     "scroll_image_Ch4Arw": {
       "type": "scroll_image",
       "blocks": {
         "headline_small_katw6H": {
           "type": "headline-small",
+          "disabled": true,
           "settings": {
             "text_text": "Small Headline"
           }
@@ -81,22 +75,22 @@
         "headline_JnrKJ4": {
           "type": "headline",
           "settings": {
-            "text_headline": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
+            "text_headline": "Rethink comfort. Redefine sustainability."
           }
         },
         "text_qpPqka": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>"
+            "richtext_text": "<p>Muirhead BioPRO® Foam is a game-changer for aviation seating – setting a new standard in sustainability, performance, and customisation. <br/><br/>With a <strong>protein content of 20%</strong>, this innovative foam for aviation seat cushions is naturally fire-resistant, highly durable, and lightweight. It is free from harmful substances such as melamine, bromine, and PFAS, and can be fully tailored to meet your specific requirements.Explore how this revolutionary foam can transform your seating solutions and enhance passenger comfort.</p>"
           }
         },
         "buttons_i9TC8U": {
           "type": "buttons",
           "settings": {
-            "url_button_link": "shopify://pages/aviation",
-            "text_button_text": "Learn More",
-            "url_button_link_2": "",
-            "text_button_text_2": "Test Link"
+            "url_button_link": "#",
+            "text_button_text": "Discover BioPRO®",
+            "url_button_link_2": "#",
+            "text_button_text_2": ""
           }
         }
       },
@@ -118,6 +112,13 @@
         "image_bottom_4": "shopify://shop_images/Aviation.jpg",
         "grid_position": "left"
       }
+    },
+    "video_hero_WrMVQn": {
+      "type": "video_hero",
+      "name": "Video Hero",
+      "settings": {
+        "image_thumbnail": "shopify://shop_images/Aviation.jpg"
+      }
     }
   },
   "layout": "theme",
@@ -125,7 +126,7 @@
   "order": [
     "slideshow_v2_9h9FPG",
     "text_stitching_secti_FQw7t6",
-    "video_hero_WrMVQn",
-    "scroll_image_Ch4Arw"
+    "scroll_image_Ch4Arw",
+    "video_hero_WrMVQn"
   ]
 }
