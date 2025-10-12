@@ -205,7 +205,7 @@
       "settings": {
         "image_image": "shopify://shop_images/FreeTan.webp",
         "grid_position": "right",
-        "background_colour": "#f9f9f9"
+        "background_colour": "#ffffff"
       }
     },
     "image_text_MnABaL": {
@@ -242,7 +242,7 @@
       "settings": {
         "image_image": "shopify://shop_images/Samples.webp",
         "grid_position": "left",
-        "background_colour": "#f9f9f9"
+        "background_colour": "#ffffff"
       }
     }
   },
