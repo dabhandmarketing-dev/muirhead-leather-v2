@@ -170,6 +170,41 @@
       "settings": {
         "image_thumbnail": "shopify://shop_images/Aviation.jpg"
       }
+    },
+    "image_text_nGNxXC": {
+      "type": "image_text",
+      "blocks": {
+        "headline_iwrjVn": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "FreeTAN®"
+          }
+        },
+        "text_3NP7Fc": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Discover Muirhead's latest innovation: FreeTAN®, a sustainable leather solution for the aviation industry. By replacing traditional tanning chemistry with compostable technology, FreeTAN® eliminates chrome and glutaraldehyde while maintaining impeccable performance standards. </p><p>Featuring Muirhead's pioneering FR technology, it ensures efficient, halogen-free, and non-toxic fire retardancy.</p>"
+          }
+        },
+        "buttons_43EVGD": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "#",
+            "text_button_text": "Learn More",
+            "url_button_link_2": "",
+            "text_button_text_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "headline_iwrjVn",
+        "text_3NP7Fc",
+        "buttons_43EVGD"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "grid_position": "left"
+      }
     }
   },
   "layout": "theme",
@@ -179,6 +214,7 @@
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
-    "video_hero_WrMVQn"
+    "video_hero_WrMVQn",
+    "image_text_nGNxXC"
   ]
 }
