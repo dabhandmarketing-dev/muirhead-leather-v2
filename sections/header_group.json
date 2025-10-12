@@ -102,15 +102,9 @@
         "text_success_text": "Nice one! You’ve unlocked free shipping!",
         "free_shipping": "10000"
       }
-    },
-    "r_collection_product_FDRDae": {
-      "type": "r_collection_product",
-      "name": "R-collection_product",
-      "settings": {}
     }
   },
   "order": [
-    "header",
-    "r_collection_product_FDRDae"
+    "header"
   ]
 }

@@ -16,18 +16,25 @@
     },
     "collection_products_wmxiff": {
       "type": "collection_products",
+      "disabled": true,
       "name": "Collection Products",
       "settings": {
         "text_filter": "Filters",
         "text_clear_all": "Clear all",
         "text_products_shown": "Products shown"
       }
+    },
+    "r_collection_product_jPpKpp": {
+      "type": "r_collection_product",
+      "name": "R-collection_product",
+      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "page_heading_w4V3gw",
-    "collection_products_wmxiff"
+    "collection_products_wmxiff",
+    "r_collection_product_jPpKpp"
   ]
 }
