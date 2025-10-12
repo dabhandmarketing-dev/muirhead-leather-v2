@@ -114,6 +114,56 @@
         "grid_position": "left"
       }
     },
+    "scroll_image_3Y7xEC": {
+      "type": "scroll_image",
+      "blocks": {
+        "headline_small_6VGXiN": {
+          "type": "headline-small",
+          "settings": {
+            "text_text": "Simplifying Your Supply Chain"
+          }
+        },
+        "headline_MV9UjL": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Muirhead Seat Cover Service"
+          }
+        },
+        "text_cm3Lef": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. </p><p>Most manufacturers today are optimised for fabric and synthetic materials. However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency. </p><p><strong>And that’s just the beginning.</strong></p>"
+          }
+        },
+        "buttons_KffWtG": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "shopify://pages/contact",
+            "text_button_text": "Contact",
+            "url_button_link_2": "",
+            "text_button_text_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "headline_small_6VGXiN",
+        "headline_MV9UjL",
+        "text_cm3Lef",
+        "buttons_KffWtG"
+      ],
+      "name": "Scroll Image",
+      "settings": {
+        "image_top_1": "shopify://shop_images/BioPro.webp",
+        "image_top_2": "shopify://shop_images/BioPro_Technician.webp",
+        "image_top_3": "shopify://shop_images/BioPro_Machine.webp",
+        "image_top_4": "shopify://shop_images/Passenger_Transport.webp",
+        "image_bottom_1": "shopify://shop_images/Stock_Image_8c85257b-cf36-4d4d-94ab-665565267b36.webp",
+        "image_bottom_2": "shopify://shop_images/BioPro_Guage.webp",
+        "image_bottom_3": "shopify://shop_images/Interiors_Luxury.webp",
+        "image_bottom_4": "shopify://shop_images/Aviation.jpg",
+        "grid_position": "left"
+      }
+    },
     "video_hero_WrMVQn": {
       "type": "video_hero",
       "name": "Video Hero",
@@ -128,6 +178,7 @@
     "slideshow_v2_9h9FPG",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
+    "scroll_image_3Y7xEC",
     "video_hero_WrMVQn"
   ]
 }
