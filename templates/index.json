@@ -95,7 +95,7 @@
           "settings": {
             "url_button_link": "shopify://pages/aviation",
             "text_button_text": "Learn More",
-            "url_button_link_2": "shopify://pages/complete-control",
+            "url_button_link_2": "",
             "text_button_text_2": "Test Link"
           }
         }
