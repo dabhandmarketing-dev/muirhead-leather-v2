@@ -13,11 +13,28 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "social_icons_whhF3k": {
+          "type": "social-icons",
+          "settings": {
+            "url_link": ""
+          }
+        },
+        "social_icons_jn7tAM": {
+          "type": "social-icons",
+          "settings": {
+            "url_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "social_icons_whhF3k",
+        "social_icons_jn7tAM"
+      ],
       "settings": {
         "text_sectors_title": "Sectors",
         "text_about_title": "About",
         "text_our_expertise_text": "Our Expertise",
-        "text_products_title": "Products",
         "text_sustainability_title": "Sustainability",
         "text_shop_title": "Shop",
         "image_logo": "shopify://shop_images/logo--white.svg",
