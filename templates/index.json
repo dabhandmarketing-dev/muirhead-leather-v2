@@ -68,6 +68,56 @@
       "settings": {
         "image_thumbnail": "shopify://shop_images/Aviation.jpg"
       }
+    },
+    "scroll_image_Ch4Arw": {
+      "type": "scroll_image",
+      "blocks": {
+        "headline_small_katw6H": {
+          "type": "headline-small",
+          "settings": {
+            "text_text": "Small Headline"
+          }
+        },
+        "headline_JnrKJ4": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
+          }
+        },
+        "text_qpPqka": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>"
+          }
+        },
+        "buttons_i9TC8U": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Learn More",
+            "url_button_link_2": "",
+            "text_button_text_2": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "headline_small_katw6H",
+        "headline_JnrKJ4",
+        "text_qpPqka",
+        "buttons_i9TC8U"
+      ],
+      "name": "Scroll Image",
+      "settings": {
+        "image_top_1": "shopify://shop_images/Stock_Image_8c85257b-cf36-4d4d-94ab-665565267b36.webp",
+        "image_top_2": "shopify://shop_images/Aviation.jpg",
+        "image_top_3": "shopify://shop_images/Interiors_Luxury.webp",
+        "image_top_4": "shopify://shop_images/Passenger_Transport.webp",
+        "image_bottom_1": "shopify://shop_images/Stock_Image_8c85257b-cf36-4d4d-94ab-665565267b36.webp",
+        "image_bottom_2": "shopify://shop_images/Aviation.jpg",
+        "image_bottom_3": "shopify://shop_images/Interiors_Luxury.webp",
+        "image_bottom_4": "shopify://shop_images/Aviation.jpg",
+        "grid_position": "left"
+      }
     }
   },
   "layout": "theme",
@@ -75,6 +125,7 @@
   "order": [
     "slideshow_v2_9h9FPG",
     "text_stitching_secti_FQw7t6",
-    "video_hero_WrMVQn"
+    "video_hero_WrMVQn",
+    "scroll_image_Ch4Arw"
   ]
 }
