@@ -68,57 +68,6 @@
       "settings": {
         "image_thumbnail": "shopify://shop_images/Aviation.jpg"
       }
-    },
-    "image_with_text_tiVBcd": {
-      "type": "image_with_text",
-      "name": "Image with Text",
-      "settings": {
-        "text_heading": "Short heading here",
-        "richtext_content": "<p>\n                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.\n                </p>",
-        "url_button_link": "",
-        "text_button_text": "Learn More"
-      }
-    },
-    "content_1_fcwDV3": {
-      "type": "content_1",
-      "blocks": {
-        "headline_small_qCwefa": {
-          "type": "headline-small",
-          "settings": {
-            "text_text": "Small Headline"
-          }
-        },
-        "headline_wQXLhA": {
-          "type": "headline",
-          "settings": {
-            "text_headline": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
-          }
-        },
-        "text_B9HbDj": {
-          "type": "text",
-          "settings": {
-            "richtext_text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>"
-          }
-        },
-        "buttons_HQki7e": {
-          "type": "buttons",
-          "settings": {
-            "url_button_link": "shopify://collections/all",
-            "text_button_text": "Test Button"
-          }
-        }
-      },
-      "block_order": [
-        "headline_small_qCwefa",
-        "headline_wQXLhA",
-        "text_B9HbDj",
-        "buttons_HQki7e"
-      ],
-      "name": "Content 1",
-      "settings": {
-        "image_image": "shopify://shop_images/6890f04953978b4b154bdffd_6890db4af77ab5a2a50df57d_688685766aa97547b75023ee_Egyptian_252520Blue.jpg",
-        "image_position": "left"
-      }
     }
   },
   "layout": "theme",
@@ -126,8 +75,6 @@
   "order": [
     "slideshow_v2_9h9FPG",
     "text_stitching_secti_FQw7t6",
-    "video_hero_WrMVQn",
-    "image_with_text_tiVBcd",
-    "content_1_fcwDV3"
+    "video_hero_WrMVQn"
   ]
 }
