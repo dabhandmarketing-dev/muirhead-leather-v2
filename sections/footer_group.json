@@ -27,11 +27,19 @@
             "url_link": "https://x.com/MuirheadLeather",
             "image_social_logo": "shopify://shop_images/twitter-x-fill.svg"
           }
+        },
+        "social_icons_F4t8ET": {
+          "type": "social-icons",
+          "settings": {
+            "url_link": "https://www.instagram.com/muirheadleather/",
+            "image_social_logo": "shopify://shop_images/instagram-line_1.svg"
+          }
         }
       },
       "block_order": [
         "social_icons_whhF3k",
-        "social_icons_jn7tAM"
+        "social_icons_jn7tAM",
+        "social_icons_F4t8ET"
       ],
       "settings": {
         "text_sectors_title": "Sectors",
