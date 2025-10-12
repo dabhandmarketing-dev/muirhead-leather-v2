@@ -45,13 +45,13 @@
 </style>
         </div>
         <div class="header-slide_wrap">
-          <div li-content-for-blocks="" class="header-slider swiper">
+          <div class="header-slider swiper">
+            <div li-content-for-blocks="" class="header-slider-list swiper-wrapper">
 {% for block in section.blocks %}
 {% case block.type %}
 {% when '@app' %}
 {% render block %}
 
-            <div class="header-slider-list swiper-wrapper">
               {% when 'slide' %}
             <div li-block="Slide" class="header-slide swiper-slide">
                     
@@ -80,11 +80,11 @@
                     
               
                 </div>
-            </div>
-          {% endcase %}
+            {% endcase %}
 {% endfor %}
 
     </div>
+          </div>
         </div>
         <div class="hero-slider-pagination_wrap">
           <div>
