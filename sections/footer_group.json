@@ -14,6 +14,13 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "newsletter_JgjALG": {
+          "type": "newsletter",
+          "settings": {
+            "text_heading": "Join The Muirhead Newsletter",
+            "text_paragraph": "Industry news, offers and new product launches direct to your inbox."
+          }
+        },
         "social_icons_whhF3k": {
           "type": "social-icons",
           "settings": {
@@ -37,6 +44,7 @@
         }
       },
       "block_order": [
+        "newsletter_JgjALG",
         "social_icons_whhF3k",
         "social_icons_jn7tAM",
         "social_icons_F4t8ET"
