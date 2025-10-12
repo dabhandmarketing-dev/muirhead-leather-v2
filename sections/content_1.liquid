@@ -1,11 +1,6 @@
 <div class="padding-global-6 padding-section-small">
           <div class="container-large-10">
             <div class="content_grid">
-              <div id="w-node-_1c2acbc7-448b-5b0c-8350-cbc453daa35e-53daa35a" class="content_image-wrapper" style="{% if section.settings.grid_position == 'right' %}order: 9999;{% endif %}">{% if section.settings.image_image %}
-{{ section.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'content_image' }}
-{% else %}
-<img alt="" src="{{ 'image.svg' | asset_url }}" loading="lazy" class="content_image">
-{% endif %}</div>
               <div li-content-for-blocks="" class="content_wrapper-2">
 {% for block in section.blocks %}
 {% case block.type %}
@@ -63,6 +58,11 @@
 {% endfor %}
 
     </div>
+              <div id="w-node-_1c2acbc7-448b-5b0c-8350-cbc453daa35e-53daa35a" class="content_image-wrapper" style="{% if section.settings.grid_position == 'right' %}order: 9999;{% endif %}">{% if section.settings.image_image %}
+{{ section.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'content_image' }}
+{% else %}
+<img alt="" src="{{ 'image.svg' | asset_url }}" loading="lazy" class="content_image">
+{% endif %}</div>
             </div>
           </div>
         </div> {% schema %} {
