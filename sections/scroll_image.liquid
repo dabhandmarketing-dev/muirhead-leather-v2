@@ -1,5 +1,5 @@
 <div class="padding-global-6 padding-section-small">
-          <div class="container-large-10">
+          <div class="container-large">
             <div class="content_grid">
               <div li-content-for-blocks="" class="content_wrapper-2">
 {% for block in section.blocks %}
@@ -58,7 +58,7 @@
 {% endfor %}
 
     </div>
-              <div data-w-id="b4803d8a-053e-7cce-bcc7-9827f2245efd" class="grid-scroller">
+              <div data-w-id="b4803d8a-053e-7cce-bcc7-9827f2245efd" class="grid-scroller" style="{% if section.settings.grid_position == 'left' %}order: -1;{% endif %}">
                 <div class="layout414-image-list image-list-top">
                   <div id="w-node-b4803d8a-053e-7cce-bcc7-9827f2245eff-f2245ec9" class="layout414-image-wrapper-2">{% if section.settings.image_top_1 %}
 {{ section.settings.image_top_1 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1520px) 100vw, 1520px', id: 'w-node-b4803d8a-053e-7cce-bcc7-9827f2245f00-f2245ec9', loading: 'lazy' }}
