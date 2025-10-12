@@ -29,6 +29,7 @@
   --background-color--background-success: var(--base-color-system--success-green);
   --text-color--text-success: var(--base-color-system--success-green-dark);
   --base-color-brand--charcoal: #53565a;
+  --base-color-neutral--neutral-dark: #444;
   --base-color-brand--green: #11763d;
   --base-color-brand--darker-charcoal: #eee;
   --base-color-brand--blue-light: #d9e5ff;
@@ -40,7 +41,6 @@
   --base-color-brand--pink: #dd23bb;
   --base-color-brand--pink-dark: #3c043b;
   --base-color-neutral--neutral-light: #aaa;
-  --base-color-neutral--neutral-dark: #444;
   --base-color-system--success-green: #cef5ca;
   --base-color-system--warning-yellow: #fcf8d8;
   --base-color-system--warning-yellow-dark: #5e5515;
@@ -7869,8 +7869,8 @@ figcaption {
 }
 
 .content_grid {
-  grid-column-gap: 6.25rem;
-  grid-row-gap: 6.25rem;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
@@ -7884,9 +7884,35 @@ figcaption {
 
 .content_image {
   aspect-ratio: 1;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
   max-width: 50vw;
+  max-height: 75vh;
+}
+
+.social-media-link-wrap {
+  grid-column-gap: .875rem;
+  grid-row-gap: .875rem;
+  align-items: center;
+  display: flex;
+}
+
+.social-icon-square-2 {
+  color: #fff;
+  background-color: #222;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+  min-height: 36px;
+  text-decoration: none;
+  display: flex;
+}
+
+.social-icon-square-2:hover {
+  background-color: var(--base-color-neutral--neutral-dark);
+  color: #fff;
 }
 
 @media screen and (min-width: 1280px) {
@@ -10354,9 +10380,13 @@ figcaption {
   .button-25 {
     width: 100%;
   }
+
+  .social-icon-square-2 {
+    border-radius: 6px;
+  }
 }
 
-#w-node-_9612f0a7-5eb3-1f21-0f6a-2404126d8d98-99a7328f:where(.w-variant-48339c04-6887-9171-b253-9bb27b471faf), #w-node-_56ecd3f0-d926-0471-a6ba-2078a770b17d-a770b17b {
+#w-node-_56ecd3f0-d926-0471-a6ba-2078a770b17d-a770b17b {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
@@ -10690,7 +10720,7 @@ figcaption {
 }
 
 @media screen and (max-width: 767px) {
-  #w-node-_1bf6782f-b17f-3cea-9995-8a42e94b781f-029cc97b {
+  #w-node-_1c2acbc7-448b-5b0c-8350-cbc453daa35e-53daa35a {
     order: -10000;
   }
 
