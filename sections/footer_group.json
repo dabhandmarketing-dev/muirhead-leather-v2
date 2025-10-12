@@ -17,13 +17,15 @@
         "social_icons_whhF3k": {
           "type": "social-icons",
           "settings": {
-            "url_link": ""
+            "url_link": "https://www.facebook.com/MuirheadLeather/",
+            "image_social_logo": "shopify://shop_images/facebook-fill.svg"
           }
         },
         "social_icons_jn7tAM": {
           "type": "social-icons",
           "settings": {
-            "url_link": ""
+            "url_link": "https://x.com/MuirheadLeather",
+            "image_social_logo": "shopify://shop_images/twitter-x-fill.svg"
           }
         }
       },
