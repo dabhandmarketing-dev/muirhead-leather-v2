@@ -22,8 +22,8 @@
             "text_button_text": "Learn More"
           }
         },
-        "slide_he4qyd": {
-          "type": "slide",
+        "video_slide_MA8czc": {
+          "type": "video-slide",
           "settings": {
             "text_pre_heading": "More than",
             "text_heading": "Leather",
@@ -34,7 +34,7 @@
       },
       "block_order": [
         "slide_TcKxQW",
-        "slide_he4qyd"
+        "video_slide_MA8czc"
       ],
       "name": "Slideshow V2",
       "settings": {}
