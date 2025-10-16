@@ -123,7 +123,7 @@
           <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
           <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const offset =  8 * 16; // Convert 8rem to pixels (1rem = 16px by default in most browsers)
+    const offset = 8 * 16;
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -141,31 +141,25 @@
 </script>
           <script>
 const heroslider = new Swiper('.header-slider', {
-  // Optional parameters
   loop: true,
   slidesPerView: 1,
-	grabCursor:false,
-	freeMode:false,
+  grabCursor: false,
+  freeMode: false,
   spaceBetween: 0,
-  speed: 500, // Transition speed
-	//centeredSlides: true, // Center the active slide
-	//loopedSlides: 4,
+  speed: 500,
   autoplay: {
-    delay: 6000, // Autoplay delay (5 seconds)
-    disableOnInteraction: false, // Continue autoplay even after interaction
+    delay: 6000,
+    disableOnInteraction: false,
   },
-  // Disable user interaction on slides
   allowTouchMove: true,
   simulateTouch: true,
-  // Pagination
   pagination: {
     el: '.hero-pagination',
-    clickable: true, // Allow pagination bullets to be clickable
-		renderBullet: function (index, className) {
-      return '<span class=' + className + '>' +
-        '<div class='bullet-wrapper'>' +
-          '<div class='bullet-progress'></script></div>' +
-        ' {% schema %} {
+    clickable: true
+  },
+});
+</script>
+        </div> {% schema %} {
     "tag": "section",
     "name": "Slideshow V2",
     "class": "header-slider-section",
