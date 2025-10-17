@@ -21,32 +21,10 @@
             "url_button_link": "",
             "text_button_text": "Learn More"
           }
-        },
-        "slide_pmTTYT": {
-          "type": "slide",
-          "settings": {
-            "image_image": "shopify://shop_images/Muirhead_Hero_BG.jpg",
-            "text_pre_heading": "More than",
-            "text_heading": "Leather 2",
-            "url_button_link": "",
-            "text_button_text": "Learn More"
-          }
-        },
-        "slide_BwVbBf": {
-          "type": "slide",
-          "settings": {
-            "image_image": "shopify://shop_images/Muirhead_Hero_BG.jpg",
-            "text_pre_heading": "More than",
-            "text_heading": "Leather 3",
-            "url_button_link": "",
-            "text_button_text": "Learn More"
-          }
         }
       },
       "block_order": [
-        "slide_TcKxQW",
-        "slide_pmTTYT",
-        "slide_BwVbBf"
+        "slide_TcKxQW"
       ],
       "name": "Slideshow V2",
       "settings": {}
