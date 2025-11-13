@@ -21,10 +21,21 @@
             "url_button_link": "",
             "text_button_text": "Learn More"
           }
+        },
+        "video_slide_9FGCTX": {
+          "type": "video-slide",
+          "settings": {
+            "image_image": "shopify://shop_images/BioPro_Technician.webp",
+            "text_pre_heading": "More than",
+            "text_heading": "Leather",
+            "url_button_link": "",
+            "text_button_text": "Learn More"
+          }
         }
       },
       "block_order": [
-        "slide_TcKxQW"
+        "slide_TcKxQW",
+        "video_slide_9FGCTX"
       ],
       "name": "Slideshow V2",
       "settings": {}
