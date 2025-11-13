@@ -15,27 +15,37 @@
         "slide_TcKxQW": {
           "type": "slide",
           "settings": {
-            "image_image": "shopify://shop_images/Muirhead_Hero_BG.jpg",
-            "text_pre_heading": "More than",
-            "text_heading": "Leather",
-            "url_button_link": "",
-            "text_button_text": "Learn More"
-          }
-        },
-        "video_slide_9FGCTX": {
-          "type": "video-slide",
-          "settings": {
-            "image_image": "shopify://shop_images/BioPro_Technician.webp",
-            "text_pre_heading": "More than",
-            "text_heading": "Leather",
-            "url_button_link": "",
-            "text_button_text": "Learn More"
-          }
+            "image_image": "shopify://shop_images/Muirhead_Hero_BG.jpg"
+          },
+          "blocks": {
+            "button_inverted_qHdi8D": {
+              "type": "button-inverted",
+              "name": "Button Inverted",
+              "settings": {
+                "url_button_link": "",
+                "text_button_text": "Button Text",
+                "large": false
+              },
+              "blocks": {}
+            },
+            "button_icon_hdtgHF": {
+              "type": "button-icon",
+              "name": "Button Icon",
+              "settings": {
+                "url_button_link": "",
+                "text_button_text": "Button Text"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_inverted_qHdi8D",
+            "button_icon_hdtgHF"
+          ]
         }
       },
       "block_order": [
-        "slide_TcKxQW",
-        "video_slide_9FGCTX"
+        "slide_TcKxQW"
       ],
       "name": "Slideshow V2",
       "settings": {}
