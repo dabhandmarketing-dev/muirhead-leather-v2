@@ -29,10 +29,29 @@
           "block_order": [
             "button_icon_4Qbtta"
           ]
+        },
+        "slide_dCbabi": {
+          "type": "slide",
+          "settings": {},
+          "blocks": {
+            "button_icon_qJk93e": {
+              "type": "button-icon",
+              "name": "Button Icon",
+              "settings": {
+                "url_button_link": "",
+                "text_button_text": "Button Text"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_icon_qJk93e"
+          ]
         }
       },
       "block_order": [
-        "slide_cXU6jP"
+        "slide_cXU6jP",
+        "slide_dCbabi"
       ],
       "name": "Slideshow V2",
       "settings": {}
