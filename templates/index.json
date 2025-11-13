@@ -271,6 +271,36 @@
         "grid_position": "left",
         "background_colour": "#ffffff"
       }
+    },
+    "large_cta_WKzkbC": {
+      "type": "large_cta",
+      "blocks": {
+        "icon_KwYXCL": {
+          "type": "icon",
+          "settings": {}
+        },
+        "heading_3QVp4B": {
+          "type": "heading",
+          "settings": {
+            "text_heading": "Muirhead Makes The Lowest-Carbon Leather In The World."
+          }
+        },
+        "paragraph_MMkk4P": {
+          "type": "paragraph",
+          "settings": {
+            "richtext_richtext": "<p>\n                We source locally, tan naturally, reclaim energy from waste and re-use water. <br/><br/><strong>We are serious about sustainability.</strong>\n              </p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_KwYXCL",
+        "heading_3QVp4B",
+        "paragraph_MMkk4P"
+      ],
+      "name": "Large CTA",
+      "settings": {
+        "image_image": "shopify://shop_images/Interiors_Luxury.webp"
+      }
     }
   },
   "layout": "theme",
@@ -282,6 +312,7 @@
     "scroll_image_3Y7xEC",
     "video_hero_WrMVQn",
     "image_text_nGNxXC",
-    "image_text_MnABaL"
+    "image_text_MnABaL",
+    "large_cta_WKzkbC"
   ]
 }
