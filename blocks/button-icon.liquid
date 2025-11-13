@@ -1,0 +1,34 @@
+<div li-block="Button Icon" class="button-block">
+                    
+                          
+                    <div data-animation="stagger" class="animation-wrap">
+                            <a href="{{ block.settings.url_button_link }}" class="button-30 is-white-outline w-inline-block"> {% if block.settings.image_icon %} {{ block.settings.image_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'icon-1x1-small-12' }} {% else %} <img loading="lazy" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="icon-1x1-small-12"> {% endif %}<span>{{ block.settings.text_button_text }}</span> </a>
+                          </div>
+                    
+                        
+                </div> {% schema %} {
+    "name": "Button Icon",
+    "settings": [
+        {
+            "id": "url_button_link",
+            "type": "url",
+            "label": "Button Link"
+        },
+        {
+            "id": "image_icon",
+            "type": "image_picker",
+            "label": "Icon"
+        },
+        {
+            "id": "text_button_text",
+            "type": "text",
+            "label": "Button Text",
+            "default": "Button Text"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Button Icon"
+        }
+    ]
+} {% endschema %}

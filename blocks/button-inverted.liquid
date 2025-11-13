@@ -1,0 +1,38 @@
+<div li-block="Button Inverted" class="button-block">
+                    
+                          
+                    <div data-animation="stagger" class="animation-wrap" {% if block.settings.large %}data-button='large'{% endif%}>
+                            <a href="{{ block.settings.url_button_link }}" class="button-30 is-white w-button"> {{ block.settings.text_button_text }} </a>
+                          </div>
+                    
+                          
+                    
+                    
+                        
+                </div> {% schema %} {
+    "name": "Button Inverted",
+    "settings": [
+        {
+            "id": "url_button_link",
+            "type": "url",
+            "label": "Button Link"
+        },
+        {
+            "id": "text_button_text",
+            "type": "text",
+            "label": "Button Text",
+            "default": "Button Text"
+        },
+        {
+            "type": "checkbox",
+            "id": "large",
+            "label": "Large",
+            "default": false
+        }
+    ],
+    "presets": [
+        {
+            "name": "Button Inverted"
+        }
+    ]
+} {% endschema %}
