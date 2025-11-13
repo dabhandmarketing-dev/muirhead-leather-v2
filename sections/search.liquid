@@ -11,14 +11,10 @@
               <div id="w-node-_678e0483-bbe4-e79a-1722-b169c587feae-c587feae" class="filter_filters-wrapper">
                 <form action="{{ routes.search_url }}" method="get" role="search" class="filter_form_component">
                   <div id="w-node-_265c4342-3d21-e8bf-dfee-efec035c3507-c587feae" class="filter_form">
-                    <div class="filter_form-header">
-                      <div class="filter_heading">
-{{ section.settings.text_filter }}
-</div>
-                      <a li-object:href="routes.search_url" href="{{ routes.search_url }}" class="cart is-link hide-tablet w-inline-block">
-                        <div>
-{{ section.settings.text_clear_all }}
-</div>
+                    <div class="filters_group-header">
+                      <div>Filters</div>
+                      <a li-object:href="routes.search_url" href="{{ routes.search_url }}" class="filter-reset-button w-inline-block">
+                        <div>Clear</div>
                       </a>
                     </div>
                     <div class="filter_results-wrapper">
@@ -26,7 +22,6 @@
 {{ section.settings.text_products_shown }}
 </span></div>
                     </div>
-                    <div class="filter_form-field-wrapper"><input name="type" type="hidden" class="form_input" value="product"><label for="filter-search" class="form_hidden-label">Search for Products</label><input name="q" placeholder="Search" type="search" id="filter-search" class="form_input" value="{{ search.terms | escape }}"></div>
                     <div class="filter_scroll-wrapper">
                       <div class="filter_filter-group-list">
                         {% for filter in search.filters %}    <div li-for="filter in search.filters" class="filter_filter-group">
@@ -34,8 +29,11 @@
                           
                             {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1">
     
-                            <div class="filter_filter-group-heading">
-                              <div li-object="filter.label" class="text-size-medium text-weight-semibold">{{ filter.label }}</div>
+                            <div class="filters_group-header">
+                              <div>Filters</div>
+                              <a li-object:href="routes.search_url" href="{{ routes.search_url }}" class="filter-reset-button w-inline-block">
+                                <div>Clear</div>
+                              </a>
                             </div>
                             <div class="filter_list">
                               {% for filter_value in filter.values %}    <div li-for="filter_value in filter.values" class="filter_item">
@@ -49,6 +47,88 @@
                               
                         </div>
 {% endfor %}
+                            </div>
+                              </div>
+{% endif %}
+                            
+                        
+                        </div>
+{% endfor %}
+                      </div>
+                      <div class="filter_filter-group-list">
+                        {% for filter in search.filters %}    <div li-for="filter in search.filters" class="filter_filter-group">
+                                    
+                          
+                            {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1">
+    
+                            <div class="filters_group-header">
+                              <div>Collection</div>
+                              <a sf-filter-reset="1" href="#" class="filter-reset-button w-inline-block">
+                                <div>Clear</div>
+                              </a>
+                            </div>
+                            <div class="filter_list">
+                              {% for filter_value in filter.values %}    <div li-for="filter_value in filter.values" class="filter_item">
+                                    
+                                
+                            <a href="#" class="filters_menu-link jetboost-filter-active">All</a>
+                            
+                                
+                            <a href="#" class="filters_menu-link">Grampian</a>
+                            
+                                
+                            <a href="#" class="filters_menu-link">Caledonian</a>
+                            
+                                
+                            <a href="#" class="filters_menu-link">Lustrana</a>
+                            
+                                
+                            <a href="#" class="filters_menu-link">Sateen</a>
+                            
+                              
+                        </div>
+{% endfor %}
+                            </div>
+                              </div>
+{% endif %}
+                            
+                        
+                        </div>
+{% endfor %}
+                      </div>
+                      <div class="filter_filter-group-list">
+                        {% for filter in search.filters %}    <div li-for="filter in search.filters" class="filter_filter-group">
+                                    
+                          
+                            {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1">
+    
+                            <div class="filters_group-header">
+                              <div>Colour</div>
+                              <a sf-filter-reset="1" href="#" class="filter-reset-button w-inline-block">
+                                <div>Clear</div>
+                              </a>
+                            </div>
+                            <div class="filter_list">
+                              <div class="option-filters_swatch-circle">
+                                <div class="option-filters_swatch-dot">
+                                  <div>Yellow</div>
+                                </div>
+                                <div class="option-filters_swatch-dot">
+                                  <div>Grey</div>
+                                </div>
+                                <div class="option-filters_swatch-dot">
+                                  <div>Blue</div>
+                                </div>
+                                <div class="option-filters_swatch-dot">
+                                  <div>Brown</div>
+                                </div>
+                                <div class="option-filters_swatch-dot purple">
+                                  <div>Purple</div>
+                                </div>
+                                <div class="option-filters_swatch-dot green">
+                                  <div>Green</div>
+                                </div>
+                              </div>
                             </div>
                               </div>
 {% endif %}
@@ -220,18 +300,6 @@
     "name": "Search",
     "class": "section_filter",
     "settings": [
-        {
-            "id": "text_filter",
-            "type": "text",
-            "label": "Filter",
-            "default": "Filters"
-        },
-        {
-            "id": "text_clear_all",
-            "type": "text",
-            "label": "Clear all",
-            "default": "Clear all"
-        },
         {
             "id": "text_products_shown",
             "type": "text",
