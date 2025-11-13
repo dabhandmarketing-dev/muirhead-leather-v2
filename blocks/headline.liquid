@@ -1,0 +1,24 @@
+<div li-block="Headline">
+                    
+                      
+                    <p class="hero-heading">
+{{ block.settings.text_heading }}
+</p>
+                    
+                    
+                </div> {% schema %} {
+    "name": "Headline",
+    "settings": [
+        {
+            "id": "text_heading",
+            "type": "text",
+            "label": "Heading",
+            "default": "Leather"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Headline"
+        }
+    ]
+} {% endschema %}
