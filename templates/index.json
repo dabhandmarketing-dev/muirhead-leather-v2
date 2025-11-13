@@ -20,12 +20,28 @@
             "url_button_1_link": "",
             "text_button_1_text": "Button Text",
             "url_button_2_link": "",
-            "text_button_2_text": "Button Text"
+            "text_button_2_text": "Button Text",
+            "image_image_desktop": "shopify://shop_images/BioPro_Machine.webp",
+            "image_image_mobile": "shopify://shop_images/BioPro_Machine.webp"
+          }
+        },
+        "slide_NftWdt": {
+          "type": "slide",
+          "settings": {
+            "textarea_heading": "Heading",
+            "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "url_button_1_link": "",
+            "text_button_1_text": "Button Text",
+            "url_button_2_link": "",
+            "text_button_2_text": "Button Text",
+            "image_image_desktop": "shopify://shop_images/BioPro_Machine.webp",
+            "image_image_mobile": "shopify://shop_images/BioPro_Machine.webp"
           }
         }
       },
       "block_order": [
-        "slide_LymG7J"
+        "slide_LymG7J",
+        "slide_NftWdt"
       ],
       "name": "Hero Slider 1",
       "settings": {}
