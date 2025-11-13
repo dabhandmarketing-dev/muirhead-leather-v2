@@ -1,18 +1,14 @@
-<div class="padding-global padding-section-medium">
+<div class="padding-global">
           <div class="container-large">
             {% paginate collection.products by 50 %}
     <div li-paginate:by="50" li-paginate="collection.products" class="filter_layout" by="50">
               <div id="w-node-_678e0483-bbe4-e79a-1722-b169c587feae-c587feae" class="filter_filters-wrapper">
                 <form action="{{ routes.search_url }}" method="get" role="search" class="filter_form_component">
                   <div id="w-node-_265c4342-3d21-e8bf-dfee-efec035c3507-c587feae" class="filter_form">
-                    <div class="filter_form-header">
-                      <div class="filter_heading">
-{{ section.settings.text_filter }}
-</div>
-                      <a li-object:href="collection.url" href="{{ collection.url }}" class="cart is-link hide-tablet w-inline-block">
-                        <div>
-{{ section.settings.text_clear_all }}
-</div>
+                    <div class="filters_group-header">
+                      <div>Filters</div>
+                      <a li-object:href="collection.url" href="{{ collection.url }}" class="filter-reset-button w-inline-block">
+                        <div>Clear</div>
                       </a>
                     </div>
                     <div class="filter_results-wrapper">
@@ -20,7 +16,6 @@
 {{ section.settings.text_products_shown }}
 </span></div>
                     </div>
-                    <div class="filter_form-field-wrapper"><input name="type" type="hidden" class="form_input" value="product"><label for="filter-search" class="form_hidden-label">Search for Products</label><input name="q" placeholder="Search" type="search" id="filter-search" class="form_input" value="{{ search.terms | escape }}"></div>
                     <div class="filter_scroll-wrapper">
                       <div class="filter_filter-group-list">
                         {% for filter in collection.filters %}    <div li-for="filter in collection.filters" class="filter_filter-group">
@@ -28,8 +23,11 @@
                           
                             {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1">
     
-                            <div class="filter_filter-group-heading">
-                              <div li-object="filter.label" class="text-size-medium text-weight-semibold">{{ filter.label }}</div>
+                            <div class="filters_group-header">
+                              <div>Filters</div>
+                              <a li-object:href="collection.url" href="{{ collection.url }}" class="filter-reset-button w-inline-block">
+                                <div>Clear</div>
+                              </a>
                             </div>
                             <div class="filter_list">
                               {% for filter_value in filter.values %}    <div li-for="filter_value in filter.values" class="filter_item">
@@ -51,6 +49,88 @@
                         </div>
 {% endfor %}
                       </div>
+                      <div class="filter_filter-group-list">
+                        {% for filter in collection.filters %}    <div li-for="filter in collection.filters" class="filter_filter-group">
+                                    
+                          
+                            {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1">
+    
+                            <div class="filters_group-header">
+                              <div>Collection</div>
+                              <a sf-filter-reset="1" href="#" class="filter-reset-button w-inline-block">
+                                <div>Clear</div>
+                              </a>
+                            </div>
+                            <div class="filter_list">
+                              {% for filter_value in filter.values %}    <div li-for="filter_value in filter.values" class="filter_item">
+                                    
+                                
+                            <a href="#" class="filters_menu-link jetboost-filter-active">All</a>
+                            
+                                
+                            <a href="#" class="filters_menu-link">Grampian</a>
+                            
+                                
+                            <a href="#" class="filters_menu-link">Caledonian</a>
+                            
+                                
+                            <a href="#" class="filters_menu-link">Lustrana</a>
+                            
+                                
+                            <a href="#" class="filters_menu-link">Sateen</a>
+                            
+                              
+                        </div>
+{% endfor %}
+                            </div>
+                              </div>
+{% endif %}
+                            
+                        
+                        </div>
+{% endfor %}
+                      </div>
+                      <div class="filter_filter-group-list">
+                        {% for filter in collection.filters %}    <div li-for="filter in collection.filters" class="filter_filter-group">
+                                    
+                          
+                            {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1">
+    
+                            <div class="filters_group-header">
+                              <div>Colour</div>
+                              <a sf-filter-reset="1" href="#" class="filter-reset-button w-inline-block">
+                                <div>Clear</div>
+                              </a>
+                            </div>
+                            <div class="filter_list">
+                              <div class="option-filters_swatch-circle">
+                                <div class="option-filters_swatch-dot">
+                                  <div>Yellow</div>
+                                </div>
+                                <div class="option-filters_swatch-dot">
+                                  <div>Grey</div>
+                                </div>
+                                <div class="option-filters_swatch-dot">
+                                  <div>Blue</div>
+                                </div>
+                                <div class="option-filters_swatch-dot">
+                                  <div>Brown</div>
+                                </div>
+                                <div class="option-filters_swatch-dot purple">
+                                  <div>Purple</div>
+                                </div>
+                                <div class="option-filters_swatch-dot green">
+                                  <div>Green</div>
+                                </div>
+                              </div>
+                            </div>
+                              </div>
+{% endif %}
+                            
+                        
+                        </div>
+{% endfor %}
+                      </div>
                     </div>
                   </div>
                 </form>
@@ -60,6 +140,56 @@
                 <div>Filters</div>
               </a>
               <div id="w-node-f6c1ed66-8f2c-cc0d-fa87-63d3fbb7d543-fbb7d53a" class="filter_feed">
+                <div class="searchfiltercontainer">
+                  <div id="w-node-_638bf85b-1565-7af6-1651-0999962faa43-fbb7d53a" class="search-wrapper">
+                    <div class="search-box">
+                      <div class="search-form-group">
+                        <div class="search-form-2 w-form"><img loading="lazy" src="{{ 'search-fat-1.svg' | asset_url }}" alt="" class="search-icon">
+                          <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form" data-wf-page-id="68e22fae932bc475029cc987" data-wf-element-id="638bf85b-1565-7af6-1651-0999962faa48"><input class="search jetboost-list-search-input-3mq4 w-input" maxlength="256" name="search" data-name="search" placeholder="Start typing something..." type="text" id="search"><input type="submit" data-wait="Please wait..." class="submit-button-3 w-button" value="Submit"></form>
+                          <div class="w-form-done">
+                            <div>Thank you! Your submission has been received!</div>
+                          </div>
+                          <div class="w-form-fail">
+                            <div>Oops! Something went wrong while submitting the form.</div>
+                          </div>
+                        </div>
+                        <a href="#" class="searchclose jetboost-list-search-reset-3mq4 jetboost-active-show-3mq4 w-inline-block"><img loading="lazy" src="{{ 'Group-423.svg' | asset_url }}" alt="" class="image-59"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="w-node-_638bf85b-1565-7af6-1651-0999962faa53-fbb7d53a">
+                    <div class="filter_tags-wrapper-2">
+                      <div class="text-size-small-2 is-filter-result">Filtering by:</div>
+                      <div fs-cmsfilter-element="tag-template" class="filter_tag-2">
+                        <div fs-cmsfilter-element="tag-text" class="filter_tag-text">Tag</div><img fs-cmsfilter-element="tag-remove" loading="lazy" alt="close icon
+" src="{{ 'close.svg' | asset_url }}" class="filter_tag-remove">
+                      </div>
+                    </div>
+                    <div data-delay="0" data-hover="false" bind="d9dcbff8-9f06-16ea-d1c2-51ce15c68194" fs-cmssort-element="trigger" class="dropdown-4 w-dropdown">
+                      <div class="filter_sort-by-2 w-dropdown-toggle">
+                        <div bind="d9dcbff8-9f06-16ea-d1c2-51ce15c68196" class="dropdown_icon w-icon-dropdown-toggle"></div>
+                        <div fs-cmssort-element="dropdown-label" class="text-size-small-2">Sort by</div>
+                      </div>
+                      <nav class="dropdown_list w-dropdown-list">
+                        <a fs-cmssort-field="name-asc" href="#" class="sort_field jetboost-sort-active jetboost-sort-asc-49zz w-inline-block">
+                          <div>Name (A/Z)</div>
+                        </a>
+                        <a fs-cmssort-field="name-desc" href="#" class="sort_field jetboost-sort-desc-49zz w-inline-block">
+                          <div>Name (Z/A)</div>
+                        </a>
+                        <a fs-cmssort-field="height-asc" href="#" class="sort_field jetboost-sort-asc-4q8x w-inline-block">
+                          <div>Cheapest First</div>
+                        </a>
+                        <a fs-cmssort-field="height-asc" href="#" class="sort_field jetboost-sort-desc-4q8x w-inline-block">
+                          <div>More Expensive First</div>
+                        </a>
+                      </nav>
+                    </div>
+                  </div>
+                  <a data-w-id="638bf85b-1565-7af6-1651-0999962faa6d" href="#" class="filter-button-mobile w-inline-block"><img loading="lazy" src="{{ 'icon-filters.svg' | asset_url }}" alt="" class="button-icon-left">
+                    <div>Filters</div>
+                  </a>
+                </div>
                 <div class="filter_feed-header">
                   <div class="filter_tags-wrapper">
                     {% for filters in collection.filters %}    <div li-for="filters in collection.filters" class="filter_tags-inner-wrapper">
@@ -208,18 +338,6 @@
     "name": "Collection Products",
     "class": "section_filter",
     "settings": [
-        {
-            "id": "text_filter",
-            "type": "text",
-            "label": "Filter",
-            "default": "Filters"
-        },
-        {
-            "id": "text_clear_all",
-            "type": "text",
-            "label": "Clear all",
-            "default": "Clear all"
-        },
         {
             "id": "text_products_shown",
             "type": "text",

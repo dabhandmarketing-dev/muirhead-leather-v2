@@ -1,0 +1,21 @@
+<div li-block="Icon">
+                    {% if block.settings.image_image_logo %}
+{{ block.settings.image_image_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'low-carbon-leather' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'low-carbon-leather-logo_1low-carbon-leather-logo.avif' | asset_url }}" class="low-carbon-leather">
+{% endif %}
+                </div> {% schema %} {
+    "name": "Icon",
+    "settings": [
+        {
+            "id": "image_image_logo",
+            "type": "image_picker",
+            "label": "Image Logo"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Icon"
+        }
+    ]
+} {% endschema %}
