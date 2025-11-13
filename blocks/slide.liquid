@@ -2,13 +2,6 @@
                     
                 
                     <div class="hero-slide-content_layout is-centered">
-                  <div li-block="Icon">
-                    {% if block.settings.image_image_logo %}
-{{ block.settings.image_image_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'low-carbon-leather' }}
-{% else %}
-<img loading="lazy" alt="" src="{{ 'low-carbon-leather-logo_1low-carbon-leather-logo.avif' | asset_url }}" class="low-carbon-leather">
-{% endif %}
-                </div>
                   <div class="slider-background_wrap">{% if block.settings.image_image %}
 {{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'slider-background-image', sizes: '(max-width: 1919px) 100vw, 1800.0001220703125px', loading: 'lazy' }}
 {% else %}
@@ -16,6 +9,13 @@
 {% endif %}</div>
                   <div class="slider-background-image-overlay"></div>
                   <div class="typo-zoom-text-wrapper">
+                    <div li-block="Icon">
+                    {% if block.settings.image_image_logo %}
+{{ block.settings.image_image_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'low-carbon-leather' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'low-carbon-leather-logo_1low-carbon-leather-logo.avif' | asset_url }}" class="low-carbon-leather">
+{% endif %}
+                </div>
                     <div li-block="Pre-Heading">
                     
                       
@@ -38,7 +38,7 @@
                     <div li-block="Button Group" class="content-block">
                     
                       
-                    <div li-content-for-theme-blocks="" class="button-group-12">
+                    <div li-content-for-theme-blocks="" class="button-group centre">
 {% content_for 'blocks' %}
 </div>
                     

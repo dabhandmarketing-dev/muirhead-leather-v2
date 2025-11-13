@@ -35,12 +35,23 @@
         {% endcase %}
 {% endfor %}
 
-    </div>{% if section.settings.image_image %}
-{{ section.settings.image_image | image_url: width: 1000 | image_tag: class: 'background-image-cta', sizes: '(max-width: 1279px) 100vw, 1004.9913940429688px', loading: 'lazy' }}
+    </div>
+        <div class="header_background-image-wrapper">
+          {% if section.settings.checkbox_overlay == true %}
+<div class="header_overlay-layer"></div>{% endif %}
+          <div data-image="desktop" class="hero_bg-image-wrap z-index-1">{% if section.settings.image_desktop_image %}
+{{ section.settings.image_desktop_image | image_url: width: 1920 | image_tag: loading: 'eager', class: 'header_background-image' }}
 {% else %}
- {{ 'detailed-apparel-1' | placeholder_svg_tag: 'background-image-cta' }} 
-{% endif %}
-        <div class="gradient-overlay"></div> {% schema %} {
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'header_background-image' }} 
+{% endif %}</div>
+          {% unless section.settings.image_mobile_image == blank %}    <div data-image="mobile" li-unless="section.settings.image_mobile_image == blank" class="hero_bg-image-wrap z-index-2 hide-unless-mobile-portrait">
+    {% if section.settings.image_mobile_image %}
+{{ section.settings.image_mobile_image | image_url: width: 1000 | image_tag: loading: 'eager', class: 'header_background-image' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'header_background-image' }} 
+{% endif %}    </div>
+{% endunless %}
+        </div> {% schema %} {
     "tag": "div",
     "name": "Large CTA",
     "class": "sustainable-section",
@@ -86,9 +97,20 @@
     ],
     "settings": [
         {
-            "id": "image_image",
+            "id": "checkbox_overlay",
+            "type": "checkbox",
+            "label": "Overlay",
+            "default": true
+        },
+        {
+            "id": "image_desktop_image",
             "type": "image_picker",
-            "label": "Image"
+            "label": "Desktop Image"
+        },
+        {
+            "id": "image_mobile_image",
+            "type": "image_picker",
+            "label": "Mobile Image"
         }
     ],
     "presets": [
