@@ -30,8 +30,8 @@
         "text_knFreE": {
           "type": "text",
           "settings": {
-            "richtext_content": "<p>\n                        Natürlich mussten auch die alten Traditionen eines Tages auf die Digitalisierung treffen. Und das Ergebnis kann sich sehen lassen: Kofferworld war geboren. Ein junger Online-Shop, der auch traditionelle Werte in sein Leitbild integriert.\n                      </p>",
-            "text_alignment": "center"
+            "richtext_content": "<p> Natürlich mussten auch die alten Traditionen eines Tages auf die Digitalisierung treffen. Und das Ergebnis kann sich sehen lassen: Kofferworld war geboren. Ein junger Online-Shop, der auch traditionelle Werte in sein Leitbild integriert.</p>",
+            "text_alignment": "start"
           },
           "blocks": {}
         },
