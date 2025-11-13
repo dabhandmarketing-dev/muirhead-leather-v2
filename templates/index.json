@@ -12,7 +12,7 @@
     "hero_slider_1_7R8FAA": {
       "type": "hero_slider_1",
       "blocks": {
-        "slide_LymG7J": {
+        "slide_NftWdt": {
           "type": "slide",
           "settings": {
             "textarea_heading": "Heading",
@@ -21,11 +21,10 @@
             "text_button_1_text": "Button Text",
             "url_button_2_link": "",
             "text_button_2_text": "Button Text",
-            "image_image_desktop": "shopify://shop_images/BioPro_Machine.webp",
-            "image_image_mobile": "shopify://shop_images/BioPro_Machine.webp"
+            "video_desktop": "shopify://files/videos/Placeholder video.mp4"
           }
         },
-        "slide_NftWdt": {
+        "slide_LymG7J": {
           "type": "slide",
           "settings": {
             "textarea_heading": "Heading",
@@ -40,8 +39,8 @@
         }
       },
       "block_order": [
-        "slide_LymG7J",
-        "slide_NftWdt"
+        "slide_NftWdt",
+        "slide_LymG7J"
       ],
       "name": "Hero Slider 1",
       "settings": {}
