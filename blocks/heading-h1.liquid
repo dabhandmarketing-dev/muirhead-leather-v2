@@ -1,0 +1,26 @@
+<div li-block="Heading H1" class="content-block">
+                    
+                    
+                    <div data-animation="stagger" class="animation-wrap">
+                      <h1 class="heading-style-h1-3">
+{{ block.settings.text_heading }}
+</h1>
+                    </div>
+                    
+                  
+                </div> {% schema %} {
+    "name": "Heading H1",
+    "settings": [
+        {
+            "id": "text_heading",
+            "type": "text",
+            "label": "Heading",
+            "default": "Heading"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Heading H1"
+        }
+    ]
+} {% endschema %}
