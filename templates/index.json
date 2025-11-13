@@ -14,6 +14,7 @@
       "blocks": {
         "stars_xtxXEV": {
           "type": "stars",
+          "disabled": true,
           "settings": {
             "text_stars_text": "100.000+ zufriedene Kunden"
           },
