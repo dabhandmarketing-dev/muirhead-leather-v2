@@ -1,0 +1,118 @@
+<div li-content-for-blocks="" class="container-large centre rel-2">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+          <div class="layout37_component">
+            {% when 'icon' %}
+            <div li-block="Icon">
+                    {% if block.settings.image_image %}
+{{ block.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'low-carbon-leather' }}
+{% else %}
+<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/6885ff914360cbd55e8683d5/689675ea2eafe713d37e2a2b_low-carbon-leather-logo.png" class="low-carbon-leather">
+{% endif %}
+                </div>
+            {% when 'heading' %}
+            <div li-block="Heading">
+                    
+              
+                    <h2 class="heading-style-h2-5">
+{{ block.settings.text_heading }}
+</h2>
+                    
+            
+                </div>
+            {% when 'paragraph' %}
+            <div li-block="Paragraph">
+                    
+              
+                    <div class="text-size-medium w-richtext"> {{ block.settings.richtext_richtext }} </div>
+                    
+            
+                </div>
+            <a href="#" bind="14f24e57-65b0-d756-3869-f8d259cb601e" sym-bind="{"link":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"abd48bfb-d708-6bdf-d8a5-842d29e77fd1"}}}" class="menu-button white-28 w-inline-block">
+              <div class="icon-link-3">
+                <div class="clip-2 white-10">
+                  <div class="hover-text white-31">
+                    <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34">Learn More</div>
+                  </div>
+                  <div class="hover-text white-31 bottom white-20">
+                    <div sym-bind="{"children":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"37cd13bf-30f2-b752-cae8-a49c792c8044"}}}" class="text-size-small-9 white-34">Learn More</div>
+                  </div>
+                </div>
+                <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22">
+                  <div class="clip-2 white-10">
+                    <div class="hover-arrow-3"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="" alt="" loading="lazy" class="icon-1x1-small-7 white-12"></div>
+                    <div class="hover-arrow-3 left-arrow"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68e2301d72211f0b080d09d7/68e2301d72211f0b080d0a6a_arrow-right-long-line.svg" class="icon-1x1-small-7 white-12"></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        {% endcase %}
+{% endfor %}
+
+    </div><img src="{{ 'seat_cover_cutting_edge_machineryjpg.webp' | asset_url }}" loading="lazy" sizes="(max-width: 1279px) 100vw, 1004.9913940429688px" srcset="{{ 'seat_cover_cutting_edge_machineryjpg-p-500.webp' | asset_url }} 500w, {{ 'seat_cover_cutting_edge_machineryjpg-p-800.webp' | asset_url }} 800w, {{ 'seat_cover_cutting_edge_machineryjpg.webp' | asset_url }} 1005w" alt="" class="background-image-cta">
+        <div class="gradient-overlay"></div> {% schema %} {
+    "tag": "div",
+    "name": "Large CTA",
+    "class": "sustainable-section",
+    "blocks": [
+        {
+            "name": "Icon",
+            "type": "icon",
+            "settings": [
+                {
+                    "id": "image_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                }
+            ]
+        },
+        {
+            "name": "Heading",
+            "type": "heading",
+            "settings": [
+                {
+                    "id": "text_heading",
+                    "type": "text",
+                    "label": "Heading",
+                    "default": "Muirhead Makes The Lowest-Carbon Leather In The World."
+                }
+            ]
+        },
+        {
+            "name": "Paragraph",
+            "type": "paragraph",
+            "settings": [
+                {
+                    "id": "richtext_richtext",
+                    "type": "richtext",
+                    "label": "Richtext",
+                    "default": "<p>\n                We source locally, tan naturally, reclaim energy from waste and re-use water. <br\/><br\/><strong>We are serious about sustainability.<\/strong>\n              <\/p>"
+                }
+            ]
+        },
+        {
+            "type": "@app"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Large CTA",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "icon"
+                },
+                {
+                    "type": "heading"
+                },
+                {
+                    "type": "paragraph"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
