@@ -45,9 +45,61 @@
 </style>
         </div>
         <div class="header-slide_wrap">
-          <div li-content-for-theme-blocks="" class="header-slider swiper">
+          <div class="header-slider swiper">
+            <div li-content-for-blocks="" class="header-slider-list swiper-wrapper">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+              {% when 'slide' %}
+            <div li-block="Slide" class="header-slide swiper-slide">
+                    
+                
+                    <div class="hero-slide-content_layout is-centered">{% if block.settings.image_image_logo %}
+{{ block.settings.image_image_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'low-carbon-leather' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'low-carbon-leather-logo_1low-carbon-leather-logo.avif' | asset_url }}" class="low-carbon-leather">
+{% endif %}
+                  <div class="slider-background_wrap">{% if block.settings.image_image %}
+{{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'slider-background-image', sizes: '(max-width: 1919px) 100vw, 1800.0001220703125px', loading: 'lazy' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'slider-background-image' }} 
+{% endif %}</div>
+                  <div class="slider-background-image-overlay"></div>
+                  <div class="typo-zoom-text-wrapper">
+                    <div class="typo-zoom-text">Leather</div>
+                    <p class="more-than">
+{{ block.settings.text_pre_heading }}
+</p>
+                    <p class="hero-heading">
+{{ block.settings.text_heading }}
+</p>
+                    <div class="_2rem-spacer"></div>
+                    <div class="div-block-516">
+                      <a href="{{ block.settings.url_button_link }}" data-wf--button-main--variant="primary-brown" data-w-id="62fe5b66-eb79-581e-644e-970322077823" class="button-main w-variant-2fefbeae-31c5-f762-65ea-fe5ecac51e2f w-inline-block"> <div class="icon-link-3"> <div class="clip-2 white-10"> <div class="hover-text white-31"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 bottom white-20"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22"> <div class="clip-2 white-10"> <div class="hover-arrow-3"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="{{ 'arrow-right-long-line.svg' | asset_url }}" alt="" loading="lazy" class="icon-1x1-small-7 white-12"></div> <div class="hover-arrow-3 left-arrow"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-long-line.svg' | asset_url }}" class="icon-1x1-small-7 white-12"></div> </div> </div> </div> </a>
+                      <a href="{{ block.settings.url_button_link }}" data-wf--button-main--variant="base" data-w-id="62fe5b66-eb79-581e-644e-970322077823" class="button-main w-inline-block"> <div class="icon-link-3"> <div class="clip-2 white-10"> <div class="hover-text white-31"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 bottom white-20"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22"> <div class="clip-2 white-10"> <div class="hover-arrow-3"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="{{ 'arrow-right-long-line.svg' | asset_url }}" alt="" loading="lazy" class="icon-1x1-small-7 white-12"></div> <div class="hover-arrow-3 left-arrow"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-long-line.svg' | asset_url }}" class="icon-1x1-small-7 white-12"></div> </div> </div> </div> </a>
+                    </div>
+                    {% when 'button-group' %}
+            <div li-block="Button Group">
+                    
+                      
+                    <div li-content-for-theme-blocks="" class="button-group">
 {% content_for 'blocks' %}
 </div>
+                    
+                    
+                </div>
+                  </div>
+                </div>
+                    
+              
+                </div>
+            {% endcase %}
+{% endfor %}
+
+    </div>
+          </div>
         </div>
         <div class="hero-slider-pagination_wrap">
           <div>
@@ -100,7 +152,19 @@ const heroslider = new Swiper('.header-slider', {
     "class": "header-slider-section",
     "blocks": [
         {
-            "type": "slide"
+            "type": "button-primary"
+        },
+        {
+            "type": "button-secondary"
+        },
+        {
+            "type": "button-inverted"
+        },
+        {
+            "type": "button-secondary-w"
+        },
+        {
+            "type": "button-icon"
         },
         {
             "type": "@app"
@@ -115,7 +179,19 @@ const heroslider = new Swiper('.header-slider', {
             "category": "Liquify",
             "blocks": [
                 {
-                    "type": "slide"
+                    "type": "button-primary"
+                },
+                {
+                    "type": "button-secondary"
+                },
+                {
+                    "type": "button-inverted"
+                },
+                {
+                    "type": "button-secondary-w"
+                },
+                {
+                    "type": "button-icon"
                 }
             ]
         }

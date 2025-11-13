@@ -1,9 +1,9 @@
 {% when 'button-inverted' %}
-            <div li-block="Button Inverted" class="button-block">
+            <div li-block="Button Inverted">
                     
                           
-                    <div data-animation="stagger" class="animation-wrap" {% if block.settings.large %}data-button='large'{% endif%}>
-                            <a href="{{ block.settings.url_button_link }}" class="button-30 is-white w-button"> {{ block.settings.text_button_text }} </a>
+                    <div data-animation="stagger" {% if block.settings.large %}data-button='large'{% endif%}>
+                            <a href="{{ block.settings.url_button_link }}" class="w-button"> {{ block.settings.text_button_text }} </a>
                           </div>
                     
                           
