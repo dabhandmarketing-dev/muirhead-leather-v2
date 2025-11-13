@@ -42,10 +42,17 @@
             "button_inverted_qHdi8D",
             "button_icon_hdtgHF"
           ]
+        },
+        "slide_mbttGN": {
+          "type": "slide",
+          "name": "Slide",
+          "settings": {},
+          "blocks": {}
         }
       },
       "block_order": [
-        "slide_TcKxQW"
+        "slide_TcKxQW",
+        "slide_mbttGN"
       ],
       "name": "Slideshow V2",
       "settings": {}
