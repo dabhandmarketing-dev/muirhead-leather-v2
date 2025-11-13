@@ -9,51 +9,25 @@
  */
 {
   "sections": {
-    "slideshow_v2_7R8cFT": {
-      "type": "slideshow_v2",
+    "hero_slider_1_7R8FAA": {
+      "type": "hero_slider_1",
       "blocks": {
-        "slide_cXU6jP": {
+        "slide_LymG7J": {
           "type": "slide",
-          "settings": {},
-          "blocks": {
-            "button_icon_4Qbtta": {
-              "type": "button-icon",
-              "name": "Button Icon",
-              "settings": {
-                "url_button_link": "",
-                "text_button_text": "Button Text"
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "button_icon_4Qbtta"
-          ]
-        },
-        "slide_dCbabi": {
-          "type": "slide",
-          "settings": {},
-          "blocks": {
-            "button_icon_qJk93e": {
-              "type": "button-icon",
-              "name": "Button Icon",
-              "settings": {
-                "url_button_link": "",
-                "text_button_text": "Button Text"
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "button_icon_qJk93e"
-          ]
+          "settings": {
+            "textarea_heading": "Heading",
+            "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "url_button_1_link": "",
+            "text_button_1_text": "Button Text",
+            "url_button_2_link": "",
+            "text_button_2_text": "Button Text"
+          }
         }
       },
       "block_order": [
-        "slide_cXU6jP",
-        "slide_dCbabi"
+        "slide_LymG7J"
       ],
-      "name": "Slideshow V2",
+      "name": "Hero Slider 1",
       "settings": {}
     },
     "text_stitching_secti_FQw7t6": {
@@ -282,7 +256,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "slideshow_v2_7R8cFT",
+    "hero_slider_1_7R8FAA",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
