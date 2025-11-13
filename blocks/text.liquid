@@ -1,0 +1,47 @@
+<div li-block="Text" class="content-block">
+                    
+                    
+                    <div data-animation="stagger" style="text-align: {{ section.settings.text_alignment }}" class="animation-wrap">
+                      <div class="text-rich-text w-richtext"> {{ block.settings.richtext_content }} </div>
+                    </div>
+                    
+                    
+                    
+                    
+                  
+                </div> {% schema %} {
+    "name": "Text",
+    "settings": [
+        {
+            "id": "richtext_content",
+            "type": "richtext",
+            "label": "Content",
+            "default": "<p>\n                        Nat\u00fcrlich mussten auch die alten Traditionen eines Tages auf die Digitalisierung treffen. Und das Ergebnis kann sich sehen lassen: Kofferworld war geboren. Ein junger Online-Shop, der auch traditionelle Werte in sein Leitbild integriert.\n                      <\/p>"
+        },
+        {
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Text Alignment",
+            "options": [
+                {
+                    "value": "start",
+                    "label": "Left"
+                },
+                {
+                    "value": "center",
+                    "label": "Middle"
+                },
+                {
+                    "value": "end",
+                    "label": "Right"
+                }
+            ],
+            "default": "center"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Text"
+        }
+    ]
+} {% endschema %}

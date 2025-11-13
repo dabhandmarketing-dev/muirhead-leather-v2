@@ -118,7 +118,8 @@
     color: #FFFFFF;
     background: #000000;
   }
-</style><!--  
+</style>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!--  
 IMPORTANT: If you want to make changes to the head or body code on this page, 
 please remove the `li-layout` tag from the body element. 
 This will create a separate layout file for this page, allowing you to apply custom modifications.
@@ -182,6 +183,140 @@ Learn more: https://www.liquify.pro/docu/getting-started#template-structure
           el.style.borderColor = 'white';
         });
       }
+    });
+  });
+</script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swipers = [];
+    // Initialize swipers
+    function initializeSwipers() {
+      swipers.push(new Swiper("#swiper-logo1", {
+        spaceBetween: 12,
+        grabCursor: false,
+        a11y: false,
+        freeMode: true,
+        speed: 11000,
+        loop: true,
+        slidesPerView: 'auto',
+        autoplay: {
+          delay: 0.5,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2.3,
+          },
+          1024: {
+            slidesPerView: 2.3,
+          },
+          1224: {
+            slidesPerView: 'auto',
+          }
+        }
+      }));
+      swipers.push(new Swiper("#swiper-logo2", {
+        spaceBetween: 12,
+        grabCursor: false,
+        a11y: false,
+        reverseDirection: true,
+        direction: 'horizontal',
+        freeMode: true,
+        speed: 5000,
+        loop: true,
+        slidesPerView: 'auto',
+        autoplay: {
+          delay: 0.5,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2.3,
+          },
+          1024: {
+            slidesPerView: 2.3,
+          },
+          1224: {
+            slidesPerView: 'auto',
+          }
+        }
+      }));
+      swipers.push(new Swiper("#swiper-app1", {
+        spaceBetween: 8,
+        grabCursor: false,
+        a11y: false,
+        direction: 'vertical',
+        freeMode: true,
+        speed: 11000,
+        loop: true,
+        slidesPerView: 'auto',
+        autoplay: {
+          delay: 0.5,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2.3,
+            spaceBetween: 6,
+          },
+          1024: {
+            slidesPerView: 2.3,
+            spaceBetween: 12,
+          },
+          1224: {
+            slidesPerView: 'auto',
+            spaceBetween: 8,
+          }
+        }
+      }));
+      swipers.push(new Swiper("#swiper-app2", {
+        spaceBetween: 8,
+        grabCursor: false,
+        a11y: false,
+        direction: 'vertical',
+        freeMode: true,
+        speed: 6000,
+        loop: true,
+        slidesPerView: 'auto',
+        autoplay: {
+          delay: 0.5,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2.3,
+            spaceBetween: 6,
+          },
+          1024: {
+            slidesPerView: 2.3,
+            spaceBetween: 12,
+          },
+          1224: {
+            slidesPerView: 'auto',
+            spaceBetween: 8,
+          }
+        }
+      }));
+    }
+    // Intersection Observer callback
+    function handleIntersection(entries, observer) {
+      entries.forEach(entry => {
+        const swiper = entry.target.swiper;
+        if (entry.isIntersecting) {
+          swiper.autoplay.start();
+        } else {
+          swiper.autoplay.stop();
+        }
+      });
+    }
+    // Create Intersection Observer
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.01 // 1% of the element should be visible
+    });
+    // Initialize swipers and observe their containers
+    initializeSwipers();
+    swipers.forEach(swiper => {
+      observer.observe(swiper.el);
     });
   });
 </script>
