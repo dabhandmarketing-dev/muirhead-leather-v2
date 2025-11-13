@@ -1,0 +1,43 @@
+<div li-block="Slide" class="header-slide swiper-slide">
+                    
+                
+                    <div li-content-for-theme-blocks="" class="hero-slide-content_layout is-centered">
+{% content_for 'blocks' %}
+</div>
+                    
+              
+                </div> {% schema %} {
+    "name": "Slide",
+    "blocks": [
+        {
+            "type": "icon"
+        },
+        {
+            "type": "pre-heading"
+        },
+        {
+            "type": "headline"
+        },
+        {
+            "type": "button-group"
+        },
+        {
+            "type": "button"
+        },
+        {
+            "type": "@app"
+        }
+    ],
+    "settings": [
+        {
+            "id": "image_image",
+            "type": "image_picker",
+            "label": "Image"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Slide"
+        }
+    ]
+} {% endschema %}
