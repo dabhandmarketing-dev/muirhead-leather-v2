@@ -13,6 +13,7 @@
   --base-color-neutral--neutral-darker: #222;
   --base-color-brand--brown: #d57b31;
   --accessible-components-dark-grey\<deleted\|variable-c4d8099c\>: #9b9b9b;
+  --base-color-brand--dark-blue: #053e51;
   --text-color--text-error: var(--base-color-system--error-red-dark);
   --base-color-system--success-green-dark: #17660f;
   --base-color-system--error-red: #f8e4e4;
@@ -34,7 +35,6 @@
   --base-color-brand--darker-charcoal: #eee;
   --base-color-brand--blue-light: #d9e5ff;
   --base-color-brand--black: #0e0e0e;
-  --base-color-brand--dark-blue: #053e51;
   --base-color-brand--blue: #2d62ff;
   --base-color-brand--blue-dark: #080331;
   --base-color-brand--pink-light: #ffaefe;
@@ -775,6 +775,11 @@ figcaption {
 
 .button-group.is-center {
   justify-content: center;
+}
+
+.button-group.centre {
+  justify-content: center;
+  align-items: center;
 }
 
 .hide {
@@ -2018,7 +2023,7 @@ figcaption {
 
 .header_overlay-layer {
   z-index: 1;
-  background-color: #0003;
+  background-image: linear-gradient(180deg, var(--base-color-brand--dark-blue) 25%, #053e51c2);
   position: absolute;
   inset: 0%;
 }
@@ -3805,6 +3810,7 @@ figcaption {
 .typo-zoom-text-wrapper {
   z-index: 99;
   flex-flow: column;
+  align-items: center;
   width: 30vw;
   display: flex;
 }
@@ -5339,8 +5345,6 @@ figcaption {
 
 .sustainable-section {
   color: #fff;
-  background-color: #053e51;
-  background-image: linear-gradient(#053e51 24%, #002531c9);
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -8682,6 +8686,13 @@ figcaption {
   justify-content: flex-start;
   align-items: center;
   display: flex;
+}
+
+.hero_bg-image-wrap {
+  z-index: 2;
+  background-color: #0003;
+  position: absolute;
+  inset: 0%;
 }
 
 @media screen and (min-width: 1280px) {
