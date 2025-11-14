@@ -9,73 +9,6 @@
  */
 {
   "sections": {
-    "hero_1_YKDTma": {
-      "type": "hero_1",
-      "blocks": {
-        "stars_xtxXEV": {
-          "type": "stars",
-          "disabled": true,
-          "settings": {
-            "text_stars_text": "100.000+ zufriedene Kunden"
-          },
-          "blocks": {}
-        },
-        "heading_h1_MVRbdz": {
-          "type": "heading-h1",
-          "settings": {
-            "text_heading": "Heading"
-          },
-          "blocks": {}
-        },
-        "text_knFreE": {
-          "type": "text",
-          "settings": {
-            "richtext_content": "<p> Natürlich mussten auch die alten Traditionen eines Tages auf die Digitalisierung treffen. Und das Ergebnis kann sich sehen lassen: Kofferworld war geboren. Ein junger Online-Shop, der auch traditionelle Werte in sein Leitbild integriert.</p>"
-          },
-          "blocks": {}
-        },
-        "button_group_9X3CNX": {
-          "type": "button-group",
-          "settings": {},
-          "blocks": {
-            "button_inverted_deeNTN": {
-              "type": "button-inverted",
-              "name": "Button Inverted",
-              "disabled": true,
-              "settings": {
-                "url_button_link": "",
-                "text_button_text": "Button Text",
-                "large": false
-              },
-              "blocks": {}
-            },
-            "button_primary_NUDYAt": {
-              "type": "button-primary",
-              "name": "Button Primary",
-              "settings": {
-                "url_button_link": "",
-                "text_button_text": "Button Text"
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "button_inverted_deeNTN",
-            "button_primary_NUDYAt"
-          ]
-        }
-      },
-      "block_order": [
-        "stars_xtxXEV",
-        "heading_h1_MVRbdz",
-        "text_knFreE",
-        "button_group_9X3CNX"
-      ],
-      "name": "Hero 1",
-      "settings": {
-        "checkbox_overlay": true
-      }
-    },
     "slideshow_v2_dQFYz6": {
       "type": "slideshow_v2",
       "blocks": {
@@ -331,7 +264,6 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "hero_1_YKDTma",
     "slideshow_v2_dQFYz6",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
