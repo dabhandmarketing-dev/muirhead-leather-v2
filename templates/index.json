@@ -30,8 +30,7 @@
         "text_knFreE": {
           "type": "text",
           "settings": {
-            "richtext_content": "<p> Natürlich mussten auch die alten Traditionen eines Tages auf die Digitalisierung treffen. Und das Ergebnis kann sich sehen lassen: Kofferworld war geboren. Ein junger Online-Shop, der auch traditionelle Werte in sein Leitbild integriert.</p>",
-            "text_alignment": "start"
+            "richtext_content": "<p> Natürlich mussten auch die alten Traditionen eines Tages auf die Digitalisierung treffen. Und das Ergebnis kann sich sehen lassen: Kofferworld war geboren. Ein junger Online-Shop, der auch traditionelle Werte in sein Leitbild integriert.</p>"
           },
           "blocks": {}
         },
@@ -74,8 +73,7 @@
       ],
       "name": "Hero 1",
       "settings": {
-        "checkbox_overlay": true,
-        "text_color": "var(--base-color-neutral--white)"
+        "checkbox_overlay": true
       }
     },
     "slideshow_v2_dQFYz6": {
@@ -84,14 +82,25 @@
         "slide_qtA4qz": {
           "type": "slide",
           "settings": {
+            "text_pre_heading": "More than",
+            "text_heading": "Leather",
             "url_button_link": "",
             "text_button_text": "Learn More"
-          },
-          "blocks": {}
+          }
+        },
+        "slide_eTUkgB": {
+          "type": "slide",
+          "settings": {
+            "text_pre_heading": "More than",
+            "text_heading": "Leather",
+            "url_button_link": "",
+            "text_button_text": "Learn More"
+          }
         }
       },
       "block_order": [
-        "slide_qtA4qz"
+        "slide_qtA4qz",
+        "slide_eTUkgB"
       ],
       "name": "Slideshow V2",
       "settings": {}
