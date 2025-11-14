@@ -87,6 +87,42 @@
                     
               
                 </div>
+              {% when 'test-slide' %}
+            <section li-block="Test Slide" class="section_hero1">
+                    
+                
+                    <div class="header_background-image-wrapper">
+                  {% if block.settings.checkbox_overlay == true %}
+<div class="header_overlay-layer"></div>{% endif %}
+                  <div data-image="desktop" class="hero_bg-image-wrap z-index-1">{% if block.settings.image_desktop_image %}
+{{ block.settings.image_desktop_image | image_url: width: 1920 | image_tag: loading: 'eager', class: 'header_background-image' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'header_background-image' }} 
+{% endif %}</div>
+                  {% unless section.settings.image_mobile_image == blank %}    <div data-image="mobile" li-unless="section.settings.image_mobile_image == blank" class="hero_bg-image-wrap z-index-2 hide-unless-mobile-portrait">
+    {% if block.settings.image_mobile_image %}
+{{ block.settings.image_mobile_image | image_url: width: 1000 | image_tag: loading: 'eager', class: 'header_background-image' }}
+{% else %}
+ {{ 'detailed-apparel-1' | placeholder_svg_tag: 'header_background-image' }} 
+{% endif %}    </div>
+{% endunless %}
+                </div>
+                    
+                
+                    <div data-animation="fade-in" class="animation-wrap">
+                  <div class="padding-global">
+                    <div class="container-large-14">
+                      <div class="header_card">
+                        <div li-content-for-theme-blocks="" style="--text-color--text-primary: {{ section.settings.text_color }}" class="hero1_content">
+{% content_for 'blocks' %}
+</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                    
+              
+                </section>
             {% endcase %}
 {% endfor %}
 
@@ -144,43 +180,28 @@ const heroslider = new Swiper('.header-slider', {
     "class": "header-slider-section",
     "blocks": [
         {
-            "name": "Slide",
-            "type": "slide",
-            "settings": [
-                {
-                    "id": "image_image_logo",
-                    "type": "image_picker",
-                    "label": "Image Logo"
-                },
-                {
-                    "id": "image_image",
-                    "type": "image_picker",
-                    "label": "Image"
-                },
-                {
-                    "id": "text_pre_heading",
-                    "type": "text",
-                    "label": "Pre-Heading",
-                    "default": "More than"
-                },
-                {
-                    "id": "text_heading",
-                    "type": "text",
-                    "label": "Heading",
-                    "default": "Leather"
-                },
-                {
-                    "id": "url_button_link",
-                    "type": "url",
-                    "label": "Button Link"
-                },
-                {
-                    "id": "text_button_text",
-                    "type": "text",
-                    "label": "Button Text",
-                    "default": "Learn More"
-                }
-            ]
+            "type": "stars"
+        },
+        {
+            "type": "heading-h1"
+        },
+        {
+            "type": "text"
+        },
+        {
+            "type": "button-group"
+        },
+        {
+            "type": "button-primary"
+        },
+        {
+            "type": "button-secondary"
+        },
+        {
+            "type": "button-inverted"
+        },
+        {
+            "type": "@app"
         },
         {
             "type": "@app"
@@ -192,7 +213,25 @@ const heroslider = new Swiper('.header-slider', {
             "category": "Liquify",
             "blocks": [
                 {
-                    "type": "slide"
+                    "type": "stars"
+                },
+                {
+                    "type": "heading-h1"
+                },
+                {
+                    "type": "text"
+                },
+                {
+                    "type": "button-group"
+                },
+                {
+                    "type": "button-primary"
+                },
+                {
+                    "type": "button-secondary"
+                },
+                {
+                    "type": "button-inverted"
                 }
             ]
         }

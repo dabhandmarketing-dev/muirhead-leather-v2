@@ -1,11 +1,12 @@
-<div li-block="Button Primary" class="button-block-2">
+{% when 'button-primary' %}
+            <div li-block="Button Primary" class="button-block-2">
                     
-                    
+                            
                     <div data-animation="stagger" class="animation-wrap">
-                      <a href="{{ block.settings.url_button_link }}" class="button-30 w-button"> {{ block.settings.text_button_text }} </a>
-                    </div>
+                              <a href="{{ block.settings.url_button_link }}" class="button-30 w-button"> {{ block.settings.text_button_text }} </a>
+                            </div>
                     
-                  
+                          
                 </div> {% schema %} {
     "name": "Button Primary",
     "settings": [
