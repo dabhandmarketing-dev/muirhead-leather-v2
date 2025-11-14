@@ -81,13 +81,27 @@
         "slide_ahwrLN": {
           "type": "slide",
           "settings": {
-            "image_image": "shopify://shop_images/Aviation.jpg"
-          },
-          "blocks": {}
+            "image_image": "shopify://shop_images/Aviation.jpg",
+            "text_pre_heading": "More than",
+            "text_heading": "Leather",
+            "url_button_link": "",
+            "text_button_text": "Learn More"
+          }
+        },
+        "slide_Mhnb37": {
+          "type": "slide",
+          "settings": {
+            "image_image": "shopify://shop_images/Passenger_Transport.webp",
+            "text_pre_heading": "More than",
+            "text_heading": "Leather",
+            "url_button_link": "",
+            "text_button_text": "Learn More"
+          }
         }
       },
       "block_order": [
-        "slide_ahwrLN"
+        "slide_ahwrLN",
+        "slide_Mhnb37"
       ],
       "name": "Slideshow V2",
       "settings": {}
