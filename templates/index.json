@@ -15,6 +15,7 @@
         "slide_raqjkh": {
           "type": "slide",
           "settings": {
+            "image_image": "shopify://shop_images/Muirhead_Hero_BG.jpg",
             "text_pre_heading": "More than Leather",
             "text_heading": "A Lot More",
             "url_button_link": "",
