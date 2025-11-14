@@ -1,5 +1,42 @@
 <div class="padding-global">
           <div class="container-large">
+            <div class="w-embed w-script">
+              <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.querySelector('.filter_sort-by-2');
+  const list = document.querySelector('.dropdown_list');
+  const label = document.getElementById('sort-label');
+  const select = document.getElementById('sort-by');
+  const options = list.querySelectorAll('.sort_field');
+  function updateLabel() {
+    const selectedOption = select.options[select.selectedIndex];
+    label.textContent = selectedOption ? selectedOption.text : 'Sort by';
+  }
+  toggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    const isOpen = list.style.display !== 'none';
+    list.style.display = isOpen ? 'none' : 'block';
+    toggle.setAttribute('aria-expanded', !isOpen);
+  });
+  options.forEach(option => {
+    option.addEventListener('click', function(e) {
+      e.preventDefault();
+      const value = this.dataset.value;
+      select.value = value;
+      select.dispatchEvent(new Event('change')); // Trigger Liquid/Shopify sort
+      updateLabel();
+      list.style.display = 'none';
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+  document.addEventListener('click', function() {
+    list.style.display = 'none';
+    toggle.setAttribute('aria-expanded', 'false');
+  });
+  updateLabel();
+});
+</script>
+            </div>
             {% paginate collection.products by 50 %}
     <div li-paginate:by="50" li-paginate="collection.products" class="filter_layout" by="50">
               <div id="w-node-_678e0483-bbe4-e79a-1722-b169c587feae-c587feae" class="filter_filters-wrapper">
@@ -37,47 +74,6 @@
                                   <div class="{% if filter_value.active %}filter_form_checkbox-icon is-checked{% else %}filter_form_checkbox-icon{% endif %}"></div>
                                   <div class="filter_form_checkbox-label"><span li-object="filter_value.label | append: ' '">{{ filter_value.label | append: ' ' }}</span> (<span li-object="filter_value.count">{{ filter_value.count }}</span>)</div>
                                 </a>
-                            
-                              
-                        </div>
-{% endfor %}
-                            </div>
-                              </div>
-{% endif %}
-                            
-                        
-                        </div>
-{% endfor %}
-                      </div>
-                      <div class="filter_filter-group-list">
-                        {% for filter in collection.filters %}    <div li-for="filter in collection.filters" class="filter_filter-group">
-                                    
-                          
-                            {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1">
-    
-                            <div class="filters_group-header">
-                              <div>Collection</div>
-                              <a sf-filter-reset="1" href="#" class="filter-reset-button w-inline-block">
-                                <div>Clear</div>
-                              </a>
-                            </div>
-                            <div class="filter_list">
-                              {% for filter_value in filter.values %}    <div li-for="filter_value in filter.values" class="filter_item">
-                                    
-                                
-                            <a href="#" class="filters_menu-link jetboost-filter-active">All</a>
-                            
-                                
-                            <a href="#" class="filters_menu-link">Grampian</a>
-                            
-                                
-                            <a href="#" class="filters_menu-link">Caledonian</a>
-                            
-                                
-                            <a href="#" class="filters_menu-link">Lustrana</a>
-                            
-                                
-                            <a href="#" class="filters_menu-link">Sateen</a>
                             
                               
                         </div>
@@ -221,6 +217,34 @@
                             
                   
                     {% endfor %}    </select>
+                  <div class="w-embed">
+                    <div class="filter_tags-wrapper-2">
+                      <div class="text-size-small-2 is-filter-result">Filtering by:</div>
+                    </div>
+                    <div data-delay="0" data-hover="false" bind="d9dcbff8-9f06-16ea-d1c2-51ce15c68194" fs-cmssort-element="trigger" class="dropdown-4 w-dropdown">
+                      <div class="filter_sort-by-2 w-dropdown-toggle" id="w-dropdown-toggle-17" aria-controls="w-dropdown-list-17" aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
+                        <div bind="d9dcbff8-9f06-16ea-d1c2-51ce15c68196" class="dropdown_icon w-icon-dropdown-toggle" aria-hidden="true"></div>
+                        <div fs-cmssort-element="dropdown-label" class="text-size-small-2" id="sort-label">Sort by</div>
+                        <select id="sort-by" li-for:inside="option in collection.sort_options" class="sort_select filter_checkbox" style="display: none;">
+        {% for option in collection.sort_options %}                            
+                          
+                            <option value="{{ option.value }}" {% if option.value == collection.sort_by %}selected{% elsif option.value == collection.default_sort_by %}selected{% endif %}>{{ option.label }}</option>
+                            
+                        
+                    {% endfor %}    </select>
+                      </div>
+                      <nav class="dropdown_list w-dropdown-list" id="w-dropdown-list-17" aria-labelledby="w-dropdown-toggle-17" style="display: none;">
+                        <a href="#" class="sort_field w-inline-block" tabindex="0" data-value="manual">Featured</a>
+                        <a href="#" class="sort_field w-inline-block" tabindex="0" data-value="best-selling">Best selling</a>
+                        <a href="#" class="sort_field w-inline-block" tabindex="0" data-value="title-ascending">Alphabetically, A-Z</a>
+                        <a href="#" class="sort_field w-inline-block" tabindex="0" data-value="title-descending">Alphabetically, Z-A</a>
+                        <a href="#" class="sort_field w-inline-block" tabindex="0" data-value="price-ascending">Price, low to high</a>
+                        <a href="#" class="sort_field w-inline-block" tabindex="0" data-value="price-descending">Price, high to low</a>
+                        <a href="#" class="sort_field w-inline-block" tabindex="0" data-value="created-ascending">Date, old to new</a>
+                        <a href="#" class="sort_field w-inline-block" tabindex="0" data-value="created-descending">Date, new to old</a>
+                      </nav>
+                    </div>
+                  </div>
                 </div>
                 <div class="filter_product-list-wrapper w-dyn-list">
                   <div role="list" class="filter_product-list w-dyn-items">

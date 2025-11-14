@@ -17,28 +17,9 @@
                           </svg></div>
                       </div>
                       <nav class="dropdown-list-wide-2 w-dropdown-list">
-                        <div class="dropdowncard">
-                          <section class="promo-section">
-                            <div li-content-for-blocks="" class="promo-container">
-{% for block in section.blocks %}
-{% case block.type %}
-{% when '@app' %}
-{% render block %}
-
-                              {% when 'sector-menu-card' %}
-            <div li-block="Sector - Menu Card" class="promo-wrapper">
-                    
-                                
-                    <a href="{{ block.settings.url_link }}" class="promo-wrapper w-inline-block"> <div href="#" class="link-block"> <div class="text-color-white-2 text-align-center z-index-2">{{ block.settings.text_text }}</div> <div class="promo-overlay z-index-1"></div>{% if block.settings.image_image %} {{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'promo-image-wrapper', sizes: '100vw', loading: 'lazy' }} {% else %} <img class="promo-image-wrapper" src="{{ 'aviation.webp' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'aviation-p-500.webp' | asset_url }} 500w, {{ 'aviation-p-800.webp' | asset_url }} 800w, {{ 'aviation-p-1080.webp' | asset_url }} 1080w, {{ 'aviation.webp' | asset_url }} 1520w"> {% endif %} </div> </a>
-                    
-                              
-                </div>
-                            {% endcase %}
-{% endfor %}
-
-    </div>
-                          </section>
-                        </div>
+                        <div li-content-for-theme-blocks="" class="dropdowncard">
+{% content_for 'blocks' %}
+</div>
                       </nav>
                     </div>
                     <div data-delay="0" data-hover="false" bind="c06ae72a-7862-cb4d-7791-0e83716c2bee" data-w-id="1171fcbf-5149-a415-23f1-5c51ac060435" class="navigation-dropdown is-static w-dropdown">
@@ -1360,7 +1341,7 @@
                           <div class="w-layout-grid nav-menu-card">
                             <div id="w-node-_1171fcbf-5149-a415-23f1-5c51ac060666-d5a86df8" class="nav-menu-image">
                               <a href="#" class="places-card w-inline-block">
-                                <div class="places-card_image-wrap"><img sizes="(max-width: 1279px) 100vw, 1083.9410400390625px" srcset="{{ 'muirhead_our_story_low_carbon_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_our_story_low_carbon_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_our_story_low_carbon_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }}" class="image-56"></div>
+                                <div class="places-card_image-wrap"><img sizes="(max-width: 1279px) 100vw, 1083.9757080078125px" srcset="{{ 'muirhead_our_story_low_carbon_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_our_story_low_carbon_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_our_story_low_carbon_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }}" class="image-56"></div>
                                 <div class="places-card_image-overlay"></div>
                                 <div class="places-card_content">
                                   <h3 class="places-card_heading-text">Low Carbon Leather</h3>
@@ -1525,7 +1506,7 @@
                               </a>
                             </div>
                             <a href="#" class="places-card xs-9 w-inline-block">
-                              <div class="places-card_image-wrap xs-10"><img sizes="(max-width: 1919px) 100vw, 1519.9306640625px" srcset="{{ 'interiors-and-luxury-p-500.webp' | asset_url }} 500w, {{ 'interiors-and-luxury-p-800.webp' | asset_url }} 800w, {{ 'interiors-and-luxury-p-1080.webp' | asset_url }} 1080w, {{ 'interiors-and-luxury.webp' | asset_url }} 1520w" alt="" loading="lazy" src="{{ 'interiors-and-luxury.webp' | asset_url }}" class="image-56 xs-11"></div>
+                              <div class="places-card_image-wrap xs-10"><img sizes="(max-width: 1919px) 100vw, 1519.96533203125px" srcset="{{ 'interiors-and-luxury-p-500.webp' | asset_url }} 500w, {{ 'interiors-and-luxury-p-800.webp' | asset_url }} 800w, {{ 'interiors-and-luxury-p-1080.webp' | asset_url }} 1080w, {{ 'interiors-and-luxury.webp' | asset_url }} 1520w" alt="" loading="lazy" src="{{ 'interiors-and-luxury.webp' | asset_url }}" class="image-56 xs-11"></div>
                               <div class="places-card_image-overlay xs-4"></div>
                               <div class="places-card_content xs-13">
                                 <h3 class="places-card_heading-text xs-14">Why Leather?</h3>
@@ -1568,21 +1549,21 @@
                           <div class="navigation-dropdown-card">
                             <div class="w-layout-grid navigation-grid-large">
                               <a href="#" class="navigation-card w-inline-block">
-                                <div class="navigation-image-small"><img sizes="(max-width: 1279px) 100vw, 1083.9410400390625px" srcset="{{ 'muirhead_home_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_home_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_home_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_home_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_home_04.webp' | asset_url }}" class="image-cover-3"></div>
+                                <div class="navigation-image-small"><img sizes="(max-width: 1279px) 100vw, 1083.9757080078125px" srcset="{{ 'muirhead_home_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_home_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_home_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_home_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_home_04.webp' | asset_url }}" class="image-cover-3"></div>
                                 <div class="column">
                                   <div class="subheading-small-2">Stock</div>
                                   <p class="paragraph-small-6 text-color-tertiary">Buy a range of one-off hide</p>
                                 </div>
                               </a>
                               <a href="#" class="navigation-card w-inline-block">
-                                <div class="navigation-image-small"><img sizes="(max-width: 991px) 100vw, 799.9479370117188px" srcset="{{ 'sustainability-p-500.webp' | asset_url }} 500w, {{ 'sustainability.webp' | asset_url }} 800w" alt="" loading="lazy" src="{{ 'sustainability.webp' | asset_url }}" class="image-cover-3"></div>
+                                <div class="navigation-image-small"><img sizes="(max-width: 991px) 100vw, 799.9739990234375px" srcset="{{ 'sustainability-p-500.webp' | asset_url }} 500w, {{ 'sustainability.webp' | asset_url }} 800w" alt="" loading="lazy" src="{{ 'sustainability.webp' | asset_url }}" class="image-cover-3"></div>
                                 <div class="column">
                                   <div class="subheading-small-2">Order Samples</div>
                                   <p class="paragraph-small-6 text-color-tertiary">Find the perfect leather today</p>
                                 </div>
                               </a>
                               <a href="#" class="navigation-card w-inline-block">
-                                <div class="navigation-image-small"><img sizes="(max-width: 1279px) 100vw, 1103.9410400390625px" srcset="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 500w, {{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 1104w" alt="" loading="lazy" src="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }}" class="image-cover-3"></div>
+                                <div class="navigation-image-small"><img sizes="(max-width: 1279px) 100vw, 1103.984375px" srcset="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 500w, {{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 1104w" alt="" loading="lazy" src="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }}" class="image-cover-3"></div>
                                 <div class="column">
                                   <div class="subheading-small-2">Leather Care</div>
                                   <p class="paragraph-small-6 text-color-tertiary">Care for premium leather</p>
@@ -1699,71 +1680,10 @@
     "class": "section_navbar",
     "blocks": [
         {
-            "name": "Sector - Menu Card",
-            "type": "sector-menu-card",
-            "settings": [
-                {
-                    "id": "url_link",
-                    "type": "url",
-                    "label": "Link"
-                },
-                {
-                    "id": "text_text",
-                    "type": "text",
-                    "label": "Text",
-                    "default": "Aviation"
-                },
-                {
-                    "id": "image_image",
-                    "type": "image_picker",
-                    "label": "Image"
-                }
-            ]
+            "type": "menu-card-test"
         },
         {
-            "name": "Shop - Menu Card",
-            "type": "shop-menu-card",
-            "settings": [
-                {
-                    "id": "url_link",
-                    "type": "url",
-                    "label": "Link"
-                },
-                {
-                    "id": "image_image",
-                    "type": "image_picker",
-                    "label": "Image"
-                },
-                {
-                    "id": "text_title",
-                    "type": "text",
-                    "label": "Title",
-                    "default": "Stock"
-                },
-                {
-                    "id": "text_paragraph",
-                    "type": "text",
-                    "label": "Paragraph",
-                    "default": "Buy a range of one-off hide"
-                }
-            ]
-        },
-        {
-            "name": "Search - Suggestion",
-            "type": "search-suggestion",
-            "settings": [
-                {
-                    "id": "url_link",
-                    "type": "url",
-                    "label": "Link"
-                },
-                {
-                    "id": "text_text",
-                    "type": "text",
-                    "label": "Text",
-                    "default": "Tag"
-                }
-            ]
+            "type": "@app"
         },
         {
             "type": "@app"
@@ -1828,13 +1748,7 @@
             "category": "Liquify",
             "blocks": [
                 {
-                    "type": "sector-menu-card"
-                },
-                {
-                    "type": "shop-menu-card"
-                },
-                {
-                    "type": "search-suggestion"
+                    "type": "menu-card-test"
                 }
             ]
         }
