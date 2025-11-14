@@ -36,7 +36,7 @@
 {% endfor %}
 
     </div>{% if section.settings.image_image %}
-{{ section.settings.image_image | image_url: width: 1000 | image_tag: class: 'background-image-cta', sizes: '(max-width: 1279px) 100vw, 1004.9913940429688px', loading: 'lazy' }}
+{{ section.settings.image_image | image_url: width: 1000 | image_tag: class: 'background-image-cta', sizes: '(max-width: 1279px) 100vw, 1004.96533203125px', loading: 'lazy' }}
 {% else %}
  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'background-image-cta' }} 
 {% endif %}
