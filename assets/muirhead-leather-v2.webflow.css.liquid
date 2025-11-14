@@ -2033,8 +2033,8 @@ figcaption {
 }
 
 .header_overlay-layer {
-  z-index: 1;
-  background-color: #0003;
+  z-index: 3;
+  background-color: #000c;
   position: absolute;
   inset: 0%;
 }
@@ -3355,6 +3355,7 @@ figcaption {
 }
 
 .header_card {
+  color: var(--base-color-neutral--white);
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -8955,12 +8956,41 @@ figcaption {
 .hero1_content {
   grid-column-gap: 1.25rem;
   grid-row-gap: 1.25rem;
-  color: #232e20;
   flex-flow: column;
   justify-content: center;
   align-items: flex-start;
   max-width: 50%;
   display: flex;
+}
+
+.typo-zoom-text-wrapper-2 {
+  z-index: 99;
+  flex-flow: column;
+  width: 25vw;
+  display: flex;
+}
+
+.text-size-small-25 {
+  padding-top: 0;
+}
+
+.button-main-2 {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  color: #f4f4f4;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: .5rem 1rem .5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: border-color .2s, background-color .2s, color .2s;
+}
+
+.button-main-2:hover {
+  color: #fff;
+  background-color: #f4f4f433;
 }
 
 @media screen and (min-width: 1280px) {
@@ -10106,6 +10136,10 @@ figcaption {
   .hero1_content {
     max-width: none;
   }
+
+  .typo-zoom-text-wrapper-2 {
+    width: 50vw;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -11008,6 +11042,10 @@ figcaption {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
+
+  .typo-zoom-text-wrapper-2 {
+    width: 60vw;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -11697,6 +11735,10 @@ figcaption {
     flex-flow: wrap;
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+  }
+
+  .typo-zoom-text-wrapper-2 {
+    width: 80vw;
   }
 }
 
