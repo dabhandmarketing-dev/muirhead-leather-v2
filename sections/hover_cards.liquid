@@ -1,0 +1,161 @@
+<style>@media (pointer: fine) and (min-width: 992px) {
+  .hover-cards_card:hover,
+  .hover-cards_card:focus-within {
+    width: 150%;
+  }
+  .hover-cards_card:hover .hover-cards_content,
+  .hover-cards_card:focus-within .hover-cards_content {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+  .hover-cards_card:hover .hover-cards_overlay,
+  .hover-cards_card:focus-within .hover-cards_overlay {
+    opacity: 1;
+  }
+}
+</style>
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="hover-cards_wrapper">
+              {% for block in section.blocks %}
+    {% if block.type == "card-block" %}
+                    <div li-block="Card Block" class="hover-cards_block">
+                                    
+                
+                                    <div class="hover-cards_card">{% if block.settings.image_image_1 %}
+{{ block.settings.image_image_1 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'hover-cards_image' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'platzhalter.svg' | asset_url }}" class="hover-cards_image">
+{% endif %}
+                  <div class="hover-cards_overlay"></div>
+                  <h2 class="heading-style-h3-2">
+{{ block.settings.text_heading_1 }}
+</h2>
+                  <div class="hover-cards_hover-content">
+                    <div class="hover-cards_content">
+                      <div class="overflow-hidden">
+                        <div class="hover-cards_card-grid">
+                          <div class="max-width-medium">
+{{ block.settings.text_text_1 }}
+</div>
+                          <div class="hover-cards_button-wrapper">
+                            <a href="{{ block.settings.url_button_link_1 }}" class="button-32 is-white w-button"> {{ block.settings.text_button_text_1 }} </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                                    
+                
+                                    <div class="hover-cards_card">{% if block.settings.image_image_2 %}
+{{ block.settings.image_image_2 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'hover-cards_image' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'platzhalter.svg' | asset_url }}" class="hover-cards_image">
+{% endif %}
+                  <div class="hover-cards_overlay"></div>
+                  <h2 class="heading-style-h3-2">
+{{ block.settings.text_heading_2 }}
+</h2>
+                  <div class="hover-cards_hover-content">
+                    <div class="hover-cards_content">
+                      <div class="overflow-hidden">
+                        <div class="hover-cards_card-grid">
+                          <div class="max-width-medium">
+{{ block.settings.text_text_2 }}
+</div>
+                          <div class="hover-cards_button-wrapper">
+                            <a href="{{ block.settings.url_button_link_2 }}" class="button-32 is-white w-button"> {{ block.settings.text_button_text_2 }} </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                                    
+              
+                            </div>
+            {% endif %}
+{% endfor %}
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Hover Cards",
+    "class": "section_hover-cards",
+    "blocks": [
+        {
+            "name": "Card Block",
+            "type": "card-block",
+            "settings": [
+                {
+                    "id": "image_image_1",
+                    "type": "image_picker",
+                    "label": "Image 1"
+                },
+                {
+                    "id": "text_heading_1",
+                    "type": "text",
+                    "label": "Heading 1",
+                    "default": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "id": "text_text_1",
+                    "type": "text",
+                    "label": "Text 1",
+                    "default": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "id": "url_button_link_1",
+                    "type": "url",
+                    "label": "Button Link 1"
+                },
+                {
+                    "id": "text_button_text_1",
+                    "type": "text",
+                    "label": "Button Text 1",
+                    "default": "Button Text"
+                },
+                {
+                    "id": "image_image_2",
+                    "type": "image_picker",
+                    "label": "Image 2"
+                },
+                {
+                    "id": "text_heading_2",
+                    "type": "text",
+                    "label": "Heading 2",
+                    "default": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "id": "text_text_2",
+                    "type": "text",
+                    "label": "Text 2",
+                    "default": "Lorem ipsum dolor sit amet"
+                },
+                {
+                    "id": "url_button_link_2",
+                    "type": "url",
+                    "label": "Button Link 2"
+                },
+                {
+                    "id": "text_button_text_2",
+                    "type": "text",
+                    "label": "Button Text 2",
+                    "default": "Button Text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Hover Cards",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "card-block"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
