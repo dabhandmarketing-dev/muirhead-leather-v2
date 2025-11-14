@@ -37,42 +37,38 @@
         "button_group_iMRMzt": {
           "type": "button-group",
           "settings": {},
-          "blocks": {}
-        },
-        "button_primary_KV4H8A": {
-          "type": "button-primary",
-          "settings": {
-            "url_button_link": "",
-            "text_button_text": "Button Text"
+          "blocks": {
+            "button_icon_MeNMMT": {
+              "type": "button-icon",
+              "name": "Button Icon",
+              "settings": {
+                "url_button_link": "",
+                "text_button_text": "Button Text"
+              },
+              "blocks": {}
+            },
+            "button_inverted_GbQ7FQ": {
+              "type": "button-inverted",
+              "name": "Button Inverted",
+              "settings": {
+                "url_button_link": "",
+                "text_button_text": "Button Text",
+                "large": false
+              },
+              "blocks": {}
+            }
           },
-          "blocks": {}
-        },
-        "button_secondary_NLXHXH": {
-          "type": "button-secondary",
-          "settings": {
-            "url_button_link": "",
-            "text_button_text": "Button Text"
-          },
-          "blocks": {}
-        },
-        "button_inverted_WxxpXT": {
-          "type": "button-inverted",
-          "settings": {
-            "url_button_link": "",
-            "text_button_text": "Button Text",
-            "large": false
-          },
-          "blocks": {}
+          "block_order": [
+            "button_icon_MeNMMT",
+            "button_inverted_GbQ7FQ"
+          ]
         }
       },
       "block_order": [
         "stars_UVMPDR",
         "heading_h1_XGFUVP",
         "text_mUpm64",
-        "button_group_iMRMzt",
-        "button_primary_KV4H8A",
-        "button_secondary_NLXHXH",
-        "button_inverted_WxxpXT"
+        "button_group_iMRMzt"
       ],
       "name": "Hero 1",
       "settings": {
