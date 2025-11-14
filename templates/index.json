@@ -223,6 +223,34 @@
         "image_thumbnail": "shopify://shop_images/Aviation.jpg"
       }
     },
+    "large_cta_FAPL7t": {
+      "type": "large_cta",
+      "blocks": {
+        "icon_jh9aGd": {
+          "type": "icon",
+          "settings": {}
+        },
+        "heading_qPCw3q": {
+          "type": "heading",
+          "settings": {
+            "text_heading": "Muirhead Makes The Lowest-Carbon Leather In The World."
+          }
+        },
+        "paragraph_EKrwxt": {
+          "type": "paragraph",
+          "settings": {
+            "richtext_richtext": "<p>\n                We source locally, tan naturally, reclaim energy from waste and re-use water. <br/><br/><strong>We are serious about sustainability.</strong>\n              </p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_jh9aGd",
+        "heading_qPCw3q",
+        "paragraph_EKrwxt"
+      ],
+      "name": "Large CTA",
+      "settings": {}
+    },
     "image_text_nGNxXC": {
       "type": "image_text",
       "blocks": {
@@ -306,6 +334,7 @@
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
     "video_hero_WrMVQn",
+    "large_cta_FAPL7t",
     "image_text_nGNxXC",
     "image_text_MnABaL"
   ]
