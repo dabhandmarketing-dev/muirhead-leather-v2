@@ -9,74 +9,6 @@
  */
 {
   "sections": {
-    "slideshow_v2_UegnKF": {
-      "type": "slideshow_v2",
-      "blocks": {
-        "stars_bQNtcH": {
-          "type": "stars",
-          "settings": {
-            "text_stars_text": "100.000+ zufriedene Kunden"
-          },
-          "blocks": {}
-        },
-        "heading_h1_xyfMqQ": {
-          "type": "heading-h1",
-          "settings": {
-            "text_heading": "Heading"
-          },
-          "blocks": {}
-        },
-        "text_ExEqtz": {
-          "type": "text",
-          "settings": {
-            "richtext_content": "<p>\n                                Natürlich mussten auch die alten Traditionen eines Tages auf die Digitalisierung treffen. Und das Ergebnis kann sich sehen lassen: Kofferworld war geboren. Ein junger Online-Shop, der auch traditionelle Werte in sein Leitbild integriert.\n                              </p>"
-          },
-          "blocks": {}
-        },
-        "button_group_hGhtaG": {
-          "type": "button-group",
-          "settings": {},
-          "blocks": {}
-        },
-        "button_primary_JaU463": {
-          "type": "button-primary",
-          "settings": {
-            "url_button_link": "",
-            "text_button_text": "Button Text"
-          },
-          "blocks": {}
-        },
-        "button_secondary_zWLf9E": {
-          "type": "button-secondary",
-          "settings": {
-            "url_button_link": "",
-            "text_button_text": "Button Text"
-          },
-          "blocks": {}
-        },
-        "button_inverted_PALTPT": {
-          "type": "button-inverted",
-          "settings": {
-            "url_button_link": "",
-            "text_button_text": "Button Text",
-            "large": false
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "stars_bQNtcH",
-        "heading_h1_xyfMqQ",
-        "text_ExEqtz",
-        "button_group_hGhtaG",
-        "button_primary_JaU463",
-        "button_secondary_zWLf9E",
-        "button_inverted_PALTPT"
-      ],
-      "disabled": true,
-      "name": "Slideshow V2",
-      "settings": {}
-    },
     "text_stitching_secti_FQw7t6": {
       "type": "text_stitching_secti",
       "blocks": {
@@ -303,7 +235,6 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "slideshow_v2_UegnKF",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
