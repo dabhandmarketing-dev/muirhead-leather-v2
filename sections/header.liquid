@@ -17,9 +17,28 @@
                           </svg></div>
                       </div>
                       <nav class="dropdown-list-wide-2 w-dropdown-list">
-                        <div li-content-for-theme-blocks="" class="dropdowncard">
-{% content_for 'blocks' %}
-</div>
+                        <div class="dropdowncard">
+                          <section class="promo-section">
+                            <div li-content-for-blocks="" class="promo-container">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+                              {% when 'sector-menu-card' %}
+            <div li-block="Sector - Menu Card" class="promo-wrapper">
+                    
+                                
+                    <a href="{{ block.settings.url_link }}" class="promo-wrapper w-inline-block"> <div href="#" class="link-block"> <div class="text-color-white-2 text-align-center z-index-2">{{ block.settings.text_text }}</div> <div class="promo-overlay z-index-1"></div>{% if block.settings.image_image %} {{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'promo-image-wrapper', sizes: '100vw', loading: 'lazy' }} {% else %} <img class="promo-image-wrapper" src="{{ 'aviation.webp' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'aviation-p-500.webp' | asset_url }} 500w, {{ 'aviation-p-800.webp' | asset_url }} 800w, {{ 'aviation-p-1080.webp' | asset_url }} 1080w, {{ 'aviation.webp' | asset_url }} 1520w"> {% endif %} </div> </a>
+                    
+                              
+                </div>
+                            {% endcase %}
+{% endfor %}
+
+    </div>
+                          </section>
+                        </div>
                       </nav>
                     </div>
                     <div data-delay="0" data-hover="false" bind="c06ae72a-7862-cb4d-7791-0e83716c2bee" data-w-id="1171fcbf-5149-a415-23f1-5c51ac060435" class="navigation-dropdown is-static w-dropdown">
@@ -1680,10 +1699,71 @@
     "class": "section_navbar",
     "blocks": [
         {
-            "type": "menu-card-test"
+            "name": "Sector - Menu Card",
+            "type": "sector-menu-card",
+            "settings": [
+                {
+                    "id": "url_link",
+                    "type": "url",
+                    "label": "Link"
+                },
+                {
+                    "id": "text_text",
+                    "type": "text",
+                    "label": "Text",
+                    "default": "Aviation"
+                },
+                {
+                    "id": "image_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                }
+            ]
         },
         {
-            "type": "@app"
+            "name": "Shop - Menu Card",
+            "type": "shop-menu-card",
+            "settings": [
+                {
+                    "id": "url_link",
+                    "type": "url",
+                    "label": "Link"
+                },
+                {
+                    "id": "image_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                },
+                {
+                    "id": "text_title",
+                    "type": "text",
+                    "label": "Title",
+                    "default": "Stock"
+                },
+                {
+                    "id": "text_paragraph",
+                    "type": "text",
+                    "label": "Paragraph",
+                    "default": "Buy a range of one-off hide"
+                }
+            ]
+        },
+        {
+            "name": "Search - Suggestion",
+            "type": "search-suggestion",
+            "settings": [
+                {
+                    "id": "url_link",
+                    "type": "url",
+                    "label": "Link"
+                },
+                {
+                    "id": "text_text",
+                    "type": "text",
+                    "label": "Text",
+                    "default": "Tag"
+                }
+            ]
         },
         {
             "type": "@app"
@@ -1748,7 +1828,13 @@
             "category": "Liquify",
             "blocks": [
                 {
-                    "type": "menu-card-test"
+                    "type": "sector-menu-card"
+                },
+                {
+                    "type": "shop-menu-card"
+                },
+                {
+                    "type": "search-suggestion"
                 }
             ]
         }
