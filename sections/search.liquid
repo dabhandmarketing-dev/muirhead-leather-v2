@@ -62,47 +62,6 @@
                             {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1">
     
                             <div class="filters_group-header">
-                              <div>Collection</div>
-                              <a sf-filter-reset="1" href="#" class="filter-reset-button w-inline-block">
-                                <div>Clear</div>
-                              </a>
-                            </div>
-                            <div class="filter_list">
-                              {% for filter_value in filter.values %}    <div li-for="filter_value in filter.values" class="filter_item">
-                                    
-                                
-                            <a href="#" class="filters_menu-link jetboost-filter-active">All</a>
-                            
-                                
-                            <a href="#" class="filters_menu-link">Grampian</a>
-                            
-                                
-                            <a href="#" class="filters_menu-link">Caledonian</a>
-                            
-                                
-                            <a href="#" class="filters_menu-link">Lustrana</a>
-                            
-                                
-                            <a href="#" class="filters_menu-link">Sateen</a>
-                            
-                              
-                        </div>
-{% endfor %}
-                            </div>
-                              </div>
-{% endif %}
-                            
-                        
-                        </div>
-{% endfor %}
-                      </div>
-                      <div class="filter_filter-group-list">
-                        {% for filter in search.filters %}    <div li-for="filter in search.filters" class="filter_filter-group">
-                                    
-                          
-                            {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1">
-    
-                            <div class="filters_group-header">
                               <div>Colour</div>
                               <a sf-filter-reset="1" href="#" class="filter-reset-button w-inline-block">
                                 <div>Clear</div>

@@ -56,47 +56,6 @@
                             {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1">
     
                             <div class="filters_group-header">
-                              <div>Collection</div>
-                              <a sf-filter-reset="1" href="#" class="filter-reset-button w-inline-block">
-                                <div>Clear</div>
-                              </a>
-                            </div>
-                            <div class="filter_list">
-                              {% for filter_value in filter.values %}    <div li-for="filter_value in filter.values" class="filter_item">
-                                    
-                                
-                            <a href="#" class="filters_menu-link jetboost-filter-active">All</a>
-                            
-                                
-                            <a href="#" class="filters_menu-link">Grampian</a>
-                            
-                                
-                            <a href="#" class="filters_menu-link">Caledonian</a>
-                            
-                                
-                            <a href="#" class="filters_menu-link">Lustrana</a>
-                            
-                                
-                            <a href="#" class="filters_menu-link">Sateen</a>
-                            
-                              
-                        </div>
-{% endfor %}
-                            </div>
-                              </div>
-{% endif %}
-                            
-                        
-                        </div>
-{% endfor %}
-                      </div>
-                      <div class="filter_filter-group-list">
-                        {% for filter in collection.filters %}    <div li-for="filter in collection.filters" class="filter_filter-group">
-                                    
-                          
-                            {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1">
-    
-                            <div class="filters_group-header">
                               <div>Colour</div>
                               <a sf-filter-reset="1" href="#" class="filter-reset-button w-inline-block">
                                 <div>Clear</div>
@@ -214,13 +173,35 @@
                     
                         </div>
 {% endfor %}
-                  </div><select id="sort-by" li-for:inside="option in collection.sort_options" class="sort_select filter_checkbox">
+                  </div>
+                  <div class="w-embed"><select id="sort-by" li-for:inside="option in collection.sort_options" class="sort_select filter_checkbox filter_sort-by-2 w-dropdown-toggle">
         {% for option in collection.sort_options %}                            
-                    
-                            <option value="{{ option.value }}" {% if option.value == collection.sort_by %}selected{% elsif option.value == collection.default_sort_by %}selected{% endif %}>{{ option.name }}</option>
+                      
+                            <option value="manual" selected="">Featured</option>
                             
-                  
-                    {% endfor %}    </select>
+                      
+                            <option value="best-selling">Best selling</option>
+                            
+                      
+                            <option value="title-ascending">Alphabetically, A-Z</option>
+                            
+                      
+                            <option value="title-descending">Alphabetically, Z-A</option>
+                            
+                      
+                            <option value="price-ascending">Price, low to high</option>
+                            
+                      
+                            <option value="price-descending">Price, high to low</option>
+                            
+                      
+                            <option value="created-ascending">Date, old to new</option>
+                            
+                      
+                            <option value="created-descending">Date, new to old</option>
+                            
+                    
+                    {% endfor %}    </select></div>
                 </div>
                 <div class="filter_product-list-wrapper w-dyn-list">
                   <div role="list" class="filter_product-list w-dyn-items">
