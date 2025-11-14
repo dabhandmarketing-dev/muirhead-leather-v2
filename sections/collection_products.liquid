@@ -167,17 +167,17 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div fs-cmssort-element="dropdown-label" class="text-size-small-2">Sort by</div>
                       </div>
                       <nav class="dropdown_list w-dropdown-list">
-                        <a fs-cmssort-field="name-asc" href="#" class="sort_field jetboost-sort-active jetboost-sort-asc-49zz w-inline-block">
+                        <a href="https://?sort_by=best-selling" class="sort_field jetboost-sort-desc-4q8x w-inline-block">
+                          <div>Best Selling</div>
+                        </a>
+                        <a href="https://?sort_by=title-ascending" class="sort_field jetboost-sort-active jetboost-sort-asc-49zz w-inline-block">
                           <div>Name (A/Z)</div>
                         </a>
-                        <a fs-cmssort-field="name-desc" href="#" class="sort_field jetboost-sort-desc-49zz w-inline-block">
+                        <a href="https://?sort_by=title-descending" class="sort_field jetboost-sort-desc-49zz w-inline-block">
                           <div>Name (Z/A)</div>
                         </a>
-                        <a fs-cmssort-field="height-asc" href="#" class="sort_field jetboost-sort-asc-4q8x w-inline-block">
+                        <a fs-cmssort-field="height-asc" href="https://?sort_by=price-ascending" class="sort_field jetboost-sort-asc-4q8x w-inline-block">
                           <div>Cheapest First</div>
-                        </a>
-                        <a fs-cmssort-field="height-asc" href="#" class="sort_field jetboost-sort-desc-4q8x w-inline-block">
-                          <div>More Expensive First</div>
                         </a>
                       </nav>
                     </div>
@@ -210,88 +210,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                         </div>
 {% endfor %}
-                  </div><select id="sort-by" li-for:inside="option in collection.sort_options" class="sort_select filter_checkbox">
-        {% for option in collection.sort_options %}                            
-                    
-                            <option value="{{ option.value }}" {% if option.value == collection.sort_by %}selected{% elsif option.value == collection.default_sort_by %}selected{% endif %}>{{ option.name }}</option>
-                            
-                  
-                    {% endfor %}    </select>
-                  <div class="w-embed">
-                    <div class="filter_tags-wrapper-2">
-                      <div class="text-size-small-2 is-filter-result">Filtering by:</div>
-                    </div>
-                    <div class="custom-dropdown">
-                      <div class="dropdown-toggle" role="button" aria-expanded="false" aria-controls="dropdown-list">
-                        <span class="dropdown-label">Sort by</span>
-                        <span class="chevron"></span>
-                      </div>
-                      <select id="sort-by" style="display: none;" onchange="window.location.href = this.value;">
-                        {% for sort_option in collection.sort_options %}
-                        <option value="{{ sort_option.url }}" if="" sort_option.value="=" collection.sort_by="" elsif="" collection.default_sort_by="" endif="">
-                          {{ sort_option.label }}
-                        </option>
-                        {% endfor %}
-                      </select>
-                      <ul class="dropdown-list" id="dropdown-list" style="display: none;">
-                        {% for sort_option in collection.sort_options %}
-                        <li class="dropdown-item" data-value="{{ sort_option.url }}">{{ sort_option.label }}</li>
-                        {% endfor %}
-                      </ul>
-                    </div>
-                    <style>
-.custom-dropdown {
-  position: relative;
-  width: 200px;
-  font-family: Arial, sans-serif;
-}
-.dropdown-toggle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.875rem;
-  color: #333;
-}
-.dropdown-toggle[aria-expanded="true"] .chevron {
-  transform: rotate(180deg);
-}
-.chevron {
-  width: 0;
-  height: 0;
-  border-left: 5px transparent solid;
-  border-right: 5px transparent solid;
-  border-top: 5px #333 solid;
-  transition: transform 0.2s;
-}
-.dropdown-list {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-top: 0.25rem;
-  list-style: none;
-  padding: 0;
-  z-index: 10;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.dropdown-item {
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-  color: #333;
-  cursor: pointer;
-}
-.dropdown-item:hover {
-  background: #f5f5f5;
-}
-</style>
                   </div>
                 </div>
                 <div class="filter_product-list-wrapper w-dyn-list">
