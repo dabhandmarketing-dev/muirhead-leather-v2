@@ -9,6 +9,76 @@
  */
 {
   "sections": {
+    "hero_1_Aem7eU": {
+      "type": "hero_1",
+      "blocks": {
+        "stars_WzA8A6": {
+          "type": "stars",
+          "settings": {
+            "text_stars_text": "100.000+ zufriedene Kunden"
+          },
+          "blocks": {}
+        },
+        "heading_h1_DJeqnp": {
+          "type": "heading-h1",
+          "settings": {
+            "text_heading": "Heading"
+          },
+          "blocks": {}
+        },
+        "text_Btrcp6": {
+          "type": "text",
+          "settings": {
+            "richtext_content": "<p>\n                      Natürlich mussten auch die alten Traditionen eines Tages auf die Digitalisierung treffen. Und das Ergebnis kann sich sehen lassen: Kofferworld war geboren. Ein junger Online-Shop, der auch traditionelle Werte in sein Leitbild integriert.\n                    </p>"
+          },
+          "blocks": {}
+        },
+        "button_group_fKaHyd": {
+          "type": "button-group",
+          "settings": {},
+          "blocks": {}
+        },
+        "button_primary_QiAjwX": {
+          "type": "button-primary",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Button Text"
+          },
+          "blocks": {}
+        },
+        "button_secondary_AqYmtP": {
+          "type": "button-secondary",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Button Text"
+          },
+          "blocks": {}
+        },
+        "button_inverted_cXQBYT": {
+          "type": "button-inverted",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Button Text",
+            "large": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "stars_WzA8A6",
+        "heading_h1_DJeqnp",
+        "text_Btrcp6",
+        "button_group_fKaHyd",
+        "button_primary_QiAjwX",
+        "button_secondary_AqYmtP",
+        "button_inverted_cXQBYT"
+      ],
+      "name": "Hero 1",
+      "settings": {
+        "checkbox_overlay": true,
+        "image_desktop_image": "shopify://shop_images/Muirhead_Hero_BG.jpg"
+      }
+    },
     "text_stitching_secti_FQw7t6": {
       "type": "text_stitching_secti",
       "blocks": {
@@ -235,6 +305,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
+    "hero_1_Aem7eU",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
