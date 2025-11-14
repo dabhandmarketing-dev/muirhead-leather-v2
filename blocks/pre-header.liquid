@@ -1,0 +1,25 @@
+{% when 'pre-header' %}
+            <div li-block="Pre-Header">
+                    
+                      
+                    <p class="more-than">
+{{ block.settings.text_pre_heading }}
+</p>
+                    
+                    
+                </div> {% schema %} {
+    "name": "Pre-Header",
+    "settings": [
+        {
+            "id": "text_pre_heading",
+            "type": "text",
+            "label": "Pre-Heading",
+            "default": "More than"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Pre-Header"
+        }
+    ]
+} {% endschema %}
