@@ -75,25 +75,6 @@
         "checkbox_overlay": true
       }
     },
-    "slideshow_v2_aMyXKw": {
-      "type": "slideshow_v2",
-      "blocks": {
-        "slide_RfHL7X": {
-          "type": "slide",
-          "settings": {
-            "text_pre_heading": "More than",
-            "text_heading": "Leather",
-            "url_button_link": "",
-            "text_button_text": "Learn More"
-          }
-        }
-      },
-      "block_order": [
-        "slide_RfHL7X"
-      ],
-      "name": "Slideshow V2",
-      "settings": {}
-    },
     "text_stitching_secti_FQw7t6": {
       "type": "text_stitching_secti",
       "blocks": {
@@ -313,7 +294,7 @@
       "settings": {
         "image_image": "shopify://shop_images/Samples.webp",
         "grid_position": "left",
-        "background_colour": "#ffffff"
+        "background_colour": "#043e51"
       }
     }
   },
@@ -321,7 +302,6 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "hero_1_AdTpYf",
-    "slideshow_v2_aMyXKw",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
