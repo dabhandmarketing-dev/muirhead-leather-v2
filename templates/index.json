@@ -78,41 +78,22 @@
         "text_color": "var(--base-color-neutral--white)"
       }
     },
-    "hero_slider_1_7R8FAA": {
-      "type": "hero_slider_1",
+    "slideshow_v2_dQFYz6": {
+      "type": "slideshow_v2",
       "blocks": {
-        "slide_NftWdt": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "textarea_heading": "Heading",
-            "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-            "url_button_1_link": "",
-            "text_button_1_text": "Button Text",
-            "url_button_2_link": "",
-            "text_button_2_text": "",
-            "video_desktop": "shopify://files/videos/Placeholder video.mp4"
-          }
-        },
-        "slide_LymG7J": {
+        "slide_qtA4qz": {
           "type": "slide",
           "settings": {
-            "textarea_heading": "Heading",
-            "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-            "url_button_1_link": "",
-            "text_button_1_text": "Button Text",
-            "url_button_2_link": "",
-            "text_button_2_text": "Button Text",
-            "image_image_desktop": "shopify://shop_images/BioPro_Machine.webp",
-            "image_image_mobile": "shopify://shop_images/BioPro_Machine.webp"
-          }
+            "url_button_link": "",
+            "text_button_text": "Learn More"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "slide_NftWdt",
-        "slide_LymG7J"
+        "slide_qtA4qz"
       ],
-      "name": "Hero Slider 1",
+      "name": "Slideshow V2",
       "settings": {}
     },
     "text_stitching_secti_FQw7t6": {
@@ -342,7 +323,7 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "hero_1_YKDTma",
-    "hero_slider_1_7R8FAA",
+    "slideshow_v2_dQFYz6",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
