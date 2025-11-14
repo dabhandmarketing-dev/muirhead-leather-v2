@@ -42,6 +42,7 @@
             "button_inverted_deeNTN": {
               "type": "button-inverted",
               "name": "Button Inverted",
+              "disabled": true,
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Button Text",
@@ -82,6 +83,7 @@
       "blocks": {
         "slide_NftWdt": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "textarea_heading": "Heading",
             "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
