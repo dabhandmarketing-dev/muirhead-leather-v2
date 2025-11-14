@@ -9,6 +9,76 @@
  */
 {
   "sections": {
+    "hero_1_AdTpYf": {
+      "type": "hero_1",
+      "blocks": {
+        "stars_UVMPDR": {
+          "type": "stars",
+          "settings": {
+            "text_stars_text": "100.000+ zufriedene Kunden"
+          },
+          "blocks": {}
+        },
+        "heading_h1_XGFUVP": {
+          "type": "heading-h1",
+          "settings": {
+            "text_heading": "Heading"
+          },
+          "blocks": {}
+        },
+        "text_mUpm64": {
+          "type": "text",
+          "name": "Text",
+          "settings": {
+            "richtext_content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+          },
+          "blocks": {}
+        },
+        "button_group_iMRMzt": {
+          "type": "button-group",
+          "settings": {},
+          "blocks": {}
+        },
+        "button_primary_KV4H8A": {
+          "type": "button-primary",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Button Text"
+          },
+          "blocks": {}
+        },
+        "button_secondary_NLXHXH": {
+          "type": "button-secondary",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Button Text"
+          },
+          "blocks": {}
+        },
+        "button_inverted_WxxpXT": {
+          "type": "button-inverted",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Button Text",
+            "large": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "stars_UVMPDR",
+        "heading_h1_XGFUVP",
+        "text_mUpm64",
+        "button_group_iMRMzt",
+        "button_primary_KV4H8A",
+        "button_secondary_NLXHXH",
+        "button_inverted_WxxpXT"
+      ],
+      "name": "Hero 1",
+      "settings": {
+        "checkbox_overlay": true
+      }
+    },
     "text_stitching_secti_FQw7t6": {
       "type": "text_stitching_secti",
       "blocks": {
@@ -235,6 +305,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
+    "hero_1_AdTpYf",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
