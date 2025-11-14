@@ -268,7 +268,8 @@
           "type": "card",
           "settings": {
             "url_link": "",
-            "text_text": "Aviation"
+            "text_text": "Our Story",
+            "image_image": "shopify://shop_images/muirhead_footer_our_story.webp"
           }
         },
         "card_AUCfey": {
