@@ -9,21 +9,6 @@
  */
 {
   "sections": {
-    "slideshow_v2_AghpWz": {
-      "type": "slideshow_v2",
-      "blocks": {
-        "slide_eFCnBJ": {
-          "type": "slide",
-          "settings": {},
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "slide_eFCnBJ"
-      ],
-      "name": "Slideshow V2",
-      "settings": {}
-    },
     "text_stitching_secti_FQw7t6": {
       "type": "text_stitching_secti",
       "blocks": {
@@ -250,7 +235,6 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "slideshow_v2_AghpWz",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
