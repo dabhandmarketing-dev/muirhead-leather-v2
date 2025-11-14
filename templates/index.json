@@ -9,35 +9,6 @@
  */
 {
   "sections": {
-    "slideshow_v2_dQFYz6": {
-      "type": "slideshow_v2",
-      "blocks": {
-        "slide_qtA4qz": {
-          "type": "slide",
-          "settings": {
-            "text_pre_heading": "More than",
-            "text_heading": "Leather",
-            "url_button_link": "",
-            "text_button_text": "Learn More"
-          }
-        },
-        "slide_eTUkgB": {
-          "type": "slide",
-          "settings": {
-            "text_pre_heading": "More than",
-            "text_heading": "Leather",
-            "url_button_link": "",
-            "text_button_text": "Learn More"
-          }
-        }
-      },
-      "block_order": [
-        "slide_qtA4qz",
-        "slide_eTUkgB"
-      ],
-      "name": "Slideshow V2",
-      "settings": {}
-    },
     "text_stitching_secti_FQw7t6": {
       "type": "text_stitching_secti",
       "blocks": {
@@ -264,7 +235,6 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "slideshow_v2_dQFYz6",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
