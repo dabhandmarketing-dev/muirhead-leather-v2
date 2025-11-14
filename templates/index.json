@@ -75,7 +75,8 @@
       ],
       "name": "Hero 1",
       "settings": {
-        "checkbox_overlay": true
+        "checkbox_overlay": true,
+        "image_desktop_image": "shopify://shop_images/Muirhead_Hero_BG.jpg"
       }
     },
     "text_stitching_secti_FQw7t6": {
