@@ -9,27 +9,6 @@
  */
 {
   "sections": {
-    "hero_slider_v2_d6TL3y": {
-      "type": "hero_slider_v2",
-      "blocks": {
-        "slide_8Vwkyz": {
-          "type": "slide",
-          "settings": {
-            "textarea_heading": "Heading",
-            "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-            "url_button_1_link": "",
-            "text_button_1_text": "Button Text",
-            "url_button_2_link": "",
-            "text_button_2_text": "Button Text"
-          }
-        }
-      },
-      "block_order": [
-        "slide_8Vwkyz"
-      ],
-      "name": "Hero Slider V2",
-      "settings": {}
-    },
     "slideshow_v3_zQB8C9": {
       "type": "slideshow_v3",
       "blocks": {
@@ -280,18 +259,43 @@
         "grid_position": "left",
         "background_colour": "#ffffff"
       }
+    },
+    "cta_cards_ytiNM8": {
+      "type": "cta_cards",
+      "blocks": {
+        "card_4Ye9LN": {
+          "type": "card",
+          "settings": {
+            "url_link": "",
+            "text_text": "Aviation"
+          }
+        },
+        "card_AUCfey": {
+          "type": "card",
+          "settings": {
+            "url_link": "",
+            "text_text": "Aviation"
+          }
+        }
+      },
+      "block_order": [
+        "card_4Ye9LN",
+        "card_AUCfey"
+      ],
+      "name": "CTA Cards",
+      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "hero_slider_v2_d6TL3y",
     "slideshow_v3_zQB8C9",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
     "video_hero_WrMVQn",
     "image_text_nGNxXC",
-    "image_text_MnABaL"
+    "image_text_MnABaL",
+    "cta_cards_ytiNM8"
   ]
 }
