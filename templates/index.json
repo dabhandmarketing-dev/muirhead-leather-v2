@@ -75,6 +75,23 @@
         "checkbox_overlay": true
       }
     },
+    "slideshow_v2_Ytegy3": {
+      "type": "slideshow_v2",
+      "blocks": {
+        "slide_ahwrLN": {
+          "type": "slide",
+          "settings": {
+            "image_image": "shopify://shop_images/Aviation.jpg"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "slide_ahwrLN"
+      ],
+      "name": "Slideshow V2",
+      "settings": {}
+    },
     "text_stitching_secti_FQw7t6": {
       "type": "text_stitching_secti",
       "blocks": {
@@ -302,6 +319,7 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "hero_1_AdTpYf",
+    "slideshow_v2_Ytegy3",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
