@@ -75,23 +75,12 @@
         "checkbox_overlay": true
       }
     },
-    "slideshow_v2_JNB9hw": {
+    "slideshow_v2_aMyXKw": {
       "type": "slideshow_v2",
       "blocks": {
-        "slide_bKBbPQ": {
+        "slide_RfHL7X": {
           "type": "slide",
           "settings": {
-            "image_image": "shopify://shop_images/Muirhead_Hero_BG.jpg",
-            "text_pre_heading": "More than",
-            "text_heading": "Leather",
-            "url_button_link": "",
-            "text_button_text": "Learn More"
-          }
-        },
-        "slide_9BaazD": {
-          "type": "slide",
-          "settings": {
-            "image_image": "shopify://shop_images/Muirhead_Hero_BG.jpg",
             "text_pre_heading": "More than",
             "text_heading": "Leather",
             "url_button_link": "",
@@ -100,8 +89,7 @@
         }
       },
       "block_order": [
-        "slide_bKBbPQ",
-        "slide_9BaazD"
+        "slide_RfHL7X"
       ],
       "name": "Slideshow V2",
       "settings": {}
@@ -333,7 +321,7 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "hero_1_AdTpYf",
-    "slideshow_v2_JNB9hw",
+    "slideshow_v2_aMyXKw",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
