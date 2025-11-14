@@ -9,36 +9,36 @@
  */
 {
   "sections": {
-    "hero_1_7UTVKE": {
-      "type": "hero_1",
+    "slideshow_v2_UegnKF": {
+      "type": "slideshow_v2",
       "blocks": {
-        "stars_4cVxkG": {
+        "stars_bQNtcH": {
           "type": "stars",
           "settings": {
             "text_stars_text": "100.000+ zufriedene Kunden"
           },
           "blocks": {}
         },
-        "heading_h1_abMWqr": {
+        "heading_h1_xyfMqQ": {
           "type": "heading-h1",
           "settings": {
             "text_heading": "Heading"
           },
           "blocks": {}
         },
-        "text_zEandh": {
+        "text_ExEqtz": {
           "type": "text",
           "settings": {
             "richtext_content": "<p>\n                                Natürlich mussten auch die alten Traditionen eines Tages auf die Digitalisierung treffen. Und das Ergebnis kann sich sehen lassen: Kofferworld war geboren. Ein junger Online-Shop, der auch traditionelle Werte in sein Leitbild integriert.\n                              </p>"
           },
           "blocks": {}
         },
-        "button_group_QCh8BP": {
+        "button_group_hGhtaG": {
           "type": "button-group",
           "settings": {},
           "blocks": {}
         },
-        "button_primary_NWnGEk": {
+        "button_primary_JaU463": {
           "type": "button-primary",
           "settings": {
             "url_button_link": "",
@@ -46,7 +46,7 @@
           },
           "blocks": {}
         },
-        "button_secondary_BDypGV": {
+        "button_secondary_zWLf9E": {
           "type": "button-secondary",
           "settings": {
             "url_button_link": "",
@@ -54,7 +54,7 @@
           },
           "blocks": {}
         },
-        "button_inverted_c4x89E": {
+        "button_inverted_PALTPT": {
           "type": "button-inverted",
           "settings": {
             "url_button_link": "",
@@ -65,19 +65,16 @@
         }
       },
       "block_order": [
-        "stars_4cVxkG",
-        "heading_h1_abMWqr",
-        "text_zEandh",
-        "button_group_QCh8BP",
-        "button_primary_NWnGEk",
-        "button_secondary_BDypGV",
-        "button_inverted_c4x89E"
+        "stars_bQNtcH",
+        "heading_h1_xyfMqQ",
+        "text_ExEqtz",
+        "button_group_hGhtaG",
+        "button_primary_JaU463",
+        "button_secondary_zWLf9E",
+        "button_inverted_PALTPT"
       ],
-      "name": "Hero 1",
-      "settings": {
-        "checkbox_overlay": true,
-        "image_desktop_image": "shopify://shop_images/Muirhead_Hero_BG.jpg"
-      }
+      "name": "Slideshow V2",
+      "settings": {}
     },
     "text_stitching_secti_FQw7t6": {
       "type": "text_stitching_secti",
@@ -305,7 +302,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "hero_1_7UTVKE",
+    "slideshow_v2_UegnKF",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
