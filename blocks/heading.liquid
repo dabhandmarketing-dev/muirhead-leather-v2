@@ -1,11 +1,12 @@
-<div li-block="Heading">
+{% when 'heading' %}
+            <div li-block="Heading">
                     
-                  
-                    <h2>
+                      
+                    <p class="hero-heading">
 {{ block.settings.text_heading }}
-</h2>
+</p>
                     
-                
+                    
                 </div> {% schema %} {
     "name": "Heading",
     "settings": [
@@ -13,7 +14,7 @@
             "id": "text_heading",
             "type": "text",
             "label": "Heading",
-            "default": "Muirhead Seat Cover Service"
+            "default": "Leather"
         }
     ],
     "presets": [
