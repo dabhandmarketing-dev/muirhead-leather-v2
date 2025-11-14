@@ -249,7 +249,9 @@
         "paragraph_EKrwxt"
       ],
       "name": "Large CTA",
-      "settings": {}
+      "settings": {
+        "image_image": "shopify://shop_images/BioPro_Guage.webp"
+      }
     },
     "image_text_nGNxXC": {
       "type": "image_text",
