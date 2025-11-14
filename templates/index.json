@@ -20,10 +20,20 @@
             "url_button_link": "",
             "text_button_text": "Learn More"
           }
+        },
+        "slide_cr34Nf": {
+          "type": "slide",
+          "settings": {
+            "text_pre_heading": "More than Leather",
+            "text_heading": "A Lot More",
+            "url_button_link": "",
+            "text_button_text": "Learn More"
+          }
         }
       },
       "block_order": [
-        "slide_raqjkh"
+        "slide_raqjkh",
+        "slide_cr34Nf"
       ],
       "name": "Slideshow V3",
       "settings": {}
