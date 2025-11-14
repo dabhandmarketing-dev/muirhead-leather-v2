@@ -86,47 +86,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
 {% endfor %}
                       </div>
-                      <div class="filter_filter-group-list">
-                        {% for filter in collection.filters %}    <div li-for="filter in collection.filters" class="filter_filter-group">
-                                    
-                          
-                            {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1">
-    
-                            <div class="filters_group-header">
-                              <div>Colour</div>
-                              <a sf-filter-reset="1" href="#" class="filter-reset-button w-inline-block">
-                                <div>Clear</div>
-                              </a>
-                            </div>
-                            <div class="filter_list">
-                              <div class="option-filters_swatch-circle">
-                                <div class="option-filters_swatch-dot">
-                                  <div>Yellow</div>
-                                </div>
-                                <div class="option-filters_swatch-dot">
-                                  <div>Grey</div>
-                                </div>
-                                <div class="option-filters_swatch-dot">
-                                  <div>Blue</div>
-                                </div>
-                                <div class="option-filters_swatch-dot">
-                                  <div>Brown</div>
-                                </div>
-                                <div class="option-filters_swatch-dot purple">
-                                  <div>Purple</div>
-                                </div>
-                                <div class="option-filters_swatch-dot green">
-                                  <div>Green</div>
-                                </div>
-                              </div>
-                            </div>
-                              </div>
-{% endif %}
-                            
-                        
-                        </div>
-{% endfor %}
-                      </div>
                     </div>
                   </div>
                 </form>
