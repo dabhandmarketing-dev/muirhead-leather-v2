@@ -1,19 +1,20 @@
-<div li-block="Pre Heading">
+{% when 'pre-heading' %}
+            <div li-block="Pre Heading">
                     
-                  
-                    <div>
+                      
+                    <p class="more-than">
 {{ block.settings.text_pre_heading }}
-</div>
+</p>
                     
-                
+                    
                 </div> {% schema %} {
     "name": "Pre Heading",
     "settings": [
         {
             "id": "text_pre_heading",
             "type": "text",
-            "label": "Pre Heading",
-            "default": "Muirhead Seat Cover Service:"
+            "label": "Pre-Heading",
+            "default": "More than"
         }
     ],
     "presets": [
