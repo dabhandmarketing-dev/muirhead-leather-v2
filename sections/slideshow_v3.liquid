@@ -61,9 +61,53 @@ background: white;
                 
                     <div class="hero-slide-content_layout is-centered">
                   <div class="slider-background-image-overlay"></div>
-                  <div li-content-for-theme-blocks="" class="typo-zoom-text-wrapper-2">
-{% content_for 'blocks' %}
-</div>
+                  <div li-content-for-blocks="" class="typo-zoom-text-wrapper-2">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+                    {% when 'icon' %}
+            <div li-block="Icon">
+                    {% if block.settings.image_image_logo %}
+{{ block.settings.image_image_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'low-carbon-leather' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ 'low-carbon-leather-logo_1low-carbon-leather-logo.avif' | asset_url }}" class="low-carbon-leather">
+{% endif %}
+                </div>
+                    {% when 'pre-heading' %}
+            <div li-block="Pre Heading">
+                    
+                      
+                    <p class="more-than">
+{{ block.settings.text_pre_heading }}
+</p>
+                    
+                    
+                </div>
+                    {% when 'heading' %}
+            <div li-block="Heading">
+                    
+                      
+                    <p class="hero-heading">
+{{ block.settings.text_heading }}
+</p>
+                    
+                    
+                </div>
+                    <div class="_2rem-spacer"></div>
+                    {% when 'buttons' %}
+            <div li-block="Buttons" class="div-block-516">
+                    
+                      
+                    <a href="{{ block.settings.url_button_link }}" data-wf--button-main--variant="base" data-w-id="62fe5b66-eb79-581e-644e-970322077823" class="button-main w-inline-block"> <div class="icon-link-3"> <div class="clip-2 white-10"> <div class="hover-text white-31"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 bottom white-20"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22"> <div class="clip-2 white-10"> <div class="hover-arrow-3"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="{{ 'arrow-right-long-line.svg' | asset_url }}" alt="" loading="lazy" class="icon-1x1-small-7 white-12"></div> <div class="hover-arrow-3 left-arrow"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-long-line.svg' | asset_url }}" class="icon-1x1-small-7 white-12"></div> </div> </div> </div> </a>
+                    
+                    
+                </div>
+                  {% endcase %}
+{% endfor %}
+
+    </div>
                   <div class="image-hero_bg">
                     <div class="image-hero_desktop-bg">{% if block.settings.image_image_desktop %}
 {{ block.settings.image_image_desktop | image_url: width: 1000 | image_tag: loading: 'eager', class: 'image-hero_bg-image' }}
@@ -182,19 +226,120 @@ const heroslider = new Swiper('.header-slider', {
     "class": "header-slider-section",
     "blocks": [
         {
-            "type": "icon"
+            "name": "Slide 2",
+            "type": "slide-2",
+            "settings": [
+                {
+                    "id": "image_image_desktop",
+                    "type": "image_picker",
+                    "label": "Image Desktop"
+                },
+                {
+                    "id": "image_image_mobile",
+                    "type": "image_picker",
+                    "label": "Image Mobile"
+                },
+                {
+                    "type": "header",
+                    "content": "Video"
+                },
+                {
+                    "type": "video",
+                    "id": "video_desktop",
+                    "label": "Video Desktop"
+                },
+                {
+                    "type": "video",
+                    "id": "video_mobile",
+                    "label": "Video Mobile"
+                }
+            ]
         },
         {
-            "type": "pre-heading"
+            "name": "Icon",
+            "type": "icon",
+            "settings": [
+                {
+                    "id": "image_image_logo",
+                    "type": "image_picker",
+                    "label": "Image Logo"
+                }
+            ]
         },
         {
-            "type": "heading"
+            "name": "Pre Heading",
+            "type": "pre-heading",
+            "settings": [
+                {
+                    "id": "text_pre_heading",
+                    "type": "text",
+                    "label": "Pre-Heading",
+                    "default": "More than"
+                }
+            ]
         },
         {
-            "type": "buttons"
+            "name": "Heading",
+            "type": "heading",
+            "settings": [
+                {
+                    "id": "text_heading",
+                    "type": "text",
+                    "label": "Heading",
+                    "default": "Leather"
+                }
+            ]
         },
         {
-            "type": "@app"
+            "name": "Buttons",
+            "type": "buttons",
+            "settings": [
+                {
+                    "id": "url_button_link",
+                    "type": "url",
+                    "label": "Button Link"
+                },
+                {
+                    "id": "text_button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "default": "Learn More"
+                }
+            ]
+        },
+        {
+            "name": "Slide",
+            "type": "slide",
+            "settings": [
+                {
+                    "id": "image_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                },
+                {
+                    "id": "text_pre_heading",
+                    "type": "text",
+                    "label": "Pre-Heading",
+                    "default": "More than"
+                },
+                {
+                    "id": "text_heading",
+                    "type": "text",
+                    "label": "Heading",
+                    "default": "Leather"
+                },
+                {
+                    "id": "url_button_link",
+                    "type": "url",
+                    "label": "Button Link"
+                },
+                {
+                    "id": "text_button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "default": "Learn More"
+                }
+            ]
         },
         {
             "type": "@app"
@@ -206,6 +351,9 @@ const heroslider = new Swiper('.header-slider', {
             "category": "Liquify",
             "blocks": [
                 {
+                    "type": "slide-2"
+                },
+                {
                     "type": "icon"
                 },
                 {
@@ -216,6 +364,9 @@ const heroslider = new Swiper('.header-slider', {
                 },
                 {
                     "type": "buttons"
+                },
+                {
+                    "type": "slide"
                 }
             ]
         }
