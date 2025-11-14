@@ -9,71 +9,106 @@
  */
 {
   "sections": {
-    "hero_1_AdTpYf": {
+    "hero_slider_1_8Pkpyz": {
+      "type": "hero_slider_1",
+      "blocks": {
+        "slide_rzACzm": {
+          "type": "slide",
+          "settings": {
+            "textarea_heading": "Heading",
+            "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "url_button_1_link": "",
+            "text_button_1_text": "Button Text",
+            "url_button_2_link": "",
+            "text_button_2_text": "Button Text"
+          }
+        },
+        "slide_TWeEbH": {
+          "type": "slide",
+          "settings": {
+            "textarea_heading": "Heading",
+            "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "url_button_1_link": "",
+            "text_button_1_text": "Button Text",
+            "url_button_2_link": "",
+            "text_button_2_text": "Button Text"
+          }
+        }
+      },
+      "block_order": [
+        "slide_rzACzm",
+        "slide_TWeEbH"
+      ],
+      "name": "Hero Slider 1",
+      "settings": {}
+    },
+    "hero_1_7UTVKE": {
       "type": "hero_1",
       "blocks": {
-        "stars_UVMPDR": {
+        "stars_4cVxkG": {
           "type": "stars",
           "settings": {
             "text_stars_text": "100.000+ zufriedene Kunden"
           },
           "blocks": {}
         },
-        "heading_h1_XGFUVP": {
+        "heading_h1_abMWqr": {
           "type": "heading-h1",
           "settings": {
             "text_heading": "Heading"
           },
           "blocks": {}
         },
-        "text_mUpm64": {
+        "text_zEandh": {
           "type": "text",
-          "name": "Text",
           "settings": {
-            "richtext_content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+            "richtext_content": "<p>\n                                Natürlich mussten auch die alten Traditionen eines Tages auf die Digitalisierung treffen. Und das Ergebnis kann sich sehen lassen: Kofferworld war geboren. Ein junger Online-Shop, der auch traditionelle Werte in sein Leitbild integriert.\n                              </p>"
           },
           "blocks": {}
         },
-        "button_group_iMRMzt": {
+        "button_group_QCh8BP": {
           "type": "button-group",
           "settings": {},
-          "blocks": {
-            "button_icon_MeNMMT": {
-              "type": "button-icon",
-              "name": "Button Icon",
-              "settings": {
-                "url_button_link": "",
-                "text_button_text": "Button Text"
-              },
-              "blocks": {}
-            },
-            "button_inverted_GbQ7FQ": {
-              "type": "button-inverted",
-              "name": "Button Inverted",
-              "settings": {
-                "url_button_link": "",
-                "text_button_text": "Button Text",
-                "large": false
-              },
-              "blocks": {}
-            }
+          "blocks": {}
+        },
+        "button_primary_NWnGEk": {
+          "type": "button-primary",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Button Text"
           },
-          "block_order": [
-            "button_icon_MeNMMT",
-            "button_inverted_GbQ7FQ"
-          ]
+          "blocks": {}
+        },
+        "button_secondary_BDypGV": {
+          "type": "button-secondary",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Button Text"
+          },
+          "blocks": {}
+        },
+        "button_inverted_c4x89E": {
+          "type": "button-inverted",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Button Text",
+            "large": false
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "stars_UVMPDR",
-        "heading_h1_XGFUVP",
-        "text_mUpm64",
-        "button_group_iMRMzt"
+        "stars_4cVxkG",
+        "heading_h1_abMWqr",
+        "text_zEandh",
+        "button_group_QCh8BP",
+        "button_primary_NWnGEk",
+        "button_secondary_BDypGV",
+        "button_inverted_c4x89E"
       ],
       "name": "Hero 1",
       "settings": {
-        "checkbox_overlay": true,
-        "image_desktop_image": "shopify://shop_images/Muirhead_Hero_BG.jpg"
+        "checkbox_overlay": true
       }
     },
     "text_stitching_secti_FQw7t6": {
@@ -302,7 +337,8 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "hero_1_AdTpYf",
+    "hero_slider_1_8Pkpyz",
+    "hero_1_7UTVKE",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
