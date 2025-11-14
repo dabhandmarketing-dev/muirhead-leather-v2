@@ -9,6 +9,39 @@
  */
 {
   "sections": {
+    "hero_slider_1_EzVree": {
+      "type": "hero_slider_1",
+      "blocks": {
+        "slide_3DKxw7": {
+          "type": "slide",
+          "settings": {
+            "textarea_heading": "Heading",
+            "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "url_button_1_link": "",
+            "text_button_1_text": "Button Text",
+            "url_button_2_link": "",
+            "text_button_2_text": "Button Text"
+          }
+        },
+        "slide_baHc3Y": {
+          "type": "slide",
+          "settings": {
+            "textarea_heading": "Heading",
+            "text_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "url_button_1_link": "",
+            "text_button_1_text": "Button Text",
+            "url_button_2_link": "",
+            "text_button_2_text": "Button Text"
+          }
+        }
+      },
+      "block_order": [
+        "slide_3DKxw7",
+        "slide_baHc3Y"
+      ],
+      "name": "Hero Slider 1",
+      "settings": {}
+    },
     "slideshow_v3_zQB8C9": {
       "type": "slideshow_v3",
       "blocks": {
@@ -264,6 +297,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
+    "hero_slider_1_EzVree",
     "slideshow_v3_zQB8C9",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
