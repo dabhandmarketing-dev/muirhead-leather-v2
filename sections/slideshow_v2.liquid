@@ -44,11 +44,9 @@
 }
 </style>
         </div>
-        <div class="header-slide_wrap">
-          <div li-content-for-theme-blocks="" class="header-slider swiper">
+        <div li-content-for-theme-blocks="" class="header-slide_wrap">
 {% content_for 'blocks' %}
 </div>
-        </div>
         <div class="hero-slider-pagination_wrap">
           <div>
             <div class="hero-pagination"></div>
@@ -101,6 +99,9 @@ const heroslider = new Swiper('.header-slider', {
     "blocks": [
         {
             "type": "slide"
+        },
+        {
+            "type": "@app"
         },
         {
             "type": "@app"
