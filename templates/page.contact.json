@@ -66,6 +66,11 @@
       ],
       "name": "Contact Info",
       "settings": {}
+    },
+    "dotted_sides_P7d6VT": {
+      "type": "dotted_sides",
+      "name": "Dotted Sides",
+      "settings": {}
     }
   },
   "layout": "theme",
@@ -74,6 +79,7 @@
     "contact",
     "contact_head_qR7hjh",
     "contact_section_6fNEUV",
-    "contact_info_4nq7Vc"
+    "contact_info_4nq7Vc",
+    "dotted_sides_P7d6VT"
   ]
 }
