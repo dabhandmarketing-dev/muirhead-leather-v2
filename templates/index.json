@@ -235,33 +235,6 @@
         "grid_position": "left",
         "background_colour": "#ffffff"
       }
-    },
-    "cta_cards_ytiNM8": {
-      "type": "cta_cards",
-      "blocks": {
-        "card_4Ye9LN": {
-          "type": "card",
-          "settings": {
-            "url_link": "",
-            "text_text": "Our Story",
-            "image_image": "shopify://shop_images/muirhead_footer_our_story.webp"
-          }
-        },
-        "card_AUCfey": {
-          "type": "card",
-          "settings": {
-            "url_link": "",
-            "text_text": "Order Stock & Samples",
-            "image_image": "shopify://shop_images/mh_footerpanels_sectors.webp"
-          }
-        }
-      },
-      "block_order": [
-        "card_4Ye9LN",
-        "card_AUCfey"
-      ],
-      "name": "CTA Cards",
-      "settings": {}
     }
   },
   "layout": "theme",
@@ -273,7 +246,6 @@
     "scroll_image_3Y7xEC",
     "video_hero_WrMVQn",
     "image_text_nGNxXC",
-    "image_text_MnABaL",
-    "cta_cards_ytiNM8"
+    "image_text_MnABaL"
   ]
 }

@@ -11,6 +11,33 @@
   "type": "footer",
   "name": "Footer Group",
   "sections": {
+    "cta_cards_Yj3a6W": {
+      "type": "cta_cards",
+      "blocks": {
+        "card_FcAzi6": {
+          "type": "card",
+          "settings": {
+            "url_link": "",
+            "text_text": "Our Story",
+            "image_image": "shopify://shop_images/muirhead_footer_our_story.webp"
+          }
+        },
+        "card_hkLCgE": {
+          "type": "card",
+          "settings": {
+            "url_link": "",
+            "text_text": "Order Stock & Samples",
+            "image_image": "shopify://shop_images/mh_footerpanels_sectors.webp"
+          }
+        }
+      },
+      "block_order": [
+        "card_FcAzi6",
+        "card_hkLCgE"
+      ],
+      "name": "CTA Cards",
+      "settings": {}
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -62,6 +89,7 @@
     }
   },
   "order": [
+    "cta_cards_Yj3a6W",
     "footer"
   ]
 }
