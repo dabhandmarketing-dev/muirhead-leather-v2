@@ -1903,6 +1903,17 @@ figcaption {
   overflow: hidden;
 }
 
+.swiper.is-product-gallery {
+  flex: 1;
+  overflow: hidden;
+}
+
+.swiper.is-product-thumbnail {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+
 .swiper-wrapper {
   align-items: flex-start;
 }
@@ -1932,10 +1943,6 @@ figcaption {
   position: relative;
 }
 
-.swiper-slide.is-product-thumbnail.is-active {
-  border: 1px solid var(--accessible-components-dark-grey\<deleted\|variable-c4d8099c\>);
-}
-
 .swiper-slide.is-home-hero {
   z-index: 1;
   justify-content: flex-start;
@@ -1945,6 +1952,15 @@ figcaption {
   padding: 5.25rem 6.75rem 9rem;
   display: flex;
   position: relative;
+}
+
+.swiper-slide.is-product-thumbnail {
+  width: 5rem;
+  height: 5rem;
+}
+
+.swiper-slide.is-product-thumbnail.is-active {
+  border: 1px solid #0000;
 }
 
 .swiper_button-wrapper {
@@ -1957,7 +1973,12 @@ figcaption {
 }
 
 .swiper_button-wrapper.is-product-slider {
+  z-index: 2;
+  inset: 0%;
   justify-content: space-between;
+  align-items: center;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
   position: absolute;
   inset: 0%;
 }
@@ -8720,6 +8741,14 @@ figcaption {
   height: 100vh;
 }
 
+.swiper-wrapper-2.is-product-gallery {
+  height: auto;
+}
+
+.swiper-wrapper-2.is-product-thumbnail {
+  width: 100%;
+}
+
 .image-hero_bg {
   z-index: -1;
   pointer-events: none;
@@ -9271,6 +9300,34 @@ figcaption {
 .padding-global-11 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.swiper_button-icon-4 {
+  color: #1d1d1b;
+  width: 1rem;
+  height: 1rem;
+}
+
+.product-header_gallery-image-2 {
+  object-fit: contain;
+  object-position: 50% 50%;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  width: 100%;
+  height: 30rem;
+  padding: 1rem;
+}
+
+.product_thumbnail-image {
+  cursor: pointer;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  display: flex;
 }
 
 @media screen and (min-width: 1280px) {
@@ -10403,6 +10460,10 @@ figcaption {
     grid-row-gap: 1rem;
   }
 
+  .swiper-wrapper-2.is-product-gallery {
+    width: 100%;
+  }
+
   .swiper_content {
     max-width: 36rem;
   }
@@ -10686,6 +10747,11 @@ figcaption {
     padding-top: 2.75rem;
     padding-left: 2.75rem;
     padding-right: 2.75rem;
+  }
+
+  .swiper_button-wrapper.is-product-slider {
+    margin-left: -.75rem;
+    margin-right: -.75rem;
   }
 
   .product_list {
@@ -12118,6 +12184,10 @@ figcaption {
 
   .li-component_item {
     padding: .9rem;
+  }
+
+  .product-header_gallery-image-2 {
+    height: 22rem;
   }
 }
 
