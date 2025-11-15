@@ -409,12 +409,12 @@
                             </svg>    </div>
 {% endif %}
                         </div>
-                        <nav li-for:inside="language in localization.available_languages" class="li-lang_dd-list w-dropdown-list">
-        {% for language in localization.available_languages %}                            
+                        <nav li-for:inside="country in localization.available_countries" class="li-lang_dd-list w-dropdown-list">
+        {% for country in localization.available_countries %}                            
                           
-                            {% unless localization.language.iso_code == language.iso_code %}    <div li-unless="localization.language.iso_code == language.iso_code" class="li-lang_dd-list-item">
+                            {% unless localization.country.iso_code == country.iso_code %}    <div li-unless="localization.country.iso_code == country.iso_code" class="li-lang_dd-list-item">
     
-                            <a href="#" li-object="language.endonym_name | capitalize" lang="{{ language.iso_code }}" hreflang="{{ language.iso_code }}" data-value="{{ language.iso_code }}" class="li-lang_dd-link w-dropdown-link">{{ language.endonym_name | capitalize }}</a>
+                            <a href="#" li-object="country.currency.iso_code" lang="{{ country.iso_code }}" hreflang="{{ country.iso_code }}" data-value="{{ country.iso_code }}" class="li-lang_dd-link w-dropdown-link">{{ country.currency.iso_code }}</a>
                               </div>
 {% endunless %}
                             
