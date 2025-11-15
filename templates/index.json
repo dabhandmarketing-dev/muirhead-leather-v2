@@ -11,6 +11,20 @@
   "sections": {
     "slideshow_v3_8FHTHY": {
       "type": "slideshow_v3",
+      "blocks": {
+        "slide_fazhVn": {
+          "type": "slide",
+          "settings": {
+            "text_pre_heading": "More than",
+            "text_heading": "Leather",
+            "url_button_link": "",
+            "text_button_text": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "slide_fazhVn"
+      ],
       "name": "Slideshow V3",
       "settings": {}
     },
