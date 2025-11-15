@@ -275,18 +275,12 @@
       "settings": {
         "video": "https://youtu.be/u31qwQUeGuM?si=duKhhDTi6eP2bzm7"
       }
-    },
-    "floating_dots_p8yhQY": {
-      "type": "floating_dots",
-      "name": "Floating Dots",
-      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "slideshow_v3_8FHTHY",
-    "floating_dots_p8yhQY",
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
