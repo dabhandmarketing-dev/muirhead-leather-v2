@@ -14,24 +14,24 @@
       "name": "Page Heading",
       "settings": {}
     },
+    "collection_test_2_VmH9d9": {
+      "type": "collection_test_2",
+      "name": "collection-test-2",
+      "settings": {}
+    },
     "collection_products_wmxiff": {
       "type": "collection_products",
       "name": "Collection Products",
       "settings": {
         "text_products_shown": "Products shown"
       }
-    },
-    "collection_test_2_VmH9d9": {
-      "type": "collection_test_2",
-      "name": "collection-test-2",
-      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "page_heading_w4V3gw",
-    "collection_products_wmxiff",
-    "collection_test_2_VmH9d9"
+    "collection_test_2_VmH9d9",
+    "collection_products_wmxiff"
   ]
 }
