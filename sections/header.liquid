@@ -397,11 +397,11 @@
                         </div>
                       </div>
                     </nav>
-                  </div>{% if localization.available_countries.size > 1 %}    <localization-form li-if="localization.available_countries.size > 1" class="li-lang_wrapper">
+                  </div>{% if localization.available_countries.size > 1 %}    <localization-form li-if="localization.available_countries.size > 1" class="li-market_wrapper">
     
-                    {% form 'localization', class: 'li-lang_form' %}
-<div data-delay="500" data-hover="true" class="li-lang_dropdown w-dropdown">
-                        <div lang="{{ localization.language.iso_code }}" class="li-lang_dd-toggle w-dropdown-toggle">
+                    {% form 'localization', class: 'li-market_form' %}
+<div data-delay="500" data-hover="true" class="li-market_dropdown w-dropdown">
+                        <div lang="{{ localization.country.iso_code }}" class="li-lang_dd-toggle w-dropdown-toggle">
                           <div li-object="localization.country.currency.iso_code">{{ localization.country.currency.iso_code }}</div>
                           {% if link.links.size > 0 %}    <div li-if="link.links.size > 0" class="li-lang_dd-toggle-icon w-embed">
     <svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -409,12 +409,12 @@
                             </svg>    </div>
 {% endif %}
                         </div>
-                        <nav li-for:inside="country in localization.available_countries" class="li-lang_dd-list w-dropdown-list">
+                        <nav li-for:inside="country in localization.available_countries" class="li-market_dd-list w-dropdown-list">
         {% for country in localization.available_countries %}                            
                           
-                            {% unless localization.country.iso_code == country.iso_code %}    <div li-unless="localization.country.iso_code == country.iso_code" class="li-lang_dd-list-item">
+                            {% unless localization.country.iso_code == country.iso_code %}    <div li-unless="localization.country.iso_code == country.iso_code" class="li-market_dd-list-item">
     
-                            <a href="#" li-object="language.endonym_name | capitalize" lang="{{ country.iso_code }}" hreflang="{{ language.iso_code }}" data-value="{{ language.iso_code }}" class="li-lang_dd-link w-dropdown-link">{{ language.endonym_name | capitalize }}</a>
+                            <a href="#" li-object="country.currency.iso_code" lang="{{ country.iso_code }}" hreflang="{{ country.iso_code }}" data-value="{{ country.iso_code }}" class="li-lang_dd-link w-dropdown-link">{{ country.currency.iso_code }}</a>
                               </div>
 {% endunless %}
                             
