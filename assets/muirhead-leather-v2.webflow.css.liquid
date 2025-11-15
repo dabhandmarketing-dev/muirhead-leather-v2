@@ -9228,6 +9228,51 @@ figcaption {
   height: 100%;
 }
 
+.li-component_wrapper-2 {
+  background-color: #fff;
+  border-radius: .5rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1.9rem;
+  display: flex;
+}
+
+.padding-global-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.li-component_description {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.li-component_item {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  background-color: #ffffff4d;
+  border-radius: .5rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  padding: 3rem;
+  display: grid;
+}
+
+.li-component_item.is-big {
+  grid-template-columns: 1fr;
+}
+
+.padding-global-11 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 @media screen and (min-width: 1280px) {
   .header-slide.swiper-slide {
     height: 84svh;
@@ -10400,7 +10445,7 @@ figcaption {
     height: 30rem;
   }
 
-  .padding-global-9 {
+  .padding-global-9, .padding-global-10, .padding-global-11 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
@@ -11326,7 +11371,16 @@ figcaption {
     font-size: 1.5rem;
   }
 
-  .padding-global-9 {
+  .padding-global-9, .padding-global-10 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .li-component_item {
+    grid-template-columns: 1fr;
+  }
+
+  .padding-global-11 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
@@ -12056,6 +12110,14 @@ figcaption {
 
   .heading-style-h3-2 {
     font-size: 1.4rem;
+  }
+
+  .li-component_wrapper-2 {
+    padding: 0;
+  }
+
+  .li-component_item {
+    padding: .9rem;
   }
 }
 
