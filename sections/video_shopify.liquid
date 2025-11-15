@@ -1,0 +1,25 @@
+<div class="padding-global-11 padding-section-small">
+          <div class="container-large-13">
+            <div class="video_wrapper" style="aspect-ratio: {{ section.settings.video.aspect_ratio }}">
+              <div li-object="section.settings.video | video_tag: width: '100%', height: '100%', controls: true, poster: section.settings.video.preview_image" class="video_video">{{ section.settings.video | video_tag: width: '100%', height: '100%', controls: true, poster: section.settings.video.preview_image }}</div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Video (Shopify)",
+    "class": "section_video",
+    "settings": [
+        {
+            "type": "video",
+            "id": "video",
+            "label": "Video"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Video (Shopify)",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}
