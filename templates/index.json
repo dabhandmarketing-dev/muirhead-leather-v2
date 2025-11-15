@@ -263,13 +263,6 @@
       "name": "CTA Cards",
       "settings": {}
     },
-    "video_externally_C389Tp": {
-      "type": "video_externally",
-      "name": "Video (Externally)",
-      "settings": {
-        "video": "https://youtu.be/u31qwQUeGuM?si=oesg2Sh3R0NBs9nN"
-      }
-    },
     "video_embed_cKWNTR": {
       "type": "video_embed",
       "name": "Video Embed",
@@ -289,7 +282,6 @@
     "image_text_nGNxXC",
     "image_text_MnABaL",
     "cta_cards_ytiNM8",
-    "video_externally_C389Tp",
     "video_embed_cKWNTR"
   ]
 }
