@@ -37,83 +37,147 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
                   </div>
+                  <div class="hide-4 w-embed w-script">
+                    <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.img-magnifier-container');
+    const img = document.getElementById('myimage');
+    const glass = document.querySelector('.img-magnifier-glass');
+    const zoom = 1.5;
+    const glassSize = 150;
+    const halfGlass = glassSize / 2;
+    glass.style.backgroundImage = `url('${img.src}')`;
+    glass.style.backgroundSize = `${img.naturalWidth * zoom}px ${img.naturalHeight * zoom}px`;
+    function moveMagnifier(e) {
+      e.preventDefault();
+      const rect = img.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      // Constrain glass within image bounds
+      const boundedX = Math.max(halfGlass, Math.min(rect.width - halfGlass, x));
+      const boundedY = Math.max(halfGlass, Math.min(rect.height - halfGlass, y));
+      // Position glass centered on cursor
+      glass.style.left = `${boundedX - halfGlass}px`;
+      glass.style.top = `${boundedY - halfGlass}px`;
+      // Align zoomed area exactly with cursor
+      glass.style.backgroundPosition = `-${boundedX * zoom - halfGlass}px -${boundedY * zoom - halfGlass}px`;
+    }
+    container.addEventListener('mousemove', moveMagnifier);
+    container.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      moveMagnifier(e.touches[0]);
+    });
+    container.addEventListener('mouseenter', () => glass.style.display = 'block');
+    container.addEventListener('mouseleave', () => glass.style.display = 'none');
+  });
+</script>
+                  </div>
                   <div class="swiper is-product-gallery">
-                    <div id="my-gallery" li-for:inside="media in product.media" class="swiper-wrapper-2 is-product-gallery">
+                    <div id="my-gallery" li-for:inside="media in product.media" class="swiper-wrapper is-product-gallery">
         {% for media in product.media %}                            
                       
                             {% if media.media_type == 'image' %}    <div li-if="media.media_type == 'image'" class="swiper-slide is-product-gallery">
     
-                        <div class="product-header_gallery-lightbox">
-                          <div data-w-id="1827b207-6f90-b177-d7ae-56f9346242c8" class="sp-product-image-wrapper">
-                            <div class="zoom-wrapper">
-                              <div class="zoom-modal"><img li-object:src="media | image_url: width: 1000" li-object:alt="media.alt" alt="{{ media.alt }}" src="{{ media | image_url: width: 1000 }}" class="product-image-zoomed"></div>
-                            </div><img li-object:src="media | image_url: width: 1000" li-object:alt="media.alt" alt="{{ media.alt }}" src="{{ media | image_url: width: 1000 }}" class="sp-product-image">
+                        <div class="w-embed">
+                          <style>
+  .img-magnifier-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Square aspect ratio */
+    background: #f0f0f0; /* Placeholder background */
+    overflow: hidden;
+  }
+  .img-magnifier-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .img-magnifier-glass {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
+    display: none;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .img-magnifier-container:hover .img-magnifier-glass {
+    display: block;
+  }
+</style>
+                          <div class="img-magnifier-container">
+                            <img id="myimage" src="https://muirhead-leather-v2.myshopify.com/cdn/shop/files/6892012a19cbb2dbff992e8e_mlcairnwhisk_small_17de57ea-8dcc-46b6-8dd7-2d243dff582b.jpg?v=1759746828&width=1000" alt="Leather product">
+                            <div class="img-magnifier-glass"></div>
                           </div>
                         </div>
-                          </div>
-{% endif %}
-                            
-                      
-                            {% if media.media_type == 'video' %}    <div li-if="media.media_type == 'video'" class="swiper-slide is-product-gallery">
+                        {% if media.media_type == 'video' %}    <div li-if="media.media_type == 'video'" class="swiper-slide is-product-gallery">
     
-                        <div class="product-header_gallery-lightbox">
-                          <div li-object="media | video_tag: controls: true" class="product-header_gallery-image-3">{{ media | video_tag: controls: true }}</div>
-                        </div>
+                          <div class="product-header_gallery-lightbox">
+                            <div li-object="media | video_tag: controls: true" class="product-header_gallery-image-3">{{ media | video_tag: controls: true }}</div>
+                          </div>
+                            </div>
+{% endif %}
                           </div>
 {% endif %}
                             
                     
                     {% endfor %}    </div>
-                  </div>
-                  <div class="product-header_slider-wrapper">
-                    <div class="swiper_button-wrapper is-product-slider pointer-events-off z-index-1 hide-mobile-landscape">
-                      <a aria-label="Previous Slide" href="#" class="swiper_button-3 swiper-prev pointer-events-on w-inline-block">
-                        <div class="swiper_button-icon-5 is-reversed w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 29.541 22.323">
-                            <g id="Group_44" data-name="Group 44" transform="translate(0 1.014)">
-                              <path id="Path_1" data-name="Path 1" d="M115.445,20.633l9.311-10.148L115.445.338" transform="translate(-97.25 -0.338)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></path>
-                              <line id="Line_1" data-name="Line 1" x1="27.506" transform="translate(0 10.148)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></line>
-                            </g>
-                          </svg></div>
-                      </a>
-                      <a aria-label="Next Slide" href="#" class="swiper_button-3 swiper-next pointer-events-on w-inline-block">
-                        <div class="swiper_button-icon-5 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 29.541 22.323">
-                            <g id="Group_44" data-name="Group 44" transform="translate(0 1.014)">
-                              <path id="Path_1" data-name="Path 1" d="M115.445,20.633l9.311-10.148L115.445.338" transform="translate(-97.25 -0.338)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></path>
-                              <line id="Line_1" data-name="Line 1" x1="27.506" transform="translate(0 10.148)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></line>
-                            </g>
-                          </svg></div>
-                      </a>
-                    </div>
-                    <div class="swiper is-product-thumbnail">
-                      <div li-for:inside="media in product.media" class="swiper-wrapper-2 is-product-thumbnail">
+                    <div class="product-header_slider-wrapper">
+                      <div class="swiper_button-wrapper is-product-slider pointer-events-off z-index-1 hide-mobile-landscape">
+                        <a aria-label="Previous Slide" href="#" class="swiper_button swiper-prev pointer-events-on w-inline-block">
+                          <div class="swiper_button-icon-5 is-reversed w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 29.541 22.323">
+                              <g id="Group_44" data-name="Group 44" transform="translate(0 1.014)">
+                                <path id="Path_1" data-name="Path 1" d="M115.445,20.633l9.311-10.148L115.445.338" transform="translate(-97.25 -0.338)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></path>
+                                <line id="Line_1" data-name="Line 1" x1="27.506" transform="translate(0 10.148)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></line>
+                              </g>
+                            </svg></div>
+                        </a>
+                        <a aria-label="Next Slide" href="#" class="swiper_button swiper-next pointer-events-on w-inline-block">
+                          <div class="swiper_button-icon-5 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 29.541 22.323">
+                              <g id="Group_44" data-name="Group 44" transform="translate(0 1.014)">
+                                <path id="Path_1" data-name="Path 1" d="M115.445,20.633l9.311-10.148L115.445.338" transform="translate(-97.25 -0.338)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></path>
+                                <line id="Line_1" data-name="Line 1" x1="27.506" transform="translate(0 10.148)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></line>
+                              </g>
+                            </svg></div>
+                        </a>
+                      </div>
+                      <div class="swiper is-product-thumbnail">
+                        <div li-for:inside="media in product.media" class="swiper-wrapper">
         {% for media in product.media %}                            
-                        
+                          
                             {% if media.media_type == 'image' %}    <div li-if="media.media_type == 'image'" class="swiper-slide is-product-thumbnail">
     <img li-object:src="media | image_url: width: 200" li-object:alt="media.alt" alt="{{ media.alt }}" src="{{ media | image_url: width: 200 }}" loading="lazy" class="product-header_thumbnail-image-2">    </div>
 {% endif %}
                             
-                        
+                          
                             {% if media.media_type == 'video' %}    <div li-if="media.media_type == 'video'" class="swiper-slide is-product-thumbnail">
     <img li-object:src="media | image_url: width: 200" li-object:alt="media.alt" alt="{{ media.alt }}" src="{{ media | image_url: width: 200 }}" loading="lazy" class="product-header_thumbnail-image-2">
-                          <div aria-hidden="true" class="product-header_play-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
-                              <path fill="currentColor" d="M8 5v14l11-7z"></path>
-                            </svg></div>
-                            </div>
+                            <div aria-hidden="true" class="product-header_play-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                                <path fill="currentColor" d="M8 5v14l11-7z"></path>
+                              </svg></div>
+                              </div>
 {% endif %}
                             
-                      
+                        
                     {% endfor %}    </div>
+                      </div>
                     </div>
+                    <div class="swiper-slide is-product-thumbnail is-active hide-4"></div>
                   </div>
-                  <div class="swiper-slide is-product-thumbnail is-active hide-4"></div>
-                </div>
-                <div li-content-for-theme-blocks="" id="w-node-_4b0e9b61-6f53-1185-9fdd-143753136879-5313685d" class="product-header_product-details">
+                  <div li-content-for-theme-blocks="" id="w-node-_4b0e9b61-6f53-1185-9fdd-143753136879-5313685d" class="product-header_product-details">
 {% content_for 'blocks' %}
 </div>
+                </div>
               </div>
             </div>
           </div>
-        </div> {% schema %} {
+      </div> {% schema %} {
     "tag": "section",
     "name": "Product Hero",
     "class": "section_product-header",
