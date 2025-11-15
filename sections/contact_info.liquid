@@ -3,13 +3,13 @@
             <div class="container-medium">
               <div class="grey-line"></div>
               <div class="_4rem-spacer"></div>
-              <div li-content-for-blocks="">
+              <div>
+                <div li-content-for-blocks="" class="w-layout-grid contact-info-div">
 {% for block in section.blocks %}
 {% case block.type %}
 {% when '@app' %}
 {% render block %}
 
-                <div class="w-layout-grid contact-info-div">
                   {% when 'card' %}
             <div li-block="Card">
                     
@@ -27,11 +27,11 @@
                     
                   
                 </div>
-                </div>
-              {% endcase %}
+                {% endcase %}
 {% endfor %}
 
     </div>
+              </div>
               <div class="_1rem-spacer"></div>
             </div>
           </div>
