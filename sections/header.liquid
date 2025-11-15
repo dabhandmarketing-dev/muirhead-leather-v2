@@ -414,7 +414,7 @@
                           
                             {% unless localization.country.iso_code == country.iso_code %}    <div li-unless="localization.country.iso_code == country.iso_code" class="li-lang_dd-list-item">
     
-                            <a href="#" li-object="country.currency.iso_code" lang="{{ country.iso_code }}" hreflang="{{ country.iso_code }}" data-value="{{ country.iso_code }}" class="li-lang_dd-link w-dropdown-link">{{ country.currency.iso_code }}</a>
+                            <a href="#" li-object="language.endonym_name | capitalize" lang="{{ country.iso_code }}" hreflang="{{ language.iso_code }}" data-value="{{ language.iso_code }}" class="li-lang_dd-link w-dropdown-link">{{ language.endonym_name | capitalize }}</a>
                               </div>
 {% endunless %}
                             
