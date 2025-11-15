@@ -42,7 +42,19 @@ document.addEventListener("DOMContentLoaded", () => {
                         {% for image in product.images %}    <div li-for="image in product.images" class="swiper-slide is-product-gallery">
                                     
                           
-                            <div class="product-header_gallery-lightbox"><img li-object:src="image.src | product_img_url: 'master'" li-object:alt="image.alt" alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" loading="lazy" class="product-header_gallery-image-2"></div>
+                            <div class="product-header_gallery-lightbox">
+                            <a href="#" class="product-header5_lightbox-link w-inline-block w-lightbox">
+                              <div data-w-id="3414d37a-ab5d-9370-4c03-be3de10a9cbd" class="sp-product-image-wrapper">
+                                <div li-object:alt="media.alt" li-object:src="media | image_url: width: 1000" class="zoom-wrapper" alt="{{ media.alt }}" src="{{ media | image_url: width: 1000 }}">
+                                  <div class="zoom-modal"><img data-w-id="3414d37a-ab5d-9370-4c03-be3de10a9cc0" li-object:src="image.src | product_img_url: 'master'" alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" li-object:alt="image.alt" class="product-image-zoomed"></div>
+                                </div><img li-object:src="image.src | product_img_url: 'master'" li-object:alt="image.alt" alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" class="sp-product-image">
+                              </div>
+                              <script type="application/json" class="w-json">{
+  "items": [],
+  "group": ""
+}</script>
+                            </a>
+                          </div>
                             
                         
                         </div>
