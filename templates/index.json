@@ -269,6 +269,13 @@
       "settings": {
         "video": "https://youtu.be/u31qwQUeGuM?si=oesg2Sh3R0NBs9nN"
       }
+    },
+    "video_externally_QcHD9B": {
+      "type": "video_externally",
+      "name": "Video (Externally)",
+      "settings": {
+        "video": "https://youtu.be/u31qwQUeGuM?si=oesg2Sh3R0NBs9nN"
+      }
     }
   },
   "layout": "theme",
@@ -282,6 +289,7 @@
     "image_text_nGNxXC",
     "image_text_MnABaL",
     "cta_cards_ytiNM8",
-    "video_embed_cKWNTR"
+    "video_embed_cKWNTR",
+    "video_externally_QcHD9B"
   ]
 }
