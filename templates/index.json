@@ -12,16 +12,6 @@
     "slideshow_v3_8FHTHY": {
       "type": "slideshow_v3",
       "blocks": {
-        "slide_2_JxyJDB": {
-          "type": "slide-2",
-          "settings": {
-            "text_pre_heading": "More Than Leather.",
-            "text_heading": "A Lot More.",
-            "url_button_link": "",
-            "text_button_text": "Learn More",
-            "video_desktop": "shopify://files/videos/Placeholder video.mp4"
-          }
-        },
         "slide_chgm7F": {
           "type": "slide",
           "settings": {
@@ -31,11 +21,17 @@
             "url_button_link": "",
             "text_button_text": "Learn More"
           }
+        },
+        "slide_2_JxyJDB": {
+          "type": "slide-2",
+          "settings": {
+            "video_desktop": "shopify://files/videos/Placeholder video.mp4"
+          }
         }
       },
       "block_order": [
-        "slide_2_JxyJDB",
-        "slide_chgm7F"
+        "slide_chgm7F",
+        "slide_2_JxyJDB"
       ],
       "name": "Slideshow V3",
       "settings": {}
