@@ -21,10 +21,20 @@
             "text_button_text": "Learn More",
             "image_image_desktop": "shopify://shop_images/Muirhead_Hero_BG.jpg"
           }
+        },
+        "slide_2_tGVV4K": {
+          "type": "slide-2",
+          "settings": {
+            "text_pre_heading": "More than",
+            "text_heading": "Leather",
+            "url_button_link": "",
+            "text_button_text": "Learn More"
+          }
         }
       },
       "block_order": [
-        "slide_2_KjtJqB"
+        "slide_2_KjtJqB",
+        "slide_2_tGVV4K"
       ],
       "name": "Slideshow V3",
       "settings": {}
