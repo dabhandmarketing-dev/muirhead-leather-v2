@@ -1,0 +1,98 @@
+<div class="padding-section-small">
+          <div class="padding-global">
+            <div class="container-medium">
+              <div class="grey-line"></div>
+              <div class="_4rem-spacer"></div>
+              <div li-content-for-blocks="">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+                <div class="w-layout-grid contact-info-div">
+                  {% when 'card' %}
+            <div li-block="Card">
+                    
+                    
+                    <div class="contact-card">
+                      <div class="text-size-regular text-weight-bold">
+{{ block.settings.text_title }}
+</div>
+                      <div class="text-size-regular">
+{{ block.settings.text_job_description }}
+</div>
+                      <a href="{{ block.settings.url_phone }}" class="w-inline-block"> <div class="text-size-regular text-weight-bold">{{ block.settings.text_phone_number }}</div> </a>
+                      <a href="{{ block.settings.url_email }}" class="w-inline-block"> <div class="text-size-regular text-weight-bold">{{ block.settings.text_email_address }}</div> </a>
+                    </div>
+                    
+                  
+                </div>
+                </div>
+              {% endcase %}
+{% endfor %}
+
+    </div>
+              <div class="_1rem-spacer"></div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Contact Info",
+    "class": "section background-color-alternate",
+    "blocks": [
+        {
+            "name": "Card",
+            "type": "card",
+            "settings": [
+                {
+                    "id": "text_title",
+                    "type": "text",
+                    "label": "Title",
+                    "default": "Head Sales Office"
+                },
+                {
+                    "id": "text_job_description",
+                    "type": "text",
+                    "label": "Job Description",
+                    "default": "Myles Hobbs Aviation Director | EMEA\/The Americas"
+                },
+                {
+                    "id": "url_phone",
+                    "type": "url",
+                    "label": "Phone"
+                },
+                {
+                    "id": "text_phone_number",
+                    "type": "text",
+                    "label": "Phone Number",
+                    "default": "+353 (0)87 403 4699"
+                },
+                {
+                    "id": "url_email",
+                    "type": "url",
+                    "label": "Email"
+                },
+                {
+                    "id": "text_email_address",
+                    "type": "text",
+                    "label": "Email Address",
+                    "default": "myles.hobbs@muirhead.co.uk"
+                }
+            ]
+        },
+        {
+            "type": "@app"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Contact Info",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "card"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
