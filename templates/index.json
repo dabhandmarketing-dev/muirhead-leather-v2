@@ -11,32 +11,6 @@
   "sections": {
     "slideshow_v3_8FHTHY": {
       "type": "slideshow_v3",
-      "blocks": {
-        "slide_NQwdtm": {
-          "type": "slide",
-          "settings": {
-            "image_image": "shopify://shop_images/Muirhead_Hero_BG.jpg",
-            "text_pre_heading": "More than",
-            "text_heading": "Leather",
-            "url_button_link": "",
-            "text_button_text": "Learn More"
-          }
-        },
-        "slide_2_Uxh4E3": {
-          "type": "slide-2",
-          "settings": {
-            "text_pre_heading": "More than",
-            "text_heading": "Leather",
-            "url_button_link": "",
-            "text_button_text": "Learn More",
-            "image_image_desktop": "shopify://shop_images/muirhead_footer_our_story.webp"
-          }
-        }
-      },
-      "block_order": [
-        "slide_NQwdtm",
-        "slide_2_Uxh4E3"
-      ],
       "name": "Slideshow V3",
       "settings": {}
     },
@@ -288,20 +262,6 @@
       ],
       "name": "CTA Cards",
       "settings": {}
-    },
-    "video_embed_cKWNTR": {
-      "type": "video_embed",
-      "name": "Video Embed",
-      "settings": {
-        "video": "https://youtu.be/u31qwQUeGuM?si=oesg2Sh3R0NBs9nN"
-      }
-    },
-    "video_externally_QcHD9B": {
-      "type": "video_externally",
-      "name": "Video (Externally)",
-      "settings": {
-        "video": "https://youtu.be/u31qwQUeGuM?si=oesg2Sh3R0NBs9nN"
-      }
     }
   },
   "layout": "theme",
@@ -314,8 +274,6 @@
     "video_hero_WrMVQn",
     "image_text_nGNxXC",
     "image_text_MnABaL",
-    "cta_cards_ytiNM8",
-    "video_embed_cKWNTR",
-    "video_externally_QcHD9B"
+    "cta_cards_ytiNM8"
   ]
 }
