@@ -1,42 +1,5 @@
 <div class="padding-global">
           <div class="container-large">
-            <div class="w-embed w-script">
-              <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const toggle = document.querySelector('.dropdown-toggle');
-  const list = document.querySelector('.dropdown-list');
-  const label = document.querySelector('.dropdown-label');
-  const select = document.getElementById('sort-by');
-  const items = list.querySelectorAll('.dropdown-item');
-  function updateLabel() {
-    const selectedOption = select.options[select.selectedIndex];
-    label.textContent = selectedOption ? selectedOption.text : 'Sort by';
-  }
-  toggle.addEventListener('click', function(e) {
-    e.stopPropagation();
-    const isOpen = list.style.display !== 'none';
-    list.style.display = isOpen ? 'none' : 'block';
-    toggle.setAttribute('aria-expanded', !isOpen);
-  });
-  items.forEach(item => {
-    item.addEventListener('click', function(e) {
-      e.preventDefault();
-      const url = this.dataset.value;
-      select.value = url;
-      select.dispatchEvent(new Event('change')); // Trigger redirect
-      updateLabel();
-      list.style.display = 'none';
-      toggle.setAttribute('aria-expanded', 'false');
-    });
-  });
-  document.addEventListener('click', function() {
-    list.style.display = 'none';
-    toggle.setAttribute('aria-expanded', 'false');
-  });
-  updateLabel();
-});
-</script>
-            </div>
             {% paginate collection.products by 50 %}
     <div li-paginate:by="50" li-paginate="collection.products" class="filter_layout" by="50">
               <div id="w-node-_678e0483-bbe4-e79a-1722-b169c587feae-c587feae" class="filter_filters-wrapper">
@@ -120,22 +83,22 @@ document.addEventListener('DOMContentLoaded', function() {
 " src="{{ 'close.svg' | asset_url }}" class="filter_tag-remove">
                       </div>
                     </div>
-                    <div data-delay="0" data-hover="false" bind="d9dcbff8-9f06-16ea-d1c2-51ce15c68194" fs-cmssort-element="trigger" class="dropdown-4 w-dropdown">
+                    <div data-delay="0" data-hover="false" class="dropdown-4 w-dropdown">
                       <div class="filter_sort-by-2 w-dropdown-toggle">
-                        <div bind="d9dcbff8-9f06-16ea-d1c2-51ce15c68196" class="dropdown_icon w-icon-dropdown-toggle"></div>
-                        <div fs-cmssort-element="dropdown-label" class="text-size-small-2">Sort by</div>
+                        <div class="dropdown_icon w-icon-dropdown-toggle"></div>
+                        <div class="text-size-small-2">Sort by</div>
                       </div>
                       <nav class="dropdown_list w-dropdown-list">
-                        <a href="https://{{ collection.url }}?sort_by=best-selling"" class="sort_field jetboost-sort-desc-4q8x w-inline-block">
+                        <a href="https://{{ shop.url }}{{ collection.url }}?sort_by=best-selling" class="sort_field jetboost-sort-desc-4q8x w-inline-block">
                           <div>Best Selling</div>
                         </a>
-                        <a href="https://{{ collection.url }}?sort_by=title-ascending"" class="sort_field jetboost-sort-active jetboost-sort-asc-49zz w-inline-block">
+                        <a href="https://{{ shop.url }}{{ collection.url }}?sort_by=title-ascending" class="sort_field jetboost-sort-active jetboost-sort-asc-49zz w-inline-block">
                           <div>Name (A/Z)</div>
                         </a>
-                        <a href="https://{{ collection.url }}?sort_by=title-descending"" class="sort_field jetboost-sort-desc-49zz w-inline-block">
+                        <a href="https://{{ shop.url }}{{ collection.url }}?sort_by=title-descending" class="sort_field jetboost-sort-desc-49zz w-inline-block">
                           <div>Name (Z/A)</div>
                         </a>
-                        <a fs-cmssort-field="height-asc" href="https://{{ collection.url }}?sort_by=price-ascending"" class="sort_field jetboost-sort-asc-4q8x w-inline-block">
+                        <a href="https://{{ shop.url }}{{ collection.url }}?sort_by=price-ascending" class="sort_field jetboost-sort-asc-4q8x w-inline-block">
                           <div>Cheapest First</div>
                         </a>
                       </nav>
