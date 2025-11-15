@@ -12,8 +12,8 @@
     "slideshow_v3_8FHTHY": {
       "type": "slideshow_v3",
       "blocks": {
-        "slide_2_KjtJqB": {
-          "type": "slide-2",
+        "slide_a_bpnQRa": {
+          "type": "slide-a",
           "settings": {
             "text_pre_heading": "More than",
             "text_heading": "Leather",
@@ -22,11 +22,11 @@
             "image_image_desktop": "shopify://shop_images/Muirhead_Hero_BG.jpg"
           }
         },
-        "slide_2_tGVV4K": {
-          "type": "slide-2",
+        "slide_a_f7wQ3m": {
+          "type": "slide-a",
           "settings": {
-            "text_pre_heading": "We Make The Worlds",
-            "text_heading": "Lowest Carbon Leather",
+            "text_pre_heading": "More than",
+            "text_heading": "Leather",
             "url_button_link": "",
             "text_button_text": "Learn More",
             "video_desktop": "shopify://files/videos/Placeholder video.mp4"
@@ -34,8 +34,8 @@
         }
       },
       "block_order": [
-        "slide_2_KjtJqB",
-        "slide_2_tGVV4K"
+        "slide_a_bpnQRa",
+        "slide_a_f7wQ3m"
       ],
       "name": "Slideshow V3",
       "settings": {}
