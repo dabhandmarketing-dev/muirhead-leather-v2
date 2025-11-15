@@ -4,17 +4,11 @@
               <script src="{{ 'li_custom.js' | asset_url }}" type="text/javascript"></script>
 <div li-element="product-variant-container" class="w-layout-grid product-header_layout" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)">
                 <div>
-                  <a href="#" class="product-header5_lightbox-link w-inline-block w-lightbox">
-                    <div data-w-id="3414d37a-ab5d-9370-4c03-be3de10a9cbd" class="sp-product-image-wrapper">
-                      <div li-object:alt="media.alt" li-object:src="media | image_url: width: 1000" class="zoom-wrapper" alt="{{ media.alt }}" src="{{ media | image_url: width: 1000 }}">
-                        <div class="zoom-modal"><img data-w-id="3414d37a-ab5d-9370-4c03-be3de10a9cc0" li-object:src="image.src | product_img_url: 'master'" alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" li-object:alt="image.alt" class="product-image-zoomed"></div>
-                      </div><img li-object:src="image.src | product_img_url: 'master'" li-object:alt="image.alt" alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" class="sp-product-image">
-                    </div>
-                    <script type="application/json" class="w-json">{
-  "items": [],
-  "group": ""
-}</script>
-                  </a>
+                  <div data-w-id="1827b207-6f90-b177-d7ae-56f9346242c8" class="sp-product-image-wrapper">
+                    <div class="zoom-wrapper">
+                      <div class="zoom-modal"><img li-object:src="image.src | product_img_url: 'master'" li-object:alt="image.alt" alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" class="product-image-zoomed"></div>
+                    </div><img li-object:src="image.src | product_img_url: 'master'" li-object:alt="image.alt" alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" class="sp-product-image">
+                  </div>
                   <div class="_2rem-spacer"></div>
                   <div>
                     <div class="w-embed-youtubevideo"></div>
@@ -26,39 +20,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="hide w-embed w-script">
-          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-          <script>
-document.addEventListener("DOMContentLoaded", () => {
-  $(".swiper-container").each(function (index) {
-    const thumbsSwiper = new Swiper($(this).find(".swiper.is-product-thumbnail")[0], {
-      slidesPerView: "auto",
-      rewind: false,
-      loopedSlides: 8,
-      slideToClickedSlide: true,
-      spaceBetween: "4%",
-    });
-    const swiper = new Swiper($(this).find(".swiper.is-product-gallery")[0], {
-      mousewheel: {
-        forceToAxis: true
-      },
-      thumbs: {
-        swiper: thumbsSwiper,
-        slideThumbActiveClass: "is-active",
-      },
-      keyboard: {
-        enabled: true,
-        onlyInViewport: true
-      },
-      navigation: {
-        nextEl: $(this).find(".swiper-next")[0],
-        prevEl: $(this).find(".swiper-prev")[0],
-      }
-    });
-  }); 
-});
-</script>
         </div> {% schema %} {
     "tag": "section",
     "name": "Product Hero",
