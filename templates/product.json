@@ -60,15 +60,6 @@
           "name": "Low Carbon Leather",
           "settings": {},
           "blocks": {}
-        },
-        "downloads_e9tptx": {
-          "type": "downloads",
-          "name": "Downloads",
-          "settings": {
-            "url_link": "{{ closest.product.metafields.custom.safety_specs.value }}",
-            "text_text": "Safety Specs"
-          },
-          "blocks": {}
         }
       },
       "block_order": [
@@ -78,8 +69,7 @@
         "add-to-cart",
         "payment_icons_Rjaiqh",
         "description",
-        "low_carbon_leather_rjfagd",
-        "downloads_e9tptx"
+        "low_carbon_leather_rjfagd"
       ],
       "settings": {}
     },
