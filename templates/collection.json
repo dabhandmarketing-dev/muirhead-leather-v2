@@ -14,11 +14,6 @@
       "name": "Page Heading",
       "settings": {}
     },
-    "collection_test_2_VmH9d9": {
-      "type": "collection_test_2",
-      "name": "collection-test-2",
-      "settings": {}
-    },
     "collection_products_wmxiff": {
       "type": "collection_products",
       "name": "Collection Products",
@@ -31,7 +26,6 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "page_heading_w4V3gw",
-    "collection_test_2_VmH9d9",
     "collection_products_wmxiff"
   ]
 }
