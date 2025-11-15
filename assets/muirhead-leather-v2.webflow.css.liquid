@@ -1,7 +1,8 @@
 :root {
-  --base-color-neutral--black: black;
+  --base-color-brand--charcoal: #53565a;
   --base-color-neutral--neutral: #666;
   --text-color--text-alternate: var(--base-color-neutral--white);
+  --base-color-neutral--black: black;
   --text-color--text-secondary: var(--base-color-neutral--neutral-darker);
   --border-radius--small: .25rem;
   --base-color-system--focus-state: #2d62ff;
@@ -28,7 +29,6 @@
   --background-color--background-alternate: var(--base-color-neutral--white);
   --background-color--background-success: var(--base-color-system--success-green);
   --text-color--text-success: var(--base-color-system--success-green-dark);
-  --base-color-brand--charcoal: #53565a;
   --base-color-neutral--neutral-dark: #444;
   --base-color-brand--darker-charcoal: #eee;
   --base-color-brand--green: #11763d;
@@ -141,7 +141,7 @@
 }
 
 body {
-  color: var(--base-color-neutral--black);
+  color: var(--base-color-brand--charcoal);
   font-family: Manrope, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
@@ -795,7 +795,6 @@ figcaption {
 }
 
 .section_footer {
-  border-top: 1px solid var(--base-color-neutral--neutral-lighter);
   background-color: var(--base-color-neutral--black);
   color: var(--base-color-neutral--white);
   margin-top: auto;
