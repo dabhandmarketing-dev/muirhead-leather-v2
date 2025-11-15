@@ -59,7 +59,7 @@ background: white;
             <div li-block="Slide 2" class="header-slide swiper-slide">
                     
                 
-                    <div li-content-for-theme-blocks="" class="hero-slide-content_layout is-centered">
+                    <div li-content-for-theme-blocks="">
 {% content_for 'blocks' %}
 </div>
                     
@@ -153,9 +153,6 @@ const heroslider = new Swiper('.header-slider', {
     "class": "header-slider-section",
     "blocks": [
         {
-            "type": ""
-        },
-        {
             "type": "@app"
         },
         {
@@ -166,11 +163,7 @@ const heroslider = new Swiper('.header-slider', {
         {
             "name": "Slideshow V3",
             "category": "Liquify",
-            "blocks": [
-                {
-                    "type": ""
-                }
-            ]
+            "blocks": []
         }
     ]
 } {% endschema %}
