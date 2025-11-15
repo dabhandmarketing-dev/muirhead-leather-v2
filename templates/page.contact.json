@@ -28,12 +28,52 @@
       "settings": {
         "text_heading": "Contact Us"
       }
+    },
+    "contact_section_6fNEUV": {
+      "type": "contact_section",
+      "name": "Contact Section",
+      "settings": {}
+    },
+    "contact_info_4nq7Vc": {
+      "type": "contact_info",
+      "blocks": {
+        "card_HpXweV": {
+          "type": "card",
+          "settings": {
+            "text_title": "Head Sales Office",
+            "text_job_description": "Myles Hobbs Aviation Director | EMEA/The Americas",
+            "url_phone": "tel:+353 (0)87 403 4699",
+            "text_phone_number": "+353 (0)87 403 4699",
+            "url_email": "mailto:myles.hobbs@muirhead.co.uk",
+            "text_email_address": "myles.hobbs@muirhead.co.uk"
+          }
+        },
+        "card_iNqBB8": {
+          "type": "card",
+          "settings": {
+            "text_title": "Head Sales Office",
+            "text_job_description": "Myles Hobbs Aviation Director | EMEA/The Americas",
+            "url_phone": "tel:+353 (0)87 403 4699",
+            "text_phone_number": "+353 (0)87 403 4699",
+            "url_email": "mailto:myles.hobbs@muirhead.co.uk",
+            "text_email_address": "myles.hobbs@muirhead.co.uk"
+          }
+        }
+      },
+      "block_order": [
+        "card_HpXweV",
+        "card_iNqBB8"
+      ],
+      "name": "Contact Info",
+      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "contact",
-    "contact_head_qR7hjh"
+    "contact_head_qR7hjh",
+    "contact_section_6fNEUV",
+    "contact_info_4nq7Vc"
   ]
 }
