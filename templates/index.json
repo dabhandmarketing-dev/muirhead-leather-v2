@@ -249,6 +249,20 @@
         "grid_position": "left",
         "background_colour": "#ffffff"
       }
+    },
+    "harry_sv_yG4HdW": {
+      "type": "harry_sv",
+      "name": "Harry SV",
+      "settings": {
+        "video": "shopify://files/videos/Placeholder video.mp4"
+      }
+    },
+    "harry_embed_eLm6NJ": {
+      "type": "harry_embed",
+      "name": "Harry Embed",
+      "settings": {
+        "video": "https://youtu.be/u31qwQUeGuM?si=duKhhDTi6eP2bzm7"
+      }
     }
   },
   "layout": "theme",
@@ -260,6 +274,8 @@
     "scroll_image_3Y7xEC",
     "video_hero_WrMVQn",
     "image_text_nGNxXC",
-    "image_text_MnABaL"
+    "image_text_MnABaL",
+    "harry_sv_yG4HdW",
+    "harry_embed_eLm6NJ"
   ]
 }
