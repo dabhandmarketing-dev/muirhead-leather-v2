@@ -397,11 +397,57 @@
                         </div>
                       </div>
                     </nav>
-                  </div>
+                  </div>{% if localization.available_countries.size > 1 %}    <localization-form li-if="localization.available_countries.size > 1" class="li-lang_wrapper">
+    
+                    {% form 'localization', class: 'li-lang_form' %}
+<div data-delay="500" data-hover="true" class="li-lang_dropdown w-dropdown">
+                        <div lang="{{ localization.language.iso_code }}" class="li-lang_dd-toggle w-dropdown-toggle">
+                          <div li-object="localization.country.currency.iso_code">{{ localization.country.currency.iso_code }}</div>
+                          {% if link.links.size > 0 %}    <div li-if="link.links.size > 0" class="li-lang_dd-toggle-icon w-embed">
+    <svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
+                            </svg>    </div>
+{% endif %}
+                        </div>
+                        <nav li-for:inside="language in localization.available_languages" class="li-lang_dd-list w-dropdown-list">
+        {% for language in localization.available_languages %}                            
+                          
+                            {% unless localization.language.iso_code == language.iso_code %}    <div li-unless="localization.language.iso_code == language.iso_code" class="li-lang_dd-list-item">
+    
+                            <a href="#" li-object="language.endonym_name | capitalize" lang="{{ language.iso_code }}" hreflang="{{ language.iso_code }}" data-value="{{ language.iso_code }}" class="li-lang_dd-link w-dropdown-link">{{ language.endonym_name | capitalize }}</a>
+                              </div>
+{% endunless %}
+                            
+                        
+                    {% endfor %}    </nav>
+                      </div><input type="hidden" name="language_code" class="li-lang_hidden-input" value="{{ localization.language.iso_code }}">
+                    {% endform %}
+                    <div class="li-lang_script w-embed w-script">
+                      <script>
+      class LocalizationForm extends HTMLElement {
+        constructor() {
+          super();
+          this.input = this.querySelector('input[name="country_code"]');
+          this.querySelectorAll('a').forEach(item =>
+            item.addEventListener('click', this.onItemClick.bind(this))
+          );
+        }
+        onItemClick(event) {
+          event.preventDefault();
+          const form = this.querySelector('form');
+          this.input.value = event.currentTarget.dataset.value;
+          if (form) form.submit();
+        }
+      }
+      customElements.define('localization-form', LocalizationForm);
+</script>
+                    </div>
+                      </localization-form>
+{% endif %}
                   <div data-delay="0" data-hover="false" data-w-id="1171fcbf-5149-a415-23f1-5c51ac0605c2" class="country-dropdown hide-mobile-landscape w-dropdown">
                     <div class="currency-toggle w-dropdown-toggle">
                       <div class="icon-6 w-icon-dropdown-toggle"></div>
-                      <div sf-show-currency-selection="1" class="country-row-selection">
+                      <div class="country-row-selection">
                         <div class="country-flag uk"></div>
                         <div href="#" class="nav-link-4">
                           <div class="nav-text-wrap-2">
@@ -416,11 +462,11 @@
                         <div class="country-flag uk"></div>
                         <div>GBP</div>
                       </div>
-                      <div sf-currency-value="US" class="country-row">
+                      <div class="country-row">
                         <div class="country-flag usa"></div>
                         <div>USD</div>
                       </div>
-                      <div sf-currency-value="CA" class="country-row">
+                      <div class="country-row">
                         <div class="country-flag ca"></div>
                         <div>CAD</div>
                       </div>
@@ -428,7 +474,7 @@
                         <div class="country-flag au"></div>
                         <div>AUD</div>
                       </div>
-                      <div sf-currency-value="DE" class="country-row">
+                      <div class="country-row">
                         <div class="country-flag eur"></div>
                         <div>EUR</div>
                       </div>
@@ -1343,7 +1389,7 @@
                           <div class="w-layout-grid nav-menu-card">
                             <div id="w-node-_1171fcbf-5149-a415-23f1-5c51ac060666-d5a86df8" class="nav-menu-image">
                               <a href="#" class="places-card w-inline-block">
-                                <div class="places-card_image-wrap"><img sizes="(max-width: 1279px) 100vw, 1083.9757080078125px" srcset="{{ 'muirhead_our_story_low_carbon_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_our_story_low_carbon_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_our_story_low_carbon_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }}" class="image-56"></div>
+                                <div class="places-card_image-wrap"><img sizes="(max-width: 1279px) 100vw, 1083.9410400390625px" srcset="{{ 'muirhead_our_story_low_carbon_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_our_story_low_carbon_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_our_story_low_carbon_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_our_story_low_carbon_04.webp' | asset_url }}" class="image-56"></div>
                                 <div class="places-card_image-overlay"></div>
                                 <div class="places-card_content">
                                   <h3 class="places-card_heading-text">Low Carbon Leather</h3>
@@ -1508,7 +1554,7 @@
                               </a>
                             </div>
                             <a href="#" class="places-card xs-9 w-inline-block">
-                              <div class="places-card_image-wrap xs-10"><img sizes="(max-width: 1919px) 100vw, 1519.96533203125px" srcset="{{ 'interiors-and-luxury-p-500.webp' | asset_url }} 500w, {{ 'interiors-and-luxury-p-800.webp' | asset_url }} 800w, {{ 'interiors-and-luxury-p-1080.webp' | asset_url }} 1080w, {{ 'interiors-and-luxury.webp' | asset_url }} 1520w" alt="" loading="lazy" src="{{ 'interiors-and-luxury.webp' | asset_url }}" class="image-56 xs-11"></div>
+                              <div class="places-card_image-wrap xs-10"><img sizes="(max-width: 1919px) 100vw, 1519.9306640625px" srcset="{{ 'interiors-and-luxury-p-500.webp' | asset_url }} 500w, {{ 'interiors-and-luxury-p-800.webp' | asset_url }} 800w, {{ 'interiors-and-luxury-p-1080.webp' | asset_url }} 1080w, {{ 'interiors-and-luxury.webp' | asset_url }} 1520w" alt="" loading="lazy" src="{{ 'interiors-and-luxury.webp' | asset_url }}" class="image-56 xs-11"></div>
                               <div class="places-card_image-overlay xs-4"></div>
                               <div class="places-card_content xs-13">
                                 <h3 class="places-card_heading-text xs-14">Why Leather?</h3>
@@ -1551,21 +1597,21 @@
                           <div class="navigation-dropdown-card">
                             <div class="w-layout-grid navigation-grid-large">
                               <a href="#" class="navigation-card w-inline-block">
-                                <div class="navigation-image-small"><img sizes="(max-width: 1279px) 100vw, 1083.9757080078125px" srcset="{{ 'muirhead_home_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_home_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_home_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_home_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_home_04.webp' | asset_url }}" class="image-cover-3"></div>
+                                <div class="navigation-image-small"><img sizes="(max-width: 1279px) 100vw, 1083.9410400390625px" srcset="{{ 'muirhead_home_04-p-500.webp' | asset_url }} 500w, {{ 'muirhead_home_04-p-800.webp' | asset_url }} 800w, {{ 'muirhead_home_04-p-1080.webp' | asset_url }} 1080w, {{ 'muirhead_home_04.webp' | asset_url }} 1084w" alt="" loading="lazy" src="{{ 'muirhead_home_04.webp' | asset_url }}" class="image-cover-3"></div>
                                 <div class="column">
                                   <div class="subheading-small-2">Stock</div>
                                   <p class="paragraph-small-6 text-color-tertiary">Buy a range of one-off hide</p>
                                 </div>
                               </a>
                               <a href="#" class="navigation-card w-inline-block">
-                                <div class="navigation-image-small"><img sizes="(max-width: 991px) 100vw, 799.9739990234375px" srcset="{{ 'sustainability-p-500.webp' | asset_url }} 500w, {{ 'sustainability.webp' | asset_url }} 800w" alt="" loading="lazy" src="{{ 'sustainability.webp' | asset_url }}" class="image-cover-3"></div>
+                                <div class="navigation-image-small"><img sizes="(max-width: 991px) 100vw, 799.9479370117188px" srcset="{{ 'sustainability-p-500.webp' | asset_url }} 500w, {{ 'sustainability.webp' | asset_url }} 800w" alt="" loading="lazy" src="{{ 'sustainability.webp' | asset_url }}" class="image-cover-3"></div>
                                 <div class="column">
                                   <div class="subheading-small-2">Order Samples</div>
                                   <p class="paragraph-small-6 text-color-tertiary">Find the perfect leather today</p>
                                 </div>
                               </a>
                               <a href="#" class="navigation-card w-inline-block">
-                                <div class="navigation-image-small"><img sizes="(max-width: 1279px) 100vw, 1103.984375px" srcset="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 500w, {{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 1104w" alt="" loading="lazy" src="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }}" class="image-cover-3"></div>
+                                <div class="navigation-image-small"><img sizes="(max-width: 1279px) 100vw, 1103.9410400390625px" srcset="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 500w, {{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 1104w" alt="" loading="lazy" src="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }}" class="image-cover-3"></div>
                                 <div class="column">
                                   <div class="subheading-small-2">Leather Care</div>
                                   <p class="paragraph-small-6 text-color-tertiary">Care for premium leather</p>
