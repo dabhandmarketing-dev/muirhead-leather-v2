@@ -89,21 +89,27 @@
                         <div class="text-size-small-2">Sort by</div>
                       </div>
                       <nav class="dropdown_list w-dropdown-list">
-                        <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=best-selling" class="sort_field jetboost-sort-desc-4q8x w-inline-block">
+                        <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=best-selling" class="sort_field w-inline-block">
                           <div>Best Selling</div>
                         </a>
-                        <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=title-ascending" class="sort_field jetboost-sort-active jetboost-sort-asc-49zz w-inline-block">
+                        <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=title-ascending" class="sort_field w-inline-block">
                           <div>Name (A/Z)</div>
                         </a>
-                        <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=title-descending" class="sort_field jetboost-sort-desc-49zz w-inline-block">
+                        <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=title-descending" class="sort_field w-inline-block">
                           <div>Name (Z/A)</div>
                         </a>
-                        <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=price-ascending" class="sort_field jetboost-sort-asc-4q8x w-inline-block">
+                        <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=price-ascending" class="sort_field w-inline-block">
                           <div>Cheapest First</div>
                         </a>
                       </nav>
                     </div>
-                  </div>
+                  </div><select id="sort-by" li-for:inside="option in collection.sort_options" class="sort_select filter_checkbox">
+        {% for option in collection.sort_options %}                            
+                    
+                            <option value="{{ option.value }}" {% if option.value == collection.sort_by %}selected{% elsif option.value == collection.default_sort_by %}selected{% endif %}>{{ option.name }}</option>
+                            
+                  
+                    {% endfor %}    </select>
                   <a data-w-id="638bf85b-1565-7af6-1651-0999962faa6d" href="#" class="filter-button-mobile w-inline-block"><img loading="lazy" src="{{ 'icon-filters.svg' | asset_url }}" alt="" class="button-icon-left">
                     <div>Filters</div>
                   </a>
