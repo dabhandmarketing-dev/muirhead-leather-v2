@@ -119,7 +119,26 @@
     background: #000000;
   }
 </style>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!--  
+  <script defer="" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+// Market Localisation
+      class LocalizationForm extends HTMLElement {
+        constructor() {
+          super();
+          this.input = this.querySelector('input[name="country_code"]');
+          this.querySelectorAll('a').forEach(item =>
+            item.addEventListener('click', this.onItemClick.bind(this))
+          );
+        }
+        onItemClick(event) {
+          event.preventDefault();
+          const form = this.querySelector('form');
+          this.input.value = event.currentTarget.dataset.value;
+          if (form) form.submit();
+        }
+      }
+      customElements.define('localization-form', LocalizationForm);
+    </script><!--  
 IMPORTANT: If you want to make changes to the head or body code on this page, 
 please remove the `li-layout` tag from the body element. 
 This will create a separate layout file for this page, allowing you to apply custom modifications.
