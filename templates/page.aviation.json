@@ -34,6 +34,35 @@
       ],
       "name": "Text Stitching Secti",
       "settings": {}
+    },
+    "image_text_UKpNEW": {
+      "type": "image_text",
+      "blocks": {
+        "text_RMhPdx": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>From luxury airlines to budget carriers, aviation brands the world over trust Muirhead Leather's technical performance, durability, natural beauty and easy-to-clean, antibacterial properties. They are also impressed by our market-leading warranty.</p><p></p><p>Muirhead is the global market leader supplying more than 160 airlines, airframe and seating manufacturers across 60 countries. Unique ownership of the full end-to-end process gives us complete control of the supply chain and manufacturing process.</p>"
+          }
+        },
+        "buttons_fmc4E6": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Learn More",
+            "url_button_link_2": "",
+            "text_button_text_2": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "text_RMhPdx",
+        "buttons_fmc4E6"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "grid_position": "left",
+        "background_colour": "#ffffff"
+      }
     }
   },
   "layout": "theme",
@@ -41,6 +70,7 @@
   "order": [
     "default",
     "page_heading_EEpKEL",
-    "text_stitching_secti_kLj66k"
+    "text_stitching_secti_kLj66k",
+    "image_text_UKpNEW"
   ]
 }
