@@ -18,12 +18,18 @@
       "type": "collection_samples",
       "name": "Collection (Samples)",
       "settings": {}
+    },
+    "dotted_sides_grFkUr": {
+      "type": "dotted_sides",
+      "name": "Dotted Sides",
+      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "page_heading_w4V3gw",
-    "collection_samples_6hcQcV"
+    "collection_samples_6hcQcV",
+    "dotted_sides_grFkUr"
   ]
 }
