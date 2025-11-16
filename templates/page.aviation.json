@@ -298,10 +298,12 @@
         "text-size": "1.25rem"
       }
     },
-    "video_hero_WNVc7J": {
-      "type": "video_hero",
-      "name": "Video Hero",
-      "settings": {}
+    "harry_embed_GnDq9X": {
+      "type": "harry_embed",
+      "name": "Harry Embed",
+      "settings": {
+        "video": "https://youtu.be/u31qwQUeGuM?si=duKhhDTi6eP2bzm7"
+      }
     }
   },
   "layout": "theme",
@@ -317,6 +319,6 @@
     "image_text_WExeNQ",
     "image_text_aYeU8M",
     "image_text_mTqmbf",
-    "video_hero_WNVc7J"
+    "harry_embed_GnDq9X"
   ]
 }
