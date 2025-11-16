@@ -101,6 +101,19 @@
             "url_email": "mailto:douglas.cameron@muirhead.co.uk",
             "text_email_address": "douglas.cameron@muirhead.co.uk"
           }
+        },
+        "card_cPftQ6": {
+          "type": "card",
+          "name": "Jon Jones",
+          "settings": {
+            "text_title": "Regional Sales OfficeMiddle East",
+            "text_name": "Jon Jones",
+            "text_position": "Vice President Sales",
+            "url_phone": "tel:+971 55 239 8091",
+            "text_phone_number": "+971 55 239 8091",
+            "url_email": "mailto:jon.jones@muirhead.co.uk",
+            "text_email_address": "jon.jones@muirhead.co.uk"
+          }
         }
       },
       "block_order": [
@@ -108,7 +121,8 @@
         "card_iNqBB8",
         "card_nE9yLX",
         "card_6xit6b",
-        "card_NHqq8m"
+        "card_NHqq8m",
+        "card_cPftQ6"
       ],
       "name": "Contact Info",
       "settings": {}
