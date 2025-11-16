@@ -11,7 +11,7 @@
             <div li-block="Heading">
                     
                   
-                    <h1>
+                    <h1 style="color: {{ section.settings.text-color }} !important;">
 {{ block.settings.text_heading }}
 </h1>
                     
@@ -21,7 +21,7 @@
             <div li-block="Text">
                     
                   
-                    <div class="text-size-medium w-richtext"> {{ block.settings.richtext_richtext }} </div>
+                    <div class="text-size-medium w-richtext" style="color: {{ section.settings.text-color }} !important;"> {{ block.settings.richtext_richtext }} </div>
                     
                 
                 </div>
@@ -47,6 +47,7 @@
     </div>
             </div>
           </div>
+          
         </div> {% schema %} {
     "tag": "div",
     "name": "Text Centralised",
@@ -106,6 +107,18 @@
         },
         {
             "type": "@app"
+        }
+    ],
+    "settings": [
+        {
+            "type": "header",
+            "content": "text-color"
+        },
+        {
+            "type": "color",
+            "id": "text-color",
+            "label": "Text Color",
+            "default": "#444"
         }
     ],
     "presets": [

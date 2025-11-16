@@ -22,7 +22,7 @@
             <div li-block="Headline" class="content_block">
                     
                     
-                    <h2>
+                    <h2 style="color: {{ section.settings.text-color }} !important;">
 {{ block.settings.text_headline }}
 </h2>
                     
@@ -32,7 +32,7 @@
             <div li-block="Text" class="content_block">
                     
                     
-                    <div style="font-size: {{ section.settings.text-size }} !important;"> {{ block.settings.richtext_text }} </div>
+                    <div style="font-size: {{ section.settings.text-size }} !important; color: {{ section.settings.text-color }} !important;"> {{ block.settings.richtext_text }} </div>
                     
                     
                     
@@ -278,6 +278,16 @@
             "id": "background_colour",
             "label": "Background Colour",
             "default": "#ffffff"
+        },
+        {
+            "type": "header",
+            "content": "text-color"
+        },
+        {
+            "type": "color",
+            "id": "text-color",
+            "label": "Text Color",
+            "default": "#444"
         }
     ],
     "presets": [
