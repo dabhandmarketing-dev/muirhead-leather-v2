@@ -108,12 +108,6 @@
       "name": "Product Content",
       "settings": {}
     },
-    "recommended_products": {
-      "type": "recommended_products",
-      "settings": {
-        "text_heading": "Recommended"
-      }
-    },
     "image_text_4j4pwR": {
       "type": "image_text",
       "blocks": {
@@ -152,6 +146,51 @@
         "background_colour": "#ffffff",
         "text-color": "#444444"
       }
+    },
+    "image_text_B3daK4": {
+      "type": "image_text",
+      "blocks": {
+        "headline_68TwzP": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "The Lowest-carbon leather in the world"
+          }
+        },
+        "text_EUyNCT": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Muirhead makes the lowest-carbon leather in the world. We source locally, tan naturally, reclaim energy from waste and re-use water. We are serious about sustainability.</p>",
+            "text-size": "1rem"
+          }
+        },
+        "buttons_qahcBr": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "#",
+            "text_button_text": "Discover our lowest carbon leather",
+            "url_button_link_2": "",
+            "text_button_text_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "headline_68TwzP",
+        "text_EUyNCT",
+        "buttons_qahcBr"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/muirhead_home_01_1.webp",
+        "grid_position": "right",
+        "background_colour": "#053e51",
+        "text-color": "#ffffff"
+      }
+    },
+    "recommended_products": {
+      "type": "recommended_products",
+      "settings": {
+        "text_heading": "Recommended"
+      }
     }
   },
   "layout": "theme",
@@ -162,6 +201,7 @@
     "ribbons_gj8kMw",
     "product_content_iftBPT",
     "image_text_4j4pwR",
+    "image_text_B3daK4",
     "recommended_products"
   ]
 }
