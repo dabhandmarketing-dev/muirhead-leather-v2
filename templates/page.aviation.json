@@ -337,8 +337,46 @@
       ],
       "name": "Image Text",
       "settings": {
-        "image_image": "shopify://shop_images/muirhead_sector_aviation_06.webp",
+        "image_image": "shopify://shop_images/muirhead_sector_aviation_07.webp",
         "grid_position": "right",
+        "background_colour": "#ffffff",
+        "text-size": "1.25rem"
+      }
+    },
+    "image_text_awHXXQ": {
+      "type": "image_text",
+      "blocks": {
+        "headline_UzRX97": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Always evolving"
+          }
+        },
+        "text_dUUUr9": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Our design and technology experts use the most advanced methods and techniques to interpret the creative direction of designers, seat manufacturers and airlines, and adapt reliably and quickly to fast-moving technical innovations, industry standards and customer requirements. </p>"
+          }
+        },
+        "buttons_dtbDc3": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "#",
+            "text_button_text": "Learn More",
+            "url_button_link_2": "",
+            "text_button_text_2": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "headline_UzRX97",
+        "text_dUUUr9",
+        "buttons_dtbDc3"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/muirhead_sector_aviation_08.webp",
+        "grid_position": "left",
         "background_colour": "#ffffff",
         "text-size": "1.25rem"
       }
@@ -358,6 +396,7 @@
     "image_text_aYeU8M",
     "harry_embed_GnDq9X",
     "image_text_mTqmbf",
-    "image_text_ey6r3x"
+    "image_text_ey6r3x",
+    "image_text_awHXXQ"
   ]
 }
