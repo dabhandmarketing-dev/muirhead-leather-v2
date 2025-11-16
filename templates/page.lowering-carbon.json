@@ -117,7 +117,7 @@
       ],
       "name": "Image Text",
       "settings": {
-        "image_image": "shopify://shop_images/muirhead_sector_aviation_01_new.webp",
+        "image_image": "shopify://shop_images/sustainability_lowering-carbon_image_02.webp",
         "grid_position": "left",
         "background_colour": "#ffffff",
         "text-size": "1.25rem"
@@ -129,13 +129,13 @@
         "headline_KRbpVH": {
           "type": "headline",
           "settings": {
-            "text_headline": "Uncompromising performance"
+            "text_headline": "State-of-the-art"
           }
         },
         "text_LR9LHh": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Aviation materials need to meet the highest technical performance standards in the world and our leather exceeds them all. Flame retardancy, vertical burn times, heat distribution, pressure distribution, passenger wear, colour fastness and more are guaranteed by our cutting-edge, world-class technology.</p>"
+            "richtext_text": "<p>Significant investments in circular manufacturing have made us arguably the most modern and environmentally-focused leather manufacturer in the world. As part of Scottish Leather Group, our facilities on-site include a thermal energy plant, a water ultrafiltration plant and a modern, cutting-edge tannery.</p>"
           }
         },
         "buttons_apK8hw": {
@@ -157,7 +157,7 @@
       "settings": {
         "image_image": "shopify://shop_images/muirhead_sector_aviation_03.webp",
         "grid_position": "right",
-        "background_colour": "#ffffff",
+        "background_colour": "#cad4d8",
         "text-size": "1.25rem"
       }
     },
