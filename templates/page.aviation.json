@@ -14,6 +14,14 @@
       "disabled": true,
       "settings": {}
     },
+    "heading_large_ar6nE3": {
+      "type": "heading_large",
+      "name": "Heading Large",
+      "settings": {
+        "text_heading": "",
+        "image_image_desktop": "shopify://shop_images/aviation-head.webp"
+      }
+    },
     "page_heading_EEpKEL": {
       "type": "page_heading",
       "name": "Page Heading",
@@ -77,6 +85,7 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "default",
+    "heading_large_ar6nE3",
     "page_heading_EEpKEL",
     "text_stitching_secti_kLj66k",
     "image_text_UKpNEW"
