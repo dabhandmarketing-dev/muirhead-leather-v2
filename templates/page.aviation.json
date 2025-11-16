@@ -253,6 +253,13 @@
         "text-size": "1.25rem"
       }
     },
+    "harry_embed_GnDq9X": {
+      "type": "harry_embed",
+      "name": "Harry Embed",
+      "settings": {
+        "video": "https://youtu.be/u31qwQUeGuM?si=duKhhDTi6eP2bzm7"
+      }
+    },
     "image_text_mTqmbf": {
       "type": "image_text",
       "blocks": {
@@ -294,15 +301,8 @@
       "settings": {
         "image_image": "shopify://shop_images/muirhead_sector_aviation_06.webp",
         "grid_position": "left",
-        "background_colour": "#ffffff",
+        "background_colour": "#cad4d8",
         "text-size": "1.25rem"
-      }
-    },
-    "harry_embed_GnDq9X": {
-      "type": "harry_embed",
-      "name": "Harry Embed",
-      "settings": {
-        "video": "https://youtu.be/u31qwQUeGuM?si=duKhhDTi6eP2bzm7"
       }
     }
   },
@@ -318,7 +318,7 @@
     "image_text_4J8rJn",
     "image_text_WExeNQ",
     "image_text_aYeU8M",
-    "image_text_mTqmbf",
-    "harry_embed_GnDq9X"
+    "harry_embed_GnDq9X",
+    "image_text_mTqmbf"
   ]
 }
