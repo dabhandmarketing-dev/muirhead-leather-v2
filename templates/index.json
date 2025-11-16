@@ -204,7 +204,8 @@
         "text_3NP7Fc": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Discover Muirhead's latest innovation: FreeTAN®, a sustainable leather solution for the aviation industry. By replacing traditional tanning chemistry with compostable technology, FreeTAN® eliminates chrome and glutaraldehyde while maintaining impeccable performance standards. </p><p>Featuring Muirhead's pioneering FR technology, it ensures efficient, halogen-free, and non-toxic fire retardancy.</p>"
+            "richtext_text": "<p>Discover Muirhead's latest innovation: FreeTAN®, a sustainable leather solution for the aviation industry. By replacing traditional tanning chemistry with compostable technology, FreeTAN® eliminates chrome and glutaraldehyde while maintaining impeccable performance standards. </p><p>Featuring Muirhead's pioneering FR technology, it ensures efficient, halogen-free, and non-toxic fire retardancy.</p>",
+            "text-size": "1rem"
           }
         },
         "buttons_43EVGD": {
@@ -227,7 +228,7 @@
         "image_image": "shopify://shop_images/FreeTan.webp",
         "grid_position": "right",
         "background_colour": "#ffffff",
-        "text-size": "1rem"
+        "text-color": "#444444"
       }
     },
     "image_text_MnABaL": {
@@ -242,7 +243,8 @@
         "text_Lj69ad": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Explore our environmentally sustainable, durable and premium leathers available in a range of colours and finishes, perfect for any project.</p><p>Choose from four unique grains and finishes to blend durability and style. Whether you prefer a natural pebbled grain or a velvety matte texture, our collection combines sophistication and durability.</p>"
+            "richtext_text": "<p>Explore our environmentally sustainable, durable and premium leathers available in a range of colours and finishes, perfect for any project.</p><p>Choose from four unique grains and finishes to blend durability and style. Whether you prefer a natural pebbled grain or a velvety matte texture, our collection combines sophistication and durability.</p>",
+            "text-size": "1rem"
           }
         },
         "buttons_WPNF8i": {
@@ -264,8 +266,8 @@
       "settings": {
         "image_image": "shopify://shop_images/Samples.webp",
         "grid_position": "left",
-        "background_colour": "#ffffff",
-        "text-size": "1rem"
+        "background_colour": "#053e51",
+        "text-color": "#ffffff"
       }
     },
     "harry_sv_yG4HdW": {
