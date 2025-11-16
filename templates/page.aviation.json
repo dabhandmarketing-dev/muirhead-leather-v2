@@ -252,6 +252,51 @@
         "background_colour": "#ffffff",
         "text-size": "1.25rem"
       }
+    },
+    "image_text_mTqmbf": {
+      "type": "image_text",
+      "blocks": {
+        "headline_fFicDn": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Rigorously tested"
+          }
+        },
+        "text_znJYiP": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Our world-class, in-house testing facility ensures our aviation leather passes all airworthiness specifications and meets the most stringent Civil Aviation Authority regulations. We test and certify in-house for corrosion, flame retardancy, vertical burn, smoke density/toxicity and much more. </p>"
+          }
+        },
+        "text_UbYzHf": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>We deliver industry-leading corrosion testing (ASTM 1611) and flame retardancy. Our in-house testing laboratory is UKAS accredited to carry out FAA 25.853, Vertical Burn and ABD0031 Smoke Density and Toxicity tasting (BSI ISO 17025:2005).</p>"
+          }
+        },
+        "buttons_ndFy8K": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "#",
+            "text_button_text": "Learn More",
+            "url_button_link_2": "",
+            "text_button_text_2": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "headline_fFicDn",
+        "text_znJYiP",
+        "text_UbYzHf",
+        "buttons_ndFy8K"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/muirhead_sector_aviation_05.webp",
+        "grid_position": "left",
+        "background_colour": "#ffffff",
+        "text-size": "1.25rem"
+      }
     }
   },
   "layout": "theme",
@@ -265,6 +310,7 @@
     "text_centralised_dny9wP",
     "image_text_4J8rJn",
     "image_text_WExeNQ",
-    "image_text_aYeU8M"
+    "image_text_aYeU8M",
+    "image_text_mTqmbf"
   ]
 }
