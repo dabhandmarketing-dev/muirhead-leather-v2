@@ -75,12 +75,25 @@
             "url_email": "mailto:jonathan.lord@muirhead.co.uk",
             "text_email_address": "jonathan.lord@muirhead.co.uk"
           }
+        },
+        "card_6xit6b": {
+          "type": "card",
+          "settings": {
+            "text_title": "Regional Sales Office",
+            "text_name": "Stephen Ritchie",
+            "text_position": "Sales Director Aviation",
+            "url_phone": "tel:+44 (0)7771 611 496",
+            "text_phone_number": "+44 (0)7771 611 496",
+            "url_email": "mailto:stephen.ritchie@muirhead.co.uk",
+            "text_email_address": "stephen.ritchie@muirhead.co.uk"
+          }
         }
       },
       "block_order": [
         "card_HpXweV",
         "card_iNqBB8",
-        "card_nE9yLX"
+        "card_nE9yLX",
+        "card_6xit6b"
       ],
       "name": "Contact Info",
       "settings": {}
