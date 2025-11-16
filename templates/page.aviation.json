@@ -360,6 +360,7 @@
         },
         "buttons_dtbDc3": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "url_button_link": "#",
             "text_button_text": "Learn More",
@@ -380,6 +381,45 @@
         "background_colour": "#ffffff",
         "text-size": "1.25rem"
       }
+    },
+    "image_text_gWKVBa": {
+      "type": "image_text",
+      "blocks": {
+        "headline_fmjVEV": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Improved yield"
+          }
+        },
+        "text_7H98tq": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Our industry-leading intelligent cutting technology can reduce the cost of a cut-part package by increasing the yield of parts per leather hide and minimising waste.</p>"
+          }
+        },
+        "buttons_ACkKQy": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "url_button_link": "#",
+            "text_button_text": "Learn More",
+            "url_button_link_2": "",
+            "text_button_text_2": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "headline_fmjVEV",
+        "text_7H98tq",
+        "buttons_ACkKQy"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/muirhead_sector_aviation_08.webp",
+        "grid_position": "right",
+        "background_colour": "#ffffff",
+        "text-size": "1.25rem"
+      }
     }
   },
   "layout": "theme",
@@ -397,6 +437,7 @@
     "harry_embed_GnDq9X",
     "image_text_mTqmbf",
     "image_text_ey6r3x",
-    "image_text_awHXXQ"
+    "image_text_awHXXQ",
+    "image_text_gWKVBa"
   ]
 }
