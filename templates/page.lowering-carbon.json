@@ -76,7 +76,9 @@
         "image_GmxwJw"
       ],
       "name": "Text Centralised",
-      "settings": {}
+      "settings": {
+        "text-color": "#ffffff"
+      }
     },
     "image_text_UKpNEW": {
       "type": "image_text",
@@ -90,13 +92,15 @@
         "text_RMhPdx": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>We reclaim energy from waste at our on-site thermal energy plant. And the energy we do buy in is 100% wind-derived. </p>"
+            "richtext_text": "<p>We reclaim energy from waste at our on-site thermal energy plant. And the energy we do buy in is 100% wind-derived. </p>",
+            "text-size": "1rem"
           }
         },
         "text_YPJgpJ": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>The carbon intensity of Muirhead leather is the lowest published anywhere in the world. Specifying Muirhead leather helps our clients to pursue their own low carbon targets.</p>"
+            "richtext_text": "<p>The carbon intensity of Muirhead leather is the lowest published anywhere in the world. Specifying Muirhead leather helps our clients to pursue their own low carbon targets.</p>",
+            "text-size": "1rem"
           }
         },
         "buttons_fmc4E6": {
@@ -120,7 +124,7 @@
         "image_image": "shopify://shop_images/sustainability_lowering-carbon_image_02.webp",
         "grid_position": "left",
         "background_colour": "#ffffff",
-        "text-size": "1.25rem"
+        "text-color": "#444444"
       }
     },
     "image_text_4J8rJn": {
@@ -135,7 +139,8 @@
         "text_LR9LHh": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Significant investments in circular manufacturing have made us arguably the most modern and environmentally-focused leather manufacturer in the world. As part of Scottish Leather Group, our facilities on-site include a thermal energy plant, a water ultrafiltration plant and a modern, cutting-edge tannery.</p>"
+            "richtext_text": "<p>Significant investments in circular manufacturing have made us arguably the most modern and environmentally-focused leather manufacturer in the world. As part of Scottish Leather Group, our facilities on-site include a thermal energy plant, a water ultrafiltration plant and a modern, cutting-edge tannery.</p>",
+            "text-size": "1rem"
           }
         },
         "buttons_apK8hw": {
@@ -158,7 +163,7 @@
         "image_image": "shopify://shop_images/sustainability_lowering-carbon_image_03.webp",
         "grid_position": "right",
         "background_colour": "#cad4d8",
-        "text-size": "1.25rem"
+        "text-color": "#444444"
       }
     },
     "image_text_WExeNQ": {
@@ -173,13 +178,15 @@
         "text_nMwpW9": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Our patented thermal energy plant generates heat from our process waste to power our tannery. In normal use, we reclaim enough energy to heat 5,000 households. Through our unique take-back scheme for end-of-life leather we can even use old leather to power the making of new leather.</p>"
+            "richtext_text": "<p>Our patented thermal energy plant generates heat from our process waste to power our tannery. In normal use, we reclaim enough energy to heat 5,000 households. Through our unique take-back scheme for end-of-life leather we can even use old leather to power the making of new leather.</p>",
+            "text-size": "1rem"
           }
         },
         "text_34NPPp": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>When it comes to electricity, we buy 100% from certified renewable and carbon neutral wind sources (100% REGO), and we’ve been doing it since 2017.</p>"
+            "richtext_text": "<p>When it comes to electricity, we buy 100% from certified renewable and carbon neutral wind sources (100% REGO), and we’ve been doing it since 2017.</p>",
+            "text-size": "1rem"
           }
         },
         "buttons_YDQYUy": {
@@ -203,7 +210,7 @@
         "image_image": "shopify://shop_images/sustainability_lowering-carbon_image_04_new.webp",
         "grid_position": "left",
         "background_colour": "#ffffff",
-        "text-size": "1.25rem"
+        "text-color": "#444444"
       }
     },
     "text_centralised_drfzrN": {
@@ -249,7 +256,9 @@
         "image_MQMgV6"
       ],
       "name": "Text Centralised",
-      "settings": {}
+      "settings": {
+        "text-color": "#ffffff"
+      }
     }
   },
   "layout": "theme",
