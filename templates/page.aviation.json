@@ -427,18 +427,17 @@
         "headline_PQ7C8w": {
           "type": "headline",
           "settings": {
-            "text_headline": "Improved yield"
+            "text_headline": "Bespoke lamination"
           }
         },
         "text_cjj4Hw": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Our industry-leading intelligent cutting technology can reduce the cost of a cut-part package by increasing the yield of parts per leather hide and minimising waste.</p>"
+            "richtext_text": "<p>Our lamination technology and process allow customer-specific designs and styling. Laminated seat covers also reduce the amount of foam used, saving weight and cost without compromising on comfort.</p>"
           }
         },
         "buttons_CmrBYV": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
             "url_button_link": "#",
             "text_button_text": "Learn More",
