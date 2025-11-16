@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
 </style>
             </div>
             <div title="Play Video" class="video-thumbnail">{% if section.settings.image_thumbnail %}
-{{ section.settings.image_thumbnail | image_url: width: 1000 | image_tag: class: 'thumbnail', alt: 'Triangle behind a mountain range made with structural grid like texture', sizes: '100vw', loading: 'lazy' }}
+{{ section.settings.image_thumbnail | image_url: width: 1000 | image_tag: class: 'thumbnail', alt: 'Triangle behind a mountain range made with structural grid like texture', sizes: '(max-width: 1279px) 100vw, 1280px', loading: 'lazy' }}
 {% else %}
-<img class="thumbnail" src="{{ 'GNYYghYJ-14-HD_1GNYYghYJ-14-HD.avif' | asset_url }}" alt="Triangle behind a mountain range made with structural grid like texture" sizes="100vw" loading="lazy" srcset="{{ 'GNYYghYJ-14-HD_1GNYYghYJ-14-HD.avif' | asset_url }} 500w, {{ 'GNYYghYJ-14-HD_1GNYYghYJ-14-HD.avif' | asset_url }} 1280w">
+<img class="thumbnail" src="{{ 'GNYYghYJ-14-HD_1GNYYghYJ-14-HD.avif' | asset_url }}" alt="Triangle behind a mountain range made with structural grid like texture" sizes="(max-width: 1279px) 100vw, 1280px" loading="lazy" srcset="{{ 'GNYYghYJ-14-HD_1GNYYghYJ-14-HD.avif' | asset_url }} 500w, {{ 'GNYYghYJ-14-HD_1GNYYghYJ-14-HD.avif' | asset_url }} 1280w">
 {% endif %}
               <div class="play-icon-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
                   <path class="stroke-solid" fill="none" stroke="currentColor" d="M49.9 2.5C23.6 2.8 2.1 24.4 2.5 50.4 2.9 76.5 24.7 98 50.3 97.5c26.4-.6 47.4-21.8 47.2-47.7-.2-26.1-21.8-47.5-47.6-47.3"></path>
@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <div id="video-embed" style="padding-top:56.17021276595745%" class="w-embed-youtubevideo video-embed"><iframe src="https://www.youtube-nocookie.com/embed/GNYYghYJ-14?rel=0&controls=1&autoplay=0&mute=0&start=0" frameborder="0" style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto" allow="autoplay; encrypted-media" allowfullscreen="" title=""></iframe></div>
           </div>
+          <div class="_2rem-spacer"></div>
         </div> {% schema %} {
     "tag": "div",
     "name": "Video Hero",
