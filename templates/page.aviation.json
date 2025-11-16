@@ -80,6 +80,42 @@
       "type": "dotted_sides",
       "name": "Dotted Sides",
       "settings": {}
+    },
+    "text_centralised_tFqiLX": {
+      "type": "text_centralised",
+      "blocks": {
+        "heading_kEjatM": {
+          "type": "heading",
+          "settings": {
+            "text_heading": "Lowest Carbon Leather"
+          }
+        },
+        "text_9pHe7J": {
+          "type": "text",
+          "settings": {
+            "richtext_richtext": "<p>\n                    Significant investments in circular manufacturing have made us arguably the most environmentally-focused leather manufacturer in the world. \n                  </p>"
+          }
+        },
+        "button_NqpxFC": {
+          "type": "button",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Learn More"
+          }
+        },
+        "image_JNmnfd": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_kEjatM",
+        "text_9pHe7J",
+        "button_NqpxFC",
+        "image_JNmnfd"
+      ],
+      "name": "Text Centralised",
+      "settings": {}
     }
   },
   "layout": "theme",
@@ -89,6 +125,7 @@
     "heading_large_ar6nE3",
     "text_stitching_secti_kLj66k",
     "image_text_UKpNEW",
-    "dotted_sides_kdkFRj"
+    "dotted_sides_kdkFRj",
+    "text_centralised_tFqiLX"
   ]
 }
