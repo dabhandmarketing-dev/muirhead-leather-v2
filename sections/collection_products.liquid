@@ -21,7 +21,7 @@
                         {% for filter in collection.filters %}    <div li-for="filter in collection.filters" class="filter_filter-group">
                                     
                           
-                            {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1">
+                            {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1" class="div-block-762">
     
                             <div class="filters_group-header">
                               <div>Filters</div>
@@ -141,7 +141,16 @@
                   </div>
                 </div>
                 <div class="filter_product-list-wrapper w-dyn-list">
-                  
+                  <div role="list" class="filter_product-list w-dyn-items" style="display: grid; grid-template-columns: repeat({{ section.settings.desktop-columns }}, 1fr); gap: 20px; @media (max-width: 991px) { grid-template-columns: repeat(4, 1fr); } @media (max-width: 767px) { grid-template-columns: repeat(1, 1fr); }">
+                    {% for product in collection.products %}    <div li-for="product in collection.products" role="listitem" class="filter_product-list-item w-dyn-item">
+                                    
+                      
+                            {% render 'product_item', product: product %}
+                            
+                    
+                        </div>
+{% endfor %}
+                  </div>
                   {% if collection.products == blank %}    <div li-if="collection.products == blank" class="filter_empty w-dyn-empty">
     
                     <div class="heading-style-h6">No results found.</div>
@@ -256,16 +265,12 @@
         },
         {
             "type": "header",
-            "content": "desktop-columns"
-        },
-        {
-            "type": "header",
-            "content": "Grid"
+            "content": "grid-columns"
         },
         {
             "type": "select",
-            "id": "desktop-columns",
-            "label": "How Many Columns - Desktop",
+            "id": "grid-columns",
+            "label": "Grid Columns",
             "options": [
                 {
                     "value": "2",
