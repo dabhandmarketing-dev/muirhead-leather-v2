@@ -56,13 +56,15 @@
         "text_RMhPdx": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>From luxury airlines to budget carriers, aviation brands the world over trust Muirhead Leather's technical performance, durability, natural beauty and easy-to-clean, antibacterial properties. They are also impressed by our market-leading warranty.</p>"
+            "richtext_text": "<p>From luxury airlines to budget carriers, aviation brands the world over trust Muirhead Leather's technical performance, durability, natural beauty and easy-to-clean, antibacterial properties. They are also impressed by our market-leading warranty.</p>",
+            "text-size": "1rem"
           }
         },
         "text_YPJgpJ": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Muirhead is the global market leader supplying more than 160 airlines, airframe and seating manufacturers across 60 countries. Unique ownership of the full end-to-end process gives us complete control of the supply chain and manufacturing process.</p>"
+            "richtext_text": "<p>Muirhead is the global market leader supplying more than 160 airlines, airframe and seating manufacturers across 60 countries. Unique ownership of the full end-to-end process gives us complete control of the supply chain and manufacturing process.</p>",
+            "text-size": "1rem"
           }
         },
         "buttons_fmc4E6": {
@@ -86,7 +88,7 @@
         "image_image": "shopify://shop_images/muirhead_sector_aviation_01_new.webp",
         "grid_position": "left",
         "background_colour": "#ffffff",
-        "text-size": "1.25rem"
+        "text-color": "#444444"
       }
     },
     "text_centralised_dny9wP": {
@@ -123,7 +125,9 @@
         "image_GmxwJw"
       ],
       "name": "Text Centralised",
-      "settings": {}
+      "settings": {
+        "text-color": "#444444"
+      }
     },
     "image_text_4J8rJn": {
       "type": "image_text",
@@ -137,7 +141,8 @@
         "text_LR9LHh": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Aviation materials need to meet the highest technical performance standards in the world and our leather exceeds them all. Flame retardancy, vertical burn times, heat distribution, pressure distribution, passenger wear, colour fastness and more are guaranteed by our cutting-edge, world-class technology.</p>"
+            "richtext_text": "<p>Aviation materials need to meet the highest technical performance standards in the world and our leather exceeds them all. Flame retardancy, vertical burn times, heat distribution, pressure distribution, passenger wear, colour fastness and more are guaranteed by our cutting-edge, world-class technology.</p>",
+            "text-size": "1rem"
           }
         },
         "buttons_apK8hw": {
@@ -160,7 +165,7 @@
         "image_image": "shopify://shop_images/muirhead_sector_aviation_03.webp",
         "grid_position": "right",
         "background_colour": "#ffffff",
-        "text-size": "1.25rem"
+        "text-color": "#444444"
       }
     },
     "image_text_WExeNQ": {
@@ -175,13 +180,15 @@
         "text_nMwpW9": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Most of our 160-plus aviation customers require a bespoke, high performance leather that is custom-made and colour-matched, and the Muirhead team has the specialist expertise to meet those requirements perfectly.</p>"
+            "richtext_text": "<p>Most of our 160-plus aviation customers require a bespoke, high performance leather that is custom-made and colour-matched, and the Muirhead team has the specialist expertise to meet those requirements perfectly.</p>",
+            "text-size": "1rem"
           }
         },
         "text_34NPPp": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Working with our natural raw materials, we create a unique finish that can also incorporate our in-house embossing, debossing, semi-perforation and even digital printing services.</p>"
+            "richtext_text": "<p>Working with our natural raw materials, we create a unique finish that can also incorporate our in-house embossing, debossing, semi-perforation and even digital printing services.</p>",
+            "text-size": "1rem"
           }
         },
         "buttons_YDQYUy": {
@@ -205,7 +212,7 @@
         "image_image": "shopify://shop_images/muirhead_sector_aviation_04.webp",
         "grid_position": "left",
         "background_colour": "#ffffff",
-        "text-size": "1.25rem"
+        "text-color": "#444444"
       }
     },
     "image_text_aYeU8M": {
@@ -220,13 +227,15 @@
         "text_QwniYJ": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Innovation takes our leather to new heights. </p><p>Our LightCore™ full-substance leather reduces cabin weight, while our anti-soil, anti-stain CareGuard™ (ISO 105 A02) lets you choose lighter colours without increased cleaning costs. </p>"
+            "richtext_text": "<p>Innovation takes our leather to new heights. </p><p>Our LightCore™ full-substance leather reduces cabin weight, while our anti-soil, anti-stain CareGuard™ (ISO 105 A02) lets you choose lighter colours without increased cleaning costs. </p>",
+            "text-size": "1rem"
           }
         },
         "text_GCWjUx": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>And our ActiveHygiene leather reduces viruses (including SARS-2-CoV-2) by more than 99% within 24 hours on the material. We also offer state-of-the-art speciality lamination.</p>"
+            "richtext_text": "<p>And our ActiveHygiene leather reduces viruses (including SARS-2-CoV-2) by more than 99% within 24 hours on the material. We also offer state-of-the-art speciality lamination.</p>",
+            "text-size": "1rem"
           }
         },
         "buttons_RDxf43": {
@@ -250,7 +259,7 @@
         "image_image": "shopify://shop_images/muirhead_sector_aviation_05.webp",
         "grid_position": "right",
         "background_colour": "#ffffff",
-        "text-size": "1.25rem"
+        "text-color": "#444444"
       }
     },
     "harry_embed_GnDq9X": {
@@ -272,13 +281,15 @@
         "text_znJYiP": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Our world-class, in-house testing facility ensures our aviation leather passes all airworthiness specifications and meets the most stringent Civil Aviation Authority regulations. We test and certify in-house for corrosion, flame retardancy, vertical burn, smoke density/toxicity and much more. </p>"
+            "richtext_text": "<p>Our world-class, in-house testing facility ensures our aviation leather passes all airworthiness specifications and meets the most stringent Civil Aviation Authority regulations. We test and certify in-house for corrosion, flame retardancy, vertical burn, smoke density/toxicity and much more. </p>",
+            "text-size": "1rem"
           }
         },
         "text_UbYzHf": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>We deliver industry-leading corrosion testing (ASTM 1611) and flame retardancy. Our in-house testing laboratory is UKAS accredited to carry out FAA 25.853, Vertical Burn and ABD0031 Smoke Density and Toxicity tasting (BSI ISO 17025:2005).</p>"
+            "richtext_text": "<p>We deliver industry-leading corrosion testing (ASTM 1611) and flame retardancy. Our in-house testing laboratory is UKAS accredited to carry out FAA 25.853, Vertical Burn and ABD0031 Smoke Density and Toxicity tasting (BSI ISO 17025:2005).</p>",
+            "text-size": "1rem"
           }
         },
         "buttons_ndFy8K": {
@@ -302,7 +313,7 @@
         "image_image": "shopify://shop_images/muirhead_sector_aviation_06.webp",
         "grid_position": "left",
         "background_colour": "#cad4d8",
-        "text-size": "1.25rem"
+        "text-color": "#444444"
       }
     },
     "image_text_ey6r3x": {
@@ -317,7 +328,8 @@
         "text_CUxiNg": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>As a pioneer of high quality leather seat cover design and manufacturing, Muirhead also explores and adapts trends from other industries, elevating airline cabin aesthetics. </p>"
+            "richtext_text": "<p>As a pioneer of high quality leather seat cover design and manufacturing, Muirhead also explores and adapts trends from other industries, elevating airline cabin aesthetics. </p>",
+            "text-size": "1rem"
           }
         },
         "buttons_3yXbwy": {
@@ -340,7 +352,7 @@
         "image_image": "shopify://shop_images/muirhead_sector_aviation_07.webp",
         "grid_position": "right",
         "background_colour": "#ffffff",
-        "text-size": "1.25rem"
+        "text-color": "#444444"
       }
     },
     "image_text_awHXXQ": {
@@ -355,7 +367,8 @@
         "text_dUUUr9": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Our design and technology experts use the most advanced methods and techniques to interpret the creative direction of designers, seat manufacturers and airlines, and adapt reliably and quickly to fast-moving technical innovations, industry standards and customer requirements. </p>"
+            "richtext_text": "<p>Our design and technology experts use the most advanced methods and techniques to interpret the creative direction of designers, seat manufacturers and airlines, and adapt reliably and quickly to fast-moving technical innovations, industry standards and customer requirements. </p>",
+            "text-size": "1rem"
           }
         },
         "buttons_dtbDc3": {
@@ -379,7 +392,7 @@
         "image_image": "shopify://shop_images/muirhead_sector_aviation_08.webp",
         "grid_position": "left",
         "background_colour": "#ffffff",
-        "text-size": "1.25rem"
+        "text-color": "#444444"
       }
     },
     "image_text_gWKVBa": {
@@ -394,7 +407,8 @@
         "text_7H98tq": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Our industry-leading intelligent cutting technology can reduce the cost of a cut-part package by increasing the yield of parts per leather hide and minimising waste.</p>"
+            "richtext_text": "<p>Our industry-leading intelligent cutting technology can reduce the cost of a cut-part package by increasing the yield of parts per leather hide and minimising waste.</p>",
+            "text-size": "1rem"
           }
         },
         "buttons_ACkKQy": {
@@ -415,10 +429,10 @@
       ],
       "name": "Image Text",
       "settings": {
-        "image_image": "shopify://shop_images/muirhead_sector_aviation_08.webp",
+        "image_image": "shopify://shop_images/muirhead_sector_aviation_09.webp",
         "grid_position": "right",
         "background_colour": "#ffffff",
-        "text-size": "1.25rem"
+        "text-color": "#444444"
       }
     },
     "image_text_tAB74R": {
@@ -433,7 +447,8 @@
         "text_cjj4Hw": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Our lamination technology and process allow customer-specific designs and styling. Laminated seat covers also reduce the amount of foam used, saving weight and cost without compromising on comfort.</p>"
+            "richtext_text": "<p>Our lamination technology and process allow customer-specific designs and styling. Laminated seat covers also reduce the amount of foam used, saving weight and cost without compromising on comfort.</p>",
+            "text-size": "1rem"
           }
         },
         "buttons_CmrBYV": {
@@ -456,7 +471,7 @@
         "image_image": "shopify://shop_images/muirhead_sector_aviation_10.webp",
         "grid_position": "left",
         "background_colour": "#53565a",
-        "text-size": "1.25rem"
+        "text-color": "#444444"
       }
     },
     "image_text_RtzW39": {
@@ -471,7 +486,8 @@
         "text_6tq6mk": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>We offer a one-stop shop for leather covers, simplifying the supply chain, and operate a dedicated high quality, high volume factory in Guangzhou, China, built using the same state-of-the-art equipment we employ in the UK. </p>"
+            "richtext_text": "<p>We offer a one-stop shop for leather covers, simplifying the supply chain, and operate a dedicated high quality, high volume factory in Guangzhou, China, built using the same state-of-the-art equipment we employ in the UK. </p>",
+            "text-size": "1rem"
           }
         },
         "buttons_rFCCdw": {
@@ -494,7 +510,7 @@
         "image_image": "shopify://shop_images/muirhead_sector_aviation_11_1.webp",
         "grid_position": "right",
         "background_colour": "#ffffff",
-        "text-size": "1.25rem"
+        "text-color": "#444444"
       }
     }
   },
