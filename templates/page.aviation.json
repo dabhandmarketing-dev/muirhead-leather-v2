@@ -200,6 +200,51 @@
         "background_colour": "#ffffff",
         "text-size": "1.25rem"
       }
+    },
+    "image_text_aYeU8M": {
+      "type": "image_text",
+      "blocks": {
+        "headline_FYx8yp": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "The sky's the limit"
+          }
+        },
+        "text_QwniYJ": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Innovation takes our leather to new heights. </p><p>Our LightCore™ full-substance leather reduces cabin weight, while our anti-soil, anti-stain CareGuard™ (ISO 105 A02) lets you choose lighter colours without increased cleaning costs. </p>"
+          }
+        },
+        "text_GCWjUx": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>And our ActiveHygiene leather reduces viruses (including SARS-2-CoV-2) by more than 99% within 24 hours on the material. We also offer state-of-the-art speciality lamination.</p>"
+          }
+        },
+        "buttons_RDxf43": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "#",
+            "text_button_text": "Learn More",
+            "url_button_link_2": "",
+            "text_button_text_2": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "headline_FYx8yp",
+        "text_QwniYJ",
+        "text_GCWjUx",
+        "buttons_RDxf43"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/muirhead_sector_aviation_05.webp",
+        "grid_position": "right",
+        "background_colour": "#ffffff",
+        "text-size": "1.25rem"
+      }
     }
   },
   "layout": "theme",
@@ -212,6 +257,7 @@
     "image_text_UKpNEW",
     "text_centralised_dny9wP",
     "image_text_4J8rJn",
-    "image_text_WExeNQ"
+    "image_text_WExeNQ",
+    "image_text_aYeU8M"
   ]
 }
