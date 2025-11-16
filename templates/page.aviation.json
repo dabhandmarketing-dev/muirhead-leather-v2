@@ -105,7 +105,9 @@
         },
         "image_JNmnfd": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image_image": "shopify://shop_images/muirhead_sector_aviation_02.webp"
+          }
         }
       },
       "block_order": [
