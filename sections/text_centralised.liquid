@@ -1,9 +1,4 @@
-<div li-content-for-blocks="" class="padding-section-medium">
-{% for block in section.blocks %}
-{% case block.type %}
-{% when '@app' %}
-{% render block %}
-
+<div class="padding-section-medium">
           <div class="padding-global">
             <div li-content-for-blocks="" class="container-small">
 {% for block in section.blocks %}
@@ -11,7 +6,12 @@
 {% when '@app' %}
 {% render block %}
 
-              <div class="text-align-center _2rem-spacing">
+              <div li-content-for-blocks="" class="text-align-center _2rem-spacing">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
                 {% when 'heading' %}
             <div li-block="Heading">
                     
@@ -46,16 +46,16 @@
 <img src="{{ 'muirhead_sector_aviation_02.webp' | asset_url }}" alt="" sizes="(max-width: 767px) 100vw, 638.0034790039062px" loading="lazy" srcset="{{ 'muirhead_sector_aviation_02.webp' | asset_url }} 500w, {{ 'muirhead_sector_aviation_02.webp' | asset_url }} 638w">
 {% endif %}
                 </div>
-              </div>
+              {% endcase %}
+{% endfor %}
+
+    </div>
             {% endcase %}
 {% endfor %}
 
     </div>
           </div>
-        {% endcase %}
-{% endfor %}
-
-    </div> {% schema %} {
+        </div> {% schema %} {
     "tag": "div",
     "name": "Text Centralised",
     "class": "section charcoal",
