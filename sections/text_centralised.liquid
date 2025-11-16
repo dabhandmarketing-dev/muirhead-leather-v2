@@ -36,9 +36,9 @@
                 {% when 'image' %}
             <div li-block="Image">
                     {% if block.settings.image_image %}
-{{ block.settings.image_image | image_url: width: 1000 | image_tag: sizes: '(max-width: 767px) 100vw, 638.0034790039062px', loading: 'lazy' }}
+{{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'image-large', sizes: '(max-width: 767px) 100vw, 638.0034790039062px', loading: 'lazy' }}
 {% else %}
-<img src="{{ 'muirhead_sector_aviation_02.webp' | asset_url }}" alt="" sizes="(max-width: 767px) 100vw, 638.0034790039062px" loading="lazy" srcset="{{ 'muirhead_sector_aviation_02.webp' | asset_url }} 500w, {{ 'muirhead_sector_aviation_02.webp' | asset_url }} 638w">
+<img class="image-large" src="{{ 'muirhead_sector_aviation_02.webp' | asset_url }}" alt="" sizes="(max-width: 767px) 100vw, 638.0034790039062px" loading="lazy" srcset="{{ 'muirhead_sector_aviation_02.webp' | asset_url }} 500w, {{ 'muirhead_sector_aviation_02.webp' | asset_url }} 638w">
 {% endif %}
                 </div>
               {% endcase %}
