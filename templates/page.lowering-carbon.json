@@ -227,15 +227,25 @@
             "richtext_richtext": "<p>LCA measures impact of production as CO₂e/m², our LCA of 8kg is the lowest in the world published for leather.</p>"
           }
         },
+        "button_gLPwBw": {
+          "type": "button",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "View our latest ESG Report"
+          }
+        },
         "image_MQMgV6": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image_image": "shopify://shop_images/muirhead-lca2025-v4.webp"
+          }
         }
       },
       "block_order": [
         "heading_yt8JXJ",
         "text_QJYyGq",
         "text_7zmgmT",
+        "button_gLPwBw",
         "image_MQMgV6"
       ],
       "name": "Text Centralised",
