@@ -14,9 +14,9 @@
       "name": "Page Heading",
       "settings": {}
     },
-    "collection_gifts_rcPtTU": {
-      "type": "collection_gifts",
-      "name": "Collection Gifts",
+    "collection_gifts_a_irHEqa": {
+      "type": "collection_gifts_a",
+      "name": "Collection (Gifts) A",
       "settings": {}
     }
   },
@@ -24,6 +24,6 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "page_heading_w4V3gw",
-    "collection_gifts_rcPtTU"
+    "collection_gifts_a_irHEqa"
   ]
 }
