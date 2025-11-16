@@ -133,12 +133,6 @@
             "richtext_text": "<p>Aviation materials need to meet the highest technical performance standards in the world and our leather exceeds them all. Flame retardancy, vertical burn times, heat distribution, pressure distribution, passenger wear, colour fastness and more are guaranteed by our cutting-edge, world-class technology.</p>"
           }
         },
-        "text_WePjg8": {
-          "type": "text",
-          "settings": {
-            "richtext_text": "<p>Muirhead is the global market leader supplying more than 160 airlines, airframe and seating manufacturers across 60 countries. Unique ownership of the full end-to-end process gives us complete control of the supply chain and manufacturing process.</p>"
-          }
-        },
         "buttons_apK8hw": {
           "type": "buttons",
           "settings": {
@@ -152,7 +146,6 @@
       "block_order": [
         "headline_KRbpVH",
         "text_LR9LHh",
-        "text_WePjg8",
         "buttons_apK8hw"
       ],
       "name": "Image Text",
@@ -160,7 +153,52 @@
         "image_image": "shopify://shop_images/muirhead_sector_aviation_03.webp",
         "grid_position": "right",
         "background_colour": "#ffffff",
-        "text-size": "1rem"
+        "text-size": "1.25rem"
+      }
+    },
+    "image_text_WExeNQ": {
+      "type": "image_text",
+      "blocks": {
+        "headline_ERPzp3": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "One of a kind"
+          }
+        },
+        "text_nMwpW9": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Most of our 160-plus aviation customers require a bespoke, high performance leather that is custom-made and colour-matched, and the Muirhead team has the specialist expertise to meet those requirements perfectly.</p>"
+          }
+        },
+        "text_34NPPp": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Working with our natural raw materials, we create a unique finish that can also incorporate our in-house embossing, debossing, semi-perforation and even digital printing services.</p>"
+          }
+        },
+        "buttons_YDQYUy": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "#",
+            "text_button_text": "Learn More",
+            "url_button_link_2": "",
+            "text_button_text_2": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "headline_ERPzp3",
+        "text_nMwpW9",
+        "text_34NPPp",
+        "buttons_YDQYUy"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/muirhead_sector_aviation_03.webp",
+        "grid_position": "left",
+        "background_colour": "#ffffff",
+        "text-size": "1.25rem"
       }
     }
   },
@@ -173,6 +211,7 @@
     "text_stitching_secti_kLj66k",
     "image_text_UKpNEW",
     "text_centralised_dny9wP",
-    "image_text_4J8rJn"
+    "image_text_4J8rJn",
+    "image_text_WExeNQ"
   ]
 }
