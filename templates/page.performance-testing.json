@@ -125,19 +125,13 @@
         "headline_ERPzp3": {
           "type": "headline",
           "settings": {
-            "text_headline": "Circular manufacturing"
+            "text_headline": "Performance benchmarking"
           }
         },
         "text_nMwpW9": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Our patented thermal energy plant generates heat from our process waste to power our tannery. In normal use, we reclaim enough energy to heat 5,000 households. Through our unique take-back scheme for end-of-life leather we can even use old leather to power the making of new leather.</p>"
-          }
-        },
-        "text_34NPPp": {
-          "type": "text",
-          "settings": {
-            "richtext_text": "<p>When it comes to electricity, we buy 100% from certified renewable and carbon neutral wind sources (100% REGO), and we’ve been doing it since 2017.</p>"
+            "richtext_text": "<p>Continuous testing ensures that Muirhead leather delivers on its performance promises. We can benchmark against competitors and verify that leather aligns with specific needs. And we use internationally recognised methods in the aviation, passenger transport and furnishing industries.</p>"
           }
         },
         "buttons_YDQYUy": {
@@ -153,13 +147,47 @@
       "block_order": [
         "headline_ERPzp3",
         "text_nMwpW9",
-        "text_34NPPp",
         "buttons_YDQYUy"
       ],
       "name": "Image Text",
       "settings": {
         "image_image": "shopify://shop_images/sustainability_lowering-carbon_image_04_new.webp",
         "grid_position": "left",
+        "background_colour": "#ffffff",
+        "text-size": "1.25rem"
+      }
+    },
+    "image_text_pnypEn": {
+      "type": "image_text",
+      "blocks": {
+        "headline_8TDLC9": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Certifications, accreditations and approvals"
+          }
+        },
+        "text_PTBqTV": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Our Laboratory can provide testing for strength, stretch, flexibility, rub and abrasion characteristics as well as fastness and soil resistance. Our Laboratory is UKAS accredited per ISO 17025 to carry out FAA 25.853 appendix F pt.1 Vertical Flame testing and ABD0031 issue F Smoke Density & ABD0031 issue F para 7.4 Toxicity testing.  View and download our<a href=\"https://www.ukas.com/download-schedule/4221/Testing/\" target=\"_blank\" title=\"UKAS Schedule of Accreditation\">UKAS Schedule of Accreditation</a>.</p>"
+          }
+        },
+        "text_i7Vfy4": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>We also hold certifications to AS/EN 9100, ISO 9001, IATF 16949, ISO 14001, ISO 45001, ISO 50001, BS EN 1021-1 and BS EN 1021-2. In addition, we have Marine Equipment Directive (MED) Approval and Vehicle Certification Authority (VCA) Type Approvals.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "headline_8TDLC9",
+        "text_PTBqTV",
+        "text_i7Vfy4"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/cefadce4-874a-40a8-8585-46f659bb69ef.webp",
+        "grid_position": "right",
         "background_colour": "#ffffff",
         "text-size": "1.25rem"
       }
@@ -220,6 +248,7 @@
     "image_text_UKpNEW",
     "image_text_4J8rJn",
     "image_text_WExeNQ",
+    "image_text_pnypEn",
     "text_centralised_drfzrN"
   ]
 }
