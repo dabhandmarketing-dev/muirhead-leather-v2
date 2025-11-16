@@ -41,7 +41,13 @@
         "text_RMhPdx": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>From luxury airlines to budget carriers, aviation brands the world over trust Muirhead Leather's technical performance, durability, natural beauty and easy-to-clean, antibacterial properties. They are also impressed by our market-leading warranty.</p><p></p><p>Muirhead is the global market leader supplying more than 160 airlines, airframe and seating manufacturers across 60 countries. Unique ownership of the full end-to-end process gives us complete control of the supply chain and manufacturing process.</p>"
+            "richtext_text": "<p>From luxury airlines to budget carriers, aviation brands the world over trust Muirhead Leather's technical performance, durability, natural beauty and easy-to-clean, antibacterial properties. They are also impressed by our market-leading warranty.</p>"
+          }
+        },
+        "text_YPJgpJ": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Muirhead is the global market leader supplying more than 160 airlines, airframe and seating manufacturers across 60 countries. Unique ownership of the full end-to-end process gives us complete control of the supply chain and manufacturing process.</p>"
           }
         },
         "buttons_fmc4E6": {
@@ -56,6 +62,7 @@
       },
       "block_order": [
         "text_RMhPdx",
+        "text_YPJgpJ",
         "buttons_fmc4E6"
       ],
       "name": "Image Text",
