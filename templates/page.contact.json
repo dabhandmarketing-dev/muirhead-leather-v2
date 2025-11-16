@@ -62,11 +62,24 @@
             "url_email": "mailto:kevin.smith@muirhead.co.uk",
             "text_email_address": "kevin.smith@muirhead.co.uk"
           }
+        },
+        "card_nE9yLX": {
+          "type": "card",
+          "settings": {
+            "text_title": "Head Sales Office",
+            "text_name": "Jonathan Lord",
+            "text_position": "Head of Sales Upholstery Leather and Custom Projects",
+            "url_phone": "tel:+44 (0) 7540 100 186",
+            "text_phone_number": "+44 (0) 7540 100 186",
+            "url_email": "mailto:jonathan.lord@muirhead.co.uk",
+            "text_email_address": "jonathan.lord@muirhead.co.uk"
+          }
         }
       },
       "block_order": [
         "card_HpXweV",
-        "card_iNqBB8"
+        "card_iNqBB8",
+        "card_nE9yLX"
       ],
       "name": "Contact Info",
       "settings": {}
