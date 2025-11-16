@@ -325,8 +325,8 @@
       "settings": {
         "image_image": "shopify://shop_images/muirhead_home_01_1.webp",
         "grid_position": "right",
-        "background_colour": "#ffffff",
-        "text-color": "#444444"
+        "background_colour": "#053e51",
+        "text-color": "#ffffff"
       }
     }
   },
