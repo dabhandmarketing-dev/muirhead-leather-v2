@@ -458,6 +458,44 @@
         "background_colour": "#53565a",
         "text-size": "1.25rem"
       }
+    },
+    "image_text_RtzW39": {
+      "type": "image_text",
+      "blocks": {
+        "headline_BdMPiR": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Seat cover manufacturing "
+          }
+        },
+        "text_6tq6mk": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>We offer a one-stop shop for leather covers, simplifying the supply chain, and operate a dedicated high quality, high volume factory in Guangzhou, China, built using the same state-of-the-art equipment we employ in the UK. </p>"
+          }
+        },
+        "buttons_rFCCdw": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "#",
+            "text_button_text": "Learn More",
+            "url_button_link_2": "",
+            "text_button_text_2": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "headline_BdMPiR",
+        "text_6tq6mk",
+        "buttons_rFCCdw"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/muirhead_sector_aviation_10.webp",
+        "grid_position": "right",
+        "background_colour": "#ffffff",
+        "text-size": "1.25rem"
+      }
     }
   },
   "layout": "theme",
@@ -477,6 +515,7 @@
     "image_text_ey6r3x",
     "image_text_awHXXQ",
     "image_text_gWKVBa",
-    "image_text_tAB74R"
+    "image_text_tAB74R",
+    "image_text_RtzW39"
   ]
 }
