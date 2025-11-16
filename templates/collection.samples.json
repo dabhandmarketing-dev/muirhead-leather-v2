@@ -14,8 +14,8 @@
       "name": "Page Heading",
       "settings": {}
     },
-    "collection_samples_a_axrwWX": {
-      "type": "collection_samples_a",
+    "collection_samples_6hcQcV": {
+      "type": "collection_samples",
       "name": "Collection (Samples)",
       "settings": {}
     }
@@ -24,6 +24,6 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "page_heading_w4V3gw",
-    "collection_samples_a_axrwWX"
+    "collection_samples_6hcQcV"
   ]
 }
