@@ -78,41 +78,6 @@
       "name": "Text Centralised",
       "settings": {}
     },
-    "text_centralised_drfzrN": {
-      "type": "text_centralised",
-      "blocks": {
-        "heading_yt8JXJ": {
-          "type": "heading",
-          "settings": {
-            "text_heading": "Lowest carbon leather"
-          }
-        },
-        "text_QJYyGq": {
-          "type": "text",
-          "settings": {
-            "richtext_richtext": "<p>We make the world’s lowest-carbon leather. Since 2003, we have significantly reduced the carbon intensity of our leather per hide from 10.9kg CO₂e/m² to 1.4kg CO₂e/m² per hide in 2023 and we’re constantly innovating to improve on that even further. </p>"
-          }
-        },
-        "text_7zmgmT": {
-          "type": "text",
-          "settings": {
-            "richtext_richtext": "<p>Our patented circular manufacturing process incorporates energy recovery, water re-use, renewable energy, locally sourced (and traceable) rawhides, and even a unique take-back scheme for end-of-life leather.</p>"
-          }
-        },
-        "image_MQMgV6": {
-          "type": "image",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_yt8JXJ",
-        "text_QJYyGq",
-        "text_7zmgmT",
-        "image_MQMgV6"
-      ],
-      "name": "Text Centralised",
-      "settings": {}
-    },
     "image_text_UKpNEW": {
       "type": "image_text",
       "blocks": {
@@ -240,6 +205,41 @@
         "background_colour": "#ffffff",
         "text-size": "1.25rem"
       }
+    },
+    "text_centralised_drfzrN": {
+      "type": "text_centralised",
+      "blocks": {
+        "heading_yt8JXJ": {
+          "type": "heading",
+          "settings": {
+            "text_heading": "Life cycle analysis"
+          }
+        },
+        "text_QJYyGq": {
+          "type": "text",
+          "settings": {
+            "richtext_richtext": "<p>We take pride in measuring and publishing our impacts. We use an ISO-accredited Life Cycle Analysis (LCA) to account for our carbon footprint. The LCA quantifies the GWP100 (and other) impacts of all our direct activities, including the influence of upstream farming.</p>"
+          }
+        },
+        "text_7zmgmT": {
+          "type": "text",
+          "settings": {
+            "richtext_richtext": "<p>LCA measures impact of production as CO₂e/m², our LCA of 8kg is the lowest in the world published for leather.</p>"
+          }
+        },
+        "image_MQMgV6": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_yt8JXJ",
+        "text_QJYyGq",
+        "text_7zmgmT",
+        "image_MQMgV6"
+      ],
+      "name": "Text Centralised",
+      "settings": {}
     }
   },
   "layout": "theme",
