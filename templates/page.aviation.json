@@ -67,6 +67,7 @@
       ],
       "name": "Image Text",
       "settings": {
+        "image_image": "shopify://shop_images/muirhead_sector_aviation_01_new.webp",
         "grid_position": "left",
         "background_colour": "#ffffff"
       }
