@@ -297,6 +297,11 @@
         "background_colour": "#ffffff",
         "text-size": "1.25rem"
       }
+    },
+    "video_hero_WNVc7J": {
+      "type": "video_hero",
+      "name": "Video Hero",
+      "settings": {}
     }
   },
   "layout": "theme",
@@ -311,6 +316,7 @@
     "image_text_4J8rJn",
     "image_text_WExeNQ",
     "image_text_aYeU8M",
-    "image_text_mTqmbf"
+    "image_text_mTqmbf",
+    "video_hero_WNVc7J"
   ]
 }
