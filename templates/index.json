@@ -189,6 +189,22 @@
         "text-color": "#000000"
       }
     },
+    "harry_embed_eLm6NJ": {
+      "type": "harry_embed",
+      "disabled": true,
+      "name": "Harry Embed",
+      "settings": {
+        "video": "https://youtu.be/u31qwQUeGuM?si=duKhhDTi6eP2bzm7"
+      }
+    },
+    "harry_sv_yG4HdW": {
+      "type": "harry_sv",
+      "disabled": true,
+      "name": "Harry SV",
+      "settings": {
+        "video": "shopify://files/videos/Placeholder video.mp4"
+      }
+    },
     "video_hero_WrMVQn": {
       "type": "video_hero",
       "name": "Video Hero",
@@ -273,20 +289,6 @@
         "background_colour": "#ffffff",
         "text-color": "#444444"
       }
-    },
-    "harry_sv_yG4HdW": {
-      "type": "harry_sv",
-      "name": "Harry SV",
-      "settings": {
-        "video": "shopify://files/videos/Placeholder video.mp4"
-      }
-    },
-    "harry_embed_eLm6NJ": {
-      "type": "harry_embed",
-      "name": "Harry Embed",
-      "settings": {
-        "video": "https://youtu.be/u31qwQUeGuM?si=duKhhDTi6eP2bzm7"
-      }
     }
   },
   "layout": "theme",
@@ -296,10 +298,10 @@
     "text_stitching_secti_FQw7t6",
     "scroll_image_Ch4Arw",
     "scroll_image_3Y7xEC",
+    "harry_embed_eLm6NJ",
+    "harry_sv_yG4HdW",
     "video_hero_WrMVQn",
     "image_text_nGNxXC",
-    "image_text_MnABaL",
-    "harry_sv_yG4HdW",
-    "harry_embed_eLm6NJ"
+    "image_text_MnABaL"
   ]
 }
