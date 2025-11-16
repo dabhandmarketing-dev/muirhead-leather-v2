@@ -15,11 +15,14 @@
                     
                     
                     <div class="contact-card">
-                      <div class="text-size-regular text-weight-bold">
+                      <div class="text-size-regular">
 {{ block.settings.text_title }}
 </div>
+                      <div class="text-size-regular text-weight-bold">
+{{ block.settings.text_name }}
+</div>
                       <div class="text-size-regular">
-{{ block.settings.text_job_description }}
+{{ block.settings.text_position }}
 </div>
                       <a href="{{ block.settings.url_phone }}" class="w-inline-block"> <div class="text-size-regular text-weight-bold">{{ block.settings.text_phone_number }}</div> </a>
                       <a href="{{ block.settings.url_email }}" class="w-inline-block"> <div class="text-size-regular text-weight-bold">{{ block.settings.text_email_address }}</div> </a>
@@ -51,10 +54,16 @@
                     "default": "Head Sales Office"
                 },
                 {
-                    "id": "text_job_description",
+                    "id": "text_name",
                     "type": "text",
-                    "label": "Job Description",
-                    "default": "Myles Hobbs Aviation Director | EMEA\/The Americas"
+                    "label": "Name",
+                    "default": "Myles Hobbs "
+                },
+                {
+                    "id": "text_position",
+                    "type": "text",
+                    "label": "Position",
+                    "default": "Aviation Director | EMEA\/The Americas"
                 },
                 {
                     "id": "url_phone",
