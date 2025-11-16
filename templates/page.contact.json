@@ -114,6 +114,19 @@
             "url_email": "mailto:jon.jones@muirhead.co.uk",
             "text_email_address": "jon.jones@muirhead.co.uk"
           }
+        },
+        "card_RaATwr": {
+          "type": "card",
+          "name": "Douglass Interior Products",
+          "settings": {
+            "text_title": "Regional Stockist The Americas",
+            "text_name": "Douglass Interior Products",
+            "text_position": "Aviation Director | EMEA/The Americas",
+            "url_phone": "tel:+1 425 455 2120",
+            "text_phone_number": "+1 425 455 2120",
+            "url_email": "mailto:customerservice@dipi.com",
+            "text_email_address": "customerservice@dipi.com"
+          }
         }
       },
       "block_order": [
@@ -122,7 +135,8 @@
         "card_nE9yLX",
         "card_6xit6b",
         "card_NHqq8m",
-        "card_cPftQ6"
+        "card_cPftQ6",
+        "card_RaATwr"
       ],
       "name": "Contact Info",
       "settings": {}
