@@ -29,7 +29,7 @@
             "text_heading": "Leather",
             "url_button_link": "",
             "text_button_text": "Learn More",
-            "video_desktop": "shopify://files/videos/Placeholder video.mp4"
+            "video_desktop": "shopify://files/videos/Muirhead Looping Video.mp4"
           }
         }
       },
@@ -83,8 +83,8 @@
         "text_qpPqka": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Muirhead BioPRO® Foam is a game-changer for aviation seating – setting a new standard in sustainability, performance, and customisation. <br/><br/>With a <strong>protein content of 20%</strong>, this innovative foam for aviation seat cushions is naturally fire-resistant, highly durable, and lightweight. It is free from harmful substances such as melamine, bromine, and PFAS, and can be fully tailored to meet your specific requirements.Explore how this revolutionary foam can transform your seating solutions and enhance passenger comfort.</p>",
-            "text-size": "1rem"
+            "text-size": "1rem",
+            "richtext_text": "<p>Muirhead BioPRO® Foam is a game-changer for aviation seating – setting a new standard in sustainability, performance, and customisation. <br/><br/>With a <strong>protein content of 20%</strong>, this innovative foam for aviation seat cushions is naturally fire-resistant, highly durable, and lightweight. It is free from harmful substances such as melamine, bromine, and PFAS, and can be fully tailored to meet your specific requirements.Explore how this revolutionary foam can transform your seating solutions and enhance passenger comfort.</p>"
           }
         },
         "buttons_i9TC8U": {
@@ -137,22 +137,22 @@
         "text_cm3Lef": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. </p>",
-            "text-size": "1rem"
+            "text-size": "1rem",
+            "richtext_text": "<p>As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. </p>"
           }
         },
         "text_YjbReF": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Most manufacturers today are optimised for fabric and synthetic materials. However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency.</p>",
-            "text-size": "1rem"
+            "text-size": "1rem",
+            "richtext_text": "<p>Most manufacturers today are optimised for fabric and synthetic materials. However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency.</p>"
           }
         },
         "text_txMzjN": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p><strong>And that’s just the beginning.</strong></p>",
-            "text-size": "1rem"
+            "text-size": "1rem",
+            "richtext_text": "<p><strong>And that’s just the beginning.</strong></p>"
           }
         },
         "buttons_KffWtG": {
