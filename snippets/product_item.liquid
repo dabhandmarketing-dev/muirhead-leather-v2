@@ -24,7 +24,8 @@
                       </div>
                       <a href="#" class="banner_item-title w-inline-block">
                         <div class="home_banner_item-price-container">
-                          <div li-object="product.title" class="text-size-medium-5 text-style-1line">{{ product.title }}</div>
+                          <div li-object="product.title" class="text-size-small text-weight-bold">{{ product.title }}</div>
+                          <div li-object="product.selected_or_first_available_variant.sku" class="text-size-small">{{ product.selected_or_first_available_variant.sku }}</div>
                         </div>
                         <div class="product-item_price">
                           {% if product.compare_at_price_max > product.price %}    <div li-if="product.compare_at_price_max > product.price">
