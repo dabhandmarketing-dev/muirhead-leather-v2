@@ -143,7 +143,7 @@
         "buttons_apK8hw": {
           "type": "buttons",
           "settings": {
-            "url_button_link": "#",
+            "url_button_link": "shopify://pages/performance-testing",
             "text_button_text": "Learn More",
             "url_button_link_2": "",
             "text_button_text_2": "Learn More"
