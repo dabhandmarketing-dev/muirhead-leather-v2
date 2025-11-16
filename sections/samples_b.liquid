@@ -1,0 +1,297 @@
+<div class="padding-global">
+          <div class="container-large">
+            {% paginate collection.products by 50 %}
+    <div li-paginate:by="50" li-paginate="collection.products" class="filter_layout" by="50">
+              <div id="w-node-_678e0483-bbe4-e79a-1722-b169c587feae-c587feae" class="filter_filters-wrapper">
+                <form action="{{ routes.search_url }}" method="get" role="search" class="filter_form_component">
+                  <div id="w-node-_265c4342-3d21-e8bf-dfee-efec035c3507-c587feae" class="filter_form">
+                    <div class="filters_group-header">
+                      <div>Filters</div>
+                      <a li-object:href="collection.url" href="{{ collection.url }}" class="filter-reset-button w-inline-block">
+                        <div>Clear</div>
+                      </a>
+                    </div>
+                    <div class="filter_results-wrapper">
+                      <div class="filter_results-text"><span li-object="collection.all_products_count | append: ' '">{{ collection.all_products_count | append: ' ' }}</span> <span>
+{{ section.settings.text_products_shown }}
+</span></div>
+                    </div>
+                    <div class="filter_scroll-wrapper">
+                      <div class="filter_filter-group-list">
+                        {% for filter in collection.filters %}    <div li-for="filter in collection.filters" class="filter_filter-group">
+                                    
+                          
+                            {% if filter.values.size > 1 %}    <div li-if="filter.values.size > 1" class="div-block-762">
+    
+                            <div class="filters_group-header">
+                              <div>Filters</div>
+                              <a li-object:href="collection.url" href="{{ collection.url }}" class="filter-reset-button w-inline-block">
+                                <div>Clear</div>
+                              </a>
+                            </div>
+                            <div class="filter_list">
+                              {% for filter_value in filter.values %}    <div li-for="filter_value in filter.values" class="filter_item">
+                                    
+                                
+                            <a href="{% if filter_value.active %}{{ filter_value.url_to_remove }}{% else %}{{ filter_value.url_to_add }}{% endif %}" class="{% if filter_value.count == 0 and filter_value.active == false %}filter_form_checkbox is-disabled{% else %}filter_form_checkbox{% endif %}">
+                                  <div class="{% if filter_value.active %}filter_form_checkbox-icon is-checked{% else %}filter_form_checkbox-icon{% endif %}"></div>
+                                  <div class="filter_form_checkbox-label"><span li-object="filter_value.label | append: ' '">{{ filter_value.label | append: ' ' }}</span> (<span li-object="filter_value.count">{{ filter_value.count }}</span>)</div>
+                                </a>
+                            
+                              
+                        </div>
+{% endfor %}
+                            </div>
+                              </div>
+{% endif %}
+                            
+                        
+                        </div>
+{% endfor %}
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <a data-w-id="678e0483-bbe4-e79a-1722-b169c587fede" href="#" class="filter_tablet-modal-close-button w-inline-block"><img src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/624380709031623afe4aee7e_icon_close-modal.svg" alt="" class="icon-1x1-small"></a>
+              </div>
+              <a data-w-id="0b7725ef-d644-25d7-2e9b-1ca206dfc76a" href="#" class="filter_tablet-filters-button w-inline-block"><img alt="" loading="lazy" src="https://uploads-ssl.webflow.com/624380709031623bfe4aee60/62942b9f00484cf074e6f851_icon-filters.svg" class="button-icon-left">
+                <div>Filters</div>
+              </a>
+              <div id="w-node-_0b7725ef-d644-25d7-2e9b-1ca206dfc76e-029cc987" class="filter_feed">
+                <div class="searchfiltercontainer">
+                  <div id="w-node-_0b7725ef-d644-25d7-2e9b-1ca206dfc770-029cc987" class="search-wrapper">
+                    <div class="search-box">
+                      <div class="search-form-group">
+                        <div class="search-form-2 w-form"><img loading="lazy" src="{{ 'search-fat-1.svg' | asset_url }}" alt="" class="search-icon">
+                          <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form" data-wf-page-id="68e22fae932bc475029cc987" data-wf-element-id="0b7725ef-d644-25d7-2e9b-1ca206dfc775"><input class="search jetboost-list-search-input-3mq4 w-input" maxlength="256" name="search" data-name="search" placeholder="Start typing something..." type="text" id="search"><input type="submit" data-wait="Please wait..." class="submit-button-3 w-button" value="Submit"></form>
+                          <div class="w-form-done">
+                            <div>Thank you! Your submission has been received!</div>
+                          </div>
+                          <div class="w-form-fail">
+                            <div>Oops! Something went wrong while submitting the form.</div>
+                          </div>
+                        </div>
+                        <a href="#" class="searchclose jetboost-list-search-reset-3mq4 jetboost-active-show-3mq4 w-inline-block"><img loading="lazy" src="{{ 'Group-423.svg' | asset_url }}" alt="" class="image-59"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="w-node-_0b7725ef-d644-25d7-2e9b-1ca206dfc780-029cc987">
+                    <div class="filter_tags-wrapper-2">
+                      <div class="text-size-small-2 is-filter-result">Filtering by:</div>
+                      <div fs-cmsfilter-element="tag-template" class="filter_tag-2">
+                        <div fs-cmsfilter-element="tag-text" class="filter_tag-text">Tag</div><img fs-cmsfilter-element="tag-remove" loading="lazy" alt="close icon
+" src="{{ 'close.svg' | asset_url }}" class="filter_tag-remove">
+                      </div>
+                    </div>
+                    <div data-delay="0" data-hover="false" class="dropdown-4 w-dropdown">
+                      <div class="filter_sort-by-2 w-dropdown-toggle">
+                        <div class="dropdown_icon w-icon-dropdown-toggle"></div>
+                        <div class="text-size-small-2">Sort by</div>
+                      </div>
+                      <nav class="dropdown_list w-dropdown-list">
+                        <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=best-selling" class="sort_field w-inline-block">
+                          <div>Best Selling</div>
+                        </a>
+                        <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=title-ascending" class="sort_field w-inline-block">
+                          <div>Name (A/Z)</div>
+                        </a>
+                        <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=title-descending" class="sort_field w-inline-block">
+                          <div>Name (Z/A)</div>
+                        </a>
+                        <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=price-ascending" class="sort_field w-inline-block">
+                          <div>Cheapest First</div>
+                        </a>
+                      </nav>
+                    </div>
+                  </div><select id="sort-by" li-for:inside="option in collection.sort_options" class="sort_select filter_checkbox">
+        {% for option in collection.sort_options %}                            
+                    
+                            <option value="{{ option.value }}" {% if option.value == collection.sort_by %}selected{% elsif option.value == collection.default_sort_by %}selected{% endif %}>{{ option.name }}</option>
+                            
+                  
+                    {% endfor %}    </select>
+                  <a data-w-id="0b7725ef-d644-25d7-2e9b-1ca206dfc79b" href="#" class="filter-button-mobile w-inline-block"><img loading="lazy" src="{{ 'icon-filters.svg' | asset_url }}" alt="" class="button-icon-left">
+                    <div>Filters</div>
+                  </a>
+                </div>
+                <div class="filter_feed-header">
+                  <div class="filter_tags-wrapper">
+                    {% for filters in collection.filters %}    <div li-for="filters in collection.filters" class="filter_tags-inner-wrapper">
+                                    
+                      
+                            {% for filter_value in filters.active_values %}    <div li-for="filter_value in filters.active_values" class="filter_tag">
+                                    
+                        
+                            <div li-object="filter_value.label">{{ filter_value.label }}</div>
+                            
+                        
+                            <a aria-label="Remove Filter" li-object:href="filter_value.url_to_remove" href="{{ filter_value.url_to_remove }}" class="filter_close w-inline-block">
+                          <div class="filter_close-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M17.1266 16.773L16.7729 17.1266C16.5777 17.3218 16.2611 17.3218 16.0658 17.1266L12 13.0607L7.9341 17.1265C7.73888 17.3218 7.42229 17.3218 7.22702 17.1265L6.87347 16.773C6.6782 16.5777 6.6782 16.2612 6.87347 16.0659L10.9394 12L6.87347 7.93413C6.6782 7.73891 6.6782 7.42232 6.87347 7.22705L7.22702 6.8735C7.42228 6.67824 7.73888 6.67824 7.9341 6.8735L12 10.9394L16.0658 6.8735C16.2611 6.67824 16.5777 6.67824 16.7729 6.8735L17.1266 7.22705C17.3218 7.42231 17.3218 7.73891 17.1266 7.93413L13.0607 12L17.1266 16.0659C17.3218 16.2612 17.3218 16.5777 17.1266 16.773Z" fill="currentColor"></path>
+                            </svg></div>
+                        </a>
+                            
+                      
+                        </div>
+{% endfor %}
+                            
+                    
+                        </div>
+{% endfor %}
+                  </div>
+                </div>
+                <div class="filter_product-list-wrapper w-dyn-list">
+                  <div role="list" class="filter_product-list sample w-dyn-items">
+                    {% for product in collection.products %}    <div li-for="product in collection.products" role="listitem" class="filter_product-list-item w-dyn-item">
+                                    
+                      
+                            {% render 'product_item', product: product %}
+                            
+                    
+                        </div>
+{% endfor %}
+                  </div>
+                  {% if collection.products == blank %}    <div li-if="collection.products == blank" class="filter_empty w-dyn-empty">
+    
+                    <div class="heading-style-h6">No results found.</div>
+                    <div class="spacer-xxsmall"></div>
+                    <div>There are no results with this criteria. Try changing your search.</div>
+                      </div>
+{% endif %}
+                </div>
+                {% if paginate.pages > 1 %}    <nav li-if="paginate.pages > 1" class="pagination_component">
+    
+                  <ul role="list" class="pagination_list w-list-unstyled">
+                    {% if paginate.previous %}    <li li-if="paginate.previous" class="pagination_item">
+    
+                      <a li-object:href="paginate.previous.url" href="{{ paginate.previous.url }}" class="cart is-secondary is-icon w-inline-block">
+                        <div class="pagination_arrow w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 13 8" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                            <path d="M1.67318 0.589844L6.26318 5.16984L10.8532 0.589844L12.2632 1.99984L6.26318 7.99984L0.263184 1.99984L1.67318 0.589844Z" fill="currentColor"></path>
+                          </svg></div>
+                        <div>Back</div>
+                      </a>
+                        </li>
+{% endif %}
+                    {% if paginate.previous == false %}    <li li-if="paginate.previous == false" class="pagination_item">
+    
+                      <a li-object:href="paginate.previous.url" href="{{ paginate.previous.url }}" class="cart is-secondary is-icon text-style-muted pointer-events-off w-inline-block">
+                        <div class="pagination_arrow w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 13 8" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                            <path d="M1.67318 0.589844L6.26318 5.16984L10.8532 0.589844L12.2632 1.99984L6.26318 7.99984L0.263184 1.99984L1.67318 0.589844Z" fill="currentColor"></path>
+                          </svg></div>
+                        <div>Back</div>
+                      </a>
+                        </li>
+{% endif %}
+                    {% for part in paginate.parts %}    <li li-for="part in paginate.parts" class="pagination_item">
+                                    
+                      
+                            {% if part.is_link %}    <div li-if="part.is_link">
+    
+                        <a li-object:href="part.url" href="{{ part.url }}" class="pagination_count w-inline-block">
+                          <div li-object="part.title" class="text-style-link">{{ part.title }}</div>
+                        </a>
+                          </div>
+{% endif %}
+                            
+                      
+                            {% if part.is_link == false %}    <div li-if="part.is_link == false">
+    
+                        <div li-object="part.title" class="{% if part.title == paginate.current_page %}text-weight-semibold{% endif %}">{{ part.title }}</div>
+                          </div>
+{% endif %}
+                            
+                    
+                        </li>
+{% endfor %}
+                    {% if paginate.next == false %}    <li li-if="paginate.next == false" class="pagination_item">
+    
+                      <a li-object:href="paginate.next.url" href="{{ paginate.next.url }}" class="cart is-secondary is-icon text-style-muted pointer-events-off w-inline-block">
+                        <div>Next</div>
+                        <div class="pagination_arrow is-right w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 13 8" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                            <path d="M1.67318 0.589844L6.26318 5.16984L10.8532 0.589844L12.2632 1.99984L6.26318 7.99984L0.263184 1.99984L1.67318 0.589844Z" fill="currentColor"></path>
+                          </svg></div>
+                      </a>
+                        </li>
+{% endif %}
+                    {% if paginate.next %}    <li li-if="paginate.next" class="pagination_item">
+    
+                      <a li-object:href="paginate.next.url" href="{{ paginate.next.url }}" class="cart is-secondary is-icon w-inline-block">
+                        <div>Next</div>
+                        <div class="pagination_arrow is-right w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 13 8" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                            <path d="M1.67318 0.589844L6.26318 5.16984L10.8532 0.589844L12.2632 1.99984L6.26318 7.99984L0.263184 1.99984L1.67318 0.589844Z" fill="currentColor"></path>
+                          </svg></div>
+                      </a>
+                        </li>
+{% endif %}
+                  </ul>
+                    </nav>
+{% endif %}
+              </div>
+              
+            </div>{% endpaginate %}
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Samples B",
+    "class": "section_filter",
+    "settings": [
+        {
+            "id": "text_products_shown",
+            "type": "text",
+            "label": "Products shown",
+            "default": "Products shown"
+        },
+        {
+            "type": "header",
+            "content": "grid-columns"
+        },
+        {
+            "type": "select",
+            "id": "grid-columns",
+            "label": "Grid Columns",
+            "options": [
+                {
+                    "value": "2",
+                    "label": "2"
+                },
+                {
+                    "value": "3",
+                    "label": "3"
+                },
+                {
+                    "value": "4",
+                    "label": "4"
+                },
+                {
+                    "value": "5",
+                    "label": "5"
+                },
+                {
+                    "value": "6",
+                    "label": "6"
+                },
+                {
+                    "value": "7",
+                    "label": "7"
+                },
+                {
+                    "value": "8",
+                    "label": "8"
+                }
+            ],
+            "default": "4"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Samples B",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ],
+    "enabled_on": {
+        "templates": [
+            "collection"
+        ]
+    }
+} {% endschema %}
