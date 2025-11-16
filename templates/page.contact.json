@@ -78,6 +78,7 @@
         },
         "card_6xit6b": {
           "type": "card",
+          "name": "Stephen Ritchie",
           "settings": {
             "text_title": "Regional Sales Office",
             "text_name": "Stephen Ritchie",
@@ -87,13 +88,27 @@
             "url_email": "mailto:stephen.ritchie@muirhead.co.uk",
             "text_email_address": "stephen.ritchie@muirhead.co.uk"
           }
+        },
+        "card_NHqq8m": {
+          "type": "card",
+          "name": "Douglas Cameron",
+          "settings": {
+            "text_title": "Regional Sales Office",
+            "text_name": "Douglas Cameron",
+            "text_position": "Sales Manager Aviation",
+            "url_phone": "tel:+44 7702 885 237",
+            "text_phone_number": "+44 7702 885 237",
+            "url_email": "mailto:douglas.cameron@muirhead.co.uk",
+            "text_email_address": "douglas.cameron@muirhead.co.uk"
+          }
         }
       },
       "block_order": [
         "card_HpXweV",
         "card_iNqBB8",
         "card_nE9yLX",
-        "card_6xit6b"
+        "card_6xit6b",
+        "card_NHqq8m"
       ],
       "name": "Contact Info",
       "settings": {}
