@@ -107,7 +107,7 @@
         "button_gNNCRJ": {
           "type": "button",
           "settings": {
-            "url_button_link": "",
+            "url_button_link": "shopify://pages/lowering-carbon",
             "text_button_text": "Learn More"
           }
         },
@@ -491,7 +491,7 @@
       ],
       "name": "Image Text",
       "settings": {
-        "image_image": "shopify://shop_images/muirhead_sector_aviation_10.webp",
+        "image_image": "shopify://shop_images/muirhead_sector_aviation_11_1.webp",
         "grid_position": "right",
         "background_colour": "#ffffff",
         "text-size": "1.25rem"
