@@ -451,7 +451,7 @@ figcaption {
 
 .container-small {
   width: 100%;
-  max-width: 48rem;
+  max-width: 52rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -654,6 +654,13 @@ figcaption {
 
 .text-align-center {
   text-align: center;
+}
+
+.text-align-center._2rem-spacing {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  flex-flow: column;
+  display: flex;
 }
 
 .main-wrapper {
@@ -3796,7 +3803,6 @@ figcaption {
   backdrop-filter: blur(5px);
   color: #f4f4f4;
   text-align: center;
-  border-radius: 100px;
   padding: .5rem 1rem;
   font-size: 1rem;
   font-weight: 500;
@@ -3894,6 +3900,7 @@ figcaption {
 }
 
 .header-slide {
+  z-index: 1;
   width: 100vw;
   min-height: 100svh;
   position: relative;
@@ -5406,6 +5413,20 @@ figcaption {
   position: relative;
 }
 
+.section.lottie {
+  display: flex;
+}
+
+.section.grey {
+  background-color: var(--base-color-neutral--neutral-darkest);
+  color: var(--base-color-neutral--white);
+}
+
+.section.charcoal {
+  background-color: var(--base-color-brand--charcoal);
+  color: var(--base-color-neutral--white);
+}
+
 .video-thumbnail {
   z-index: 1;
   background-color: #0e0e0e;
@@ -5427,7 +5448,7 @@ figcaption {
   text-align: center;
   margin-bottom: 0;
   font-size: 4.5rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .text-size-small-11 {
@@ -6338,7 +6359,6 @@ figcaption {
   backdrop-filter: blur(5px);
   color: #f4f4f4;
   text-align: center;
-  border-radius: 100px;
   padding: .5rem 1rem .5rem 1.25rem;
   font-size: 1rem;
   font-weight: 500;
@@ -8217,6 +8237,28 @@ figcaption {
   right: 0%;
 }
 
+.page-heading-overlay {
+  opacity: .55;
+  background-image: linear-gradient(#0000008c 32%, #0000009c);
+  position: absolute;
+  inset: 0%;
+}
+
+.lottie-section {
+  grid-column-gap: 1.625rem;
+  grid-row-gap: 1.625rem;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.lottie-section.xl-5 {
+  text-align: center;
+  max-width: 52vw;
+}
+
 @media screen and (min-width: 1280px) {
   .header-slide.swiper-slide {
     height: 84svh;
@@ -9299,6 +9341,12 @@ figcaption {
   .contact-info-div {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
+  }
+
+  .lottie-section.xl-5 {
+    max-width: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 

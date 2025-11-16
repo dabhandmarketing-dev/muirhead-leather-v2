@@ -1,0 +1,158 @@
+<div li-content-for-blocks="" class="padding-section-medium">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+          <div class="padding-global">
+            <div li-content-for-blocks="" class="container-small">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+              {% when 'rich-text' %}
+            <div li-block="Rich Text" class="text-align-center _2rem-spacing">
+                    
+                
+                    {% when 'heading' %}
+            <div li-block="Heading">
+                    
+                  
+                    <h1>
+{{ block.settings.text_heading }}
+</h1>
+                    
+                
+                </div>
+                    
+                
+                    {% when 'text' %}
+            <div li-block="Text">
+                    
+                  
+                    <div class="text-size-medium w-richtext"> {{ block.settings.richtext_richtext }} </div>
+                    
+                
+                </div>
+                    
+                
+                    {% when 'button' %}
+            <div li-block="Button">
+                    
+                  
+                    <a href="{{ block.settings.url_button_link }}" data-wf--button-main--variant="base" data-w-id="62fe5b66-eb79-581e-644e-970322077823" class="button-main w-inline-block"> <div class="icon-link-3"> <div class="clip-2 white-10"> <div class="hover-text white-31"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 bottom white-20"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22"> <div class="clip-2 white-10"> <div class="hover-arrow-3"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" src="{{ 'arrow-right-long-line.svg' | asset_url }}" alt="" loading="lazy" class="icon-1x1-small-7 white-12"></div> <div class="hover-arrow-3 left-arrow"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-long-line.svg' | asset_url }}" class="icon-1x1-small-7 white-12"></div> </div> </div> </div> </a>
+                    
+                
+                </div>
+                    
+                
+                    {% when 'image' %}
+            <div li-block="Image">
+                    {% if block.settings.image_image %}
+{{ block.settings.image_image | image_url: width: 1000 | image_tag: sizes: '(max-width: 767px) 100vw, 638.0034790039062px', loading: 'lazy' }}
+{% else %}
+<img src="{{ 'muirhead_sector_aviation_02.webp' | asset_url }}" alt="" sizes="(max-width: 767px) 100vw, 638.0034790039062px" loading="lazy" srcset="{{ 'muirhead_sector_aviation_02.webp' | asset_url }} 500w, {{ 'muirhead_sector_aviation_02.webp' | asset_url }} 638w">
+{% endif %}
+                </div>
+                    
+              
+                </div>
+            {% endcase %}
+{% endfor %}
+
+    </div>
+          </div>
+        {% endcase %}
+{% endfor %}
+
+    </div> {% schema %} {
+    "tag": "div",
+    "name": "Text Centralised",
+    "class": "section charcoal",
+    "blocks": [
+        {
+            "name": "Rich Text",
+            "type": "rich-text",
+            "settings": null
+        },
+        {
+            "name": "Heading",
+            "type": "heading",
+            "settings": [
+                {
+                    "id": "text_heading",
+                    "type": "text",
+                    "label": "Heading",
+                    "default": "Lowest Carbon Leather"
+                }
+            ]
+        },
+        {
+            "name": "Text",
+            "type": "text",
+            "settings": [
+                {
+                    "id": "richtext_richtext",
+                    "type": "richtext",
+                    "label": "Richtext",
+                    "default": "<p>\n                    Significant investments in circular manufacturing have made us arguably the most environmentally-focused leather manufacturer in the world. \n                    \u200d\n                    Our long-lasting luxury leather isn't just sustainable, it's the world's lowest carbon intensity leather. And we're innovating constantly to bring that carbon level down even lower. \n                  <\/p>"
+                }
+            ]
+        },
+        {
+            "name": "Button",
+            "type": "button",
+            "settings": [
+                {
+                    "id": "url_button_link",
+                    "type": "url",
+                    "label": "Button Link"
+                },
+                {
+                    "id": "text_button_text",
+                    "type": "text",
+                    "label": "Button Text",
+                    "default": "Learn More"
+                }
+            ]
+        },
+        {
+            "name": "Image",
+            "type": "image",
+            "settings": [
+                {
+                    "id": "image_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                }
+            ]
+        },
+        {
+            "type": "@app"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Text Centralised",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "rich-text"
+                },
+                {
+                    "type": "heading"
+                },
+                {
+                    "type": "text"
+                },
+                {
+                    "type": "button"
+                },
+                {
+                    "type": "image"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
