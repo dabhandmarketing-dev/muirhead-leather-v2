@@ -45,13 +45,15 @@
         "text_RMhPdx": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>From luxury airlines to budget carriers, aviation brands the world over trust Muirhead Leather's technical performance, durability, natural beauty and easy-to-clean, antibacterial properties. They are also impressed by our market-leading warranty.</p>"
+            "richtext_text": "<p>From luxury airlines to budget carriers, aviation brands the world over trust Muirhead Leather's technical performance, durability, natural beauty and easy-to-clean, antibacterial properties. They are also impressed by our market-leading warranty.</p>",
+            "text_size": "1.25rem"
           }
         },
         "text_YPJgpJ": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Muirhead is the global market leader supplying more than 160 airlines, airframe and seating manufacturers across 60 countries. Unique ownership of the full end-to-end process gives us complete control of the supply chain and manufacturing process.</p>"
+            "richtext_text": "<p>Muirhead is the global market leader supplying more than 160 airlines, airframe and seating manufacturers across 60 countries. Unique ownership of the full end-to-end process gives us complete control of the supply chain and manufacturing process.</p>",
+            "text_size": "1.25rem"
           }
         },
         "buttons_fmc4E6": {
@@ -80,6 +82,42 @@
       "type": "dotted_sides",
       "name": "Dotted Sides",
       "settings": {}
+    },
+    "text_centralised_dny9wP": {
+      "type": "text_centralised",
+      "blocks": {
+        "heading_bTrgwR": {
+          "type": "heading",
+          "settings": {
+            "text_heading": "Lowest Carbon Leather"
+          }
+        },
+        "text_U8fAAY": {
+          "type": "text",
+          "settings": {
+            "richtext_richtext": "<p>\n                    Significant investments in circular manufacturing have made us arguably the most environmentally-focused leather manufacturer in the world. \n                  </p>"
+          }
+        },
+        "button_gNNCRJ": {
+          "type": "button",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Learn More"
+          }
+        },
+        "image_GmxwJw": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_bTrgwR",
+        "text_U8fAAY",
+        "button_gNNCRJ",
+        "image_GmxwJw"
+      ],
+      "name": "Text Centralised",
+      "settings": {}
     }
   },
   "layout": "theme",
@@ -89,6 +127,7 @@
     "heading_large_ar6nE3",
     "text_stitching_secti_kLj66k",
     "image_text_UKpNEW",
-    "dotted_sides_kdkFRj"
+    "dotted_sides_kdkFRj",
+    "text_centralised_dny9wP"
   ]
 }
