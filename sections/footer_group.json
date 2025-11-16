@@ -89,6 +89,13 @@
             "url_link": "https://vimeo.com/user40568954",
             "image_social_logo": "shopify://shop_images/vimeo-fill.svg"
           }
+        },
+        "social_icons_kHEz3E": {
+          "type": "social-icons",
+          "settings": {
+            "url_link": "https://www.muirhead.co.uk/media/1806/muirhead_wechatqr.jpg",
+            "image_social_logo": "shopify://shop_images/wechat-line.svg"
+          }
         }
       },
       "block_order": [
@@ -98,7 +105,8 @@
         "social_icons_F4t8ET",
         "social_icons_eabQay",
         "social_icons_ij9AmM",
-        "social_icons_9KiVeD"
+        "social_icons_9KiVeD",
+        "social_icons_kHEz3E"
       ],
       "settings": {
         "text_sectors_title": "Sectors",
