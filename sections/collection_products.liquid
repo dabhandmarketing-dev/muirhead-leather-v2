@@ -141,16 +141,7 @@
                   </div>
                 </div>
                 <div class="filter_product-list-wrapper w-dyn-list">
-                  <div role="list" class="filter_product-list w-dyn-items">
-                    {% for product in collection.products %}    <div li-for="product in collection.products" role="listitem" class="filter_product-list-item w-dyn-item">
-                                    
-                      
-                            {% render 'product_item', product: product %}
-                            
-                    
-                        </div>
-{% endfor %}
-                  </div>
+                  
                   {% if collection.products == blank %}    <div li-if="collection.products == blank" class="filter_empty w-dyn-empty">
     
                     <div class="heading-style-h6">No results found.</div>
@@ -227,6 +218,7 @@
                     </nav>
 {% endif %}
               </div>
+              
             </div>{% endpaginate %}
           </div>
         </div>
@@ -261,6 +253,66 @@
             "type": "text",
             "label": "Products shown",
             "default": "Products shown"
+        },
+        {
+            "type": "header",
+            "content": "desktop-columns mobile-columns"
+        },
+        {
+            "type": "header",
+            "content": "text-size"
+        },
+        {
+            "type": "select",
+            "id": "desktop-columns",
+            "label": "How Many Columns - Desktop",
+            "options": [
+                {
+                    "value": "2",
+                    "label": "2"
+                },
+                {
+                    "value": "3",
+                    "label": "3"
+                },
+                {
+                    "value": "4",
+                    "label": "4"
+                },
+                {
+                    "value": "5",
+                    "label": "5"
+                },
+                {
+                    "value": "6",
+                    "label": "6"
+                },
+                {
+                    "value": "7",
+                    "label": "7"
+                },
+                {
+                    "value": "8",
+                    "label": "8"
+                }
+            ],
+            "default": "4"
+        },
+        {
+            "type": "select",
+            "id": "mobile-columns",
+            "label": "How Many Columns - Mobile",
+            "options": [
+                {
+                    "value": "1",
+                    "label": "1"
+                },
+                {
+                    "value": "2",
+                    "label": "2"
+                }
+            ],
+            "default": "1"
         }
     ],
     "presets": [
