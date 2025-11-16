@@ -82,6 +82,13 @@
             "url_link": "https://www.youtube.com/channel/UC79bxABmrFgSLv8QtQSIfFw/featured",
             "image_social_logo": "shopify://shop_images/youtube-line.svg"
           }
+        },
+        "social_icons_9KiVeD": {
+          "type": "social-icons",
+          "settings": {
+            "url_link": "https://vimeo.com/user40568954",
+            "image_social_logo": "shopify://shop_images/vimeo-fill.svg"
+          }
         }
       },
       "block_order": [
@@ -90,7 +97,8 @@
         "social_icons_jn7tAM",
         "social_icons_F4t8ET",
         "social_icons_eabQay",
-        "social_icons_ij9AmM"
+        "social_icons_ij9AmM",
+        "social_icons_9KiVeD"
       ],
       "settings": {
         "text_sectors_title": "Sectors",
