@@ -32,7 +32,10 @@
             <div li-block="Text" class="content_block">
                     
                     
-                    <div> {{ block.settings.richtext_text }} </div>
+                    <div style="font-size: {{ section.settings.text-size }} !important;"> {{ block.settings.richtext_text }} </div>
+                    
+                    
+                    
                     
                   
                 </div>
@@ -146,6 +149,30 @@
                     "type": "richtext",
                     "label": "Text",
                     "default": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.<\/p>"
+                },
+                {
+                    "type": "header",
+                    "content": "text-size"
+                },
+                {
+                    "type": "select",
+                    "id": "text-size",
+                    "label": "Text Size",
+                    "options": [
+                        {
+                            "value": "1rem",
+                            "label": "Small"
+                        },
+                        {
+                            "value": "1.25rem",
+                            "label": "Medium"
+                        },
+                        {
+                            "value": "1.5rem",
+                            "label": "Large"
+                        }
+                    ],
+                    "default": "1rem"
                 }
             ]
         },
