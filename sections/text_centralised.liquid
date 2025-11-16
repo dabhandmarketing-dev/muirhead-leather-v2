@@ -11,11 +11,8 @@
 {% when '@app' %}
 {% render block %}
 
-              {% when 'rich-text' %}
-            <div li-block="Rich Text" class="text-align-center _2rem-spacing">
-                    
-                
-                    {% when 'heading' %}
+              <div class="text-align-center _2rem-spacing">
+                {% when 'heading' %}
             <div li-block="Heading">
                     
                   
@@ -25,9 +22,7 @@
                     
                 
                 </div>
-                    
-                
-                    {% when 'text' %}
+                {% when 'text' %}
             <div li-block="Text">
                     
                   
@@ -35,9 +30,7 @@
                     
                 
                 </div>
-                    
-                
-                    {% when 'button' %}
+                {% when 'button' %}
             <div li-block="Button">
                     
                   
@@ -45,9 +38,7 @@
                     
                 
                 </div>
-                    
-                
-                    {% when 'image' %}
+                {% when 'image' %}
             <div li-block="Image">
                     {% if block.settings.image_image %}
 {{ block.settings.image_image | image_url: width: 1000 | image_tag: sizes: '(max-width: 767px) 100vw, 638.0034790039062px', loading: 'lazy' }}
@@ -55,9 +46,7 @@
 <img src="{{ 'muirhead_sector_aviation_02.webp' | asset_url }}" alt="" sizes="(max-width: 767px) 100vw, 638.0034790039062px" loading="lazy" srcset="{{ 'muirhead_sector_aviation_02.webp' | asset_url }} 500w, {{ 'muirhead_sector_aviation_02.webp' | asset_url }} 638w">
 {% endif %}
                 </div>
-                    
-              
-                </div>
+              </div>
             {% endcase %}
 {% endfor %}
 
@@ -71,11 +60,6 @@
     "name": "Text Centralised",
     "class": "section charcoal",
     "blocks": [
-        {
-            "name": "Rich Text",
-            "type": "rich-text",
-            "settings": null
-        },
         {
             "name": "Heading",
             "type": "heading",
@@ -137,9 +121,6 @@
             "name": "Text Centralised",
             "category": "Liquify",
             "blocks": [
-                {
-                    "type": "rich-text"
-                },
                 {
                     "type": "heading"
                 },
