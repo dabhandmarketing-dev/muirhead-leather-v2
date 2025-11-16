@@ -19,7 +19,7 @@
       "name": "Collection Products",
       "settings": {
         "text_products_shown": "Products shown",
-        "desktop-columns": "6",
+        "desktop-columns": "4",
         "mobile-columns": "1"
       }
     }
