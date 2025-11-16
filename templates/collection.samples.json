@@ -14,19 +14,16 @@
       "name": "Page Heading",
       "settings": {}
     },
-    "collection_products_wmxiff": {
-      "type": "collection_products",
-      "name": "Collection Products",
-      "settings": {
-        "text_products_shown": "Products shown",
-        "grid-columns": "6"
-      }
+    "collection_samples_a_axrwWX": {
+      "type": "collection_samples_a",
+      "name": "Collection (Samples)",
+      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "page_heading_w4V3gw",
-    "collection_products_wmxiff"
+    "collection_samples_a_axrwWX"
   ]
 }
