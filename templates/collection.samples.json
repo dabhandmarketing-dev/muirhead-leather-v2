@@ -1,0 +1,32 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page_heading_w4V3gw": {
+      "type": "page_heading",
+      "name": "Page Heading",
+      "settings": {}
+    },
+    "collection_products_wmxiff": {
+      "type": "collection_products",
+      "name": "Collection Products",
+      "settings": {
+        "text_products_shown": "Products shown",
+        "grid-columns": "6"
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "page_heading_w4V3gw",
+    "collection_products_wmxiff"
+  ]
+}
