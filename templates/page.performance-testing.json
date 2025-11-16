@@ -43,60 +43,19 @@
       "name": "Text Stitching Secti",
       "settings": {}
     },
-    "text_centralised_dny9wP": {
-      "type": "text_centralised",
-      "blocks": {
-        "heading_bTrgwR": {
-          "type": "heading",
-          "settings": {
-            "text_heading": "Lowest carbon leather"
-          }
-        },
-        "text_U8fAAY": {
-          "type": "text",
-          "settings": {
-            "richtext_richtext": "<p>We make the world’s lowest-carbon leather. Since 2003, we have significantly reduced the carbon intensity of our leather per hide from 10.9kg CO₂e/m² to 1.4kg CO₂e/m² per hide in 2023 and we’re constantly innovating to improve on that even further. </p>"
-          }
-        },
-        "text_ADn9eQ": {
-          "type": "text",
-          "settings": {
-            "richtext_richtext": "<p>Our patented circular manufacturing process incorporates energy recovery, water re-use, renewable energy, locally sourced (and traceable) rawhides, and even a unique take-back scheme for end-of-life leather.</p>"
-          }
-        },
-        "image_GmxwJw": {
-          "type": "image",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_bTrgwR",
-        "text_U8fAAY",
-        "text_ADn9eQ",
-        "image_GmxwJw"
-      ],
-      "name": "Text Centralised",
-      "settings": {}
-    },
     "image_text_UKpNEW": {
       "type": "image_text",
       "blocks": {
         "headline_WqK34M": {
           "type": "headline",
           "settings": {
-            "text_headline": "Carbon intensity"
+            "text_headline": "In-house facilities"
           }
         },
         "text_RMhPdx": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>We reclaim energy from waste at our on-site thermal energy plant. And the energy we do buy in is 100% wind-derived. </p>"
-          }
-        },
-        "text_YPJgpJ": {
-          "type": "text",
-          "settings": {
-            "richtext_text": "<p>The carbon intensity of Muirhead leather is the lowest published anywhere in the world. Specifying Muirhead leather helps our clients to pursue their own low carbon targets.</p>"
+            "richtext_text": "<p>Every batch of Muirhead leather is tested in-house at our state-of-the-art material testing laboratory and R&D facility. We test to the individual customer’s specification, and supply a laboratory report ensuring that our product conforms exactly to their specification.</p>"
           }
         },
         "buttons_fmc4E6": {
@@ -112,7 +71,6 @@
       "block_order": [
         "headline_WqK34M",
         "text_RMhPdx",
-        "text_YPJgpJ",
         "buttons_fmc4E6"
       ],
       "name": "Image Text",
@@ -259,7 +217,6 @@
     "default",
     "heading_large_ar6nE3",
     "text_stitching_secti_kLj66k",
-    "text_centralised_dny9wP",
     "image_text_UKpNEW",
     "image_text_4J8rJn",
     "image_text_WExeNQ",
