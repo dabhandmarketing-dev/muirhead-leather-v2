@@ -448,7 +448,7 @@
           "type": "text",
           "settings": {
             "richtext_text": "<p>Our lamination technology and process allow customer-specific designs and styling. Laminated seat covers also reduce the amount of foam used, saving weight and cost without compromising on comfort.</p>",
-            "text-size": "1rem"
+            "text-size": "1.25rem"
           }
         },
         "buttons_CmrBYV": {
@@ -487,7 +487,7 @@
           "type": "text",
           "settings": {
             "richtext_text": "<p>We offer a one-stop shop for leather covers, simplifying the supply chain, and operate a dedicated high quality, high volume factory in Guangzhou, China, built using the same state-of-the-art equipment we employ in the UK. </p>",
-            "text-size": "1rem"
+            "text-size": "1.25rem"
           }
         },
         "buttons_rFCCdw": {
