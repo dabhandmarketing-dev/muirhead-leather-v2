@@ -1,11 +1,6 @@
 <div class="padding-section-medium">
           <div class="padding-global">
-            <div li-content-for-blocks="" class="container-small">
-{% for block in section.blocks %}
-{% case block.type %}
-{% when '@app' %}
-{% render block %}
-
+            <div class="container-small">
               <div li-content-for-blocks="" class="text-align-center _2rem-spacing">
 {% for block in section.blocks %}
 {% case block.type %}
@@ -50,10 +45,7 @@
 {% endfor %}
 
     </div>
-            {% endcase %}
-{% endfor %}
-
-    </div>
+            </div>
           </div>
         </div> {% schema %} {
     "tag": "div",
