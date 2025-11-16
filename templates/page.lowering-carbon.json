@@ -43,6 +43,41 @@
       "name": "Text Stitching Secti",
       "settings": {}
     },
+    "text_centralised_dny9wP": {
+      "type": "text_centralised",
+      "blocks": {
+        "heading_bTrgwR": {
+          "type": "heading",
+          "settings": {
+            "text_heading": "Lowest carbon leather"
+          }
+        },
+        "text_U8fAAY": {
+          "type": "text",
+          "settings": {
+            "richtext_richtext": "<p>We make the world’s lowest-carbon leather. Since 2003, we have significantly reduced the carbon intensity of our leather per hide from 10.9kg CO₂e/m² to 1.4kg CO₂e/m² per hide in 2023 and we’re constantly innovating to improve on that even further. </p>"
+          }
+        },
+        "text_ADn9eQ": {
+          "type": "text",
+          "settings": {
+            "richtext_richtext": "<p>Our patented circular manufacturing process incorporates energy recovery, water re-use, renewable energy, locally sourced (and traceable) rawhides, and even a unique take-back scheme for end-of-life leather.</p>"
+          }
+        },
+        "image_GmxwJw": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_bTrgwR",
+        "text_U8fAAY",
+        "text_ADn9eQ",
+        "image_GmxwJw"
+      ],
+      "name": "Text Centralised",
+      "settings": {}
+    },
     "image_text_UKpNEW": {
       "type": "image_text",
       "blocks": {
@@ -87,42 +122,6 @@
         "background_colour": "#ffffff",
         "text-size": "1.25rem"
       }
-    },
-    "text_centralised_dny9wP": {
-      "type": "text_centralised",
-      "blocks": {
-        "heading_bTrgwR": {
-          "type": "heading",
-          "settings": {
-            "text_heading": "Lowest Carbon Leather"
-          }
-        },
-        "text_U8fAAY": {
-          "type": "text",
-          "settings": {
-            "richtext_richtext": "<p>\n                    Significant investments in circular manufacturing have made us arguably the most environmentally-focused leather manufacturer in the world. \n                  </p>"
-          }
-        },
-        "button_gNNCRJ": {
-          "type": "button",
-          "settings": {
-            "url_button_link": "",
-            "text_button_text": "Learn More"
-          }
-        },
-        "image_GmxwJw": {
-          "type": "image",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_bTrgwR",
-        "text_U8fAAY",
-        "button_gNNCRJ",
-        "image_GmxwJw"
-      ],
-      "name": "Text Centralised",
-      "settings": {}
     },
     "image_text_4J8rJn": {
       "type": "image_text",
@@ -504,8 +503,8 @@
     "default",
     "heading_large_ar6nE3",
     "text_stitching_secti_kLj66k",
-    "image_text_UKpNEW",
     "text_centralised_dny9wP",
+    "image_text_UKpNEW",
     "image_text_4J8rJn",
     "image_text_WExeNQ",
     "image_text_aYeU8M",
