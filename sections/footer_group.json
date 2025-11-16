@@ -75,6 +75,13 @@
             "url_link": "https://www.linkedin.com/company/andrew-muirhead-&-son-limited",
             "image_social_logo": "shopify://shop_images/linkedin-line_1.svg"
           }
+        },
+        "social_icons_ij9AmM": {
+          "type": "social-icons",
+          "settings": {
+            "url_link": "https://www.youtube.com/channel/UC79bxABmrFgSLv8QtQSIfFw/featured",
+            "image_social_logo": "shopify://shop_images/youtube-line.svg"
+          }
         }
       },
       "block_order": [
@@ -82,7 +89,8 @@
         "social_icons_whhF3k",
         "social_icons_jn7tAM",
         "social_icons_F4t8ET",
-        "social_icons_eabQay"
+        "social_icons_eabQay",
+        "social_icons_ij9AmM"
       ],
       "settings": {
         "text_sectors_title": "Sectors",
