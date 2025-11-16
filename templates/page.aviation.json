@@ -304,6 +304,44 @@
         "background_colour": "#cad4d8",
         "text-size": "1.25rem"
       }
+    },
+    "image_text_ey6r3x": {
+      "type": "image_text",
+      "blocks": {
+        "headline_tckKYg": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Seat cover innovation"
+          }
+        },
+        "text_CUxiNg": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>As a pioneer of high quality leather seat cover design and manufacturing, Muirhead also explores and adapts trends from other industries, elevating airline cabin aesthetics. </p>"
+          }
+        },
+        "buttons_3yXbwy": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "#",
+            "text_button_text": "Learn More",
+            "url_button_link_2": "",
+            "text_button_text_2": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "headline_tckKYg",
+        "text_CUxiNg",
+        "buttons_3yXbwy"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/muirhead_sector_aviation_06.webp",
+        "grid_position": "right",
+        "background_colour": "#ffffff",
+        "text-size": "1.25rem"
+      }
     }
   },
   "layout": "theme",
@@ -319,6 +357,7 @@
     "image_text_WExeNQ",
     "image_text_aYeU8M",
     "harry_embed_GnDq9X",
-    "image_text_mTqmbf"
+    "image_text_mTqmbf",
+    "image_text_ey6r3x"
   ]
 }
