@@ -23,11 +23,6 @@
         "image_image_mobile": "shopify://shop_images/aviation-head.webp"
       }
     },
-    "page_heading_EEpKEL": {
-      "type": "page_heading",
-      "name": "Page Heading",
-      "settings": {}
-    },
     "text_stitching_secti_kLj66k": {
       "type": "text_stitching_secti",
       "blocks": {
@@ -87,7 +82,6 @@
   "order": [
     "default",
     "heading_large_ar6nE3",
-    "page_heading_EEpKEL",
     "text_stitching_secti_kLj66k",
     "image_text_UKpNEW"
   ]
