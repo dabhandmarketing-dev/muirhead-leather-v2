@@ -9,6 +9,11 @@
  */
 {
   "sections": {
+    "dotted_sides_kdkFRj": {
+      "type": "dotted_sides",
+      "name": "Dotted Sides",
+      "settings": {}
+    },
     "default": {
       "type": "default",
       "disabled": true,
@@ -77,11 +82,6 @@
         "text-size": "1.25rem"
       }
     },
-    "dotted_sides_kdkFRj": {
-      "type": "dotted_sides",
-      "name": "Dotted Sides",
-      "settings": {}
-    },
     "text_centralised_dny9wP": {
       "type": "text_centralised",
       "blocks": {
@@ -117,16 +117,62 @@
       ],
       "name": "Text Centralised",
       "settings": {}
+    },
+    "image_text_4J8rJn": {
+      "type": "image_text",
+      "blocks": {
+        "headline_KRbpVH": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Uncompromising performance"
+          }
+        },
+        "text_LR9LHh": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Aviation materials need to meet the highest technical performance standards in the world and our leather exceeds them all. Flame retardancy, vertical burn times, heat distribution, pressure distribution, passenger wear, colour fastness and more are guaranteed by our cutting-edge, world-class technology.</p>"
+          }
+        },
+        "text_WePjg8": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Muirhead is the global market leader supplying more than 160 airlines, airframe and seating manufacturers across 60 countries. Unique ownership of the full end-to-end process gives us complete control of the supply chain and manufacturing process.</p>"
+          }
+        },
+        "buttons_apK8hw": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "",
+            "text_button_text": "Learn More",
+            "url_button_link_2": "",
+            "text_button_text_2": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "headline_KRbpVH",
+        "text_LR9LHh",
+        "text_WePjg8",
+        "buttons_apK8hw"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/muirhead_sector_aviation_01_new.webp",
+        "grid_position": "right",
+        "background_colour": "#ffffff",
+        "text-size": "1.25rem"
+      }
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
+    "dotted_sides_kdkFRj",
     "default",
     "heading_large_ar6nE3",
     "text_stitching_secti_kLj66k",
     "image_text_UKpNEW",
-    "dotted_sides_kdkFRj",
-    "text_centralised_dny9wP"
+    "text_centralised_dny9wP",
+    "image_text_4J8rJn"
   ]
 }
