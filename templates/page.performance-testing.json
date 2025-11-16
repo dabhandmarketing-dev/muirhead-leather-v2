@@ -75,7 +75,7 @@
       ],
       "name": "Image Text",
       "settings": {
-        "image_image": "shopify://shop_images/sustainability_lowering-carbon_image_02.webp",
+        "image_image": "shopify://shop_images/our_expertise_performance-testing_image_01.webp",
         "grid_position": "left",
         "background_colour": "#ffffff",
         "text-size": "1.25rem"
@@ -87,13 +87,13 @@
         "headline_KRbpVH": {
           "type": "headline",
           "settings": {
-            "text_headline": "State-of-the-art"
+            "text_headline": "Pre-stressed testing"
           }
         },
         "text_LR9LHh": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Significant investments in circular manufacturing have made us arguably the most modern and environmentally-focused leather manufacturer in the world. As part of Scottish Leather Group, our facilities on-site include a thermal energy plant, a water ultrafiltration plant and a modern, cutting-edge tannery.</p>"
+            "richtext_text": "<p>Most textiles testing carried out by other manufacturers is applied to new materials, which does not reflect real-world use. At Muirhead, we ‘pre-stress’ test samples by exposing them to extreme ranges of temperature and humidity to simulate years of real-world service and gather more realistic, useful data. Only then do we begin testing our leather’s performance.</p>"
           }
         },
         "buttons_apK8hw": {
