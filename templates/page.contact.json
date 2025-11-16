@@ -39,9 +39,11 @@
       "blocks": {
         "card_HpXweV": {
           "type": "card",
+          "name": "Myles Hobbs",
           "settings": {
             "text_title": "Head Sales Office",
-            "text_job_description": "Myles Hobbs Aviation Director | EMEA/The Americas",
+            "text_name": "Myles Hobbs",
+            "text_position": "Aviation Director | EMEA/The Americas",
             "url_phone": "tel:+353 (0)87 403 4699",
             "text_phone_number": "+353 (0)87 403 4699",
             "url_email": "mailto:myles.hobbs@muirhead.co.uk",
@@ -50,13 +52,15 @@
         },
         "card_iNqBB8": {
           "type": "card",
+          "name": "Kevin Smith",
           "settings": {
             "text_title": "Head Sales Office",
-            "text_job_description": "Myles Hobbs Aviation Director",
-            "url_phone": "tel:+353 (0)87 403 4699",
-            "text_phone_number": "+353 (0)87 403 4699",
-            "url_email": "mailto:myles.hobbs@muirhead.co.uk",
-            "text_email_address": "myles.hobbs@muirhead.co.uk"
+            "text_name": "Kevin Smith",
+            "text_position": "Mass Transit Director",
+            "url_phone": "tel:+44 (0)141 550 6400",
+            "text_phone_number": "+44 (0)141 550 6400",
+            "url_email": "mailto:kevin.smith@muirhead.co.uk",
+            "text_email_address": "kevin.smith@muirhead.co.uk"
           }
         }
       },
