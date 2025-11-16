@@ -113,6 +113,45 @@
       "settings": {
         "text_heading": "Recommended"
       }
+    },
+    "image_text_4j4pwR": {
+      "type": "image_text",
+      "blocks": {
+        "headline_LkrNfX": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Natural Performance Collection"
+          }
+        },
+        "text_naxz8X": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Explore our environmentally sustainable, durable and premium leathers available in a range of colours and finishes, perfect for any project.</p><p>Choose from four unique grains and finishes to blend durability and style. Whether you prefer a natural pebbled grain or a velvety matte texture, our collection combines sophistication and durability.</p>",
+            "text-size": "1rem"
+          }
+        },
+        "buttons_9rV4j6": {
+          "type": "buttons",
+          "settings": {
+            "url_button_link": "#",
+            "text_button_text": "Learn More",
+            "url_button_link_2": "",
+            "text_button_text_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "headline_LkrNfX",
+        "text_naxz8X",
+        "buttons_9rV4j6"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/Samples.webp",
+        "grid_position": "left",
+        "background_colour": "#ffffff",
+        "text-color": "#444444"
+      }
     }
   },
   "layout": "theme",
@@ -122,6 +161,7 @@
     "product_hero",
     "ribbons_gj8kMw",
     "product_content_iftBPT",
+    "image_text_4j4pwR",
     "recommended_products"
   ]
 }
