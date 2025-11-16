@@ -23,8 +23,8 @@
       "type": "heading_large",
       "name": "Heading Large",
       "settings": {
-        "text_heading": "Aviation",
-        "image_image_desktop": "shopify://shop_images/aviation-head.webp"
+        "text_heading": "{{ page.title }}",
+        "image_image_desktop": "shopify://shop_images/lowering-carbon.webp"
       }
     },
     "text_stitching_secti_kLj66k": {
@@ -33,7 +33,7 @@
         "rich_text_PDtKDH": {
           "type": "rich-text",
           "settings": {
-            "richtext_richtext": "<h3>The very best low carbon,<br/>high performance aviation leather. </h3>"
+            "richtext_richtext": "<h3>Lowering carbon through circular manufacturing.</h3>"
           }
         }
       },
