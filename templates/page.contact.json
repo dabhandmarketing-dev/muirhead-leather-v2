@@ -47,7 +47,9 @@
             "url_phone": "tel:+353 (0)87 403 4699",
             "text_phone_number": "+353 (0)87 403 4699",
             "url_email": "mailto:myles.hobbs@muirhead.co.uk",
-            "text_email_address": "myles.hobbs@muirhead.co.uk"
+            "text_email_address": "myles.hobbs@muirhead.co.uk",
+            "url_web_url": "",
+            "text_website_link": ""
           }
         },
         "card_iNqBB8": {
@@ -60,7 +62,9 @@
             "url_phone": "tel:+44 (0)141 550 6400",
             "text_phone_number": "+44 (0)141 550 6400",
             "url_email": "mailto:kevin.smith@muirhead.co.uk",
-            "text_email_address": "kevin.smith@muirhead.co.uk"
+            "text_email_address": "kevin.smith@muirhead.co.uk",
+            "url_web_url": "",
+            "text_website_link": ""
           }
         },
         "card_nE9yLX": {
@@ -73,7 +77,9 @@
             "url_phone": "tel:+44 (0) 7540 100 186",
             "text_phone_number": "+44 (0) 7540 100 186",
             "url_email": "mailto:jonathan.lord@muirhead.co.uk",
-            "text_email_address": "jonathan.lord@muirhead.co.uk"
+            "text_email_address": "jonathan.lord@muirhead.co.uk",
+            "url_web_url": "",
+            "text_website_link": ""
           }
         },
         "card_6xit6b": {
@@ -86,7 +92,9 @@
             "url_phone": "tel:+44 (0)7771 611 496",
             "text_phone_number": "+44 (0)7771 611 496",
             "url_email": "mailto:stephen.ritchie@muirhead.co.uk",
-            "text_email_address": "stephen.ritchie@muirhead.co.uk"
+            "text_email_address": "stephen.ritchie@muirhead.co.uk",
+            "url_web_url": "",
+            "text_website_link": ""
           }
         },
         "card_NHqq8m": {
@@ -99,7 +107,9 @@
             "url_phone": "tel:+44 7702 885 237",
             "text_phone_number": "+44 7702 885 237",
             "url_email": "mailto:douglas.cameron@muirhead.co.uk",
-            "text_email_address": "douglas.cameron@muirhead.co.uk"
+            "text_email_address": "douglas.cameron@muirhead.co.uk",
+            "url_web_url": "",
+            "text_website_link": "Lorem Ipsum"
           }
         },
         "card_cPftQ6": {
@@ -112,7 +122,9 @@
             "url_phone": "tel:+971 55 239 8091",
             "text_phone_number": "+971 55 239 8091",
             "url_email": "mailto:jon.jones@muirhead.co.uk",
-            "text_email_address": "jon.jones@muirhead.co.uk"
+            "text_email_address": "jon.jones@muirhead.co.uk",
+            "url_web_url": "",
+            "text_website_link": ""
           }
         },
         "card_RaATwr": {
@@ -125,7 +137,9 @@
             "url_phone": "tel:+1 425 455 2120",
             "text_phone_number": "+1 425 455 2120",
             "url_email": "mailto:customerservice@dipi.com",
-            "text_email_address": "customerservice@dipi.com"
+            "text_email_address": "customerservice@dipi.com",
+            "url_web_url": "https://www.dipi.com",
+            "text_website_link": "www.dipi.com"
           }
         }
       },
