@@ -47,6 +47,12 @@
     "image_text_UKpNEW": {
       "type": "image_text",
       "blocks": {
+        "headline_WqK34M": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Trusted all over the world"
+          }
+        },
         "text_RMhPdx": {
           "type": "text",
           "settings": {
@@ -70,6 +76,7 @@
         }
       },
       "block_order": [
+        "headline_WqK34M",
         "text_RMhPdx",
         "text_YPJgpJ",
         "buttons_fmc4E6"
