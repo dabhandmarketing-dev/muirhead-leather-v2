@@ -142,7 +142,7 @@
         "buttons_apK8hw": {
           "type": "buttons",
           "settings": {
-            "url_button_link": "",
+            "url_button_link": "#",
             "text_button_text": "Learn More",
             "url_button_link_2": "",
             "text_button_text_2": "Learn More"
@@ -160,7 +160,7 @@
         "image_image": "shopify://shop_images/muirhead_sector_aviation_01_new.webp",
         "grid_position": "right",
         "background_colour": "#ffffff",
-        "text-size": "1.25rem"
+        "text-size": "1rem"
       }
     }
   },
