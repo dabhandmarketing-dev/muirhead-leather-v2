@@ -83,7 +83,8 @@
         "text_qpPqka": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Muirhead BioPRO® Foam is a game-changer for aviation seating – setting a new standard in sustainability, performance, and customisation. <br/><br/>With a <strong>protein content of 20%</strong>, this innovative foam for aviation seat cushions is naturally fire-resistant, highly durable, and lightweight. It is free from harmful substances such as melamine, bromine, and PFAS, and can be fully tailored to meet your specific requirements.Explore how this revolutionary foam can transform your seating solutions and enhance passenger comfort.</p>"
+            "richtext_text": "<p>Muirhead BioPRO® Foam is a game-changer for aviation seating – setting a new standard in sustainability, performance, and customisation. <br/><br/>With a <strong>protein content of 20%</strong>, this innovative foam for aviation seat cushions is naturally fire-resistant, highly durable, and lightweight. It is free from harmful substances such as melamine, bromine, and PFAS, and can be fully tailored to meet your specific requirements.Explore how this revolutionary foam can transform your seating solutions and enhance passenger comfort.</p>",
+            "text-size": "1.25rem"
           }
         },
         "buttons_i9TC8U": {
@@ -134,19 +135,22 @@
         "text_cm3Lef": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. </p>"
+            "richtext_text": "<p>As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers. </p>",
+            "text-size": "1rem"
           }
         },
         "text_YjbReF": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p>Most manufacturers today are optimised for fabric and synthetic materials. However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency.</p>"
+            "richtext_text": "<p>Most manufacturers today are optimised for fabric and synthetic materials. However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency.</p>",
+            "text-size": "1rem"
           }
         },
         "text_txMzjN": {
           "type": "text",
           "settings": {
-            "richtext_text": "<p><strong>And that’s just the beginning.</strong></p>"
+            "richtext_text": "<p><strong>And that’s just the beginning.</strong></p>",
+            "text-size": "1rem"
           }
         },
         "buttons_KffWtG": {
@@ -222,7 +226,8 @@
       "settings": {
         "image_image": "shopify://shop_images/FreeTan.webp",
         "grid_position": "right",
-        "background_colour": "#ffffff"
+        "background_colour": "#ffffff",
+        "text-size": "1rem"
       }
     },
     "image_text_MnABaL": {
@@ -259,7 +264,8 @@
       "settings": {
         "image_image": "shopify://shop_images/Samples.webp",
         "grid_position": "left",
-        "background_colour": "#ffffff"
+        "background_colour": "#ffffff",
+        "text-size": "1rem"
       }
     },
     "harry_sv_yG4HdW": {
