@@ -1,29 +1,31 @@
 <div class="padding-global-10 padding-section-small">
-          <div class="container-large-13">
-            <div class="video_wrapper" style="aspect-ratio: {{ section.settings.video.aspect_ratio }}">
-              <div li-object="section.settings.video | external_video_tag" class="video_video">{{ section.settings.video | external_video_tag }}</div>
-            </div>
-          </div>
-        </div> {% schema %} {
-    "tag": "section",
-    "name": "Harry Embed",
-    "class": "section_video",
-    "settings": [
-        {
-            "type": "video_url",
-            "id": "video",
-            "label": "Video",
-            "accept": [
-                "youtube",
-                "vimeo"
-            ]
-        }
-    ],
-    "presets": [
-        {
-            "name": "Harry Embed",
-            "category": "Liquify",
-            "blocks": []
-        }
-    ]
-} {% endschema %}
+  <div class="container-large-13">
+    <div class="video_wrapper" style="aspect-ratio: {{ section.settings.video.aspect_ratio | default: '16 / 9' }}">
+      <div class="video_video">
+        {{ section.settings.video | video_tag: autoplay: true, loop: false, controls: true, muted: false }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "tag": "section",
+  "name": "Harry Embed",
+  "class": "section_video",
+  "settings": [
+    {
+      "type": "video_url",
+      "id": "video",
+      "label": "Video",
+      "accept": ["youtube", "vimeo"]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Harry Embed",
+      "category": "Liquify"
+    }
+  ]
+}
+{% endschema %}
