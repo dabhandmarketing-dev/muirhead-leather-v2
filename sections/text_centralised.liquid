@@ -1,39 +1,40 @@
-<div class="padding-section-medium">
-          <div class="padding-global">
-            <div class="container-small">
-              <div li-content-for-blocks="" class="text-align-center _2rem-spacing">
+<div id="about" class="section section {{ section.settings.color_theme }}">
+          <div class="padding-section-medium">
+            <div class="padding-global">
+              <div class="container-small">
+                <div li-content-for-blocks="" class="text-align-center _2rem-spacing">
 {% for block in section.blocks %}
 {% case block.type %}
 {% when '@app' %}
 {% render block %}
 
-                {% when 'heading' %}
+                  {% when 'heading' %}
             <div li-block="Heading">
                     
-                  
+                    
                     <h1 style="color: {{ section.settings.text-color }} !important;">
 {{ block.settings.text_heading }}
 </h1>
                     
-                
+                  
                 </div>
-                {% when 'text' %}
+                  {% when 'text' %}
             <div li-block="Text">
                     
-                  
+                    
                     <div class="text-size-medium w-richtext" style="color: {{ section.settings.text-color }} !important;"> {{ block.settings.richtext_richtext }} </div>
                     
-                
+                  
                 </div>
-                {% when 'button' %}
+                  {% when 'button' %}
             <div li-block="Button">
                     
-                  
+                    
                     <a href="{{ block.settings.url_button_link }}" data-wf--button-main--variant="base" data-w-id="62fe5b66-eb79-581e-644e-970322077823" class="button-main w-inline-block"> <div class="icon-link-3"> <div class="clip-2 white-10"> <div class="hover-text white-31"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 bottom white-20"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22"> <div class="clip-2 white-10"> <div class="hover-arrow-3"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewbox="0 0 24 24" fill="none" app="ikonik" class="icon-1x1-small-7"> <path d="M13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H16.1893L13.4697 8.53033Z" fill="currentColor" app="ikonik" class="path-c1mxz"></path> </svg></div> <div class="hover-arrow-3 left-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewbox="0 0 24 24" fill="none" app="ikonik" class="icon-1x1-small-7"> <path d="M13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H16.1893L13.4697 8.53033Z" fill="currentColor" app="ikonik" class="path-c1mxz"></path> </svg></div> </div> </div> </div> </a>
                     
-                
+                  
                 </div>
-                {% when 'image' %}
+                  {% when 'image' %}
             <div li-block="Image">
                     {% if block.settings.image_image %}
 {{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'image-large', sizes: '(max-width: 767px) 100vw, 638.0034790039062px', loading: 'lazy' }}
@@ -41,17 +42,17 @@
 <img class="image-large" src="{{ 'muirhead_sector_aviation_02.webp' | asset_url }}" alt="" sizes="(max-width: 767px) 100vw, 638.0034790039062px" loading="lazy" srcset="{{ 'muirhead_sector_aviation_02-p-500.webp' | asset_url }} 500w, {{ 'muirhead_sector_aviation_02.webp' | asset_url }} 638w">
 {% endif %}
                 </div>
-              {% endcase %}
+                {% endcase %}
 {% endfor %}
 
     </div>
+              </div>
             </div>
+            
           </div>
-          
         </div> {% schema %} {
     "tag": "div",
     "name": "Text Centralised",
-    "class": "section charcoal",
     "blocks": [
         {
             "name": "Heading",
@@ -73,7 +74,7 @@
                     "id": "richtext_richtext",
                     "type": "richtext",
                     "label": "Richtext",
-                    "default": "<p>\n                    Significant investments in circular manufacturing have made us arguably the most environmentally-focused leather manufacturer in the world. \n                  <\/p>"
+                    "default": "<p>\n                      Significant investments in circular manufacturing have made us arguably the most environmentally-focused leather manufacturer in the world. \n                    <\/p>"
                 }
             ]
         },
@@ -119,6 +120,26 @@
             "id": "text-color",
             "label": "Text Color",
             "default": "#ffffff"
+        },
+        {
+            "type": "header",
+            "content": "Colour Theme"
+        },
+        {
+            "type": "select",
+            "id": "color_theme",
+            "label": "Color Theme",
+            "default": "",
+            "options": [
+                {
+                    "label": "Light",
+                    "value": ""
+                },
+                {
+                    "label": "Dark",
+                    "value": "w-variant-bf4e2892-99d3-a6e6-f213-5703e0a20471"
+                }
+            ]
         }
     ],
     "presets": [
