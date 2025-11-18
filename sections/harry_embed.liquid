@@ -1,8 +1,13 @@
 <div class="padding-global-10 padding-section-small">
   <div class="container-large-13">
-    <div class="video_wrapper" style="aspect-ratio: {{ section.settings.video.aspect_ratio | default: '16 / 9' }}">
+    <div class="video_wrapper" style="aspect-ratio: 16 / 9">
       <div class="video_video">
-        {{ section.settings.video | video_tag: autoplay: true, loop: false, controls: true, muted: false }}
+        {% if section.settings.video %}
+          <iframe width="100%" height="100%" 
+            src="{% if section.settings.video.type == 'youtube' %}{{ section.settings.video.embed_url }}{% else %}{{ section.settings.video.embed_url }}{% endif %}" 
+            frameborder="0" allowfullscreen>
+          </iframe>
+        {% endif %}
       </div>
     </div>
   </div>
