@@ -23,9 +23,9 @@
         "grid-columns": "6"
       }
     },
-    "collection_test_2_DRJCPi": {
-      "type": "collection_test_2",
-      "name": "collection-test-2",
+    "r_collection_product_KYATyn": {
+      "type": "r_collection_product",
+      "name": "R-collection_product",
       "settings": {}
     }
   },
@@ -34,6 +34,6 @@
   "order": [
     "page_heading_w4V3gw",
     "collection_products_wmxiff",
-    "collection_test_2_DRJCPi"
+    "r_collection_product_KYATyn"
   ]
 }
