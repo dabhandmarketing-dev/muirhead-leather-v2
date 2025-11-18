@@ -1,36 +1,30 @@
 <div class="padding-global-10 padding-section-small">
   <div class="container-large-13">
-    <div class="video_wrapper" style="aspect-ratio: 16 / 9">
-      <div class="video_video">
-        {% if section.settings.video %}
-          <iframe width="100%" height="100%" 
-            src="{% if section.settings.video.type == 'youtube' %}{{ section.settings.video.embed_url }}{% else %}{{ section.settings.video.embed_url }}{% endif %}" 
-            frameborder="0" allowfullscreen>
-          </iframe>
-        {% endif %}
-      </div>
+    <div class="video_wrapper" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
+      <iframe 
+        src="{{ section.settings.video }}" 
+        style="position:absolute; top:0; left:0; width:100%; height:100%;" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
     </div>
   </div>
 </div>
 
 {% schema %}
 {
-  "tag": "section",
   "name": "Harry Embed",
+  "tag": "section",
   "class": "section_video",
   "settings": [
     {
       "type": "video_url",
       "id": "video",
-      "label": "Video",
+      "label": "YouTube or Vimeo URL",
       "accept": ["youtube", "vimeo"]
     }
   ],
-  "presets": [
-    {
-      "name": "Harry Embed",
-      "category": "Liquify"
-    }
-  ]
+  "presets": [{ "name": "Harry Embed" }]
 }
 {% endschema %}
