@@ -1,0 +1,29 @@
+<div class="padding-global-10 padding-section-small">
+          <div class="container-large-13">
+            <div class="video_wrapper" style="aspect-ratio: 16/9">
+              <div li-object="{{ section.settings.video | replace: 'youtube.com/watch?v=', 'youtube.com/embed/' | replace: 'youtu.be/', 'youtube.com/embed/' | replace: 'vimeo.com/', 'player.vimeo.com/video/' }}?autoplay=0&controls=1&modestbranding=1&rel=0&title=0&byline=0&portrait=0" class="video_video" allowfullscreen src="{{ section.settings.video | replace: 'youtube.com/watch?v=', 'youtube.com/embed/' | replace: 'youtu.be/', 'youtube.com/embed/' | replace: 'vimeo.com/', 'player.vimeo.com/video/' }}?autoplay=0&controls=1&modestbranding=1&rel=0&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%" frameborder allow="autoplay; encrypted-media; picture-in-picture">{{ {{ section.settings.video | replace: 'youtube.com/watch?v=', 'youtube.com/embed/' | replace: 'youtu.be/', 'youtube.com/embed/' | replace: 'vimeo.com/', 'player.vimeo.com/video/' }}?autoplay=0&controls=1&modestbranding=1&rel=0&title=0&byline=0&portrait=0 }}</div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Youtube + Vimeo",
+    "class": "section_video",
+    "settings": [
+        {
+            "type": "video_url",
+            "id": "video",
+            "label": "Video",
+            "accept": [
+                "youtube",
+                "vimeo"
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Youtube + Vimeo",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}
