@@ -199,7 +199,6 @@
     },
     "harry_sv_yG4HdW": {
       "type": "harry_sv",
-      "disabled": true,
       "name": "Harry SV",
       "settings": {
         "video": "shopify://files/videos/Placeholder video.mp4"
