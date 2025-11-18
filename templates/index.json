@@ -191,7 +191,6 @@
     },
     "harry_embed_eLm6NJ": {
       "type": "harry_embed",
-      "disabled": true,
       "name": "Harry Embed",
       "settings": {
         "video": "https://youtu.be/u31qwQUeGuM?si=duKhhDTi6eP2bzm7"
