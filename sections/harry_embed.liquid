@@ -1,11 +1,11 @@
 <div class="padding-global-10 padding-section-small">
   <div class="container-large-13">
-    <div class="video_wrapper" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
+    <div class="video_wrapper" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden">
       <iframe 
-        src="{{ section.settings.video }}" 
-        style="position:absolute; top:0; left:0; width:100%; height:100%;" 
-        frameborder="0" 
-        allow="autoplay; encrypted-media; picture-in-picture" 
+        src="{{ section.settings.video }}?autoplay=0&loop=0&controls=1&modestbranding=1&rel=0&showinfo=0"
+        style="position:absolute;top:0;left:0;width:100%;height:100%"
+        frameborder="0"
+        allow="autoplay; encrypted-media; picture-in-picture"
         allowfullscreen>
       </iframe>
     </div>
@@ -16,7 +16,6 @@
 {
   "name": "Harry Embed",
   "tag": "section",
-  "class": "section_video",
   "settings": [
     {
       "type": "video_url",
@@ -25,6 +24,8 @@
       "accept": ["youtube", "vimeo"]
     }
   ],
-  "presets": [{ "name": "Harry Embed" }]
+  "presets": [
+    { "name": "Harry Embed" }
+  ]
 }
 {% endschema %}
