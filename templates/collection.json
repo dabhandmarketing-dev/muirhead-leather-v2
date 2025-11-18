@@ -16,17 +16,24 @@
     },
     "collection_products_wmxiff": {
       "type": "collection_products",
+      "disabled": true,
       "name": "Collection Products",
       "settings": {
         "text_products_shown": "Products shown",
         "grid-columns": "6"
       }
+    },
+    "collection_test_2_DRJCPi": {
+      "type": "collection_test_2",
+      "name": "collection-test-2",
+      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
     "page_heading_w4V3gw",
-    "collection_products_wmxiff"
+    "collection_products_wmxiff",
+    "collection_test_2_DRJCPi"
   ]
 }

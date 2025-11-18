@@ -42,7 +42,9 @@
         "rich_text_PDtKDH"
       ],
       "name": "Text Stitching Secti",
-      "settings": {}
+      "settings": {
+        "color_theme": ""
+      }
     },
     "image_text_UKpNEW": {
       "type": "image_text",
@@ -87,8 +89,7 @@
       "settings": {
         "image_image": "shopify://shop_images/muirhead_sector_aviation_01_new.webp",
         "grid_position": "left",
-        "background_colour": "#ffffff",
-        "text-color": "#444444"
+        "color_theme": ""
       }
     },
     "text_centralised_dny9wP": {
@@ -126,7 +127,7 @@
       ],
       "name": "Text Centralised",
       "settings": {
-        "text-color": "#ffffff"
+        "color_theme": ""
       }
     },
     "image_text_4J8rJn": {
@@ -164,8 +165,7 @@
       "settings": {
         "image_image": "shopify://shop_images/muirhead_sector_aviation_03.webp",
         "grid_position": "right",
-        "background_colour": "#ffffff",
-        "text-color": "#444444"
+        "color_theme": ""
       }
     },
     "image_text_WExeNQ": {
@@ -211,8 +211,7 @@
       "settings": {
         "image_image": "shopify://shop_images/muirhead_sector_aviation_04.webp",
         "grid_position": "left",
-        "background_colour": "#ffffff",
-        "text-color": "#444444"
+        "color_theme": ""
       }
     },
     "image_text_aYeU8M": {
@@ -258,15 +257,7 @@
       "settings": {
         "image_image": "shopify://shop_images/muirhead_sector_aviation_05.webp",
         "grid_position": "right",
-        "background_colour": "#ffffff",
-        "text-color": "#444444"
-      }
-    },
-    "harry_embed_GnDq9X": {
-      "type": "harry_embed",
-      "name": "Harry Embed",
-      "settings": {
-        "video": "https://youtu.be/u31qwQUeGuM?si=duKhhDTi6eP2bzm7"
+        "color_theme": ""
       }
     },
     "image_text_mTqmbf": {
@@ -312,8 +303,7 @@
       "settings": {
         "image_image": "shopify://shop_images/muirhead_sector_aviation_06.webp",
         "grid_position": "left",
-        "background_colour": "#cad4d8",
-        "text-color": "#444444"
+        "color_theme": ""
       }
     },
     "image_text_ey6r3x": {
@@ -351,8 +341,7 @@
       "settings": {
         "image_image": "shopify://shop_images/muirhead_sector_aviation_07.webp",
         "grid_position": "right",
-        "background_colour": "#ffffff",
-        "text-color": "#444444"
+        "color_theme": ""
       }
     },
     "image_text_awHXXQ": {
@@ -391,8 +380,7 @@
       "settings": {
         "image_image": "shopify://shop_images/muirhead_sector_aviation_08.webp",
         "grid_position": "left",
-        "background_colour": "#ffffff",
-        "text-color": "#444444"
+        "color_theme": ""
       }
     },
     "image_text_gWKVBa": {
@@ -431,8 +419,7 @@
       "settings": {
         "image_image": "shopify://shop_images/muirhead_sector_aviation_09.webp",
         "grid_position": "right",
-        "background_colour": "#ffffff",
-        "text-color": "#444444"
+        "color_theme": ""
       }
     },
     "image_text_tAB74R": {
@@ -470,8 +457,7 @@
       "settings": {
         "image_image": "shopify://shop_images/muirhead_sector_aviation_10.webp",
         "grid_position": "left",
-        "background_colour": "#53565a",
-        "text-color": "#ffffff"
+        "color_theme": ""
       }
     },
     "image_text_RtzW39": {
@@ -509,8 +495,7 @@
       "settings": {
         "image_image": "shopify://shop_images/muirhead_sector_aviation_11_1.webp",
         "grid_position": "right",
-        "background_colour": "#ffffff",
-        "text-color": "#444444"
+        "color_theme": ""
       }
     }
   },
@@ -526,7 +511,6 @@
     "image_text_4J8rJn",
     "image_text_WExeNQ",
     "image_text_aYeU8M",
-    "harry_embed_GnDq9X",
     "image_text_mTqmbf",
     "image_text_ey6r3x",
     "image_text_awHXXQ",

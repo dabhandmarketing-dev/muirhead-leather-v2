@@ -236,8 +236,7 @@
       "settings": {
         "image_image": "shopify://shop_images/FreeTan.webp",
         "grid_position": "right",
-        "background_colour": "#ffffff",
-        "text-color": "#444444"
+        "color_theme": ""
       }
     },
     "image_text_MnABaL": {
@@ -275,8 +274,7 @@
       "settings": {
         "image_image": "shopify://shop_images/Samples.webp",
         "grid_position": "left",
-        "background_colour": "#ffffff",
-        "text-color": "#444444"
+        "color_theme": ""
       }
     },
     "image_text_LCEyBJ": {
@@ -314,8 +312,7 @@
       "settings": {
         "image_image": "shopify://shop_images/muirhead_home_01_1.webp",
         "grid_position": "right",
-        "background_colour": "#053e51",
-        "text-color": "#ffffff"
+        "color_theme": ""
       }
     },
     "image_text_d8GRU9": {
@@ -346,8 +343,7 @@
       "settings": {
         "image_image": "shopify://shop_images/luxury-leather.webp",
         "grid_position": "left",
-        "background_colour": "#ffffff",
-        "text-color": "#444444"
+        "color_theme": ""
       }
     }
   },
