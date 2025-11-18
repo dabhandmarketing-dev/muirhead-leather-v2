@@ -37,6 +37,7 @@
   --background-color--background-alternate: var(--base-color-neutral--white);
   --background-color--background-success: var(--base-color-system--success-green);
   --text-color--text-success: var(--base-color-system--success-green-dark);
+  --base-color-brand--off-black: #1b1d1f;
   --base-color-brand--charcoal: #53565a;
   --base-color-brand--darker-charcoal: #eee;
   --base-color-brand--green: #11763d;
@@ -3786,8 +3787,8 @@ figcaption {
   flex: none;
   justify-content: center;
   align-items: center;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.6rem;
+  height: 1.6rem;
   display: flex;
   overflow: hidden;
 }
@@ -5167,7 +5168,7 @@ figcaption {
   background-color: #f4f4f4;
 }
 
-.texthero {
+.text-hero {
   z-index: 999999;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
@@ -5177,6 +5178,11 @@ figcaption {
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
+}
+
+.text-hero:where(.w-variant-d9472497-0a55-a96e-6f21-1a76f9556a60) {
+  background-color: var(--base-color-brand--off-black);
+  color: var(--base-color-neutral--white);
 }
 
 .dotted-float {
@@ -6359,10 +6365,9 @@ figcaption {
 }
 
 .button-main {
-  border: 1px solid var(--base-color-neutral--white);
+  border: 1px solid var(--base-color-brand--charcoal);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  color: #f4f4f4;
   text-align: center;
   padding: .5rem 1rem .5rem 1.25rem;
   font-size: 1rem;
@@ -6373,7 +6378,7 @@ figcaption {
 
 .button-main:where(.w-variant-40d42f51-beaf-80a4-8697-83623596810b) {
   border-color: var(--base-color-brand--charcoal);
-  color: var(--base-color-brand--charcoal);
+  color: var(--base-color-neutral--white);
 }
 
 .button-main:where(.w-variant-2fefbeae-31c5-f762-65ea-fe5ecac51e2f) {
@@ -6386,7 +6391,6 @@ figcaption {
 }
 
 .button-main:hover {
-  color: #fff;
   background-color: #f4f4f433;
 }
 
@@ -8380,6 +8384,10 @@ figcaption {
 
 .u-display-contents {
   display: contents;
+}
+
+.ikonik-bofl8k {
+  color: #fff;
 }
 
 @media screen and (min-width: 1280px) {
