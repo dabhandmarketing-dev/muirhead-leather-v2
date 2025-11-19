@@ -1,5 +1,5 @@
 <div class="padding-section-small">
-          <div li-render-filter="wrapper" class="padding-global">
+          <div li-render-custom-reinit="true" li-render-filter="wrapper" class="padding-global">
             <div class="container-large">
               {% paginate collection.products by 50 %}
     <div li-paginate:by="50" li-paginate="collection.products" class="filter_layout-2" by="50">
@@ -99,10 +99,10 @@
                       <div data-delay="0" data-hover="false" class="dropdown-4 w-dropdown">
                         <div class="filter_sort-by-2 w-dropdown-toggle">
                           <div class="dropdown_icon w-icon-dropdown-toggle"></div>
-                          <div li-object="collection.default_sort_by" class="text-size-small-2">{{ collection.default_sort_by }}</div>
+                          <div li-object="collection.sort_by | default: collection.default_sort_by" class="text-size-small-2">{{ collection.sort_by | default: collection.default_sort_by }}</div>
                         </div>
                         <nav li-for:inside="option in collection.sort_options" class="dropdown_list w-dropdown-list">
-        {% for option in collection.sort_options %}                            <label><input type="radio" li-render-filter="sort" li-render-filter-trigger="input" value="{{ option.value }}" {% if option.value == collection.sort_by %}checked{% elsif option.value == collection.default_sort_by %}checked{% endif %}><span>{{ option.name }}</span></label>
+        {% for option in collection.sort_options %}                            <label><input type="radio" li-render-filter="sort" li-render-filter-trigger="input" name="sort_by" class="input" value="{{ option.value }}" {% if option.value == collection.sort_by %}checked{% elsif option.value == collection.default_sort_by %}checked{% endif %}><span>{{ option.name }}</span></label>
                     {% endfor %}    </nav>
                       </div>
                     </div>
