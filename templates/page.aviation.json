@@ -497,6 +497,13 @@
         "grid_position": "right",
         "color_theme": ""
       }
+    },
+    "contact_cta_D8tpAn": {
+      "type": "contact_cta",
+      "name": "Contact CTA",
+      "settings": {
+        "text_text": "sales@muirhead.co.uk"
+      }
     }
   },
   "layout": "theme",
@@ -512,6 +519,7 @@
     "image_text_WExeNQ",
     "image_text_aYeU8M",
     "image_text_mTqmbf",
+    "contact_cta_D8tpAn",
     "image_text_ey6r3x",
     "image_text_awHXXQ",
     "image_text_gWKVBa",
