@@ -1,98 +1,47 @@
 <div class="contact-cta">
-          <div li-content-for-blocks="" class="home-action_descript">
-{% for block in section.blocks %}
-{% case block.type %}
-{% when '@app' %}
-{% render block %}
-
-            {% when 'rich-text' %}
-            <div li-block="Rich Text">
-                    
-              
-                    <div class="text-h4 w-richtext"> {{ block.settings.richtext_richtext }} </div>
-                    
-            
-                </div>
-            <div class="cta-buttons">
-              {% when 'button' %}
-            <div li-block="Button">
-                    
-                
-                    <a href="{{ block.settings.url_link }}" class="w-inline-block"> <p class="text-size-large">{{ block.settings.text_text }}</p> </a>
-                    
-              
-                </div>
-              {% when 'divider' %}
-            <div li-block="Divider">
-                    
-                
-                    <div class="brown-divider"></div>
-                    
-              
-                </div>
+          <div class="home-action_descript">
+            <div>
+              <div class="text-h4 w-richtext">
+                <p>Please contact our expert team for more information:</p>
+              </div>
             </div>
-          {% endcase %}
-{% endfor %}
-
-    </div>
+            <div class="cta-buttons">
+              <div>
+                <a href="mailto:sales@muirhead.co.uk?subject=Website%20Enquiry" class="w-inline-block">
+                  <p class="text-size-large">
+{{ section.settings.text_text }}
+</p>
+                </a>
+              </div>
+              <div>
+                <div class="brown-divider"></div>
+              </div>
+              <div>
+                <a href="https://+44 (0)1505 801 904" class="w-inline-block">
+                  <p class="text-size-large">
+{{ section.settings.text_text }}
+</p>
+                </a>
+              </div>
+            </div>
+          </div>
         </div> {% schema %} {
     "tag": "div",
     "name": "Contact CTA",
     "class": "section",
-    "blocks": [
+    "settings": [
         {
-            "name": "Rich Text",
-            "type": "rich-text",
-            "settings": [
-                {
-                    "id": "richtext_richtext",
-                    "type": "richtext",
-                    "label": "Richtext",
-                    "default": "<p>\n                Please contact our expert team for more information:\n              <\/p>"
-                }
-            ]
-        },
-        {
-            "name": "Button",
-            "type": "button",
-            "settings": [
-                {
-                    "id": "url_link",
-                    "type": "url",
-                    "label": "Link"
-                },
-                {
-                    "id": "text_text",
-                    "type": "text",
-                    "label": "Text",
-                    "default": "sales@muirhead.co.uk"
-                }
-            ]
-        },
-        {
-            "name": "Divider",
-            "type": "divider",
-            "settings": null
-        },
-        {
-            "type": "@app"
+            "id": "text_text",
+            "type": "text",
+            "label": "Text",
+            "default": "sales@muirhead.co.uk"
         }
     ],
     "presets": [
         {
             "name": "Contact CTA",
             "category": "Liquify",
-            "blocks": [
-                {
-                    "type": "rich-text"
-                },
-                {
-                    "type": "button"
-                },
-                {
-                    "type": "divider"
-                }
-            ]
+            "blocks": []
         }
     ]
 } {% endschema %}
