@@ -99,30 +99,13 @@
                       <div data-delay="0" data-hover="false" class="dropdown-4 w-dropdown">
                         <div class="filter_sort-by-2 w-dropdown-toggle">
                           <div class="dropdown_icon w-icon-dropdown-toggle"></div>
-                          <div class="text-size-small-2">Sort by</div>
+                          <div li-object="collection.default_sort_by" class="text-size-small-2">{{ collection.default_sort_by }}</div>
                         </div>
-                        <nav class="dropdown_list w-dropdown-list">
-                          <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=best-selling" class="sort_field w-inline-block">
-                            <div>Best Selling</div>
-                          </a>
-                          <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=title-ascending" class="sort_field w-inline-block">
-                            <div>Name (A/Z)</div>
-                          </a>
-                          <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=title-descending" class="sort_field w-inline-block">
-                            <div>Name (Z/A)</div>
-                          </a>
-                          <a href="https://muirhead-leather-v2.myshopify.com/collections/stock?sort_by=price-ascending" class="sort_field w-inline-block">
-                            <div>Cheapest First</div>
-                          </a>
-                        </nav>
+                        <nav li-for:inside="option in collection.sort_options" class="dropdown_list w-dropdown-list">
+        {% for option in collection.sort_options %}                            <label><input type="radio" li-render-filter="sort" li-render-filter-trigger="input" value="{{ option.value }}" {% if option.value == collection.sort_by %}checked{% elsif option.value == collection.default_sort_by %}checked{% endif %}><span>{{ option.name }}</span></label>
+                    {% endfor %}    </nav>
                       </div>
-                    </div><select id="sort-by" li-for:inside="option in collection.sort_options" class="sort_select filter_checkbox">
-        {% for option in collection.sort_options %}                            
-                      
-                            <option value="{{ option.value }}" {% if option.value == collection.sort_by %}selected{% elsif option.value == collection.default_sort_by %}selected{% endif %}>{{ option.name }}</option>
-                            
-                    
-                    {% endfor %}    </select>
+                    </div>
                     <a data-w-id="522e9e14-e85d-aeb6-3296-61a26d9c445e" href="#" class="filter-button-mobile w-inline-block"><img loading="lazy" src="{{ 'icon-filters.svg' | asset_url }}" alt="" class="button-icon-left">
                       <div>Filters</div>
                     </a>
@@ -151,13 +134,7 @@
                       
                         </div>
 {% endfor %}
-                    </div><select id="sort-by" li-for:inside="option in collection.sort_options" li-render-filter="sort" li-render-filter-trigger="input" class="sort_select filter_checkbox">
-        {% for option in collection.sort_options %}                            
-                      
-                            <option value="{{ option.value }}" {% if option.value == collection.sort_by %}selected{% elsif option.value == collection.default_sort_by %}selected{% endif %}>{{ option.name }}</option>
-                            
-                    
-                    {% endfor %}    </select>
+                    </div>
                   </div>
                   <div li-for:inside="product in collection.products" class="product_list-3">
         {% for product in collection.products %}                            
