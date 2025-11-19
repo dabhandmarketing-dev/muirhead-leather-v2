@@ -112,7 +112,7 @@
         "image_bottom_3": "shopify://shop_images/Interiors_Luxury.webp",
         "image_bottom_4": "shopify://shop_images/Aviation.jpg",
         "grid_position": "right",
-        "background_colour": "#f9f9f9",
+        "background_colour": "#ffffff",
         "text-size": "1rem",
         "text-color": "#000000"
       }
