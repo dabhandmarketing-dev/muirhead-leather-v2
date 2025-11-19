@@ -14,18 +14,9 @@
       "name": "Page Heading",
       "settings": {}
     },
-    "collection_products_wmxiff": {
-      "type": "collection_products",
-      "disabled": true,
-      "name": "Collection Products",
-      "settings": {
-        "text_products_shown": "Products shown",
-        "grid-columns": "6"
-      }
-    },
-    "r_collection_product_KYATyn": {
-      "type": "r_collection_product",
-      "name": "R-collection_product",
+    "collections_v3_MjH7mV": {
+      "type": "collections_v3",
+      "name": "Collections V3",
       "settings": {}
     }
   },
@@ -33,7 +24,6 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "page_heading_w4V3gw",
-    "collection_products_wmxiff",
-    "r_collection_product_KYATyn"
+    "collections_v3_MjH7mV"
   ]
 }
