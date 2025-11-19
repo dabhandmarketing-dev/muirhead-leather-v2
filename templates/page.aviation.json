@@ -306,6 +306,13 @@
         "color_theme": ""
       }
     },
+    "contact_cta_D8tpAn": {
+      "type": "contact_cta",
+      "name": "Contact CTA",
+      "settings": {
+        "text_text": "sales@muirhead.co.uk"
+      }
+    },
     "image_text_ey6r3x": {
       "type": "image_text",
       "blocks": {
@@ -496,13 +503,6 @@
         "image_image": "shopify://shop_images/muirhead_sector_aviation_11_1.webp",
         "grid_position": "right",
         "color_theme": ""
-      }
-    },
-    "contact_cta_D8tpAn": {
-      "type": "contact_cta",
-      "name": "Contact CTA",
-      "settings": {
-        "text_text": "sales@muirhead.co.uk"
       }
     }
   },
