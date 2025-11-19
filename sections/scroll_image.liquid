@@ -1,8 +1,8 @@
-<div style="background-color: {{ section.settings.background_colour }} !important;">
+<div class="image-scroll {{ section.settings.color_theme }}">
           <div class="padding-global-6 padding-section-small">
             <div class="container-large">
               <div class="content_grid">
-                <div li-content-for-blocks="" class="content_wrapper-2" style="color: {{ section.settings.text-color }} !important;">
+                <div li-content-for-blocks="" class="content_wrapper-2">
 {% for block in section.blocks %}
 {% case block.type %}
 {% when '@app' %}
@@ -46,12 +46,12 @@
                     <div class="button-group-10">
                       {% if block.settings.url_button_link %}    <div li-if="block.settings.url_button_link" class="content_block">
     
-                        <a href="{{ block.settings.url_button_link }}" data-w-id="b4803d8a-053e-7cce-bcc7-9827f2245eda" class="button-main dark-182 w-inline-block"> <div class="icon-link-3 dark-183"> <div class="clip-2 white-10 dark-190"> <div class="hover-text white-31 dark-185"> <div class="text-size-small-11 white-34 dark-188">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 dark-185 bottom white-20 dark-187"> <div class="text-size-small-11 white-34 dark-188">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22 dark-189"> <div class="clip-2 white-10 dark-190"> <div class="hover-arrow-3 dark-191"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-long-line.svg' | asset_url }}" class="icon-1x1-small-7 white-12 dark-196"></div> <div class="hover-arrow-3 dark-191 left-arrow dark-194"><img sym-bind="{"img":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"65b07040-501f-bf3a-2cb4-717461e9b2dd"}}}" loading="lazy" alt="" src="{{ 'arrow-right-long-line.svg' | asset_url }}" class="icon-1x1-small-7 white-12 dark-196"></div> </div> </div> </div> </a>
+                        <a href="{{ block.settings.url_button_link }}" data-wf--button-main--variant="base" data-w-id="62fe5b66-eb79-581e-644e-970322077823" class="button-main w-inline-block"> <div class="icon-link-3"> <div class="clip-2 white-10"> <div class="hover-text white-31"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 bottom white-20"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22"> <div class="clip-2 white-10"> <div class="hover-arrow-3"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewbox="0 0 24 24" fill="none" app="ikonik" class="icon-1x1-small-7"> <path d="M13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H16.1893L13.4697 8.53033Z" fill="currentColor" app="ikonik" class="path-c1mxz"></path> </svg></div> <div class="hover-arrow-3 left-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewbox="0 0 24 24" fill="none" app="ikonik" class="icon-1x1-small-7"> <path d="M13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H16.1893L13.4697 8.53033Z" fill="currentColor" app="ikonik" class="path-c1mxz"></path> </svg></div> </div> </div> </div> </a>
                           </div>
 {% endif %}
                       {% if block.settings.url_button_link_2 %}    <div li-if="block.settings.url_button_link_2" class="content_block">
     
-                        <a href="{{ block.settings.url_button_link_2 }}" data-w-id="b4803d8a-053e-7cce-bcc7-9827f2245eec" class="button-main dark-167 outline w-inline-block"> <div class="icon-link-3 dark-168"> <div class="clip-2 white-10 dark-175"> <div class="hover-text white-31 dark-170"> <div class="text-size-small-11 white-34 dark-173">{{ block.settings.text_button_text_2 }}</div> </div> <div class="hover-text white-31 dark-170 bottom white-20 dark-172"> <div class="text-size-small-11 white-34 dark-173">{{ block.settings.text_button_text_2 }}</div> </div> </div> </div> </a>
+                        <a href="{{ block.settings.url_button_link_2 }}" class="button-main dark-167 outline w-inline-block"> <div class="icon-link-3 dark-168"> <div class="clip-2 white-10 dark-175"> <div class="hover-text white-31 dark-170"> <div class="text-size-small-11 white-34 dark-173">{{ block.settings.text_button_text_2 }}</div> </div> <div class="hover-text white-31 dark-170 bottom white-20 dark-172"> <div class="text-size-small-11 white-34 dark-173">{{ block.settings.text_button_text_2 }}</div> </div> </div> </div> </a>
                           </div>
 {% endif %}
                     </div>
@@ -114,7 +114,7 @@
         </div> {% schema %} {
     "tag": "section",
     "name": "Scroll Image",
-    "class": "section_content",
+    "class": "image-scroll w-variant-3aa98241-5d8b-d786-2c5d-1f82c904badb",
     "blocks": [
         {
             "name": "Headline small",
@@ -271,43 +271,27 @@
         },
         {
             "type": "header",
-            "content": "background-colour"
-        },
-        {
-            "type": "color",
-            "id": "background_colour",
-            "label": "Background Colour",
-            "default": "#ffffff"
+            "content": "text-size"
         },
         {
             "type": "header",
-            "content": "text-color"
+            "content": "Colour Theme"
         },
         {
             "type": "select",
-            "id": "text-size",
-            "label": "Text Size",
+            "id": "color_theme",
+            "label": "Color Theme",
+            "default": "",
             "options": [
                 {
-                    "value": "1rem",
-                    "label": "Small"
+                    "label": "Light",
+                    "value": ""
                 },
                 {
-                    "value": "1.25rem",
-                    "label": "Medium"
-                },
-                {
-                    "value": "1.5rem",
-                    "label": "Large"
+                    "label": "Dark",
+                    "value": "w-variant-3aa98241-5d8b-d786-2c5d-1f82c904badb"
                 }
-            ],
-            "default": "1rem"
-        },
-        {
-            "type": "color",
-            "id": "text-color",
-            "label": "Text Color",
-            "default": "#000000"
+            ]
         }
     ],
     "presets": [
