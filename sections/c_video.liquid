@@ -1,11 +1,11 @@
 <div class="padding-section-small">
           <div class="padding-global {{ section.settings.background_color }}">
-            <div x-data="{ open: true }" class="container-large-16">
+            <div x-data="{ open: true }" class="container-large">
               {% if section.settings.video %}    <div x-on:click="open = ! open" li-if="section.settings.video" class="video_wrapper-2">
     
                 <div li-object="section.settings.video | video_tag: controls: true, width: '100%'" class="video_component">{{ section.settings.video | video_tag: controls: true, width: '100%' }}</div>
-                <div x-show="open" class="video_cover">{% if section.settings.image_cover_bild %}
-{{ section.settings.image_cover_bild | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'video_cover' }}
+                <div x-show="open" class="video_cover">{% if section.settings.image_thumbnail %}
+{{ section.settings.image_thumbnail | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'video_cover' }}
 {% else %}
 <img loading="lazy" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="video_cover">
 {% endif %}
@@ -28,12 +28,12 @@
         </div> {% schema %} {
     "tag": "section",
     "name": "C - Video",
-    "class": "section_video-2",
+    "class": "section relative",
     "settings": [
         {
-            "id": "image_cover_bild",
+            "id": "image_thumbnail",
             "type": "image_picker",
-            "label": "Cover Bild"
+            "label": "Thumbnail"
         },
         {
             "type": "header",
@@ -42,7 +42,7 @@
         {
             "type": "video",
             "id": "video",
-            "label": "Video hochladen"
+            "label": "Video (Shopify)"
         },
         {
             "type": "header",
