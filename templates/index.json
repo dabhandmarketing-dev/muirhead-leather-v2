@@ -341,15 +341,6 @@
         "grid_position": "left",
         "color_theme": ""
       }
-    },
-    "c_video_FdiG3G": {
-      "type": "c_video",
-      "disabled": true,
-      "name": "C - Video",
-      "settings": {
-        "video_url": "",
-        "video_titel": "Video Titel"
-      }
     }
   },
   "layout": "theme",
@@ -364,7 +355,6 @@
     "image_text_nGNxXC",
     "image_text_MnABaL",
     "image_text_LCEyBJ",
-    "image_text_d8GRU9",
-    "c_video_FdiG3G"
+    "image_text_d8GRU9"
   ]
 }
