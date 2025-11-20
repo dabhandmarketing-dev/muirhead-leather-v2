@@ -342,12 +342,10 @@
         "color_theme": ""
       }
     },
-    "video_hero_v5_UV7q8f": {
+    "video_hero_v5_cGqJga": {
       "type": "video_hero_v5",
       "name": "Video Hero V5",
       "settings": {
-        "image_thumbnail": "shopify://shop_images/muirhead_home_01_1.webp",
-        "video": "shopify://files/videos/Muirhead Looping Video.mp4",
         "video_url": "https://www.youtube.com/embed/Otq0_c4cSag?si=zX9wjVjld6QdMswV",
         "video_title": "Video Title"
       }
@@ -366,6 +364,6 @@
     "image_text_MnABaL",
     "image_text_LCEyBJ",
     "image_text_d8GRU9",
-    "video_hero_v5_UV7q8f"
+    "video_hero_v5_cGqJga"
   ]
 }
