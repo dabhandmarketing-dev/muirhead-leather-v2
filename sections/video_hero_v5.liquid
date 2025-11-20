@@ -20,12 +20,15 @@
                 </div>
                   </div>
 {% endif %}
+              {% if section.settings.video_url != blank %}    <div li-if="section.settings.video_url != blank" class="video_wrapper">
+        </div>
+{% endif %}
             </div>
           </div>
         </div> {% schema %} {
     "tag": "section",
     "name": "Video Hero V5",
-    "class": "section relative",
+    "class": "section video-hero",
     "settings": [
         {
             "id": "image_thumbnail",
