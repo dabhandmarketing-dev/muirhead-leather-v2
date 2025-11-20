@@ -341,6 +341,14 @@
         "grid_position": "left",
         "color_theme": ""
       }
+    },
+    "c_video_kFFfD6": {
+      "type": "c_video",
+      "name": "C - Video",
+      "settings": {
+        "video_url": "https://www.youtube.com/embed/Otq0_c4cSag?si=zX9wjVjld6QdMswV",
+        "video_titel": "Video Titel"
+      }
     }
   },
   "layout": "theme",
@@ -355,6 +363,7 @@
     "image_text_nGNxXC",
     "image_text_MnABaL",
     "image_text_LCEyBJ",
-    "image_text_d8GRU9"
+    "image_text_d8GRU9",
+    "c_video_kFFfD6"
   ]
 }
