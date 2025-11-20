@@ -346,6 +346,8 @@
       "type": "video_hero_v5",
       "name": "Video Hero V5",
       "settings": {
+        "image_thumbnail": "shopify://shop_images/muirhead_home_01_1.webp",
+        "video": "shopify://files/videos/Muirhead Looping Video.mp4",
         "video_url": "https://www.youtube.com/embed/Otq0_c4cSag?si=zX9wjVjld6QdMswV",
         "video_title": "Video Title"
       }
