@@ -344,10 +344,9 @@
     },
     "c_video_FdiG3G": {
       "type": "c_video",
+      "disabled": true,
       "name": "C - Video",
       "settings": {
-        "image_cover_bild": "shopify://shop_images/muirhead_home_01_1.webp",
-        "video": "shopify://files/videos/Muirhead Looping Video.mp4",
         "video_url": "",
         "video_titel": "Video Titel"
       }
