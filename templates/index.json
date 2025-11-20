@@ -342,12 +342,12 @@
         "color_theme": ""
       }
     },
-    "c_video_kFFfD6": {
-      "type": "c_video",
-      "name": "C - Video",
+    "video_hero_v5_UV7q8f": {
+      "type": "video_hero_v5",
+      "name": "Video Hero V5",
       "settings": {
         "video_url": "https://www.youtube.com/embed/Otq0_c4cSag?si=zX9wjVjld6QdMswV",
-        "video_titel": "Video Titel"
+        "video_title": "Video Title"
       }
     }
   },
@@ -364,6 +364,6 @@
     "image_text_MnABaL",
     "image_text_LCEyBJ",
     "image_text_d8GRU9",
-    "c_video_kFFfD6"
+    "video_hero_v5_UV7q8f"
   ]
 }
