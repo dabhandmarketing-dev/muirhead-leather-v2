@@ -347,7 +347,8 @@
       "name": "C - Video",
       "settings": {
         "image_cover_bild": "shopify://shop_images/muirhead_home_01_1.webp",
-        "video_url": "https://www.youtube.com/embed/Otq0_c4cSag?si=zX9wjVjld6QdMswV",
+        "video": "shopify://files/videos/Muirhead Looping Video.mp4",
+        "video_url": "",
         "video_titel": "Video Titel"
       }
     }
