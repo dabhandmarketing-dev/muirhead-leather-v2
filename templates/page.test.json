@@ -43,15 +43,18 @@
           "type": "buttons",
           "settings": {},
           "blocks": {
-            "button_ABpGmz": {
+            "button_cw8NKj": {
               "type": "button",
               "name": "Button",
-              "settings": {},
+              "settings": {
+                "url_button_link": "shopify://pages/complete-control",
+                "text_button_text": "Learn More"
+              },
               "blocks": {}
             }
           },
           "block_order": [
-            "button_ABpGmz"
+            "button_cw8NKj"
           ]
         }
       },
