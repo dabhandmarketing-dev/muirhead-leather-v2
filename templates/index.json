@@ -194,6 +194,64 @@
       "name": "Image Text",
       "settings": {
         "image_image": "shopify://shop_images/FreeTan.webp",
+        "grid_position": "right",
+        "color_theme": ""
+      }
+    },
+    "image_text_zRpT6M": {
+      "type": "image_text",
+      "blocks": {
+        "headline_QYGb4i": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Natural Performance Collection"
+          },
+          "blocks": {}
+        },
+        "text_V4r4hb": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Explore our environmentally sustainable, durable and premium leathers available in a range of colours and finishes, perfect for any project.</p>",
+            "text-size": "1rem"
+          },
+          "blocks": {}
+        },
+        "text_bJRFh7": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Choose from four unique grains and finishes to blend durability and style. Whether you prefer a natural pebbled grain or a velvety matte texture, our collection combines sophistication and durability.</p>",
+            "text-size": "1rem"
+          },
+          "blocks": {}
+        },
+        "buttons_p4QXpR": {
+          "type": "buttons",
+          "settings": {},
+          "blocks": {
+            "button_feQaeb": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "url_button_link": "",
+                "text_button_text": "Learn More"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_feQaeb"
+          ]
+        }
+      },
+      "block_order": [
+        "headline_QYGb4i",
+        "text_V4r4hb",
+        "text_bJRFh7",
+        "buttons_p4QXpR"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/FreeTan.webp",
         "grid_position": "left",
         "color_theme": ""
       }
@@ -205,6 +263,7 @@
     "slideshow_v3_8FHTHY",
     "scroll_image_QnGaPb",
     "scroll_image_arfRnN",
-    "image_text_XEbaxG"
+    "image_text_XEbaxG",
+    "image_text_zRpT6M"
   ]
 }
