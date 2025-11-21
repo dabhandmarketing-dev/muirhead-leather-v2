@@ -399,8 +399,8 @@
                     </nav>
                   </div>{% if localization.available_countries.size > 1 %}    <localization-form li-if="localization.available_countries.size > 1" class="li-market_wrapper">
     
-                    <form method="post" action="/localization" accept-charset="UTF-8" class="li-market_form" class="li-market_form">
-                      <div data-delay="500" data-hover="true" class="li-market_dropdown w-dropdown">
+                    {% form 'localization', class: 'li-market_form' %}
+<div data-delay="500" data-hover="true" class="li-market_dropdown w-dropdown">
                         <div lang="{{ localization.country.iso_code }}" class="li-lang_dd-toggle w-dropdown-toggle">
                           <div li-object="localization.country.currency.iso_code">{{ localization.country.currency.iso_code }}</div>
                           <div class="li-lang_dd-toggle-icon w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -419,7 +419,7 @@
                         
                     {% endfor %}    </nav>
                       </div><input type="hidden" name="language_code" class="li-lang_hidden-input" value="{{ localization.language.iso_code }}">
-                    </form>
+                    {% endform %}
                     <div class="li-lang_script w-embed w-script">
                       <script>
   document.querySelectorAll(".li-market_wrapper").forEach((wrapper) => {
