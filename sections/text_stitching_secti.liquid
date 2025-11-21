@@ -4,34 +4,9 @@
               <div style="width: 2px; height: 8rem; background: repeating-linear-gradient(to bottom, #808080 0, #808080 6px, transparent 6px, transparent 14px); background-attachment: fixed; background-position: 0 calc(100% - var(--scroll-y, 0px));"></div>
             </div>
           </div>
-          <div li-content-for-blocks="" class="home-action_descript xl-5">
-{% for block in section.blocks %}
-{% case block.type %}
-{% when '@app' %}
-{% render block %}
-
-            {% when 'rich-text' %}
-            <div li-block="Rich Text">
-                    
-              
-                    <div class="text-h4 w-richtext"> {{ block.settings.richtext_richtext }} </div>
-                    
-            
-                </div>
-            {% when 'buttons' %}
-            <div li-block="Buttons" class="content_block">
-                    
-              
-                    <div li-content-for-theme-blocks="" class="button-group-10">
+          <div li-content-for-theme-blocks="" class="home-action_descript xl-5">
 {% content_for 'blocks' %}
 </div>
-                    
-            
-                </div>
-          {% endcase %}
-{% endfor %}
-
-    </div>
           <div class="dotted-float">
             <div class="w-embed">
               <div style="width: 2px; height: 8rem; background: repeating-linear-gradient(to bottom, #808080 0, #808080 6px, transparent 6px, transparent 14px); background-attachment: fixed; background-position: 0 calc(100% - var(--scroll-y, 0px));"></div>
@@ -43,10 +18,10 @@
     "class": "section rel",
     "blocks": [
         {
-            "type": "button"
+            "type": "rich-text"
         },
         {
-            "type": "@app"
+            "type": "buttons"
         },
         {
             "type": "@app"
@@ -80,7 +55,10 @@
             "category": "Liquify",
             "blocks": [
                 {
-                    "type": "button"
+                    "type": "rich-text"
+                },
+                {
+                    "type": "buttons"
                 }
             ]
         }
