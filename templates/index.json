@@ -39,13 +39,6 @@
     "scroll_image_QnGaPb": {
       "type": "scroll_image",
       "blocks": {
-        "headline_small_ATGr7k": {
-          "type": "headline-small",
-          "settings": {
-            "text_text": "Small Headline"
-          },
-          "blocks": {}
-        },
         "headline_Qqqngc": {
           "type": "headline",
           "settings": {
@@ -81,10 +74,65 @@
         }
       },
       "block_order": [
-        "headline_small_ATGr7k",
         "headline_Qqqngc",
         "text_GVkbwN",
         "buttons_8HQeBt"
+      ],
+      "name": "Scroll Image",
+      "settings": {
+        "grid_position": "right",
+        "color_theme": ""
+      }
+    },
+    "scroll_image_arfRnN": {
+      "type": "scroll_image",
+      "blocks": {
+        "headline_small_Pyc3nK": {
+          "type": "headline-small",
+          "settings": {
+            "text_text": "Simplifying Your Supply Chain"
+          },
+          "blocks": {}
+        },
+        "headline_ngEipP": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Muirhead Seat Cover Service"
+          },
+          "blocks": {}
+        },
+        "text_YRw7wC": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers.</p><p>Most manufacturers today are optimised for fabric and synthetic materials. However, leather requires specialised processes to achieve the highest standards in production, performance, lead times and cost efficiency.</p><p><strong>And that’s just the beginning.</strong></p>",
+            "text-size": "1rem"
+          },
+          "blocks": {}
+        },
+        "buttons_iRRM4K": {
+          "type": "buttons",
+          "settings": {},
+          "blocks": {
+            "button_3XneJJ": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "url_button_link": "",
+                "text_button_text": "Learn More"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_3XneJJ"
+          ]
+        }
+      },
+      "block_order": [
+        "headline_small_Pyc3nK",
+        "headline_ngEipP",
+        "text_YRw7wC",
+        "buttons_iRRM4K"
       ],
       "name": "Scroll Image",
       "settings": {
@@ -154,6 +202,7 @@
   "order": [
     "slideshow_v3_8FHTHY",
     "scroll_image_QnGaPb",
+    "scroll_image_arfRnN",
     "image_text_XEbaxG"
   ]
 }
