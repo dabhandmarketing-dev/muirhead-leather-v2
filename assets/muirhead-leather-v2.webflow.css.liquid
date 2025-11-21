@@ -37,8 +37,8 @@
   --background-color--background-alternate: var(--base-color-neutral--white);
   --background-color--background-success: var(--base-color-system--success-green);
   --text-color--text-success: var(--base-color-system--success-green-dark);
-  --base-color-brand--off-black: #1b1d1f;
   --base-color-brand--charcoal: #53565a;
+  --base-color-brand--off-black: #1b1d1f;
   --base-color-brand--dark-blue: #053e51;
   --base-color-brand--darker-charcoal: #eee;
   --base-color-brand--green: #11763d;
@@ -2369,7 +2369,6 @@ figcaption {
 
 .li-lang_dd-link {
   color: #fff;
-  text-align: center;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
@@ -3658,10 +3657,12 @@ figcaption {
 }
 
 .li-lang_dd-toggle {
+  grid-column-gap: .25rem;
+  grid-row-gap: .25rem;
   color: #fff;
   background-color: #111;
   border: 1px solid #ffffff45;
-  padding: .5rem 1rem;
+  padding: .5rem;
   display: flex;
 }
 
@@ -4736,6 +4737,7 @@ figcaption {
 }
 
 .country-flag {
+  background-color: var(--base-color-brand--charcoal);
   border-radius: 900px;
   width: 1.5rem;
   height: 1.5rem;
@@ -7864,7 +7866,11 @@ figcaption {
 }
 
 .li-market_dd-list-item {
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  padding: .5rem;
+  display: flex;
 }
 
 .product-header_gallery-image-3 {
