@@ -204,23 +204,34 @@
           "type": "headline",
           "settings": {
             "text_headline": "FreeTAN®"
-          }
+          },
+          "blocks": {}
         },
         "text_3NP7Fc": {
           "type": "text",
           "settings": {
             "richtext_text": "<p>Discover Muirhead's latest innovation: FreeTAN®, a sustainable leather solution for the aviation industry. By replacing traditional tanning chemistry with compostable technology, FreeTAN® eliminates chrome and glutaraldehyde while maintaining impeccable performance standards. </p><p>Featuring Muirhead's pioneering FR technology, it ensures efficient, halogen-free, and non-toxic fire retardancy.</p>",
             "text-size": "1rem"
-          }
+          },
+          "blocks": {}
         },
         "buttons_43EVGD": {
           "type": "buttons",
-          "settings": {
-            "url_button_link": "#",
-            "text_button_text": "Learn More",
-            "url_button_link_2": "",
-            "text_button_text_2": ""
-          }
+          "settings": {},
+          "blocks": {
+            "button_8MTCrq": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "url_button_link": "",
+                "text_button_text": "Learn More"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_8MTCrq"
+          ]
         }
       },
       "block_order": [
@@ -242,23 +253,21 @@
           "type": "headline",
           "settings": {
             "text_headline": "Natural Performance Collection"
-          }
+          },
+          "blocks": {}
         },
         "text_Lj69ad": {
           "type": "text",
           "settings": {
             "richtext_text": "<p>Explore our environmentally sustainable, durable and premium leathers available in a range of colours and finishes, perfect for any project.</p><p>Choose from four unique grains and finishes to blend durability and style. Whether you prefer a natural pebbled grain or a velvety matte texture, our collection combines sophistication and durability.</p>",
             "text-size": "1rem"
-          }
+          },
+          "blocks": {}
         },
         "buttons_WPNF8i": {
           "type": "buttons",
-          "settings": {
-            "url_button_link": "#",
-            "text_button_text": "Learn More",
-            "url_button_link_2": "",
-            "text_button_text_2": ""
-          }
+          "settings": {},
+          "blocks": {}
         }
       },
       "block_order": [
@@ -280,23 +289,21 @@
           "type": "headline",
           "settings": {
             "text_headline": "The Lowest-carbon leather in the world"
-          }
+          },
+          "blocks": {}
         },
         "text_kR3aiH": {
           "type": "text",
           "settings": {
             "richtext_text": "<p>Muirhead makes the lowest-carbon leather in the world. We source locally, tan naturally, reclaim energy from waste and re-use water. We are serious about sustainability.</p>",
             "text-size": "1rem"
-          }
+          },
+          "blocks": {}
         },
         "buttons_WB6bkW": {
           "type": "buttons",
-          "settings": {
-            "url_button_link": "#",
-            "text_button_text": "Discover our lowest carbon leather",
-            "url_button_link_2": "",
-            "text_button_text_2": ""
-          }
+          "settings": {},
+          "blocks": {}
         }
       },
       "block_order": [
@@ -319,16 +326,13 @@
           "settings": {
             "richtext_text": "<p>We’ve been making fine luxury leather for over 180 years and remain a family business. From our roots in Scotland, with our famously pure water, grass-fed farming and natural resources, we export to more than 60 countries worldwide.</p>",
             "text-size": "1.25rem"
-          }
+          },
+          "blocks": {}
         },
         "buttons_EJBy3w": {
           "type": "buttons",
-          "settings": {
-            "url_button_link": "#",
-            "text_button_text": "Learn More",
-            "url_button_link_2": "",
-            "text_button_text_2": ""
-          }
+          "settings": {},
+          "blocks": {}
         }
       },
       "block_order": [
