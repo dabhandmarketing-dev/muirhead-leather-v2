@@ -1,12 +1,11 @@
-{% when 'heading' %}
-            <div li-block="Heading">
+<div li-block="Heading">
                     
-                      
-                    <p class="hero-heading">
+                    
+                    <h1 style="color: {{ section.settings.text-color }} !important;">
 {{ block.settings.text_heading }}
-</p>
+</h1>
                     
-                    
+                  
                 </div> {% schema %} {
     "name": "Heading",
     "settings": [
@@ -14,7 +13,7 @@
             "id": "text_heading",
             "type": "text",
             "label": "Heading",
-            "default": "Leather"
+            "default": "Lowest Carbon Leather"
         }
     ],
     "presets": [

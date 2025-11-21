@@ -2,66 +2,9 @@
           <div class="padding-global-6 padding-section-small">
             <div class="container-large">
               <div class="content_grid">
-                <div li-content-for-blocks="" class="content_wrapper-2">
-{% for block in section.blocks %}
-{% case block.type %}
-{% when '@app' %}
-{% render block %}
-
-                  {% when 'headline-small' %}
-            <div li-block="Headline small" class="content_block">
-                    
-                    
-                    <div class="text-size-small-20">
-{{ block.settings.text_text }}
+                <div li-content-for-theme-blocks="" class="content_wrapper-2">
+{% content_for 'blocks' %}
 </div>
-                    
-                  
-                </div>
-                  {% when 'headline' %}
-            <div li-block="Headline" class="content_block">
-                    
-                    
-                    <h2>
-{{ block.settings.text_headline }}
-</h2>
-                    
-                  
-                </div>
-                  {% when 'text' %}
-            <div li-block="Text" class="content_block">
-                    
-                    
-                    <div class="w-richtext" style="font-size: {{ section.settings.text-size }} !important;"> {{ block.settings.richtext_text }} </div>
-                    
-                    
-                    
-                    
-                  
-                </div>
-                  {% when 'buttons' %}
-            <div li-block="Buttons" class="content_block">
-                    
-                    
-                    <div class="button-group-10">
-                      {% if block.settings.url_button_link %}    <div li-if="block.settings.url_button_link" class="content_block">
-    
-                        <a href="{{ block.settings.url_button_link }}" data-wf--button-main--variant="base" data-w-id="62fe5b66-eb79-581e-644e-970322077823" class="button-main w-inline-block"> <div class="icon-link-3"> <div class="clip-2 white-10"> <div class="hover-text white-31"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 bottom white-20"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22"> <div class="clip-2 white-10"> <div class="hover-arrow-3"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewbox="0 0 24 24" fill="none" app="ikonik" class="icon-1x1-small-7"> <path d="M13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H16.1893L13.4697 8.53033Z" fill="currentColor" app="ikonik" class="path-c1mxz"></path> </svg></div> <div class="hover-arrow-3 left-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewbox="0 0 24 24" fill="none" app="ikonik" class="icon-1x1-small-7"> <path d="M13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H16.1893L13.4697 8.53033Z" fill="currentColor" app="ikonik" class="path-c1mxz"></path> </svg></div> </div> </div> </div> </a>
-                          </div>
-{% endif %}
-                      {% if block.settings.url_button_link_2 %}    <div li-if="block.settings.url_button_link_2" class="content_block">
-    
-                        <a href="{{ block.settings.url_button_link_2 }}" class="button-main dark-167 outline w-inline-block"> <div class="icon-link-3 dark-168"> <div class="clip-2 white-10 dark-175"> <div class="hover-text white-31 dark-170"> <div class="text-size-small-11 white-34 dark-173">{{ block.settings.text_button_text_2 }}</div> </div> <div class="hover-text white-31 dark-170 bottom white-20 dark-172"> <div class="text-size-small-11 white-34 dark-173">{{ block.settings.text_button_text_2 }}</div> </div> </div> </div> </a>
-                          </div>
-{% endif %}
-                    </div>
-                    
-                  
-                </div>
-                {% endcase %}
-{% endfor %}
-
-    </div>
                 <div data-w-id="b4803d8a-053e-7cce-bcc7-9827f2245efd" class="grid-scroller" style="{% if section.settings.grid_position == 'left' %}order: -1;{% endif %}">
                   <div class="layout414-image-list image-list-top">
                     <div id="w-node-b4803d8a-053e-7cce-bcc7-9827f2245eff-f2245ec9" class="layout414-image-wrapper-2">{% if section.settings.image_top_1 %}
@@ -70,12 +13,12 @@
  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
 {% endif %}</div>
                     <div id="w-node-b4803d8a-053e-7cce-bcc7-9827f2245f01-f2245ec9" class="layout414-image-wrapper-2">{% if section.settings.image_top_2 %}
-{{ section.settings.image_top_2 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '100vw', id: 'w-node-b4803d8a-053e-7cce-bcc7-9827f2245f02-f2245ec9', loading: 'lazy' }}
+{{ section.settings.image_top_2 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1279px) 100vw, 1004.9913940429688px', id: 'w-node-b4803d8a-053e-7cce-bcc7-9827f2245f02-f2245ec9', loading: 'lazy' }}
 {% else %}
  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
 {% endif %}</div>
                     <div id="w-node-b4803d8a-053e-7cce-bcc7-9827f2245f03-f2245ec9" class="layout414-image-wrapper-2">{% if section.settings.image_top_3 %}
-{{ section.settings.image_top_3 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '100vw', id: 'w-node-b4803d8a-053e-7cce-bcc7-9827f2245f04-f2245ec9', loading: 'lazy' }}
+{{ section.settings.image_top_3 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1279px) 100vw, 1004.9913940429688px', id: 'w-node-b4803d8a-053e-7cce-bcc7-9827f2245f04-f2245ec9', loading: 'lazy' }}
 {% else %}
  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
 {% endif %}</div>
@@ -92,12 +35,12 @@
  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
 {% endif %}</div>
                     <div id="w-node-b4803d8a-053e-7cce-bcc7-9827f2245f0a-f2245ec9" class="layout414-image-wrapper-2">{% if section.settings.image_bottom_2 %}
-{{ section.settings.image_bottom_2 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '100vw', id: 'w-node-b4803d8a-053e-7cce-bcc7-9827f2245f0b-f2245ec9', loading: 'lazy' }}
+{{ section.settings.image_bottom_2 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1279px) 100vw, 1004.9913940429688px', id: 'w-node-b4803d8a-053e-7cce-bcc7-9827f2245f0b-f2245ec9', loading: 'lazy' }}
 {% else %}
  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
 {% endif %}</div>
                     <div id="w-node-b4803d8a-053e-7cce-bcc7-9827f2245f0c-f2245ec9" class="layout414-image-wrapper-2">{% if section.settings.image_bottom_3 %}
-{{ section.settings.image_bottom_3 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '100vw', id: 'w-node-b4803d8a-053e-7cce-bcc7-9827f2245f0d-f2245ec9', loading: 'lazy' }}
+{{ section.settings.image_bottom_3 | image_url: width: 1000 | image_tag: class: 'layout414_image', sizes: '(max-width: 1279px) 100vw, 1004.9913940429688px', id: 'w-node-b4803d8a-053e-7cce-bcc7-9827f2245f0d-f2245ec9', loading: 'lazy' }}
 {% else %}
  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'layout414_image' }} 
 {% endif %}</div>
@@ -117,92 +60,16 @@
     "class": "image-scroll",
     "blocks": [
         {
-            "name": "Headline small",
-            "type": "headline-small",
-            "settings": [
-                {
-                    "id": "text_text",
-                    "type": "text",
-                    "label": "Text",
-                    "default": "Small Headline"
-                }
-            ]
+            "type": "headline-small"
         },
         {
-            "name": "Headline",
-            "type": "headline",
-            "settings": [
-                {
-                    "id": "text_headline",
-                    "type": "text",
-                    "label": "Headline",
-                    "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
-                }
-            ]
+            "type": "headline"
         },
         {
-            "name": "Text",
-            "type": "text",
-            "settings": [
-                {
-                    "id": "richtext_text",
-                    "type": "richtext",
-                    "label": "Text",
-                    "default": "<p>\n                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Steat clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.\n                    <\/p>"
-                },
-                {
-                    "type": "header",
-                    "content": "text-size"
-                },
-                {
-                    "type": "select",
-                    "id": "text-size",
-                    "label": "Text Size",
-                    "options": [
-                        {
-                            "value": "1rem",
-                            "label": "Small"
-                        },
-                        {
-                            "value": "1.25rem",
-                            "label": "Medium"
-                        },
-                        {
-                            "value": "1.5rem",
-                            "label": "Large"
-                        }
-                    ],
-                    "default": "1rem"
-                }
-            ]
+            "type": "text"
         },
         {
-            "name": "Buttons",
-            "type": "buttons",
-            "settings": [
-                {
-                    "id": "url_button_link",
-                    "type": "url",
-                    "label": "Button Link"
-                },
-                {
-                    "id": "text_button_text",
-                    "type": "text",
-                    "label": "Button Text",
-                    "default": "Learn More"
-                },
-                {
-                    "id": "url_button_link_2",
-                    "type": "url",
-                    "label": "Button Link 2"
-                },
-                {
-                    "id": "text_button_text_2",
-                    "type": "text",
-                    "label": "Button Text 2",
-                    "default": "Learn More"
-                }
-            ]
+            "type": "buttons"
         },
         {
             "type": "@app"
