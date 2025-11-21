@@ -1,0 +1,22 @@
+<div li-block="Rich Text">
+                    
+              
+                    <div class="text-h4 w-richtext"> {{ block.settings.richtext_richtext }} </div>
+                    
+            
+                </div> {% schema %} {
+    "name": "Rich Text",
+    "settings": [
+        {
+            "id": "richtext_richtext",
+            "type": "richtext",
+            "label": "Richtext",
+            "default": "<p>\n                The <strong>lowest carbon<\/strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.\n              <\/p>"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Rich Text"
+        }
+    ]
+} {% endschema %}
