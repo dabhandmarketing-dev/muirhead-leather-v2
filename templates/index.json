@@ -193,6 +193,7 @@
       ],
       "name": "Image Text",
       "settings": {
+        "image_image": "shopify://shop_images/FreeTan.webp",
         "grid_position": "left",
         "color_theme": ""
       }
