@@ -14,9 +14,7 @@
       "blocks": {
         "slide_a_f7wQ3m": {
           "type": "slide-a",
-          "settings": {
-            "video_desktop": "shopify://files/videos/Muirhead Looping Video.mp4"
-          },
+          "settings": {},
           "blocks": {
             "sub_title_xbYYtw": {
               "type": "sub-title",
@@ -38,7 +36,7 @@
               "type": "rich-text",
               "name": "Rich Text",
               "settings": {
-                "richtext_richtext": "<p>\n                The <strong>lowest carbon</strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.\n              </p>"
+                "richtext_richtext": "<p><br/>                The <strong>lowest carbon</strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.<br/>              </p>"
               },
               "blocks": {}
             },
@@ -72,7 +70,7 @@
         "slide_a_RVRCfg": {
           "type": "slide-a",
           "settings": {
-            "video_desktop": "shopify://files/videos/Muirhead Looping Video.mp4"
+            "image_image_desktop": "shopify://shop_images/muirhead_home_01_1.webp"
           },
           "blocks": {
             "sub_title_jtVeB6": {
