@@ -9,10 +9,12 @@
  */
 {
   "sections": {
-    "slideshow_v3_BnYnr8": {
-      "type": "slideshow_v3",
-      "name": "Slideshow V3",
-      "settings": {}
+    "page_heading_xl_JR9X96": {
+      "type": "page_heading_xl",
+      "name": "Page Heading XL",
+      "settings": {
+        "text_heading": "Leather"
+      }
     },
     "text_stitching_secti_t8bDRx": {
       "type": "text_stitching_secti",
@@ -366,7 +368,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "slideshow_v3_BnYnr8",
+    "page_heading_xl_JR9X96",
     "text_stitching_secti_t8bDRx",
     "scroll_image_QnGaPb",
     "scroll_image_arfRnN",
