@@ -1,9 +1,7 @@
-<div li-block="Slide A" class="header-slide swiper-slide">
+<div li-block="Slide A">
                     
-                
-                    <div>
-                  <div class="hero-slide-content_layout is-centered">
-                    <div></div>
+                  
+                    <div class="hero-slide-content_layout is-centered">
                     <div class="slider-background-image-overlay"></div>
                     <div li-content-for-theme-blocks="" class="typo-zoom-text-wrapper-2">
 {% content_for 'blocks' %}
@@ -35,15 +33,14 @@
 {% endif %}
                     </div>
                   </div>
-                </div>
                     
                 
-                    
-                    
-              
                 </div> {% schema %} {
     "name": "Slide A",
     "blocks": [
+        {
+            "type": "icon"
+        },
         {
             "type": "sub-title"
         },
@@ -76,20 +73,6 @@
             "id": "image_image_mobile",
             "type": "image_picker",
             "label": "Image Mobile"
-        },
-        {
-            "type": "header",
-            "content": "Video"
-        },
-        {
-            "type": "video",
-            "id": "video_desktop",
-            "label": "Video Desktop"
-        },
-        {
-            "type": "video",
-            "id": "video_mobile",
-            "label": "Video Mobile"
         }
     ],
     "presets": [
