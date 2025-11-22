@@ -9,6 +9,60 @@
  */
 {
   "sections": {
+    "slideshow_v3_QfF3fP": {
+      "type": "slideshow_v3",
+      "blocks": {
+        "icon_K8JKWX": {
+          "type": "icon",
+          "settings": {},
+          "blocks": {}
+        },
+        "sub_title_MCVM79": {
+          "type": "sub-title",
+          "settings": {
+            "text_pre_heading": "More than"
+          },
+          "blocks": {}
+        },
+        "title_gRgaHn": {
+          "type": "title",
+          "settings": {
+            "text_heading": "Leather"
+          },
+          "blocks": {}
+        },
+        "rich_text_Finnmn": {
+          "type": "rich-text",
+          "settings": {
+            "richtext_richtext": "<p>\n                The <strong>lowest carbon</strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.\n              </p>"
+          },
+          "blocks": {}
+        },
+        "spacer_CnrNaj": {
+          "type": "spacer",
+          "settings": {},
+          "blocks": {}
+        },
+        "buttons_7AAXnU": {
+          "type": "buttons",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "icon_K8JKWX",
+        "sub_title_MCVM79",
+        "title_gRgaHn",
+        "rich_text_Finnmn",
+        "spacer_CnrNaj",
+        "buttons_7AAXnU"
+      ],
+      "name": "Slideshow V3",
+      "settings": {
+        "image_image_desktop": "shopify://shop_images/muirhead_home_01_1.webp",
+        "video_desktop": "shopify://files/videos/Muirhead Looping Video.mp4"
+      }
+    },
     "page_heading_xl_JR9X96": {
       "type": "page_heading_xl",
       "name": "Page Heading XL",
@@ -369,6 +423,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
+    "slideshow_v3_QfF3fP",
     "page_heading_xl_JR9X96",
     "text_stitching_secti_t8bDRx",
     "scroll_image_QnGaPb",
