@@ -15,18 +15,66 @@
         "slide_a_bpnQRa": {
           "type": "slide-a",
           "settings": {
-            "text_pre_heading": "More than",
-            "text_heading": "Leather",
             "image_image_desktop": "shopify://shop_images/Muirhead_Hero_BG.jpg"
-          }
+          },
+          "blocks": {}
         },
         "slide_a_f7wQ3m": {
           "type": "slide-a",
           "settings": {
-            "text_pre_heading": "More than",
-            "text_heading": "Leather",
             "video_desktop": "shopify://files/videos/Muirhead Looping Video.mp4"
-          }
+          },
+          "blocks": {
+            "sub_title_xbYYtw": {
+              "type": "sub-title",
+              "name": "Sub Title",
+              "settings": {
+                "text_pre_heading": "More than"
+              },
+              "blocks": {}
+            },
+            "title_eeMp9e": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "text_heading": "Leather"
+              },
+              "blocks": {}
+            },
+            "rich_text_8T4rir": {
+              "type": "rich-text",
+              "name": "Rich Text",
+              "settings": {
+                "richtext_richtext": "<p>\n                The <strong>lowest carbon</strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.\n              </p>"
+              },
+              "blocks": {}
+            },
+            "buttons_JFjcFK": {
+              "type": "buttons",
+              "name": "Buttons",
+              "settings": {},
+              "blocks": {
+                "button_qXERx7": {
+                  "type": "button",
+                  "name": "Button",
+                  "settings": {
+                    "url_button_link": "",
+                    "text_button_text": "Learn More"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "button_qXERx7"
+              ]
+            }
+          },
+          "block_order": [
+            "sub_title_xbYYtw",
+            "title_eeMp9e",
+            "rich_text_8T4rir",
+            "buttons_JFjcFK"
+          ]
         }
       },
       "block_order": [
