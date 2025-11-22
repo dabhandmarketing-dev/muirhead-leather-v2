@@ -300,8 +300,49 @@
       ],
       "name": "Image Text",
       "settings": {
-        "image_image": "shopify://shop_images/Samples.webp",
+        "image_image": "shopify://shop_images/muirhead_home_01_1.webp",
         "grid_position": "right",
+        "color_theme": ""
+      }
+    },
+    "image_text_4FtCHN": {
+      "type": "image_text",
+      "blocks": {
+        "text_LHzBNP": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>We’ve been making fine luxury leather for over 180 years and remain a family business. From our roots in Scotland, with our famously pure water, grass-fed farming and natural resources, we export to more than 60 countries worldwide.</p>",
+            "text-size": "1rem"
+          },
+          "blocks": {}
+        },
+        "buttons_eVB6WV": {
+          "type": "buttons",
+          "settings": {},
+          "blocks": {
+            "button_bpwbH8": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "url_button_link": "",
+                "text_button_text": "Learn More"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_bpwbH8"
+          ]
+        }
+      },
+      "block_order": [
+        "text_LHzBNP",
+        "buttons_eVB6WV"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/muirhead_home_01_1.webp",
+        "grid_position": "left",
         "color_theme": ""
       }
     }
@@ -314,6 +355,7 @@
     "scroll_image_arfRnN",
     "image_text_XEbaxG",
     "image_text_zRpT6M",
-    "image_text_X4xWQX"
+    "image_text_X4xWQX",
+    "image_text_4FtCHN"
   ]
 }
