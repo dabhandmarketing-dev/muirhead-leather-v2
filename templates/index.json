@@ -14,7 +14,9 @@
       "blocks": {
         "slide_a_f7wQ3m": {
           "type": "slide-a",
-          "settings": {},
+          "settings": {
+            "image_image_desktop": "shopify://shop_images/muirhead_sector_aviation_09.webp"
+          },
           "blocks": {
             "sub_title_xbYYtw": {
               "type": "sub-title",
