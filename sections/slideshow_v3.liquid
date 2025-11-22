@@ -49,95 +49,9 @@ background: white;
         </div>
         <div class="header-slide_wrap">
           <div class="header-slider swiper">
-            <div li-content-for-blocks="" class="header-slider-list swiper-wrapper">
-{% for block in section.blocks %}
-{% case block.type %}
-{% when '@app' %}
-{% render block %}
-
-              {% when 'slide-a' %}
-            <div li-block="Slide A" class="header-slide swiper-slide">
-                    
-                
-                    <div>
-                  <div class="hero-slide-content_layout is-centered">
-                    <div></div>
-                    <div class="slider-background-image-overlay"></div>
-                    <div class="typo-zoom-text-wrapper-2">
-                      <div class="typo-zoom-text">Leather</div>
-                      <p class="more-than">
-{{ block.settings.text_pre_heading }}
-</p>
-                      <p class="hero-heading">
-{{ block.settings.text_heading }}
-</p>
-                    </div>
-                    <div class="image-hero_bg">
-                      <div class="image-hero_desktop-bg">{% if block.settings.image_image_desktop %}
-{{ block.settings.image_image_desktop | image_url: width: 1000 | image_tag: loading: 'eager', class: 'image-hero_bg-image' }}
-{% else %}
-<img loading="eager" alt="" src="{{ 'platzhalter.svg' | asset_url }}" class="image-hero_bg-image">
-{% endif %}
-                        {% if block.settings.video_desktop != blank %}    <div li-if="block.settings.video_desktop != blank" class="image-hero_video-wrapper">
-    
-                          <video style="height: 100%; width: 100%; object-fit: cover" volume="0" slot="media" playsinline="" loop="" autoplay="" muted="" alt="{{block.settings.video_desktop.alt}}">{% for video_source in block.settings.video_desktop.sources %}<source src="{{video_source.url}}" type="{{video_source.mime_type}}">{% endfor %}</video>
-                            </div>
-{% endif %}
-                      </div>
-                      {% if block.settings.video_mobile != blank or block.settings.image_image_mobile_480px != blank %}    <div li-if="block.settings.video_mobile != blank or block.settings.image_image_mobile_480px != blank" class="image-hero_mobile-bg">
-    {% if block.settings.image_image_mobile %}
-{{ block.settings.image_image_mobile | image_url: width: 1000 | image_tag: loading: 'eager', class: 'image-hero_bg-image' }}
-{% else %}
-<img loading="eager" alt="" src="{{ 'platzhalter.svg' | asset_url }}" class="image-hero_bg-image">
-{% endif %}
-                        {% if block.settings.video_mobile != blank %}    <div li-if="block.settings.video_mobile != blank" class="image-hero_video-wrapper">
-    
-                          <video style="height: 100%; width: 100%; object-fit: cover" volume="0" slot="media" playsinline="" loop="" autoplay="" muted="" alt="{{block.settings.video_mobile.alt}}">{% for video_source in block.settings.video_mobile.sources %}<source src="{{video_source.url}}" type="{{video_source.mime_type}}">{% endfor %}</video>
-                            </div>
-{% endif %}
-                          </div>
-{% endif %}
-                    </div>
-                  </div>
-                </div>
-                    
-                
-                    
-                    
-              
-                </div>
-              {% when 'slide' %}
-            <div li-block="Slide" class="header-slide swiper-slide">
-                    
-                
-                    <div class="hero-slide-content_layout is-centered">
-                  <div class="slider-background_wrap">{% if block.settings.image_image %}
-{{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'slider-background-image', sizes: '(max-width: 1919px) 100vw, 1800.0001220703125px', loading: 'lazy' }}
-{% else %}
- {{ 'detailed-apparel-1' | placeholder_svg_tag: 'slider-background-image' }} 
-{% endif %}</div>
-                  <div class="slider-background-image-overlay"></div>
-                  <div class="typo-zoom-text-wrapper-2">
-                    <div class="typo-zoom-text">Leather</div>
-                    <p class="more-than">
-{{ block.settings.text_pre_heading }}
-</p>
-                    <p class="hero-heading">
-{{ block.settings.text_heading }}
-</p>
-                    <div class="_2rem-spacer"></div>
-                    <div class="div-block-516">
-                      <a href="{{ block.settings.url_button_link }}" data-wf--button-main--variant="base" data-w-id="62fe5b66-eb79-581e-644e-970322077823" class="button-main w-inline-block"> <div class="icon-link-3"> <div class="clip-2 white-10"> <div class="hover-text white-31"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> <div class="hover-text white-31 bottom white-20"> <div class="text-size-small-11 white-34">{{ block.settings.text_button_text }}</div> </div> </div> <div sym-bind="{"visibility":{"type":"Record","val":{"conditions":{"type":"Select","val":{"from":{"type":"Variable","val":"data"},"prop":"96595133-de64-782c-bc2b-1a27b5d57cf2"}}}}}" class="icon-link_circle-2 white-22"> <div class="clip-2 white-10"> <div class="hover-arrow-3"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewbox="0 0 24 24" fill="none" app="ikonik" class="icon-1x1-small-7"> <path d="M13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H16.1893L13.4697 8.53033Z" fill="currentColor" app="ikonik" class="path-c1mxz"></path> </svg></div> <div class="hover-arrow-3 left-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewbox="0 0 24 24" fill="none" app="ikonik" class="icon-1x1-small-7"> <path d="M13.4697 8.53033C13.1768 8.23744 13.1768 7.76256 13.4697 7.46967C13.7626 7.17678 14.2374 7.17678 14.5303 7.46967L18.5303 11.4697C18.8232 11.7626 18.8232 12.2374 18.5303 12.5303L14.5303 16.5303C14.2374 16.8232 13.7626 16.8232 13.4697 16.5303C13.1768 16.2374 13.1768 15.7626 13.4697 15.4697L16.1893 12.75H6.5C6.08579 12.75 5.75 12.4142 5.75 12C5.75 11.5858 6.08579 11.25 6.5 11.25H16.1893L13.4697 8.53033Z" fill="currentColor" app="ikonik" class="path-c1mxz"></path> </svg></div> </div> </div> </div> </a>
-                    </div>
-                  </div>
-                </div>
-                    
-              
-                </div>
-            {% endcase %}
-{% endfor %}
-
-    </div>
+            <div li-content-for-theme-blocks="" class="header-slider-list swiper-wrapper">
+{% content_for 'blocks' %}
+</div>
           </div>
         </div>
         <div class="hero-slider-pagination_wrap">
@@ -191,80 +105,10 @@ const heroslider = new Swiper('.header-slider', {
     "class": "header-slider-section",
     "blocks": [
         {
-            "name": "Slide A",
-            "type": "slide-a",
-            "settings": [
-                {
-                    "id": "text_pre_heading",
-                    "type": "text",
-                    "label": "Pre-Heading",
-                    "default": "More than"
-                },
-                {
-                    "id": "text_heading",
-                    "type": "text",
-                    "label": "Heading",
-                    "default": "Leather"
-                },
-                {
-                    "id": "image_image_desktop",
-                    "type": "image_picker",
-                    "label": "Image Desktop"
-                },
-                {
-                    "id": "image_image_mobile",
-                    "type": "image_picker",
-                    "label": "Image Mobile"
-                },
-                {
-                    "type": "header",
-                    "content": "Video"
-                },
-                {
-                    "type": "video",
-                    "id": "video_desktop",
-                    "label": "Video Desktop"
-                },
-                {
-                    "type": "video",
-                    "id": "video_mobile",
-                    "label": "Video Mobile"
-                }
-            ]
+            "type": "slide-a"
         },
         {
-            "name": "Slide",
-            "type": "slide",
-            "settings": [
-                {
-                    "id": "image_image",
-                    "type": "image_picker",
-                    "label": "Image"
-                },
-                {
-                    "id": "text_pre_heading",
-                    "type": "text",
-                    "label": "Pre-Heading",
-                    "default": "More than"
-                },
-                {
-                    "id": "text_heading",
-                    "type": "text",
-                    "label": "Heading",
-                    "default": "Leather"
-                },
-                {
-                    "id": "url_button_link",
-                    "type": "url",
-                    "label": "Button Link"
-                },
-                {
-                    "id": "text_button_text",
-                    "type": "text",
-                    "label": "Button Text",
-                    "default": "Learn More"
-                }
-            ]
+            "type": "slide"
         },
         {
             "type": "@app"
