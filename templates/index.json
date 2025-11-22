@@ -12,13 +12,6 @@
     "slideshow_v3_8FHTHY": {
       "type": "slideshow_v3",
       "blocks": {
-        "slide_a_bpnQRa": {
-          "type": "slide-a",
-          "settings": {
-            "image_image_desktop": "shopify://shop_images/Muirhead_Hero_BG.jpg"
-          },
-          "blocks": {}
-        },
         "slide_a_f7wQ3m": {
           "type": "slide-a",
           "settings": {
@@ -75,11 +68,68 @@
             "rich_text_8T4rir",
             "buttons_JFjcFK"
           ]
+        },
+        "slide_a_RVRCfg": {
+          "type": "slide-a",
+          "settings": {
+            "video_desktop": "shopify://files/videos/Muirhead Looping Video.mp4"
+          },
+          "blocks": {
+            "sub_title_jtVeB6": {
+              "type": "sub-title",
+              "name": "Sub Title",
+              "settings": {
+                "text_pre_heading": "More than"
+              },
+              "blocks": {}
+            },
+            "title_YC4cNy": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "text_heading": "Leather"
+              },
+              "blocks": {}
+            },
+            "rich_text_N9nkP4": {
+              "type": "rich-text",
+              "name": "Rich Text",
+              "settings": {
+                "richtext_richtext": "<p>\n                The <strong>lowest carbon</strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.\n              </p>"
+              },
+              "blocks": {}
+            },
+            "buttons_iQze8i": {
+              "type": "buttons",
+              "name": "Buttons",
+              "settings": {},
+              "blocks": {
+                "button_Aei4nN": {
+                  "type": "button",
+                  "name": "Button",
+                  "settings": {
+                    "url_button_link": "",
+                    "text_button_text": "Learn More"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "button_Aei4nN"
+              ]
+            }
+          },
+          "block_order": [
+            "sub_title_jtVeB6",
+            "title_YC4cNy",
+            "rich_text_N9nkP4",
+            "buttons_iQze8i"
+          ]
         }
       },
       "block_order": [
-        "slide_a_bpnQRa",
-        "slide_a_f7wQ3m"
+        "slide_a_f7wQ3m",
+        "slide_a_RVRCfg"
       ],
       "name": "Slideshow V3",
       "settings": {}
