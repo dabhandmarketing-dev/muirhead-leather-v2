@@ -1,0 +1,24 @@
+<div li-block="Sub Title">
+                    
+                        
+                    <p class="more-than">
+{{ block.settings.text_pre_heading }}
+</p>
+                    
+                      
+                </div> {% schema %} {
+    "name": "Sub Title",
+    "settings": [
+        {
+            "id": "text_pre_heading",
+            "type": "text",
+            "label": "Pre-Heading",
+            "default": "More than"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Sub Title"
+        }
+    ]
+} {% endschema %}
