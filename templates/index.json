@@ -13,7 +13,8 @@
       "type": "page_heading_xl",
       "name": "Page Heading XL",
       "settings": {
-        "text_heading": "Leather"
+        "text_heading": "Leather",
+        "image_image_desktop": "shopify://shop_images/Muirhead_Hero_BG.jpg"
       }
     },
     "text_stitching_secti_t8bDRx": {
