@@ -1,0 +1,102 @@
+<div li-block="Slide C" class="header-slide swiper-slide">
+                    
+                
+                    <div>
+                  <div class="hero-slide-content_layout is-centered">
+                    <div class="slider-background-image-overlay"></div>
+                    <div li-content-for-theme-blocks="" class="typo-zoom-text-wrapper-2">
+{% content_for 'blocks' %}
+</div>
+                    <div class="image-hero_bg">
+                      <div class="image-hero_desktop-bg">{% if block.settings.image_image_desktop %}
+{{ block.settings.image_image_desktop | image_url: width: 1000 | image_tag: loading: 'eager', class: 'image-hero_bg-image' }}
+{% else %}
+<img loading="eager" alt="" src="{{ 'platzhalter.svg' | asset_url }}" class="image-hero_bg-image">
+{% endif %}
+                        {% if block.settings.video_desktop != blank %}    <div li-if="block.settings.video_desktop != blank" class="image-hero_video-wrapper">
+    
+                          <video style="height: 100%; width: 100%; object-fit: cover" volume="0" slot="media" playsinline="" loop="" autoplay="" muted="" alt="{{block.settings.video_desktop.alt}}">{% for video_source in block.settings.video_desktop.sources %}<source src="{{video_source.url}}" type="{{video_source.mime_type}}">{% endfor %}</video>
+                            </div>
+{% endif %}
+                      </div>
+                      {% if block.settings.video_mobile != blank or block.settings.image_image_mobile_480px != blank %}    <div li-if="block.settings.video_mobile != blank or block.settings.image_image_mobile_480px != blank" class="image-hero_mobile-bg">
+    {% if block.settings.image_image_mobile %}
+{{ block.settings.image_image_mobile | image_url: width: 1000 | image_tag: loading: 'eager', class: 'image-hero_bg-image' }}
+{% else %}
+<img loading="eager" alt="" src="{{ 'platzhalter.svg' | asset_url }}" class="image-hero_bg-image">
+{% endif %}
+                        {% if block.settings.video_mobile != blank %}    <div li-if="block.settings.video_mobile != blank" class="image-hero_video-wrapper">
+    
+                          <video style="height: 100%; width: 100%; object-fit: cover" volume="0" slot="media" playsinline="" loop="" autoplay="" muted="" alt="{{block.settings.video_mobile.alt}}">{% for video_source in block.settings.video_mobile.sources %}<source src="{{video_source.url}}" type="{{video_source.mime_type}}">{% endfor %}</video>
+                            </div>
+{% endif %}
+                          </div>
+{% endif %}
+                    </div>
+                  </div>
+                </div>
+                    
+                
+                    
+                    
+              
+                </div> {% schema %} {
+    "name": "Slide C",
+    "blocks": [
+        {
+            "type": "icon"
+        },
+        {
+            "type": "sub-title"
+        },
+        {
+            "type": "title"
+        },
+        {
+            "type": "rich-text"
+        },
+        {
+            "type": "spacer"
+        },
+        {
+            "type": "buttons"
+        },
+        {
+            "type": "button"
+        },
+        {
+            "type": "@app"
+        }
+    ],
+    "settings": [
+        {
+            "id": "image_image_desktop",
+            "type": "image_picker",
+            "label": "Image Desktop"
+        },
+        {
+            "id": "image_image_mobile",
+            "type": "image_picker",
+            "label": "Image Mobile"
+        },
+        {
+            "type": "header",
+            "content": "Video"
+        },
+        {
+            "type": "video",
+            "id": "video_desktop",
+            "label": "Video Desktop"
+        },
+        {
+            "type": "video",
+            "id": "video_mobile",
+            "label": "Video Mobile"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Slide C"
+        }
+    ]
+} {% endschema %}

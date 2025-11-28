@@ -1,8 +1,8 @@
 <div class="padding-section-small">
           <div li-render-custom-reinit="true" li-render-filter="wrapper" class="padding-global">
             <div class="container-large">
-              {% paginate collection.products by 50 %}
-    <div li-paginate:by="50" li-paginate="collection.products" class="filter_layout-2" by="50">
+              {% paginate collection.products by 100 %}
+    <div li-render-filter-reset-ix="true" li-paginate="collection.products" li-paginate:by="100" class="filter_layout-2" by="100">
                 <div id="w-node-_522e9e14-e85d-aeb6-3296-61a26d9c43f3-6d9c43ee" class="filter_filters-wrapper">
                   <form action="{{ routes.search_url }}" method="get" role="search" class="filter_form_component">
                     <div li-render-filter="target" id="w-node-_522e9e14-e85d-aeb6-3296-61a26d9c43f5-6d9c43ee" class="filter_form">
