@@ -124,7 +124,7 @@
           "type": "text",
           "settings": {
             "richtext_text": "<p>As the world’s most trusted leather supplier for aviation and rail, we bring unparalleled expertise in crafting durable, high-quality leather seat covers.</p>",
-            "text-size": "1rem"
+            "text-size": "1.25rem"
           },
           "blocks": {}
         },
