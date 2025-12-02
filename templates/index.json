@@ -55,6 +55,49 @@
         "color_theme": ""
       }
     },
+    "image_text_XrrUht": {
+      "type": "image_text",
+      "blocks": {
+        "headline_small_hmnchT": {
+          "type": "headline-small",
+          "settings": {
+            "text_text": "Small Headline"
+          },
+          "blocks": {}
+        },
+        "headline_77t7FC": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
+          },
+          "blocks": {}
+        },
+        "text_Pm8qNt": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p><br/>                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Steat clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.<br/>                    </p>",
+            "text-size": "1.5rem"
+          },
+          "blocks": {}
+        },
+        "buttons_Qp3aE3": {
+          "type": "buttons",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "headline_small_hmnchT",
+        "headline_77t7FC",
+        "text_Pm8qNt",
+        "buttons_Qp3aE3"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "grid_position": "left",
+        "color_theme": ""
+      }
+    },
     "scroll_image_QnGaPb": {
       "type": "scroll_image",
       "blocks": {
@@ -389,6 +432,7 @@
   "order": [
     "page_heading_xl_JR9X96",
     "text_stitching_secti_t8bDRx",
+    "image_text_XrrUht",
     "scroll_image_QnGaPb",
     "scroll_image_arfRnN",
     "image_text_XEbaxG",
