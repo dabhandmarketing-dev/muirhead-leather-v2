@@ -9,22 +9,18 @@
  */
 {
   "sections": {
-    "slideshow_v2_7gagj6": {
-      "type": "slideshow_v2",
+    "slideshow_v3_ND6UkU": {
+      "type": "slideshow_v3",
       "blocks": {
-        "slide_jyDH44": {
-          "type": "slide",
+        "slide_c_K7Fgda": {
+          "type": "slide-c",
           "settings": {
-            "text_pre_heading": "More than",
-            "text_heading": "Leather",
-            "url_button_link": "",
-            "text_button_text": "Learn More"
+            "video_desktop": "shopify://files/videos/Muirhead Looping Video.mp4"
           },
           "blocks": {}
         },
-        "slide_ViknY3": {
+        "slide_PHQDDH": {
           "type": "slide",
-          "name": "Slide",
           "settings": {
             "text_pre_heading": "More than",
             "text_heading": "Leather",
@@ -35,10 +31,10 @@
         }
       },
       "block_order": [
-        "slide_jyDH44",
-        "slide_ViknY3"
+        "slide_c_K7Fgda",
+        "slide_PHQDDH"
       ],
-      "name": "Slideshow V2",
+      "name": "Slideshow V3",
       "settings": {}
     },
     "text_stitching_secti_t8bDRx": {
@@ -454,7 +450,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "slideshow_v2_7gagj6",
+    "slideshow_v3_ND6UkU",
     "text_stitching_secti_t8bDRx",
     "image_text_XrrUht",
     "scroll_image_QnGaPb",
