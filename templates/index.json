@@ -17,22 +17,61 @@
           "settings": {
             "video_desktop": "shopify://files/videos/Muirhead Looping Video.mp4"
           },
-          "blocks": {}
-        },
-        "slide_PHQDDH": {
-          "type": "slide",
-          "settings": {
-            "text_pre_heading": "More than",
-            "text_heading": "Leather",
-            "url_button_link": "",
-            "text_button_text": "Learn More"
+          "blocks": {
+            "title_dVVUzw": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "text_heading": "Leather"
+              },
+              "blocks": {}
+            },
+            "rich_text_JBmpm9": {
+              "type": "rich-text",
+              "name": "Rich Text",
+              "settings": {
+                "richtext_richtext": "<p>\n                The <strong>lowest carbon</strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.\n              </p>"
+              },
+              "blocks": {}
+            }
           },
-          "blocks": {}
+          "block_order": [
+            "title_dVVUzw",
+            "rich_text_JBmpm9"
+          ]
+        },
+        "slide_c_GbcitB": {
+          "type": "slide-c",
+          "settings": {
+            "video_desktop": "shopify://files/videos/Muirhead Looping Video.mp4"
+          },
+          "blocks": {
+            "title_HDKhmz": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "text_heading": "Leather"
+              },
+              "blocks": {}
+            },
+            "rich_text_tfaarJ": {
+              "type": "rich-text",
+              "name": "Rich Text",
+              "settings": {
+                "richtext_richtext": "<p>\n                The <strong>lowest carbon</strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.\n              </p>"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title_HDKhmz",
+            "rich_text_tfaarJ"
+          ]
         }
       },
       "block_order": [
         "slide_c_K7Fgda",
-        "slide_PHQDDH"
+        "slide_c_GbcitB"
       ],
       "name": "Slideshow V3",
       "settings": {}
