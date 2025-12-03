@@ -33,11 +33,18 @@
                 "richtext_richtext": "<p>\n                The <strong>lowest carbon</strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.\n              </p>"
               },
               "blocks": {}
+            },
+            "buttons_Fjn3fN": {
+              "type": "buttons",
+              "name": "Buttons",
+              "settings": {},
+              "blocks": {}
             }
           },
           "block_order": [
             "title_dVVUzw",
-            "rich_text_JBmpm9"
+            "rich_text_JBmpm9",
+            "buttons_Fjn3fN"
           ]
         },
         "slide_c_GbcitB": {
