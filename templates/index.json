@@ -15,9 +15,17 @@
         "slide_c_K7Fgda": {
           "type": "slide-c",
           "settings": {
-            "video_desktop": "shopify://files/videos/Muirhead Looping Video.mp4"
+            "image_image_desktop": "shopify://shop_images/Muirhead_Hero_BG.jpg"
           },
           "blocks": {
+            "sub_title_qBXeh6": {
+              "type": "sub-title",
+              "name": "Sub Title",
+              "settings": {
+                "text_pre_heading": "More than"
+              },
+              "blocks": {}
+            },
             "title_dVVUzw": {
               "type": "title",
               "name": "Title",
@@ -65,6 +73,7 @@
             }
           },
           "block_order": [
+            "sub_title_qBXeh6",
             "title_dVVUzw",
             "rich_text_JBmpm9",
             "buttons_Fjn3fN"
