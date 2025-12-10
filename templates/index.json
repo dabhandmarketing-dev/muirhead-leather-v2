@@ -103,7 +103,7 @@
               "type": "sub-title",
               "name": "Sub Title",
               "settings": {
-                "text_pre_heading": "The Worlds Lowest Carbon"
+                "text_pre_heading": "We Make The World's"
               },
               "blocks": {}
             },
@@ -111,7 +111,7 @@
               "type": "title",
               "name": "Title",
               "settings": {
-                "text_heading": "Leather"
+                "text_heading": "Lowest Carbon Leather"
               },
               "blocks": {}
             },
