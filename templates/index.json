@@ -40,12 +40,6 @@
               "settings": {},
               "blocks": {}
             },
-            "icon_Yi3HCL": {
-              "type": "icon",
-              "name": "Icon",
-              "settings": {},
-              "blocks": {}
-            },
             "spacer_YTwazq": {
               "type": "spacer",
               "name": "Spacer",
@@ -76,7 +70,6 @@
             "sub_title_cGnbqq",
             "title_HDKhmz",
             "spacer_mTxjdP",
-            "icon_Yi3HCL",
             "spacer_YTwazq",
             "buttons_Xx9XhL"
           ]
