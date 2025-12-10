@@ -18,19 +18,19 @@
             "image_image_desktop": "shopify://shop_images/Muirhead_Hero_BG.jpg"
           },
           "blocks": {
-            "sub_title_qBXeh6": {
-              "type": "sub-title",
-              "name": "Sub Title",
-              "settings": {
-                "text_pre_heading": "More than"
-              },
-              "blocks": {}
-            },
             "title_dVVUzw": {
               "type": "title",
               "name": "Title",
               "settings": {
-                "text_heading": "Leather"
+                "text_heading": "More Than Leather"
+              },
+              "blocks": {}
+            },
+            "sub_title_qBXeh6": {
+              "type": "sub-title",
+              "name": "Sub Title",
+              "settings": {
+                "text_pre_heading": "A Lot More"
               },
               "blocks": {}
             },
@@ -80,8 +80,8 @@
             }
           },
           "block_order": [
-            "sub_title_qBXeh6",
             "title_dVVUzw",
+            "sub_title_qBXeh6",
             "rich_text_JBmpm9",
             "spacer_TfPMW4",
             "buttons_Fjn3fN"
