@@ -76,6 +76,14 @@
             "video_desktop": "shopify://files/videos/Muirhead Looping Video.mp4"
           },
           "blocks": {
+            "sub_title_cGnbqq": {
+              "type": "sub-title",
+              "name": "Sub Title",
+              "settings": {
+                "text_pre_heading": "More than"
+              },
+              "blocks": {}
+            },
             "title_HDKhmz": {
               "type": "title",
               "name": "Title",
@@ -94,6 +102,7 @@
             }
           },
           "block_order": [
+            "sub_title_cGnbqq",
             "title_HDKhmz",
             "rich_text_tfaarJ"
           ]
