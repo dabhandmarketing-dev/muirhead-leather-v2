@@ -149,7 +149,20 @@
         "buttons_Qp3aE3": {
           "type": "buttons",
           "settings": {},
-          "blocks": {}
+          "blocks": {
+            "button_YXmHPd": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "url_button_link": "",
+                "text_button_text": "Learn More"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_YXmHPd"
+          ]
         }
       },
       "block_order": [
