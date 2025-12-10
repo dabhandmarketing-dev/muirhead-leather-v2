@@ -34,50 +34,16 @@
           "type": "rich-text",
           "settings": {
             "richtext_richtext": "<h3>Lowering carbon through circular manufacturing.</h3>"
-          }
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "rich_text_PDtKDH"
       ],
       "name": "Text Stitching Secti",
-      "settings": {}
-    },
-    "text_centralised_dny9wP": {
-      "type": "text_centralised",
-      "blocks": {
-        "heading_bTrgwR": {
-          "type": "heading",
-          "settings": {
-            "text_heading": "Lowest carbon leather"
-          }
-        },
-        "text_U8fAAY": {
-          "type": "text",
-          "settings": {
-            "richtext_richtext": "<p>We make the world’s lowest-carbon leather. Since 2003, we have significantly reduced the carbon intensity of our leather per hide from 10.9kg CO₂e/m² to 1.4kg CO₂e/m² per hide in 2023 and we’re constantly innovating to improve on that even further. </p>"
-          }
-        },
-        "text_ADn9eQ": {
-          "type": "text",
-          "settings": {
-            "richtext_richtext": "<p>Our patented circular manufacturing process incorporates energy recovery, water re-use, renewable energy, locally sourced (and traceable) rawhides, and even a unique take-back scheme for end-of-life leather.</p>"
-          }
-        },
-        "image_GmxwJw": {
-          "type": "image",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_bTrgwR",
-        "text_U8fAAY",
-        "text_ADn9eQ",
-        "image_GmxwJw"
-      ],
-      "name": "Text Centralised",
       "settings": {
-        "text-color": "#ffffff"
+        "color_theme": ""
       }
     },
     "image_text_UKpNEW": {
@@ -87,30 +53,29 @@
           "type": "headline",
           "settings": {
             "text_headline": "Carbon intensity"
-          }
+          },
+          "blocks": {}
         },
         "text_RMhPdx": {
           "type": "text",
           "settings": {
             "richtext_text": "<p>We reclaim energy from waste at our on-site thermal energy plant. And the energy we do buy in is 100% wind-derived. </p>",
             "text-size": "1rem"
-          }
+          },
+          "blocks": {}
         },
         "text_YPJgpJ": {
           "type": "text",
           "settings": {
             "richtext_text": "<p>The carbon intensity of Muirhead leather is the lowest published anywhere in the world. Specifying Muirhead leather helps our clients to pursue their own low carbon targets.</p>",
             "text-size": "1rem"
-          }
+          },
+          "blocks": {}
         },
         "buttons_fmc4E6": {
           "type": "buttons",
-          "settings": {
-            "url_button_link": "",
-            "text_button_text": "Learn More",
-            "url_button_link_2": "",
-            "text_button_text_2": "Learn More"
-          }
+          "settings": {},
+          "blocks": {}
         }
       },
       "block_order": [
@@ -123,8 +88,7 @@
       "settings": {
         "image_image": "shopify://shop_images/sustainability_lowering-carbon_image_02.webp",
         "grid_position": "left",
-        "background_colour": "#ffffff",
-        "text-color": "#444444"
+        "color_theme": ""
       }
     },
     "image_text_4J8rJn": {
@@ -134,23 +98,21 @@
           "type": "headline",
           "settings": {
             "text_headline": "State-of-the-art"
-          }
+          },
+          "blocks": {}
         },
         "text_LR9LHh": {
           "type": "text",
           "settings": {
             "richtext_text": "<p>Significant investments in circular manufacturing have made us arguably the most modern and environmentally-focused leather manufacturer in the world. As part of Scottish Leather Group, our facilities on-site include a thermal energy plant, a water ultrafiltration plant and a modern, cutting-edge tannery.</p>",
             "text-size": "1rem"
-          }
+          },
+          "blocks": {}
         },
         "buttons_apK8hw": {
           "type": "buttons",
-          "settings": {
-            "url_button_link": "#",
-            "text_button_text": "Learn More",
-            "url_button_link_2": "",
-            "text_button_text_2": "Learn More"
-          }
+          "settings": {},
+          "blocks": {}
         }
       },
       "block_order": [
@@ -162,8 +124,7 @@
       "settings": {
         "image_image": "shopify://shop_images/sustainability_lowering-carbon_image_03.webp",
         "grid_position": "right",
-        "background_colour": "#cad4d8",
-        "text-color": "#444444"
+        "color_theme": ""
       }
     },
     "image_text_WExeNQ": {
@@ -173,30 +134,29 @@
           "type": "headline",
           "settings": {
             "text_headline": "Circular manufacturing"
-          }
+          },
+          "blocks": {}
         },
         "text_nMwpW9": {
           "type": "text",
           "settings": {
             "richtext_text": "<p>Our patented thermal energy plant generates heat from our process waste to power our tannery. In normal use, we reclaim enough energy to heat 5,000 households. Through our unique take-back scheme for end-of-life leather we can even use old leather to power the making of new leather.</p>",
             "text-size": "1rem"
-          }
+          },
+          "blocks": {}
         },
         "text_34NPPp": {
           "type": "text",
           "settings": {
             "richtext_text": "<p>When it comes to electricity, we buy 100% from certified renewable and carbon neutral wind sources (100% REGO), and we’ve been doing it since 2017.</p>",
             "text-size": "1rem"
-          }
+          },
+          "blocks": {}
         },
         "buttons_YDQYUy": {
           "type": "buttons",
-          "settings": {
-            "url_button_link": "#",
-            "text_button_text": "Learn More",
-            "url_button_link_2": "",
-            "text_button_text_2": "Learn More"
-          }
+          "settings": {},
+          "blocks": {}
         }
       },
       "block_order": [
@@ -209,55 +169,7 @@
       "settings": {
         "image_image": "shopify://shop_images/sustainability_lowering-carbon_image_04_new.webp",
         "grid_position": "left",
-        "background_colour": "#ffffff",
-        "text-color": "#444444"
-      }
-    },
-    "text_centralised_drfzrN": {
-      "type": "text_centralised",
-      "blocks": {
-        "heading_yt8JXJ": {
-          "type": "heading",
-          "settings": {
-            "text_heading": "Life cycle analysis"
-          }
-        },
-        "text_QJYyGq": {
-          "type": "text",
-          "settings": {
-            "richtext_richtext": "<p>We take pride in measuring and publishing our impacts. We use an ISO-accredited Life Cycle Analysis (LCA) to account for our carbon footprint. The LCA quantifies the GWP100 (and other) impacts of all our direct activities, including the influence of upstream farming.</p>"
-          }
-        },
-        "text_7zmgmT": {
-          "type": "text",
-          "settings": {
-            "richtext_richtext": "<p>LCA measures impact of production as CO₂e/m², our LCA of 8kg is the lowest in the world published for leather.</p>"
-          }
-        },
-        "button_gLPwBw": {
-          "type": "button",
-          "settings": {
-            "url_button_link": "",
-            "text_button_text": "View our latest ESG Report"
-          }
-        },
-        "image_MQMgV6": {
-          "type": "image",
-          "settings": {
-            "image_image": "shopify://shop_images/muirhead-lca2025-v4.webp"
-          }
-        }
-      },
-      "block_order": [
-        "heading_yt8JXJ",
-        "text_QJYyGq",
-        "text_7zmgmT",
-        "button_gLPwBw",
-        "image_MQMgV6"
-      ],
-      "name": "Text Centralised",
-      "settings": {
-        "text-color": "#ffffff"
+        "color_theme": ""
       }
     }
   },
@@ -268,10 +180,8 @@
     "default",
     "heading_large_ar6nE3",
     "text_stitching_secti_kLj66k",
-    "text_centralised_dny9wP",
     "image_text_UKpNEW",
     "image_text_4J8rJn",
-    "image_text_WExeNQ",
-    "text_centralised_drfzrN"
+    "image_text_WExeNQ"
   ]
 }
