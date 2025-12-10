@@ -1,34 +1,36 @@
-<div class="padding-section-small">
-          <div class="padding-global">
-            <div x-data="{ open: true }" class="container-large">
-              {% if section.settings.video %}    <div x-on:click="open = ! open" li-if="section.settings.video" class="video_wrapper">
+<div class="section {{ section.settings.color_theme }}">
+          <div class="padding-section-small">
+            <div class="padding-global">
+              <div x-data="{ open: true }" class="container-large">
+                {% if section.settings.video %}    <div x-on:click="open = ! open" li-if="section.settings.video" class="video_wrapper">
     
-                <div li-object="section.settings.video | video_tag: controls: true, width: '100%'" class="video_component">{{ section.settings.video | video_tag: controls: true, width: '100%' }}</div>
-                <div x-show="open" class="video_cover">{% if section.settings.image_thumbnail %}
+                  <div li-object="section.settings.video | video_tag: controls: true, width: '100%'" class="video_component">{{ section.settings.video | video_tag: controls: true, width: '100%' }}</div>
+                  <div x-show="open" class="video_cover">{% if section.settings.image_thumbnail %}
 {{ section.settings.image_thumbnail | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'video_cover' }}
 {% else %}
 <img loading="lazy" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="video_cover">
 {% endif %}
-                  <div class="video_play-button w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 25 25" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
-                      <mask id="mask0_8525_24819" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="25" height="25">
-                        <rect x="0.689453" y="0.674805" width="24" height="24" fill="#D9D9D9"></rect>
-                      </mask>
-                      <g mask="url(#mask0_8525_24819)">
-                        <path d="M10.1895 17.1748L17.1895 12.6748L10.1895 8.1748V17.1748ZM12.6895 22.6748C11.3061 22.6748 10.0061 22.4123 8.78945 21.8873C7.57279 21.3623 6.51445 20.6498 5.61445 19.7498C4.71445 18.8498 4.00195 17.7915 3.47695 16.5748C2.95195 15.3581 2.68945 14.0581 2.68945 12.6748C2.68945 11.2915 2.95195 9.99147 3.47695 8.7748C4.00195 7.55814 4.71445 6.4998 5.61445 5.5998C6.51445 4.6998 7.57279 3.9873 8.78945 3.4623C10.0061 2.9373 11.3061 2.6748 12.6895 2.6748C14.0728 2.6748 15.3728 2.9373 16.5895 3.4623C17.8061 3.9873 18.8645 4.6998 19.7645 5.5998C20.6645 6.4998 21.377 7.55814 21.902 8.7748C22.427 9.99147 22.6895 11.2915 22.6895 12.6748C22.6895 14.0581 22.427 15.3581 21.902 16.5748C21.377 17.7915 20.6645 18.8498 19.7645 19.7498C18.8645 20.6498 17.8061 21.3623 16.5895 21.8873C15.3728 22.4123 14.0728 22.6748 12.6895 22.6748ZM12.6895 20.6748C14.9228 20.6748 16.8145 19.8998 18.3645 18.3498C19.9145 16.7998 20.6895 14.9081 20.6895 12.6748C20.6895 10.4415 19.9145 8.54981 18.3645 6.9998C16.8145 5.4498 14.9228 4.6748 12.6895 4.6748C10.4561 4.6748 8.56445 5.4498 7.01445 6.9998C5.46445 8.54981 4.68945 10.4415 4.68945 12.6748C4.68945 14.9081 5.46445 16.7998 7.01445 18.3498C8.56445 19.8998 10.4561 20.6748 12.6895 20.6748Z" fill="white"></path>
-                      </g>
-                    </svg></div>
-                </div>
+                    <div class="video_play-button w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 25 25" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                        <mask id="mask0_8525_24819" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="25" height="25">
+                          <rect x="0.689453" y="0.674805" width="24" height="24" fill="#D9D9D9"></rect>
+                        </mask>
+                        <g mask="url(#mask0_8525_24819)">
+                          <path d="M10.1895 17.1748L17.1895 12.6748L10.1895 8.1748V17.1748ZM12.6895 22.6748C11.3061 22.6748 10.0061 22.4123 8.78945 21.8873C7.57279 21.3623 6.51445 20.6498 5.61445 19.7498C4.71445 18.8498 4.00195 17.7915 3.47695 16.5748C2.95195 15.3581 2.68945 14.0581 2.68945 12.6748C2.68945 11.2915 2.95195 9.99147 3.47695 8.7748C4.00195 7.55814 4.71445 6.4998 5.61445 5.5998C6.51445 4.6998 7.57279 3.9873 8.78945 3.4623C10.0061 2.9373 11.3061 2.6748 12.6895 2.6748C14.0728 2.6748 15.3728 2.9373 16.5895 3.4623C17.8061 3.9873 18.8645 4.6998 19.7645 5.5998C20.6645 6.4998 21.377 7.55814 21.902 8.7748C22.427 9.99147 22.6895 11.2915 22.6895 12.6748C22.6895 14.0581 22.427 15.3581 21.902 16.5748C21.377 17.7915 20.6645 18.8498 19.7645 19.7498C18.8645 20.6498 17.8061 21.3623 16.5895 21.8873C15.3728 22.4123 14.0728 22.6748 12.6895 22.6748ZM12.6895 20.6748C14.9228 20.6748 16.8145 19.8998 18.3645 18.3498C19.9145 16.7998 20.6895 14.9081 20.6895 12.6748C20.6895 10.4415 19.9145 8.54981 18.3645 6.9998C16.8145 5.4498 14.9228 4.6748 12.6895 4.6748C10.4561 4.6748 8.56445 5.4498 7.01445 6.9998C5.46445 8.54981 4.68945 10.4415 4.68945 12.6748C4.68945 14.9081 5.46445 16.7998 7.01445 18.3498C8.56445 19.8998 10.4561 20.6748 12.6895 20.6748Z" fill="white"></path>
+                        </g>
+                      </svg></div>
                   </div>
+                    </div>
 {% endif %}
-              {% if section.settings.video_url != blank %}    <div li-if="section.settings.video_url != blank" class="video_wrapper">
+                {% if section.settings.video_url != blank %}    <div li-if="section.settings.video_url != blank" class="video_wrapper">
     <iframe src="{{ section.settings.video_url }}" width="100%" height="100%" title="{{ section.settings.video_title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" class="video_component"></iframe>    </div>
 {% endif %}
+              </div>
             </div>
           </div>
         </div> {% schema %} {
     "tag": "section",
     "name": "Video Hero V5",
-    "class": "section video-hero section {{ section.settings.color_theme }}",
+    "class": "section video-hero",
     "settings": [
         {
             "id": "image_thumbnail",

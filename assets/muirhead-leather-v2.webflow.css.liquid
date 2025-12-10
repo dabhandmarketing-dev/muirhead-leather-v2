@@ -42,8 +42,8 @@
   --base-color-brand--darker-charcoal: #eee;
   --base-color-brand--dark-blue: #053e51;
   --base-color-brand--green: #11763d;
-  --base-color-brand--blue-light: #d9e5ff;
   --base-color-brand--black: #0e0e0e;
+  --base-color-brand--blue-light: #d9e5ff;
   --base-color-brand--blue: #2d62ff;
   --base-color-brand--blue-dark: #080331;
   --base-color-brand--pink-light: #ffaefe;
@@ -2382,7 +2382,6 @@ figcaption {
 }
 
 .li-lang_dd-link {
-  color: #fff;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
@@ -2390,10 +2389,6 @@ figcaption {
   text-decoration: none;
   transition: color .2s;
   display: flex;
-}
-
-.li-lang_dd-link:hover {
-  text-decoration: underline;
 }
 
 .footer_logo {
@@ -3674,9 +3669,8 @@ figcaption {
   grid-column-gap: .25rem;
   grid-row-gap: .25rem;
   color: #fff;
-  background-color: #111;
-  border: 1px solid #ffffff45;
-  padding: .5rem;
+  border-radius: 8px;
+  padding: 20px 0;
   display: flex;
 }
 
@@ -3688,7 +3682,6 @@ figcaption {
   color: var(--base-color-neutral--white);
   object-fit: contain;
   width: 1rem;
-  margin-left: .4em;
   transform: rotate(180deg);
 }
 
@@ -4754,7 +4747,9 @@ figcaption {
   background-color: var(--base-color-brand--charcoal);
   border-radius: 100px;
   width: 1.5rem;
+  min-width: 1.5rem;
   height: 1.5rem;
+  min-height: 1.5rem;
   overflow: hidden;
 }
 
@@ -7908,16 +7903,12 @@ figcaption {
 }
 
 .li-market_dd-list {
-  text-transform: uppercase;
-  background-color: #111;
-  border: 1px solid #ffffff45;
-  border-radius: .5rem;
+  background-color: var(--base-color-neutral--white);
+  color: var(--base-color-brand--black);
 }
 
 .li-market_dd-list.w--open {
   width: auto;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
 }
 
 .li-market_dd-list-item {
@@ -7926,6 +7917,10 @@ figcaption {
   width: 100%;
   padding: .5rem;
   display: flex;
+}
+
+.li-market_dd-list-item:hover {
+  background-color: var(--base-color-brand--darker-charcoal);
 }
 
 .product-header_gallery-image-3 {
@@ -8959,6 +8954,23 @@ figcaption {
 
 .swiper-wrapper-2.is-product-thumbnail {
   width: 100%;
+}
+
+.icon-container {
+  grid-column-gap: .25rem;
+  grid-row-gap: .25rem;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+}
+
+.icon-container:hover {
+  background-color: #ffffff0d;
+}
+
+.icon-container.w--open {
+  z-index: 1;
 }
 
 @media screen and (min-width: 1280px) {
