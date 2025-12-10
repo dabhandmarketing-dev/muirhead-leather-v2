@@ -177,6 +177,14 @@
         "color_theme": ""
       }
     },
+    "video_hero_v5_6p9dVc": {
+      "type": "video_hero_v5",
+      "name": "Video Hero V5",
+      "settings": {
+        "video_url": "https://www.youtube.com/embed/Otq0_c4cSag?si=zX9wjVjld6QdMswV",
+        "video_title": "Video Title"
+      }
+    },
     "scroll_image_QnGaPb": {
       "type": "scroll_image",
       "blocks": {
@@ -512,6 +520,7 @@
     "slideshow_v3_ND6UkU",
     "text_stitching_secti_t8bDRx",
     "image_text_XrrUht",
+    "video_hero_v5_6p9dVc",
     "scroll_image_QnGaPb",
     "scroll_image_arfRnN",
     "image_text_XEbaxG",
