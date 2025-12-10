@@ -37,9 +37,16 @@
             "rich_text_JBmpm9": {
               "type": "rich-text",
               "name": "Rich Text",
+              "disabled": true,
               "settings": {
-                "richtext_richtext": "<p><br/>                The <strong>lowest carbon</strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.<br/>              </p>"
+                "richtext_richtext": "<p>The <strong>lowest carbon</strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.</p>"
               },
+              "blocks": {}
+            },
+            "spacer_TfPMW4": {
+              "type": "spacer",
+              "name": "Spacer",
+              "settings": {},
               "blocks": {}
             },
             "buttons_Fjn3fN": {
@@ -76,6 +83,7 @@
             "sub_title_qBXeh6",
             "title_dVVUzw",
             "rich_text_JBmpm9",
+            "spacer_TfPMW4",
             "buttons_Fjn3fN"
           ]
         },
