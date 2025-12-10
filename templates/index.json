@@ -153,11 +153,6 @@
       "name": "Slideshow V3",
       "settings": {}
     },
-    "dotted_sides_PLLqPh": {
-      "type": "dotted_sides",
-      "name": "Dotted Sides",
-      "settings": {}
-    },
     "text_stitching_secti_t8bDRx": {
       "type": "text_stitching_secti",
       "blocks": {
@@ -603,7 +598,6 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "slideshow_v3_ND6UkU",
-    "dotted_sides_PLLqPh",
     "text_stitching_secti_t8bDRx",
     "image_text_XrrUht",
     "video_hero_v5_6p9dVc",
