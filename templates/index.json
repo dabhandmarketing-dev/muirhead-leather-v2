@@ -105,7 +105,7 @@
               "type": "rich-text",
               "name": "Rich Text",
               "settings": {
-                "richtext_richtext": "<p>\n                The <strong>lowest carbon</strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.\n              </p>"
+                "richtext_richtext": "<p>The <strong>lowest carbon</strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.</p>"
               },
               "blocks": {}
             }
