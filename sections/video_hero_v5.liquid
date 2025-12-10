@@ -28,7 +28,7 @@
         </div> {% schema %} {
     "tag": "section",
     "name": "Video Hero V5",
-    "class": "section video-hero",
+    "class": "section video-hero section {{ section.settings.color_theme }}",
     "settings": [
         {
             "id": "image_thumbnail",
@@ -63,6 +63,30 @@
             "id": "video_title",
             "label": "Video Title",
             "default": "Video Title"
+        },
+        {
+            "type": "header",
+            "content": "Colour Theme"
+        },
+        {
+            "type": "select",
+            "id": "color_theme",
+            "label": "Color Theme",
+            "default": "",
+            "options": [
+                {
+                    "label": "Light",
+                    "value": ""
+                },
+                {
+                    "label": "White \/ Blue Split",
+                    "value": "w-variant-1a01ca47-527f-4739-e0f0-4ec0def33181"
+                },
+                {
+                    "label": "White \/ Black Split",
+                    "value": "w-variant-5cee04c8-52f4-8a88-2430-a4061f010edb"
+                }
+            ]
         }
     ],
     "presets": [
