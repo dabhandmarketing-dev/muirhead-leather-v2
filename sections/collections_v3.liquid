@@ -15,7 +15,6 @@
                       <div class="filter_results-wrapper">
                         <div class="filter_results-text">Showing <span li-object="collection.all_products_count | append: ' '">{{ collection.all_products_count | append: ' ' }}</span> Products<span fs-cmsfilter-element="items-count"></span></div>
                       </div>
-                      <div class="filter_form-field-wrapper"><input name="type" type="hidden" class="form_input-6" value="product"><label for="filter-search" class="form_hidden-label">Search for Products</label><input name="q" placeholder="Search" type="search" id="filter-search" li-render-filter="search" class="form_input-6" value="{{ search.terms | escape }}"></div>
                       <div class="filter_scroll-wrapper-2">
                         <div class="filter_filter-group-list">
                           {% for filter in collection.filters %}    <div li-for="filter in collection.filters" class="filter_filter-group">
