@@ -15,7 +15,19 @@
         "slide_c_TN66yq": {
           "type": "slide-c",
           "settings": {},
-          "blocks": {}
+          "blocks": {
+            "title_NdJwcF": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "text_heading": "More Than Leather."
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "title_NdJwcF"
+          ]
         }
       },
       "block_order": [
