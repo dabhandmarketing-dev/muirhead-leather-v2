@@ -14,9 +14,7 @@
       "blocks": {
         "slide_c_kB7mmR": {
           "type": "slide-c",
-          "settings": {
-            "image_image_desktop": "shopify://shop_images/Muirhead_Hero_BG.jpg"
-          },
+          "settings": {},
           "blocks": {
             "title_HtKDNj": {
               "type": "title",
@@ -33,11 +31,22 @@
                 "text_heading": "A lot more."
               },
               "blocks": {}
+            },
+            "button_E3Dpj6": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "url_button_link": "",
+                "text_button_text": "Learn More",
+                "button-style": "w-variant-c7f83e63-3671-0dfd-4ebb-3bb7602e78af"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "title_HtKDNj",
-            "title_ncmyJf"
+            "title_ncmyJf",
+            "button_E3Dpj6"
           ]
         }
       },
@@ -45,11 +54,6 @@
         "slide_c_kB7mmR"
       ],
       "name": "Slideshow V3",
-      "settings": {}
-    },
-    "floating_dots_wQYWXf": {
-      "type": "floating_dots",
-      "name": "Floating Dots",
       "settings": {}
     },
     "text_stitching_secti_t8bDRx": {
@@ -459,7 +463,6 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "slideshow_v3_iEMfCX",
-    "floating_dots_wQYWXf",
     "text_stitching_secti_t8bDRx",
     "divider_n6B8ej",
     "scroll_image_QnGaPb",
