@@ -14,7 +14,9 @@
       "blocks": {
         "slide_c_kB7mmR": {
           "type": "slide-c",
-          "settings": {},
+          "settings": {
+            "image_image_desktop": "shopify://shop_images/Muirhead_Hero_BG.jpg"
+          },
           "blocks": {
             "title_HtKDNj": {
               "type": "title",
