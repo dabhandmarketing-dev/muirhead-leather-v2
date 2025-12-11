@@ -9,61 +9,29 @@
  */
 {
   "sections": {
-    "slideshow_v3_Jf3ibr": {
+    "slideshow_v3_q4Qbjw": {
       "type": "slideshow_v3",
       "blocks": {
-        "slide_c_TN66yq": {
+        "slide_c_awLDyH": {
           "type": "slide-c",
           "settings": {},
           "blocks": {
-            "title_NdJwcF": {
+            "title_PCJh9c": {
               "type": "title",
               "name": "Title",
               "settings": {
                 "text_heading": "More Than Leather."
               },
               "blocks": {}
-            },
-            "buttons_NjmFwM": {
-              "type": "buttons",
-              "name": "Buttons",
-              "settings": {},
-              "blocks": {
-                "button_7Y6XtF": {
-                  "type": "button",
-                  "name": "Button",
-                  "settings": {
-                    "url_button_link": "",
-                    "text_button_text": "Learn More",
-                    "button-style": ""
-                  },
-                  "blocks": {}
-                },
-                "button_aYQp4j": {
-                  "type": "button",
-                  "name": "Button",
-                  "settings": {
-                    "url_button_link": "",
-                    "text_button_text": "Learn More",
-                    "button-style": "w-variant-c7f83e63-3671-0dfd-4ebb-3bb7602e78af"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "button_7Y6XtF",
-                "button_aYQp4j"
-              ]
             }
           },
           "block_order": [
-            "title_NdJwcF",
-            "buttons_NjmFwM"
+            "title_PCJh9c"
           ]
         }
       },
       "block_order": [
-        "slide_c_TN66yq"
+        "slide_c_awLDyH"
       ],
       "name": "Slideshow V3",
       "settings": {}
@@ -474,7 +442,7 @@
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "slideshow_v3_Jf3ibr",
+    "slideshow_v3_q4Qbjw",
     "text_stitching_secti_t8bDRx",
     "divider_n6B8ej",
     "scroll_image_QnGaPb",
