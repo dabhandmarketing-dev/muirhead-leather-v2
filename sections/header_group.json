@@ -11,6 +11,26 @@
   "type": "header",
   "name": "Header Group",
   "sections": {
+    "announcement_bar_jejUVD": {
+      "type": "announcement_bar",
+      "blocks": {
+        "social_icons_JgJKj4": {
+          "type": "social-icons",
+          "settings": {
+            "url_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "social_icons_JgJKj4"
+      ],
+      "name": "Announcement Bar",
+      "settings": {
+        "url_slide_link": "",
+        "text_slide_text": "<strong>{announcement here}</strong>",
+        "text_badge_text": "Find Out More"
+      }
+    },
     "header": {
       "type": "header",
       "blocks": {
@@ -95,6 +115,7 @@
       "settings": {
         "url_button_link": "shopify://pages/contact",
         "text_button_text": "Contact",
+        "button-style": "",
         "image_white_logo": "shopify://shop_images/logo--white.svg",
         "image_dark_logo": "shopify://shop_images/logo--dark.svg",
         "collection_search_bestseller": "stock",
@@ -105,6 +126,7 @@
     }
   },
   "order": [
+    "announcement_bar_jejUVD",
     "header"
   ]
 }
