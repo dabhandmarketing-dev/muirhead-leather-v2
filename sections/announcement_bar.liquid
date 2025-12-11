@@ -22,7 +22,7 @@
             <a href="{{ section.settings.url_slide_link }}" class="t-account-forgot w-inline-block"> {% if section.settings.image_slide_icon %} {{ section.settings.image_slide_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: '_15px-emoji space' }} {% else %} <img loading="lazy" alt="" src="{{ 'united-kingdom.svg' | asset_url }}" class="_15px-emoji space"> {% endif %} <div>{{ section.settings.text_slide_text }}</div> <div class="banner-badge-primary">{{ section.settings.text_badge_text }}</div> </a>
             <div class="div-block-585">
               <div class="social-media-link-wrap">
-                <div class="w-layout-grid social-grid">
+                <div class="w-layout-grid social-grid small">
                   {% for block in section.blocks %}
     {% if block.type == "social-icons" %}
                     <div li-block="Social Icons">
