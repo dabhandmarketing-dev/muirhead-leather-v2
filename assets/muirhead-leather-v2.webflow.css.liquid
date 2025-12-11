@@ -6403,6 +6403,11 @@ figcaption {
   display: flex;
 }
 
+.social-grid.small {
+  grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
+}
+
 .footer-detail-divider {
   background-color: #d6d3d1;
   border-radius: 2px;
@@ -6478,6 +6483,10 @@ figcaption {
 
 .button-main:hover:where(.w-variant-40d42f51-beaf-80a4-8697-83623596810b) {
   color: var(--base-color-brand--charcoal);
+}
+
+.button-main:hover:where(.w-variant-c7f83e63-3671-0dfd-4ebb-3bb7602e78af) {
+  background-color: #f4f4f400;
 }
 
 .button-main.dark-152, .button-main.dark-167 {
@@ -9047,6 +9056,7 @@ figcaption {
 }
 
 .uui-navbar01_link {
+  color: var(--base-color-neutral--white);
   align-items: center;
   height: 2.5rem;
   padding-left: .5rem;
@@ -9130,7 +9140,6 @@ figcaption {
   align-items: center;
   margin-left: 10px;
   padding: 4px 12px;
-  font-weight: 700;
   line-height: 16px;
   transition: color .3s, background-color .3s;
   display: flex;
@@ -9139,7 +9148,6 @@ figcaption {
 
 .section_header-announcement {
   z-index: 9999;
-  font-family: Manrope, sans-serif;
 }
 
 .social-media-link-wrap {
@@ -9168,12 +9176,13 @@ figcaption {
 .t-account-forgot {
   grid-column-gap: 4px;
   grid-row-gap: 4px;
+  color: var(--base-color-neutral--white);
   justify-content: center;
   align-items: center;
   height: 100%;
   padding-left: 8px;
   padding-right: 8px;
-  font-size: .8rem;
+  font-size: .9rem;
   text-decoration: none;
   display: flex;
 }
