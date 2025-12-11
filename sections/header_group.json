@@ -14,6 +14,13 @@
     "announcement_bar_jejUVD": {
       "type": "announcement_bar",
       "blocks": {
+        "social_icons_87PCLf": {
+          "type": "social-icons",
+          "settings": {
+            "url_link": "https://www.instagram.com/muirheadleather/",
+            "image_social_logo": "shopify://shop_images/instagram-line_1.svg"
+          }
+        },
         "social_icons_JgJKj4": {
           "type": "social-icons",
           "settings": {
@@ -30,6 +37,7 @@
         }
       },
       "block_order": [
+        "social_icons_87PCLf",
         "social_icons_JgJKj4",
         "social_icons_UYxfBL"
       ],
