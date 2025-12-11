@@ -18,19 +18,19 @@
             "video_desktop": "shopify://files/videos/Muirhead Looping Video.mp4"
           },
           "blocks": {
-            "sub_title_cGnbqq": {
-              "type": "sub-title",
-              "name": "Sub Title",
-              "settings": {
-                "text_pre_heading": "We Make The World's"
-              },
-              "blocks": {}
-            },
             "title_HDKhmz": {
               "type": "title",
               "name": "Title",
               "settings": {
-                "text_heading": "Lowest Carbon Leather"
+                "text_heading": "The World's"
+              },
+              "blocks": {}
+            },
+            "sub_title_cGnbqq": {
+              "type": "sub-title",
+              "name": "Sub Title",
+              "settings": {
+                "text_pre_heading": "Lowest Carbon Leather"
               },
               "blocks": {}
             },
@@ -67,8 +67,8 @@
             }
           },
           "block_order": [
-            "sub_title_cGnbqq",
             "title_HDKhmz",
+            "sub_title_cGnbqq",
             "spacer_mTxjdP",
             "spacer_YTwazq",
             "buttons_Xx9XhL"
