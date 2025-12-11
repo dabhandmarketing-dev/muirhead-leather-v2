@@ -209,15 +209,11 @@
         "color_theme": ""
       }
     },
-    "video_hero_v5_6p9dVc": {
-      "type": "video_hero_v5",
-      "name": "Video Hero V5",
+    "divider_n6B8ej": {
+      "type": "divider",
+      "name": "Divider",
       "settings": {
-        "image_thumbnail": "shopify://shop_images/muirhead_sector_aviation_09.webp",
-        "video": "shopify://files/videos/Muirhead Looping Video.mp4",
-        "video_url": "",
-        "video_title": "Video Title",
-        "color_theme": ""
+        "padding": ""
       }
     },
     "scroll_image_QnGaPb": {
@@ -339,6 +335,17 @@
       "name": "Scroll Image",
       "settings": {
         "grid_position": "left",
+        "color_theme": ""
+      }
+    },
+    "video_hero_v5_6p9dVc": {
+      "type": "video_hero_v5",
+      "name": "Video Hero V5",
+      "settings": {
+        "image_thumbnail": "shopify://shop_images/muirhead_sector_aviation_09.webp",
+        "video": "shopify://files/videos/Muirhead Looping Video.mp4",
+        "video_url": "",
+        "video_title": "Video Title",
         "color_theme": ""
       }
     },
@@ -561,6 +568,7 @@
   "order": [
     "slideshow_v3_ND6UkU",
     "text_stitching_secti_t8bDRx",
+    "divider_n6B8ej",
     "scroll_image_QnGaPb",
     "scroll_image_arfRnN",
     "video_hero_v5_6p9dVc",
