@@ -23,10 +23,42 @@
                 "text_heading": "More Than Leather."
               },
               "blocks": {}
+            },
+            "buttons_NjmFwM": {
+              "type": "buttons",
+              "name": "Buttons",
+              "settings": {},
+              "blocks": {
+                "button_7Y6XtF": {
+                  "type": "button",
+                  "name": "Button",
+                  "settings": {
+                    "url_button_link": "",
+                    "text_button_text": "Learn More",
+                    "button-style": ""
+                  },
+                  "blocks": {}
+                },
+                "button_aYQp4j": {
+                  "type": "button",
+                  "name": "Button",
+                  "settings": {
+                    "url_button_link": "",
+                    "text_button_text": "Learn More",
+                    "button-style": "w-variant-c7f83e63-3671-0dfd-4ebb-3bb7602e78af"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "button_7Y6XtF",
+                "button_aYQp4j"
+              ]
             }
           },
           "block_order": [
-            "title_NdJwcF"
+            "title_NdJwcF",
+            "buttons_NjmFwM"
           ]
         }
       },
