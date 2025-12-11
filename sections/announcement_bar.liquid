@@ -1,0 +1,98 @@
+<div class="banner-bar">
+          <div class="uui-navbar01_container">
+            <div class="div-block-587">
+              {% for link in linklists['announcement-menu'].links %}    <div li-for="link in linklists['announcement-menu'].links" class="nav05_top_left">
+                                    
+                
+                            <a href="{{ link.url }}" li-object:href="link.url" class="uui-navbar01_link w-inline-block">
+                  <div class="clip-5 tiny-2">
+                    <div class="hover-text-6 tiny-3">
+                      <div li-object="link.title">{{ link.title }}</div>
+                    </div>
+                    <div class="hover-text-6 tiny-3 bottom tiny-4">
+                      <div li-object="link.title">{{ link.title }}</div>
+                    </div>
+                  </div>
+                </a>
+                            
+              
+                        </div>
+{% endfor %}
+            </div>
+            <a href="{{ section.settings.url_slide_link }}" class="t-account-forgot w-inline-block"> {% if section.settings.image_slide_icon %} {{ section.settings.image_slide_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: '_15px-emoji space' }} {% else %} <img loading="lazy" alt="" src="{{ 'united-kingdom.svg' | asset_url }}" class="_15px-emoji space"> {% endif %} <div>{{ section.settings.text_slide_text }}</div> <div class="banner-badge-primary">{{ section.settings.text_badge_text }}</div> </a>
+            <div class="div-block-585">
+              <div class="social-media-link-wrap">
+                <div class="w-layout-grid social-grid">
+                  {% for block in section.blocks %}
+    {% if block.type == "social-icons" %}
+                    <div li-block="Social Icons">
+                                    
+                    
+                                    <a href="{{ block.settings.url_link }}" target="_blank" class="social-icon-square w-inline-block"> {% if block.settings.image_social_logo %} {{ block.settings.image_social_logo | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'social-logo' }} {% else %} <img loading="lazy" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="social-logo"> {% endif %} </a>
+                                    
+                  
+                            </div>
+            {% endif %}
+{% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "Announcement Bar",
+    "class": "div-block-589",
+    "blocks": [
+        {
+            "name": "Social Icons",
+            "type": "social-icons",
+            "settings": [
+                {
+                    "id": "url_link",
+                    "type": "url",
+                    "label": "Link"
+                },
+                {
+                    "id": "image_social_logo",
+                    "type": "image_picker",
+                    "label": "Social Logo"
+                }
+            ]
+        }
+    ],
+    "settings": [
+        {
+            "id": "url_slide_link",
+            "type": "url",
+            "label": "Slide Link"
+        },
+        {
+            "id": "image_slide_icon",
+            "type": "image_picker",
+            "label": "Slide Icon"
+        },
+        {
+            "id": "text_slide_text",
+            "type": "text",
+            "label": "Slide Text",
+            "default": "<strong>{announcement here}<\/strong>"
+        },
+        {
+            "id": "text_badge_text",
+            "type": "text",
+            "label": "Badge Text",
+            "default": "Find Out More"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Announcement Bar",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "social-icons"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
