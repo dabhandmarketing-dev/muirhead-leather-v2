@@ -25,7 +25,7 @@
         "card_hkLCgE": {
           "type": "card",
           "settings": {
-            "url_link": "",
+            "url_link": "shopify://collections/stock",
             "text_text": "Order Stock & Samples",
             "image_image": "shopify://shop_images/mh_footerpanels_sectors.webp"
           }
