@@ -12,6 +12,95 @@
     "slideshow_v3_ND6UkU": {
       "type": "slideshow_v3",
       "blocks": {
+        "slide_c_K7Fgda": {
+          "type": "slide-c",
+          "settings": {
+            "image_image_desktop": "shopify://shop_images/Muirhead_Hero_BG.jpg"
+          },
+          "blocks": {
+            "title_dVVUzw": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "text_heading": "More Than Leather"
+              },
+              "blocks": {}
+            },
+            "spacer_TfPMW4": {
+              "type": "spacer",
+              "name": "Spacer",
+              "settings": {},
+              "blocks": {}
+            },
+            "title_EcJR8C": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "text_heading": "A Lot More"
+              },
+              "blocks": {}
+            },
+            "rich_text_JBmpm9": {
+              "type": "rich-text",
+              "name": "Rich Text",
+              "disabled": true,
+              "settings": {
+                "richtext_richtext": "<p>The <strong>lowest carbon</strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.</p>"
+              },
+              "blocks": {}
+            },
+            "spacer_ddfkjW": {
+              "type": "spacer",
+              "name": "Spacer",
+              "settings": {},
+              "blocks": {}
+            },
+            "spacer_dcCwfF": {
+              "type": "spacer",
+              "name": "Spacer",
+              "settings": {},
+              "blocks": {}
+            },
+            "buttons_Fjn3fN": {
+              "type": "buttons",
+              "name": "Buttons",
+              "settings": {},
+              "blocks": {
+                "button_U7RMkW": {
+                  "type": "button",
+                  "name": "Button",
+                  "settings": {
+                    "url_button_link": "",
+                    "text_button_text": "Learn More"
+                  },
+                  "blocks": {}
+                },
+                "button_cV9bgC": {
+                  "type": "button",
+                  "name": "Button",
+                  "settings": {
+                    "url_button_link": "",
+                    "text_button_text": "Learn More"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "button_U7RMkW",
+                "button_cV9bgC"
+              ]
+            }
+          },
+          "block_order": [
+            "title_dVVUzw",
+            "spacer_TfPMW4",
+            "title_EcJR8C",
+            "rich_text_JBmpm9",
+            "spacer_ddfkjW",
+            "spacer_dcCwfF",
+            "buttons_Fjn3fN"
+          ]
+        },
         "slide_c_GbcitB": {
           "type": "slide-c",
           "settings": {
@@ -73,86 +162,11 @@
             "spacer_YTwazq",
             "buttons_Xx9XhL"
           ]
-        },
-        "slide_c_K7Fgda": {
-          "type": "slide-c",
-          "settings": {
-            "image_image_desktop": "shopify://shop_images/Muirhead_Hero_BG.jpg"
-          },
-          "blocks": {
-            "title_dVVUzw": {
-              "type": "title",
-              "name": "Title",
-              "settings": {
-                "text_heading": "More Than Leather"
-              },
-              "blocks": {}
-            },
-            "title_EcJR8C": {
-              "type": "title",
-              "name": "Title",
-              "settings": {
-                "text_heading": "A Lot More"
-              },
-              "blocks": {}
-            },
-            "rich_text_JBmpm9": {
-              "type": "rich-text",
-              "name": "Rich Text",
-              "disabled": true,
-              "settings": {
-                "richtext_richtext": "<p>The <strong>lowest carbon</strong>, high performance natural leather for the toughest passenger environments and the most discerning luxury designers.</p>"
-              },
-              "blocks": {}
-            },
-            "spacer_TfPMW4": {
-              "type": "spacer",
-              "name": "Spacer",
-              "settings": {},
-              "blocks": {}
-            },
-            "buttons_Fjn3fN": {
-              "type": "buttons",
-              "name": "Buttons",
-              "settings": {},
-              "blocks": {
-                "button_U7RMkW": {
-                  "type": "button",
-                  "name": "Button",
-                  "settings": {
-                    "url_button_link": "",
-                    "text_button_text": "Learn More"
-                  },
-                  "blocks": {}
-                },
-                "button_cV9bgC": {
-                  "type": "button",
-                  "name": "Button",
-                  "settings": {
-                    "url_button_link": "",
-                    "text_button_text": "Learn More"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "button_U7RMkW",
-                "button_cV9bgC"
-              ]
-            }
-          },
-          "block_order": [
-            "title_dVVUzw",
-            "title_EcJR8C",
-            "rich_text_JBmpm9",
-            "spacer_TfPMW4",
-            "buttons_Fjn3fN"
-          ]
         }
       },
       "block_order": [
-        "slide_c_GbcitB",
-        "slide_c_K7Fgda"
+        "slide_c_K7Fgda",
+        "slide_c_GbcitB"
       ],
       "name": "Slideshow V3",
       "settings": {}
