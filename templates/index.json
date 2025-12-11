@@ -20,13 +20,33 @@
               "type": "title",
               "name": "Title",
               "settings": {
-                "text_heading": "More Than Leather."
+                "text_heading": "More than leather."
+              },
+              "blocks": {}
+            },
+            "title_ncmyJf": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "text_heading": "A lot more."
+              },
+              "blocks": {}
+            },
+            "button_E3Dpj6": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "url_button_link": "",
+                "text_button_text": "Learn More",
+                "button-style": ""
               },
               "blocks": {}
             }
           },
           "block_order": [
-            "title_HtKDNj"
+            "title_HtKDNj",
+            "title_ncmyJf",
+            "button_E3Dpj6"
           ]
         }
       },
