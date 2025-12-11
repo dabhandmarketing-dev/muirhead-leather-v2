@@ -88,11 +88,11 @@
               },
               "blocks": {}
             },
-            "sub_title_qBXeh6": {
-              "type": "sub-title",
-              "name": "Sub Title",
+            "title_EcJR8C": {
+              "type": "title",
+              "name": "Title",
               "settings": {
-                "text_pre_heading": "A Lot More"
+                "text_heading": "A Lot More"
               },
               "blocks": {}
             },
@@ -143,7 +143,7 @@
           },
           "block_order": [
             "title_dVVUzw",
-            "sub_title_qBXeh6",
+            "title_EcJR8C",
             "rich_text_JBmpm9",
             "spacer_TfPMW4",
             "buttons_Fjn3fN"
