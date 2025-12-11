@@ -71,7 +71,8 @@
                   "name": "Button",
                   "settings": {
                     "url_button_link": "",
-                    "text_button_text": "Learn More"
+                    "text_button_text": "Learn More",
+                    "button-style": ""
                   },
                   "blocks": {}
                 },
@@ -80,7 +81,8 @@
                   "name": "Button",
                   "settings": {
                     "url_button_link": "",
-                    "text_button_text": "Learn More"
+                    "text_button_text": "Learn More",
+                    "button-style": ""
                   },
                   "blocks": {}
                 }
@@ -145,7 +147,8 @@
                   "name": "Button",
                   "settings": {
                     "url_button_link": "",
-                    "text_button_text": "Learn More"
+                    "text_button_text": "Learn More",
+                    "button-style": ""
                   },
                   "blocks": {}
                 }
@@ -190,7 +193,8 @@
               "name": "Button",
               "settings": {
                 "url_button_link": "",
-                "text_button_text": "Learn More"
+                "text_button_text": "Learn More",
+                "button-style": ""
               },
               "blocks": {}
             }
@@ -243,7 +247,8 @@
               "name": "Button",
               "settings": {
                 "url_button_link": "",
-                "text_button_text": "Learn More"
+                "text_button_text": "Learn More",
+                "button-style": ""
               },
               "blocks": {}
             }
@@ -318,7 +323,8 @@
               "name": "Button",
               "settings": {
                 "url_button_link": "",
-                "text_button_text": "Learn More"
+                "text_button_text": "Learn More",
+                "button-style": ""
               },
               "blocks": {}
             }
@@ -388,7 +394,8 @@
               "name": "Button",
               "settings": {
                 "url_button_link": "",
-                "text_button_text": "Learn More"
+                "text_button_text": "Learn More",
+                "button-style": ""
               },
               "blocks": {}
             }
@@ -446,7 +453,8 @@
               "name": "Button",
               "settings": {
                 "url_button_link": "",
-                "text_button_text": "Learn More"
+                "text_button_text": "Learn More",
+                "button-style": ""
               },
               "blocks": {}
             }
@@ -503,7 +511,8 @@
               "name": "Button",
               "settings": {
                 "url_button_link": "",
-                "text_button_text": "Learn More"
+                "text_button_text": "Learn More",
+                "button-style": ""
               },
               "blocks": {}
             }
@@ -545,7 +554,8 @@
               "name": "Button",
               "settings": {
                 "url_button_link": "",
-                "text_button_text": "Learn More"
+                "text_button_text": "Learn More",
+                "button-style": ""
               },
               "blocks": {}
             }
