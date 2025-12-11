@@ -11,6 +11,35 @@
   "type": "header",
   "name": "Header Group",
   "sections": {
+    "announcement_bar_jejUVD": {
+      "type": "announcement_bar",
+      "blocks": {
+        "social_icons_JgJKj4": {
+          "type": "social-icons",
+          "settings": {
+            "url_link": "",
+            "image_social_logo": "shopify://shop_images/linkedin-line_1.svg"
+          }
+        },
+        "social_icons_UYxfBL": {
+          "type": "social-icons",
+          "settings": {
+            "url_link": "",
+            "image_social_logo": "shopify://shop_images/youtube-line.svg"
+          }
+        }
+      },
+      "block_order": [
+        "social_icons_JgJKj4",
+        "social_icons_UYxfBL"
+      ],
+      "name": "Announcement Bar",
+      "settings": {
+        "url_slide_link": "",
+        "text_slide_text": "{announcement here}",
+        "text_badge_text": "Find Out More"
+      }
+    },
     "header": {
       "type": "header",
       "blocks": {
@@ -102,26 +131,6 @@
         "collection_search_bestseller_limit": 6,
         "text_success_text": "Nice one! You’ve unlocked free shipping!",
         "free_shipping": "10000"
-      }
-    },
-    "announcement_bar_jejUVD": {
-      "type": "announcement_bar",
-      "blocks": {
-        "social_icons_JgJKj4": {
-          "type": "social-icons",
-          "settings": {
-            "url_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "social_icons_JgJKj4"
-      ],
-      "name": "Announcement Bar",
-      "settings": {
-        "url_slide_link": "",
-        "text_slide_text": "{announcement here}",
-        "text_badge_text": "Find Out More"
       }
     }
   },
