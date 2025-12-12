@@ -3802,6 +3802,11 @@ figcaption {
   overflow: hidden;
 }
 
+.icon-1x1-small-7.xs {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
 .header-slider-list.swiper-wrapper {
   height: 100vh;
 }
@@ -3953,12 +3958,24 @@ figcaption {
   inset: 0% auto 0% -100%;
 }
 
-.icon-link_circle-2 {
+.icon-link_circle {
   justify-content: center;
   align-items: center;
   width: 1.5rem;
   height: 1.5rem;
   padding-left: 1px;
+  display: flex;
+}
+
+.icon-link_circle.arrow {
+  display: block;
+}
+
+.icon-link_circle.chevron, .icon-link_circle.external {
+  display: none;
+}
+
+.icon-link_circle.none {
   display: flex;
 }
 
@@ -9210,6 +9227,10 @@ figcaption {
 
 .div-block-765:where(.w-variant-b50964fd-34e3-c8f9-16c6-e9d4df096f8f) {
   color: var(--base-color-brand--brown);
+}
+
+.ikonik-vv7fa {
+  color: #fff;
 }
 
 @media screen and (min-width: 1280px) {
