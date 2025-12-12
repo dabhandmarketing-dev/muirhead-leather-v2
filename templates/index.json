@@ -36,21 +36,32 @@
               },
               "blocks": {}
             },
-            "button_E3Dpj6": {
-              "type": "button",
-              "name": "Button",
-              "settings": {
-                "url_button_link": "",
-                "text_button_text": "Learn More",
-                "button-style": ""
+            "buttons_pVQQiJ": {
+              "type": "buttons",
+              "name": "Buttons",
+              "settings": {},
+              "blocks": {
+                "button_XhHzNW": {
+                  "type": "button",
+                  "name": "Button",
+                  "settings": {
+                    "url_button_link": "",
+                    "text_button_text": "Learn More",
+                    "button-style": "",
+                    "icons": ""
+                  },
+                  "blocks": {}
+                }
               },
-              "blocks": {}
+              "block_order": [
+                "button_XhHzNW"
+              ]
             }
           },
           "block_order": [
             "title_HtKDNj",
             "title_ncmyJf",
-            "button_E3Dpj6"
+            "buttons_pVQQiJ"
           ]
         }
       },
