@@ -63,10 +63,63 @@
             "title_ncmyJf",
             "buttons_pVQQiJ"
           ]
+        },
+        "slide_c_YFd8XF": {
+          "type": "slide-c",
+          "settings": {
+            "video_desktop": "shopify://files/videos/Muirhead Looping Video.mp4"
+          },
+          "blocks": {
+            "title_V7X9ML": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "text_heading": "More than leather.",
+                "text_color": ""
+              },
+              "blocks": {}
+            },
+            "title_FFjFia": {
+              "type": "title",
+              "name": "Title",
+              "settings": {
+                "text_heading": "A lot more.",
+                "text_color": "w-variant-b50964fd-34e3-c8f9-16c6-e9d4df096f8f"
+              },
+              "blocks": {}
+            },
+            "buttons_MdMEMf": {
+              "type": "buttons",
+              "name": "Buttons",
+              "settings": {},
+              "blocks": {
+                "button_xn3RkU": {
+                  "type": "button",
+                  "name": "Button",
+                  "settings": {
+                    "url_button_link": "",
+                    "text_button_text": "Learn More",
+                    "button-style": "",
+                    "icons": "w-variant-91865d73-065b-a3b7-7f84-85c800359b57"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "button_xn3RkU"
+              ]
+            }
+          },
+          "block_order": [
+            "title_V7X9ML",
+            "title_FFjFia",
+            "buttons_MdMEMf"
+          ]
         }
       },
       "block_order": [
-        "slide_c_kB7mmR"
+        "slide_c_kB7mmR",
+        "slide_c_YFd8XF"
       ],
       "name": "Slideshow V3",
       "settings": {}
@@ -91,7 +144,8 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "button-style": "w-variant-91865d73-065b-a3b7-7f84-85c800359b57"
+                "button-style": "w-variant-91865d73-065b-a3b7-7f84-85c800359b57",
+                "icons": ""
               },
               "blocks": {}
             }
@@ -145,7 +199,8 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "button-style": ""
+                "button-style": "",
+                "icons": ""
               },
               "blocks": {}
             }
@@ -221,7 +276,8 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "button-style": ""
+                "button-style": "",
+                "icons": ""
               },
               "blocks": {}
             }
@@ -292,7 +348,8 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "button-style": ""
+                "button-style": "",
+                "icons": ""
               },
               "blocks": {}
             }
@@ -351,7 +408,8 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "button-style": ""
+                "button-style": "",
+                "icons": ""
               },
               "blocks": {}
             }
@@ -409,7 +467,8 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "button-style": ""
+                "button-style": "",
+                "icons": ""
               },
               "blocks": {}
             }
@@ -452,7 +511,8 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "button-style": ""
+                "button-style": "",
+                "icons": ""
               },
               "blocks": {}
             }
