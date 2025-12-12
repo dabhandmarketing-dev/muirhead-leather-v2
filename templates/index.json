@@ -42,8 +42,7 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "icon-type": "none",
-                "icon_type": "external"
+                "button-style": ""
               },
               "blocks": {}
             }
@@ -81,8 +80,7 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "icon-type": "none",
-                "icon_type": "none"
+                "button-style": "w-variant-91865d73-065b-a3b7-7f84-85c800359b57"
               },
               "blocks": {}
             }
@@ -136,8 +134,7 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "icon-type": "none",
-                "icon_type": "none"
+                "button-style": ""
               },
               "blocks": {}
             }
@@ -213,8 +210,7 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "icon-type": "none",
-                "icon_type": "none"
+                "button-style": ""
               },
               "blocks": {}
             }
@@ -285,8 +281,7 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "icon-type": "none",
-                "icon_type": "none"
+                "button-style": ""
               },
               "blocks": {}
             }
@@ -345,8 +340,7 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "icon-type": "none",
-                "icon_type": "none"
+                "button-style": ""
               },
               "blocks": {}
             }
@@ -404,8 +398,7 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "icon-type": "none",
-                "icon_type": "none"
+                "button-style": ""
               },
               "blocks": {}
             }
@@ -448,8 +441,7 @@
               "settings": {
                 "url_button_link": "",
                 "text_button_text": "Learn More",
-                "icon-type": "none",
-                "icon_type": "none"
+                "button-style": ""
               },
               "blocks": {}
             }
