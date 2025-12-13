@@ -48,7 +48,7 @@
                     "url_button_link": "",
                     "text_button_text": "Learn More",
                     "button-style": "",
-                    "icons": ""
+                    "icons": "chevron"
                   },
                   "blocks": {}
                 }
@@ -145,7 +145,7 @@
                 "url_button_link": "",
                 "text_button_text": "Learn More",
                 "button-style": "",
-                "icons": "w-variant-f4152e11-5529-d2c5-42f1-b875e578dee4"
+                "icons": "chevron"
               },
               "blocks": {}
             }
