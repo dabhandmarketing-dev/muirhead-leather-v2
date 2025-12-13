@@ -26,12 +26,14 @@
         "product-price": {
           "type": "product-price",
           "name": "Product Price",
+          "disabled": true,
           "settings": {},
           "blocks": {}
         },
         "availability": {
           "type": "availability",
           "name": "Availability",
+          "disabled": true,
           "settings": {},
           "blocks": {}
         },
