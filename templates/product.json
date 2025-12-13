@@ -41,12 +41,6 @@
           "settings": {},
           "blocks": {}
         },
-        "add_to_cart_sample_naEpBP": {
-          "type": "add-to-cart-sample",
-          "name": "Add to Cart (Sample)",
-          "settings": {},
-          "blocks": {}
-        },
         "payment_icons_Rjaiqh": {
           "type": "payment-icons",
           "name": "Payment Icons",
@@ -73,7 +67,6 @@
         "product-price",
         "availability",
         "add-to-cart",
-        "add_to_cart_sample_naEpBP",
         "payment_icons_Rjaiqh",
         "description",
         "low_carbon_leather_rjfagd"
