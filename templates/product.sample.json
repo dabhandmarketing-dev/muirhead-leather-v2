@@ -1,0 +1,209 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "navigation_spacer_jkCrFR": {
+      "type": "navigation_spacer",
+      "name": "Navigation Spacer",
+      "settings": {}
+    },
+    "product_hero": {
+      "type": "product_hero",
+      "blocks": {
+        "product-name": {
+          "type": "product-name",
+          "name": "Product Name",
+          "settings": {},
+          "blocks": {}
+        },
+        "product-price": {
+          "type": "product-price",
+          "name": "Product Price",
+          "settings": {},
+          "blocks": {}
+        },
+        "availability": {
+          "type": "availability",
+          "name": "Availability",
+          "settings": {},
+          "blocks": {}
+        },
+        "add-to-cart": {
+          "type": "add-to-cart",
+          "name": "Add to Cart",
+          "disabled": true,
+          "settings": {},
+          "blocks": {}
+        },
+        "add_to_cart_sample_naEpBP": {
+          "type": "add-to-cart-sample",
+          "name": "Add to Cart (Sample)",
+          "settings": {},
+          "blocks": {}
+        },
+        "payment_icons_Rjaiqh": {
+          "type": "payment-icons",
+          "name": "Payment Icons",
+          "settings": {},
+          "blocks": {}
+        },
+        "description": {
+          "type": "description",
+          "name": "Description",
+          "settings": {
+            "text_heading": "Description"
+          },
+          "blocks": {}
+        },
+        "low_carbon_leather_rjfagd": {
+          "type": "low-carbon-leather",
+          "name": "Low Carbon Leather",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "product-name",
+        "product-price",
+        "availability",
+        "add-to-cart",
+        "add_to_cart_sample_naEpBP",
+        "payment_icons_Rjaiqh",
+        "description",
+        "low_carbon_leather_rjfagd"
+      ],
+      "settings": {}
+    },
+    "ribbons_gj8kMw": {
+      "type": "ribbons",
+      "blocks": {
+        "usp_with_icon_rWmjPa": {
+          "type": "usp-with-icon",
+          "settings": {
+            "text_text": "Fast, insured courier"
+          }
+        },
+        "usp_with_icon_cVTmyD": {
+          "type": "usp-with-icon",
+          "settings": {
+            "text_text": "Fast, insured courier"
+          }
+        },
+        "usp_with_icon_VFajEi": {
+          "type": "usp-with-icon",
+          "settings": {
+            "text_text": "Fast, insured courier"
+          }
+        }
+      },
+      "block_order": [
+        "usp_with_icon_rWmjPa",
+        "usp_with_icon_cVTmyD",
+        "usp_with_icon_VFajEi"
+      ],
+      "name": "Ribbons",
+      "settings": {}
+    },
+    "product_content_iftBPT": {
+      "type": "product_content",
+      "name": "Product Content",
+      "settings": {}
+    },
+    "image_text_4j4pwR": {
+      "type": "image_text",
+      "blocks": {
+        "headline_LkrNfX": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "Natural Performance Collection"
+          },
+          "blocks": {}
+        },
+        "text_naxz8X": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Explore our environmentally sustainable, durable and premium leathers available in a range of colours and finishes, perfect for any project.</p><p>Choose from four unique grains and finishes to blend durability and style. Whether you prefer a natural pebbled grain or a velvety matte texture, our collection combines sophistication and durability.</p>",
+            "text-size": "1rem"
+          },
+          "blocks": {}
+        },
+        "buttons_9rV4j6": {
+          "type": "buttons",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "headline_LkrNfX",
+        "text_naxz8X",
+        "buttons_9rV4j6"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/Samples.webp",
+        "grid_position": "left",
+        "color_theme": ""
+      }
+    },
+    "image_text_B3daK4": {
+      "type": "image_text",
+      "blocks": {
+        "headline_68TwzP": {
+          "type": "headline",
+          "settings": {
+            "text_headline": "The Lowest-carbon leather in the world"
+          },
+          "blocks": {}
+        },
+        "text_EUyNCT": {
+          "type": "text",
+          "settings": {
+            "richtext_text": "<p>Muirhead makes the lowest-carbon leather in the world. We source locally, tan naturally, reclaim energy from waste and re-use water. We are serious about sustainability.</p>",
+            "text-size": "1rem"
+          },
+          "blocks": {}
+        },
+        "buttons_qahcBr": {
+          "type": "buttons",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "headline_68TwzP",
+        "text_EUyNCT",
+        "buttons_qahcBr"
+      ],
+      "name": "Image Text",
+      "settings": {
+        "image_image": "shopify://shop_images/muirhead_home_01_1.webp",
+        "grid_position": "right",
+        "color_theme": ""
+      }
+    },
+    "recommended_products": {
+      "type": "recommended_products",
+      "settings": {
+        "text_heading": "Recommended"
+      }
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "navigation_spacer_jkCrFR",
+    "product_hero",
+    "ribbons_gj8kMw",
+    "product_content_iftBPT",
+    "image_text_4j4pwR",
+    "image_text_B3daK4",
+    "recommended_products"
+  ]
+}
