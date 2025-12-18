@@ -422,7 +422,7 @@
                             
                         
                     {% endfor %}    </nav>
-                      </div><input type="hidden" name="language_code" class="li-lang_hidden-input" value="{{ localization.language.iso_code }}">
+                      </div><input type="hidden" name="country_code" class="li-lang_hidden-input" value="{{ localization.language.iso_code }}">
                     {% endform %}
                     <div class="li-lang_script w-embed w-script">
                       <script>
@@ -715,6 +715,7 @@
                     this.cart.original_total_price = data.original_total_price;
 
                     this.$dispatch('carttotalitems', data.item_count);
+                    this.$dispatch('currentcartitems', this.cart.items);
                 })
                 .catch((error) => {
                     console.error('Error:', error);
@@ -764,7 +765,7 @@
                     this.resetAbortController();
                     console.log('updateCartItemQuantity(): ', data);
 
-                    this.$dispatch('cartupdated');
+                    this.$dispatch('cartupdated', this.cart.items);
                     this.$dispatch('showcartmessage', { status: data.status, message: data.message, description: data.description });
                 })
                 .catch((error) => {
@@ -789,7 +790,6 @@
          * @param event
          */
         showCartMessage(event) {
-            //console.log("dispatched showCartMessage", event)
             if(event?.detail?.status) {
                 this.cart.response.result = event.detail ?? {}
                 this.cart.response.show = true

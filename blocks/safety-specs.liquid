@@ -1,4 +1,4 @@
-<div li-block="Safety Specs">
+<div li-block="Safety Specs" {{ block.shopify_attributes }}>
                     
                     
                     <a href="{{ block.settings.url_link }}" target="_blank" class="pdf-button w-inline-block"> <img loading="lazy" src="{{ 'download-2.svg' | asset_url }}" alt="" class="icon-embed-xsmall-5"> <div class="text-features-cta">{{ block.settings.text_text }}</div> </a>
@@ -21,7 +21,9 @@
     ],
     "presets": [
         {
-            "name": "Safety Specs"
+            "name": "Safety Specs",
+            "blocks": []
         }
-    ]
+    ],
+    "tag": null
 } {% endschema %}

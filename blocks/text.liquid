@@ -1,4 +1,4 @@
-<div li-block="Text" class="content_block">
+<div li-block="Text" class="content_block" {{ block.shopify_attributes }}>
                     
                     
                     <div class="w-richtext" style="font-size: {{ block.settings.text-size }} !important;"> {{ block.settings.richtext_text }} </div>
@@ -43,7 +43,9 @@
     ],
     "presets": [
         {
-            "name": "Text"
+            "name": "Text",
+            "blocks": []
         }
-    ]
+    ],
+    "tag": null
 } {% endschema %}

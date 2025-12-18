@@ -1,4 +1,4 @@
-<div li-block="Rich Text">
+<div li-block="Rich Text" {{ block.shopify_attributes }}>
                     
               
                     <div class="text-h4 w-richtext"> {{ block.settings.richtext_richtext }} </div>
@@ -16,7 +16,9 @@
     ],
     "presets": [
         {
-            "name": "Rich Text"
+            "name": "Rich Text",
+            "blocks": []
         }
-    ]
+    ],
+    "tag": null
 } {% endschema %}

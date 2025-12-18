@@ -1,4 +1,4 @@
-<div li-block="Heading">
+<div li-block="Heading" {{ block.shopify_attributes }}>
                     
                     
                     <h1 class="heading-style-h1" style="color: {{ section.settings.text-color }} !important;">
@@ -18,7 +18,9 @@
     ],
     "presets": [
         {
-            "name": "Heading"
+            "name": "Heading",
+            "blocks": []
         }
-    ]
+    ],
+    "tag": null
 } {% endschema %}

@@ -1,4 +1,4 @@
-<div li-block="Image">
+<div li-block="Image" {{ block.shopify_attributes }}>
                     {% if block.settings.image_image %}
 {{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'image-large', sizes: '(max-width: 767px) 100vw, 638.0034790039062px', loading: 'lazy' }}
 {% else %}
@@ -15,7 +15,9 @@
     ],
     "presets": [
         {
-            "name": "Image"
+            "name": "Image",
+            "blocks": []
         }
-    ]
+    ],
+    "tag": null
 } {% endschema %}
