@@ -1,4 +1,4 @@
-<div li-block="Headline" class="content_block">
+<div li-block="Headline" class="content_block" {{ block.shopify_attributes }}>
                     
                     
                     <h2>
@@ -18,7 +18,9 @@
     ],
     "presets": [
         {
-            "name": "Headline"
+            "name": "Headline",
+            "blocks": []
         }
-    ]
+    ],
+    "tag": null
 } {% endschema %}

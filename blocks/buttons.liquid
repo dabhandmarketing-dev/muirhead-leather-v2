@@ -1,4 +1,4 @@
-<div li-block="Buttons" class="content_block">
+<div li-block="Buttons" class="content_block" {{ block.shopify_attributes }}>
                     
                     
                     <div li-content-for-theme-blocks="" class="button-group-10">
@@ -19,7 +19,13 @@
     "settings": [],
     "presets": [
         {
-            "name": "Buttons"
+            "name": "Buttons",
+            "blocks": [
+                {
+                    "type": "button"
+                }
+            ]
         }
-    ]
+    ],
+    "tag": null
 } {% endschema %}
