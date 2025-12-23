@@ -428,7 +428,7 @@
                       <script>
   document.querySelectorAll(".li-market_wrapper").forEach((wrapper) => {
   const form = wrapper.querySelector("form");
-  const input = wrapper.querySelector("input[name='language_code']");
+  const input = wrapper.querySelector("input[name='country_code']");
   if (form && input) {
     form.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", (event) => {
@@ -1091,7 +1091,7 @@
                                             <div class="text-size-tiny text-color-grey text-style-link">Remove</div>
                                           </div>
                                         </div>
-                                        <div class="mini-cart_line-item_product-info right">
+                                        <div li-js-unless="product.properties.collection == 'max'" class="mini-cart_line-item_product-info right">
                                           <div class="product-container_quantity-changers-2">
                                             <a li-element="mini-cart-item-decrease" href="#" class="quantity-decreaser-4" :productprop="product" @click="$dispatch('decreasecartitem', { product: product.key, quantity: product.quantity, action: 'decrease' })">-</a><input li-element="mini-cart-item-quantity" class="quantity-changer-3 is-hidden-arrows" value="1" :productprop="product" @input="$dispatch('setcartitem', { product: product.key, quantity: product.quantity })" x-model="product.quantity">
                                             <a li-element="mini-cart-item-increase" href="#" class="quantity-increaser-4" :productprop="product" @click="$dispatch('increasecartitem', { product: product.key, quantity: product.quantity, action: 'increase' })">+</a>
@@ -1516,7 +1516,7 @@
                               </a>
                             </div>
                             <a href="#" class="places-card xs-9 w-inline-block">
-                              <div class="places-card_image-wrap xs-10"><img sizes="100vw" srcset="{{ 'interiors-and-luxury-p-500.webp' | asset_url }} 500w, {{ 'interiors-and-luxury-p-800.webp' | asset_url }} 800w, {{ 'interiors-and-luxury-p-1080.webp' | asset_url }} 1080w, {{ 'interiors-and-luxury.webp' | asset_url }} 1520w" alt="" loading="lazy" src="{{ 'interiors-and-luxury.webp' | asset_url }}" class="image-56 xs-11"></div>
+                              <div class="places-card_image-wrap xs-10"><img sizes="239.97396850585938px" srcset="{{ 'interiors-and-luxury-p-500.webp' | asset_url }} 500w, {{ 'interiors-and-luxury-p-800.webp' | asset_url }} 800w, {{ 'interiors-and-luxury-p-1080.webp' | asset_url }} 1080w, {{ 'interiors-and-luxury.webp' | asset_url }} 1520w" alt="" loading="lazy" src="{{ 'interiors-and-luxury.webp' | asset_url }}" class="image-56 xs-11"></div>
                               <div class="places-card_image-overlay xs-4"></div>
                               <div class="places-card_content xs-13">
                                 <h3 class="places-card_heading-text xs-14">Why Leather?</h3>
@@ -1566,21 +1566,21 @@
                                 </div>
                               </a>
                               <a href="#" class="navigation-card w-inline-block">
-                                <div class="navigation-image-small"><img sizes="239.95660400390625px" srcset="{{ 'sustainability-p-500.webp' | asset_url }} 500w, {{ 'sustainability.webp' | asset_url }} 800w" alt="" loading="lazy" src="{{ 'sustainability.webp' | asset_url }}" class="image-cover-3"></div>
+                                <div class="navigation-image-small"><img sizes="239.58334350585938px" srcset="{{ 'sustainability-p-500.webp' | asset_url }} 500w, {{ 'sustainability.webp' | asset_url }} 800w" alt="" loading="lazy" src="{{ 'sustainability.webp' | asset_url }}" class="image-cover-3"></div>
                                 <div class="column">
                                   <div class="subheading-small-2">Order Samples</div>
                                   <p class="paragraph-small-6 text-color-tertiary">Find the perfect leather today</p>
                                 </div>
                               </a>
                               <a href="#" class="navigation-card w-inline-block">
-                                <div class="navigation-image-small"><img sizes="239.9479217529297px" srcset="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 500w, {{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 1104w" alt="" loading="lazy" src="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }}" class="image-cover-3"></div>
+                                <div class="navigation-image-small"><img sizes="239.58334350585938px" srcset="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 500w, {{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }} 1104w" alt="" loading="lazy" src="{{ 'muirhead_our_product_leather_care_5muirhead_our_product_leather_care_04.avif' | asset_url }}" class="image-cover-3"></div>
                                 <div class="column">
                                   <div class="subheading-small-2">Leather Care</div>
                                   <p class="paragraph-small-6 text-color-tertiary">Care for premium leather</p>
                                 </div>
                               </a>
                               <a href="#" class="navigation-card w-inline-block">
-                                <div class="navigation-image-small"><img sizes="100vw" srcset="{{ 'Muirhead-Square-p-500.jpg' | asset_url }} 500w, {{ 'Muirhead-Square-p-800.jpg' | asset_url }} 800w, {{ 'Muirhead-Square.jpg' | asset_url }} 1000w" alt="" loading="lazy" src="{{ 'Muirhead-Square.jpg' | asset_url }}" class="image-cover-3"></div>
+                                <div class="navigation-image-small"><img sizes="240.00001525878906px" srcset="{{ 'Muirhead-Square-p-500.jpg' | asset_url }} 500w, {{ 'Muirhead-Square-p-800.jpg' | asset_url }} 800w, {{ 'Muirhead-Square.jpg' | asset_url }} 1000w" alt="" loading="lazy" src="{{ 'Muirhead-Square.jpg' | asset_url }}" class="image-cover-3"></div>
                                 <div class="column">
                                   <div class="subheading-small-2">Muirhead Gifts</div>
                                   <p class="paragraph-small-6 text-color-tertiary">Bespoke Leather Gifts</p>

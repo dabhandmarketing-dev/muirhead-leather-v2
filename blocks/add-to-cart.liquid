@@ -21,11 +21,13 @@
                             <template x-if="selected_or_first_available_variant.available">
             <div li-js-if="selected_or_first_available_variant.available" class="product-header_buy-wrappper-2">
         
-                              <div class="product-container_quantity-changers">
+                              {% unless product.tags contains 'colours' %}    <div li-unless="product.tags contains 'colours'" class="product-container_quantity-changers">
+    
                                 <a x-on:click="quantity--" href="#" class="quantity-decreaser-4">-</a><input li-element="add-to-cart-quantity" class="mini-cart_line-item_quantity-adjust-2 xl" value="1" x-model="quantity">
                                 <a x-on:click="quantity++" href="#" class="quantity-increaser-4">+</a>
-                              </div>
-                              <a href="#" li-element="add-to-cart" data-w-id="2009c223-656c-2afe-535d-f4c7e28dd11a" class="button-4 white-28 brown w-inline-block" @click="addToCart($event, true)" :disabled="!addToCartButton">
+                                  </div>
+{% endunless %}
+                              <a href="#" x-bind:data-variant-id="selected_product_id" li-element="add-to-cart" data-w-id="2009c223-656c-2afe-535d-f4c7e28dd11a" class="button-4 white-28 brown w-inline-block" @click="addToCart($event, true)" :disabled="!addToCartButton">
                                 <div class="icon-link-3 brown-2">
                                   <div id="cta_text" class="checkout-btns">
                                     <div id="cta_text" class="button-text">Add To Cart</div>
@@ -36,7 +38,19 @@
                                 </div>
                               </a>
                                     </div>
-    </template>
+    </template>{% if product.tags contains 'colours' %}    <input type="hidden" li-if="product.tags contains 'colours'">
+{% endif %}
+                            <a href="#" data-w-id="2244864b-eb80-a1ca-70eb-87821d98678d" class="button-4 white-28 green w-inline-block">
+                              <div class="icon-link-3 brown-2">
+                                <div id="cta_text" class="checkout-btns">
+                                  <div id="cta_text" class="button-text">Sample In Cart</div>
+                                  <div><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" viewbox="0 0 16 16" app="ikonik" class="icon-embed-xsmall">
+                                      <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" app="ikonik"></path>
+                                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" app="ikonik"></path>
+                                    </svg></div>
+                                </div>
+                              </div>
+                            </a>
                           </div>
                           <template x-if="!selected_or_first_available_variant.available">
             <div li-js-if="!selected_or_first_available_variant.available" class="product-header_out-of-stock">
@@ -52,6 +66,29 @@
                       <div class="hide w-form-fail">
                         <div>Oops! Something went wrong while submitting the form.</div>
                       </div>
+                    </div>
+                    
+                    
+                    <div class="w-embed w-script">
+                      <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll("[li-element='add-to-cart'][data-variant-id]")
+  const disableAddToCart = () => {
+    buttons.forEach(button => {
+      const variantID = Number(button.dataset.variantId)
+      const data = Alpine.$data(document.querySelector("[li-element='mini-cart']"))
+      const hasCurrentVariant = data.cart.items.some(item => item.variant_id === variantID && item.properties.collection == 'max')
+      if (hasCurrentVariant) {
+        button.setAttribute("disabled", "disabled")
+      } else {
+        button.removeAttribute("disabled")
+      }
+    })
+  }
+  disableAddToCart()
+  window.addEventListener("carttotalitems", disableAddToCart)
+})
+</script>
                     </div>
                     
                   
