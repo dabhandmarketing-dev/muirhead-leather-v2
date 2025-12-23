@@ -104,9 +104,30 @@
         "text_success_text": "Nice one! You’ve unlocked free shipping!",
         "free_shipping": "10000"
       }
+    },
+    "announcement_bar_m73t4A": {
+      "type": "announcement_bar",
+      "blocks": {
+        "social_icons_YwqCYJ": {
+          "type": "social-icons",
+          "settings": {
+            "url_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "social_icons_YwqCYJ"
+      ],
+      "name": "Announcement Bar",
+      "settings": {
+        "url_slide_link": "",
+        "text_slide_text": "<strong>{announcement here}</strong>",
+        "text_badge_text": "Find Out More"
+      }
     }
   },
   "order": [
-    "header"
+    "header",
+    "announcement_bar_m73t4A"
   ]
 }
