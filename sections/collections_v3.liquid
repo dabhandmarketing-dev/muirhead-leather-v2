@@ -98,7 +98,15 @@
                       <div data-delay="0" data-hover="false" class="dropdown-4 w-dropdown">
                         <div class="filter_sort-by-2 w-dropdown-toggle">
                           <div class="dropdown_icon w-icon-dropdown-toggle"></div>
-                          <div li-object="collection.sort_by | default: collection.default_sort_by" class="text-size-small-2">{{ collection.sort_by | default: collection.default_sort_by }}</div>
+                          <div li-for:inside="sort_by in collection.sort_options">
+        {% for sort_by in collection.sort_options %}                            
+                            
+                            {% if sort_by.value == collection.sort_by %}    <div li-if="sort_by.value == collection.sort_by" class="text-size-small-2">
+    <span li-object="sort_by.name">{{ sort_by.name }}</span>    </div>
+{% endif %}
+                            
+                          
+                    {% endfor %}    </div>
                         </div>
                         <nav li-for:inside="option in collection.sort_options" class="dropdown_list w-dropdown-list">
         {% for option in collection.sort_options %}                            <label class="sort_field"><input type="radio" li-render-filter="sort" li-render-filter-trigger="input" name="sort_by" class="input" value="{{ option.value }}" {% if option.value == collection.sort_by %}checked{% elsif option.value == collection.default_sort_by %}checked{% endif %}><span>{{ option.name }}</span></label>
