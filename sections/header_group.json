@@ -11,43 +11,6 @@
   "type": "header",
   "name": "Header Group",
   "sections": {
-    "announcement_bar_jejUVD": {
-      "type": "announcement_bar",
-      "blocks": {
-        "social_icons_87PCLf": {
-          "type": "social-icons",
-          "settings": {
-            "url_link": "https://www.instagram.com/muirheadleather/",
-            "image_social_logo": "shopify://shop_images/instagram-line_1.svg"
-          }
-        },
-        "social_icons_JgJKj4": {
-          "type": "social-icons",
-          "settings": {
-            "url_link": "",
-            "image_social_logo": "shopify://shop_images/linkedin-line_1.svg"
-          }
-        },
-        "social_icons_UYxfBL": {
-          "type": "social-icons",
-          "settings": {
-            "url_link": "",
-            "image_social_logo": "shopify://shop_images/youtube-line.svg"
-          }
-        }
-      },
-      "block_order": [
-        "social_icons_87PCLf",
-        "social_icons_JgJKj4",
-        "social_icons_UYxfBL"
-      ],
-      "name": "Announcement Bar",
-      "settings": {
-        "url_slide_link": "",
-        "text_slide_text": "{announcement here}",
-        "text_badge_text": "Find Out More"
-      }
-    },
     "header": {
       "type": "header",
       "blocks": {
@@ -133,6 +96,7 @@
         "url_button_link": "shopify://pages/contact",
         "text_button_text": "Contact",
         "button-style": "",
+        "icons": "none",
         "image_white_logo": "shopify://shop_images/logo--white.svg",
         "image_dark_logo": "shopify://shop_images/logo--dark.svg",
         "collection_search_bestseller": "stock",
@@ -143,7 +107,6 @@
     }
   },
   "order": [
-    "announcement_bar_jejUVD",
     "header"
   ]
 }
