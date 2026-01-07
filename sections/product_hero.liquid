@@ -3,48 +3,135 @@
             <div class="product-header_component">
               <script src="{{ 'li_custom.js' | asset_url }}" type="text/javascript"></script>
 <div li-element="product-variant-container" class="w-layout-grid product-header_layout" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)">
-                <div class="swiper-container is-product-gallery">
-                  <div class="swiper is-product-gallery">
-                    <div id="my-gallery" class="swiper-wrapper is-product-gallery">
-                      {% for image in product.images %}    <div li-for="image in product.images" class="swiper-slide is-product-gallery">
-                                    
-                        
-                            <div class="product-header_gallery-lightbox"><img alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" li-object:src="image.src | product_img_url: 'master'" li-object:alt="image.alt" loading="lazy" class="product-header_gallery-image-4"></div>
-                            
-                      
+                <div class="sticky">
+                  <div class="w-embed w-script">
+                    <div class="product-gallery">
+                      <!--  Main Slider  -->
+                      <div class="swiper main-swiper">
+                        <div class="swiper-wrapper">
+                          {% for media in product.media %}
+                          {% if media.media_type == 'image' %}
+                          <div class="swiper-slide">
+                            <div class="magnifier-container">
+                              <img src="{{ media | image_url: width: 1200 }}" alt="{{ media.alt | escape }}">
+                              <div class="magnifier-lens"></div>
+                              <div class="magnifier-preview"></div>
+                            </div>
+                          </div>
+                          {% endif %}
+                          {% endfor %}
                         </div>
-{% endfor %}
-                    </div>
-                  </div>
-                  <div class="product-header_slider-wrapper">
-                    <div class="swiper_button-wrapper is-product-slider pointer-events-off z-index-1 hide-mobile-landscape">
-                      <a aria-label="Previous Slide" href="#" class="swiper_button-2 swiper-prev pointer-events-on w-inline-block">
-                        <div class="swiper_button-icon-6 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 29.541 22.323" style="transform: rotate(180deg)">
-                            <g id="Group_44" data-name="Group 44" transform="translate(0 1.014)">
-                              <path id="Path_1" data-name="Path 1" d="M115.445,20.633l9.311-10.148L115.445.338" transform="translate(-97.25 -0.338)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></path>
-                              <line id="Line_1" data-name="Line 1" x1="27.506" transform="translate(0 10.148)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></line>
-                            </g>
-                          </svg></div>
-                      </a>
-                      <a aria-label="Next Slide" href="#" class="swiper_button-2 swiper-next pointer-events-on w-inline-block">
-                        <div class="swiper_button-icon-6 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 29.541 22.323">
-                            <g id="Group_44" data-name="Group 44" transform="translate(0 1.014)">
-                              <path id="Path_1" data-name="Path 1" d="M115.445,20.633l9.311-10.148L115.445.338" transform="translate(-97.25 -0.338)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></path>
-                              <line id="Line_1" data-name="Line 1" x1="27.506" transform="translate(0 10.148)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="3"></line>
-                            </g>
-                          </svg></div>
-                      </a>
-                    </div>
-                    <div class="swiper is-product-thumbnail">
-                      <div class="swiper-wrapper-2 is-product-thumbnail">
-                        {% for image in product.images %}    <div li-for="image in product.images" class="swiper-slide is-product-thumbnail">
-                                    <img alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" li-object:src="image.src | product_img_url: 'master'" li-object:alt="image.alt" loading="lazy" class="product_thumbnail-image">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                      <!--  Thumbnail Slider  -->
+                      <div class="swiper thumb-swiper">
+                        <div class="swiper-wrapper">
+                          {% for media in product.media %}
+                          {% if media.media_type == 'image' %}
+                          <div class="swiper-slide">
+                            <img src="{{ media.preview_image | image_url: width: 200 }}" alt="{{ media.alt | escape }}">
+                          </div>
+                          {% endif %}
+                          {% endfor %}
                         </div>
-{% endfor %}
+                        <div class="thumb-button-next"></div>
+                        <div class="thumb-button-prev"></div>
                       </div>
                     </div>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+                    <style>
+    /* Same styles as before */
+    .product-gallery { max-width: 800px; margin: 0 auto; padding: 20px; overflow-x: hidden; }
+    .main-swiper { height: 600px; margin-bottom: 20px; position: relative; }
+    .main-swiper .swiper-slide { display: flex; align-items: center; justify-content: center; background: transparent; }
+    .main-swiper img { width: 100%; height: 100%; object-fit: cover; }
+    .thumb-swiper { height: 100px; position: relative; }
+    .thumb-swiper .swiper-slide { opacity: 0.4; cursor: pointer; transition: opacity 0.3s; }
+    .thumb-swiper .swiper-slide-thumb-active { opacity: 1; border: 2px solid #333; }
+    .thumb-swiper img { width: 100%; height: 100%; object-fit: cover; }
+    .magnifier-container { position: relative; width: 100%; height: 100%; overflow: hidden; }
+    .magnifier-lens { position: absolute; width: 150px; height: 150px; border: 3px solid #fff; border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.5); pointer-events: none; display: none; background-repeat: no-repeat; z-index: 10; }
+    .magnifier-preview { position: absolute; top: 0; right: -320px; width: 300px; height: 300px; border: 3px solid #fff; border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.5); display: none; background-repeat: no-repeat; z-index: 10; }
+    /* Elegant Arrows */
+    .swiper-button-next, .swiper-button-prev,
+    .thumb-button-next, .thumb-button-prev {
+        width: 40px; height: 40px; background: rgba(255,255,255,0.8); border-radius: 50%; 
+        backdrop-filter: blur(10px); box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s;
+    }
+    .swiper-button-next:hover, .swiper-button-prev:hover,
+    .thumb-button-next:hover, .thumb-button-prev:hover { background: #fff; transform: scale(1.1); }
+    .swiper-button-next::after, .swiper-button-prev::after,
+    .thumb-button-next::after, .thumb-button-prev::after {
+        font-size: 18px; color: #333; font-weight: bold;
+    }
+    .thumb-button-next, .thumb-button-prev { width: 30px; height: 30px; }
+    .thumb-button-next::after, .thumb-button-prev::after { font-size: 14px; }
+    @media (min-width: 768px) {
+        .thumb-swiper { height: 140px; }
+    }
+</style>
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                    <script>
+    const thumbSwiper = new Swiper('.thumb-swiper', {
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 10,
+        freeMode: true,
+        watchSlidesProgress: true,
+        navigation: {
+            nextEl: '.thumb-button-next',
+            prevEl: '.thumb-button-prev',
+        },
+        breakpoints: {
+            768: { slidesPerView: 6 }
+        }
+    });
+    const mainSwiper = new Swiper('.main-swiper', {
+        loop: true,
+        thumbs: { swiper: thumbSwiper },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    document.querySelectorAll('.magnifier-container').forEach(container => {
+        const img = container.querySelector('img');
+        const lens = container.querySelector('.magnifier-lens');
+        const preview = container.querySelector('.magnifier-preview');
+        const moveLens = (e) => {
+            const rect = container.getBoundingClientRect();
+            let x = e.clientX - rect.left;
+            let y = e.clientY - rect.top;
+            if (x < 0) x = 0; if (x > rect.width) x = rect.width;
+            if (y < 0) y = 0; if (y > rect.height) y = rect.height;
+            const lensSize = 150;
+            const previewSize = 300;
+            const zoom = previewSize / lensSize;
+            lens.style.display = 'block';
+            preview.style.display = 'block';
+            lens.style.left = `${x - lensSize / 2}px`;
+            lens.style.top = `${y - lensSize / 2}px`;
+            preview.style.left = `${rect.width + 20}px`;
+            const bgX = -(x * zoom - previewSize / 2);
+            const bgY = -(y * zoom - previewSize / 2);
+            const bgSize = `${rect.width * zoom}px ${rect.height * zoom}px`;
+            lens.style.backgroundImage = `url(${img.src})`;
+            lens.style.backgroundPosition = `${bgX}px ${bgY}px`;
+            lens.style.backgroundSize = bgSize;
+            preview.style.backgroundImage = `url(${img.src})`;
+            preview.style.backgroundPosition = `${bgX}px ${bgY}px`;
+            preview.style.backgroundSize = bgSize;
+        };
+        container.addEventListener('mousemove', moveLens);
+        container.addEventListener('touchmove', moveLens);
+        container.addEventListener('mouseleave', () => {
+            lens.style.display = 'none';
+            preview.style.display = 'none';
+        });
+    });
+</script>
                   </div>
-                  <div class="swiper-slide is-product-thumbnail is-active hide-6"></div>
                 </div>
                 <div li-content-for-theme-blocks="" id="w-node-_4b0e9b61-6f53-1185-9fdd-143753136879-5313685d" class="product-header_product-details">
 {% content_for 'blocks' %}
