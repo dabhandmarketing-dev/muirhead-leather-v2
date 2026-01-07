@@ -1,4 +1,23 @@
 {% layout 'theme' %}
 <main li-content-for-layout="" class="main-wrapper" section-wrapper="main.main-wrapper">
-      {% section 'login' %}
+      <section class="section-3">
+        <div class="container-2">
+          <div class="left"></div>
+          <div class="right">
+            <div class="right-wrap">
+              <div class="form-block w-form">
+                <form id="email-form" name="email-form" data-name="Email Form" method="get" data-ms-form="login" class="form-2" data-wf-page-id="68e22fae932bc475029cc98d" data-wf-element-id="710cdbd2-8f32-2951-c47e-c324e92a5e4c"><img src="{{ 'logo--white.svg' | asset_url }}" loading="lazy" alt="" class="logo"><input class="text-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" type="email" id="Email" data-ms-member="email"><input class="text-field w-input" maxlength="256" name="Password" data-name="Password" placeholder="Password" type="password" id="Password" data-ms-member="password" required=""><input type="submit" data-wait="Please wait..." class="button-main primary-brown w-button" value="SIGN IN">
+                  <a data-ms-modal="forgot-password" href="#" class="p-small link">Forgot your password?</a>
+                </form>
+                <div class="w-form-done">
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="w-form-fail">
+                  <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
