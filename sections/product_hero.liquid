@@ -24,7 +24,9 @@
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                       </div>
-                      <!--  Thumbnail Slider  -->
+                      <!--  Thumbnail Slider - conditional  -->
+                      {% assign image_count = product.media | where: 'media_type', 'image' | size %}
+                      {% if image_count > 1 %}
                       <div class="swiper thumb-swiper">
                         <div class="swiper-wrapper">
                           {% for media in product.media %}
@@ -38,12 +40,12 @@
                         <div class="thumb-button-next"></div>
                         <div class="thumb-button-prev"></div>
                       </div>
+                      {% endif %}
                     </div>
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
                     <style>
-    /* Same styles as before */
-    .product-gallery { max-width: 800px; margin: 0 auto; padding: 20px; overflow-x: hidden; }
-    .main-swiper { height: 600px; margin-bottom: 20px; position: relative; }
+    .product-gallery { max-width: 100%; width: 100%; margin: 0 auto; padding: 10px; box-sizing: border-box; overflow-x: hidden; }
+    .main-swiper { height: 70vh; max-height: 600px; margin-bottom: 20px; position: relative; }
     .main-swiper .swiper-slide { display: flex; align-items: center; justify-content: center; background: transparent; }
     .main-swiper img { width: 100%; height: 100%; object-fit: cover; }
     .thumb-swiper { height: 100px; position: relative; }
@@ -53,7 +55,7 @@
     .magnifier-container { position: relative; width: 100%; height: 100%; overflow: hidden; }
     .magnifier-lens { position: absolute; width: 150px; height: 150px; border: 3px solid #fff; border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.5); pointer-events: none; display: none; background-repeat: no-repeat; z-index: 10; }
     .magnifier-preview { position: absolute; top: 0; right: -320px; width: 300px; height: 300px; border: 3px solid #fff; border-radius: 50%; box-shadow: 0 0 10px rgba(0,0,0,0.5); display: none; background-repeat: no-repeat; z-index: 10; }
-    /* Elegant Arrows */
+    /* Arrows */
     .swiper-button-next, .swiper-button-prev,
     .thumb-button-next, .thumb-button-prev {
         width: 40px; height: 40px; background: rgba(255,255,255,0.8); border-radius: 50%; 
@@ -67,29 +69,32 @@
     }
     .thumb-button-next, .thumb-button-prev { width: 30px; height: 30px; }
     .thumb-button-next::after, .thumb-button-prev::after { font-size: 14px; }
-    @media (min-width: 768px) {
-        .thumb-swiper { height: 140px; }
+    /* Mobile responsive */
+    @media (max-width: 767px) {
+        .product-gallery { padding: 5px; }
+        .main-swiper { height: 60vh; }
+        .thumb-swiper { height: 80px; }
+        .swiper-button-next, .swiper-button-prev { width: 35px; height: 35px; }
+        .swiper-button-next::after, .swiper-button-prev::after { font-size: 16px; }
     }
 </style>
                     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
                     <script>
     const thumbSwiper = new Swiper('.thumb-swiper', {
-        loop: true,
-        slidesPerView: 5,
+        loop: {{ image_count | json }} > 6,
+        slidesPerView: 'auto',
         spaceBetween: 10,
+        centeredSlides: false,
         freeMode: true,
         watchSlidesProgress: true,
         navigation: {
             nextEl: '.thumb-button-next',
             prevEl: '.thumb-button-prev',
         },
-        breakpoints: {
-            768: { slidesPerView: 6 }
-        }
     });
     const mainSwiper = new Swiper('.main-swiper', {
-        loop: true,
-        thumbs: { swiper: thumbSwiper },
+        loop: {{ image_count | json }} > 1,
+        thumbs: { swiper: document.querySelector('.thumb-swiper') ? thumbSwiper : null },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

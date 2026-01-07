@@ -1,8 +1,8 @@
 <div li-block="Image" {{ block.shopify_attributes }}>
                     {% if block.settings.image_image %}
-{{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'image-large', sizes: '240.00001525878906px', loading: 'lazy' }}
+{{ block.settings.image_image | image_url: width: 1000 | image_tag: class: 'image-large', sizes: '100vw', loading: 'lazy' }}
 {% else %}
-<img class="image-large" src="{{ 'muirhead_sector_aviation_02.webp' | asset_url }}" alt="" sizes="240.00001525878906px" loading="lazy" srcset="{{ 'muirhead_sector_aviation_02-p-500.webp' | asset_url }} 500w, {{ 'muirhead_sector_aviation_02.webp' | asset_url }} 638w">
+<img class="image-large" src="{{ 'muirhead_sector_aviation_02.webp' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'muirhead_sector_aviation_02-p-500.webp' | asset_url }} 500w, {{ 'muirhead_sector_aviation_02.webp' | asset_url }} 638w">
 {% endif %}
                 </div> {% schema %} {
     "name": "Image",
